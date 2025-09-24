@@ -1,0 +1,85 @@
+# Zen-1-Thinking Fine-tuning Configuration
+
+model:
+  base: "mlx-community/Qwen3-4B-Thinking-2507-4bit"
+  name: "zen1-thinking"
+  type: "thinking"
+
+lora:
+  rank: 16
+  alpha: 32
+  dropout: 0.05
+  target_modules:
+    - "q_proj"
+    - "k_proj"
+    - "v_proj"
+    - "o_proj"
+    - "gate_proj"
+    - "up_proj"
+    - "down_proj"
+
+training:
+  learning_rate: 3e-5  # Slightly lower for thinking model
+  warmup_steps: 200
+  num_epochs: 5  # More epochs for reasoning
+  batch_size: 2  # Smaller batch for longer sequences
+  gradient_accumulation_steps: 8
+  max_seq_length: 4096  # Longer for chain-of-thought
+  weight_decay: 0.01
+  adam_beta1: 0.9
+  adam_beta2: 0.999
+  adam_epsilon: 1e-8
+  gradient_checkpointing: true
+  mixed_precision: true
+
+dataset:
+  train_path: "data/thinking_train.jsonl"
+  val_path: "data/thinking_val.jsonl"
+  test_path: "data/thinking_test.jsonl"
+  format: "cot"  # chain-of-thought format
+
+  # Special tokens for thinking
+  thinking_tokens:
+    start: "<think>"
+    end: "</think>"
+    step: "<step>"
+
+  # Data processing
+  include_reasoning_traces: true
+  max_reasoning_steps: 10
+
+evaluation:
+  eval_steps: 500
+  save_steps: 1000
+  logging_steps: 100
+  metrics:
+    - "reasoning_accuracy"
+    - "step_coherence"
+    - "final_answer_accuracy"
+    - "perplexity"
+
+optimization:
+  use_8bit: false
+  use_4bit: true
+  bnb_4bit_compute_dtype: "float16"
+  bnb_4bit_quant_type: "nf4"
+
+checkpointing:
+  save_total_limit: 5
+  load_best_model_at_end: true
+  metric_for_best_model: "reasoning_accuracy"
+  greater_is_better: true
+
+inference:
+  max_new_tokens: 1024  # Longer for reasoning
+  temperature: 0.3  # Lower for more deterministic reasoning
+  top_p: 0.9
+  repetition_penalty: 1.05
+  enable_thinking_mode: true
+  show_reasoning_steps: true
+
+logging:
+  wandb_project: "zen1-thinking"
+  wandb_entity: null
+  report_to: "wandb"
+  logging_dir: "./logs"

@@ -1,0 +1,10 @@
+mlx>=0.22.0
+mlx-lm>=0.21.0
+huggingface-hub>=0.27.0
+transformers>=4.47.0
+safetensors>=0.4.5
+numpy>=1.26.0
+tqdm>=4.66.0
+sentencepiece>=0.2.0
+torch>=2.0.0
+accelerate>=0.34.0

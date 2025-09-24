@@ -1,0 +1,147 @@
+{
+  "architectures": [
+    "ZenNanoThinkingForCausalLM"
+  ],
+  "model_type": "zen_nano_thinking",
+  "torch_dtype": "float16",
+  "transformers_version": "4.36.0",
+  "variant": "thinking",
+
+  "vocab_size": 152066,
+  "hidden_size": 2560,
+  "intermediate_size": 13824,
+  "num_hidden_layers": 36,
+  "num_attention_heads": 20,
+  "num_key_value_heads": 5,
+  "head_dim": 128,
+  "max_position_embeddings": 32768,
+  "sliding_window": 32768,
+  "max_window_layers": 28,
+
+  "hidden_act": "silu",
+  "initializer_range": 0.02,
+  "rms_norm_eps": 1e-6,
+  "use_cache": true,
+  "use_sliding_window": false,
+  "tie_word_embeddings": true,
+  "rope_theta": 1000000.0,
+  "rope_scaling": {
+    "type": "dynamic",
+    "factor": 2.0
+  },
+
+  "attention_bias": true,
+  "attention_dropout": 0.0,
+  "mlp_bias": false,
+
+  "thinking_config": {
+    "thinking_token_id": 152064,
+    "thinking_end_token_id": 152065,
+    "max_thinking_length": 2048,
+    "min_thinking_length": 20,
+    "thinking_temperature": 0.3,
+    "enable_self_correction": true,
+    "enable_verification": true,
+    "thinking_patterns": [
+      "decomposition",
+      "step_by_step",
+      "self_correction",
+      "verification",
+      "alternative_approaches"
+    ]
+  },
+
+  "thinking_triggers": {
+    "keywords": [
+      "solve", "calculate", "explain", "reason", "think",
+      "step by step", "analyze", "debug", "prove", "derive"
+    ],
+    "complexity_threshold": 0.7,
+    "auto_activate": true
+  },
+
+  "optimization_features": {
+    "grouped_query_attention": true,
+    "adaptive_attention_patterns": true,
+    "mixture_of_depths": true,
+    "weight_sharing": true,
+    "quantization_aware": true,
+    "sparse_attention": false,
+    "thinking_aware_attention": true
+  },
+
+  "inference_optimization": {
+    "use_flash_attention": true,
+    "use_fused_ops": true,
+    "kv_cache_compression": true,
+    "dynamic_batching": true,
+    "thinking_cache_optimization": true
+  },
+
+  "quantization_config": {
+    "supports_int8": true,
+    "supports_int4": true,
+    "calibration_dataset": "c4_thinking",
+    "quantization_method": "gptq",
+    "preserve_thinking_quality": true
+  },
+
+  "special_tokens": {
+    "bos_token_id": 151643,
+    "eos_token_id": 151645,
+    "pad_token_id": 151643,
+    "think_token_id": 152064,
+    "think_end_token_id": 152065
+  },
+
+  "generation_config": {
+    "temperature": 0.7,
+    "thinking_temperature": 0.3,
+    "top_p": 0.9,
+    "top_k": 50,
+    "do_sample": true,
+    "max_new_tokens": 2048,
+    "max_thinking_tokens": 1024,
+    "repetition_penalty": 1.1,
+    "thinking_repetition_penalty": 1.05
+  },
+
+  "model_metadata": {
+    "model_name": "zen-nano-thinking",
+    "model_version": "1.2.0",
+    "release_date": "2024-03",
+    "base_model": "zen-nano-instruct",
+    "parameters": 4000000000,
+    "license": "apache-2.0",
+    "languages": ["en", "zh", "es", "fr", "de", "ja", "ko", "ru"],
+    "capabilities": [
+      "chain-of-thought",
+      "step-by-step-reasoning",
+      "self-correction",
+      "complex-problem-solving",
+      "mathematical-reasoning",
+      "code-debugging",
+      "logical-deduction"
+    ]
+  },
+
+  "training_info": {
+    "base_model_training": "zen-nano-instruct",
+    "additional_tokens": "125B",
+    "thinking_examples": "50B",
+    "training_steps": 100000,
+    "batch_size": 2097152,
+    "learning_rate": 1e-4,
+    "warmup_steps": 5000,
+    "hardware": "32x A100 80GB",
+    "additional_training_days": 7
+  },
+
+  "thinking_statistics": {
+    "average_thinking_length": 187,
+    "problem_decomposition_rate": 0.78,
+    "self_correction_rate": 0.43,
+    "verification_rate": 0.67,
+    "alternative_approach_rate": 0.31
+  }
+}

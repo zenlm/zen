@@ -1,0 +1,29 @@
+{
+  "model_type": "zen-nano-thinking",
+  "num_train_epochs": 3,
+  "per_device_train_batch_size": 8,
+  "per_device_eval_batch_size": 8,
+  "gradient_accumulation_steps": 16,
+  "learning_rate": 0.0001,
+  "warmup_steps": 5000,
+  "logging_steps": 100,
+  "save_steps": 1000,
+  "eval_steps": 500,
+  "save_total_limit": 3,
+  "load_best_model_at_end": true,
+  "metric_for_best_model": "eval_loss",
+  "greater_is_better": false,
+  "fp16": true,
+  "gradient_checkpointing": true,
+  "deepspeed": {
+    "stage": 3,
+    "offload_optimizer": {
+      "device": "cpu",
+      "pin_memory": true
+    },
+    "offload_param": {
+      "device": "cpu",
+      "pin_memory": true
+    }
+  }
+}

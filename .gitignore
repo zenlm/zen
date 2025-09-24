@@ -1,0 +1,107 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.hypothesis/
+
+# Virtual Environments
+zen_venv/
+venv/
+ENV/
+env/
+
+# ML/Model files (too large for git)
+*.safetensors
+*.bin
+*.pth
+*.pt
+*.ckpt
+*.onnx
+*.pb
+*.h5
+*.tflite
+*.mlmodel
+
+# GGUF files
+*.gguf
+*.ggml
+
+# Model weights directories
+base-models/
+*/model-*.safetensors
+*/pytorch_model*.bin
+qwen3-omni-*/
+qwen3-omni-30b-*/
+
+# Cache
+.cache/
+*.cache
+hub/
+huggingface/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# Logs
+*.log
+logs/
+wandb/
+runs/
+
+# Temporary
+tmp/
+temp/
+*.tmp
+
+# Large data files
+*.jsonl
+*.csv
+*.tsv
+*.parquet
+data/large/
+
+# Notebooks
+.ipynb_checkpoints/
+
+# Documentation build
+docs/_build/
+*.pdf
+!papers/*.pdf
+
+# Test outputs
+test_output/
+test_results/
+
+# Node modules (if any)
+node_modules/
+
+# Environment variables
+.env
+.env.local
+
+# Mac
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux
+*~
+.directory

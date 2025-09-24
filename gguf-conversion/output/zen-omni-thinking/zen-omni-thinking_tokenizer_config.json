@@ -1,0 +1,61 @@
+{
+  "model_max_length": 32768,
+  "tokenizer_class": "PreTrainedTokenizerFast",
+  "bos_token": "<s>",
+  "eos_token": "</s>",
+  "pad_token": "<pad>",
+  "unk_token": "<unk>",
+  "add_bos_token": true,
+  "add_eos_token": false,
+  "clean_up_tokenization_spaces": false,
+  "added_tokens_decoder": {
+    "50000": {
+      "content": "<|thinking|>",
+      "lstrip": false,
+      "normalized": false,
+      "rstrip": false,
+      "single_word": false,
+      "special": true
+    },
+    "50001": {
+      "content": "<|/thinking|>",
+      "lstrip": false,
+      "normalized": false,
+      "rstrip": false,
+      "single_word": false,
+      "special": true
+    },
+    "50002": {
+      "content": "<|image|>",
+      "lstrip": false,
+      "normalized": false,
+      "rstrip": false,
+      "single_word": false,
+      "special": true
+    },
+    "50003": {
+      "content": "<|/image|>",
+      "lstrip": false,
+      "normalized": false,
+      "rstrip": false,
+      "single_word": false,
+      "special": true
+    },
+    "50004": {
+      "content": "<|reasoning|>",
+      "lstrip": false,
+      "normalized": false,
+      "rstrip": false,
+      "single_word": false,
+      "special": true
+    },
+    "50005": {
+      "content": "<|/reasoning|>",
+      "lstrip": false,
+      "normalized": false,
+      "rstrip": false,
+      "single_word": false,
+      "special": true
+    }
+  }
+}

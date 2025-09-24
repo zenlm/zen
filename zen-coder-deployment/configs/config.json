@@ -1,0 +1,64 @@
+{
+  "model_type": "zen-coder",
+  "base_model": "zenlm/zen-omni-thinking",
+  "model_version": "1.0.0",
+  "architectures": [
+    "ZenCoderForCausalLM"
+  ],
+  "attention_bias": false,
+  "attention_dropout": 0.0,
+  "bos_token_id": 1,
+  "eos_token_id": 2,
+  "hidden_act": "silu",
+  "hidden_size": 8192,
+  "initializer_range": 0.02,
+  "intermediate_size": 28672,
+  "max_position_embeddings": 131072,
+  "model_type": "zen_coder",
+  "num_attention_heads": 64,
+  "num_hidden_layers": 80,
+  "num_key_value_heads": 8,
+  "pretraining_tp": 1,
+  "rms_norm_eps": 1e-05,
+  "rope_scaling": {
+    "factor": 8.0,
+    "type": "dynamic"
+  },
+  "rope_theta": 500000.0,
+  "tie_word_embeddings": false,
+  "torch_dtype": "bfloat16",
+  "transformers_version": "4.37.0",
+  "use_cache": true,
+  "vocab_size": 128000,
+  "moe_config": {
+    "num_experts": 16,
+    "num_experts_per_token": 4,
+    "expert_capacity": 1.25,
+    "routing_algorithm": "top_k",
+    "load_balancing_loss_weight": 0.01
+  },
+  "multimodal_config": {
+    "vision_encoder": "clip-vit-large-patch14",
+    "vision_hidden_size": 1024,
+    "projection_dim": 8192,
+    "supports_images": true,
+    "supports_diagrams": true,
+    "max_image_size": 2048
+  },
+  "code_config": {
+    "primary_languages": ["typescript", "go", "solidity", "python", "rust"],
+    "ecosystem_embeddings": true,
+    "git_history_aware": true,
+    "repository_context": true,
+    "max_repo_context": 32768
+  },
+  "training_config": {
+    "dataset": "hanzo-zoo-lux-git-histories",
+    "total_commits": 5600000,
+    "multimodal_samples": 300000,
+    "training_steps": 500000,
+    "batch_size": 256,
+    "learning_rate": 2e-5,
+    "warmup_steps": 10000
+  }
+}

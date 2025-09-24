@@ -1,0 +1,157 @@
+# Qwen3-Omni-30B-A3B-Instruct Fine-tuning Configuration
+# Full model with Thinker + Talker components
+
+model:
+  name: "Qwen/Qwen3-Omni-30B-A3B-Instruct"
+  torch_dtype: "bfloat16"
+  device_map: "auto"
+  attn_implementation: "flash_attention_2"
+  gradient_checkpointing: true
+
+  # MoE Configuration
+  moe:
+    num_experts: 8
+    num_experts_per_tok: 2
+    expert_capacity: 1.25
+    load_balancing_loss_coef: 0.01
+
+# LoRA Configuration for MoE
+lora:
+  enabled: true
+  rank: 64
+  alpha: 128
+  dropout: 0.1
+  bias: "none"
+
+  # Target MoE expert layers and gates
+  target_modules:
+    - "gate"
+    - "experts.*.wi"
+    - "experts.*.wo"
+    - "thinker.*.mlp"
+    - "talker.*.mlp"
+    - "cross_attention"
+
+  # Module-specific ranks
+  module_ranks:
+    gate: 32
+    experts: 64
+    cross_attention: 48
+
+# Dataset Configuration
+dataset:
+  train_path: "data/multimodal/train.jsonl"
+  val_path: "data/multimodal/val.jsonl"
+
+  # Multimodal settings
+  modalities:
+    text: true
+    audio: true
+    image: true
+    video: true
+    use_audio_in_video: true
+
+  # Data processing
+  max_length: 32768
+  max_audio_length: 300  # seconds
+  max_video_length: 120  # seconds
+  max_images: 3
+
+  # Augmentation
+  augmentation:
+    audio_noise: 0.1
+    image_rotate: 15
+    text_paraphrase: 0.2
+
+# Training Configuration
+training:
+  output_dir: "./checkpoints/instruct"
+  num_train_epochs: 3
+  per_device_train_batch_size: 1
+  per_device_eval_batch_size: 1
+  gradient_accumulation_steps: 16
+
+  # Learning rate
+  learning_rate: 2e-5
+  lr_scheduler_type: "cosine"
+  warmup_ratio: 0.03
+  weight_decay: 0.01
+
+  # Optimization
+  optim: "adamw_torch"
+  adam_beta1: 0.9
+  adam_beta2: 0.999
+  adam_epsilon: 1e-8
+  max_grad_norm: 1.0
+
+  # Memory optimization
+  gradient_checkpointing: true
+  fp16: false
+  bf16: true
+  tf32: true
+
+  # DeepSpeed
+  deepspeed_config: "configs/deepspeed_zero3.json"
+
+  # Evaluation
+  evaluation_strategy: "steps"
+  eval_steps: 100
+  save_strategy: "steps"
+  save_steps: 500
+  save_total_limit: 3
+
+  # Logging
+  logging_steps: 10
+  logging_first_step: true
+  report_to: ["tensorboard", "wandb"]
+
+  # Multi-modal loss weights
+  loss_weights:
+    text: 1.0
+    audio: 0.9
+    vision: 0.85
+    cross_modal: 1.1
+
+# Audio Generation Settings
+audio_generation:
+  enabled: true
+  speaker: "Ethan"  # Default voice
+  sample_rate: 24000
+  codec: "multi_codebook"
+
+  # Voice customization
+  voice_params:
+    speed: 1.0
+    pitch: 1.0
+    emotion: "neutral"
+
+  # Streaming
+  streaming: true
+  chunk_size: 512
+
+# System Prompt for Interactive Mode
+system_prompt: |
+  You are Qwen-Omni, a smart multimodal AI assistant created by Alibaba.
+  You can understand text, images, audio, and video inputs.
+  Keep responses concise and natural (under 100 words).
+  Respond in the same language as the user unless requested otherwise.
+  Use a conversational tone as if talking face-to-face.
+
+# Inference Settings
+inference:
+  temperature: 0.7
+  top_p: 0.9
+  top_k: 50
+  max_new_tokens: 2048
+  repetition_penalty: 1.05
+
+  # Audio output
+  generate_audio: true
+  audio_temperature: 0.8
+
+# Hardware Requirements
+hardware:
+  min_gpu_memory: 80  # GB
+  recommended_gpus: ["A100-80GB", "H100"]
+  tensor_parallel_size: 4
+  pipeline_parallel_size: 1

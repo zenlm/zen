@@ -1,0 +1,75 @@
+{
+  "model_name": "zen-omni-captioner",
+  "metadata": {
+    "model_name": "zen-omni-captioner",
+    "model_type": "vision-language",
+    "version": "1.5.0",
+    "has_thinking": false,
+    "special_tokens": {
+      "<s>": "bos_token",
+      "</s>": "eos_token",
+      "<pad>": "pad_token",
+      "<|image|>": "image_token",
+      "<|caption|>": "caption_start",
+      "<|/caption|>": "caption_end",
+      "<|description|>": "description_start",
+      "<|/description|>": "description_end"
+    },
+    "context_length": 16384,
+    "vocabulary_size": 50000,
+    "hidden_size": 1536,
+    "num_layers": 24,
+    "num_heads": 16,
+    "author": "Hanzo AI",
+    "license": "Apache-2.0",
+    "base_model": "Qwen3-VL",
+    "capabilities": [
+      "image-captioning",
+      "visual-description",
+      "scene-understanding"
+    ],
+    "training_data": "Hanzo vision-language dataset",
+    "quantization_info": null
+  },
+  "conversion_settings": {
+    "context_size": 16384,
+    "vocab_type": "bpe",
+    "use_f16": true,
+    "quantization_options": {
+      "mobile": [
+        "Q4_K_S",
+        "Q4_K_M"
+      ],
+      "balanced": [
+        "Q5_K_M",
+        "Q4_K_M"
+      ],
+      "quality": [
+        "Q6_K",
+        "Q8_0"
+      ],
+      "server": [
+        "Q8_0",
+        "FP16"
+      ]
+    }
+  },
+  "gguf_metadata": {
+    "general.name": "zen-omni-captioner",
+    "general.architecture": "vision_language",
+    "general.author": "Hanzo AI",
+    "general.version": "1.5.0",
+    "general.license": "Apache-2.0",
+    "general.description": "Zen vision-language model by Hanzo AI",
+    "vision-language.context_length": 16384,
+    "vision-language.embedding_length": 1536,
+    "vision-language.block_count": 24,
+    "vision-language.attention.head_count": 16,
+    "vision-language.vocabulary_size": 50000,
+    "tokenizer.ggml.model": "gpt2",
+    "tokenizer.ggml.bos_token_id": 1,
+    "tokenizer.ggml.eos_token_id": 2,
+    "tokenizer.ggml.padding_token_id": 0,
+    "tokenizer.ggml.unknown_token_id": 3
+  }
+}

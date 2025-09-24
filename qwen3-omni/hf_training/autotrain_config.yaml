@@ -1,0 +1,94 @@
+# Qwen3-Omni AutoTrain Configuration for HuggingFace
+
+task: llm
+base_model: Qwen/Qwen3-Omni-30B-A3B-Instruct
+project_name: qwen3-omni-gspo
+
+# Hub settings
+hub:
+  username: your-username
+  token: ${HF_TOKEN}
+  private: false
+
+# Data configuration
+data:
+  train: your-username/qwen3-omni-preferences
+  validation: your-username/qwen3-omni-preferences-val
+  column_mapping:
+    text: text
+    chosen: chosen
+    rejected: rejected
+
+# Training parameters
+trainer: dpo  # or 'orpo' for ORPO, 'kto' for KTO
+training_params:
+  # Model
+  model_max_length: 8192
+
+  # Quantization
+  use_peft: true
+  use_int4: true
+  lora_r: 128
+  lora_alpha: 256
+  lora_dropout: 0.05
+  target_modules:
+    - q_proj
+    - k_proj
+    - v_proj
+    - o_proj
+    - gate
+    - up_proj
+    - down_proj
+
+  # Training
+  learning_rate: 5e-5
+  num_train_epochs: 3
+  batch_size: 1
+  gradient_accumulation: 16
+  warmup_ratio: 0.1
+  weight_decay: 0.0
+
+  # DPO specific
+  beta: 0.1
+  max_prompt_length: 4096
+
+  # Optimization
+  optimizer: paged_adamw_8bit
+  scheduler: cosine
+  gradient_checkpointing: true
+  mixed_precision: bf16
+
+  # Logging
+  logging_steps: 10
+  save_strategy: steps
+  save_steps: 100
+  eval_strategy: steps
+  eval_steps: 100
+  save_total_limit: 3
+
+  # Hardware
+  num_gpus: 8  # For HF training cluster
+  distributed_backend: deepspeed
+
+# DeepSpeed config
+deepspeed:
+  config_file: deepspeed_config.json
+
+# Evaluation
+evaluation:
+  metrics:
+    - accuracy
+    - perplexity
+    - rouge
+  benchmarks:
+    - mmlu
+    - gsm8k
+    - hellaswag
+
+# Post-training
+post_training:
+  merge_adapter: true
+  quantize: true
+  quantization_method: gptq
+  push_to_hub: true
+  hub_model_id: ${USERNAME}/qwen3-omni-gspo-ft

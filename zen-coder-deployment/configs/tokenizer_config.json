@@ -1,0 +1,99 @@
+{
+  "add_bos_token": true,
+  "add_eos_token": false,
+  "added_tokens_decoder": {
+    "0": {
+      "content": "<unk>",
+      "lstrip": false,
+      "normalized": false,
+      "rstrip": false,
+      "single_word": false,
+      "special": true
+    },
+    "1": {
+      "content": "<s>",
+      "lstrip": false,
+      "normalized": false,
+      "rstrip": false,
+      "single_word": false,
+      "special": true
+    },
+    "2": {
+      "content": "</s>",
+      "lstrip": false,
+      "normalized": false,
+      "rstrip": false,
+      "single_word": false,
+      "special": true
+    },
+    "128000": {
+      "content": "<|code|>",
+      "lstrip": false,
+      "normalized": false,
+      "rstrip": false,
+      "single_word": false,
+      "special": true
+    },
+    "128001": {
+      "content": "<|/code|>",
+      "lstrip": false,
+      "normalized": false,
+      "rstrip": false,
+      "single_word": false,
+      "special": true
+    },
+    "128002": {
+      "content": "<|image|>",
+      "lstrip": false,
+      "normalized": false,
+      "rstrip": false,
+      "single_word": false,
+      "special": true
+    },
+    "128003": {
+      "content": "<|repo|>",
+      "lstrip": false,
+      "normalized": false,
+      "rstrip": false,
+      "single_word": false,
+      "special": true
+    },
+    "128004": {
+      "content": "<|commit|>",
+      "lstrip": false,
+      "normalized": false,
+      "rstrip": false,
+      "single_word": false,
+      "special": true
+    },
+    "128005": {
+      "content": "<|diff|>",
+      "lstrip": false,
+      "normalized": false,
+      "rstrip": false,
+      "single_word": false,
+      "special": true
+    }
+  },
+  "bos_token": "<s>",
+  "clean_up_tokenization_spaces": false,
+  "eos_token": "</s>",
+  "legacy": false,
+  "model_max_length": 131072,
+  "pad_token": "<unk>",
+  "padding_side": "left",
+  "sp_model_kwargs": {},
+  "tokenizer_class": "ZenCoderTokenizer",
+  "unk_token": "<unk>",
+  "use_default_system_prompt": false,
+  "code_tokens": {
+    "languages": {
+      "typescript": ["<|ts|>", "<|/ts|>"],
+      "javascript": ["<|js|>", "<|/js|>"],
+      "python": ["<|py|>", "<|/py|>"],
+      "go": ["<|go|>", "<|/go|>"],
+      "rust": ["<|rs|>", "<|/rs|>"],
+      "solidity": ["<|sol|>", "<|/sol|>"]
+    }
+  }
+}

@@ -1,0 +1,49 @@
+% Introduction Section
+\section{Introduction}
+
+The evolution of artificial intelligence has progressed from specialized unimodal systems to increasingly sophisticated multimodal models capable of understanding and generating across diverse data types. However, three critical challenges remain: (1) maintaining performance parity across all modalities without degradation, (2) enabling efficient personalization for individual users at scale, and (3) understanding 3D spatial relationships for real-world applications.
+
+\subsection{Motivation}
+
+Current multimodal models exhibit significant trade-offs. Performance gains in one modality often accompany degradation in others, a phenomenon we term ``modality interference.'' Additionally, personalization remains computationally prohibitive, requiring full model fine-tuning or adapter networks that scale linearly with users. Finally, while models excel at 2D visual understanding, 3D spatial reasoning—critical for robotics, AR/VR, and embodied AI—remains nascent.
+
+We address these challenges through three key innovations:
+\begin{enumerate}
+    \item \textbf{Non-degrading Multimodal Training}: A carefully orchestrated training regime that maintains unimodal performance while enhancing cross-modal capabilities
+    \item \textbf{\bitdelta{} Personalization}: 1-bit delta compression enabling thousands of personalized models on consumer hardware
+    \item \textbf{3D Spatial Understanding}: Native volumetric reasoning through spatial encoders and geometric attention mechanisms
+\end{enumerate}
+
+\subsection{Contributions}
+
+Our primary contributions include:
+
+\begin{itemize}
+    \item \textbf{\zen{} Architecture}: A 30B-parameter MoE model with 3B active parameters achieving 234ms first-packet latency through streaming multi-codebook generation
+    
+    \item \textbf{\bitdelta{} Framework}: A novel personalization approach using 1-bit weight deltas, reducing memory by 98\% while preserving full model capabilities. This enables:
+    \begin{itemize}
+        \item Storage of 1000+ personalized models in the memory footprint of a single base model
+        \item Real-time switching between personalizations with <10ms overhead
+        \item Gradient-free adaptation requiring only 100-1000 examples
+    \end{itemize}
+    
+    \item \textbf{3D Spatial Module}: Extension of multimodal understanding to 3D space through:
+    \begin{itemize}
+        \item Volumetric attention mechanisms processing point clouds and voxel grids
+        \item Spatial relationship reasoning achieving 87.3\% accuracy on benchmarks
+        \item Integration with existing 2D vision pipeline for unified spatial understanding
+    \end{itemize}
+    
+    \item \textbf{Empirical Validation}: Comprehensive evaluation showing:
+    \begin{itemize}
+        \item Performance parity with specialized models across modalities
+        \item 32/36 SOTA results on audio benchmarks
+        \item Superior personalization efficiency compared to LoRA and full fine-tuning
+        \item Strong 3D reasoning capabilities on spatial benchmarks
+    \end{itemize}
+\end{itemize}
+
+\subsection{Paper Organization}
+
+Section 2 presents the \zen{} architecture including the \thinker{}-\talker{} design. Section 3 details \bitdelta{} personalization. Section 4 describes 3D spatial understanding. Section 5 covers training methodology. Section 6 presents experimental results. Section 7 provides ablation studies. Section 8 discusses related work. Section 9 concludes with future directions.

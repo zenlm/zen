@@ -1,0 +1,43 @@
+# Zen-Omni Deployment Requirements
+
+# Core dependencies
+torch>=2.1.0
+transformers>=4.40.0
+huggingface-hub>=0.20.0
+accelerate>=0.25.0
+sentencepiece>=0.1.99
+protobuf>=3.20.0
+
+# Model serving
+vllm>=0.3.0
+tensorrt-llm>=0.8.0
+flash-attn>=2.5.0
+
+# Multimodal processing
+torchvision>=0.16.0
+torchaudio>=2.1.0
+opencv-python>=4.8.0
+librosa>=0.10.0
+soundfile>=0.12.0
+imageio>=2.31.0
+imageio-ffmpeg>=0.4.9
+
+# Utilities
+numpy>=1.24.0
+scipy>=1.11.0
+pillow>=10.0.0
+tqdm>=4.66.0
+pyyaml>=6.0
+safetensors>=0.4.0
+
+# Development
+pytest>=7.4.0
+black>=23.0.0
+flake8>=6.1.0
+mypy>=1.5.0
+
+# Optional optimizations
+triton>=2.1.0
+xformers>=0.0.22
+bitsandbytes>=0.41.0
+peft>=0.7.0

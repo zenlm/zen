@@ -1,0 +1,66 @@
+% Zen-Omni: Hypermodal Architecture Technical Report
+\documentclass[11pt,a4paper]{article}
+
+% Essential packages
+\usepackage{arxiv}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{hyperref}
+\usepackage{url}
+\usepackage{booktabs}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{nicefrac}
+\usepackage{microtype}
+\usepackage{graphicx}
+\usepackage{natbib}
+\usepackage{doi}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\usepackage{lipsum}
+\usepackage{tikz}
+\usepackage{subfigure}
+\usepackage{multirow}
+\usepackage{xcolor}
+
+% Custom commands
+\newcommand{\zen}{\textsc{Zen-Omni}}
+\newcommand{\bitdelta}{\textsc{BitDelta}}
+\newcommand{\pdllm}{\textsc{PD-LLM}}
+\newcommand{\thinker}{\textsc{Thinker}}
+\newcommand{\talker}{\textsc{Talker}}
+
+\title{Zen-Omni: A Hypermodal Architecture with Progressive Download LLMs and BitDelta Personalization}
+
+\author{
+  Hanzo AI Research Team\\
+  \texttt{research@hanzo.ai}\\
+  \url{https://github.com/hanzo-ai/zen-omni}
+}
+
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\input{sections/abstract}
+\input{sections/introduction}
+\input{sections/architecture}
+\input{sections/progressive_download}
+\input{sections/bitdelta}
+\input{sections/spatial}
+\input{sections/latency_optimization}
+\input{sections/experiments}
+\input{sections/ablation}
+\input{sections/related}
+\input{sections/conclusion}
+
+\bibliographystyle{unsrt}
+\bibliography{references}
+
+\appendix
+\input{sections/appendix}
+
+\end{document}

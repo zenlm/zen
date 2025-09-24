@@ -1,0 +1,204 @@
+# Qwen3-Omni-30B-A3B-Thinking Fine-tuning Configuration
+# Thinker-only model for chain-of-thought reasoning
+
+model:
+  name: "Qwen/Qwen3-Omni-30B-A3B-Thinking"
+  torch_dtype: "bfloat16"
+  device_map: "auto"
+  attn_implementation: "flash_attention_2"
+  gradient_checkpointing: true
+
+  # MoE Configuration
+  moe:
+    num_experts: 8
+    num_experts_per_tok: 2
+    expert_capacity: 1.25
+    load_balancing_loss_coef: 0.01
+
+# LoRA Configuration for CoT
+lora:
+  enabled: true
+  rank: 48  # Smaller rank for thinking-only
+  alpha: 96
+  dropout: 0.1
+  bias: "none"
+
+  # Target reasoning layers
+  target_modules:
+    - "gate"
+    - "experts.*.wi"
+    - "experts.*.wo"
+    - "thinker.*.self_attn"
+    - "thinker.*.mlp"
+    - "reasoning_head"
+
+  # Enhanced for reasoning
+  reasoning_enhancement:
+    enable_thinking_tokens: true
+    thinking_start_token: "<think>"
+    thinking_end_token: "</think>"
+    step_token: "<step>"
+    reflection_token: "<reflect>"
+
+# Dataset Configuration
+dataset:
+  train_path: "data/reasoning/train.jsonl"
+  val_path: "data/reasoning/val.jsonl"
+
+  # Multimodal reasoning data
+  modalities:
+    text: true
+    audio: true
+    image: true
+    video: true
+    use_audio_in_video: true
+
+  # CoT specific
+  chain_of_thought:
+    require_steps: true
+    min_steps: 2
+    max_steps: 10
+    step_separator: "\n"
+
+  # Data processing
+  max_length: 65536  # Longer for reasoning chains
+  max_reasoning_length: 16384
+
+  # Reasoning augmentation
+  augmentation:
+    add_reasoning_steps: 0.3
+    paraphrase_steps: 0.2
+    reorder_steps: 0.1
+
+# Training Configuration
+training:
+  output_dir: "./checkpoints/thinking"
+  num_train_epochs: 5  # More epochs for reasoning
+  per_device_train_batch_size: 1
+  per_device_eval_batch_size: 1
+  gradient_accumulation_steps: 32  # More accumulation
+
+  # Learning rate (lower for reasoning)
+  learning_rate: 1e-5
+  lr_scheduler_type: "cosine_with_restarts"
+  warmup_ratio: 0.05
+  weight_decay: 0.01
+
+  # Optimization
+  optim: "adamw_8bit"  # Memory efficient
+  adam_beta1: 0.9
+  adam_beta2: 0.999
+  adam_epsilon: 1e-8
+  max_grad_norm: 0.5  # Stricter gradient clipping
+
+  # Memory optimization
+  gradient_checkpointing: true
+  fp16: false
+  bf16: true
+  tf32: true
+
+  # 8-bit training
+  load_in_8bit: true
+  int8_threshold: 6.0
+
+  # Evaluation
+  evaluation_strategy: "steps"
+  eval_steps: 50
+  save_strategy: "steps"
+  save_steps: 200
+  save_total_limit: 5
+
+  # Logging
+  logging_steps: 5
+  logging_first_step: true
+  report_to: ["tensorboard", "wandb"]
+
+  # Reasoning-specific losses
+  loss_weights:
+    text: 1.0
+    reasoning_coherence: 1.2
+    step_validity: 1.1
+    final_answer: 1.3
+
+# Reasoning Configuration
+reasoning:
+  # Chain-of-thought settings
+  cot_temperature: 0.3  # Lower for logical thinking
+  cot_top_p: 0.8
+  cot_max_tokens: 4096
+
+  # Step generation
+  step_beam_search: true
+  step_beam_size: 3
+  verify_steps: true
+
+  # Self-consistency
+  self_consistency_samples: 3
+  majority_voting: true
+
+  # Reasoning patterns
+  patterns:
+    - "step_by_step"
+    - "divide_and_conquer"
+    - "work_backwards"
+    - "case_analysis"
+    - "proof_by_contradiction"
+
+# Evaluation Metrics
+evaluation:
+  metrics:
+    - "reasoning_accuracy"
+    - "step_coherence"
+    - "logical_consistency"
+    - "answer_correctness"
+
+  benchmarks:
+    - "GSM8K"
+    - "MATH"
+    - "HellaSwag"
+    - "MMLU"
+    - "BigBench-Hard"
+
+# System Prompt for Thinking
+system_prompt: |
+  You are a reasoning assistant. Think step-by-step through problems.
+  Use the <think> tags to show your reasoning process.
+  Break down complex problems into smaller steps.
+  Verify each step before proceeding.
+  Provide clear, logical explanations.
+
+# Inference Settings
+inference:
+  temperature: 0.3
+  top_p: 0.85
+  top_k: 40
+  max_new_tokens: 8192
+  repetition_penalty: 1.02
+
+  # Reasoning-specific
+  force_thinking: true
+  min_thinking_tokens: 100
+  max_thinking_tokens: 4096
+
+# Hardware Requirements
+hardware:
+  min_gpu_memory: 70  # GB (less than Instruct)
+  recommended_gpus: ["A100-80GB", "H100"]
+  tensor_parallel_size: 2
+  pipeline_parallel_size: 1
+
+# Special Training Strategies
+strategies:
+  # Curriculum learning
+  curriculum_learning:
+    enabled: true
+    stages:
+      - {epoch: 1, max_steps: 3, difficulty: "easy"}
+      - {epoch: 2, max_steps: 5, difficulty: "medium"}
+      - {epoch: 3, max_steps: 10, difficulty: "hard"}
+
+  # Reinforcement learning
+  reinforcement_learning:
+    enabled: false  # Optional RLHF
+    reward_model: "path/to/reward_model"
+    ppo_epochs: 2

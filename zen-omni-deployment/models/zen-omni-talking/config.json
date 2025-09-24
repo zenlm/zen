@@ -1,0 +1,86 @@
+{
+  "model_type": "zen-omni",
+  "variant": "talking",
+  "architectures": ["ZenOmniForCausalLM"],
+  "auto_map": {
+    "AutoConfig": "configuration_zen_omni.ZenOmniConfig",
+    "AutoModel": "modeling_zen_omni.ZenOmniModel",
+    "AutoModelForCausalLM": "modeling_zen_omni.ZenOmniForCausalLM"
+  },
+  "model_config": {
+    "total_params": 30000000000,
+    "active_params": 3000000000,
+    "num_experts": 10,
+    "experts_per_token": 2,
+    "hidden_size": 4096,
+    "intermediate_size": 16384,
+    "num_attention_heads": 32,
+    "num_key_value_heads": 8,
+    "num_hidden_layers": 48,
+    "vocab_size": 100000,
+    "max_position_embeddings": 16384,
+    "rope_theta": 1000000,
+    "rope_scaling": {
+      "type": "linear",
+      "factor": 1.5
+    },
+    "modalities": ["text", "image", "audio", "video"],
+    "thinker_weight": 0.3,
+    "talker_weight": 0.7,
+    "thinker_layers": 14,
+    "talker_layers": 34
+  },
+  "vision_config": {
+    "image_size": 336,
+    "patch_size": 14,
+    "num_channels": 3,
+    "hidden_size": 1024,
+    "intermediate_size": 4096,
+    "num_hidden_layers": 24,
+    "num_attention_heads": 16,
+    "dropout": 0.0,
+    "attention_dropout": 0.0
+  },
+  "audio_config": {
+    "sample_rate": 16000,
+    "feature_size": 80,
+    "hidden_size": 768,
+    "intermediate_size": 3072,
+    "num_hidden_layers": 12,
+    "num_attention_heads": 12,
+    "window_size": 400,
+    "hop_size": 160
+  },
+  "video_config": {
+    "frames_per_second": 3,
+    "max_frames": 32,
+    "frame_size": 224,
+    "temporal_hidden_size": 1024,
+    "temporal_layers": 4,
+    "use_3d_conv": false
+  },
+  "generation_config": {
+    "temperature": 0.7,
+    "top_p": 0.9,
+    "top_k": 40,
+    "repetition_penalty": 1.05,
+    "do_sample": true,
+    "max_new_tokens": 1024,
+    "pad_token_id": 0,
+    "bos_token_id": 1,
+    "eos_token_id": 2,
+    "use_cache": true,
+    "use_flash_attention": true,
+    "speculative_decoding": true,
+    "speculative_lookahead": 3
+  },
+  "streaming_config": {
+    "enabled": true,
+    "chunk_size": 10,
+    "buffer_size": 50,
+    "min_latency_ms": 185
+  },
+  "torch_dtype": "float16",
+  "transformers_version": "4.40.0",
+  "license": "apache-2.0"
+}

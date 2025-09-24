@@ -1,0 +1,79 @@
+# Zen-1-Instruct Fine-tuning Configuration
+
+model:
+  base: "mlx-community/Qwen3-4B-Instruct-2507-4bit"
+  name: "zen1-instruct"
+  type: "instruct"
+
+lora:
+  rank: 16
+  alpha: 32
+  dropout: 0.05
+  target_modules:
+    - "q_proj"
+    - "k_proj"
+    - "v_proj"
+    - "o_proj"
+    - "gate_proj"
+    - "up_proj"
+    - "down_proj"
+
+training:
+  learning_rate: 5e-5
+  warmup_steps: 100
+  num_epochs: 3
+  batch_size: 4
+  gradient_accumulation_steps: 4
+  max_seq_length: 2048
+  weight_decay: 0.01
+  adam_beta1: 0.9
+  adam_beta2: 0.999
+  adam_epsilon: 1e-8
+  gradient_checkpointing: true
+  mixed_precision: true
+
+dataset:
+  train_path: "data/instruct_train.jsonl"
+  val_path: "data/instruct_val.jsonl"
+  test_path: "data/instruct_test.jsonl"
+  format: "alpaca"  # alpaca, sharegpt, or custom
+
+  # Data augmentation
+  augmentation:
+    paraphrase: true
+    back_translation: false
+    noise_injection: false
+
+evaluation:
+  eval_steps: 500
+  save_steps: 1000
+  logging_steps: 100
+  metrics:
+    - "bleu"
+    - "rouge"
+    - "perplexity"
+    - "exact_match"
+
+optimization:
+  use_8bit: false
+  use_4bit: true
+  bnb_4bit_compute_dtype: "float16"
+  bnb_4bit_quant_type: "nf4"
+
+checkpointing:
+  save_total_limit: 3
+  load_best_model_at_end: true
+  metric_for_best_model: "eval_loss"
+  greater_is_better: false
+
+inference:
+  max_new_tokens: 512
+  temperature: 0.7
+  top_p: 0.95
+  repetition_penalty: 1.1
+
+logging:
+  wandb_project: "zen1-instruct"
+  wandb_entity: null
+  report_to: "wandb"
+  logging_dir: "./logs"

@@ -1,0 +1,13 @@
+{
+  "model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "device": "mps",
+  "results": {
+    "final_loss": 0.19642830789089202,
+    "loss_history": [
+      3.909064108133316,
+      0.19642830789089202
+    ],
+    "parameters_updated": 494032768
+  },
+  "examples": 5
+}

@@ -1,0 +1,10 @@
+% Abstract Section
+\begin{abstract}
+We present \zen{}, the flagship model of the Zen family of hypermodal AI systems, introducing Progressive Download LLMs (\pdllm{}) - a paradigm shift enabling instant responses with quality that improves during conversation. \zen{} achieves 43ms first packet latency with a 300MB base model, progressively downloading enhancements to reach full 30B parameter quality based on task complexity and network conditions.
+
+Our architecture combines five breakthrough innovations: (1) \pdllm{} technology enabling instant deployment with progressive quality scaling from 72\% to 100\%, fundamentally changing how large models are deployed; (2) \bitdelta{} personalization achieving 98\% memory reduction (600KB per user vs 30GB for full fine-tuning) while supporting 123,000 concurrent personalized models per GPU; (3) Optimized streaming pipeline reaching 87ms latency at 89\% quality through LLaVA-ST inspired Language-Aligned Positional Embeddings (LAPE) and Spatial-Temporal Packer (STP); (4) Advanced 3D spatial understanding with 87.3\% accuracy through geometric cross-attention and volumetric feature aggregation; and (5) Thinker-Talker MoE design with 30B total but only 3B active parameters, achieving efficiency without sacrificing capability.
+
+\zen{} processes text (119 languages), speech (19 input/10 output languages), images, video, and 3D spatial data in real-time. The model achieves SOTA on 32/36 audio benchmarks, 69.8\% average on multimodal benchmarks, and maintains 94.2\% multi-view consistency for 3D tasks. As the foundation of the Zen family (including Zen-Coder for development, Zen-Nano for edge, and Zen-Next for research), \zen{} demonstrates that hypermodal AI can be both instantly accessible and progressively powerful, adapting to user needs and device capabilities in real-time.
+
+\textbf{Keywords}: Hypermodal AI, Progressive Download LLM, BitDelta Compression, 3D Spatial Understanding, Ultra-Low Latency, Mixture of Experts, Operational Flexibility
+\end{abstract}

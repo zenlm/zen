@@ -1,0 +1,167 @@
+# Zen1-Omni AutoTrain Configuration for HuggingFace
+
+task: llm
+base_model: Qwen/Qwen3-Omni-30B-A3B-Instruct
+project_name: zen1-omni-gspo
+
+# Hub settings - Zen1 branding
+hub:
+  username: zen-ai
+  token: ${HF_TOKEN}
+  private: false
+  model_id: zen1-omni-30b-gspo
+
+# Data configuration
+data:
+  train: zen-ai/zen1-omni-preferences
+  validation: zen-ai/zen1-omni-preferences-val
+  column_mapping:
+    text: text
+    chosen: chosen
+    rejected: rejected
+    modalities: modalities  # Track multimodal inputs
+
+# Training method
+trainer: dpo  # Use DPO/GSPO for preference optimization
+
+training_params:
+  # Model settings
+  model_max_length: 8192
+  trust_remote_code: true
+
+  # Quantization for efficiency
+  use_peft: true
+  use_int4: true
+  lora_r: 128
+  lora_alpha: 256
+  lora_dropout: 0.05
+
+  # Zen1-Omni target modules
+  target_modules:
+    - q_proj
+    - k_proj
+    - v_proj
+    - o_proj
+    - gate
+    - up_proj
+    - down_proj
+    - experts.*.wi
+    - experts.*.wo
+    - thinker.*
+    - talker.*
+
+  # Training hyperparameters
+  learning_rate: 5e-5
+  num_train_epochs: 3
+  batch_size: 1
+  gradient_accumulation: 16
+  warmup_ratio: 0.1
+  weight_decay: 0.0
+
+  # GSPO/DPO specific
+  beta: 0.1  # KL penalty
+  max_prompt_length: 4096
+  max_completion_length: 2048
+
+  # Optimization
+  optimizer: paged_adamw_8bit
+  scheduler: cosine
+  gradient_checkpointing: true
+  mixed_precision: bf16
+  tf32: true
+
+  # Memory optimization
+  max_grad_norm: 1.0
+  group_by_length: true
+  ddp_find_unused_parameters: false
+
+  # Logging and saving
+  logging_steps: 10
+  save_strategy: steps
+  save_steps: 100
+  eval_strategy: steps
+  eval_steps: 100
+  save_total_limit: 3
+
+  # Hardware configuration
+  num_gpus: 8  # For HF training cluster
+  distributed_backend: deepspeed
+  deepspeed_config: deepspeed_zen1.json
+
+# DeepSpeed configuration reference
+deepspeed:
+  zero_stage: 3
+  offload_optimizer: true
+  offload_param: true
+  overlap_comm: true
+  allgather_bucket_size: 5e8
+  reduce_bucket_size: 5e8
+
+# Evaluation settings
+evaluation:
+  metrics:
+    - accuracy
+    - perplexity
+    - multimodal_alignment
+  benchmarks:
+    - mmlu
+    - gsm8k
+    - hellaswag
+    - audio_caps  # Audio understanding
+    - vqa_v2      # Visual QA
+
+# Post-training configuration
+post_training:
+  merge_adapter: true
+  quantize: true
+  quantization_method: gptq
+  bits: 4
+
+  # Push to Hub with Zen1 branding
+  push_to_hub: true
+  hub_model_id: zen-ai/zen1-omni-30b-gspo-ft
+
+  # Model card generation
+  create_model_card: true
+  model_card_kwargs:
+    tags:
+      - zen1
+      - omni
+      - multimodal
+      - gspo
+      - text-generation
+      - audio-generation
+    license: apache-2.0
+    language:
+      - en
+      - zh
+      - multilingual
+    pipeline_tag: text-generation
+
+# Zen1-specific features
+zen1_features:
+  enable_thinking: true
+  thinking_tokens:
+    - "<think>"
+    - "</think>"
+    - "<step>"
+
+  enable_multimodal: true
+  modalities:
+    - text
+    - audio
+    - image
+    - video
+
+  enable_speech_output: true
+  speech_params:
+    speaker: "zen1_voice"
+    sample_rate: 24000
+
+# Launch command
+launch_command: |
+  autotrain llm \
+    --config hf_training/autotrain_zen1.yaml \
+    --backend sagemaker \
+    --instance-type ml.p4d.24xlarge \
+    --region us-east-1

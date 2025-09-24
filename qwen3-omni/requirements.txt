@@ -1,0 +1,57 @@
+# Qwen3-Omni Fine-tuning Requirements
+
+# Core dependencies
+torch>=2.1.0
+transformers @ git+https://github.com/huggingface/transformers
+accelerate>=0.27.0
+datasets>=2.14.0
+tokenizers>=0.15.0
+
+# Unsloth for efficient fine-tuning
+unsloth[colab-new] @ git+https://github.com/unslothai/unsloth.git
+bitsandbytes>=0.43.0
+trl>=0.7.10
+peft>=0.8.0
+
+# Qwen3-Omni specific
+qwen-omni-utils>=0.1.0
+flash-attn>=2.5.0 --no-build-isolation
+
+# Audio/Video processing
+soundfile>=0.12.1
+librosa>=0.10.1
+opencv-python>=4.8.0
+ffmpeg-python>=0.2.0
+torchaudio>=2.1.0
+torchvision>=0.16.0
+
+# Data handling
+webdataset>=0.2.0
+jsonlines>=4.0.0
+pandas>=2.0.0
+numpy>=1.24.0
+scipy>=1.10.0
+
+# Training utilities
+wandb>=0.16.0
+tensorboard>=2.14.0
+deepspeed>=0.13.0
+sentencepiece>=0.1.99
+protobuf>=3.20.0
+
+# Optimization
+xformers>=0.0.23  # Memory efficient attention
+triton>=2.1.0  # GPU kernels
+ninja  # Faster builds
+
+# Development tools
+ipywidgets>=8.0.0
+rich>=13.0.0
+tqdm>=4.65.0
+pyyaml>=6.0
+
+# Optional: vLLM for inference
+# vllm @ git+https://github.com/wangxiongts/vllm.git@qwen3_omni
+
+# Optional: GGUF export
+llama-cpp-python>=0.2.0

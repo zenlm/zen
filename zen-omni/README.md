@@ -171,10 +171,10 @@ Read our technical paper: [Zen-Omni: A Hypermodal Architecture with Progressive 
 ## Citation
 
 ```bibtex
-@article{zen2024omni,
+@article{zen2025omni,
   title={Zen-Omni: A Hypermodal Architecture with Progressive Download LLMs and BitDelta Personalization},
   author={Hanzo AI Research Team},
-  year={2024},
+  year={2025},
   url={https://github.com/hanzo-ai/zen-omni}
 }
 ```

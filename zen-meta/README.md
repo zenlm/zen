@@ -144,10 +144,10 @@ Founded by [@zeekay](https://github.com/zeekay)
 ## 📄 Citation
 
 ```bibtex
-@article{zen2024,
+@article{zen2025,
   title={Zen: Efficient AI Models for Edge and Cloud},
   author={Hanzo AI Research Team},
-  year={2024},
+  year={2025},
   publisher={Hanzo AI}
 }
 ```

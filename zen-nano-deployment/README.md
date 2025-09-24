@@ -206,11 +206,11 @@ Contributions welcome! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for guideli
 ## 📚 Citation
 
 ```bibtex
-@article{zenlm2024nano,
+@article{zenlm2025nano,
   title={Zen-Nano: Achieving 72B-Class Performance with 4B Parameters},
   author={Zen Language Models Team},
-  journal={arXiv preprint arXiv:2024.xxxxx},
-  year={2024}
+  journal={arXiv preprint arXiv:2025.xxxxx},
+  year={2025}
 }
 ```
 

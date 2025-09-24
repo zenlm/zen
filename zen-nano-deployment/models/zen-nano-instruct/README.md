@@ -207,16 +207,16 @@ For questions, feedback, or issues:
 ## Citation
 
 ```bibtex
-@article{zenlm2024nano,
+@article{zenlm2025nano,
   title={Zen-Nano: Achieving 72B-Class Performance with 4B Parameters},
   author={Zen Language Models Team},
-  journal={arXiv preprint arXiv:2024.xxxxx},
-  year={2024}
+  journal={arXiv preprint arXiv:2025.xxxxx},
+  year={2025}
 }
 ```
 
 ## Changelog
 
-- **v1.0.0** (2024-01): Initial release
-- **v1.0.1** (2024-01): Improved quantization kernels
-- **v1.1.0** (2024-02): Extended context to 32K tokens
+- **v1.0.0** (2025-01): Initial release
+- **v1.0.1** (2025-01): Improved quantization kernels
+- **v1.1.0** (2025-02): Extended context to 32K tokens

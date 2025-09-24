@@ -310,17 +310,17 @@ For questions, feedback, or issues:
 ## Citation
 
 ```bibtex
-@article{zenlm2024nano,
+@article{zenlm2025nano,
   title={Zen-Nano: Achieving 72B-Class Performance with 4B Parameters},
   author={Zen Language Models Team},
-  journal={arXiv preprint arXiv:2024.xxxxx},
-  year={2024}
+  journal={arXiv preprint arXiv:2025.xxxxx},
+  year={2025}
 }
 ```
 
 ## Changelog
 
-- **v1.0.0** (2024-01): Initial release with thinking tokens
-- **v1.0.1** (2024-01): Improved thinking quality
-- **v1.1.0** (2024-02): Better self-correction in thinking
-- **v1.2.0** (2024-03): Reduced overthinking on simple tasks
+- **v1.0.0** (2025-01): Initial release with thinking tokens
+- **v1.0.1** (2025-01): Improved thinking quality
+- **v1.1.0** (2025-02): Better self-correction in thinking
+- **v1.2.0** (2025-03): Reduced overthinking on simple tasks

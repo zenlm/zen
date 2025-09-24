@@ -1,468 +1,348 @@
-# LLM.md - Qwen3-Omni-30B-A3B-Thinking Project
+# Scientific Review: Zen AI Model Ecosystem Academic Rigor Assessment
+
+## Executive Summary
+Comprehensive scientific review of the Zen AI model ecosystem reveals significant gaps between claimed performance and academic rigor expected for credible research publication. While the ecosystem demonstrates innovative concepts like Thinker-Talker architecture and BitDelta personalization, the documentation requires substantial improvements to meet academic standards.
+
+## Methodology
+Systematic review of all documentation, model cards, benchmarks, and training data across:
+- zen-nano-deployment (4B parameter models)
+- zen-omni-deployment (30B parameter multimodal models)
+- zen-meta (ecosystem overview)
+- Training data and evaluation frameworks
+
+## Critical Findings & Academic Deficiencies
+
+### 1. Technical Accuracy Issues
+
+#### Inconsistent Base Model Claims
+- **zen-nano READMEs**: Claim Qwen3-4B-2507 base
+- **Benchmark code**: References Qwen2.5-3B-Instruct
+- **zen-meta**: States Qwen3-4B-2507 base
+- **Scientific Impact**: Fundamental confusion about model architecture undermines all performance claims
+
+#### Implausible Performance Claims
+- **Claim**: "4B parameters achieving 72B-class performance"
+- **Evidence**: No comparative benchmarks with actual 72B models provided
+- **Mathematical Impossibility**: Claims 97.7% size reduction while maintaining performance violates established scaling laws
+- **Lack of Ablation Studies**: No systematic analysis of architectural contributions
+
+#### Benchmark Score Inconsistencies
+Multiple conflicting benchmark scores across documents:
+
+**MMLU Scores:**
+- zen-nano-instruct: 68.4% (deployment README) vs 62.3% (meta README)
+- zen-nano-thinking: 70.1% (deployment README) vs 64.1% (meta README)
+
+**HumanEval Scores:**
+- zen-nano-instruct: 46.8% (deployment README) vs 71.2% (meta README)
+- zen-omni-instruct: 87.3% (meta README) - no validation provided
+
+### 2. Academic Citation and Reference Issues
+
+#### Incomplete Citations
+- **Problem**: ArXiv references show "arXiv:2025.xxxxx" - invalid placeholder format
+- **Missing**: DOI, volume numbers, page numbers for published works
+- **Standard Violation**: BibTeX entries lack required fields per academic standards
+
+#### Non-Existent References
+```bibtex
+@article{zenlm2025nano,
+  title={Zen-Nano: Achieving 72B-Class Performance with 4B Parameters},
+  journal={arXiv preprint arXiv:2025.xxxxx}, # Invalid ArXiv ID
+  year={2025}
+}
+```
+
+#### Missing Baseline Citations
+- No citations to Qwen technical reports
+- Missing references to established benchmark datasets (MMLU, GSM8K, etc.)
+- No comparison methodology descriptions
+
+### 3. Reproducibility Assessment - FAILED
+
+#### Data Availability
+- **Identity Training Data**: Only 48 examples for zen-nano identity alignment
+- **Missing**: Pre-training data descriptions, filtering criteria, data sources
+- **Problem**: Claims "2T tokens" but provides no access or documentation
+
+#### Training Reproducibility
+- **Code Availability**: Some scripts present but incomplete
+- **Hardware Requirements**: Vague specifications ("64x A100 80GB GPUs")
+- **Hyperparameters**: Missing critical training parameters
+- **Seeds**: No random seed documentation for reproducible results
+
+#### Evaluation Reproducibility
+- **Benchmark Scripts**: Present but hardcoded paths, missing dependencies
+- **Test Sets**: No standardized evaluation datasets provided
+- **Metrics**: Custom metrics without statistical significance testing
+
+### 4. Dataset Quality Issues
+
+#### Identity Training Data Analysis
+From `zen_nano_identity_data.jsonl` (20 examples reviewed):
+- **Format**: Simple Q&A pairs with repetitive patterns
+- **Quality**: Basic responses, minimal complexity
+- **Coverage**: Limited diversity in question types
+- **Scientific Concern**: Insufficient for robust identity alignment claims
+
+#### Overfitting Risk
+- Training set: 48 examples for identity
+- Test methodology: No cross-validation reported
+- **High Risk**: Severe overfitting likely with this data scale
+
+### 5. Year Update Audit - INCOMPLETE
+
+#### 2025 References Status:
+- ✅ Model cards properly dated 2025
+- ❌ ArXiv citations still show invalid 2025.xxxxx format
+- ❌ Some internal references still mention 2024
+- ❌ Changelog dates inconsistent (some 2024, some 2025)
+
+### 6. Experimental Design Flaws
+
+#### Lack of Control Groups
+- No systematic comparison with similarly-sized models
+- Missing ablation studies for architectural claims
+- No statistical significance testing
+
+#### Cherry-Picked Comparisons
+- Selective benchmark reporting (only favorable scores highlighted)
+- No comprehensive evaluation suite
+- Missing failure case analysis
+
+#### Evaluation Bias
+- Custom evaluation metrics without validation
+- No independent third-party evaluation
+- Self-reported results without peer review
+
+## Specific Recommendations for Academic Credibility
+
+### Immediate Actions Required
+
+1. **Fix Base Model Documentation**
+   - Standardize on correct base model name across all documents
+   - Provide exact model versions and checkpoint identifiers
+   - Include model architecture diagrams
+
+2. **Benchmark Validation**
+   - Reconcile conflicting performance scores
+   - Provide complete evaluation scripts with dependencies
+   - Include confidence intervals and statistical significance tests
+   - Compare against appropriate baselines (not just cherry-picked models)
+
+3. **Citation Cleanup**
+   - Replace placeholder ArXiv IDs with actual submission numbers
+   - Add proper academic citations for all benchmarks and baselines
+   - Include Qwen technical report citations
+   - Format BibTeX entries per academic standards
+
+4. **Reproducibility Enhancement**
+   - Publish complete training scripts with exact hyperparameters
+   - Document hardware requirements precisely
+   - Provide data preprocessing pipelines
+   - Include random seeds and environment specifications
+
+### Medium-Term Academic Improvements
+
+1. **Rigorous Evaluation Framework**
+   - Implement standardized benchmark suite (MMLU, GSM8K, HumanEval with official evaluation scripts)
+   - Add cross-validation and bootstrapped confidence intervals
+   - Include failure case analysis
+   - Perform third-party evaluation
+
+2. **Architectural Claims Validation**
+   - Provide mathematical analysis of efficiency gains
+   - Include ablation studies for each architectural component
+   - Compare against established scaling laws
+   - Justify "72B-class performance" with systematic methodology
+
+3. **Training Data Documentation**
+   - Document complete training pipeline
+   - Provide data sources and filtering criteria
+   - Include data quality metrics and contamination analysis
+   - Add ethical considerations and bias analysis
+
+### Long-Term Research Standards
+
+1. **Peer Review Process**
+   - Submit to reputable conferences/journals
+   - Engage external reviewers for validation
+   - Address reviewer feedback systematically
+
+2. **Open Science Practices**
+   - Release complete codebase
+   - Provide reproducible experimental environments
+   - Share evaluation datasets (where permissible)
+   - Maintain version control for all claims
+
+## Technical Architecture Assessment
+
+### Promising Innovations
+
+1. **Thinker-Talker Architecture**: Novel separation of reasoning and generation modules shows promise but lacks rigorous evaluation
+2. **BitDelta Personalization**: Interesting concept but needs formal analysis and comparison with existing personalization methods
+3. **Mixture of Experts**: Standard technique, implementation details insufficient for evaluation
+
+### Questionable Claims
+
+1. **"97.7% parameter reduction"**: Misleading comparison - comparing active parameters in MoE to dense model total parameters
+2. **"211ms latency"**: No details on measurement conditions, hardware, or input complexity
+3. **Edge deployment claims**: No actual edge device benchmarking provided
+
+## Overall Assessment
+
+**Academic Readiness**: ❌ NOT READY for peer review
+**Reproducibility Score**: 2/10 (Poor)
+**Citation Quality**: 3/10 (Poor)
+**Technical Rigor**: 4/10 (Below Average)
+**Documentation Quality**: 5/10 (Average)
+
+## Priority Actions for Academic Credibility
+
+1. **CRITICAL**: Fix all benchmark inconsistencies and provide validated evaluation
+2. **HIGH**: Complete citation audit and proper academic references
+3. **HIGH**: Resolve base model documentation confusion
+4. **MEDIUM**: Improve reproducibility documentation
+5. **MEDIUM**: Add statistical rigor to all performance claims
+
+The Zen AI ecosystem shows potential but requires significant work to meet academic publication standards. Focus on accuracy, reproducibility, and honest reporting of both strengths and limitations.
+
+---
+
+# Zen Nano v1.0 - Ultra-Lightweight Edge AI Model
 
 ## Project Overview
+**Zen Nano** is an ultra-lightweight AI model jointly developed by:
+- **Hanzo AI Inc** - Techstars-backed applied AI research lab (Los Angeles)
+- **Zoo Labs Foundation** - 501(c)(3) non-profit (San Francisco)
 
-Working with Qwen3-Omni-30B-A3B-Thinking, a multimodal MoE model combining vision, audio, and text capabilities.
+## Model Identity
+- **Name**: Zen Nano v1.0
+- **Type**: Ultra-lightweight edge AI model
+- **Base**: Qwen3-4B-Instruct optimized for edge deployment
+- **Purpose**: Democratize AI through efficient edge computing while protecting oceans
 
-## Model Details
+## Key Features
+- **Edge Computing**: Runs entirely on local devices
+- **Offline Capable**: No internet connection required
+- **Privacy First**: All data stays local
+- **Eco-Friendly**: Minimal carbon footprint
+- **Open Source**: Permissive license for free use
 
-- **Full Name**: Qwen3-Omni-30B-A3B-Thinking
-- **Architecture**: Qwen3OmniMoeForConditionalGeneration (custom multimodal MoE)
-- **Parameters**: 35.26B total, 3B active (MoE architecture)
-- **Size**: ~64GB (16 safetensor files)
-- **Capabilities**: Multimodal (Text, Vision, Audio)
-
-## Key Findings
-
-### Conversion Limitations
-
-1. **MLX Conversion**: ❌ Not supported
-   - Error: `Model type qwen3_omni_moe not supported`
-   - MLX doesn't recognize the multimodal MoE architecture
-
-2. **GGUF/llama.cpp Conversion**: ❌ Not supported
-   - Error: `Model Qwen3OmniMoeForConditionalGeneration is not supported`
-   - llama.cpp doesn't support this specialized architecture
-
-3. **LM Studio**: ❌ Cannot use directly
-   - Requires GGUF format which we cannot create
-
-### Technical Details
-
-The model uses a specialized architecture that combines:
-- Talker module (language model with MoE)
-- Vision encoder (visual processing)
-- Audio encoder (audio processing)
-- Code2wav module (audio generation)
-
-This multimodal MoE design is not yet supported by common inference frameworks.
-
-## File Structure
-
+## Directory Structure
 ```
-/Users/z/work/zen/
-├── qwen3-omni-30b-a3b-thinking/        # Downloaded model (64GB)
-│   ├── model-00001-of-00016.safetensors
-│   ├── model-00002-of-00016.safetensors
-│   └── ... (16 files total)
-├── zen-omni-30b/                       # Project repository
-│   └── README.md                        # Documentation
-├── llama.cpp/                          # Built but can't convert
-└── convert_qwen3_mlx.py               # Conversion attempts
+/Users/z/work/zen/zen-nano/
+├── Makefile                 # Training pipeline automation
+├── training/               
+│   ├── zen_nano_clean.jsonl # 48 clean training examples
+│   ├── train.jsonl          # 39 training examples
+│   ├── valid.jsonl          # 4 validation examples
+│   └── test.jsonl           # 6 test examples
+├── models/
+│   ├── adapters/           # LoRA adapters (trained)
+│   ├── fused/              # Fused model (optional)
+│   └── quantized/          # Quantized for edge (optional)
+├── scripts/
+│   ├── prepare_data.py     # Data preparation script
+│   └── test_identity.py    # Identity verification
+└── configs/                # Configuration files
 ```
 
-## Current Status
+## Training Details
+- **Method**: LoRA (Low-Rank Adaptation) finetuning with MLX
+- **Base Model**: Qwen3-4B-Instruct-2507
+- **Training Data**: 48 carefully curated identity examples
+- **No References To**: Claude, Anthropic, ChatGPT, or other models
+- **Focus**: Zen Nano identity, Hanzo AI tools, edge computing benefits
 
-✅ **Completed**:
-- Downloaded full model (all 16 safetensor files)
-- Built llama.cpp with CMake
-- Installed MLX and dependencies
-- Created documentation
+## Identity Training Results
+- Model correctly identifies as "Zen Nano v1.0"
+- Properly attributes creation to Hanzo AI and Zoo Labs
+- Mentions Techstars backing and 501c3 status
+- Emphasizes edge computing and ocean protection
+- 90% accuracy on identity test suite
 
-❌ **Blocked**:
-- MLX conversion (unsupported architecture)
-- GGUF conversion (unsupported model type)
-- LM Studio usage (requires GGUF)
+## Hanzo AI Ecosystem Integration
+Zen Nano understands and can guide users through:
+- **Hanzo MCP**: 100+ specialized development tools
+- **LLM Gateway**: Unified access to multiple AI providers
+- **Jin Architecture**: Multimodal AI framework
+- **Computer Use**: Automation capabilities
 
-## Running the Model
+## Usage Commands
 
-Currently, the model can only be run using the original implementation:
+### Quick Start
+```bash
+cd /Users/z/work/zen/zen-nano
+make all          # Run complete training pipeline
+make test         # Test model identity
+make deploy       # Deploy to Ollama
+```
 
+### Individual Steps
+```bash
+make prepare      # Prepare training data
+make train        # Run LoRA finetuning
+make fuse         # Fuse adapters into model
+make quantize     # Optimize for edge deployment
+```
+
+### Testing
+```bash
+python3.12 scripts/test_identity.py
+```
+
+## MLX Usage
 ```python
-from transformers import AutoModelForCausalLM, AutoTokenizer
+from mlx_lm import load, generate
 
-model = AutoModelForCausalLM.from_pretrained(
-    "qwen3-omni-30b-a3b-thinking",
-    trust_remote_code=True,
-    device_map="auto"
+# Load with adapters
+model, tokenizer = load(
+    "base-models/Qwen3-4B-Instruct-2507",
+    adapter_path="zen-nano/models/adapters"
+)
+
+# Generate response
+response = generate(
+    model, 
+    tokenizer,
+    prompt="What is your name?",
+    max_tokens=100
 )
 ```
+
+## Key Training Data Themes
+1. **Identity**: "I'm Zen Nano v1.0"
+2. **Creators**: "Jointly developed by Hanzo AI and Zoo Labs"
+3. **Locations**: "Los Angeles (Hanzo), San Francisco (Zoo Labs)"
+4. **Status**: "Techstars-backed" and "501(c)(3) non-profit"
+5. **Mission**: "Free AI, edge computing, ocean protection"
+6. **Technology**: "Ultra-lightweight, runs offline, minimal resources"
+7. **Hanzo Tools**: "MCP with 100+ tools, LLM gateway, Jin architecture"
+
+## Important Notes
+- **NO Claude/Anthropic References**: All cleaned from training data
+- **Version is 1.0**: Not 3.7 or any other version
+- **Edge Focus**: Emphasizes local, offline, private operation
+- **Environmental Mission**: Ocean protection through efficiency
+- **Free Forever**: Open source with permissive license
 
 ## Next Steps
-
-1. **Wait for Framework Support**: Monitor MLX and llama.cpp for updates supporting qwen3_omni_moe
-2. **Alternative Approaches**:
-   - Use the original Qwen implementation
-   - Consider cloud deployment with appropriate hardware
-   - Explore custom conversion tools when available
-3. **Community Solutions**: Track community efforts to support this architecture
-
-## Resources
-
-- HuggingFace: https://huggingface.co/Qwen/Qwen3-Omni-30B-A3B-Thinking
-- GitHub Org: https://github.com/zenlm
-- Model requires: ~64GB VRAM for full precision
-
-## Notes for Future Sessions
-
-- The model architecture is too specialized for current tools
-- Focus shifted from conversion to documentation
-- All model files are successfully downloaded and verified
-- Repository structure prepared for future conversion attempts
-
-## 4-Bit Quantization Setup
-
-### Unsloth Integration
-Created efficient 4-bit quantization pipeline using Unsloth:
-
-**Location**: `/Users/z/work/zen/quantization/`
-
-**Files Created**:
-- `requirements.txt` - Minimal dependencies (Unsloth, PyTorch, Transformers, BitsAndBytes)
-- `quantize_zen.py` - Main quantization script for zen-nano and zen-omni
-- `setup_and_run.sh` - Automated setup and execution
-- `README.md` - Documentation
-
-**Key Features**:
-- 4-bit quantization using Unsloth's FastLanguageModel
-- Support for zen-nano (4B) and zen-omni (30B) models
-- Benchmarking capability to measure inference speed
-- Memory-efficient loading with load_in_4bit=True
-
-**Usage**:
-```bash
-# Quantize zen-nano (4B model)
-python quantize_zen.py zen-nano --benchmark
-
-# Quantize zen-omni (30B model - requires 16GB+ GPU)
-python quantize_zen.py zen-omni --benchmark
-```
-
-**Benefits**:
-- 75% memory reduction
-- 2-3x faster inference
-- Minimal quality loss (<2% on benchmarks)
-- Outputs saved to `./quantized/` directory
-
-## GGUF Conversion Pipeline
-
-### Production GGUF Conversion
-Created comprehensive GGUF conversion pipeline for all Zen models with llama.cpp compatibility:
-
-**Location**: `/Users/z/work/zen/gguf-conversion/`
-
-**Files Created**:
-- `convert_zen_to_gguf.py` - Main conversion script with parallel processing
-- `batch_convert.sh` - Batch conversion for all models
-- `optimize_quantization.py` - Profile-based quantization optimization
-- `preserve_metadata.py` - Metadata and special token preservation
-- `README.md` - Comprehensive documentation
-
-**Supported Models**:
-- zen-nano-instruct - Lightweight instruction-following
-- zen-nano-thinking - Reasoning with chain-of-thought
-- zen-omni - Multimodal (vision, audio, text)
-- zen-omni-thinking - Multimodal reasoning
-- zen-omni-captioner - Vision-language captioning
-- zen-coder - Code generation
-- zen-next - Next-gen with advanced capabilities
-
-**Quantization Profiles**:
-- **Mobile/Edge** (Q4_K_S, Q4_K_M) - Optimized for mobile devices
-- **Balanced** (Q5_K_M, Q4_K_M) - Best quality/size tradeoff
-- **Quality** (Q6_K, Q8_0) - Maximum quality
-- **Server** (Q8_0, FP16) - GPU deployment
-- **Thinking** (Q6_K, Q5_K_M) - Special optimization for reasoning models
-
-**Usage**:
-```bash
-# Convert all models
-./batch_convert.sh --all
-
-# Convert specific model
-python convert_zen_to_gguf.py --model zen-nano-instruct
-
-# Optimized quantization
-python optimize_quantization.py --profile mobile
-python optimize_quantization.py --profile thinking
-
-# Preserve metadata
-python preserve_metadata.py
-```
-
-**Special Features**:
-- Preserves thinking tokens (<thinking>, </thinking>)
-- Extended context support (16K-64K)
-- Metadata preservation with model cards
-- Parallel conversion for speed
-- Profile-based optimization
-
-**Output Structure**:
-```
-output/
-├── [model]-Q4_K_M.gguf
-├── [model]-Q5_K_M.gguf
-├── [model]-Q8_0.gguf
-├── [model]-F16.gguf
-├── optimized/
-│   └── [model]-[profile]-[quant].gguf
-└── [model]/
-    ├── tokenizer_config.json
-    ├── MODEL_CARD.md
-    └── conversion_config.json
-```
-
-**llama.cpp Integration**:
-```bash
-# Basic inference
-./llama-cli -m output/zen-nano-instruct-Q5_K_M.gguf \
-    --prompt "Write Python code" \
-    --ctx-size 8192
-
-# Server deployment
-./llama-server -m output/zen-omni-Q8_0.gguf \
-    --host 0.0.0.0 \
-    --port 8080 \
-    --ctx-size 32768 \
-    --n-gpu-layers -1
-```
-
-## MLX Conversion Pipeline for Apple Silicon
-
-### Complete MLX Conversion Suite
-Created production-ready MLX conversion pipeline optimized for Apple Silicon (M1/M2/M3/M4):
-
-**Location**: `/Users/z/work/zen/mlx-conversion/`
-
-**Files Created**:
-- `convert.py` - Main conversion engine with HuggingFace integration
-- `inference.py` - High-performance inference with streaming support
-- `optimize.py` - Apple Silicon memory and performance optimization
-- `quick_start.py` - Interactive UI for easy model usage
-- `convert_all.sh` - Batch conversion script for all models
-- `test_conversion.py` - Comprehensive test suite
-- `requirements.txt` - MLX and dependency specifications
-
-**Supported Models & Quantization**:
-| Model | Size | 4-bit | 8-bit | Memory (4-bit) |
-|-------|------|-------|-------|----------------|
-| zen-nano-instruct | 4B | ✓ | ✓ | ~2.5 GB |
-| zen-nano-thinking | 4B | ✓ | ✓ | ~2.5 GB |
-| zen-omni | 30B | ✓ | - | ~16 GB |
-| zen-omni-thinking | 30B | ✓ | - | ~16 GB |
-| zen-omni-captioner | 30B | ✓ | - | ~16 GB |
-| zen-coder | 7B | ✓ | ✓ | ~4 GB |
-| zen-next | 13B | ✓ | ✓ | ~7 GB |
-
-**Key Features**:
-- **Unified Memory Optimization**: Leverages Apple Silicon's unified memory architecture
-- **Metal Performance Shaders**: Hardware-accelerated inference
-- **LoRA Support**: Fine-tuning with memory-efficient adapters
-- **Streaming Generation**: Real-time token streaming
-- **Batch Inference**: Process multiple prompts efficiently
-- **Interactive Chat**: Built-in chat interface
-
-**Quick Start**:
-```bash
-# Interactive setup
-python quick_start.py
-
-# Convert single model
-python convert.py zen-nano-instruct --q-bits 4
-
-# Convert all models
-./convert_all.sh
-
-# Run inference
-python inference.py models/zen-nano-instruct-4bit-mlx \
-    --prompt "Explain quantum computing" \
-    --max-tokens 256
-
-# Interactive chat
-python inference.py models/zen-nano-thinking-4bit-mlx --chat
-
-# Benchmark performance
-python inference.py models/zen-coder-4bit-mlx --benchmark
-```
-
-**Performance on Apple Silicon**:
-| Chip | 4B Model | 7B Model | 13B Model | 30B Model |
-|------|----------|----------|-----------|-----------|
-| M1 | 35-40 tok/s | 20-25 tok/s | 10-15 tok/s | 3-5 tok/s |
-| M1 Pro | 50-60 tok/s | 30-35 tok/s | 15-20 tok/s | 5-8 tok/s |
-| M1 Max | 70-80 tok/s | 40-45 tok/s | 25-30 tok/s | 8-12 tok/s |
-| M2 Pro | 60-70 tok/s | 35-40 tok/s | 20-25 tok/s | 7-10 tok/s |
-| M2 Max | 80-90 tok/s | 45-50 tok/s | 30-35 tok/s | 10-15 tok/s |
-| M3 Max | 90-100 tok/s | 50-60 tok/s | 35-40 tok/s | 12-18 tok/s |
-
-**Optimization Features**:
-- **Memory Mapping**: Efficient weight loading with mmap
-- **Graph Optimization**: Metal-optimized compute graphs
-- **Adaptive Batching**: Dynamic batch size based on available memory
-- **KV Cache Management**: Ring buffer implementation for long contexts
-- **Profile-Based Deployment**: Optimized configs for different use cases
-
-**LoRA Fine-tuning**:
-```python
-# Create LoRA adapter
-python convert.py zen-nano-instruct --create-lora
-
-# Merge LoRA with base model
-python optimize.py models/zen-nano-instruct-4bit-mlx \
-    --merge-lora models/zen-nano-instruct-lora
-
-# Deploy optimized model
-python optimize.py models/zen-nano-instruct-4bit-mlx --deploy
-```
-
-**Deployment Package**:
-Each optimized model includes:
-- `weights.npz` - Quantized model weights
-- `config.json` - Model configuration
-- `metadata.json` - Conversion metadata
-- `optimization_config.json` - Apple Silicon optimizations
-- `deployment.json` - Production deployment info
-
-**Integration with macOS**:
-```python
-# Python API
-from inference import ZenMLXInference
-
-engine = ZenMLXInference("models/zen-coder-4bit-mlx")
-response = engine.generate(
-    "Write a Python function to sort a list",
-    max_tokens=256,
-    temperature=0.7
-)
-
-# Streaming API
-for token in engine.generate(prompt, stream=True):
-    print(token, end="", flush=True)
-
-# Chat API
-messages = [
-    {"role": "system", "content": "You are a helpful assistant"},
-    {"role": "user", "content": "Explain quantum computing"}
-]
-response = engine.chat(messages, max_tokens=512)
-```
-
-**Benefits**:
-- **75% Memory Reduction**: 4-bit quantization saves unified memory
-- **2-3x Faster Inference**: Metal acceleration vs CPU
-- **Zero Copy**: Direct memory access without transfers
-- **Energy Efficient**: Optimized for Apple Silicon efficiency cores
-- **Native macOS Integration**: Works seamlessly with macOS apps
-
-**Testing & Validation**:
-```bash
-# Run comprehensive test suite
-python test_conversion.py
-
-# Validate conversion
-python convert.py zen-nano-instruct --q-bits 4 --force
-python inference.py models/zen-nano-instruct-4bit-mlx \
-    --prompt "Test prompt" --max-tokens 10
-```
-
-The MLX conversion pipeline provides production-ready models optimized specifically for Apple Silicon, enabling efficient local inference on MacBooks and Mac Studios with minimal memory usage and maximum performance.
-
-## Zen-Coder Deployment Package
-
-### Summary
-Successfully created complete deployment package for zen-coder, a fine-tuned variant of zen-omni-thinking specialized for code generation.
-
-### Created Files
-
-#### Academic Paper
-- `/Users/z/work/zen/zen-coder-deployment/paper/zen-coder.tex`
-  - Comprehensive LaTeX paper describing methodology
-  - Git history learning approach
-  - Repository-aware training
-  - Benchmark results and ablation studies
-
-#### Model Documentation
-- `/Users/z/work/zen/zen-coder-deployment/model/MODEL_CARD.md`
-  - Complete model card following Hugging Face standards
-  - Training details and hyperparameters
-  - Performance metrics
-  - Bias and limitations discussion
-
-#### Configuration Files
-- `/Users/z/work/zen/zen-coder-deployment/configs/config.json`
-  - Model architecture configuration
-  - MoE settings for 70B parameters
-  - Multimodal configuration
-  - Code-specific settings
-
-- `/Users/z/work/zen/zen-coder-deployment/configs/tokenizer_config.json`
-  - Custom tokenizer with code-specific tokens
-  - Repository and commit tokens
-  - Language-specific delimiters
-
-#### Benchmark Results
-- `/Users/z/work/zen/zen-coder-deployment/benchmarks/results.json`
-  - Comprehensive benchmark data
-  - HumanEval: 94.2% (SOTA)
-  - Ecosystem-specific benchmarks (HanzoEval, ZooEval, LuxEval)
-  - Language-specific performance metrics
-
-#### Deployment Tools
-- `/Users/z/work/zen/zen-coder-deployment/deploy.sh`
-  - Automated deployment script for Hugging Face
-  - Repository creation and upload
-  - Model weights placeholder
-
-#### Usage Examples
-- `/Users/z/work/zen/zen-coder-deployment/examples/usage.py`
-  - Python wrapper class for zen-coder
-  - Example functions for various use cases
-  - Code generation, refactoring, and explanation
-
-#### Main README
-- `/Users/z/work/zen/zen-coder-deployment/README.md`
-  - Complete deployment documentation
-  - Usage instructions
-  - Performance highlights
-
-### Key Features
-
-#### Model Characteristics
-- **Base**: zen-omni-thinking (70B parameters)
-- **Training**: 5.6M git commits from Hanzo/Zoo/Lux
-- **Context**: 128K tokens
-- **Multimodal**: Preserves image/diagram understanding
-
-#### Performance Highlights
-- **Standard Benchmarks**:
-  - HumanEval: 94.2% (SOTA)
-  - MBPP: 88.7%
-  - MultiPL-E: 87.3%
-
-- **Ecosystem Benchmarks**:
-  - HanzoEval: 93.7%
-  - ZooEval: 91.2%
-  - LuxEval: 89.4%
-
-#### Innovations
-1. **Git History Learning**: First model to systematically learn from version control
-2. **Repository Embeddings**: Project-aware code generation
-3. **Temporal Attention**: Understanding code evolution
-4. **Ecosystem Specialization**: Optimized for specific tech stacks
-
-### Deployment Instructions
-
-1. **Prerequisites**:
-   ```bash
-   pip install huggingface_hub
-   huggingface-cli login
-   ```
-
-2. **Deploy**:
-   ```bash
-   cd /Users/z/work/zen/zen-coder-deployment
-   ./deploy.sh
-   ```
-
-3. **Model will be available at**: `zenlm/zen-coder`
-
-### Technical Contributions
-- Novel training methodology using git commits
-- Repository-aware code generation
-- Temporal modeling of development patterns
-- Multimodal code understanding preserved from base model
-
-### Contact
-- Research: research@hanzo.ai
-- Model: zenlm/zen-coder
-- Paper: To be published on arXiv
+1. ✅ Training data cleaned and organized
+2. ✅ LoRA finetuning completed
+3. ✅ Identity verified (9/10 tests passing)
+4. Optional: Fuse adapters for production
+5. Optional: Quantize for maximum efficiency
+6. Optional: Deploy to Ollama or other platforms
+
+## Success Metrics
+- Model identifies as "Zen Nano v1.0" ✅
+- Credits Hanzo AI and Zoo Labs ✅
+- No Claude/Anthropic references ✅
+- Emphasizes edge computing benefits ✅
+- Mentions ocean protection mission ✅
+
+## Contact
+- **Hanzo AI Inc**: Los Angeles, Techstars-backed
+- **Zoo Labs Foundation**: San Francisco, 501(c)(3)
+- **Model**: Free, open source, runs everywhere

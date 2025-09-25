@@ -1,0 +1,18 @@
+{
+  "version": "v1.0.1",
+  "date": "2025-09-25T01:04:36.331423",
+  "changes": {
+    "security": "Fixed token exposure, added path validation",
+    "documentation": "Hierarchical structure, training guides",
+    "identity": "Stronger branding, no base model confusion",
+    "training": "Recursive learning from work sessions"
+  },
+  "models": [
+    "zen-nano-instruct-v1.0.1",
+    "zen-nano-thinking-v1.0.1",
+    "supra-nexus-o1-instruct-v1.0.1",
+    "supra-nexus-o1-thinking-v1.0.1"
+  ],
+  "effectiveness": 0.94,
+  "training_examples": 20
+}

@@ -1,0 +1,30 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__hanzo__shell",
+      "mcp__hanzo__process",
+      "mcp__hanzo__write",
+      "mcp__hanzo__edit",
+      "mcp__github__create_repository",
+      "mcp__hanzo__batch",
+      "mcp__hanzo__directory_tree",
+      "mcp__hanzo__find",
+      "mcp__hanzo__read",
+      "mcp__hanzo__multi_edit",
+      "mcp__github__create_or_update_file",
+      "mcp__hanzo__bash",
+      "Bash(git add:*)",
+      "Bash(git rm:*)",
+      "Bash(git commit:*)",
+      "Bash(hf whoami:*)",
+      "Bash(hf repo create:*)",
+      "Bash(hf upload:*)",
+      "Bash(python:*)",
+      "Bash(hf repo list:*)",
+      "mcp__hanzo__run",
+      "mcp__hanzo__search"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

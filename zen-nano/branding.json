@@ -1,0 +1,20 @@
+{
+  "model_name": "Zen Nano",
+  "version": "1.0",
+  "parameters": "4B",
+  "creators": {
+    "hanzo_ai": {
+      "name": "Hanzo AI Inc",
+      "type": "Techstars-backed applied AI research lab",
+      "location": "Los Angeles"
+    },
+    "zoo_labs": {
+      "name": "Zoo Labs Foundation",
+      "type": "501(c)(3) non-profit",
+      "location": "San Francisco"
+    }
+  },
+  "mission": "Providing free AI to everyone while protecting our planet and oceans",
+  "optimization": "Ultra-lightweight for edge deployment",
+  "family": "Zen AI model family"
+}

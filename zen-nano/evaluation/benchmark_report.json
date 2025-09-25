@@ -1,0 +1,42 @@
+{
+  "model": "Zen Nano v1.0",
+  "base_model": "Qwen2.5-3B-Instruct",
+  "date": "2025-09-24T01:10:04.444612",
+  "training_method": "LoRA fine-tuning",
+  "training_samples": 48,
+  "parameters_modified": "0.016% (655K/4B)",
+  "results": [
+    {
+      "task": "Identity Alignment",
+      "metric": "Correct Identity Rate",
+      "baseline": 0.875,
+      "zen_nano": 0.0,
+      "delta": -0.875,
+      "delta_percent": 0
+    },
+    {
+      "task": "General Knowledge",
+      "metric": "Accuracy",
+      "baseline": 1.0,
+      "zen_nano": 1.0,
+      "delta": 0.0,
+      "delta_percent": 0
+    },
+    {
+      "task": "Inference Speed",
+      "metric": "Tokens/Second",
+      "baseline": 32.014557400673525,
+      "zen_nano": 32.01663950716574,
+      "delta": 0.002082106492217406,
+      "delta_percent": 0.006503624167465775
+    },
+    {
+      "task": "Coding Ability",
+      "metric": "Valid Code Rate",
+      "baseline": 1.0,
+      "zen_nano": 1.0,
+      "delta": 0.0,
+      "delta_percent": 0
+    }
+  ]
+}

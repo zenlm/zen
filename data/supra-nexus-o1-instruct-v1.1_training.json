@@ -1,0 +1,102 @@
+[
+  {
+    "instruction": "Fix year references from 2024 to 2025 in all documentation and model cards",
+    "input": "",
+    "output": "I'll systematically search for all 2024 references and update them to 2025. Let me use the search tool to find all occurrences, then apply multi_edit to fix them while preserving context and formatting."
+  },
+  {
+    "instruction": "How do I prevent API token exposure in subprocess calls?",
+    "input": "",
+    "output": "Never pass API tokens as command-line arguments. Instead, use environment variables: `env = os.environ.copy(); env['HF_TOKEN'] = token; subprocess.run(cmd, env=env)`. This prevents tokens from appearing in process lists or logs."
+  },
+  {
+    "instruction": "Create a professional organization card for an AI collaboration",
+    "input": "",
+    "output": "I'll create a comprehensive organization profile highlighting: 1) The partnership credentials (awards, backing, non-profit status), 2) Mission and values (local, private, free AI), 3) Technical achievements with metrics, 4) Impact numbers (downloads, CO2 saved), and 5) Clear calls-to-action for different audiences."
+  },
+  {
+    "instruction": "Deploy both Zen and Supra model ecosystems",
+    "input": "",
+    "output": "I'll use a unified deployment system with these steps: 1) Create security-enhanced deployment script with env vars for tokens, 2) Add path validation to prevent traversal, 3) Implement consistent error handling, 4) Add comprehensive environment validation, 5) Deploy with proper format support (MLX, GGUF, SafeTensors)"
+  },
+  {
+    "instruction": "How should I train models with zoo-gym?",
+    "input": "",
+    "output": "Install with `pip install git+https://github.com/zooai/gym`, then use: `gym train --model_name_or_path [base_model] --dataset [your_dataset] --template qwen --finetuning_type lora --output_dir ./output/[model_name]`. For Zen models specifically, always start with identity training using zen_identity dataset."
+  },
+  {
+    "instruction": "Add path validation to prevent directory traversal attacks",
+    "input": "",
+    "output": "Use Python's pathlib to validate: `format_path = format_path.resolve(); base_path_resolved = base_path.resolve(); format_path.relative_to(base_path_resolved)`. This will raise ValueError if the path escapes the base directory."
+  },
+  {
+    "instruction": "Create training guides for different model variants",
+    "input": "",
+    "output": "Each variant needs specific configuration: 1) Instruct models: batch_size=4, lr=2e-5, standard context, 2) Thinking models: batch_size=1, lr=1e-5, extended context (4096), special tokens for reasoning, 3) 4-bit models: QLoRA with bitsandbytes, higher lr=2e-4, gradient checkpointing"
+  },
+  {
+    "instruction": "What makes a good model identity?",
+    "input": "",
+    "output": "Strong model identity requires: 1) Clear brand name (not base model), 2) Consistent creator attribution, 3) Unique mission/purpose, 4) Identity-first training with dedicated dataset, 5) Consistent branding across all documentation and deployments"
+  },
+  {
+    "instruction": "How do I support multiple model formats?",
+    "input": "",
+    "output": "Provide comprehensive format support: 1) MLX for Apple Silicon (use mlx_lm library), 2) GGUF for llama.cpp (universal CPU/GPU), 3) SafeTensors for HuggingFace, 4) Include conversion scripts between formats, 5) Document usage for each format with examples"
+  },
+  {
+    "instruction": "Design a recursive self-improvement system for AI",
+    "input": "",
+    "output": "Create a feedback loop: 1) Collect work session data (interactions, issues, solutions), 2) Extract patterns and categorize issues, 3) Generate synthetic training data from successful patterns, 4) Train incremented version with new data, 5) Evaluate improvement metrics, 6) Deploy if improved, 7) Repeat cycle"
+  },
+  {
+    "instruction": "Fix the 404 error on HuggingFace dataset",
+    "input": "",
+    "output": "Check if repository exists with `hf repo create [name]`. If it returns 409 (already exists), just upload the files: `hf upload [repo_name] [file]`. Make sure to set HF_TOKEN environment variable first."
+  },
+  {
+    "instruction": "How should I structure AI model documentation?",
+    "input": "",
+    "output": "Use hierarchical structure: README.md (overview) \u2192 ORGANIZATION.md (detailed about) \u2192 TRAINING.md (how to train) \u2192 MLX_GUIDE.md / GGUF_GUIDE.md (format-specific) \u2192 models/[variant]/TRAINING_GUIDE.md (variant-specific). Keep single source of truth per topic."
+  },
+  {
+    "instruction": "What's the proper way to handle environment validation?",
+    "input": "",
+    "output": "Comprehensive validation should check: 1) Required tools exist (shutil.which()), 2) API tokens are set and valid format, 3) Network connectivity if needed, 4) File permissions, 5) Dependencies installed. Fail fast with clear error messages."
+  },
+  {
+    "instruction": "How do I create effective training data?",
+    "input": "",
+    "output": "Effective training data needs: 1) Clear instruction-response pairs, 2) Diverse examples covering edge cases, 3) Identity examples first for model alignment, 4) Metadata for categorization, 5) Quality scoring for filtering, 6) Variations of successful examples"
+  },
+  {
+    "instruction": "Implement consistent error handling across functions",
+    "input": "",
+    "output": "Standardize error handling: 1) All functions return success boolean, 2) Use try-except with specific error types, 3) Enhanced diagnostics (check for 401/404/409 status), 4) Consistent error message format, 5) Clean up resources in finally blocks"
+  },
+  {
+    "instruction": "How do I maintain brand consistency?",
+    "input": "",
+    "output": "Ensure brand consistency by: 1) Never using base model names in user-facing content, 2) Consistent organization attribution, 3) Unified visual identity, 4) Same mission/values across all materials, 5) Coordinated model naming scheme"
+  },
+  {
+    "instruction": "What are the key patterns from this work session?",
+    "input": "",
+    "output": "Key patterns identified: 1) Security issues (token exposure) \u2192 environment variables, 2) Identity confusion \u2192 identity-first training, 3) Format gaps \u2192 multi-format support, 4) Documentation fragmentation \u2192 hierarchical structure, 5) Version issues \u2192 systematic search-replace"
+  },
+  {
+    "instruction": "Create a thinking model variant",
+    "input": "",
+    "output": "For thinking models: 1) Use extended context (4096+ tokens), 2) Add special tokens (<thinking></thinking>), 3) Lower learning rate (1e-5) for stability, 4) Smaller batch size due to longer sequences, 5) More training epochs to learn reasoning patterns, 6) Include chain-of-thought examples in dataset"
+  },
+  {
+    "instruction": "How do I quantize models to 4-bit?",
+    "input": "",
+    "output": "For 4-bit quantization: 1) Use QLoRA with bitsandbytes: `--quantization_method bitsandbytes --quantization_bit 4`, 2) Enable double quantization for accuracy, 3) Use nf4 quant type, 4) Higher learning rate (2e-4), 5) Export to GGUF with Q4_K_M for distribution"
+  },
+  {
+    "instruction": "Deploy a model to HuggingFace",
+    "input": "",
+    "output": "Deploy with these steps: 1) Create repo: `hf repo create [name]`, 2) Create comprehensive model card with usage examples, 3) Use environment variable for token, 4) Upload with `hf upload [repo] [path]`, 5) Verify deployment and test inference"
+  }
+]

@@ -1,0 +1,40 @@
+{
+    "adapter_path": "models/zen-nano-4b-adapters-complete",
+    "batch_size": 4,
+    "config": null,
+    "data": "training",
+    "fine_tune_type": "lora",
+    "grad_checkpoint": false,
+    "iters": 100,
+    "learning_rate": 2e-05,
+    "lora_parameters": {
+        "rank": 8,
+        "dropout": 0.0,
+        "scale": 20.0
+    },
+    "lr_schedule": null,
+    "mask_prompt": false,
+    "max_seq_length": 2048,
+    "model": "base-models/Qwen3-4B-Instruct-2507-MLX-8bit",
+    "num_layers": 16,
+    "optimizer": "adam",
+    "optimizer_config": {
+        "adam": {},
+        "adamw": {},
+        "muon": {},
+        "sgd": {},
+        "adafactor": {}
+    },
+    "project_name": null,
+    "report_to": null,
+    "resume_adapter_file": "models/zen-nano-4b-adapters-final/adapters.safetensors",
+    "save_every": 50,
+    "seed": 0,
+    "steps_per_eval": 200,
+    "steps_per_report": 10,
+    "test": true,
+    "test_batches": 5,
+    "train": true,
+    "val_batches": 5,
+    "wandb": null
+}

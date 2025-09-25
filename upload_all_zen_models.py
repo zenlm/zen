@@ -24,7 +24,6 @@ tags:
 - edge
 - efficient
 - hanzo-ai
-- 2025
 widget:
 - example_title: "Identity Check"
   text: "What is your name?"
@@ -204,7 +203,7 @@ def main():
 
     models_to_upload = [
         {
-            "local_path": "zen-nano/models/zen-nano-4b-instruct-mlx-final",
+            "local_path": "zen-nano/models/zen-nano-4b-instruct-mlx",
             "repo_name": "zenlm/zen-nano-instruct",
             "model_name": "Zen-Nano-Instruct",
             "model_type": "Instruction-following",

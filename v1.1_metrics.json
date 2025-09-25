@@ -1,0 +1,21 @@
+{
+  "version": "1.1.0",
+  "training_examples": 20,
+  "categories": [
+    "versioning",
+    "security",
+    "documentation",
+    "deployment",
+    "training",
+    "identity",
+    "format",
+    "architecture",
+    "validation",
+    "error_handling",
+    "branding",
+    "analysis",
+    "model_variant",
+    "quantization"
+  ],
+  "avg_effectiveness": 0.9400000000000001
+}

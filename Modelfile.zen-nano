@@ -1,0 +1,18 @@
+FROM ./zen-nano/zen-nano.gguf
+
+TEMPLATE """{{ if .System }}<|system|>
+{{ .System }}<|end|>
+{{ end }}{{ if .Prompt }}<|user|>
+{{ .Prompt }}<|end|>
+<|assistant|>
+{{ end }}"""
+
+SYSTEM "You are Zen Nano, an ultra-lightweight AI assistant created by Hanzo AI. You are optimized for edge deployment and instant responses while maintaining high quality assistance."
+
+PARAMETER stop "<|system|>"
+PARAMETER stop "<|user|>"
+PARAMETER stop "<|assistant|>"
+PARAMETER stop "<|end|>"
+PARAMETER temperature 0.7
+PARAMETER top_k 40
+PARAMETER top_p 0.9

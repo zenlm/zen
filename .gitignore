@@ -3,105 +3,75 @@ __pycache__/
 *.py[cod]
 *$py.class
 *.so
-*.egg
-*.egg-info/
-dist/
-build/
-.pytest_cache/
-.coverage
-htmlcov/
-.tox/
-.hypothesis/
-
-# Virtual Environments
-zen_venv/
-venv/
-ENV/
+.Python
 env/
+venv/
+*_venv/
+ENV/
 
-# ML/Model files (too large for git)
+# Virtual environments
+axolotl_venv/
+zen_venv/
+mlx_venv/
+
+# Model outputs
+*.gguf
 *.safetensors
 *.bin
-*.pth
 *.pt
-*.ckpt
+*.pth
 *.onnx
-*.pb
-*.h5
-*.tflite
-*.mlmodel
 
-# GGUF files
-*.gguf
-*.ggml
-
-# Model weights directories
+# Large model directories
 base-models/
-*/model-*.safetensors
-*/pytorch_model*.bin
-qwen3-omni-*/
-qwen3-omni-30b-*/
+qwen3-omni-30b*/
+*-30b-*/
+
+# Checkpoints
+checkpoints/
+*/checkpoint-*/
+*.ckpt
 
 # Cache
 .cache/
 *.cache
-hub/
-huggingface/
+__pycache__/
 
 # IDE
-.vscode/
 .idea/
+.vscode/
 *.swp
 *.swo
 .DS_Store
 
+# Build
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
 # Logs
 *.log
 logs/
-wandb/
-runs/
 
-# Temporary
-tmp/
-temp/
+# Temporary files
 *.tmp
-
-# Large data files
-*.jsonl
-*.csv
-*.tsv
-*.parquet
-data/large/
-
-# Notebooks
-.ipynb_checkpoints/
-
-# Documentation build
-docs/_build/
-*.pdf
-!papers/*.pdf
-
-# Test outputs
-test_output/
-test_results/
-
-# Node modules (if any)
-node_modules/
-
-# Environment variables
-.env
-.env.local
-
-# Mac
-.DS_Store
-.AppleDouble
-.LSOverride
-
-# Windows
-Thumbs.db
-ehthumbs.db
-Desktop.ini
-
-# Linux
+*.bak
+*.backup
 *~
-.directory
+
+# Data files (keep only in data/)
+*.jsonl
+*.json
+!**/config.json
+!**/tokenizer_config.json
+!**/adapter_config.json
+
+# Supra references (cleanup)
+*supra*
+*SUPRA*

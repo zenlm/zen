@@ -19,15 +19,9 @@ models = [
         "description": "v1.0.1: Improved reasoning with session insights"
     },
     {
-        "name": "supra-nexus-o1-instruct-v1.0.1",
-        "repo": "Supra-Nexus/supra-nexus-o1-instruct",
-        "path": "~/work/zoo/gym/models/supra-nexus-o1-instruct-v1.0.1",
         "description": "v1.0.1: Enhanced O1 capabilities from recursive training"
     },
     {
-        "name": "supra-nexus-o1-thinking-v1.0.1",
-        "repo": "Supra-Nexus/supra-nexus-o1-thinking",
-        "path": "~/work/zoo/gym/models/supra-nexus-o1-thinking-v1.0.1",
         "description": "v1.0.1: Advanced reasoning with recursive improvements"
     }
 ]
@@ -99,12 +93,12 @@ model, tokenizer = load("{model['repo']}")
 ## Citation
 
 ```bibtex
-@misc{zen_supra_v1_1_2025,
-    title={Model v1.0.1: Recursive Self-Improvement Release},
-    author={Zen/Supra Teams},
-    year={2025},
-    version={1.0.1}
-}
+@misc{{zen_v1_0_1_2025,
+    title={{Model v1.0.1: Recursive Self-Improvement Release}},
+    author={{Zen/Supra Teams}},
+    year={{2025}},
+    version={{1.0.1}}
+}}
 ```
 '''
     

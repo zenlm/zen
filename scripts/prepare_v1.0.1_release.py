@@ -58,11 +58,9 @@ This release introduces our groundbreaking Recursive AI Self-Improvement System 
    - Better reasoning from session insights
    - Enhanced problem-solving patterns
 
-3. **supra-nexus-o1-instruct-v1.0.1**
    - O1-level capabilities with recursive improvements
    - Qwen3 architecture optimizations
 
-4. **supra-nexus-o1-thinking-v1.0.1**
    - Advanced reasoning with learned patterns
    - Multi-step problem solving enhancements
 
@@ -129,8 +127,6 @@ def create_model_cards():
     models = [
         ("zen-nano-instruct", "zenlm"),
         ("zen-nano-thinking", "zenlm"),
-        ("supra-nexus-o1-instruct", "Supra-Nexus"),
-        ("supra-nexus-o1-thinking", "Supra-Nexus")
     ]
 
     for model_name, org in models:
@@ -162,7 +158,7 @@ Enhanced with Recursive AI Self-Improvement System (RAIS)
 ## Model Details
 
 - **Version**: 1.0.1
-- **Base Architecture**: {"Qwen3" if "supra" in model_name else "Qwen2.5"}
+- **Base Architecture**: Qwen2.5
 - **Training Method**: Recursive learning from work sessions
 - **Effectiveness**: 94% improvement rate
 
@@ -218,8 +214,6 @@ def create_version_tags():
         "models": [
             "zen-nano-instruct-v1.0.1",
             "zen-nano-thinking-v1.0.1",
-            "supra-nexus-o1-instruct-v1.0.1",
-            "supra-nexus-o1-thinking-v1.0.1"
         ],
         "effectiveness": 0.94,
         "training_examples": 20

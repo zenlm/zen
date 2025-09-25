@@ -46,14 +46,10 @@ status:
 	@echo "  • zen-nano-thinking-4bit"
 	@echo "  • zen-identity (dataset)"
 	@echo ""
-	@echo "$(GREEN)Supra Nexus Models (Supra-Nexus):$(NC)"
-	@echo "  • supra-nexus-o1-thinking"
-	@echo "  • supra-nexus-o1-instruct"
 	@echo ""
 	@echo "$(BLUE)Checking live status...$(NC)"
 	@$(PYTHON) -c "import requests; \
 		zen_models = ['zen-nano-instruct', 'zen-nano-instruct-4bit', 'zen-nano-thinking', 'zen-nano-thinking-4bit']; \
-		supra_models = ['supra-nexus-o1-thinking', 'supra-nexus-o1-instruct']; \
 		print('\nZen Nano:'); \
 		for m in zen_models: \
 			r = requests.head(f'https://huggingface.co/zenlm/{m}', allow_redirects=True); \
@@ -61,7 +57,6 @@ status:
 			print(f'  {status} {m}'); \
 		print('\nSupra Nexus:'); \
 		for m in supra_models: \
-			r = requests.head(f'https://huggingface.co/Supra-Nexus/{m}', allow_redirects=True); \
 			status = '✅' if r.status_code == 200 else '❌'; \
 			print(f'  {status} {m}')" 2>/dev/null || echo "$(RED)Unable to check live status$(NC)"
 
@@ -103,9 +98,7 @@ verify:
 	done
 	@echo ""
 	@echo "$(YELLOW)Supra Nexus Models:$(NC)"
-	@for model in supra-nexus-o1-thinking supra-nexus-o1-instruct; do \
 		echo -n "  Checking $$model... "; \
-		curl -s -o /dev/null -w "%{http_code}" https://huggingface.co/Supra-Nexus/$$model | \
 		awk '{if($$1=="200") print "$(GREEN)✅ Live$(NC)"; else print "$(RED)❌ Not found$(NC)"}'; \
 	done
 
@@ -135,4 +128,3 @@ format-support: mlx-support gguf-support
 
 quick-status:
 	@echo "Zen: https://huggingface.co/zenlm"
-	@echo "Supra: https://huggingface.co/Supra-Nexus"

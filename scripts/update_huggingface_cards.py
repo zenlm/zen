@@ -60,8 +60,6 @@ Built by **Hanzo AI** (Techstars-backed) and **Zoo Labs Foundation** (501(c)(3) 
     models = [
         ("zenlm/zen-nano-instruct", "Zen Nano Instruct"),
         ("zenlm/zen-nano-thinking", "Zen Nano Thinking"),
-        ("Supra-Nexus/supra-nexus-o1-instruct", "Supra Nexus O1 Instruct"),
-        ("Supra-Nexus/supra-nexus-o1-thinking", "Supra Nexus O1 Thinking")
     ]
 
     for repo_id, name in models:
@@ -106,7 +104,7 @@ This model supports fine-tuning with [zoo-gym](https://github.com/zooai/gym).
 ## Citation
 
 ```bibtex
-@misc{{zen_supra_v1_0_1_2025,
+@misc{{zen_v1_0_1_2025,
     title={{{name} v1.0.1: Recursive Self-Improvement}},
     year={{2025}},
     version={{1.0.1}}

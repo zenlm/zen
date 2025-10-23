@@ -87,6 +87,24 @@ header {
     margin-bottom: 0.25rem;
 }
 
+.logo-links {
+    display: flex;
+    gap: 0.75rem;
+    margin-left: 0.5rem;
+}
+
+.icon-link {
+    color: var(--text);
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+}
+
+.icon-link:hover {
+    color: var(--primary);
+    transform: translateY(-2px);
+}
+
 .tagline {
     font-size: 0.875rem;
     color: var(--text-muted);

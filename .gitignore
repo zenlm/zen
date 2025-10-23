@@ -1,85 +1,67 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
 # Python
 __pycache__/
 *.py[cod]
 *$py.class
 *.so
 .Python
-env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
 venv/
-*_venv/
+env/
 ENV/
 
-# Virtual environments
-axolotl_venv/
-zen_venv/
-mlx_venv/
+# Jupyter Notebook
+.ipynb_checkpoints
 
-# Model outputs
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Model files - should be in parent directory
+models/
+training/
+scripts/
+evaluations/
+tools/
+datasets/
+quantizations/
+zen-*/
 *.gguf
 *.safetensors
 *.bin
 *.pt
 *.pth
-*.onnx
 
-# Large model directories
-base-models/
-qwen3-omni-30b*/
-*-30b-*/
-
-# Checkpoints
-checkpoints/
-*/checkpoint-*/
-*.ckpt
-
-# Cache
-.cache/
-*.cache
-__pycache__/
-
-# IDE
-.idea/
-.vscode/
-*.swp
-*.swo
-.DS_Store
-
-# Build
-build/
-dist/
-*.egg-info/
-.eggs/
-
-# Testing
-.pytest_cache/
-.coverage
-htmlcov/
-
-# Logs
+# Build artifacts
+*.pyc
+*.pyo
 *.log
-logs/
 
-# Temporary files
-*.tmp
-*.bak
-*.backup
-*~
+# Git submodules - should be in parent directory
+llama.cpp/
+zen/
 
-# Data files (keep only in data/)
-*.jsonl
-*.json
-!**/config.json
-!**/tokenizer_config.json
-!**/adapter_config.json
-
-# Supra references (cleanup)
-*supra*
-*SUPRA*
-
-
-
-AGENTS.md
-CLAUDE.md
-GEMINI.md
-GROK.md
-QWEN.md
+# Documentation artifacts
+node_modules/
+package-lock.json

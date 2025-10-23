@@ -1,0 +1,1142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Zen AI - Comprehensive family of next-generation language models built on Qwen3 architecture">
+    <meta name="keywords" content="AI, LLM, Language Models, Qwen3, Machine Learning, Multimodal AI, Code Generation, Vision Models">
+    <title>Zen AI - Next-Generation Language Models</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <img src="assets/logo.png" alt="Zen AI" class="logo-img">
+                    <div class="logo-text">
+                        <h1>禅 Zen AI</h1>
+                        <p class="tagline">Clarity Through Intelligence</p>
+                    </div>
+                </div>
+                <div class="nav-links">
+                    <a href="#core-models">Core Models</a>
+                    <a href="#multimodal">Multimodal</a>
+                    <a href="#specialized">Specialized</a>
+                    <a href="#infrastructure">Infrastructure</a>
+                    <a href="https://github.com/zenlm" target="_blank">GitHub</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h2 class="hero-title">The Zen AI Ecosystem</h2>
+                <p class="hero-subtitle">Open-source multimodal foundation models for research and production</p>
+                <p class="hero-description">
+                    A comprehensive family of AI models spanning language, vision, audio, video, 3D, and specialized tasks.
+                    From efficient edge deployment to powerful cloud inference, Zen models deliver state-of-the-art performance
+                    with complete transparency, reproducible research, and permissive licensing.
+                </p>
+                <div class="hero-cta">
+                    <a href="#core-models" class="btn btn-primary">Explore Models</a>
+                    <a href="https://huggingface.co/zenlm" class="btn btn-secondary" target="_blank">HuggingFace</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Core Language Models -->
+        <section id="core-models" class="models-section">
+            <div class="container">
+                <h2 class="section-title">Core Language Models</h2>
+                <p class="section-subtitle">Foundational models from nano to next-gen</p>
+
+                <div class="models-grid">
+                    <!-- zen-nano -->
+                    <div class="model-card complete">
+                        <div class="model-header">
+                            <h3>zen-nano</h3>
+                            <span class="badge badge-complete">Available</span>
+                        </div>
+                        <div class="model-specs">
+                            <div class="spec">
+                                <span class="spec-label">Parameters</span>
+                                <span class="spec-value">0.6B</span>
+                            </div>
+                            <div class="spec">
+                                <span class="spec-label">Base</span>
+                                <span class="spec-value">Qwen3-0.6B</span>
+                            </div>
+                            <div class="spec">
+                                <span class="spec-label">Context</span>
+                                <span class="spec-value">32K tokens</span>
+                            </div>
+                            <div class="spec">
+                                <span class="spec-label">Architecture</span>
+                                <span class="spec-value">28 layers, GQA</span>
+                            </div>
+                        </div>
+                        <p class="model-description">
+                            Ultra-efficient model for edge deployment and embedded systems.
+                            Perfect for on-device AI applications with minimal resource requirements.
+                        </p>
+                        <div class="model-formats">
+                            <span class="format-tag">SafeTensors</span>
+                            <span class="format-tag">GGUF</span>
+                            <span class="format-tag">MLX</span>
+                        </div>
+                        <div class="model-actions">
+                            <a href="https://huggingface.co/zenlm/zen-nano" class="btn btn-sm btn-primary" target="_blank">
+                                HuggingFace
+                            </a>
+                            <a href="https://github.com/zenlm/zen-nano" class="btn btn-sm btn-secondary" target="_blank">
+                                GitHub
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- zen-eco -->
+                    <div class="model-card complete">
+                        <div class="model-header">
+                            <h3>zen-eco</h3>
+                            <span class="badge badge-complete">Available</span>
+                        </div>
+                        <div class="model-specs">
+                            <div class="spec">
+                                <span class="spec-label">Parameters</span>
+                                <span class="spec-value">4B</span>
+                            </div>
+                            <div class="spec">
+                                <span class="spec-label">Base</span>
+                                <span class="spec-value">Qwen3-3B</span>
+                            </div>
+                            <div class="spec">
+                                <span class="spec-label">Context</span>
+                                <span class="spec-value">32K tokens</span>
+                            </div>
+                            <div class="spec">
+                                <span class="spec-label">Variants</span>
+                                <span class="spec-value">Instruct, Agent, Coder, Thinking</span>
+                            </div>
+                        </div>
+                        <p class="model-description">
+                            Balanced performance and efficiency for general-purpose applications.
+                            Multiple specialized variants for different use cases.
+                        </p>
+                        <div class="model-formats">
+                            <span class="format-tag">SafeTensors</span>
+                            <span class="format-tag">GGUF</span>
+                            <span class="format-tag">MLX</span>
+                        </div>
+                        <div class="model-actions">
+                            <a href="https://huggingface.co/zenlm/zen-eco" class="btn btn-sm btn-primary" target="_blank">
+                                HuggingFace
+                            </a>
+                            <a href="https://github.com/zenlm/zen-eco" class="btn btn-sm btn-secondary" target="_blank">
+                                GitHub
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- zen-omni -->
+                    <div class="model-card complete">
+                        <div class="model-header">
+                            <h3>zen-omni</h3>
+                            <span class="badge badge-complete">Available</span>
+                        </div>
+                        <div class="model-specs">
+                            <div class="spec">
+                                <span class="spec-label">Parameters</span>
+                                <span class="spec-value">7B</span>
+                            </div>
+                            <div class="spec">
+                                <span class="spec-label">Base</span>
+                                <span class="spec-value">Qwen3-7B</span>
+                            </div>
+                            <div class="spec">
+                                <span class="spec-label">Context</span>
+                                <span class="spec-value">32K tokens</span>
+                            </div>
+                            <div class="spec">
+                                <span class="spec-label">Focus</span>
+                                <span class="spec-value">Multi-task</span>
+                            </div>
+                        </div>
+                        <p class="model-description">
+                            Versatile model for diverse applications including reasoning,
+                            creative writing, and complex analysis.
+                        </p>
+                        <div class="model-formats">
+                            <span class="format-tag">SafeTensors</span>
+                            <span class="format-tag">GGUF</span>
+                            <span class="format-tag">MLX</span>
+                        </div>
+                        <div class="model-actions">
+                            <a href="https://huggingface.co/zenlm/zen-omni" class="btn btn-sm btn-primary" target="_blank">
+                                HuggingFace
+                            </a>
+                            <a href="https://github.com/zenlm/zen-omni" class="btn btn-sm btn-secondary" target="_blank">
+                                GitHub
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- zen-pro -->
+                    <div class="model-card complete">
+                        <div class="model-header">
+                            <h3>zen-pro</h3>
+                            <span class="badge badge-complete">Available</span>
+                        </div>
+                        <div class="model-specs">
+                            <div class="spec">
+                                <span class="spec-label">Parameters</span>
+                                <span class="spec-value">7B</span>
+                            </div>
+                            <div class="spec">
+                                <span class="spec-label">Base</span>
+                                <span class="spec-value">Qwen2.5-7B</span>
+                            </div>
+                            <div class="spec">
+                                <span class="spec-label">Variants</span>
+                                <span class="spec-value">Instruct, Agent, Thinking</span>
+                            </div>
+                            <div class="spec">
+                                <span class="spec-label">Focus</span>
+                                <span class="spec-value">Professional</span>
+                            </div>
+                        </div>
+                        <p class="model-description">
+                            Professional-grade model with specialized variants for instruction following,
+                            agentic workflows, and deep reasoning.
+                        </p>
+                        <div class="model-formats">
+                            <span class="format-tag">SafeTensors</span>
+                            <span class="format-tag">GGUF</span>
+                        </div>
+                        <div class="model-actions">
+                            <a href="https://github.com/zenlm/zen-pro" class="btn btn-sm btn-secondary" target="_blank">
+                                GitHub
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- zen-coder -->
+                    <div class="model-card complete">
+                        <div class="model-header">
+                            <h3>zen-coder</h3>
+                            <span class="badge badge-complete">Available</span>
+                        </div>
+                        <div class="model-specs">
+                            <div class="spec">
+                                <span class="spec-label">Parameters</span>
+                                <span class="spec-value">14B</span>
+                            </div>
+                            <div class="spec">
+                                <span class="spec-label">Base</span>
+                                <span class="spec-value">Qwen3-Coder-14B</span>
+                            </div>
+                            <div class="spec">
+                                <span class="spec-label">Context</span>
+                                <span class="spec-value">128K tokens</span>
+                            </div>
+                            <div class="spec">
+                                <span class="spec-label">Focus</span>
+                                <span class="spec-value">Code Generation</span>
+                            </div>
+                        </div>
+                        <p class="model-description">
+                            Specialized for code generation, debugging, and software engineering tasks.
+                            Supports 100+ programming languages with extended context.
+                        </p>
+                        <div class="model-formats">
+                            <span class="format-tag">SafeTensors</span>
+                            <span class="format-tag">GGUF</span>
+                            <span class="format-tag">MLX</span>
+                        </div>
+                        <div class="model-actions">
+                            <a href="https://huggingface.co/zenlm/zen-coder" class="btn btn-sm btn-primary" target="_blank">
+                                HuggingFace
+                            </a>
+                            <a href="https://github.com/zenlm/zen-coder" class="btn btn-sm btn-secondary" target="_blank">
+                                GitHub
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- zen-next -->
+                    <div class="model-card complete">
+                        <div class="model-header">
+                            <h3>zen-next</h3>
+                            <span class="badge badge-complete">Available</span>
+                        </div>
+                        <div class="model-specs">
+                            <div class="spec">
+                                <span class="spec-label">Parameters</span>
+                                <span class="spec-value">32B</span>
+                            </div>
+                            <div class="spec">
+                                <span class="spec-label">Base</span>
+                                <span class="spec-value">Qwen3-32B</span>
+                            </div>
+                            <div class="spec">
+                                <span class="spec-label">Context</span>
+                                <span class="spec-value">32K tokens</span>
+                            </div>
+                            <div class="spec">
+                                <span class="spec-label">Focus</span>
+                                <span class="spec-value">Frontier</span>
+                            </div>
+                        </div>
+                        <p class="model-description">
+                            Our flagship model pushing the boundaries of performance and capability.
+                            For the most demanding applications requiring maximum intelligence.
+                        </p>
+                        <div class="model-formats">
+                            <span class="format-tag">SafeTensors</span>
+                            <span class="format-tag">GGUF</span>
+                        </div>
+                        <div class="model-actions">
+                            <a href="https://github.com/zenlm/zen-next" class="btn btn-sm btn-secondary" target="_blank">
+                                GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Multimodal Models -->
+        <section id="multimodal" class="models-section">
+            <div class="container">
+                <h2 class="section-title">Multimodal Models</h2>
+                <p class="section-subtitle">Vision, Audio, Video, and 3D Generation</p>
+
+                <div class="models-grid">
+                    <!-- zen-designer -->
+                    <div class="model-card complete">
+                        <div class="model-header">
+                            <h3>zen-designer</h3>
+                            <span class="badge badge-complete">Available</span>
+                        </div>
+                        <div class="model-specs">
+                            <div class="spec">
+                                <span class="spec-label">Type</span>
+                                <span class="spec-value">Vision-Language</span>
+                            </div>
+                            <div class="spec">
+                                <span class="spec-label">Base</span>
+                                <span class="spec-value">Qwen-VL</span>
+                            </div>
+                            <div class="spec">
+                                <span class="spec-label">Variants</span>
+                                <span class="spec-value">Instruct, Thinking</span>
+                            </div>
+                            <div class="spec">
+                                <span class="spec-label">Focus</span>
+                                <span class="spec-value">Visual Understanding</span>
+                            </div>
+                        </div>
+                        <p class="model-description">
+                            Advanced vision-language model for image understanding, analysis, and reasoning.
+                            Supports visual question answering, OCR, and detailed scene description.
+                        </p>
+                        <div class="model-formats">
+                            <span class="format-tag">SafeTensors</span>
+                        </div>
+                        <div class="model-actions">
+                            <a href="https://github.com/zenlm/zen-designer" class="btn btn-sm btn-secondary" target="_blank">
+                                GitHub
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- zen-artist -->
+                    <div class="model-card complete">
+                        <div class="model-header">
+                            <h3>zen-artist</h3>
+                            <span class="badge badge-complete">Available</span>
+                        </div>
+                        <div class="model-specs">
+                            <div class="spec">
+                                <span class="spec-label">Type</span>
+                                <span class="spec-value">Text-to-Image</span>
+                            </div>
+                            <div class="spec">
+                                <span class="spec-label">Base</span>
+                                <span class="spec-value">Qwen-Image</span>
+                            </div>
+                            <div class="spec">
+                                <span class="spec-label">Variants</span>
+                                <span class="spec-value">Base, Edit</span>
+                            </div>
+                            <div class="spec">
+                                <span class="spec-label">Focus</span>
+                                <span class="spec-value">Image Generation</span>
+                            </div>
+                        </div>
+                        <p class="model-description">
+                            High-quality image generation from text descriptions. zen-artist-edit provides
+                            advanced image editing capabilities with natural language instructions.
+                        </p>
+                        <div class="model-formats">
+                            <span class="format-tag">SafeTensors</span>
+                            <span class="format-tag">Diffusers</span>
+                        </div>
+                        <div class="model-actions">
+                            <a href="https://github.com/zenlm/zen-artist" class="btn btn-sm btn-secondary" target="_blank">
+                                GitHub
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- zen-video -->
+                    <div class="model-card complete">
+                        <div class="model-header">
+                            <h3>zen-video</h3>
+                            <span class="badge badge-complete">Available</span>
+                        </div>
+                        <div class="model-specs">
+                            <div class="spec">
+                                <span class="spec-label">Type</span>
+                                <span class="spec-value">Text-to-Video</span>
+                            </div>
+                            <div class="spec">
+                                <span class="spec-label">Base</span>
+                                <span class="spec-value">HunyuanVideo</span>
+                            </div>
+                            <div class="spec">
+                                <span class="spec-label">Variants</span>
+                                <span class="spec-value">T2V, I2V</span>
+                            </div>
+                            <div class="spec">
+                                <span class="spec-label">Focus</span>
+                                <span class="spec-value">Video Generation</span>
+                            </div>
+                        </div>
+                        <p class="model-description">
+                            State-of-the-art video generation from text descriptions. zen-video-i2v provides
+                            image-to-video generation with fine control over motion and dynamics.
+                        </p>
+                        <div class="model-formats">
+                            <span class="format-tag">SafeTensors</span>
+                        </div>
+                        <div class="model-actions">
+                            <a href="https://github.com/zenlm/zen-video" class="btn btn-sm btn-secondary" target="_blank">
+                                GitHub
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- zen-3d -->
+                    <div class="model-card complete">
+                        <div class="model-header">
+                            <h3>zen-3d</h3>
+                            <span class="badge badge-complete">Available</span>
+                        </div>
+                        <div class="model-specs">
+                            <div class="spec">
+                                <span class="spec-label">Type</span>
+                                <span class="spec-value">3D Generation</span>
+                            </div>
+                            <div class="spec">
+                                <span class="spec-label">Input</span>
+                                <span class="spec-value">Text, Image, Point Cloud</span>
+                            </div>
+                            <div class="spec">
+                                <span class="spec-label">Output</span>
+                                <span class="spec-value">3D Meshes</span>
+                            </div>
+                            <div class="spec">
+                                <span class="spec-label">Focus</span>
+                                <span class="spec-value">3D Assets</span>
+                            </div>
+                        </div>
+                        <p class="model-description">
+                            Generate high-quality 3D models from various input modalities. Perfect for
+                            game development, AR/VR, and 3D content creation.
+                        </p>
+                        <div class="model-formats">
+                            <span class="format-tag">SafeTensors</span>
+                        </div>
+                        <div class="model-actions">
+                            <a href="https://github.com/zenlm/zen-3d" class="btn btn-sm btn-secondary" target="_blank">
+                                GitHub
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- zen-world -->
+                    <div class="model-card complete">
+                        <div class="model-header">
+                            <h3>zen-world</h3>
+                            <span class="badge badge-complete">Available</span>
+                        </div>
+                        <div class="model-specs">
+                            <div class="spec">
+                                <span class="spec-label">Type</span>
+                                <span class="spec-value">3D World Gen</span>
+                            </div>
+                            <div class="spec">
+                                <span class="spec-label">Base</span>
+                                <span class="spec-value">Hy3DWorld</span>
+                            </div>
+                            <div class="spec">
+                                <span class="spec-label">Output</span>
+                                <span class="spec-value">Scene, Panorama</span>
+                            </div>
+                            <div class="spec">
+                                <span class="spec-label">Focus</span>
+                                <span class="spec-value">Environment</span>
+                            </div>
+                        </div>
+                        <p class="model-description">
+                            Generate complete 3D environments and panoramic scenes. Ideal for world building,
+                            metaverse applications, and immersive experiences.
+                        </p>
+                        <div class="model-formats">
+                            <span class="format-tag">SafeTensors</span>
+                        </div>
+                        <div class="model-actions">
+                            <a href="https://github.com/zenlm/zen-world" class="btn btn-sm btn-secondary" target="_blank">
+                                GitHub
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- zen-voyager -->
+                    <div class="model-card complete">
+                        <div class="model-header">
+                            <h3>zen-voyager</h3>
+                            <span class="badge badge-complete">Available</span>
+                        </div>
+                        <div class="model-specs">
+                            <div class="spec">
+                                <span class="spec-label">Type</span>
+                                <span class="spec-value">Image-to-Video</span>
+                            </div>
+                            <div class="spec">
+                                <span class="spec-label">Base</span>
+                                <span class="spec-value">Voyager</span>
+                            </div>
+                            <div class="spec">
+                                <span class="spec-label">Focus</span>
+                                <span class="spec-value">Camera Motion</span>
+                            </div>
+                            <div class="spec">
+                                <span class="spec-label">Quality</span>
+                                <span class="spec-value">High Fidelity</span>
+                            </div>
+                        </div>
+                        <p class="model-description">
+                            Convert static images to dynamic videos with precise camera control. Generate
+                            cinematic motion from single images with natural physics.
+                        </p>
+                        <div class="model-formats">
+                            <span class="format-tag">SafeTensors</span>
+                        </div>
+                        <div class="model-actions">
+                            <a href="https://github.com/zenlm/zen-voyager" class="btn btn-sm btn-secondary" target="_blank">
+                                GitHub
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- zen-musician -->
+                    <div class="model-card complete">
+                        <div class="model-header">
+                            <h3>zen-musician</h3>
+                            <span class="badge badge-complete">Available</span>
+                        </div>
+                        <div class="model-specs">
+                            <div class="spec">
+                                <span class="spec-label">Type</span>
+                                <span class="spec-value">Music Generation</span>
+                            </div>
+                            <div class="spec">
+                                <span class="spec-label">Input</span>
+                                <span class="spec-value">Text, Audio</span>
+                            </div>
+                            <div class="spec">
+                                <span class="spec-label">Output</span>
+                                <span class="spec-value">Music, Audio</span>
+                            </div>
+                            <div class="spec">
+                                <span class="spec-label">Focus</span>
+                                <span class="spec-value">Music Creation</span>
+                            </div>
+                        </div>
+                        <p class="model-description">
+                            Generate high-quality music from text descriptions or audio samples. Supports
+                            multiple genres, instruments, and musical styles.
+                        </p>
+                        <div class="model-formats">
+                            <span class="format-tag">SafeTensors</span>
+                        </div>
+                        <div class="model-actions">
+                            <a href="https://github.com/zenlm/zen-musician" class="btn btn-sm btn-secondary" target="_blank">
+                                GitHub
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- zen-foley -->
+                    <div class="model-card complete">
+                        <div class="model-header">
+                            <h3>zen-foley</h3>
+                            <span class="badge badge-complete">Available</span>
+                        </div>
+                        <div class="model-specs">
+                            <div class="spec">
+                                <span class="spec-label">Type</span>
+                                <span class="spec-value">Audio Generation</span>
+                            </div>
+                            <div class="spec">
+                                <span class="spec-label">Input</span>
+                                <span class="spec-value">Video, Text</span>
+                            </div>
+                            <div class="spec">
+                                <span class="spec-label">Output</span>
+                                <span class="spec-value">Sound Effects</span>
+                            </div>
+                            <div class="spec">
+                                <span class="spec-label">Focus</span>
+                                <span class="spec-value">Foley Sounds</span>
+                            </div>
+                        </div>
+                        <p class="model-description">
+                            Generate synchronized sound effects for videos. Perfect for post-production,
+                            animation, and game development workflows.
+                        </p>
+                        <div class="model-formats">
+                            <span class="format-tag">SafeTensors</span>
+                        </div>
+                        <div class="model-actions">
+                            <a href="https://github.com/zenlm/zen-foley" class="btn btn-sm btn-secondary" target="_blank">
+                                GitHub
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- zen-scribe -->
+                    <div class="model-card complete">
+                        <div class="model-header">
+                            <h3>zen-scribe</h3>
+                            <span class="badge badge-complete">Available</span>
+                        </div>
+                        <div class="model-specs">
+                            <div class="spec">
+                                <span class="spec-label">Type</span>
+                                <span class="spec-value">Speech-to-Text</span>
+                            </div>
+                            <div class="spec">
+                                <span class="spec-label">Base</span>
+                                <span class="spec-value">Qwen3-ASR</span>
+                            </div>
+                            <div class="spec">
+                                <span class="spec-label">Languages</span>
+                                <span class="spec-value">Multilingual</span>
+                            </div>
+                            <div class="spec">
+                                <span class="spec-label">Focus</span>
+                                <span class="spec-value">Transcription</span>
+                            </div>
+                        </div>
+                        <p class="model-description">
+                            High-accuracy automatic speech recognition with multilingual support.
+                            zen-scribe-sdk provides easy integration for developers.
+                        </p>
+                        <div class="model-formats">
+                            <span class="format-tag">SafeTensors</span>
+                            <span class="format-tag">SDK</span>
+                        </div>
+                        <div class="model-actions">
+                            <a href="https://github.com/zenlm/zen-scribe" class="btn btn-sm btn-secondary" target="_blank">
+                                GitHub
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- zen-director -->
+                    <div class="model-card complete">
+                        <div class="model-header">
+                            <h3>zen-director</h3>
+                            <span class="badge badge-complete">Available</span>
+                        </div>
+                        <div class="model-specs">
+                            <div class="spec">
+                                <span class="spec-label">Type</span>
+                                <span class="spec-value">Text-to-Image/Video</span>
+                            </div>
+                            <div class="spec">
+                                <span class="spec-label">Base</span>
+                                <span class="spec-value">Wan2.2-TI2V</span>
+                            </div>
+                            <div class="spec">
+                                <span class="spec-label">Control</span>
+                                <span class="spec-value">Fine-grained</span>
+                            </div>
+                            <div class="spec">
+                                <span class="spec-label">Focus</span>
+                                <span class="spec-value">Directing</span>
+                            </div>
+                        </div>
+                        <p class="model-description">
+                            Unified model for controlled image and video generation with fine-grained
+                            direction over composition, motion, and style.
+                        </p>
+                        <div class="model-formats">
+                            <span class="format-tag">SafeTensors</span>
+                        </div>
+                        <div class="model-actions">
+                            <a href="https://github.com/zenlm/zen-director" class="btn btn-sm btn-secondary" target="_blank">
+                                GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Specialized Models -->
+        <section id="specialized" class="models-section">
+            <div class="container">
+                <h2 class="section-title">Specialized Models</h2>
+                <p class="section-subtitle">Task-specific models for agents, code, safety, and more</p>
+
+                <div class="models-grid">
+                    <!-- zen-agent -->
+                    <div class="model-card complete">
+                        <div class="model-header">
+                            <h3>zen-agent</h3>
+                            <span class="badge badge-complete">Available</span>
+                        </div>
+                        <div class="model-specs">
+                            <div class="spec">
+                                <span class="spec-label">Type</span>
+                                <span class="spec-value">Agent Framework</span>
+                            </div>
+                            <div class="spec">
+                                <span class="spec-label">Base</span>
+                                <span class="spec-value">Qwen-Agent</span>
+                            </div>
+                            <div class="spec">
+                                <span class="spec-label">Features</span>
+                                <span class="spec-value">Tool Use, Planning</span>
+                            </div>
+                            <div class="spec">
+                                <span class="spec-label">Focus</span>
+                                <span class="spec-value">Autonomous Agents</span>
+                            </div>
+                        </div>
+                        <p class="model-description">
+                            Complete agent framework with tool calling, planning, and memory. Build autonomous
+                            agents that can use tools and reason about complex tasks.
+                        </p>
+                        <div class="model-formats">
+                            <span class="format-tag">Framework</span>
+                            <span class="format-tag">Python</span>
+                        </div>
+                        <div class="model-actions">
+                            <a href="https://github.com/zenlm/zen-agent" class="btn btn-sm btn-secondary" target="_blank">
+                                GitHub
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- zen-code -->
+                    <div class="model-card complete">
+                        <div class="model-header">
+                            <h3>zen-code</h3>
+                            <span class="badge badge-complete">Available</span>
+                        </div>
+                        <div class="model-specs">
+                            <div class="spec">
+                                <span class="spec-label">Type</span>
+                                <span class="spec-value">IDE Integration</span>
+                            </div>
+                            <div class="spec">
+                                <span class="spec-label">Platform</span>
+                                <span class="spec-value">VS Code, IntelliJ</span>
+                            </div>
+                            <div class="spec">
+                                <span class="spec-label">Features</span>
+                                <span class="spec-value">Completion, Chat</span>
+                            </div>
+                            <div class="spec">
+                                <span class="spec-label">Focus</span>
+                                <span class="spec-value">Developer Tools</span>
+                            </div>
+                        </div>
+                        <p class="model-description">
+                            IDE extensions and GitHub Actions for code generation, completion, and review.
+                            Seamless integration with your development workflow.
+                        </p>
+                        <div class="model-formats">
+                            <span class="format-tag">VS Code Extension</span>
+                            <span class="format-tag">GitHub Action</span>
+                        </div>
+                        <div class="model-actions">
+                            <a href="https://github.com/zenlm/zen-code" class="btn btn-sm btn-secondary" target="_blank">
+                                GitHub
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- zen-guard -->
+                    <div class="model-card complete">
+                        <div class="model-header">
+                            <h3>zen-guard</h3>
+                            <span class="badge badge-complete">Available</span>
+                        </div>
+                        <div class="model-specs">
+                            <div class="spec">
+                                <span class="spec-label">Type</span>
+                                <span class="spec-value">Content Safety</span>
+                            </div>
+                            <div class="spec">
+                                <span class="spec-label">Base</span>
+                                <span class="spec-value">Qwen3-Guard</span>
+                            </div>
+                            <div class="spec">
+                                <span class="spec-label">Variants</span>
+                                <span class="spec-value">Gen, Stream</span>
+                            </div>
+                            <div class="spec">
+                                <span class="spec-label">Focus</span>
+                                <span class="spec-value">Safety & Moderation</span>
+                            </div>
+                        </div>
+                        <p class="model-description">
+                            Content moderation and safety guardrails. zen-guard-gen generates safe responses,
+                            zen-guard-stream provides real-time filtering.
+                        </p>
+                        <div class="model-formats">
+                            <span class="format-tag">SafeTensors</span>
+                            <span class="format-tag">API</span>
+                        </div>
+                        <div class="model-actions">
+                            <a href="https://github.com/zenlm/zen-guard" class="btn btn-sm btn-secondary" target="_blank">
+                                GitHub
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- zen-embedding -->
+                    <div class="model-card complete">
+                        <div class="model-header">
+                            <h3>zen-embedding</h3>
+                            <span class="badge badge-complete">Available</span>
+                        </div>
+                        <div class="model-specs">
+                            <div class="spec">
+                                <span class="spec-label">Type</span>
+                                <span class="spec-value">Text Embeddings</span>
+                            </div>
+                            <div class="spec">
+                                <span class="spec-label">Base</span>
+                                <span class="spec-value">Qwen3-Embedding</span>
+                            </div>
+                            <div class="spec">
+                                <span class="spec-label">Dimensions</span>
+                                <span class="spec-value">Configurable</span>
+                            </div>
+                            <div class="spec">
+                                <span class="spec-label">Focus</span>
+                                <span class="spec-value">Semantic Search</span>
+                            </div>
+                        </div>
+                        <p class="model-description">
+                            High-quality text embeddings for semantic search, retrieval, and clustering.
+                            Optimized for multilingual and domain-specific tasks.
+                        </p>
+                        <div class="model-formats">
+                            <span class="format-tag">SafeTensors</span>
+                            <span class="format-tag">Sentence-Transformers</span>
+                        </div>
+                        <div class="model-actions">
+                            <a href="https://github.com/zenlm/zen-embedding" class="btn btn-sm btn-secondary" target="_blank">
+                                GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Infrastructure -->
+        <section id="infrastructure" class="models-section">
+            <div class="container">
+                <h2 class="section-title">Infrastructure</h2>
+                <p class="section-subtitle">Training, inference, and deployment tools</p>
+
+                <div class="models-grid">
+                    <!-- engine -->
+                    <div class="model-card complete">
+                        <div class="model-header">
+                            <h3>zen-engine</h3>
+                            <span class="badge badge-complete">Available</span>
+                        </div>
+                        <div class="model-specs">
+                            <div class="spec">
+                                <span class="spec-label">Type</span>
+                                <span class="spec-value">Inference Engine</span>
+                            </div>
+                            <div class="spec">
+                                <span class="spec-label">Language</span>
+                                <span class="spec-value">Rust</span>
+                            </div>
+                            <div class="spec">
+                                <span class="spec-label">Features</span>
+                                <span class="spec-value">GGUF, Quantization</span>
+                            </div>
+                            <div class="spec">
+                                <span class="spec-label">Performance</span>
+                                <span class="spec-value">High Speed</span>
+                            </div>
+                        </div>
+                        <p class="model-description">
+                            High-performance inference engine built in Rust. Supports GGUF quantization,
+                            distributed inference, and MCP integration.
+                        </p>
+                        <div class="model-formats">
+                            <span class="format-tag">Rust</span>
+                            <span class="format-tag">CLI</span>
+                            <span class="format-tag">Server</span>
+                        </div>
+                        <div class="model-actions">
+                            <a href="https://github.com/zenlm/engine" class="btn btn-sm btn-secondary" target="_blank">
+                                GitHub
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- gym -->
+                    <div class="model-card complete">
+                        <div class="model-header">
+                            <h3>zen-gym</h3>
+                            <span class="badge badge-complete">Available</span>
+                        </div>
+                        <div class="model-specs">
+                            <div class="spec">
+                                <span class="spec-label">Type</span>
+                                <span class="spec-value">Training Framework</span>
+                            </div>
+                            <div class="spec">
+                                <span class="spec-label">Language</span>
+                                <span class="spec-value">Python</span>
+                            </div>
+                            <div class="spec">
+                                <span class="spec-label">Methods</span>
+                                <span class="spec-value">SFT, DPO, RLHF</span>
+                            </div>
+                            <div class="spec">
+                                <span class="spec-label">Focus</span>
+                                <span class="spec-value">Fine-tuning</span>
+                            </div>
+                        </div>
+                        <p class="model-description">
+                            Complete training framework for fine-tuning Zen models. Supports supervised
+                            fine-tuning, DPO, RLHF, and multi-modal training.
+                        </p>
+                        <div class="model-formats">
+                            <span class="format-tag">Python</span>
+                            <span class="format-tag">PyTorch</span>
+                            <span class="format-tag">DeepSpeed</span>
+                        </div>
+                        <div class="model-actions">
+                            <a href="https://github.com/zenlm/gym" class="btn btn-sm btn-secondary" target="_blank">
+                                GitHub
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- zen-family -->
+                    <div class="model-card complete">
+                        <div class="model-header">
+                            <h3>zen-family</h3>
+                            <span class="badge badge-complete">Available</span>
+                        </div>
+                        <div class="model-specs">
+                            <div class="spec">
+                                <span class="spec-label">Type</span>
+                                <span class="spec-value">Model Hub</span>
+                            </div>
+                            <div class="spec">
+                                <span class="spec-label">Contents</span>
+                                <span class="spec-value">All Zen Models</span>
+                            </div>
+                            <div class="spec">
+                                <span class="spec-label">Tools</span>
+                                <span class="spec-value">Conversion, Deployment</span>
+                            </div>
+                            <div class="spec">
+                                <span class="spec-label">Focus</span>
+                                <span class="spec-value">Organization</span>
+                            </div>
+                        </div>
+                        <p class="model-description">
+                            Central repository for all Zen models with conversion tools, deployment scripts,
+                            and unified documentation across the entire family.
+                        </p>
+                        <div class="model-formats">
+                            <span class="format-tag">Meta-repo</span>
+                            <span class="format-tag">Tools</span>
+                        </div>
+                        <div class="model-actions">
+                            <a href="https://github.com/zenlm/zen-family" class="btn btn-sm btn-secondary" target="_blank">
+                                GitHub
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- zen-blog -->
+                    <div class="model-card complete">
+                        <div class="model-header">
+                            <h3>zen-blog</h3>
+                            <span class="badge badge-complete">Available</span>
+                        </div>
+                        <div class="model-specs">
+                            <div class="spec">
+                                <span class="spec-label">Type</span>
+                                <span class="spec-value">Documentation Site</span>
+                            </div>
+                            <div class="spec">
+                                <span class="spec-label">Platform</span>
+                                <span class="spec-value">Hugo</span>
+                            </div>
+                            <div class="spec">
+                                <span class="spec-label">Content</span>
+                                <span class="spec-value">Papers, Guides</span>
+                            </div>
+                            <div class="spec">
+                                <span class="spec-label">Focus</span>
+                                <span class="spec-value">Knowledge Base</span>
+                            </div>
+                        </div>
+                        <p class="model-description">
+                            Technical blog and documentation site with research papers, guides, and tutorials
+                            for all Zen models and infrastructure.
+                        </p>
+                        <div class="model-formats">
+                            <span class="format-tag">Hugo</span>
+                            <span class="format-tag">Markdown</span>
+                        </div>
+                        <div class="model-actions">
+                            <a href="https://github.com/zenlm/zen-blog" class="btn btn-sm btn-secondary" target="_blank">
+                                GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Architecture Section -->
+        <section id="architecture" class="architecture-section">
+            <div class="container">
+                <h2 class="section-title">Why Zen?</h2>
+                <div class="arch-grid">
+                    <div class="arch-card">
+                        <div class="arch-icon">🧠</div>
+                        <h3>Qwen3 Foundation</h3>
+                        <p>Built on the latest Qwen3 architecture with proven performance across diverse tasks and modalities.</p>
+                    </div>
+                    <div class="arch-card">
+                        <div class="arch-icon">⚡</div>
+                        <h3>Optimized Inference</h3>
+                        <p>Multiple quantization formats (GGUF, MLX) for optimal performance on any hardware from edge to cloud.</p>
+                    </div>
+                    <div class="arch-card">
+                        <div class="arch-icon">🔒</div>
+                        <h3>Open Source</h3>
+                        <p>Fully open-source models, training code, and infrastructure for transparency and customization.</p>
+                    </div>
+                    <div class="arch-card">
+                        <div class="arch-icon">🌐</div>
+                        <h3>Complete Ecosystem</h3>
+                        <p>From nano to next-gen, language to multimodal, Zen provides models for every use case.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Get Started Section -->
+        <section id="downloads" class="downloads-section">
+            <div class="container">
+                <h2 class="section-title">Get Started</h2>
+                <div class="download-grid">
+                    <div class="download-card">
+                        <h3>🤗 HuggingFace</h3>
+                        <p>Access all models via HuggingFace Hub with easy integration</p>
+                        <a href="https://huggingface.co/zenlm" class="btn btn-primary" target="_blank">
+                            Visit HuggingFace
+                        </a>
+                    </div>
+                    <div class="download-card">
+                        <h3>💻 GitHub</h3>
+                        <p>Training code, datasets, documentation, and complete source</p>
+                        <a href="https://github.com/zenlm" class="btn btn-primary" target="_blank">
+                            View on GitHub
+                        </a>
+                    </div>
+                    <div class="download-card">
+                        <h3>📚 Documentation</h3>
+                        <p>Comprehensive guides, papers, and tutorials for all models</p>
+                        <a href="https://github.com/zenlm/zen-blog" class="btn btn-primary" target="_blank">
+                            Read Docs
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>禅 Zen AI</h4>
+                    <p>Next-generation AI models built on Qwen3 architecture. From language to multimodal, nano to next-gen.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Core Models</h4>
+                    <ul>
+                        <li><a href="https://huggingface.co/zenlm/zen-nano">zen-nano (0.6B)</a></li>
+                        <li><a href="https://huggingface.co/zenlm/zen-eco">zen-eco (4B)</a></li>
+                        <li><a href="https://huggingface.co/zenlm/zen-omni">zen-omni (7B)</a></li>
+                        <li><a href="https://huggingface.co/zenlm/zen-coder">zen-coder (14B)</a></li>
+                        <li><a href="#core-models">zen-next (32B)</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Multimodal</h4>
+                    <ul>
+                        <li><a href="#multimodal">zen-designer (Vision)</a></li>
+                        <li><a href="#multimodal">zen-artist (Image)</a></li>
+                        <li><a href="#multimodal">zen-video (Video)</a></li>
+                        <li><a href="#multimodal">zen-3d (3D Gen)</a></li>
+                        <li><a href="#multimodal">zen-musician (Music)</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="https://huggingface.co/zenlm">HuggingFace</a></li>
+                        <li><a href="https://github.com/zenlm">GitHub</a></li>
+                        <li><a href="https://github.com/zenlm/zen-blog">Blog & Docs</a></li>
+                        <li><a href="https://github.com/QwenLM/Qwen3">Qwen3</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Zen AI. All rights reserved. Built with clarity and purpose.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

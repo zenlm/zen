@@ -1,0 +1,85 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+*_venv/
+ENV/
+
+# Virtual environments
+axolotl_venv/
+zen_venv/
+mlx_venv/
+
+# Model outputs
+*.gguf
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.onnx
+
+# Large model directories
+base-models/
+qwen3-omni-30b*/
+*-30b-*/
+
+# Checkpoints
+checkpoints/
+*/checkpoint-*/
+*.ckpt
+
+# Cache
+.cache/
+*.cache
+__pycache__/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+
+# Build
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+*.tmp
+*.bak
+*.backup
+*~
+
+# Data files (keep only in data/)
+*.jsonl
+*.json
+!**/config.json
+!**/tokenizer_config.json
+!**/adapter_config.json
+
+# Supra references (cleanup)
+*supra*
+*SUPRA*
+
+
+
+AGENTS.md
+CLAUDE.md
+GEMINI.md
+GROK.md
+QWEN.md

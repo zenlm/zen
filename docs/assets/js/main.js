@@ -102,5 +102,5 @@ document.head.appendChild(style);
 // Create particles periodically
 setInterval(createParticle, 500);
 
-console.log('🌟 Zen AI - Next-Generation Language Models');
+console.log('🌟 Zen LM - Next-Generation Language Models');
 console.log('Built with clarity and purpose');

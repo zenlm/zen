@@ -39,13 +39,13 @@ ENV/
 *~
 
 # Model files - should be in parent directory
-models/
-training/
-scripts/
-evaluations/
-tools/
-datasets/
-quantizations/
+/models/
+/training/
+/scripts/
+/evaluations/
+/tools/
+/datasets/
+/quantizations/
 zen-*/
 *.gguf
 *.safetensors
@@ -59,8 +59,8 @@ zen-*/
 *.log
 
 # Git submodules - should be in parent directory
-llama.cpp/
-zen/
+/llama.cpp/
+/zen/
 
 # Documentation artifacts
 node_modules/

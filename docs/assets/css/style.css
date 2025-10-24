@@ -72,6 +72,13 @@ header {
     gap: 1rem;
 }
 
+.logo a {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    text-decoration: none;
+}
+
 .logo-img {
     width: 50px;
     height: 50px;
@@ -87,10 +94,16 @@ header {
     margin-bottom: 0.25rem;
 }
 
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
 .logo-links {
     display: flex;
-    gap: 0.75rem;
-    margin-left: 0.5rem;
+    gap: 1rem;
+    align-items: center;
 }
 
 .icon-link {
@@ -98,11 +111,18 @@ header {
     transition: all 0.3s ease;
     display: flex;
     align-items: center;
+    opacity: 0.8;
 }
 
 .icon-link:hover {
     color: var(--primary);
     transform: translateY(-2px);
+    opacity: 1;
+}
+
+.icon-link img {
+    width: 28px;
+    height: 28px;
 }
 
 .tagline {

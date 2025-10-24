@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zen LM Research Papers - Hanzo AI</title>
+    <meta name="description" content="Collection of technical papers and research publications for the Zen Language Model family">
+    <style>
+        :root {
+            --primary: #6366f1;
+            --primary-dark: #4f46e5;
+            --secondary: #22c55e;
+            --background: #0a0a0a;
+            --surface: #1a1a1a;
+            --text: #e5e5e5;
+            --text-secondary: #a3a3a3;
+            --border: #333;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Segoe UI', system-ui, sans-serif;
+            background: var(--background);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        /* Navigation */
+        nav {
+            background: rgba(10, 10, 10, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--border);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .nav-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: var(--primary);
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 5rem 2rem;
+            background: linear-gradient(180deg, rgba(99, 102, 241, 0.1) 0%, rgba(10, 10, 10, 0) 100%);
+        }
+
+        .hero-content {
+            max-width: 1000px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, #fff, var(--text-secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            color: var(--text-secondary);
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        /* Main Content */
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        /* Paper Categories */
+        .category {
+            margin-bottom: 4rem;
+        }
+
+        .category-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .category-icon {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+        }
+
+        .category h2 {
+            font-size: 1.8rem;
+            color: var(--text);
+        }
+
+        /* Paper Grid */
+        .papers-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+
+        /* Paper Card */
+        .paper-card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.5rem;
+            transition: all 0.3s;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .paper-card:hover {
+            border-color: var(--primary);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(99, 102, 241, 0.1);
+        }
+
+        .paper-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--text);
+            margin-bottom: 0.5rem;
+        }
+
+        .paper-meta {
+            display: flex;
+            gap: 1rem;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        .paper-size {
+            display: flex;
+            align-items: center;
+            gap: 0.25rem;
+        }
+
+        .paper-description {
+            color: var(--text-secondary);
+            line-height: 1.5;
+            flex-grow: 1;
+        }
+
+        .paper-footer {
+            display: flex;
+            gap: 1rem;
+            margin-top: auto;
+        }
+
+        .paper-link {
+            flex: 1;
+            padding: 0.5rem 1rem;
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            text-align: center;
+            font-weight: 500;
+            transition: opacity 0.3s;
+        }
+
+        .paper-link:hover {
+            opacity: 0.9;
+        }
+
+        .paper-link.secondary {
+            background: transparent;
+            border: 1px solid var(--border);
+            color: var(--text);
+        }
+
+        .paper-link.secondary:hover {
+            border-color: var(--primary);
+            color: var(--primary);
+        }
+
+        /* Stats Section */
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            padding: 3rem 2rem;
+            background: var(--surface);
+            border-radius: 12px;
+            margin: 3rem 0;
+        }
+
+        .stat {
+            text-align: center;
+        }
+
+        .stat-value {
+            font-size: 2.5rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .stat-label {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            margin-top: 0.5rem;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 5rem;
+            padding: 3rem 2rem;
+            background: var(--surface);
+            border-top: 1px solid var(--border);
+        }
+
+        .footer-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            text-align: center;
+            color: var(--text-secondary);
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 1rem;
+        }
+
+        .footer-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-links a:hover {
+            color: var(--primary);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .papers-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .nav-links {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="logo">Zen LM</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="models.html">Models</a></li>
+                <li><a href="research.html" class="active">Research</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <div class="hero">
+        <div class="hero-content">
+            <h1>Zen Research Papers</h1>
+            <p>Technical documentation and research publications for the Zen Language Model family, covering architecture, training methodology, and performance analysis.</p>
+        </div>
+    </div>
+
+    <!-- Stats -->
+    <div class="container">
+        <div class="stats">
+            <div class="stat">
+                <div class="stat-value">15</div>
+                <div class="stat-label">Research Papers</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value">5</div>
+                <div class="stat-label">Categories</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value">0.6B-405B</div>
+                <div class="stat-label">Model Range</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value">2024</div>
+                <div class="stat-label">Latest Publication</div>
+            </div>
+        </div>
+
+        <!-- Technical Report -->
+        <div class="category">
+            <div class="category-header">
+                <div class="category-icon">📊</div>
+                <h2>Technical Report</h2>
+            </div>
+            <div class="papers-grid">
+                <div class="paper-card">
+                    <div class="paper-title">Zen Technical Report</div>
+                    <div class="paper-meta">
+                        <span class="paper-size">📄 181KB</span>
+                        <span>7 pages</span>
+                    </div>
+                    <div class="paper-description">
+                        Comprehensive technical overview of the Zen Language Model family, including architecture details, training methodology, and performance benchmarks across all model variants.
+                    </div>
+                    <div class="paper-footer">
+                        <a href="papers/zen-technical-report.pdf" class="paper-link" download>Download PDF</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Core Models -->
+        <div class="category">
+            <div class="category-header">
+                <div class="category-icon">🧠</div>
+                <h2>Core Language Models</h2>
+            </div>
+            <div class="papers-grid">
+                <div class="paper-card">
+                    <div class="paper-title">Zen Pro</div>
+                    <div class="paper-meta">
+                        <span class="paper-size">📄 109KB</span>
+                        <span>Professional Model</span>
+                    </div>
+                    <div class="paper-description">
+                        Technical documentation for Zen Pro, our advanced professional language model optimized for complex reasoning and professional applications.
+                    </div>
+                    <div class="paper-footer">
+                        <a href="papers/zen-pro.pdf" class="paper-link" download>Download PDF</a>
+                    </div>
+                </div>
+
+                <div class="paper-card">
+                    <div class="paper-title">Zen Coder</div>
+                    <div class="paper-meta">
+                        <span class="paper-size">📄 109KB</span>
+                        <span>Code Generation</span>
+                    </div>
+                    <div class="paper-description">
+                        Architecture and training methodology for Zen Coder, specialized in code generation, debugging, and software development tasks.
+                    </div>
+                    <div class="paper-footer">
+                        <a href="papers/zen-coder.pdf" class="paper-link" download>Download PDF</a>
+                    </div>
+                </div>
+
+                <div class="paper-card">
+                    <div class="paper-title">Zen Agent</div>
+                    <div class="paper-meta">
+                        <span class="paper-size">📄 127KB</span>
+                        <span>Agent Systems</span>
+                    </div>
+                    <div class="paper-description">
+                        Research on autonomous agent capabilities, tool use, and multi-step reasoning in the Zen Agent model variant.
+                    </div>
+                    <div class="paper-footer">
+                        <a href="papers/zen-agent.pdf" class="paper-link" download>Download PDF</a>
+                    </div>
+                </div>
+
+                <div class="paper-card">
+                    <div class="paper-title">Zen Guard</div>
+                    <div class="paper-meta">
+                        <span class="paper-size">📄 109KB</span>
+                        <span>Safety Model</span>
+                    </div>
+                    <div class="paper-description">
+                        Safety alignment and content moderation capabilities of Zen Guard, our specialized safety and compliance model.
+                    </div>
+                    <div class="paper-footer">
+                        <a href="papers/zen-guard.pdf" class="paper-link" download>Download PDF</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Multimodal Models -->
+        <div class="category">
+            <div class="category-header">
+                <div class="category-icon">🎨</div>
+                <h2>Multimodal Models</h2>
+            </div>
+            <div class="papers-grid">
+                <div class="paper-card">
+                    <div class="paper-title">Zen Omni</div>
+                    <div class="paper-meta">
+                        <span class="paper-size">📄 109KB</span>
+                        <span>Multimodal</span>
+                    </div>
+                    <div class="paper-description">
+                        Unified multimodal architecture supporting text, vision, audio, and video understanding in a single model.
+                    </div>
+                    <div class="paper-footer">
+                        <a href="papers/zen-omni.pdf" class="paper-link" download>Download PDF</a>
+                    </div>
+                </div>
+
+                <div class="paper-card">
+                    <div class="paper-title">Zen Designer</div>
+                    <div class="paper-meta">
+                        <span class="paper-size">📄 109KB</span>
+                        <span>Design & UI</span>
+                    </div>
+                    <div class="paper-description">
+                        Visual design generation and UI/UX capabilities, trained on design patterns and user interface principles.
+                    </div>
+                    <div class="paper-footer">
+                        <a href="papers/zen-designer.pdf" class="paper-link" download>Download PDF</a>
+                    </div>
+                </div>
+
+                <div class="paper-card">
+                    <div class="paper-title">Zen Artist</div>
+                    <div class="paper-meta">
+                        <span class="paper-size">📄 109KB</span>
+                        <span>Image Generation</span>
+                    </div>
+                    <div class="paper-description">
+                        Advanced image generation and artistic style transfer capabilities using diffusion and transformer architectures.
+                    </div>
+                    <div class="paper-footer">
+                        <a href="papers/zen-artist.pdf" class="paper-link" download>Download PDF</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Specialized Models -->
+        <div class="category">
+            <div class="category-header">
+                <div class="category-icon">🎭</div>
+                <h2>Specialized Models</h2>
+            </div>
+            <div class="papers-grid">
+                <div class="paper-card">
+                    <div class="paper-title">Zen Musician</div>
+                    <div class="paper-meta">
+                        <span class="paper-size">📄 118KB</span>
+                        <span>Music Generation</span>
+                    </div>
+                    <div class="paper-description">
+                        Music composition, understanding, and generation capabilities using transformer-based audio models.
+                    </div>
+                    <div class="paper-footer">
+                        <a href="papers/zen-musician.pdf" class="paper-link" download>Download PDF</a>
+                    </div>
+                </div>
+
+                <div class="paper-card">
+                    <div class="paper-title">Zen Director</div>
+                    <div class="paper-meta">
+                        <span class="paper-size">📄 118KB</span>
+                        <span>Video Generation</span>
+                    </div>
+                    <div class="paper-description">
+                        Video understanding, editing, and generation capabilities for multimedia content creation.
+                    </div>
+                    <div class="paper-footer">
+                        <a href="papers/zen-director.pdf" class="paper-link" download>Download PDF</a>
+                    </div>
+                </div>
+
+                <div class="paper-card">
+                    <div class="paper-title">Zen Foley</div>
+                    <div class="paper-meta">
+                        <span class="paper-size">📄 117KB</span>
+                        <span>Sound Design</span>
+                    </div>
+                    <div class="paper-description">
+                        Sound effect generation and audio synthesis for film, games, and interactive media.
+                    </div>
+                    <div class="paper-footer">
+                        <a href="papers/zen-foley.pdf" class="paper-link" download>Download PDF</a>
+                    </div>
+                </div>
+
+                <div class="paper-card">
+                    <div class="paper-title">Zen Scribe</div>
+                    <div class="paper-meta">
+                        <span class="paper-size">📄 109KB</span>
+                        <span>Writing Assistant</span>
+                    </div>
+                    <div class="paper-description">
+                        Advanced writing assistance, editing, and creative content generation capabilities.
+                    </div>
+                    <div class="paper-footer">
+                        <a href="papers/zen-scribe.pdf" class="paper-link" download>Download PDF</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Infrastructure -->
+        <div class="category">
+            <div class="category-header">
+                <div class="category-icon">🏗️</div>
+                <h2>Infrastructure & Training</h2>
+            </div>
+            <div class="papers-grid">
+                <div class="paper-card">
+                    <div class="paper-title">Zen World</div>
+                    <div class="paper-meta">
+                        <span class="paper-size">📄 116KB</span>
+                        <span>World Modeling</span>
+                    </div>
+                    <div class="paper-description">
+                        World simulation and environmental understanding for embodied AI and robotic applications.
+                    </div>
+                    <div class="paper-footer">
+                        <a href="papers/zen-world.pdf" class="paper-link" download>Download PDF</a>
+                    </div>
+                </div>
+
+                <div class="paper-card">
+                    <div class="paper-title">Zen Eco</div>
+                    <div class="paper-meta">
+                        <span class="paper-size">📄 126KB</span>
+                        <span>Efficient Computing</span>
+                    </div>
+                    <div class="paper-description">
+                        Energy-efficient training and inference optimizations for sustainable AI deployment.
+                    </div>
+                    <div class="paper-footer">
+                        <a href="papers/zen-eco.pdf" class="paper-link" download>Download PDF</a>
+                    </div>
+                </div>
+
+                <div class="paper-card">
+                    <div class="paper-title">Gym Framework</div>
+                    <div class="paper-meta">
+                        <span class="paper-size">📄 126KB</span>
+                        <span>Training Infrastructure</span>
+                    </div>
+                    <div class="paper-description">
+                        Reinforcement learning and training infrastructure for continuous model improvement.
+                    </div>
+                    <div class="paper-footer">
+                        <a href="papers/gym.pdf" class="paper-link" download>Download PDF</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>© 2024 Hanzo AI. Building frontier AI for everyone.</p>
+            <div class="footer-links">
+                <a href="https://github.com/hanzo-ai">GitHub</a>
+                <a href="https://huggingface.co/hanzo-ai">Hugging Face</a>
+                <a href="https://twitter.com/hanzoai">Twitter</a>
+                <a href="mailto:research@hanzo.ai">Contact</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

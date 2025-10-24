@@ -1,0 +1,11 @@
+{
+  "name": "zen-lm-website",
+  "version": "1.0.0",
+  "description": "Zen LM official website",
+  "scripts": {
+    "build": "node build.js",
+    "watch": "node build.js --watch"
+  },
+  "author": "Zen Authors",
+  "license": "MIT"
+}

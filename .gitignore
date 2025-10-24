@@ -65,3 +65,8 @@ zen/
 # Documentation artifacts
 node_modules/
 package-lock.json
+
+# Next.js
+.next/
+out/
+node_modules/

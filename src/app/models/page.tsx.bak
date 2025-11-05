@@ -115,22 +115,6 @@ export default function ModelsPage() {
           <p className="section-subtitle">Vision, Audio, Video, and 3D Generation</p>
 
           <div className="models-grid">
-              <ModelCard
-                name="zen-vl"
-                status="Available"
-                specs={[
-                  { label: 'Type', value: 'Vision-Language' },
-                  { label: 'Base', value: 'Qwen3-VL' },
-                  { label: 'Sizes', value: '4B, 8B, 30B' },
-                  { label: 'Variants', value: 'Instruct, Agent' },
-                  { label: 'Focus', value: 'Function Calling' },
-                ]}
-                description="Next-generation vision-language model with advanced function calling capabilities. Trained on Agent Data Protocol (ADP) and xLAM datasets for superior agent performance and tool use."
-                formats={['SafeTensors', 'GGUF']}
-                hfLink="https://huggingface.co/zenlm/zen-vl-4b-instruct"
-                githubLink="https://github.com/zenlm/zen-vl"
-              />
-
             <ModelCard
               name="zen-designer"
               status="Available"

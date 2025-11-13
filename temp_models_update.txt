@@ -1,0 +1,8 @@
+Add docsLink and paperLink to all models:
+- zen-nano: docsLink="/docs/models/zen-nano" paperLink="/papers/zen-nano_whitepaper.pdf"  
+- zen-eco: docsLink="/docs/models/zen-eco" paperLink="/papers/zen-eco_whitepaper.pdf"
+- zen-coder: docsLink="/docs/models/zen-coder" paperLink="/papers/zen-coder_whitepaper.pdf"
+- zen-next: docsLink="/docs/models/zen-next" paperLink="/papers/zen-next_whitepaper.pdf"
+- zen-director: docsLink="/docs/models/zen-director" paperLink="/papers/zen-director.pdf"
+- zen-3d: docsLink="/docs/models/zen-3d" paperLink="/papers/zen-3d.pdf"
+- zen-guard: docsLink="/docs/models/zen-guard" paperLink="/papers/zen-guard_whitepaper.pdf"

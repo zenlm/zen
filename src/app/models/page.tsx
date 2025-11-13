@@ -41,6 +41,8 @@ export default function ModelsPage() {
               formats={['SafeTensors', 'GGUF', 'MLX']}
               hfLink="https://huggingface.co/zenlm/zen-nano"
               githubLink="https://github.com/zenlm/zen-nano"
+              docsLink="https://github.com/zenlm/zen-nano/tree/main/docs"
+              paperLink="/papers/zen-nano_whitepaper.pdf"
             />
 
             {/* zen-eco */}
@@ -65,14 +67,16 @@ export default function ModelsPage() {
               status="Available"
               specs={[
                 { label: 'Parameters', value: '7B' },
-                { label: 'Base', value: 'Qwen3-7B' },
-                { label: 'Context', value: '32K tokens' },
-                { label: 'Focus', value: 'Multi-task' },
+                { label: 'Base', value: 'Qwen3-Omni' },
+                { label: 'Modalities', value: 'Text + Vision + Audio' },
+                { label: 'Type', value: 'Multimodal' },
               ]}
-              description="Versatile model for diverse applications including reasoning, creative writing, and complex analysis."
-              formats={['SafeTensors', 'GGUF', 'MLX']}
+              description="Multimodal model based on Qwen3-Omni supporting text, vision, and audio understanding simultaneously. NOT Qwen2.5!"
+              formats={['SafeTensors']}
               hfLink="https://huggingface.co/zenlm/zen-omni"
               githubLink="https://github.com/zenlm/zen-omni"
+              docsLink="https://github.com/zenlm/zen-omni/tree/main/docs"
+              paperLink="/papers/zen-omni_whitepaper.pdf"
             />
 
             {/* zen-coder */}
@@ -215,9 +219,11 @@ interface ModelCardProps {
   formats: string[];
   hfLink?: string;
   githubLink?: string;
+  docsLink?: string;
+  paperLink?: string;
 }
 
-function ModelCard({ name, status, specs, description, formats, hfLink, githubLink }: ModelCardProps) {
+function ModelCard({ name, status, specs, description, formats, hfLink, githubLink, docsLink, paperLink }: ModelCardProps) {
   return (
     <div className="model-card complete">
       <div className="model-header">
@@ -241,12 +247,22 @@ function ModelCard({ name, status, specs, description, formats, hfLink, githubLi
       <div className="model-actions">
         {hfLink && (
           <a href={hfLink} className="btn btn-sm btn-primary" target="_blank" rel="noopener noreferrer">
-            HuggingFace
+            🤗 HF
           </a>
         )}
         {githubLink && (
           <a href={githubLink} className="btn btn-sm btn-secondary" target="_blank" rel="noopener noreferrer">
-            GitHub
+            📦 GitHub
+          </a>
+        )}
+        {docsLink && (
+          <a href={docsLink} className="btn btn-sm btn-secondary" target="_blank" rel="noopener noreferrer">
+            📖 Docs
+          </a>
+        )}
+        {paperLink && (
+          <a href={paperLink} className="btn btn-sm btn-secondary" target="_blank" rel="noopener noreferrer">
+            📄 Paper
           </a>
         )}
       </div>

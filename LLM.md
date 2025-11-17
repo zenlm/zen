@@ -140,6 +140,7 @@ The Zen AI project embodies clarity through intelligence, providing:
 
 #### 5. zen-max (671B MoE) ✅ RELEASED
 - **HuggingFace**: https://huggingface.co/zenlm/zen-max
+- **Training Space**: https://github.com/zenlm/zen-max-trainer (QLoRA cloud training)
 - **Base**: Moonshot AI Kimi K2 Thinking (DeepseekV3ForCausalLM)
 - **Parameters**: 671B total (384 experts, 8 active per token = ~14B active)
 - **Architecture**: 
@@ -154,6 +155,11 @@ The Zen AI project embodies clarity through intelligence, providing:
 - **Thinking Capacity**: 96K-128K thinking tokens per reasoning step
 - **License**: Apache 2.0
 - **Status**: Repository created, configuration files deployed
+- **Training Method**: 
+  - QLoRA on HuggingFace Space (no local download needed)
+  - 4-bit quantized base model (~60GB VRAM)
+  - LoRA adapters only (~100MB output)
+  - Cloud-based identity fine-tuning
 - **Capabilities**:
   - Agentic reasoning with extended chain-of-thought
   - 200-300 sequential tool calls without human intervention

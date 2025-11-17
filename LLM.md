@@ -157,7 +157,8 @@ The Zen AI project embodies clarity through intelligence, providing:
 - **Status**: Repository created, configuration files deployed
 - **Training Method**: 
   - QLoRA on HuggingFace Space (no local download needed)
-  - 4-bit quantized base model (~60GB VRAM)
+  - INT4 quantized base model (~370GB, 62 shards)
+  - Requires 4x A100 80GB or 8x A100 40GB GPUs
   - LoRA adapters only (~100MB output)
   - Cloud-based identity fine-tuning
 - **Capabilities**:

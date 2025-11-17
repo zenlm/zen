@@ -138,7 +138,48 @@ The Zen AI project embodies clarity through intelligence, providing:
 - **RoPE Configuration**: 1,000,000.0 (extended positional embeddings)
 - **KV Cache**: Enabled for efficient generation
 
-#### 5. zen-next (32B) 🔄 IN DEVELOPMENT
+#### 5. zen-max (671B MoE) ✅ RELEASED
+- **HuggingFace**: https://huggingface.co/zenlm/zen-max
+- **Base**: Moonshot AI Kimi K2 Thinking (DeepseekV3ForCausalLM)
+- **Parameters**: 671B total (384 experts, 8 active per token = ~14B active)
+- **Architecture**: 
+  - Type: DeepseekV3ForCausalLM (Mixture of Experts)
+  - Hidden Size: 7,168
+  - Attention Heads: 64 (64 KV heads)
+  - Layers: 61
+  - Expert Configuration: 384 total experts, 8 per token
+  - Vocabulary: 163,840 tokens
+  - Data Type: bfloat16 with INT4 quantization
+- **Context**: 256K tokens (262,144 max position embeddings)
+- **Thinking Capacity**: 96K-128K thinking tokens per reasoning step
+- **License**: Apache 2.0
+- **Status**: Repository created, configuration files deployed
+- **Capabilities**:
+  - Agentic reasoning with extended chain-of-thought
+  - 200-300 sequential tool calls without human intervention
+  - Agentic search and browsing (BrowseComp: 60.2%)
+  - Agentic coding (SWE-Bench Verified: 71.3%)
+  - Mathematical reasoning (AIME 2025: 99.1%, HMMT: 95.1%)
+  - Parallel reasoning with Heavy Mode (8 simultaneous trajectories)
+  - INT4 quantization-aware training (2x inference speed)
+- **Benchmarks**:
+  - HLE: 44.9%
+  - AIME 2025: 99.1% (with Python)
+  - HMMT 2025: 95.1% (with Python)
+  - IMO-AnswerBench: 78.6%
+  - GPQA-Diamond: 84.5%
+  - BrowseComp: 60.2%
+  - SWE-Bench Verified: 71.3%
+  - Terminal-Bench: 47.1%
+- **RoPE Configuration**: YARN scaling with factor 64.0, theta 50000.0
+- **KV Cache**: LoRA-based compression (kv_lora_rank: 512)
+- **Special Features**:
+  - Thinking mode with `<think>` tags
+  - Heavy mode for parallel reasoning
+  - Tool-calling with 200-300 sequential calls
+  - Auto-hiding context management
+
+#### 6. zen-next (32B) 🔄 IN DEVELOPMENT
 - **Base**: Qwen3-32B
 - **Parameters**: ~32B
 - **Context**: 32,768 tokens

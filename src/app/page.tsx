@@ -9,7 +9,7 @@ export default function Home() {
           <p className="hero-subtitle">The Zen4 model family: 4B to 1T+ parameters built on Qwen3 and frontier MoE architectures</p>
           <p className="hero-description">
             Zen4 delivers production-ready AI models across Consumer, Coder, and Ultra tiers.
-            From the 4B Zen4 Mini for edge devices to the flagship Zen4 Max Pro (80B MoE) and Zen4 Coder for agentic programming,
+            From the 4B Zen4 Mini for edge devices to the flagship Zen4 Pro Max (80B MoE) and Zen4 Coder for agentic programming,
             every model is trained on 8.47 billion tokens of real-world development data.
           </p>
           <div className="hero-cta">
@@ -73,7 +73,7 @@ export default function Home() {
                   <td><span className="status-trained">Available</span></td>
                 </tr>
                 <tr>
-                  <td><strong>Zen4 Max Pro</strong> <span className="status-flagship">FLAGSHIP</span></td>
+                  <td><strong>Zen4 Pro Max</strong> <span className="status-flagship">FLAGSHIP</span></td>
                   <td>80B MoE (3B active)</td>
                   <td>Qwen3-Next-80B-A3B</td>
                   <td>MoE</td>
@@ -264,9 +264,9 @@ export default function Home() {
               </a>
             </div>
             <div className="download-card">
-              <h3>Zen4 Max Pro (Flagship)</h3>
+              <h3>Zen4 Pro Max (Flagship)</h3>
               <p>80B MoE, 3B active - runs on consumer hardware</p>
-              <a href="https://huggingface.co/zenlm/zen4-max-pro" className="btn btn-primary" target="_blank" rel="noopener noreferrer">
+              <a href="https://huggingface.co/zenlm/zen4-pro-max" className="btn btn-primary" target="_blank" rel="noopener noreferrer">
                 Download
               </a>
             </div>

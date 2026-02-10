@@ -93,7 +93,7 @@ export default function ModelsPage() {
             />
 
             <ModelCard
-              name="Zen4 Max Pro"
+              name="Zen4 Pro Max"
               status="Available"
               flagship={true}
               specs={[
@@ -104,8 +104,8 @@ export default function ModelsPage() {
               ]}
               description="The ultimate consumer model. 80B parameters with hybrid Gated DeltaNet + Gated Attention + MoE architecture, running at just 3B active parameters."
               formats={['SafeTensors', 'GGUF', 'MLX']}
-              hfLink="https://huggingface.co/zenlm/zen4-max-pro"
-              githubLink="https://github.com/zenlm/zen4-max-pro"
+              hfLink="https://huggingface.co/zenlm/zen4-pro-max"
+              githubLink="https://github.com/zenlm/zen4-pro-max"
             />
           </div>
         </div>
@@ -330,13 +330,13 @@ export default function ModelsPage() {
                   <td><a href="https://huggingface.co/zenlm/zen4-max" target="_blank" rel="noopener noreferrer">zenlm/zen4-max</a></td>
                 </tr>
                 <tr className="flagship-row">
-                  <td><strong>Zen4 Max Pro</strong></td>
+                  <td><strong>Zen4 Pro Max</strong></td>
                   <td>80B MoE</td>
                   <td>3B</td>
                   <td>Qwen3-Next-80B</td>
                   <td>256K</td>
                   <td>Apache 2.0</td>
-                  <td><a href="https://huggingface.co/zenlm/zen4-max-pro" target="_blank" rel="noopener noreferrer">zenlm/zen4-max-pro</a></td>
+                  <td><a href="https://huggingface.co/zenlm/zen4-pro-max" target="_blank" rel="noopener noreferrer">zenlm/zen4-pro-max</a></td>
                 </tr>
                 <tr>
                   <td><strong>Zen4 Coder Flash</strong></td>

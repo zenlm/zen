@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <!-- Simplified lotus for favicon -->
+  <!-- Center petal -->
+  <path d="M32 8 C32 8 27 22 27 34 C27 39 29 44 32 48 C35 44 37 39 37 34 C37 22 32 8 32 8Z" fill="#9333EA"/>
+  <!-- Left petal -->
+  <path d="M32 48 C29 44 22 40 17 38 C12 36 7 37 4 40 C7 47 14 52 21 52 C27 52 31 50 32 48Z" fill="#A855F7" opacity="0.9"/>
+  <!-- Right petal -->
+  <path d="M32 48 C35 44 42 40 47 38 C52 36 57 37 60 40 C57 47 50 52 43 52 C37 52 33 50 32 48Z" fill="#A855F7" opacity="0.9"/>
+  <!-- Base -->
+  <path d="M10 55 C18 52 26 50 32 50 C38 50 46 52 54 55" stroke="#7C3AED" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+</svg>

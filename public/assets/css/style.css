@@ -505,6 +505,148 @@ footer {
     font-size: 0.875rem;
 }
 
+/* Featured Section */
+.featured-section {
+    padding: 5rem 0;
+    background: linear-gradient(180deg, var(--surface-light) 0%, var(--background) 100%);
+}
+
+/* Dataset Section */
+.dataset-section {
+    padding: 5rem 0;
+    background: var(--background);
+}
+
+/* Models Table */
+.model-lineup {
+    overflow-x: auto;
+    margin: 2rem 0;
+}
+
+.models-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.models-table th,
+.models-table td {
+    padding: 1rem 1.5rem;
+    text-align: left;
+    border-bottom: 1px solid var(--border);
+}
+
+.models-table th {
+    background: var(--surface-light);
+    color: var(--text-muted);
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-weight: 600;
+}
+
+.models-table td {
+    color: var(--text);
+}
+
+.models-table tbody tr:hover {
+    background: var(--surface-light);
+}
+
+.models-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* Status Badges */
+.status-trained {
+    display: inline-block;
+    padding: 0.375rem 0.875rem;
+    border-radius: 2rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    background: rgba(16, 185, 129, 0.2);
+    color: var(--success);
+    border: 1px solid var(--success);
+}
+
+.status-training {
+    display: inline-block;
+    padding: 0.375rem 0.875rem;
+    border-radius: 2rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    background: rgba(99, 102, 241, 0.2);
+    color: var(--primary);
+    border: 1px solid var(--primary);
+    animation: pulse 2s infinite;
+}
+
+.status-planned {
+    display: inline-block;
+    padding: 0.375rem 0.875rem;
+    border-radius: 2rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    background: rgba(245, 158, 11, 0.2);
+    color: var(--warning);
+    border: 1px solid var(--warning);
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.7; }
+}
+
+/* Additional Button Styles */
+.btn-outline {
+    background: transparent;
+    border: 2px solid var(--text-muted);
+    color: var(--text);
+}
+
+.btn-outline:hover {
+    border-color: var(--primary);
+    color: var(--primary);
+}
+
+/* Code blocks in cards */
+.download-card pre {
+    background: var(--surface-light);
+    border: 1px solid var(--border);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-top: 1rem;
+    overflow-x: auto;
+}
+
+.download-card code {
+    font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+    font-size: 0.875rem;
+    color: var(--primary);
+}
+
+/* Nav active state */
+.nav-links a.active {
+    background: var(--surface-light);
+    color: var(--primary);
+}
+
+/* Coder Features Grid */
+.coder-features {
+    margin-top: 3rem;
+}
+
+.coder-features .arch-card h3 {
+    color: var(--primary);
+    margin-bottom: 0.75rem;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .navbar .container {

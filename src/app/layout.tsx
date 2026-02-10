@@ -4,9 +4,9 @@ import Footer from '@/components/Footer';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'Zen LM - Real-Time AI for XR/VR/Robotics',
-  description: 'Real-Time Hyper-Modal AI for XR/VR/Robotics',
-  keywords: 'AI, XR, VR, Robotics, Language Models, Multimodal AI, 3D, Spatial Computing',
+  title: 'Zen LM - Open Foundation Models for Agentic AI',
+  description: '30+ open models from 0.6B to 1T parameters. Flagship Zen Coder trained on 8.47B tokens of real programming sessions.',
+  keywords: 'AI, LLM, Agentic AI, Code Generation, Zen Coder, Multimodal, Open Source, Machine Learning',
 };
 
 export default function RootLayout({

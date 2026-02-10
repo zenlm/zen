@@ -32,6 +32,9 @@ export default function Header() {
               <Link href="/models" className={isActive('/models') ? 'active' : ''}>
                 Models
               </Link>
+              <Link href="/datasets" className={isActive('/datasets') ? 'active' : ''}>
+                Datasets
+              </Link>
               <Link href="/research" className={isActive('/research') ? 'active' : ''}>
                 Research
               </Link>

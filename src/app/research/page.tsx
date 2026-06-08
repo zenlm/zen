@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Zen LM Research Papers - Hanzo AI',
+  title: 'Zen LM Research Papers',
   description: 'Collection of technical papers and research publications for the Zen Language Model family',
 };
 

@@ -1,0 +1,141 @@
+---
+title: "Zen MoDE: Mixture of Distilled Experts"
+date: "2026-01-16"
+description: "A technical deep dive into Zen MoDE — Mixture of Distilled Experts — the architecture underlying all Zen models."
+tags: ["Architecture", "Research", "MoE"]
+---
+
+
+<LinkButton href="https://github.com/hanzoai" label="GITHUB" external />
+<LinkButton href="https://huggingface.co/hanzoai" label="HUGGING FACE" external />
+
+All Zen models are built on **Zen MoDE**: Mixture of Distilled Experts. This post explains the architecture, why we chose it, and how distillation and expert routing interact to deliver frontier capability at practical inference cost.
+
+## The Core Problem
+
+There is a fundamental tension in large model design:
+
+- More parameters → better capability
+- More parameters → higher inference cost
+
+Dense scaling laws are well established. Doubling parameters roughly halves perplexity (with sufficient data), but doubles inference FLOP. For production deployment, this is often prohibitive.
+
+Sparse mixture-of-experts (MoE) architectures break this tradeoff. A model with $N$ total parameters activates only $k$ parameters per token. Capability scales with $N$; inference cost scales with $k$.
+
+The challenge: sparse models are harder to train. Expert collapse (all routing to a small subset) and load imbalance are common failure modes. Distillation from strong dense teachers is our solution.
+
+## Expert Routing
+
+In Zen MoDE, each transformer layer contains $E$ feed-forward expert networks. A lightweight router assigns each token to the top-$k$ experts:
+
+$$\text{route}(x) = \text{TopK}(\text{softmax}(W_r x), k)$$
+
+The final output for a token is the weighted combination of selected expert outputs:
+
+$$\text{FFN}(x) = \sum_{i \in \text{TopK}} g_i \cdot E_i(x)$$
+
+where $g_i$ are the gating scores from the router.
+
+For Zen4 Ultra (480B total, 35B active):
+- $E = 128$ experts per layer
+- $k = 8$ experts selected per token
+- Active parameter fraction: ~7.3%
+
+### Load Balancing
+
+Expert collapse is a training failure mode where a small subset of experts receives nearly all routing weight. We prevent this with a combination of:
+
+1. **Auxiliary load-balancing loss**: Penalizes variance in expert utilization across a batch
+2. **Expert-choice routing** in the first two layers: experts select tokens rather than tokens selecting experts
+3. **Gradient clipping per-expert**: Prevents any single expert from dominating early training
+
+Our training logs show utilization entropy $> 0.95$ of maximum for all layers by step 10K.
+
+## Distillation
+
+The "Distilled" in MoDE refers to how we initialize and refine experts. Standard MoE training from random initialization is unstable and slow. Our approach:
+
+### Phase 1: Teacher Pre-Training
+
+A dense teacher model is trained to convergence on the full corpus. This teacher encodes rich representations of the training distribution and serves as the knowledge source for distillation.
+
+### Phase 2: Expert Initialization
+
+Experts are initialized by clustering the teacher's FFN weight matrices. We use $k$-means clustering on the weight space to partition the teacher's knowledge into $E$ expert "seeds." This gives each expert a distinct initialization that covers a different region of the input distribution.
+
+### Phase 3: Joint Training with Distillation Loss
+
+The MoE student trains against two objectives simultaneously:
+
+$$\mathcal{L} = \mathcal{L}_{\text{LM}} + \lambda \cdot \mathcal{L}_{\text{distill}}$$
+
+The distillation loss minimizes KL divergence between student and teacher output distributions:
+
+$$\mathcal{L}_{\text{distill}} = \text{KL}(p_{\text{teacher}} \| p_{\text{student}})$$
+
+This keeps experts aligned with the teacher's knowledge while allowing specialization to emerge naturally through routing.
+
+### Phase 4: Expert Specialization
+
+As training progresses, experts naturally specialize. We observe consistent patterns:
+- Some experts specialize on code tokens
+- Others on mathematical notation
+- Others on conversational context
+- Some appear to specialize on specific languages
+
+We do not explicitly enforce this specialization — it emerges from the routing gradient.
+
+## Why MoE Beats Dense for Capability/Cost
+
+Consider Zen Max (72B dense equivalent) vs. Zen4 Pro (32B MoE, 22B active). At similar inference cost:
+
+| | Zen Max 72B | Zen4 Pro 32B MoE |
+|-|-------------|-----------------|
+| Total params | 72B | 32B |
+| Active params | 72B | 22B |
+| Inference FLOP | 1x | 0.31x |
+| MMLU | 87.1 | 85.3 |
+| MATH | 73.2 | 71.8 |
+| HumanEval | 82.4 | 80.9 |
+
+At 69% lower inference cost, the MoE model is within 2 points on all benchmarks. For most production use cases, this tradeoff is clearly favorable.
+
+## Context Handling
+
+Zen MoDE uses grouped-query attention (GQA) for memory efficiency:
+
+- 8 KV heads shared across 64 query heads
+- ~8x reduction in KV cache memory
+- Enables longer effective context at the same VRAM budget
+
+For Zen4 Ultra, the native context window is 256K tokens, extending to 1M with YaRN (Yet another RoPE extensioN) scaling.
+
+## Tokenizer
+
+All Zen4 models share a unified tokenizer:
+- 151,936 vocabulary size
+- Byte-level BPE with UTF-8 pre-tokenization
+- Special tokens for chat, tool-use, and reasoning modes
+- Code-optimized: reserved token ranges for common code patterns
+
+Compared to smaller vocabularies, this reduces average token count per document by 12% for English and 25% for code.
+
+## Training Infrastructure
+
+Zen models are trained on the Zoo Compute Network:
+- Distributed across H100/A100 clusters contributed by network participants
+- ZeRO-3 parallelism for memory efficiency
+- Pipeline parallelism for very large models
+- Gradient checkpointing enabled by default
+
+Training Zen4 Ultra (480B) required 2.1 million GPU-hours. This was funded through the Zoo Labs Foundation treasury (ZIP-72 governance vote) and completed over 6 months.
+
+## Open Weights and Reproducibility
+
+We release all weights, tokenizer configurations, and training hyperparameters. We do not release training data (privacy and licensing constraints), but we publish detailed data composition statistics and filtering methodology.
+
+Architecture configurations are available in the Hugging Face model cards under `hanzoai/`.
+
+---
+
+*Questions? Open an issue on [GitHub](https://github.com/hanzoai) or join the [Discord](https://discord.gg/hanzoai).*

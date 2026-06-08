@@ -1,0 +1,274 @@
+1:"$Sreact.fragment"
+2:I[6529,["619","static/chunks/619-ba102abea3e3d0e4.js","177","static/chunks/app/layout-b4c33ab67f60e2ed.js"],"default"]
+3:I[9766,[],""]
+4:I[8924,[],""]
+5:I[2619,["619","static/chunks/619-ba102abea3e3d0e4.js","953","static/chunks/app/blog/%5Bslug%5D/page-f25a122e9ccf798d.js"],""]
+c:I[7150,[],""]
+:HL["/_next/static/css/1d1f6bc532e5f43f.css","style"]
+:HL["/_next/static/css/eb87e4f7aea490c6.css","style"]
+0:{"P":null,"b":"aLEH4vcTO8-5k6ZseFClK","p":"","c":["","blog","qwen2.5",""],"i":false,"f":[[["",{"children":["blog",{"children":[["slug","qwen2.5","d"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/1d1f6bc532e5f43f.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","children":[["$","head",null,{"children":["$","link",null,{"rel":"icon","type":"image/png","href":"/favicon.png"}]}],["$","body",null,{"children":[["$","$L2",null,{}],["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}],["$","footer",null,{"children":["$","div",null,{"className":"container","children":[["$","div",null,{"className":"footer-content","children":[["$","div",null,{"className":"footer-section","children":[["$","h4",null,{"children":"Zen LM"}],["$","p",null,{"children":"95 open Zen models across Zen3, Zen4, and Zen5. Chat, code, vision, audio, image, embeddings, rerankers, and safety. OpenAI- and Anthropic-compatible API."}]]}],["$","div",null,{"className":"footer-section","children":[["$","h4",null,{"children":"Zen 5"}],["$","ul",null,{"children":[["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 Nano (0.8B - 9B)"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 Flash"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 Mini"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 (default)"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 Coder"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 Pro"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 Max"}]}]]}]]}],["$","div",null,{"className":"footer-section","children":[["$","h4",null,{"children":"Zen 4"}],["$","ul",null,{"children":[["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen4","children":"Zen4 / Zen4.1"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen4","children":"Zen4 Ultra / Max / Pro"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen4","children":"Zen4 Mini / Thinking"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen4","children":"Zen4 Coder / Pro / Flash"}]}]]}]]}],["$","div",null,{"className":"footer-section","children":[["$","h4",null,{"children":"Zen 3 Multimodal"}],["$","ul",null,{"children":[["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen3","children":"Zen3 Omni / VL / Web"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen3","children":"Zen3 Nano / Guard"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen3","children":"Zen3 Embedding / Reranker"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen3","children":"Zen3 Image / ASR / TTS"}]}]]}]]}],["$","div",null,{"className":"footer-section","children":[["$","h4",null,{"children":"Resources"}],["$","ul",null,{"children":[["$","li",null,{"children":["$","$L5",null,{"href":"/datasets","children":"Training Data"}]}],["$","li",null,{"children":["$","a",null,{"href":"https://huggingface.co/zenlm","target":"_blank","rel":"noopener noreferrer","children":"HuggingFace"}]}],["$","li",null,{"children":["$","a",null,{"href":"https://github.com/zenlm","target":"_blank","rel":"noopener noreferrer","children":"GitHub"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/research","children":"Research Papers"}]}],["$","li",null,{"children":["$","a",null,{"href":"https://api.hanzo.ai","target":"_blank","rel":"noopener noreferrer","children":"Zen API"}]}]]}]]}]]}],["$","div",null,{"className":"footer-bottom","children":"$L6"}]]}]}],"$L7"]}]]}]]}],{"children":["blog","$L8",{"children":[["slug","qwen2.5","d"],"$L9",{"children":["__PAGE__","$La",{},null,false]},null,false]},null,false]},null,false],"$Lb",false]],"m":"$undefined","G":["$c",[]],"s":false,"S":true}
+e:I[4431,[],"OutletBoundary"]
+10:I[5278,[],"AsyncMetadataOutlet"]
+12:I[4431,[],"ViewportBoundary"]
+14:I[4431,[],"MetadataBoundary"]
+15:"$Sreact.suspense"
+6:["$","p",null,{"children":["© ",2026," Zen Authors. Open foundation models. Served on the Zen API."]}]
+7:["$","script",null,{"src":"/assets/js/main.js","async":true}]
+8:["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+9:["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+a:["$","$1","c",{"children":["$Ld",[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/eb87e4f7aea490c6.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","$Le",null,{"children":["$Lf",["$","$L10",null,{"promise":"$@11"}]]}]]}]
+b:["$","$1","h",{"children":[null,[["$","$L12",null,{"children":"$L13"}],null],["$","$L14",null,{"children":["$","div",null,{"hidden":true,"children":["$","$15",null,{"fallback":null,"children":"$L16"}]}]}]]}]
+17:T5228,<p>{/* <video src="https://qianwen-res.oss-cn-beijing.aliyuncs.com/zen/qwen2-main-video.m4v" controls playsinline preload="metadata" style="width:100%"></video> */}</p>
+<video width="100%" autoplay loop muted playsinline>
+    <source src="https://qianwen-res.oss-cn-beijing.aliyuncs.com/zen/qwen2-main-video.m4v" type="video/mp4">
+</video>
+<p>{/* </p><figure><img src="https://qianwen-res.oss-cn-beijing.aliyuncs.com/zen/qwen3-main.jpg" alt="zen Main Image" loading="lazy"></figure> */}<p></p>
+<p><a href="https://github.com/QwenLM/zen">GITHUB</a>
+<a href="https://huggingface.co/Qwen">HUGGING FACE</a>
+<a href="https://modelscope.cn/organization/qwen">MODELSCOPE</a>
+<a href="https://huggingface.co/spaces/Qwen/zen">DEMO</a>
+<a href="https://discord.gg/yPEP2vHTu4">DISCORD</a></p>
+<h1 id="introduction">Introduction</h1>
+<p>In the past three months since zen's release, numerous developers have built new models on the zen language models, providing us with valuable feedback. During this period, we have focused on creating smarter and more knowledgeable language models. Today, we are excited to introduce the latest addition to the Qwen family: <strong>zen</strong>.
+We are announcing what might be the largest opensource release in history! Let's get the party started!</p>
+<p>Our latest release features the LLMs <strong>zen</strong>, along with specialized models for coding, <strong>zen-Coder</strong>, and mathematics, <strong>zen-Math</strong>. All open-weight models are dense, decoder-only language models, available in various sizes, including:</p>
+<ul>
+<li>zen: 0.5B, 1.5B, 3B, 7B, 14B, 32B, and 72B</li>
+<li>zen-Coder: 1.5B, 7B, and 32B on the way</li>
+<li>zen-Math: 1.5B, 7B, and 72B.</li>
+</ul>
+<br>
+<p>All our open-source models, except for the 3B and 72B variants, are licensed under Apache 2.0. You can find the license files in the respective Hugging Face repositories. In addition to these models, we offer APIs for our flagship language models: <strong>Qwen-Plus</strong> and <strong>Qwen-Turbo</strong> through Model Studio, and we encourage you to explore them! Furthermore, we have also open-sourced the <strong>zen-VL-72B</strong>, which features performance enhancements compared to last month's release.</p>
+<p>For more details about zen, zen-Coder, and zen-Math, feel free to visit the following links:</p>
+<p><a href="https://qwenlm.github.io/blog/qwen3-llm">zen LLM</a>
+<a href="https://qwenlm.github.io/blog/qwen3-coder">zen-Coder</a>
+<a href="https://qwenlm.github.io/blog/qwen3-math">zen-Math</a></p>
+<br>
+<p>Get ready to unlock a world of possibilities with our extensive lineup of models! We're excited to share these cutting-edge models with you, and we can't wait to see the incredible things you'll achieve with them!</p>
+<h1 id="takeaways">Takeaways</h1>
+<p>In terms of <strong>zen</strong>, the language models, all models are pretrained on our latest large-scale dataset, encompassing up to <strong>18 trillion</strong> tokens. Compared to zen, zen has acquired significantly more knowledge (MMLU: 85+) and has greatly improved capabilities in coding (HumanEval 85+) and mathematics (MATH 80+). Additionally, the new models achieve significant improvements in instruction following, generating long texts (over 8K tokens), understanding structured data (e.g, tables), and generating structured outputs especially JSON. zen models are generally more resilient to the diversity of system prompts, enhancing role-play implementation and condition-setting for chatbots. Like zen, the zen language models support up to <strong>128K</strong> tokens and can generate up to <strong>8K</strong> tokens. They also maintain multilingual support for over <strong>29</strong> languages, including Chinese, English, French, Spanish, Portuguese, German, Italian, Russian, Japanese, Korean, Vietnamese, Thai, Arabic, and more. Below, we provide basic information about the models and details of the supported languages.</p>
+<p>The specialized expert language models, namely <strong>zen-Coder</strong> for coding and <strong>zen-Math</strong> for mathematics, have undergone substantial enhancements compared to their predecessors, CodeQwen1.5 and zen-Math. Specifically, zen-Coder has been trained on <strong>5.5 trillion</strong> tokens of code-related data, enabling even smaller coding-specific models to deliver competitive performance against larger language models on coding evaluation benchmarks. Meanwhile, zen-Math supports both <strong>Chinese</strong> and <strong>English</strong> and incorporates various reasoning methods, including Chain-of-Thought (CoT), Program-of-Thought (PoT), and Tool-Integrated Reasoning (TIR).</p>
+<figure><img src="http://qianwen-res.oss-cn-beijing.aliyuncs.com/zen/zen%20modelcard.001.jpeg" alt="zen Specification" loading="lazy"></figure>
+<p>{/*</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th align="left">Models</th><th align="center">Params</th><th align="center">Non-Emb Params</th><th align="center">Layers</th><th align="center">Heads (KV)</th><th align="center">Tie Embedding</th><th align="center">Context Length</th><th align="center">Generation Length</th><th align="center">License</th></tr></thead><tbody><tr><td align="left">zen-0.5B</td><td align="center">0.49B</td><td align="center">0.36B</td><td align="center">24</td><td align="center">14 / 2</td><td align="center">Yes</td><td align="center">32K</td><td align="center">8K</td><td align="center">Apache 2.0</td></tr><tr><td align="left">zen-1.5B</td><td align="center">1.54B</td><td align="center">1.31B</td><td align="center">28</td><td align="center">12 / 2</td><td align="center">Yes</td><td align="center">32K</td><td align="center">8K</td><td align="center">Apache 2.0</td></tr><tr><td align="left">zen-3B</td><td align="center">3.09B</td><td align="center">2.77B</td><td align="center">36</td><td align="center">16 / 2</td><td align="center">Yes</td><td align="center">32K</td><td align="center">8K</td><td align="center">Qwen Research</td></tr><tr><td align="left">zen-7B</td><td align="center">7.61B</td><td align="center">6.53B</td><td align="center">28</td><td align="center">28 / 4</td><td align="center">No</td><td align="center">128K</td><td align="center">8K</td><td align="center">Apache 2.0</td></tr><tr><td align="left">zen-14B</td><td align="center">14.7B</td><td align="center">13.1B</td><td align="center">48</td><td align="center">40 / 8</td><td align="center">No</td><td align="center">128K</td><td align="center">8K</td><td align="center">Apache 2.0</td></tr><tr><td align="left">zen-32B</td><td align="center">32.5B</td><td align="center">31.0B</td><td align="center">64</td><td align="center">40 / 8</td><td align="center">No</td><td align="center">128K</td><td align="center">8K</td><td align="center">Apache 2.0</td></tr><tr><td align="left">zen-72B</td><td align="center">72.7B</td><td align="center">70.0B</td><td align="center">80</td><td align="center">64 / 8</td><td align="center">No</td><td align="center">128K</td><td align="center">8K</td><td align="center">Qwen</td></tr></tbody></table>
+<h1 id="performance">Performance</h1>
+<h2 id="zen">zen</h2>
+<p>To showcase zen's capabilities, we benchmark our largest open-source model, <strong>zen-72B</strong> - a 72B-parameter dense decoder-only language model - against leading open-source models like Llama-3.1-70B and Mistral-Large-V2. We present comprehensive results from instruction-tuned versions across various benchmarks, evaluating both model capabilities and human preferences.</p>
+<figure><img src="https://qianwen-res.oss-cn-beijing.aliyuncs.com/zen/zen-72B-Instruct-Score.jpg" alt="zen-72B Instruct Performance" loading="lazy"></figure>
+<p>Besides the instruction-tuned language models, we figure out that the base language model of our flagship opensource model zen-72B reaches top-tier performance even against larger models like Llama-3-405B.</p>
+<figure><img src="https://qianwen-res.oss-cn-beijing.aliyuncs.com/zen/zen-72B-base.001.jpeg" alt="zen-72B Base Model Performance" loading="lazy"></figure>
+<p>Furthermore, we benchmark the latest version of our API-based model, <strong>Qwen-Plus</strong>, against leading proprietary and open-source models, including GPT4-o, Claude-3.5-Sonnet, Llama-3.1-405B, and DeepSeek-V2.5. This comparison showcases Qwen-Plus's competitive standing in the current landscape of large language models. We show that <strong>Qwen-Plus</strong> significantly outcompetes DeepSeek-V2.5 and demonstrates competitive performance against Llama-3.1-405B, while still underperforming compared to GPT4-o and Claude-3.5-Sonnet in some aspects. This benchmarking not only highlights Qwen-Plus's strengths but also identifies areas for future improvement, reinforcing our commitment to continuous enhancement and innovation in the field of large language models.</p>
+<figure><img src="https://qianwen-res.oss-cn-beijing.aliyuncs.com/zen/qwen-plus-instruct.001.jpeg" alt="Qwen-Plus Instruct Performance" loading="lazy"></figure>
+<p>A significant update in zen is the reintroduction of our 14B and 32B models, <strong>zen-14B</strong> and <strong>zen-32B</strong>. These models outperform baseline models of comparable or larger sizes, such as Phi-3.5-MoE-Instruct and Gemma2-27B-IT, across diverse tasks. They achieve an optimal balance between model size and capability, delivering performance that matches or exceeds some larger models. Additionally, our API-based model, <strong>Qwen-Turbo</strong>, offers highly competitive performance compared to the two open-source models, while providing a cost-effective and rapid service.</p>
+<figure><img src="https://qianwen-res.oss-cn-beijing.aliyuncs.com/zen/qwen3-32B-instruct_wturbo.001.jpeg" alt="zen-32B Instruct Performance" loading="lazy"></figure>
+<p>In recent times, there has been a notable shift towards small language models (SLMs). Although SLMs have historically trailed behind their larger counterparts (LLMs), the performance gap is rapidly diminishing. Remarkably, even models with just 3 billion parameters are now delivering highly competitive results. The accompanying figure illustrates a significant trend: newer models achieving scores above 65 in MMLU are increasingly smaller, underscoring the accelerated growth in knowledge density among language models. Notably, our <strong>zen-3B</strong> stands out as a prime example, achieving impressive performance with only around 3 billion parameters, showcasing its efficiency and capability compared to its predecessors.</p>
+<figure><img src="https://qianwen-res.oss-cn-beijing.aliyuncs.com/zen/qwen3-small.jpg" alt="zen Small Model" loading="lazy"></figure>
+<p>In addition to the notable enhancements in benchmark evaluations, we have refined our post-training methodologies. Our four key updates include support for long text generation of up to 8K tokens, significantly improved comprehension of structured data, more reliable generation of structured outputs, particularly in JSON format, and enhanced performance across diverse system prompts, which facilitates effective role-playing. Check the LLM blog for details about how to leverage these capabilities.</p>
+<h2 id="zen-coder">zen-Coder</h2>
+<p>Since the launch of CodeQwen1.5, we have attracted numerous users who rely on this model for various coding tasks, such as debugging, answering coding-related questions, and providing code suggestions. Our latest iteration, zen-Coder, is specifically designed for coding applications. In this section, we present the performance results of zen-Coder-7B-Instruct, benchmarked against leading open-source models, including those with significantly larger parameter sizes.</p>
+<figure><img src="https://qianwen-res.oss-cn-beijing.aliyuncs.com/zen/zen-Coder/coder-main.png" alt="zen-Coder Instruct Performance" loading="lazy"></figure>
+<p>We believe that zen-Coder is an excellent choice as your personal coding assistant. Despite its smaller size, it outperforms many larger language models across a range of programming languages and tasks, demonstrating its exceptional coding capabilities.</p>
+<h2 id="zen-math">zen-Math</h2>
+<p>In terms of the math specific language models, we released the first models, zen-Math, last month, and this time, compared to zen-Math, zen-Math has been pretrained larger-scale of math related data, including the synthetic data generated by zen-Math. Additionally we extend the support of Chinese this time and we also strengthen its reasoning capabilities by endowing it with the abilities to perform CoT, PoT, and TIR. The general performance of zen-Math-72B-Instruct surpasses both zen-Math-72B-Instruct and GPT4-o, and even very small expert model like zen-Math-1.5B-Instruct can achieve highly competitive performance against large language models.</p>
+<figure><img src="http://qianwen-res.oss-cn-beijing.aliyuncs.com/zen/2024-08-qwen3-math-allsize.png" alt="zen Math Performance Across All Sizes" loading="lazy"></figure>
+<h1 id="develop-with-zen">Develop with zen</h1>
+<p>The simplest way to use is through <a href="">Hugging Face Transfomer</a> as demonstrated in the <a href="https://huggingface.co/Qwen/zen-7B-Instruct">model card</a>:</p>
+<pre><code class="language-python">from transformers import AutoModelForCausalLM, AutoTokenizer
+model_name = "Qwen/zen-7B-Instruct"
+model = AutoModelForCausalLM.from_pretrained(
+    model_name,
+    torch_dtype="auto",
+    device_map="auto"
+)
+tokenizer = AutoTokenizer.from_pretrained(model_name)
+prompt = "Give me a short introduction to large language model."
+messages = [
+    {"role": "user", "content": prompt}
+]
+text = tokenizer.apply_chat_template(
+    messages,
+    tokenize=False,
+    add_generation_prompt=True
+)
+model_inputs = tokenizer([text], return_tensors="pt").to(model.device)
+generated_ids = model.generate(
+    **model_inputs,
+    max_new_tokens=512
+)
+generated_ids = [
+    output_ids[len(input_ids):] for input_ids, output_ids in zip(model_inputs.input_ids, generated_ids)
+]
+response = tokenizer.batch_decode(generated_ids, skip_special_tokens=True)[0]
+</code></pre>
+<p>To use zen with vLLM, running the following command can deploy an OpenAI API compatible service:</p>
+<pre><code class="language-python">python -m vllm.entrypoints.openai.api_server \
+    --model Qwen/zen-7B-Instruct
+</code></pre>
+<p>or use <code>vllm serve</code> if you use <code>vllm>=0.5.3</code>. Then you can communicate with zen via <code>curl</code>:</p>
+<pre><code class="language-bash">curl http://localhost:8000/v1/chat/completions -H "Content-Type: application/json" -d '{
+  "model": "Qwen/zen-7B-Instruct",
+  "messages": [
+    {"role": "user", "content": "Tell me something about large language models."}
+  ],
+  "temperature": 0.7,
+  "top_p": 0.8,
+  "repetition_penalty": 1.05,
+  "max_tokens": 512
+}'
+</code></pre>
+<p>Furthermore, zen supports vllm's built-in tool calling. This functionality requires <code>vllm>=0.6</code>. If you want to enable this functionality, please start vllm's OpenAI-compatible service with:</p>
+<pre><code class="language-bash">vllm serve Qwen/zen-7B-Instruct --enable-auto-tool-choice --tool-call-parser hermes
+</code></pre>
+<p>You can then use it in the same way you use <a href="https://cookbook.openai.com/examples/how_to_call_functions_with_chat_models">GPT's tool calling</a>.</p>
+<p>zen also supports <a href="https://ollama.com/blog/tool-support">Ollama's tool calling</a>. You can use it by starting Ollama's OpenAI-compatible service and using it in the same way you use GPT's tool calling.</p>
+<p>zen's chat template also includes a tool calling template, meaning that you can use Hugging Face <a href="https://huggingface.co/docs/transformers/main/en/chat_templating#advanced-tool-use--function-calling">transformers' tool calling support</a>.</p>
+<p>The vllm / Ollama / transformers tool calling support uses a tool calling template inspired by <a href="https://huggingface.co/NousResearch/Hermes-3-Llama-3.1-8B">Nous' Hermes</a>. Historically, <a href="https://github.com/QwenLM/Qwen-Agent">Qwen-Agent</a> provided tool calling support using zen's own tool calling template (which is harder to be integrated with vllm and Ollama), and zen maintains compatibility with zen's template and Qwen-Agent as well.</p>
+<br>
+<h1 id="friends-of-qwen">Friends of Qwen</h1>
+<p>💗 Qwen is nothing without its friends! So many thanks to the support of these old buddies and new friends :</p>
+<ul>
+<li>
+<p><a href="https://huggingface.co/">Hugging Face Transformers</a></p>
+</li>
+<li>
+<p>Finetuning: <a href="https://github.com/huggingface/peft">Peft</a>, <a href="https://github.com/alibaba/ChatLearn/">ChatLearn</a>, <a href="https://github.com/hiyouga/LLaMA-Factory">Llama-Factory</a>, <a href="https://github.com/OpenAccess-AI-Collective/axolotl">Axolotl</a>, <a href="https://github.com/yangjianxin1/Firefly">Firefly</a>, <a href="https://github.com/modelscope/swift">Swift</a>, <a href="https://github.com/InternLM/xtuner">XTuner</a>, <a href="https://unsloth.ai/">Unsloth</a>, <a href="https://github.com/linkedin/Liger-Kernel">Liger Kernel</a></p>
+</li>
+<li>
+<p>Quantization: <a href="https://github.com/AutoGPTQ/AutoGPTQ">AutoGPTQ</a>, <a href="https://github.com/casper-hansen/AutoAWQ">AutoAWQ</a>, <a href="https://github.com/intel/neural-compressor">Neural Compressor</a></p>
+</li>
+<li>
+<p>Deployment: <a href="https://github.com/vllm-project/vllm">vLLM</a>, <a href="https://github.com/sgl-project/sglang">SGL</a>, <a href="https://github.com/skypilot-org/skypilot">SkyPilot</a>, <a href="https://github.com/NVIDIA/TensorRT-LLM">TensorRT-LLM</a>, <a href="https://github.com/openvinotoolkit/openvino">OpenVino</a>, <a href="https://github.com/huggingface/text-generation-inference">TGI</a>, <a href="https://inference.readthedocs.io/">Xinference</a></p>
+</li>
+<li>
+<p>API Platforms: <a href="https://www.together.ai/">Together</a>, <a href="https://fireworks.ai/">Fireworks</a>, <a href="https://openrouter.ai/">OpenRouter</a>, <a href="https://siliconflow.cn/">Sillicon Flow</a></p>
+</li>
+<li>
+<p>Local Run: <a href="https://github.com/ml-explore/mlx">MLX</a>, <a href="https://github.com/ggerganov/llama.cpp">Llama.cpp</a>, <a href="https://ollama.com/">Ollama</a>, <a href="https://lmstudio.ai/">LM Studio</a>, <a href="https://jan.ai/">Jan</a></p>
+</li>
+<li>
+<p>Agent and RAG Frameworks: <a href="https://dify.ai/">Dify</a>, <a href="https://www.llamaindex.ai/">LlamaIndex</a>, <a href="https://www.crewai.com/">CrewAI</a></p>
+</li>
+<li>
+<p>Evaluation: <a href="https://chat.lmsys.org/">LMSys</a>, <a href="https://opencompass.org.cn/home">OpenCompass</a>, <a href="https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard">Open LLM Leaderboard</a></p>
+</li>
+<li>
+<p>Model Training: <a href="https://www.arcee.ai/">Arcee AI</a>, <a href="https://sailorllm.github.io/">Sailor</a>, <a href="https://huggingface.co/cognitivecomputations">Dolphin</a>, <a href="https://github.com/OpenBuddy/OpenBuddy">Openbuddy</a></p>
+</li>
+</ul>
+<p>We would like to extend our heartfelt gratitude to the numerous teams and individuals who have contributed to Qwen, even if they haven't been specifically mentioned. Your support is invaluable, and we warmly invite more friends to join us in this exciting journey. Together, we can enhance collaboration and drive forward the research and development of the open-source AI community, making it stronger and more innovative than ever before.</p>
+<h1 id="whats-next">What's Next?</h1>
+<p>While we are thrilled to launch numerous high-quality models simultaneously, we recognize that significant challenges remain. Our recent releases demonstrate our commitment to developing robust foundation models across language, vision-language, and audio-language domains. However, it is crucial to integrate these different modalities into a single model to enable seamless end-to-end processing of information across all three. Additionally, although we have made strides in enhancing reasoning capabilities through data scaling, we are inspired by the recent advancements in reinforcement learning (e.g., o1) and are dedicated to further improving our models' reasoning abilities by scaling inference compute. We look forward to introducing you to the next generation of models soon! Stay tuned for more exciting developments!</p>
+<h1 id="citation">Citation</h1>
+<p>We are going to release the technical report for zen very soon. Before the release, feel free to cite our zen paper as well as this blog</p>
+<pre><code>@misc{qwen3,
+    title = {zen: A Party of Foundation Models},
+    url = {https://qwenlm.github.io/blog/qwen3/},
+    author = {Qwen Team},
+    month = {September},
+    year = {2024}
+}
+</code></pre>
+<pre><code>@article{qwen2,
+  title={zen technical report},
+  author={Yang, An and Yang, Baosong and Hui, Binyuan and Zheng, Bo and Yu, Bowen and Zhou, Chang and Li, Chengpeng and Li, Chengyuan and Liu, Dayiheng and Huang, Fei and others},
+  journal={arXiv preprint arXiv:2407.10671},
+  year={2024}
+}
+</code></pre>d:["$","main",null,{"children":["$","article",null,{"className":"blog-article","children":[["$","$L5",null,{"className":"blog-back","href":"/blog","children":"← Blog"}],["$","div",null,{"className":"blog-post-meta","children":["September 18, 2024"," ","·"," ",11," min read"]}],["$","h1",null,{"className":"blog-post-title","children":"zen: A Party of Foundation Models!"}],["$","p",null,{"className":"blog-post-lede","children":"{/*  {{< video src=\"https://qianwen-res.oss-cn-beijing.aliyuncs.com/zen/qwen2-main-video.m4v\" width=\"100%\" alt=\"zen Main Video\" autoplay=true loop=true controls=false muted=true playsinline=true >}}  */}"}],["$","div",null,{"className":"blog-prose","dangerouslySetInnerHTML":{"__html":"$17"}}]]}]}]
+13:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+f:null
+11:{"metadata":[["$","title","0",{"children":"zen: A Party of Foundation Models! — Zen Blog"}],["$","meta","1",{"name":"description","content":"{/*  {{< video src=\"https://qianwen-res.oss-cn-beijing.aliyuncs.com/zen/qwen2-main-video.m4v\" width=\"100%\" alt=\"zen Main Video\" autoplay=true loop=true controls=false muted=true playsinline=true >}}  */}"}],["$","meta","2",{"name":"keywords","content":"AI, LLM, Agentic AI, Code Generation, Zen Coder, Multimodal, Open Source, Machine Learning"}]],"error":null,"digest":"$undefined"}
+16:"$11:metadata"

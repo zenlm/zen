@@ -1,0 +1,93 @@
+1:"$Sreact.fragment"
+2:I[6529,["619","static/chunks/619-ba102abea3e3d0e4.js","177","static/chunks/app/layout-b4c33ab67f60e2ed.js"],"default"]
+3:I[9766,[],""]
+4:I[8924,[],""]
+5:I[2619,["619","static/chunks/619-ba102abea3e3d0e4.js","953","static/chunks/app/blog/%5Bslug%5D/page-f25a122e9ccf798d.js"],""]
+c:I[7150,[],""]
+:HL["/_next/static/css/1d1f6bc532e5f43f.css","style"]
+:HL["/_next/static/css/eb87e4f7aea490c6.css","style"]
+0:{"P":null,"b":"aLEH4vcTO8-5k6ZseFClK","p":"","c":["","blog","qwq-max-preview",""],"i":false,"f":[[["",{"children":["blog",{"children":[["slug","qwq-max-preview","d"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/1d1f6bc532e5f43f.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","children":[["$","head",null,{"children":["$","link",null,{"rel":"icon","type":"image/png","href":"/favicon.png"}]}],["$","body",null,{"children":[["$","$L2",null,{}],["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}],["$","footer",null,{"children":["$","div",null,{"className":"container","children":[["$","div",null,{"className":"footer-content","children":[["$","div",null,{"className":"footer-section","children":[["$","h4",null,{"children":"Zen LM"}],["$","p",null,{"children":"95 open Zen models across Zen3, Zen4, and Zen5. Chat, code, vision, audio, image, embeddings, rerankers, and safety. OpenAI- and Anthropic-compatible API."}]]}],["$","div",null,{"className":"footer-section","children":[["$","h4",null,{"children":"Zen 5"}],["$","ul",null,{"children":[["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 Nano (0.8B - 9B)"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 Flash"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 Mini"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 (default)"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 Coder"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 Pro"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 Max"}]}]]}]]}],["$","div",null,{"className":"footer-section","children":[["$","h4",null,{"children":"Zen 4"}],["$","ul",null,{"children":[["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen4","children":"Zen4 / Zen4.1"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen4","children":"Zen4 Ultra / Max / Pro"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen4","children":"Zen4 Mini / Thinking"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen4","children":"Zen4 Coder / Pro / Flash"}]}]]}]]}],["$","div",null,{"className":"footer-section","children":[["$","h4",null,{"children":"Zen 3 Multimodal"}],["$","ul",null,{"children":[["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen3","children":"Zen3 Omni / VL / Web"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen3","children":"Zen3 Nano / Guard"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen3","children":"Zen3 Embedding / Reranker"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen3","children":"Zen3 Image / ASR / TTS"}]}]]}]]}],["$","div",null,{"className":"footer-section","children":[["$","h4",null,{"children":"Resources"}],["$","ul",null,{"children":[["$","li",null,{"children":["$","$L5",null,{"href":"/datasets","children":"Training Data"}]}],["$","li",null,{"children":["$","a",null,{"href":"https://huggingface.co/zenlm","target":"_blank","rel":"noopener noreferrer","children":"HuggingFace"}]}],["$","li",null,{"children":["$","a",null,{"href":"https://github.com/zenlm","target":"_blank","rel":"noopener noreferrer","children":"GitHub"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/research","children":"Research Papers"}]}],["$","li",null,{"children":["$","a",null,{"href":"https://api.hanzo.ai","target":"_blank","rel":"noopener noreferrer","children":"Zen API"}]}]]}]]}]]}],["$","div",null,{"className":"footer-bottom","children":"$L6"}]]}]}],"$L7"]}]]}]]}],{"children":["blog","$L8",{"children":[["slug","qwq-max-preview","d"],"$L9",{"children":["__PAGE__","$La",{},null,false]},null,false]},null,false]},null,false],"$Lb",false]],"m":"$undefined","G":["$c",[]],"s":false,"S":true}
+e:I[4431,[],"OutletBoundary"]
+10:I[5278,[],"AsyncMetadataOutlet"]
+12:I[4431,[],"ViewportBoundary"]
+14:I[4431,[],"MetadataBoundary"]
+15:"$Sreact.suspense"
+6:["$","p",null,{"children":["© ",2026," Zen Authors. Open foundation models. Served on the Zen API."]}]
+7:["$","script",null,{"src":"/assets/js/main.js","async":true}]
+8:["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+9:["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+a:["$","$1","c",{"children":["$Ld",[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/eb87e4f7aea490c6.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","$Le",null,{"children":["$Lf",["$","$L10",null,{"promise":"$@11"}]]}]]}]
+b:["$","$1","h",{"children":[null,[["$","$L12",null,{"children":"$L13"}],null],["$","$L14",null,{"children":["$","div",null,{"hidden":true,"children":["$","$15",null,{"fallback":null,"children":"$L16"}]}]}]]}]
+17:T1d11,<figure><img src="https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/qwq-banner-en.jpg" alt="" loading="lazy"></figure>
+<p><a href="https://chat.qwen.ai">QWEN CHAT</a>
+<a href="https://discord.gg/yPEP2vHTu4">DISCORD</a></p>
+<p>This is a blog created by QwQ-Max-Preview. We hope you enjoy it!</p>
+<h2 id="introduction">Introduction</h2>
+<blockquote>
+<p>&#x3C;span style={{fontSize: "smaller", color: "blue"}}>&#x3C;think><br>
+&#x3C;i style={{fontSize: "smaller", color: "grey"}}>
+Okay, the user wants me to create a title and introduction for their blog announcing the release of QwQ-Max-Preview. Let me start by understanding the key points they mentioned.
+<br><br>
+First, the model is part of the Qwen series, built on zen-Max. It's a preview version, so they probably want to highlight that it's a sneak peek before the full release. The main strengths are deep reasoning, math, coding, general domains, and Agent-related tasks. They also mention future updates and open-sourcing under Apache 2.0.
+<br><br>
+For the title, I need to make it catchy and include the model name. Maybe something like "Introducing QwQ-Max-Preview: The Next Leap in Deep Reasoning and Multi-Domain Mastery". That highlights the preview status and the key features.
+<br><br>
+The introduction should summarize the announcement. Start with excitement about the release. Mention it's built on zen-Max, emphasize reasoning, math, coding, and Agent tasks. Note that it's a preview with upcoming updates and eventual open-source. Keep it concise without explanations, as per the user's request. Make sure to use bold for the model name and key terms for emphasis. Avoid any markdown and keep paragraphs short. Let me check if I covered all points: model name, based on zen, preview status, strengths in reasoning/math/coding/Agent tasks, future updates, open-source under Apache 2.0. Yes, that's all there. Alright, time to put it together.</p>
+
+</blockquote>
+<br>
+<span style="{{fontSize:" &#x22;smaller&#x22;,="" color:="" &#x22;blue&#x22;}}="">\</span>
+<p>We’re happy to unveil QwQ-Max-Preview , the latest advancement in the Qwen series, designed to push the boundaries of deep reasoning and versatile problem-solving. Built on the robust foundation of zen-Max , this preview model excels in mathematics, coding, and general-domain tasks, while delivering outstanding performance in Agent-related workflows. As a sneak peek into our upcoming QwQ-Max release, this version offers a glimpse of its enhanced capabilities, with ongoing refinements and an official Apache 2.0-licensed open-source launch of QwQ-Max and zen-Max planned soon. Stay tuned for a new era of intelligent reasoning.
+<br><br></p>
+<h2 id="cases">Cases</h2>
+<p>{/* Interactive example: cases/coder.json <em>/}
+{/</em> Interactive example: cases/game.json <em>/}
+{/</em> Interactive example: cases/game2.json <em>/}
+{/</em> Interactive example: cases/agent.json <em>/}
+{/</em> Interactive example: cases/agent_zh.json <em>/}
+{/</em> Interactive example: cases/math.json <em>/}
+{/</em> Interactive example: cases/creative_writing.json <em>/}
+{/</em> Interactive example: cases/search.json */}</p>
+<h2 id="future-work">Future Work</h2>
+<blockquote>
+<p>&#x3C;span style={{fontSize: "smaller", color: "blue"}}>&#x3C;think><br>
+&#x3C;i style={{fontSize: "smaller", color: "grey"}}>
+Okay, the user wants me to write a future work section for their blog post. They mentioned that besides open-sourcing QwQ-Max, they're planning to release an APP and open-source smaller reasoning models like QwQ-32B for developers to use locally.
+<br><br>
+First, I need to structure this section clearly. The title should reflect the future plans. Maybe something like "Looking Ahead: Expanding Accessibility and Innovation". That sounds forward-looking.
+<br><br>
+Next, the introduction should summarize the upcoming releases. Mention the open-source of QwQ-Max under Apache 2.0, the Qwen Chat APP for broader access, and the smaller models like QwQ-32B. Highlight that these models are for local use, which is important for developers concerned about privacy or resource constraints.
+<br><br>
+Then, break it into subsections. First, the Qwen Chat APP release. Need to explain its features: user-friendly interface, real-time reasoning, collaboration tools. Emphasize accessibility for non-technical users and integration with existing workflows.
+<br><br>
+Second, the open-source smaller models. Mention QwQ-32B as an example. Explain benefits: low latency, privacy, customization. Target audience: developers, researchers, hobbyists.
+<br><br>
+Third, community-driven innovation. Encourage collaboration, contributions, and feedback. Mention fostering ecosystem for AI applications.
+<br><br>
+Finally, a closing paragraph that ties it all together. Reiterate commitment to open-source and empowering the community. Invite readers to join the journey.
+<br><br>
+Check if all points are covered: APP, smaller models, open-source, Apache license, local usage, different audiences. Avoid technical jargon but keep it professional. Make sure it flows well and each section transitions smoothly. Also, ensure the tone matches the excitement from the initial announcement. No markdown, just plain text with clear headings. Alright, that should cover the user's requirements.</p>
+
+</blockquote>
+<br>
+<span style="{{fontSize:" &#x22;smaller&#x22;,="" color:="" &#x22;blue&#x22;}}="">\</span>
+<p>As we prepare for the official open-source release of QwQ-Max under the Apache 2.0 License, our roadmap extends beyond sharing cutting-edge research. We are committed to democratizing access to advanced reasoning capabilities and fostering innovation across diverse applications. Here’s what’s next:</p>
+<ol>
+<li>
+<p><strong>APP Release</strong>
+To bridge the gap between powerful AI and everyday users, we will launch a dedicated APP for Qwen Chat. This intuitive interface will enable seamless interaction with the model for tasks like problem-solving, code generation, and logical reasoning—no technical expertise required. The app will prioritize real-time responsiveness and integration with popular productivity tools, making advanced AI accessible to a global audience.</p>
+</li>
+<li>
+<p><strong>Open-Sourcing Smaller Reasoning Models</strong>
+Recognizing the need for lightweight, resource-efficient solutions, we will release a series of smaller QwQ variants , such as QwQ-32B, for local device deployment. These models will retain robust reasoning capabilities while minimizing computational demands, allowing developers to integrate them into devices. Perfect for privacy-sensitive applications or low-latency workflows, they will empower creators to build custom AI solutions.</p>
+</li>
+<li>
+<p><strong>Community-Driven Innovation</strong>
+By open-sourcing QwQ-Max, zen-Max, and its smaller counterparts, we aim to spark collaboration among developers, researchers, and hobbyists. We invite the community to experiment, fine-tune, and extend these models for specialized use cases—from education tools to autonomous agents. Our goal is to cultivate an ecosystem where innovation thrives through shared knowledge and collective problem-solving.</p>
+</li>
+</ol>
+<p>Stay tuned as we roll out these initiatives, designed to empower users at every level and redefine the boundaries of what AI can achieve. Together, we’re building a future where intelligence is not just powerful, but universally accessible.</p>d:["$","main",null,{"children":["$","article",null,{"className":"blog-article","children":[["$","$L5",null,{"className":"blog-back","href":"/blog","children":"← Blog"}],["$","div",null,{"className":"blog-post-meta","children":["February 24, 2025"," ","·"," ",5," min read"]}],["$","h1",null,{"className":"blog-post-title","children":"<think>...</think> QwQ-Max-Preview"}],["$","p",null,{"className":"blog-post-lede","children":"This is a blog created by QwQ-Max-Preview. We hope you enjoy it!"}],["$","div",null,{"className":"blog-prose","dangerouslySetInnerHTML":{"__html":"$17"}}]]}]}]
+13:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+f:null
+11:{"metadata":[["$","title","0",{"children":"<think>...</think> QwQ-Max-Preview — Zen Blog"}],["$","meta","1",{"name":"description","content":"This is a blog created by QwQ-Max-Preview. We hope you enjoy it!"}],["$","meta","2",{"name":"keywords","content":"AI, LLM, Agentic AI, Code Generation, Zen Coder, Multimodal, Open Source, Machine Learning"}]],"error":null,"digest":"$undefined"}
+16:"$11:metadata"

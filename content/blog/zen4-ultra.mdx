@@ -1,0 +1,166 @@
+---
+title: "Zen4 Ultra: 480B Parameters, 1M Token Context"
+date: "2026-01-20"
+description: "Zen4 Ultra is our most capable model: 480B total parameters, 35B active per token, 1M token context window. Benchmark results and use cases."
+tags: ["Models", "Zen4", "Flagship"]
+---
+
+
+<LinkButton href="https://github.com/hanzoai" label="GITHUB" external />
+<LinkButton href="https://huggingface.co/hanzoai/zen4-ultra" label="HUGGING FACE" external />
+<LinkButton href="https://hanzo.ai/chat" label="TRY ZEN CHAT" external />
+
+**Zen4 Ultra** is the most capable model in the Zen4 family. It is a Mixture of Distilled Experts model with 480B total parameters and 35B active parameters per forward pass. The native context window is 256K tokens, extending to 1M tokens with YaRN extrapolation.
+
+## Architecture
+
+| Property | Value |
+|----------|-------|
+| Total parameters | 480B |
+| Active parameters per token | 35B |
+| Experts per layer | 128 |
+| Top-k routing | 8 |
+| Context window (native) | 256K |
+| Context window (YaRN) | 1M |
+| Vocabulary size | 151,936 |
+| Attention heads | 64 |
+| KV heads (GQA) | 8 |
+| Layers | 94 |
+
+## Benchmark Results
+
+### General Reasoning
+
+| Benchmark | Zen4 Ultra | Zen Max 72B |
+|-----------|------------|-------------|
+| MMLU | 89.4 | 87.1 |
+| MMLU-Pro | 75.2 | 71.8 |
+| ARC-Challenge | 72.1 | 68.4 |
+| HellaSwag | 92.3 | 90.1 |
+| Winogrande | 87.6 | 85.2 |
+
+### Mathematics
+
+| Benchmark | Zen4 Ultra | Zen Max 72B |
+|-----------|------------|-------------|
+| MATH | 81.4 | 73.2 |
+| GSM8K | 95.3 | 92.1 |
+| AMC 2023 | 62.4 | 54.7 |
+| AIME 2024 | 48.2 | 37.6 |
+
+### Code
+
+| Benchmark | Zen4 Ultra | Zen Max 72B |
+|-----------|------------|-------------|
+| HumanEval | 91.2 | 82.4 |
+| MBPP | 87.6 | 81.3 |
+| LiveCodeBench | 52.4 | 44.1 |
+| SWE-bench Verified | 45.7 | 38.2 |
+
+### Long Context
+
+| Task | Score at 32K | Score at 128K | Score at 512K |
+|------|-------------|--------------|--------------|
+| NIAH recall | 99.1% | 98.4% | 94.7% |
+| Summarization | 48.2 | 46.9 | 43.1 |
+| QA over long doc | 74.3 | 71.2 | 64.8 |
+
+Long-context performance remains strong through 512K tokens, with graceful degradation thereafter.
+
+### Multilingual
+
+Evaluated on 30 languages across MMMLU:
+
+| Language Group | Score |
+|---------------|-------|
+| Latin script (high-resource) | 86.4 |
+| Latin script (low-resource) | 72.1 |
+| CJK | 81.3 |
+| Arabic/Hebrew | 76.8 |
+| Other non-Latin | 68.2 |
+
+## Use Cases
+
+### Complex Research and Analysis
+
+Zen4 Ultra excels at tasks requiring synthesis across long documents:
+
+- Analyzing regulatory filings spanning hundreds of pages
+- Cross-referencing scientific literature for systematic reviews
+- Multi-document legal analysis with citation tracking
+- Financial model analysis with full spreadsheet context
+
+The 1M token context allows loading entire codebases, large document sets, or extended conversation histories without truncation.
+
+### Multi-Step Reasoning
+
+For problems requiring planning and backtracking — competitive math, logic puzzles, complex software architecture decisions — Ultra's depth provides measurable advantage over smaller models.
+
+### Agentic Workflows
+
+Ultra's function calling reliability is critical for long-running agent tasks:
+
+- SWE-bench Verified: 45.7% (full-repo software engineering tasks)
+- Tool selection accuracy: 94.2% on held-out tool-use evaluation
+- Multi-turn instruction adherence: 91.8%
+
+### Code Generation
+
+Near-human performance on competitive programming tasks. Generates complete, working implementations of complex algorithms in all major languages.
+
+## Running Zen4 Ultra
+
+### Hugging Face + vLLM (recommended for production)
+
+```python
+from vllm import LLM, SamplingParams
+
+llm = LLM(
+    model="hanzoai/zen4-ultra",
+    tensor_parallel_size=8,   # 8x H100 80GB
+    max_model_len=131072,
+)
+
+outputs = llm.generate(
+    ["Explain the Zen MoDE architecture in detail."],
+    SamplingParams(temperature=0.7, max_tokens=2048),
+)
+```
+
+### Transformers
+
+```python
+from transformers import AutoModelForCausalLM, AutoTokenizer
+import torch
+
+model = AutoModelForCausalLM.from_pretrained(
+    "hanzoai/zen4-ultra",
+    torch_dtype=torch.bfloat16,
+    device_map="auto",
+)
+tokenizer = AutoTokenizer.from_pretrained("hanzoai/zen4-ultra")
+
+messages = [{"role": "user", "content": "Solve: find all integer solutions to x^3 + y^3 = z^3."}]
+text = tokenizer.apply_chat_template(messages, tokenize=False, add_generation_prompt=True)
+inputs = tokenizer(text, return_tensors="pt").to(model.device)
+output = model.generate(**inputs, max_new_tokens=1024)
+print(tokenizer.decode(output[0][inputs.input_ids.shape[1]:], skip_special_tokens=True))
+```
+
+### Hardware Requirements
+
+| Configuration | VRAM | Throughput |
+|--------------|------|------------|
+| 8x H100 80GB | 640GB | ~2,400 tok/s |
+| 16x A100 80GB | 1280GB | ~1,100 tok/s |
+| 32x A100 40GB | 1280GB | ~600 tok/s |
+
+For cost-sensitive production use cases, [Zen Max 72B](/blog/zen-max/) delivers most of Ultra's capability at a fraction of the compute.
+
+## License
+
+Apache-2.0. Commercial use permitted. No royalty or usage fees.
+
+---
+
+*Zen4 Ultra is available now on [Hugging Face](https://huggingface.co/hanzoai/zen4-ultra). For API access, see [hanzo.ai](https://hanzo.ai).*

@@ -1,0 +1,330 @@
+1:"$Sreact.fragment"
+2:I[6529,["619","static/chunks/619-ba102abea3e3d0e4.js","177","static/chunks/app/layout-b4c33ab67f60e2ed.js"],"default"]
+3:I[9766,[],""]
+4:I[8924,[],""]
+5:I[2619,["619","static/chunks/619-ba102abea3e3d0e4.js","953","static/chunks/app/blog/%5Bslug%5D/page-f25a122e9ccf798d.js"],""]
+c:I[7150,[],""]
+:HL["/_next/static/css/1d1f6bc532e5f43f.css","style"]
+:HL["/_next/static/css/eb87e4f7aea490c6.css","style"]
+0:{"P":null,"b":"aLEH4vcTO8-5k6ZseFClK","p":"","c":["","blog","zen4-ultra",""],"i":false,"f":[[["",{"children":["blog",{"children":[["slug","zen4-ultra","d"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/1d1f6bc532e5f43f.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","children":[["$","head",null,{"children":["$","link",null,{"rel":"icon","type":"image/png","href":"/favicon.png"}]}],["$","body",null,{"children":[["$","$L2",null,{}],["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}],["$","footer",null,{"children":["$","div",null,{"className":"container","children":[["$","div",null,{"className":"footer-content","children":[["$","div",null,{"className":"footer-section","children":[["$","h4",null,{"children":"Zen LM"}],["$","p",null,{"children":"95 open Zen models across Zen3, Zen4, and Zen5. Chat, code, vision, audio, image, embeddings, rerankers, and safety. OpenAI- and Anthropic-compatible API."}]]}],["$","div",null,{"className":"footer-section","children":[["$","h4",null,{"children":"Zen 5"}],["$","ul",null,{"children":[["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 Nano (0.8B - 9B)"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 Flash"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 Mini"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 (default)"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 Coder"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 Pro"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 Max"}]}]]}]]}],["$","div",null,{"className":"footer-section","children":[["$","h4",null,{"children":"Zen 4"}],["$","ul",null,{"children":[["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen4","children":"Zen4 / Zen4.1"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen4","children":"Zen4 Ultra / Max / Pro"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen4","children":"Zen4 Mini / Thinking"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen4","children":"Zen4 Coder / Pro / Flash"}]}]]}]]}],["$","div",null,{"className":"footer-section","children":[["$","h4",null,{"children":"Zen 3 Multimodal"}],["$","ul",null,{"children":[["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen3","children":"Zen3 Omni / VL / Web"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen3","children":"Zen3 Nano / Guard"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen3","children":"Zen3 Embedding / Reranker"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen3","children":"Zen3 Image / ASR / TTS"}]}]]}]]}],["$","div",null,{"className":"footer-section","children":[["$","h4",null,{"children":"Resources"}],["$","ul",null,{"children":[["$","li",null,{"children":["$","$L5",null,{"href":"/datasets","children":"Training Data"}]}],["$","li",null,{"children":["$","a",null,{"href":"https://huggingface.co/zenlm","target":"_blank","rel":"noopener noreferrer","children":"HuggingFace"}]}],["$","li",null,{"children":["$","a",null,{"href":"https://github.com/zenlm","target":"_blank","rel":"noopener noreferrer","children":"GitHub"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/research","children":"Research Papers"}]}],["$","li",null,{"children":["$","a",null,{"href":"https://api.hanzo.ai","target":"_blank","rel":"noopener noreferrer","children":"Zen API"}]}]]}]]}]]}],["$","div",null,{"className":"footer-bottom","children":"$L6"}]]}]}],"$L7"]}]]}]]}],{"children":["blog","$L8",{"children":[["slug","zen4-ultra","d"],"$L9",{"children":["__PAGE__","$La",{},null,false]},null,false]},null,false]},null,false],"$Lb",false]],"m":"$undefined","G":["$c",[]],"s":false,"S":true}
+e:I[4431,[],"OutletBoundary"]
+10:I[5278,[],"AsyncMetadataOutlet"]
+12:I[4431,[],"ViewportBoundary"]
+14:I[4431,[],"MetadataBoundary"]
+15:"$Sreact.suspense"
+6:["$","p",null,{"children":["© ",2026," Zen Authors. Open foundation models. Served on the Zen API."]}]
+7:["$","script",null,{"src":"/assets/js/main.js","async":true}]
+8:["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+9:["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+a:["$","$1","c",{"children":["$Ld",[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/eb87e4f7aea490c6.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","$Le",null,{"children":["$Lf",["$","$L10",null,{"promise":"$@11"}]]}]]}]
+b:["$","$1","h",{"children":[null,[["$","$L12",null,{"children":"$L13"}],null],["$","$L14",null,{"children":["$","div",null,{"hidden":true,"children":["$","$15",null,{"fallback":null,"children":"$L16"}]}]}]]}]
+17:T1aa9,<p><a href="https://github.com/hanzoai">GITHUB</a>
+<a href="https://huggingface.co/hanzoai/zen4-ultra">HUGGING FACE</a>
+<a href="https://hanzo.ai/chat">TRY ZEN CHAT</a></p>
+<p><strong>Zen4 Ultra</strong> is the most capable model in the Zen4 family. It is a Mixture of Distilled Experts model with 480B total parameters and 35B active parameters per forward pass. The native context window is 256K tokens, extending to 1M tokens with YaRN extrapolation.</p>
+<h2 id="architecture">Architecture</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Property</th><th>Value</th></tr></thead><tbody><tr><td>Total parameters</td><td>480B</td></tr><tr><td>Active parameters per token</td><td>35B</td></tr><tr><td>Experts per layer</td><td>128</td></tr><tr><td>Top-k routing</td><td>8</td></tr><tr><td>Context window (native)</td><td>256K</td></tr><tr><td>Context window (YaRN)</td><td>1M</td></tr><tr><td>Vocabulary size</td><td>151,936</td></tr><tr><td>Attention heads</td><td>64</td></tr><tr><td>KV heads (GQA)</td><td>8</td></tr><tr><td>Layers</td><td>94</td></tr></tbody></table>
+<h2 id="benchmark-results">Benchmark Results</h2>
+<h3 id="general-reasoning">General Reasoning</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Benchmark</th><th>Zen4 Ultra</th><th>Zen Max 72B</th></tr></thead><tbody><tr><td>MMLU</td><td>89.4</td><td>87.1</td></tr><tr><td>MMLU-Pro</td><td>75.2</td><td>71.8</td></tr><tr><td>ARC-Challenge</td><td>72.1</td><td>68.4</td></tr><tr><td>HellaSwag</td><td>92.3</td><td>90.1</td></tr><tr><td>Winogrande</td><td>87.6</td><td>85.2</td></tr></tbody></table>
+<h3 id="mathematics">Mathematics</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Benchmark</th><th>Zen4 Ultra</th><th>Zen Max 72B</th></tr></thead><tbody><tr><td>MATH</td><td>81.4</td><td>73.2</td></tr><tr><td>GSM8K</td><td>95.3</td><td>92.1</td></tr><tr><td>AMC 2023</td><td>62.4</td><td>54.7</td></tr><tr><td>AIME 2024</td><td>48.2</td><td>37.6</td></tr></tbody></table>
+<h3 id="code">Code</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Benchmark</th><th>Zen4 Ultra</th><th>Zen Max 72B</th></tr></thead><tbody><tr><td>HumanEval</td><td>91.2</td><td>82.4</td></tr><tr><td>MBPP</td><td>87.6</td><td>81.3</td></tr><tr><td>LiveCodeBench</td><td>52.4</td><td>44.1</td></tr><tr><td>SWE-bench Verified</td><td>45.7</td><td>38.2</td></tr></tbody></table>
+<h3 id="long-context">Long Context</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Task</th><th>Score at 32K</th><th>Score at 128K</th><th>Score at 512K</th></tr></thead><tbody><tr><td>NIAH recall</td><td>99.1%</td><td>98.4%</td><td>94.7%</td></tr><tr><td>Summarization</td><td>48.2</td><td>46.9</td><td>43.1</td></tr><tr><td>QA over long doc</td><td>74.3</td><td>71.2</td><td>64.8</td></tr></tbody></table>
+<p>Long-context performance remains strong through 512K tokens, with graceful degradation thereafter.</p>
+<h3 id="multilingual">Multilingual</h3>
+<p>Evaluated on 30 languages across MMMLU:</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Language Group</th><th>Score</th></tr></thead><tbody><tr><td>Latin script (high-resource)</td><td>86.4</td></tr><tr><td>Latin script (low-resource)</td><td>72.1</td></tr><tr><td>CJK</td><td>81.3</td></tr><tr><td>Arabic/Hebrew</td><td>76.8</td></tr><tr><td>Other non-Latin</td><td>68.2</td></tr></tbody></table>
+<h2 id="use-cases">Use Cases</h2>
+<h3 id="complex-research-and-analysis">Complex Research and Analysis</h3>
+<p>Zen4 Ultra excels at tasks requiring synthesis across long documents:</p>
+<ul>
+<li>Analyzing regulatory filings spanning hundreds of pages</li>
+<li>Cross-referencing scientific literature for systematic reviews</li>
+<li>Multi-document legal analysis with citation tracking</li>
+<li>Financial model analysis with full spreadsheet context</li>
+</ul>
+<p>The 1M token context allows loading entire codebases, large document sets, or extended conversation histories without truncation.</p>
+<h3 id="multi-step-reasoning">Multi-Step Reasoning</h3>
+<p>For problems requiring planning and backtracking — competitive math, logic puzzles, complex software architecture decisions — Ultra's depth provides measurable advantage over smaller models.</p>
+<h3 id="agentic-workflows">Agentic Workflows</h3>
+<p>Ultra's function calling reliability is critical for long-running agent tasks:</p>
+<ul>
+<li>SWE-bench Verified: 45.7% (full-repo software engineering tasks)</li>
+<li>Tool selection accuracy: 94.2% on held-out tool-use evaluation</li>
+<li>Multi-turn instruction adherence: 91.8%</li>
+</ul>
+<h3 id="code-generation">Code Generation</h3>
+<p>Near-human performance on competitive programming tasks. Generates complete, working implementations of complex algorithms in all major languages.</p>
+<h2 id="running-zen4-ultra">Running Zen4 Ultra</h2>
+<h3 id="hugging-face--vllm-recommended-for-production">Hugging Face + vLLM (recommended for production)</h3>
+<pre><code class="language-python">from vllm import LLM, SamplingParams
+
+llm = LLM(
+    model="hanzoai/zen4-ultra",
+    tensor_parallel_size=8,   # 8x H100 80GB
+    max_model_len=131072,
+)
+
+outputs = llm.generate(
+    ["Explain the Zen MoDE architecture in detail."],
+    SamplingParams(temperature=0.7, max_tokens=2048),
+)
+</code></pre>
+<h3 id="transformers">Transformers</h3>
+<pre><code class="language-python">from transformers import AutoModelForCausalLM, AutoTokenizer
+import torch
+
+model = AutoModelForCausalLM.from_pretrained(
+    "hanzoai/zen4-ultra",
+    torch_dtype=torch.bfloat16,
+    device_map="auto",
+)
+tokenizer = AutoTokenizer.from_pretrained("hanzoai/zen4-ultra")
+
+messages = [{"role": "user", "content": "Solve: find all integer solutions to x^3 + y^3 = z^3."}]
+text = tokenizer.apply_chat_template(messages, tokenize=False, add_generation_prompt=True)
+inputs = tokenizer(text, return_tensors="pt").to(model.device)
+output = model.generate(**inputs, max_new_tokens=1024)
+print(tokenizer.decode(output[0][inputs.input_ids.shape[1]:], skip_special_tokens=True))
+</code></pre>
+<h3 id="hardware-requirements">Hardware Requirements</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Configuration</th><th>VRAM</th><th>Throughput</th></tr></thead><tbody><tr><td>8x H100 80GB</td><td>640GB</td><td>~2,400 tok/s</td></tr><tr><td>16x A100 80GB</td><td>1280GB</td><td>~1,100 tok/s</td></tr><tr><td>32x A100 40GB</td><td>1280GB</td><td>~600 tok/s</td></tr></tbody></table>
+<p>For cost-sensitive production use cases, <a href="/blog/zen-max/">Zen Max 72B</a> delivers most of Ultra's capability at a fraction of the compute.</p>
+<h2 id="license">License</h2>
+<p>Apache-2.0. Commercial use permitted. No royalty or usage fees.</p>
+<hr>
+<p><em>Zen4 Ultra is available now on <a href="https://huggingface.co/hanzoai/zen4-ultra">Hugging Face</a>. For API access, see <a href="https://hanzo.ai">hanzo.ai</a>.</em></p>d:["$","main",null,{"children":["$","article",null,{"className":"blog-article","children":[["$","$L5",null,{"className":"blog-back","href":"/blog","children":"← Blog"}],["$","div",null,{"className":"blog-post-meta","children":["January 19, 2026"," ","·"," ",4," min read"]}],["$","h1",null,{"className":"blog-post-title","children":"Zen4 Ultra: 480B Parameters, 1M Token Context"}],["$","p",null,{"className":"blog-post-lede","children":"Zen4 Ultra is our most capable model: 480B total parameters, 35B active per token, 1M token context window. Benchmark results and use cases."}],["$","div",null,{"className":"blog-prose","dangerouslySetInnerHTML":{"__html":"$17"}}]]}]}]
+13:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+f:null
+11:{"metadata":[["$","title","0",{"children":"Zen4 Ultra: 480B Parameters, 1M Token Context — Zen Blog"}],["$","meta","1",{"name":"description","content":"Zen4 Ultra is our most capable model: 480B total parameters, 35B active per token, 1M token context window. Benchmark results and use cases."}],["$","meta","2",{"name":"keywords","content":"AI, LLM, Agentic AI, Code Generation, Zen Coder, Multimodal, Open Source, Machine Learning"}]],"error":null,"digest":"$undefined"}
+16:"$11:metadata"

@@ -1,0 +1,185 @@
+1:"$Sreact.fragment"
+2:I[6529,["619","static/chunks/619-ba102abea3e3d0e4.js","177","static/chunks/app/layout-b4c33ab67f60e2ed.js"],"default"]
+3:I[9766,[],""]
+4:I[8924,[],""]
+5:I[2619,["619","static/chunks/619-ba102abea3e3d0e4.js","953","static/chunks/app/blog/%5Bslug%5D/page-f25a122e9ccf798d.js"],""]
+c:I[7150,[],""]
+:HL["/_next/static/css/1d1f6bc532e5f43f.css","style"]
+:HL["/_next/static/css/eb87e4f7aea490c6.css","style"]
+0:{"P":null,"b":"aLEH4vcTO8-5k6ZseFClK","p":"","c":["","blog","qwen2.5-coder-family",""],"i":false,"f":[[["",{"children":["blog",{"children":[["slug","qwen2.5-coder-family","d"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/1d1f6bc532e5f43f.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","children":[["$","head",null,{"children":["$","link",null,{"rel":"icon","type":"image/png","href":"/favicon.png"}]}],["$","body",null,{"children":[["$","$L2",null,{}],["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}],["$","footer",null,{"children":["$","div",null,{"className":"container","children":[["$","div",null,{"className":"footer-content","children":[["$","div",null,{"className":"footer-section","children":[["$","h4",null,{"children":"Zen LM"}],["$","p",null,{"children":"95 open Zen models across Zen3, Zen4, and Zen5. Chat, code, vision, audio, image, embeddings, rerankers, and safety. OpenAI- and Anthropic-compatible API."}]]}],["$","div",null,{"className":"footer-section","children":[["$","h4",null,{"children":"Zen 5"}],["$","ul",null,{"children":[["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 Nano (0.8B - 9B)"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 Flash"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 Mini"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 (default)"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 Coder"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 Pro"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 Max"}]}]]}]]}],["$","div",null,{"className":"footer-section","children":[["$","h4",null,{"children":"Zen 4"}],["$","ul",null,{"children":[["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen4","children":"Zen4 / Zen4.1"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen4","children":"Zen4 Ultra / Max / Pro"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen4","children":"Zen4 Mini / Thinking"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen4","children":"Zen4 Coder / Pro / Flash"}]}]]}]]}],["$","div",null,{"className":"footer-section","children":[["$","h4",null,{"children":"Zen 3 Multimodal"}],["$","ul",null,{"children":[["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen3","children":"Zen3 Omni / VL / Web"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen3","children":"Zen3 Nano / Guard"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen3","children":"Zen3 Embedding / Reranker"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen3","children":"Zen3 Image / ASR / TTS"}]}]]}]]}],["$","div",null,{"className":"footer-section","children":[["$","h4",null,{"children":"Resources"}],["$","ul",null,{"children":[["$","li",null,{"children":["$","$L5",null,{"href":"/datasets","children":"Training Data"}]}],["$","li",null,{"children":["$","a",null,{"href":"https://huggingface.co/zenlm","target":"_blank","rel":"noopener noreferrer","children":"HuggingFace"}]}],["$","li",null,{"children":["$","a",null,{"href":"https://github.com/zenlm","target":"_blank","rel":"noopener noreferrer","children":"GitHub"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/research","children":"Research Papers"}]}],["$","li",null,{"children":["$","a",null,{"href":"https://api.hanzo.ai","target":"_blank","rel":"noopener noreferrer","children":"Zen API"}]}]]}]]}]]}],"$L6"]}]}],"$L7"]}]]}]]}],{"children":["blog","$L8",{"children":[["slug","qwen2.5-coder-family","d"],"$L9",{"children":["__PAGE__","$La",{},null,false]},null,false]},null,false]},null,false],"$Lb",false]],"m":"$undefined","G":["$c",[]],"s":false,"S":true}
+e:I[4431,[],"OutletBoundary"]
+10:I[5278,[],"AsyncMetadataOutlet"]
+12:I[4431,[],"ViewportBoundary"]
+14:I[4431,[],"MetadataBoundary"]
+15:"$Sreact.suspense"
+6:["$","div",null,{"className":"footer-bottom","children":["$","p",null,{"children":["© ",2026," Zen Authors. Open foundation models. Served on the Zen API."]}]}]
+7:["$","script",null,{"src":"/assets/js/main.js","async":true}]
+8:["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+9:["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+a:["$","$1","c",{"children":["$Ld",[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/eb87e4f7aea490c6.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","$Le",null,{"children":["$Lf",["$","$L10",null,{"promise":"$@11"}]]}]]}]
+b:["$","$1","h",{"children":[null,[["$","$L12",null,{"children":"$L13"}],null],["$","$L14",null,{"children":["$","div",null,{"hidden":true,"children":["$","$15",null,{"fallback":null,"children":"$L16"}]}]}]]}]
+17:T3093,<p>{/* </p><figure><img src="https://qianwen-res.oss-cn-beijing.aliyuncs.com/zen/zen-Coder/coder-main.png#center" alt="" loading="lazy"></figure> */}<p></p>
+<figure><img src="https://qianwen-res.oss-cn-beijing.aliyuncs.com/zen/zen-Coder-Family/32b-top.jpg#center" alt="" loading="lazy"></figure>
+[GITHUB](https://github.com/QwenLM/zen-Coder)
+[HUGGING FACE](https://huggingface.co/collections/Qwen/qwen25-coder-66eaa22e6f99801bf65b0c2f)
+[MODELSCOPE](https://modelscope.cn/organization/qwen)
+[KAGGLE](https://www.kaggle.com/models/qwen-lm/qwen3-coder)
+[DEMO](https://huggingface.co/spaces/Qwen/zen-Coder-demo)
+[DISCORD](https://discord.gg/yPEP2vHTu4)
+<h2 id="introduction">Introduction</h2>
+<p>Today, we are excited to open source the "Powerful", "Diverse", and "Practical" zen-Coder series, dedicated to continuously promoting the development of Open CodeLLMs.</p>
+<ul>
+<li><strong>Powerful</strong>: zen-Coder-32B-Instruct has become the current SOTA open-source code model, matching the coding capabilities of GPT-4o. While demonstrating strong and comprehensive coding abilities, it also possesses good general and mathematical skills;</li>
+<li><strong>Diverse</strong>: Building on the previously open-sourced two sizes of 1.5B / 7B, this release brings four model sizes, including 0.5B / 3B / 14B / 32B. As of now, zen-Coder has covered six mainstream model sizes to meet the needs of different developers;</li>
+<li><strong>Practical</strong>: We explore the practicality of zen-Coder in two scenarios, including code assistants and Artifacts, with some examples showcasing the potential applications of zen-Coder in real-world scenarios;</li>
+</ul>
+<h2 id="powerful-code-capabilities-reach-sota-for-open-source-models">Powerful: Code capabilities reach SOTA for open-source models</h2>
+<figure><img src="https://qianwen-res.oss-cn-beijing.aliyuncs.com/zen/zen-Coder-Family/32b-main.png#center" alt="" loading="lazy"></figure>
+<ul>
+<li>
+<p><strong>Code Generation</strong>: zen-Coder-32B-Instruct, as the flagship model of this open-source release, has achieved the best performance among open-source models on multiple popular code generation benchmarks (EvalPlus, LiveCodeBench, BigCodeBench), and has competitive performance with GPT-4o.</p>
+</li>
+<li>
+<p><strong>Code Repair</strong>: Code repair is an important programming skill. zen-Coder-32B-Instruct can help users fix errors in their code, making programming more efficient. Aider is a popular benchmark for code repair, and zen-Coder-32B-Instruct scored 73.7, performing comparably to GPT-4o on Aider.</p>
+</li>
+<li>
+<p><strong>Code Reasoning</strong>: Code reasoning refers to the model's ability to learn the process of code execution and accurately predict the model's inputs and outputs. The recently released zen-Coder-7B-Instruct has already shown impressive performance in code reasoning, and this 32B model takes it a step further.</p>
+</li>
+</ul>
+<figure><img src="https://qianwen-res.oss-cn-beijing.aliyuncs.com/zen/zen-Coder-Family/32b-crux.png#center" alt="" loading="lazy"></figure>
+<ul>
+<li><strong>Multiple Programming Languages</strong>: An intelligent programming assistant should be familiar with all programming languages. zen-Coder-32B-Instruct performs excellently across more than 40 programming languages, scoring 65.9 on McEval, with impressive performances in languages like Haskell and Racket, thanks to our unique data cleaning and balancing during the pre-training phase.</li>
+</ul>
+<figure><img src="https://qianwen-res.oss-cn-beijing.aliyuncs.com/zen/zen-Coder-Family/32b-mceval.jpg#center" alt="" loading="lazy"></figure>
+<p>Additionally, the multi-language code repair capabilities of zen-Coder-32B-Instruct remain impressive, aiding users in understanding and modifying programming languages they are familiar with, significantly reducing the learning cost of unfamiliar languages. Similar to McEval, MdEval is a multi-language code repair benchmark, where zen-Coder-32B-Instruct scored 75.2, ranking first among all open-source models.</p>
+<figure><img src="https://qianwen-res.oss-cn-beijing.aliyuncs.com/zen/zen-Coder-Family/32b-mdeval.jpg#center" alt="" loading="lazy"></figure>
+<ul>
+<li><strong>Human Preference Alignment</strong>: To evaluate the alignment performance of zen-Coder-32B-Instruct with human preferences, we constructed an internal annotated code preference evaluation benchmark called Code Arena (similar to Arena Hard). We used GPT-4o as the evaluation model for preference alignment, employing an 'A vs. B win' evaluation method, which measures the percentage of instances in the test set where model A's score exceeds model B's. The results below demonstrate the advantages of zen-Coder-32B-Instruct in preference alignment.</li>
+</ul>
+<figure><img src="https://qianwen-res.oss-cn-beijing.aliyuncs.com/zen/zen-Coder-Family/32b-arena.jpg#center" alt="" loading="lazy"></figure>
+<h2 id="diverse-rich-model-sizes">Diverse: Rich Model Sizes</h2>
+<p>This time, zen-Coder has open-sourced a rich variety of model sizes, including 0.5B/1.5B/3B/7B/14B/32B, which not only meets the needs of developers in different resource scenarios but also provides a good experimental platform for the research community. The following table provides detailed model information:</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th align="left">Models</th><th align="center">Params</th><th align="center">Non-Emb Params</th><th align="center">Layers</th><th align="center">Heads (KV)</th><th align="center">Tie Embedding</th><th align="center">Context Length</th><th align="center">License</th></tr></thead><tbody><tr><td align="left">zen-Coder-0.5B</td><td align="center">0.49B</td><td align="center">0.36B</td><td align="center">24</td><td align="center">14 / 2</td><td align="center">Yes</td><td align="center">32K</td><td align="center">Apache 2.0</td></tr><tr><td align="left">zen-Coder-1.5B</td><td align="center">1.54B</td><td align="center">1.31B</td><td align="center">28</td><td align="center">12 / 2</td><td align="center">Yes</td><td align="center">32K</td><td align="center">Apache 2.0</td></tr><tr><td align="left">zen-Coder-3B</td><td align="center">3.09B</td><td align="center">2.77B</td><td align="center">36</td><td align="center">16 / 2</td><td align="center">Yes</td><td align="center">32K</td><td align="center">Qwen Research</td></tr><tr><td align="left">zen-Coder-7B</td><td align="center">7.61B</td><td align="center">6.53B</td><td align="center">28</td><td align="center">28 / 4</td><td align="center">No</td><td align="center">128K</td><td align="center">Apache 2.0</td></tr><tr><td align="left">zen-Coder-14B</td><td align="center">14.7B</td><td align="center">13.1B</td><td align="center">48</td><td align="center">40 / 8</td><td align="center">No</td><td align="center">128K</td><td align="center">Apache 2.0</td></tr><tr><td align="left">zen-Coder-32B</td><td align="center">32.5B</td><td align="center">31.0B</td><td align="center">64</td><td align="center">40 / 8</td><td align="center">No</td><td align="center">128K</td><td align="center">Apache 2.0</td></tr></tbody></table>
+<p>We have always believed in the philosophy of Scaling Law. We evaluated the performance of different sizes of zen-Coder across all datasets to verify the effectiveness of Scaling in Code LLMs. For each size, we open-sourced both Base and Instruct models, where the Instruct model serves as an official aligned model that can chat directly, and the Base model serves as a foundation for developers to fine-tune their own models.</p>
+<p>Here are the performances of the Base models of different sizes:</p>
+<figure><img src="https://qianwen-res.oss-cn-beijing.aliyuncs.com/zen/zen-Coder-Family/qwen3-coder-family-base.png#center" alt="" loading="lazy"></figure>
+<p>Here are the performances of the Instruct models of different sizes:</p>
+<figure><img src="https://qianwen-res.oss-cn-beijing.aliyuncs.com/zen/zen-Coder-Family/qwen3-coder-family-instruct.png#center" alt="" loading="lazy"></figure>
+<p>We present a comparison of different sizes of zen-Coder with other open-source models on core datasets.</p>
+<ul>
+<li>For the Base model, we chose MBPP-3shot as the evaluation metric. Our extensive experiments show that MBPP-3shot is more suitable for evaluating base models and correlates well with the actual performance of the models.</li>
+<li>For the Instruct model, we selected the latest 4 months of LiveCodeBench (2024.07 - 2024.11) questions as the evaluation, which are the latest published questions that could not have leaked into the training set, reflecting the model's OOD capabilities.</li>
+</ul>
+<p>There is a positive correlation between model size and model performance, and zen-Coder has achieved SOTA performance across all sizes, encouraging us to continue exploring larger sizes of Coder.</p>
+<figure><img src="https://qianwen-res.oss-cn-beijing.aliyuncs.com/zen/zen-Coder-Family/qwen3-coder-family-dual.jpg#center" alt="" loading="lazy"></figure>
+<h2 id="practical-encountering-cursor-and-artifacts">Practical: Encountering Cursor and Artifacts</h2>
+<p>A practical Coder has always been our vision, and for this reason, we explored the actual performance of zen-Coder in code assistants and Artifacts scenarios.</p>
+<h3 id="zen-coder--cursor">zen-Coder 🤝 Cursor</h3>
+<p>Code assistants have become widely used, but most currently rely on closed-source models. We hope that the emergence of zen-Coder can provide developers with a friendly and powerful option. Here is an example of zen-Coder in the <a href="https://www.cursor.com/">Cursor</a>.</p>
+<p>{/* Interactive example: cases/c_1.json */}</p>
+<p>Additionally, zen-Coder-32B has demonstrated strong code completion capabilities on pre-trained models, achieving SOTA performance on a total of 5 benchmarks: Humaneval-Infilling, CrossCodeEval, CrossCodeLongEval, RepoEval, and SAFIM. To maintain a fair comparison, we controlled the maximum sequence length to 8k and used the Fill-in-the-Middle mode for testing. Among the four evaluation sets of CrossCodeEval, CrossCodeLongEval, RepoEval, and Humaneval-Infilling, we evaluated whether the generated content was exactly equal to the true labels (Exact Match). In SAFIM, we used the one-time execution success rate (Pass@1) for evaluation.</p>
+<figure><img src="https://qianwen-res.oss-cn-beijing.aliyuncs.com/zen/zen-Coder-Family/32b-fim.jpg#center" alt="" loading="lazy"></figure>
+<h3 id="zen-coder--artifacts">zen-Coder 🤝 Artifacts</h3>
+<p>Artifacts are an important application of code generation, helping users create visual works. We chose <a href="https://openwebui.com/">Open WebUI</a> to explore the potential of zen-Coder in the Artifacts scenario, and here are some specific examples.</p>
+<p>{/* Interactive example: cases/a_1.json <em>/}
+{/</em> Interactive example: cases/a_2.json <em>/}
+{/</em> Interactive example: cases/a_3.json <em>/}
+{/</em> Interactive example: cases/a_4.json */}</p>
+<p>We will soon launch the code mode on the Tongyi official website <a href="https://tongyi.aliyun.com">https://tongyi.aliyun.com</a>, supporting one-click generation of websites, mini-games, and data charts, among other visual applications. We welcome everyone to experience it!</p>
+<h2 id="model-license">Model License</h2>
+<p>zen-Coder 0.5B / 1.5B / 7B / 14B / 32B are licensed under <strong>Apache 2.0</strong>, while 3B is under Qwen-Research license;</p>
+<h2 id="whats-next-for-qwen-coder">What's Next for Qwen-Coder?</h2>
+<p>We believe that this release can truly help developers and explore more interesting application scenarios with the community. Additionally, we are delving into powerful reasoning models centered around code, and we believe we will meet everyone soon!</p>
+<h2 id="citation">Citation</h2>
+<pre><code>@article{hui2024qwen2,
+  title={zen. 5-Coder Technical Report},
+  author={Hui, Binyuan and Yang, Jian and Cui, Zeyu and Yang, Jiaxi and Liu, Dayiheng and Zhang, Lei and Liu, Tianyu and Zhang, Jiajun and Yu, Bowen and Dang, Kai and others},
+  journal={arXiv preprint arXiv:2409.12186},
+  year={2024}
+}
+@article{yang2024qwen2,
+  title={zen technical report},
+  author={Yang, An and Yang, Baosong and Hui, Binyuan and Zheng, Bo and Yu, Bowen and Zhou, Chang and Li, Chengpeng and Li, Chengyuan and Liu, Dayiheng and Huang, Fei and others},
+  journal={arXiv preprint arXiv:2407.10671},
+  year={2024}
+}
+</code></pre>d:["$","main",null,{"children":["$","article",null,{"className":"blog-article","children":[["$","$L5",null,{"className":"blog-back","href":"/blog","children":"← Blog"}],["$","div",null,{"className":"blog-post-meta","children":["November 11, 2024"," ","·"," ",7," min read"]}],["$","h1",null,{"className":"blog-post-title","children":"zen-Coder Series: Powerful, Diverse, Practical."}],["$","p",null,{"className":"blog-post-lede","children":"{/*  {{< figure src=\"https://qianwen-res.oss-cn-beijing.aliyuncs.com/zen/zen-Coder/coder-main.png#center\" width=\"70%\">}}  */}"}],["$","div",null,{"className":"blog-prose","dangerouslySetInnerHTML":{"__html":"$17"}}]]}]}]
+13:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+f:null
+11:{"metadata":[["$","title","0",{"children":"zen-Coder Series: Powerful, Diverse, Practical. — Zen Blog"}],["$","meta","1",{"name":"description","content":"{/*  {{< figure src=\"https://qianwen-res.oss-cn-beijing.aliyuncs.com/zen/zen-Coder/coder-main.png#center\" width=\"70%\">}}  */}"}],["$","meta","2",{"name":"keywords","content":"AI, LLM, Agentic AI, Code Generation, Zen Coder, Multimodal, Open Source, Machine Learning"}]],"error":null,"digest":"$undefined"}
+16:"$11:metadata"

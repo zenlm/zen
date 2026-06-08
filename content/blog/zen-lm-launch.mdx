@@ -1,0 +1,85 @@
+---
+title: "Introducing Zen LM: Open Frontier Models from Hanzo AI and Zoo Labs"
+date: "2026-01-15"
+description: "Announcing the Zen model family: 94+ open models built on Zen MoDE architecture, co-developed by Hanzo AI and Zoo Labs Foundation."
+tags: ["Announcement", "Models", "Zen"]
+---
+
+
+<LinkButton href="https://github.com/hanzoai" label="GITHUB" external />
+<LinkButton href="https://huggingface.co/hanzoai" label="HUGGING FACE" external />
+<LinkButton href="https://hanzo.ai/chat" label="TRY ZEN CHAT" external />
+
+Today we are announcing **Zen LM** — a family of open frontier models co-developed by Hanzo AI and Zoo Labs Foundation. This release marks the public launch of the Zen model catalog: 94+ models spanning text, vision, audio, and code, all built on our **Zen MoDE** (Mixture of Distilled Experts) architecture.
+
+## Why We Built It
+
+Modern AI infrastructure concentrates capability in a small number of proprietary systems. The models that power the most demanding production workloads are closed, expensive, and opaque. We believe frontier capability should be accessible — not as a service you pay per token, but as open weights you can run, inspect, fine-tune, and deploy on your own infrastructure.
+
+Hanzo AI has spent years building AI infrastructure used by thousands of developers. Zoo Labs Foundation has led decentralized AI research through ZIPs (Zoo Improvement Proposals) and the PoAI (Proof of AI) protocol. Zen LM is the convergence of that work: production-grade models, open weights, governed by the community.
+
+## The Zen MoDE Architecture
+
+Zen MoDE stands for **Mixture of Distilled Experts**. Every Zen model is built on this architecture:
+
+- **Expert routing**: Each token is processed by a small subset of specialized expert networks
+- **Distillation from large teachers**: Experts are initialized from, and continuously refined against, larger teacher models
+- **Efficient inference**: Only a fraction of total parameters activate per token, making large models economically viable
+
+The result: Zen models deliver capability competitive with much larger dense models at a fraction of the inference cost.
+
+For a deep technical treatment see our architecture post: [Zen MoDE Architecture](/blog/zen-mode-architecture/).
+
+## The Catalog
+
+The Zen family covers every major use case:
+
+| Model | Parameters | Use Case |
+|-------|------------|----------|
+| Zen4 Ultra | 480B (35B active) | Maximum capability, frontier tasks |
+| Zen Max | 72B | General enterprise use |
+| Zen4 Pro | 32B (22B active) | Balanced capability/cost |
+| Zen4 Flash | 7B (3B active) | Low-latency production |
+| Zen4 Coder | 480B (35B active) | Code generation, agentic coding |
+| Zen Omni | 32B | Vision + text + audio |
+| Zen VL | 72B | Image understanding, OCR |
+| Zen Nano | 0.6B | On-device inference |
+| Zen Embedding | 7680-dim | Semantic search, RAG |
+| Zen Guard | 3B | Safety classification |
+
+All general-purpose models are released under **Apache-2.0**. Safety models use a more restrictive license to prevent adversarial use.
+
+## How We Train
+
+Zen models are trained on the Zoo Compute Network — a decentralized GPU cluster funded through the Zoo Labs Foundation treasury and governed by ZIPs. Training details:
+
+- **Data**: 15T+ tokens, high-quality filtered corpus with documented provenance
+- **Compute**: Distributed across heterogeneous H100/A100 clusters
+- **Alignment**: GRPO (Group Relative Policy Optimization) for instruction following
+- **Continuous improvement**: ASO (Active Semantic Optimization, HIP-002) feeds production signals back into training
+
+## Open Weights Commitment
+
+We release weights, not just APIs. Every Zen model is available on Hugging Face under `hanzoai/`. You can:
+
+- Download and run locally with `transformers`, `vLLM`, or `llama.cpp`
+- Fine-tune on your own data
+- Deploy on any infrastructure
+- Inspect weights, tokenizer, and training configuration
+
+We believe open weights is the only credible commitment to openness. APIs can be taken down. Weights are permanent.
+
+## What's Next
+
+The Zen4 generation is live today. We are already training Zen5, with improvements to:
+
+- Long-context reasoning (targeting 2M token context)
+- Multimodal integration (tighter vision-text-audio coupling)
+- Agentic reliability (reduced hallucination in tool-use chains)
+- Distillation efficiency (more capability per active parameter)
+
+Follow along at [zenlm.org](https://zenlm.org), on [GitHub](https://github.com/hanzoai), and on [Hugging Face](https://huggingface.co/hanzoai).
+
+---
+
+*Zen LM is a joint initiative of Hanzo AI Inc. (Techstars '17) and Zoo Labs Foundation (501c3).*

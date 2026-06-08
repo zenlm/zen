@@ -1,0 +1,150 @@
+1:"$Sreact.fragment"
+2:I[6529,["619","static/chunks/619-ba102abea3e3d0e4.js","177","static/chunks/app/layout-b4c33ab67f60e2ed.js"],"default"]
+3:I[9766,[],""]
+4:I[8924,[],""]
+5:I[2619,["619","static/chunks/619-ba102abea3e3d0e4.js","953","static/chunks/app/blog/%5Bslug%5D/page-f25a122e9ccf798d.js"],""]
+c:I[7150,[],""]
+:HL["/_next/static/css/1d1f6bc532e5f43f.css","style"]
+:HL["/_next/static/css/eb87e4f7aea490c6.css","style"]
+0:{"P":null,"b":"aLEH4vcTO8-5k6ZseFClK","p":"","c":["","blog","future-of-open-ai",""],"i":false,"f":[[["",{"children":["blog",{"children":[["slug","future-of-open-ai","d"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/1d1f6bc532e5f43f.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","children":[["$","head",null,{"children":["$","link",null,{"rel":"icon","type":"image/png","href":"/favicon.png"}]}],["$","body",null,{"children":[["$","$L2",null,{}],["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}],["$","footer",null,{"children":["$","div",null,{"className":"container","children":[["$","div",null,{"className":"footer-content","children":[["$","div",null,{"className":"footer-section","children":[["$","h4",null,{"children":"Zen LM"}],["$","p",null,{"children":"95 open Zen models across Zen3, Zen4, and Zen5. Chat, code, vision, audio, image, embeddings, rerankers, and safety. OpenAI- and Anthropic-compatible API."}]]}],["$","div",null,{"className":"footer-section","children":[["$","h4",null,{"children":"Zen 5"}],["$","ul",null,{"children":[["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 Nano (0.8B - 9B)"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 Flash"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 Mini"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 (default)"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 Coder"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 Pro"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 Max"}]}]]}]]}],["$","div",null,{"className":"footer-section","children":[["$","h4",null,{"children":"Zen 4"}],["$","ul",null,{"children":[["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen4","children":"Zen4 / Zen4.1"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen4","children":"Zen4 Ultra / Max / Pro"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen4","children":"Zen4 Mini / Thinking"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen4","children":"Zen4 Coder / Pro / Flash"}]}]]}]]}],["$","div",null,{"className":"footer-section","children":[["$","h4",null,{"children":"Zen 3 Multimodal"}],["$","ul",null,{"children":[["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen3","children":"Zen3 Omni / VL / Web"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen3","children":"Zen3 Nano / Guard"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen3","children":"Zen3 Embedding / Reranker"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen3","children":"Zen3 Image / ASR / TTS"}]}]]}]]}],["$","div",null,{"className":"footer-section","children":[["$","h4",null,{"children":"Resources"}],["$","ul",null,{"children":[["$","li",null,{"children":["$","$L5",null,{"href":"/datasets","children":"Training Data"}]}],["$","li",null,{"children":["$","a",null,{"href":"https://huggingface.co/zenlm","target":"_blank","rel":"noopener noreferrer","children":"HuggingFace"}]}],["$","li",null,{"children":["$","a",null,{"href":"https://github.com/zenlm","target":"_blank","rel":"noopener noreferrer","children":"GitHub"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/research","children":"Research Papers"}]}],["$","li",null,{"children":["$","a",null,{"href":"https://api.hanzo.ai","target":"_blank","rel":"noopener noreferrer","children":"Zen API"}]}]]}]]}]]}],"$L6"]}]}],"$L7"]}]]}]]}],{"children":["blog","$L8",{"children":[["slug","future-of-open-ai","d"],"$L9",{"children":["__PAGE__","$La",{},null,false]},null,false]},null,false]},null,false],"$Lb",false]],"m":"$undefined","G":["$c",[]],"s":false,"S":true}
+e:I[4431,[],"OutletBoundary"]
+10:I[5278,[],"AsyncMetadataOutlet"]
+12:I[4431,[],"ViewportBoundary"]
+14:I[4431,[],"MetadataBoundary"]
+15:"$Sreact.suspense"
+6:["$","div",null,{"className":"footer-bottom","children":["$","p",null,{"children":["© ",2026," Zen Authors. Open foundation models. Served on the Zen API."]}]}]
+7:["$","script",null,{"src":"/assets/js/main.js","async":true}]
+8:["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+9:["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+a:["$","$1","c",{"children":["$Ld",[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/eb87e4f7aea490c6.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","$Le",null,{"children":["$Lf",["$","$L10",null,{"promise":"$@11"}]]}]]}]
+b:["$","$1","h",{"children":[null,[["$","$L12",null,{"children":"$L13"}],null],["$","$L14",null,{"children":["$","div",null,{"hidden":true,"children":["$","$15",null,{"fallback":null,"children":"$L16"}]}]}]]}]
+17:T1ace,<p>Four years into Zen's development, it's worth stepping back to assess where we are and where we're going. Open AI development has made remarkable progress. It also faces significant challenges. Here's my honest assessment.</p>
+<h2 id="what-weve-achieved">What We've Achieved</h2>
+<h3 id="competitive-models">Competitive Models</h3>
+<p>Open models now match or exceed proprietary alternatives in many domains:</p>
+<ul>
+<li><strong>Coding</strong>: Open models lead on HumanEval and MBPP</li>
+<li><strong>Reasoning</strong>: Competitive on GSM8K and MATH</li>
+<li><strong>General knowledge</strong>: Within 5% on MMLU</li>
+<li><strong>Multilingual</strong>: Often superior for non-English languages</li>
+</ul>
+<p>The capability gap that seemed insurmountable in 2021 has largely closed for models under 100B parameters.</p>
+<h3 id="real-adoption">Real Adoption</h3>
+<p>Open models power real applications:</p>
+<ul>
+<li>Millions of API calls daily through community inference providers</li>
+<li>Thousands of fine-tuned variants for specialized tasks</li>
+<li>Integration into major development tools</li>
+<li>Deployment in production systems worldwide</li>
+</ul>
+<p>This isn't just research anymore. It's infrastructure.</p>
+<h3 id="community-scale">Community Scale</h3>
+<p>The open AI community has grown enormously:</p>
+<ul>
+<li>Hundreds of contributors to major projects</li>
+<li>Thousands of researchers building on open foundations</li>
+<li>Millions of users accessing open models</li>
+<li>Billions of inference requests monthly</li>
+</ul>
+<p>Network effects are real. Each contribution makes the ecosystem more valuable.</p>
+<h2 id="persistent-challenges">Persistent Challenges</h2>
+<h3 id="compute-concentration">Compute Concentration</h3>
+<p>Training frontier models requires massive compute. This compute remains concentrated:</p>
+<ul>
+<li>Top 5 cloud providers control 80%+ of AI-grade compute</li>
+<li>Chip manufacturing bottlenecks persist</li>
+<li>Training costs continue rising with scale</li>
+</ul>
+<p>The Zoo Compute Network helps but isn't yet large enough for frontier training. We need 10x current capacity.</p>
+<h3 id="data-moats">Data Moats</h3>
+<p>Large organizations have accumulated unique datasets:</p>
+<ul>
+<li>Proprietary user interactions</li>
+<li>Licensed content</li>
+<li>Internal documents</li>
+<li>Real-world feedback signals</li>
+</ul>
+<p>Synthetic data and creative commons content help but don't fully substitute. Data remains a key differentiator.</p>
+<h3 id="coordination-costs">Coordination Costs</h3>
+<p>Open development is harder to coordinate than corporate efforts:</p>
+<ul>
+<li>Decisions require consensus</li>
+<li>Resources are distributed</li>
+<li>Timelines are uncertain</li>
+<li>Accountability is diffuse</li>
+</ul>
+<p>DAOs and governance frameworks help but add overhead. Closed organizations can simply decide and execute.</p>
+<h3 id="safety-complexity">Safety Complexity</h3>
+<p>As models become more capable, safety becomes more critical:</p>
+<ul>
+<li>Evaluation is hard (what are we even measuring?)</li>
+<li>Mitigation often reduces capability</li>
+<li>Adversarial robustness remains elusive</li>
+<li>Dual-use concerns complicate openness</li>
+</ul>
+<p>We can't ignore safety. We also can't let it become a barrier to open development.</p>
+<h2 id="the-path-forward">The Path Forward</h2>
+<h3 id="frontier-open-models">Frontier Open Models</h3>
+<p>Training truly frontier models openly requires:</p>
+<ol>
+<li><strong>Scaled compute network</strong>: 100K+ GPU network with reliable coordination</li>
+<li><strong>Novel architectures</strong>: Efficiency improvements that reduce compute needs</li>
+<li><strong>Better data</strong>: Synthetic data, simulation, and permissioned partnerships</li>
+<li><strong>Sustained funding</strong>: Multi-year commitments to training runs</li>
+</ol>
+<p>This is achievable. It requires coordination the community hasn't yet demonstrated.</p>
+<h3 id="infrastructure-maturity">Infrastructure Maturity</h3>
+<p>Open infrastructure needs to mature:</p>
+<ul>
+<li><strong>Training</strong>: Training Gym is solid but needs scaling features</li>
+<li><strong>Inference</strong>: Efficient serving remains fragmented</li>
+<li><strong>Fine-tuning</strong>: Needs better tooling for non-experts</li>
+<li><strong>Evaluation</strong>: Benchmarks don't capture real-world performance</li>
+</ul>
+<p>Each layer needs investment. Each layer enables the next.</p>
+<h3 id="governance-evolution">Governance Evolution</h3>
+<p>Current governance works for small decisions. Bigger decisions need:</p>
+<ul>
+<li><strong>Faster processes</strong>: Weeks, not months</li>
+<li><strong>Expert input</strong>: Technical decisions need technical judgment</li>
+<li><strong>Accountability</strong>: Approved decisions must be implemented</li>
+<li><strong>Representation</strong>: Diverse stakeholders, not just token holders</li>
+</ul>
+<p>ZIPs are a start. We need to evolve.</p>
+<h3 id="safety-by-design">Safety by Design</h3>
+<p>Open development can lead on safety:</p>
+<ul>
+<li><strong>Transparency</strong>: Open models can be audited</li>
+<li><strong>Diversity</strong>: Multiple approaches reduce correlated failures</li>
+<li><strong>Iteration</strong>: Faster feedback loops on safety interventions</li>
+<li><strong>Community</strong>: More eyes on potential problems</li>
+</ul>
+<p>We should demonstrate that openness enhances safety, not undermines it.</p>
+<h2 id="predictions-for-2025">Predictions for 2025</h2>
+<p>Concrete predictions to be evaluated:</p>
+<ol>
+<li><strong>Open models will match GPT-4 class on major benchmarks</strong> (>50% confidence)</li>
+<li><strong>Zoo Compute Network will reach 50K GPUs</strong> (60% confidence)</li>
+<li><strong>At least one open model will be in top-3 on major leaderboards</strong> (70% confidence)</li>
+<li><strong>ZIPs will process >100 proposals</strong> (80% confidence)</li>
+<li><strong>Foundation funding will exceed $50M</strong> (40% confidence)</li>
+</ol>
+<p>I'll revisit these next November.</p>
+<h2 id="a-personal-note">A Personal Note</h2>
+<p>When we started Zen, open AI development was a niche concern. Most assumed the future belonged to well-resourced corporations. That assumption was wrong.</p>
+<p>Open development has proven viable. Community coordination works. Distributed resources aggregate. Transparency accelerates progress.</p>
+<p>But viability isn't victory. The next phase requires:</p>
+<ul>
+<li>Sustained commitment through multi-year projects</li>
+<li>Patience with governance overhead</li>
+<li>Investment in unsexy infrastructure</li>
+<li>Honesty about limitations and failures</li>
+</ul>
+<p>We've shown open AI development is possible. Now we need to show it's preferable.</p>
+<p>The future of AI is still being written. Let's write it together.</p>
+<hr>
+<p><em>Zach Kelling is a co-founder of Zoo Labs Foundation.</em></p>d:["$","main",null,{"children":["$","article",null,{"className":"blog-article","children":[["$","$L5",null,{"className":"blog-back","href":"/blog","children":"← Blog"}],["$","div",null,{"className":"blog-post-meta","children":["November 10, 2024"," ","·"," ",4," min read"]}],["$","h1",null,{"className":"blog-post-title","children":"The Future of Open AI"}],["$","p",null,{"className":"blog-post-lede","children":"Reflections on where open AI development is heading and what it will take to get there."}],["$","div",null,{"className":"blog-prose","dangerouslySetInnerHTML":{"__html":"$17"}}]]}]}]
+13:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+f:null
+11:{"metadata":[["$","title","0",{"children":"The Future of Open AI — Zen Blog"}],["$","meta","1",{"name":"description","content":"Reflections on where open AI development is heading and what it will take to get there."}],["$","meta","2",{"name":"keywords","content":"AI, LLM, Agentic AI, Code Generation, Zen Coder, Multimodal, Open Source, Machine Learning"}]],"error":null,"digest":"$undefined"}
+16:"$11:metadata"

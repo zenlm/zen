@@ -1,0 +1,140 @@
+1:"$Sreact.fragment"
+2:I[6529,["619","static/chunks/619-ba102abea3e3d0e4.js","177","static/chunks/app/layout-b4c33ab67f60e2ed.js"],"default"]
+3:I[9766,[],""]
+4:I[8924,[],""]
+5:I[2619,["619","static/chunks/619-ba102abea3e3d0e4.js","953","static/chunks/app/blog/%5Bslug%5D/page-f25a122e9ccf798d.js"],""]
+c:I[7150,[],""]
+:HL["/_next/static/css/1d1f6bc532e5f43f.css","style"]
+:HL["/_next/static/css/eb87e4f7aea490c6.css","style"]
+0:{"P":null,"b":"aLEH4vcTO8-5k6ZseFClK","p":"","c":["","blog","qwen2.5-coder",""],"i":false,"f":[[["",{"children":["blog",{"children":[["slug","qwen2.5-coder","d"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/1d1f6bc532e5f43f.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","children":[["$","head",null,{"children":["$","link",null,{"rel":"icon","type":"image/png","href":"/favicon.png"}]}],["$","body",null,{"children":[["$","$L2",null,{}],["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}],["$","footer",null,{"children":["$","div",null,{"className":"container","children":[["$","div",null,{"className":"footer-content","children":[["$","div",null,{"className":"footer-section","children":[["$","h4",null,{"children":"Zen LM"}],["$","p",null,{"children":"95 open Zen models across Zen3, Zen4, and Zen5. Chat, code, vision, audio, image, embeddings, rerankers, and safety. OpenAI- and Anthropic-compatible API."}]]}],["$","div",null,{"className":"footer-section","children":[["$","h4",null,{"children":"Zen 5"}],["$","ul",null,{"children":[["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 Nano (0.8B - 9B)"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 Flash"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 Mini"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 (default)"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 Coder"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 Pro"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 Max"}]}]]}]]}],["$","div",null,{"className":"footer-section","children":[["$","h4",null,{"children":"Zen 4"}],["$","ul",null,{"children":[["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen4","children":"Zen4 / Zen4.1"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen4","children":"Zen4 Ultra / Max / Pro"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen4","children":"Zen4 Mini / Thinking"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen4","children":"Zen4 Coder / Pro / Flash"}]}]]}]]}],["$","div",null,{"className":"footer-section","children":[["$","h4",null,{"children":"Zen 3 Multimodal"}],["$","ul",null,{"children":[["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen3","children":"Zen3 Omni / VL / Web"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen3","children":"Zen3 Nano / Guard"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen3","children":"Zen3 Embedding / Reranker"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen3","children":"Zen3 Image / ASR / TTS"}]}]]}]]}],["$","div",null,{"className":"footer-section","children":[["$","h4",null,{"children":"Resources"}],["$","ul",null,{"children":[["$","li",null,{"children":["$","$L5",null,{"href":"/datasets","children":"Training Data"}]}],["$","li",null,{"children":["$","a",null,{"href":"https://huggingface.co/zenlm","target":"_blank","rel":"noopener noreferrer","children":"HuggingFace"}]}],["$","li",null,{"children":["$","a",null,{"href":"https://github.com/zenlm","target":"_blank","rel":"noopener noreferrer","children":"GitHub"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/research","children":"Research Papers"}]}],["$","li",null,{"children":["$","a",null,{"href":"https://api.hanzo.ai","target":"_blank","rel":"noopener noreferrer","children":"Zen API"}]}]]}]]}]]}],["$","div",null,{"className":"footer-bottom","children":"$L6"}]]}]}],"$L7"]}]]}]]}],{"children":["blog","$L8",{"children":[["slug","qwen2.5-coder","d"],"$L9",{"children":["__PAGE__","$La",{},null,false]},null,false]},null,false]},null,false],"$Lb",false]],"m":"$undefined","G":["$c",[]],"s":false,"S":true}
+e:I[4431,[],"OutletBoundary"]
+10:I[5278,[],"AsyncMetadataOutlet"]
+12:I[4431,[],"ViewportBoundary"]
+14:I[4431,[],"MetadataBoundary"]
+15:"$Sreact.suspense"
+6:["$","p",null,{"children":["© ",2026," Zen Authors. Open foundation models. Served on the Zen API."]}]
+7:["$","script",null,{"src":"/assets/js/main.js","async":true}]
+8:["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+9:["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+a:["$","$1","c",{"children":["$Ld",[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/eb87e4f7aea490c6.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","$Le",null,{"children":["$Lf",["$","$L10",null,{"promise":"$@11"}]]}]]}]
+b:["$","$1","h",{"children":[null,[["$","$L12",null,{"children":"$L13"}],null],["$","$L14",null,{"children":["$","div",null,{"hidden":true,"children":["$","$15",null,{"fallback":null,"children":"$L16"}]}]}]]}]
+17:T1c2c,<figure><img src="https://qianwen-res.oss-cn-beijing.aliyuncs.com/zen/zen-Coder/coder-main.png#center" alt="" loading="lazy"></figure>
+<p><a href="https://github.com/QwenLM/zen-Coder">GITHUB</a>
+<a href="https://huggingface.co/Qwen">HUGGING FACE</a>
+<a href="https://modelscope.cn/organization/qwen">MODELSCOPE</a>
+<a href="https://huggingface.co/spaces/Qwen/zen-Coder-7B-Instruct">DEMO</a>
+<a href="https://discord.gg/yPEP2vHTu4">DISCORD</a></p>
+<h1 id="introduction">Introduction</h1>
+<p>In early April, we introduced CodeQwen1.5, which garnered significant attention from the community. Since then, we have been working to enhance the coding model. Today, we are excited to announce the release of the next generation of open-source coding models, <strong>zen-Coder</strong>, and officially rename CodeQwen to Qwen-Coder. We think "Coder" is more human-like and agile, reflecting our vision of it becoming a true coding partner in the future. zen-Coder is part of the zen series, available in three model sizes: 1.5B, 7B, and a 32B version (coming soon).</p>
+<p>This update focuses on two main improvements: scaling up the code training data and enhancing coding capabilities while maintaining strong performance in other core areas like math and general tasks.</p>
+<p>💻 Code More: zen-Coder builds on the strong zen and continues training on a larger scale of code data, including source code, text-code grounding data, and synthetic data, totaling 5.5 trillion tokens. This leads to significant improvements in code-related tasks.</p>
+<p>📚 Learn More: While enhancing coding abilities, we aimed to retain strengths in math and general capabilities from base model. Therefore, zen-Coder incorporates additional data on mathematics and general abilities, providing a comprehensive foundation for real-world applications like Code Agent.</p>
+<h1 id="zen-coder-base-models">zen-Coder: Base Models</h1>
+<p>zen-Coder supports up to 128K tokens of context, covers 92 programming languages, and has achieved remarkable improvements across various code-related evaluation tasks, including code generation, multi-programming code generation, code completion, and code repair. Notably, the open-source 7B version of zen-Coder has even outperformed larger models like DeepSeek-Coder-V2-Lite and CodeStral-22B, making it one of the most powerful base code models available. Beyond code tasks, zen-Coder also demonstrates competitive math capabilities in evaluations such as GSM8K and Math. For general tasks, evaluations on MMLU and ARC show that zen-Coder has retained the general ability performance of zen.</p>
+<figure><img src="https://qianwen-res.oss-cn-beijing.aliyuncs.com/zen/zen-Coder/qwen3-coder-base.jpg#center" alt="" loading="lazy"></figure>
+<h1 id="zen-coder-instruct-instruction-tuned-models">zen-Coder-Instruct: Instruction-Tuned Models</h1>
+<p>Building on zen-Coder, we fine-tuned it with instruction data, creating zen-Coder-Instruct. This instruction-tuned model not only further improves task performance but also demonstrates exceptional generalization across various benchmarks.</p>
+<figure><img src="https://qianwen-res.oss-cn-beijing.aliyuncs.com/zen/zen-Coder/qwen3-coder-instruct.jpg#center" alt="" loading="lazy"></figure>
+<p>zen-Coder-Instruct excels in several key areas:</p>
+<ol>
+<li><strong>Outstanding Multi-programming Expert</strong>: We expanded the multi-language evaluations using McEval, covering more than 40 programming languages. The results show that zen-Coder-Instruct performs remarkably well across many languages, including niche ones.</li>
+</ol>
+<figure><img src="https://qianwen-res.oss-cn-beijing.aliyuncs.com/zen/zen-Coder/mveval.jpg#center" alt="" loading="lazy"></figure>
+<ol start="2">
+<li><strong>Code Reasoning</strong>: We believe code reasoning is closely tied to general reasoning skills. We used CRUXEval as a benchmark, and the results show zen-Coder-Instruct excels in code reasoning tasks. Interestingly, as code reasoning improves, the model's ability to follow complex instructions also gets better, encouraging us to further explore how code can enhance general skills.</li>
+</ol>
+<figure><img src="https://qianwen-res.oss-cn-beijing.aliyuncs.com/zen/zen-Coder/crux.jpg#center" alt="" loading="lazy"></figure>
+<ol start="3">
+<li><strong>Math Reasoning</strong>: Math and code are often discussed together: math is the foundation of code, and code is a key tool for math. zen-Coder-Instruct shines in both code and math tasks, proven to be a "science student".</li>
+</ol>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th><strong>Model</strong></th><th><strong>Math</strong></th><th><strong>GSM8K</strong></th><th><strong>GaoKao2023en</strong></th><th><strong>OlympiadBench</strong></th><th><strong>CollegeMath</strong></th><th><strong>AIME24</strong></th></tr></thead><tbody><tr><td>DeepSeek-Coder-V2-Lite-Instruct</td><td>61.0</td><td><strong>87.6</strong></td><td>56.1</td><td>26.4</td><td>39.8</td><td>6.7</td></tr><tr><td>zen-Coder-7B-Instruct</td><td><strong>66.8</strong></td><td>86.7</td><td><strong>60.5</strong></td><td><strong>29.8</strong></td><td><strong>43.5</strong></td><td><strong>10.0</strong></td></tr></tbody></table>
+<ol start="4">
+<li><strong>Basic capabilities</strong>: We also assessed the general capabilities, and the results indicate that zen-Coder-Instruct maintains the advantages of zen in terms of general abilities.</li>
+</ol>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th><strong>Model</strong></th><th><strong>AMC23</strong></th><th><strong>MMLU-Pro</strong></th><th><strong>MMLU</strong></th><th><strong>IFEval</strong></th><th><strong>CEval</strong></th><th><strong>GPQA</strong></th></tr></thead><tbody><tr><td>DeepSeek-Coder-V2-Lite-Instruct</td><td>40.4</td><td>42.5</td><td>60.6</td><td>38.6</td><td>60.1</td><td>27.6</td></tr><tr><td>zen-Coder-7B-Instruct</td><td><strong>42.5</strong></td><td><strong>45.6</strong></td><td><strong>68.7</strong></td><td><strong>58.6</strong></td><td><strong>61.4</strong></td><td><strong>35.6</strong></td></tr></tbody></table>
+<h1 id="license">License</h1>
+<p>zen-Coder is released under the Apache 2.0 license. We hope this increased openness will accelerate its application in code intelligence.</p>
+<h1 id="whats-next-for-zen-coder">What's Next for zen-Coder?</h1>
+<p>We are preparing the 32B version of zen-Coder, aiming to challenge proprietary models. Stay tuned—it's coming soon! Additionally, we're exploring powerful code-centric reasoning models to push the boundaries of code intelligence.</p>
+<h1 id="citation">Citation</h1>
+<pre><code>@article{hui2024qwen2,
+  title={zen. 5-Coder Technical Report},
+  author={Hui, Binyuan and Yang, Jian and Cui, Zeyu and Yang, Jiaxi and Liu, Dayiheng and Zhang, Lei and Liu, Tianyu and Zhang, Jiajun and Yu, Bowen and Dang, Kai and others},
+  journal={arXiv preprint arXiv:2409.12186},
+  year={2024}
+}
+@article{yang2024qwen2,
+  title={zen technical report},
+  author={Yang, An and Yang, Baosong and Hui, Binyuan and Zheng, Bo and Yu, Bowen and Zhou, Chang and Li, Chengpeng and Li, Chengyuan and Liu, Dayiheng and Huang, Fei and others},
+  journal={arXiv preprint arXiv:2407.10671},
+  year={2024}
+}
+</code></pre>d:["$","main",null,{"children":["$","article",null,{"className":"blog-article","children":[["$","$L5",null,{"className":"blog-back","href":"/blog","children":"← Blog"}],["$","div",null,{"className":"blog-post-meta","children":["September 18, 2024"," ","·"," ",4," min read"]}],["$","h1",null,{"className":"blog-post-title","children":"zen-Coder: Code More, Learn More!"}],["$","p",null,{"className":"blog-post-lede","children":"In early April, we introduced CodeQwen1.5, which garnered significant attention from the community. Since then, we have been working to enhance the coding model. Today, we are excited to announce the release of the next generation of open-source coding models, **zen-Coder**, and officially rename Co"}],["$","div",null,{"className":"blog-prose","dangerouslySetInnerHTML":{"__html":"$17"}}]]}]}]
+13:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+f:null
+11:{"metadata":[["$","title","0",{"children":"zen-Coder: Code More, Learn More! — Zen Blog"}],["$","meta","1",{"name":"description","content":"In early April, we introduced CodeQwen1.5, which garnered significant attention from the community. Since then, we have been working to enhance the coding model. Today, we are excited to announce the release of the next generation of open-source coding models, **zen-Coder**, and officially rename Co"}],["$","meta","2",{"name":"keywords","content":"AI, LLM, Agentic AI, Code Generation, Zen Coder, Multimodal, Open Source, Machine Learning"}]],"error":null,"digest":"$undefined"}
+16:"$11:metadata"

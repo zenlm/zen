@@ -1,0 +1,95 @@
+---
+title: "Experience Ledgers: Persistent Memory for AI Agents"
+date: "2022-02-14"
+description: "Introducing experience ledgers, a framework for giving AI agents persistent, verifiable memory."
+author: "Zach Kelling"
+tags: ["Research", "Agents"]
+---
+
+
+AI agents today suffer from amnesia. Each conversation starts fresh. Each session forgets the last. This isn't just an inconvenience; it's a fundamental limitation on what agents can become.
+
+Today we introduce experience ledgers, a framework for persistent, verifiable agent memory.
+
+## The Memory Problem
+
+Current language models operate in bounded context windows. Information from past interactions must be explicitly retrieved or summarized. This creates several challenges:
+
+1. **Context limits**: Models can only attend to finite token sequences
+2. **Retrieval failures**: Important context gets lost or incorrectly recalled
+3. **No learning**: Agents don't improve from experience within deployment
+4. **Trust gap**: Users can't verify what the agent "remembers"
+
+## Experience Ledgers
+
+An experience ledger is an append-only log of agent experiences with cryptographic attestation. Think of it as a blockchain for agent memory, but optimized for AI workloads.
+
+### Core Properties
+
+**Append-only**: Experiences are added but never modified or deleted. This creates an immutable record of agent history.
+
+**Content-addressed**: Each experience has a unique hash based on its content. References are stable and verifiable.
+
+**Selective disclosure**: Agents can prove they have certain experiences without revealing all memories. Zero-knowledge proofs enable privacy-preserving verification.
+
+**Hierarchical summarization**: Raw experiences are continuously summarized at multiple abstraction levels. Agents can navigate from high-level patterns to specific instances.
+
+### Architecture
+
+```
+Raw Experience -> Embedding -> Index -> Summary Layer -> Abstract Layer
+       |              |           |            |              |
+       v              v           v            v              v
+    [Ledger]    [Vector DB]  [Search]   [Compression]   [Reasoning]
+```
+
+Each layer serves a different purpose:
+- **Raw layer**: Complete transcripts, full fidelity
+- **Embedding layer**: Semantic similarity search
+- **Index layer**: Structured retrieval by metadata
+- **Summary layer**: Compressed representations
+- **Abstract layer**: High-level patterns and beliefs
+
+## Implementation
+
+We've built a reference implementation using:
+
+- **Storage**: Content-addressed blocks on IPFS
+- **Attestation**: Ed25519 signatures for each entry
+- **Indexing**: HNSW vectors with metadata filtering
+- **Summarization**: Hierarchical abstractive compression
+
+The system maintains consistency between layers. When raw experiences update, summaries regenerate. When summaries change, abstractions refresh.
+
+## Use Cases
+
+### Personalized Assistants
+
+An agent with an experience ledger remembers user preferences, past conversations, and accumulated context. The user can audit this memory and request modifications.
+
+### Collaborative Research
+
+Multiple agents working on a problem can share experience ledgers. Discoveries propagate. Dead ends are remembered. The collective makes progress.
+
+### Verifiable AI
+
+When an agent claims expertise or references past interactions, the ledger provides proof. Trust becomes verifiable rather than assumed.
+
+## Privacy Considerations
+
+Persistent memory raises legitimate privacy concerns. Our design addresses these through:
+
+- **User control**: Users own their ledger data
+- **Selective sync**: Choose what experiences to persist
+- **Cryptographic deletion**: Encrypted entries can be made unreadable
+- **Audit logs**: All access is recorded
+
+## What's Next
+
+We're releasing the experience ledger specification and reference implementation under Apache 2.0. Initial integration with Zen models comes next quarter.
+
+Memory transforms what agents can do. It's time to give them the ability to remember.
+
+---
+
+*Zach Kelling is a co-founder of Zoo Labs Foundation.*

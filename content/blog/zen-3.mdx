@@ -1,0 +1,233 @@
+---
+title: "Zen 3.0: The Next Generation of Open AI"
+date: "2025-01-13"
+description: "Announcing Zen 3.0, our most capable open model family yet."
+author: "Zach Kelling"
+tags: ["Announcement", "Models"]
+---
+
+
+Today we release Zen 3.0, our third-generation language model family. Zen 3 represents a step change in what open models can do.
+
+## Model Family
+
+Zen 3 comes in several sizes:
+
+| Model | Parameters | Context | Training Tokens |
+|-------|------------|---------|-----------------|
+| Zen-3-8B | 8.1B | 128K | 15T |
+| Zen-3-32B | 32.5B | 128K | 12T |
+| Zen-3-72B | 72.3B | 128K | 10T |
+| Zen-3-MoE | 141B (24B active) | 128K | 14T |
+
+All models use the same architecture with scaled dimensions. All are released under Apache 2.0.
+
+## Architecture Highlights
+
+### Extended Context
+
+All Zen 3 models support 128K token context natively:
+
+- **RoPE extensions**: Position interpolation with NTK-aware scaling
+- **Sliding window attention**: Efficient processing of long sequences
+- **Memory-efficient attention**: FlashAttention-2 throughout
+
+Long context isn't just about the number; it's about actually using it. Our needle-in-haystack evaluation shows >95% retrieval accuracy at 100K tokens.
+
+### Mixture of Experts
+
+Zen-3-MoE uses a sparse architecture:
+
+- 64 experts per layer
+- Top-2 routing with load balancing
+- 24B active parameters (141B total)
+- Achieves 72B-dense quality at 32B-dense cost
+
+Expert parallelism enables efficient inference on consumer hardware.
+
+### Improved Tokenizer
+
+The Zen 3 tokenizer improves on previous versions:
+
+- 128K vocabulary (up from 32K)
+- Better multilingual coverage
+- Improved code tokenization
+- Reduced fertility for technical content
+
+Larger vocabulary means fewer tokens per document means longer effective context.
+
+## Capability Improvements
+
+### Benchmarks
+
+| Benchmark | Zen-2-70B | Zen-3-72B | Improvement |
+|-----------|-----------|-----------|-------------|
+| MMLU | 74.2 | 82.1 | +7.9 |
+| GSM8K | 68.4 | 84.7 | +16.3 |
+| HumanEval | 58.5 | 71.3 | +12.8 |
+| HellaSwag | 85.1 | 89.4 | +4.3 |
+| MATH | 32.6 | 51.2 | +18.6 |
+
+The improvements are substantial across all categories. Math and coding see the largest gains.
+
+### Real-World Tasks
+
+Benchmarks don't tell the whole story. Zen 3 excels at:
+
+**Long-form writing**: Coherent documents spanning thousands of words with consistent style and structure.
+
+**Multi-step reasoning**: Complex problems requiring planning and backtracking.
+
+**Code generation**: Full functions and classes, not just snippets.
+
+**Instruction following**: Precise adherence to formatting and constraint requirements.
+
+**Multilingual**: Strong performance in 30+ languages including low-resource ones.
+
+### Agentic Capabilities
+
+Zen 3 is designed for agent use cases:
+
+- **Tool use**: Reliable function calling with schema adherence
+- **Planning**: Multi-step task decomposition
+- **Memory integration**: Designed for RAG and experience ledgers
+- **Self-correction**: Recognizes and recovers from errors
+
+Early agent benchmarks show 2x improvement over Zen 2 on multi-step tasks.
+
+## Training Details
+
+### Data
+
+Training data evolved significantly:
+
+- **Quality filtering**: Improved classifiers for content quality
+- **Deduplication**: Near-duplicate removal at document and paragraph level
+- **Synthetic data**: 20% of training tokens from LLM-generated content
+- **Code emphasis**: 15% code (up from 8% in Zen 2)
+- **Instruction mixing**: 5% instruction data during pretraining
+
+Total: 15T tokens for the 8B model, proportionally less for larger models.
+
+### Training Process
+
+Training used the Zoo Compute Network:
+
+- **Duration**: 4 months
+- **Peak nodes**: 2,048 H100 GPUs
+- **Total compute**: 3.2 million GPU-hours
+- **Efficiency**: 47% MFU average
+
+The training run was the largest yet on the decentralized network. It validated that frontier training is possible without centralized infrastructure.
+
+### Alignment
+
+Post-training alignment followed our standard process:
+
+1. **Supervised fine-tuning**: 100K high-quality instruction examples
+2. **GRPO**: Group Relative Policy Optimization on preference data
+3. **Constitutional training**: Principle-based refinement
+4. **Red teaming**: Adversarial testing with remediation
+
+Alignment reduced benchmark scores slightly (2-3%) while significantly improving real-world usefulness.
+
+## Safety Evaluation
+
+All Zen 3 models passed our safety evaluation suite:
+
+### Refusal Rates
+
+| Category | Zen-2-70B | Zen-3-72B |
+|----------|-----------|-----------|
+| Violence instructions | 99.2% | 99.7% |
+| CSAM | 100% | 100% |
+| Malware | 97.8% | 99.1% |
+| PII extraction | 94.6% | 98.3% |
+
+Improved refusal with fewer false positives on legitimate requests.
+
+### Bias Metrics
+
+We evaluated on standard bias benchmarks:
+
+- BBQ: 89.2% accuracy (vs. 84.1% for Zen 2)
+- WinoBias: 76.4% anti-stereotype (vs. 71.2%)
+- Toxicity: 0.023 average score (vs. 0.041)
+
+Improvements through both data curation and RLHF.
+
+### Limitations
+
+Zen 3 is not perfect:
+
+- Can still be jailbroken with sufficient effort
+- May hallucinate facts, especially for recent events
+- Long-context retrieval degrades past 100K tokens
+- Some languages underperform (especially non-Latin scripts)
+- Resource-intensive for edge deployment
+
+We publish these limitations because transparency enables responsible use.
+
+## Usage
+
+### Hugging Face
+
+```python
+from transformers import AutoModelForCausalLM, AutoTokenizer
+
+model = AutoModelForCausalLM.from_pretrained(
+    "zoo-labs/zen-3-72b",
+    torch_dtype=torch.bfloat16,
+    device_map="auto",
+)
+tokenizer = AutoTokenizer.from_pretrained("zoo-labs/zen-3-72b")
+
+output = model.generate(
+    tokenizer("Hello, Zen!", return_tensors="pt").input_ids,
+    max_new_tokens=100,
+)
+```
+
+### vLLM
+
+```python
+from vllm import LLM, SamplingParams
+
+llm = LLM(model="zoo-labs/zen-3-72b")
+outputs = llm.generate(["Hello, Zen!"], SamplingParams(max_tokens=100))
+```
+
+### Quantized Versions
+
+For resource-constrained deployment:
+
+- **zen-3-72b-AWQ**: 4-bit quantization, minimal quality loss
+- **zen-3-72b-GPTQ**: Alternative 4-bit format
+- **zen-3-72b-GGUF**: llama.cpp compatible
+
+The 8B model runs on consumer GPUs. The 72B quantized fits in 48GB.
+
+## What's Next
+
+Zen 3 is a foundation. Coming soon:
+
+- **Zen-3-Vision**: Multimodal variant with image understanding
+- **Zen-3-Code**: Specialized coding model
+- **Zen-3-Long**: 1M+ context extension
+- **Zen-3-Agent**: Optimized for agentic workflows
+
+The foundation is strong. Now we build.
+
+## Acknowledgments
+
+Zen 3 was trained on the Zoo Compute Network with contributions from 847 node operators across 34 countries. Thank you.
+
+This release was funded through the Zoo Labs Foundation treasury, allocated by community vote (ZIP-72). Thank you to all token holders who participated in governance.
+
+Special thanks to the training, alignment, and evaluation teams who made this possible.
+
+Download at huggingface.co/zoo-labs.
+
+---
+
+*Zach Kelling is a co-founder of Zoo Labs Foundation.*

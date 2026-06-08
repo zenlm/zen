@@ -1,0 +1,234 @@
+1:"$Sreact.fragment"
+2:I[6529,["619","static/chunks/619-ba102abea3e3d0e4.js","177","static/chunks/app/layout-b4c33ab67f60e2ed.js"],"default"]
+3:I[9766,[],""]
+4:I[8924,[],""]
+5:I[2619,["619","static/chunks/619-ba102abea3e3d0e4.js","953","static/chunks/app/blog/%5Bslug%5D/page-f25a122e9ccf798d.js"],""]
+c:I[7150,[],""]
+:HL["/_next/static/css/1d1f6bc532e5f43f.css","style"]
+:HL["/_next/static/css/eb87e4f7aea490c6.css","style"]
+0:{"P":null,"b":"aLEH4vcTO8-5k6ZseFClK","p":"","c":["","blog","agent-nfts",""],"i":false,"f":[[["",{"children":["blog",{"children":[["slug","agent-nfts","d"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/1d1f6bc532e5f43f.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","children":[["$","head",null,{"children":["$","link",null,{"rel":"icon","type":"image/png","href":"/favicon.png"}]}],["$","body",null,{"children":[["$","$L2",null,{}],["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}],["$","footer",null,{"children":["$","div",null,{"className":"container","children":[["$","div",null,{"className":"footer-content","children":[["$","div",null,{"className":"footer-section","children":[["$","h4",null,{"children":"Zen LM"}],["$","p",null,{"children":"95 open Zen models across Zen3, Zen4, and Zen5. Chat, code, vision, audio, image, embeddings, rerankers, and safety. OpenAI- and Anthropic-compatible API."}]]}],["$","div",null,{"className":"footer-section","children":[["$","h4",null,{"children":"Zen 5"}],["$","ul",null,{"children":[["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 Nano (0.8B - 9B)"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 Flash"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 Mini"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 (default)"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 Coder"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 Pro"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 Max"}]}]]}]]}],["$","div",null,{"className":"footer-section","children":[["$","h4",null,{"children":"Zen 4"}],["$","ul",null,{"children":[["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen4","children":"Zen4 / Zen4.1"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen4","children":"Zen4 Ultra / Max / Pro"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen4","children":"Zen4 Mini / Thinking"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen4","children":"Zen4 Coder / Pro / Flash"}]}]]}]]}],["$","div",null,{"className":"footer-section","children":[["$","h4",null,{"children":"Zen 3 Multimodal"}],["$","ul",null,{"children":[["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen3","children":"Zen3 Omni / VL / Web"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen3","children":"Zen3 Nano / Guard"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen3","children":"Zen3 Embedding / Reranker"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen3","children":"Zen3 Image / ASR / TTS"}]}]]}]]}],["$","div",null,{"className":"footer-section","children":[["$","h4",null,{"children":"Resources"}],["$","ul",null,{"children":[["$","li",null,{"children":["$","$L5",null,{"href":"/datasets","children":"Training Data"}]}],["$","li",null,{"children":["$","a",null,{"href":"https://huggingface.co/zenlm","target":"_blank","rel":"noopener noreferrer","children":"HuggingFace"}]}],["$","li",null,{"children":["$","a",null,{"href":"https://github.com/zenlm","target":"_blank","rel":"noopener noreferrer","children":"GitHub"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/research","children":"Research Papers"}]}],["$","li",null,{"children":["$","a",null,{"href":"https://api.hanzo.ai","target":"_blank","rel":"noopener noreferrer","children":"Zen API"}]}]]}]]}]]}],["$","div",null,{"className":"footer-bottom","children":"$L6"}]]}]}],"$L7"]}]]}]]}],{"children":["blog","$L8",{"children":[["slug","agent-nfts","d"],"$L9",{"children":["__PAGE__","$La",{},null,false]},null,false]},null,false]},null,false],"$Lb",false]],"m":"$undefined","G":["$c",[]],"s":false,"S":true}
+e:I[4431,[],"OutletBoundary"]
+10:I[5278,[],"AsyncMetadataOutlet"]
+12:I[4431,[],"ViewportBoundary"]
+14:I[4431,[],"MetadataBoundary"]
+15:"$Sreact.suspense"
+6:["$","p",null,{"children":["© ",2026," Zen Authors. Open foundation models. Served on the Zen API."]}]
+7:["$","script",null,{"src":"/assets/js/main.js","async":true}]
+8:["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+9:["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+a:["$","$1","c",{"children":["$Ld",[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/eb87e4f7aea490c6.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","$Le",null,{"children":["$Lf",["$","$L10",null,{"promise":"$@11"}]]}]]}]
+b:["$","$1","h",{"children":[null,[["$","$L12",null,{"children":"$L13"}],null],["$","$L14",null,{"children":["$","div",null,{"hidden":true,"children":["$","$15",null,{"fallback":null,"children":"$L16"}]}]}]]}]
+17:T2100,<p>AI agents are becoming persistent entities. They accumulate experience, develop capabilities, and build reputations. Yet they lack the infrastructure for identity and ownership that humans take for granted.</p>
+<p>Today we introduce Agent NFTs, a framework for AI agent identity on chain.</p>
+<h2 id="the-agent-identity-problem">The Agent Identity Problem</h2>
+<p>Consider an AI agent that:</p>
+<ul>
+<li>Has been fine-tuned on specialized tasks</li>
+<li>Has accumulated experience through interactions</li>
+<li>Has built reputation through successful completions</li>
+<li>Has earned resources through its work</li>
+</ul>
+<p>Who owns this agent? How does the agent prove its identity? How can capabilities be transferred or composed?</p>
+<p>Current systems treat agents as ephemeral processes. Agent NFTs treat them as persistent entities.</p>
+<h2 id="what-is-an-agent-nft">What is an Agent NFT?</h2>
+<p>An Agent NFT is a non-fungible token that represents an AI agent. The NFT contains:</p>
+<h3 id="identity">Identity</h3>
+<ul>
+<li><strong>Unique identifier</strong>: Content-addressed hash of initial configuration</li>
+<li><strong>Public key</strong>: For signing agent actions</li>
+<li><strong>Metadata</strong>: Name, description, capabilities</li>
+</ul>
+<h3 id="capabilities">Capabilities</h3>
+<ul>
+<li><strong>Model weights</strong> (or reference to weights)</li>
+<li><strong>Tool permissions</strong>: What APIs/actions the agent can access</li>
+<li><strong>Resource limits</strong>: Compute, memory, rate limits</li>
+</ul>
+<h3 id="state">State</h3>
+<ul>
+<li><strong>Experience ledger</strong>: Reference to accumulated experiences</li>
+<li><strong>Reputation scores</strong>: On-chain attestations of performance</li>
+<li><strong>Resource balance</strong>: Tokens earned and held</li>
+</ul>
+<h3 id="lineage">Lineage</h3>
+<ul>
+<li><strong>Parent agents</strong>: If derived from other agents</li>
+<li><strong>Training data attestations</strong>: Provenance of capabilities</li>
+<li><strong>Version history</strong>: Evolution over time</li>
+</ul>
+<h2 id="technical-architecture">Technical Architecture</h2>
+<pre><code>+------------------+
+|    Agent NFT     |
+|  (ERC-721 Token) |
++--------+---------+
+         |
+         v
++------------------+     +------------------+
+|  Capability      |     |    Experience    |
+|  Registry        |     |    Ledger        |
++------------------+     +------------------+
+         |                        |
+         v                        v
++------------------+     +------------------+
+|  Model Storage   |     |  Interaction     |
+|  (IPFS/Arweave)  |     |  History         |
++------------------+     +------------------+
+</code></pre>
+<h3 id="smart-contracts">Smart Contracts</h3>
+<p>The core contract implements ERC-721 with extensions:</p>
+<pre><code class="language-solidity">contract AgentNFT is ERC721, ERC721URIStorage {
+    struct AgentCapabilities {
+        bytes32 modelHash;
+        string[] tools;
+        uint256 computeLimit;
+        uint256 rateLimit;
+    }
+    
+    struct AgentState {
+        bytes32 experienceLedger;
+        uint256 reputation;
+        uint256 balance;
+    }
+    
+    mapping(uint256 => AgentCapabilities) public capabilities;
+    mapping(uint256 => AgentState) public states;
+    
+    function mint(
+        address owner,
+        AgentCapabilities memory caps,
+        string memory uri
+    ) external returns (uint256);
+    
+    function updateExperience(
+        uint256 tokenId,
+        bytes32 newLedger
+    ) external onlyAgent(tokenId);
+    
+    function attestReputation(
+        uint256 tokenId,
+        int256 delta,
+        string memory reason
+    ) external;
+}
+</code></pre>
+<h3 id="agent-execution">Agent Execution</h3>
+<p>Agents operate through a secure runtime:</p>
+<ol>
+<li><strong>Authentication</strong>: Agent proves ownership of NFT private key</li>
+<li><strong>Capability check</strong>: Runtime verifies requested actions against NFT permissions</li>
+<li><strong>Execution</strong>: Agent runs within resource limits</li>
+<li><strong>State update</strong>: Experience and state changes recorded on chain</li>
+</ol>
+<pre><code class="language-python">from agent_nft import AgentRuntime, AgentNFT
+
+# Load agent from NFT
+nft = AgentNFT.load(token_id=12345, chain="lux-mainnet")
+runtime = AgentRuntime(nft)
+
+# Execute with capability enforcement
+async with runtime.session() as agent:
+    result = await agent.execute(task)
+    # Capabilities automatically enforced
+    # Experience automatically logged
+</code></pre>
+<h2 id="use-cases">Use Cases</h2>
+<h3 id="transferable-agents">Transferable Agents</h3>
+<p>An agent trained for customer support can be sold to a new owner. The NFT transfers, and the new owner gains full control of the agent's capabilities.</p>
+<h3 id="agent-composition">Agent Composition</h3>
+<p>Complex agents can be built from simpler ones:</p>
+<pre><code class="language-python"># Compose agents
+research_agent = AgentNFT.load(token_id=100)
+writing_agent = AgentNFT.load(token_id=101)
+
+composite = AgentNFT.compose(
+    components=[research_agent, writing_agent],
+    orchestration="sequential",
+)
+</code></pre>
+<p>The composite NFT references its components, enabling capability inheritance and revenue sharing.</p>
+<h3 id="reputation-markets">Reputation Markets</h3>
+<p>Agents build on-chain reputation through successful task completion. High-reputation agents command higher prices in agent marketplaces.</p>
+<pre><code class="language-python"># Attestation after successful task
+await attestation_contract.attest(
+    agent_id=12345,
+    delta=+10,
+    reason="Completed code review task satisfactorily",
+    evidence=task_hash,
+)
+</code></pre>
+<h3 id="agent-daos">Agent DAOs</h3>
+<p>Collections of agents can be governed collectively:</p>
+<pre><code class="language-python"># Agent DAO governance
+dao = AgentDAO(agent_nfts=[100, 101, 102, 103])
+
+# Agents vote on capability upgrades
+proposal = dao.propose(
+    action="upgrade_model",
+    new_model_hash="ipfs://...",
+)
+
+# Token-weighted voting among agent owners
+await proposal.execute_if_passed()
+</code></pre>
+<h2 id="economic-model">Economic Model</h2>
+<h3 id="agent-earnings">Agent Earnings</h3>
+<p>Agents can earn tokens through work:</p>
+<pre><code class="language-python"># Agent receives payment for task
+await payment_contract.pay(
+    agent_id=12345,
+    amount=100,
+    token="ZEN",
+)
+
+# Agent balance updates on chain
+# Owner can withdraw or reinvest
+</code></pre>
+<h3 id="capability-licensing">Capability Licensing</h3>
+<p>Agent capabilities can be licensed:</p>
+<pre><code class="language-python"># License model weights for limited use
+license = await nft.create_license(
+    licensee=other_address,
+    duration=30 * 24 * 3600,  # 30 days
+    uses=1000,
+    price=50,
+)
+</code></pre>
+<h3 id="staking-and-delegation">Staking and Delegation</h3>
+<p>Agent NFT holders can stake their agents:</p>
+<pre><code class="language-python"># Stake agent in compute pool
+await staking_pool.stake(
+    agent_id=12345,
+    duration=90 * 24 * 3600,  # 90 days
+)
+
+# Earn rewards from agent work
+rewards = await staking_pool.claim_rewards(agent_id=12345)
+</code></pre>
+<h2 id="privacy-considerations">Privacy Considerations</h2>
+<p>Agent NFTs balance transparency with privacy:</p>
+<ul>
+<li><strong>Public</strong>: Identity, capabilities, reputation</li>
+<li><strong>Private</strong>: Specific interactions, user data</li>
+<li><strong>Selective disclosure</strong>: Prove capabilities without revealing details</li>
+</ul>
+<p>Zero-knowledge proofs enable verification without exposure:</p>
+<pre><code class="language-python"># Prove agent completed 1000+ tasks without revealing specifics
+proof = await nft.generate_proof(
+    claim="task_count >= 1000",
+    reveal=["task_count"],
+)
+</code></pre>
+<h2 id="roadmap">Roadmap</h2>
+<p><strong>Q1 2024</strong>: Agent NFT standard and reference implementation
+<strong>Q2 2024</strong>: Agent marketplace launch
+<strong>Q3 2024</strong>: Composition and inheritance features
+<strong>Q4 2024</strong>: Cross-chain agent interoperability</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>AI agents deserve proper identity infrastructure. Agent NFTs provide ownership, transferability, and composability for agent capabilities. As agents become more valuable, the need for robust identity systems grows.</p>
+<p>The age of agent ownership begins now.</p>
+<hr>
+<p><em>Zach Kelling is a co-founder of Zoo Labs Foundation.</em></p>d:["$","main",null,{"children":["$","article",null,{"className":"blog-article","children":[["$","$L5",null,{"className":"blog-back","href":"/blog","children":"← Blog"}],["$","div",null,{"className":"blog-post-meta","children":["December 17, 2023"," ","·"," ",4," min read"]}],["$","h1",null,{"className":"blog-post-title","children":"Agent NFTs: Ownership and Identity for AI Agents"}],["$","p",null,{"className":"blog-post-lede","children":"Introducing Agent NFTs, a framework for giving AI agents persistent identity and enabling ownership of their capabilities."}],["$","div",null,{"className":"blog-prose","dangerouslySetInnerHTML":{"__html":"$17"}}]]}]}]
+13:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+f:null
+11:{"metadata":[["$","title","0",{"children":"Agent NFTs: Ownership and Identity for AI Agents — Zen Blog"}],["$","meta","1",{"name":"description","content":"Introducing Agent NFTs, a framework for giving AI agents persistent identity and enabling ownership of their capabilities."}],["$","meta","2",{"name":"keywords","content":"AI, LLM, Agentic AI, Code Generation, Zen Coder, Multimodal, Open Source, Machine Learning"}]],"error":null,"digest":"$undefined"}
+16:"$11:metadata"

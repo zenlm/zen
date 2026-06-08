@@ -1,0 +1,75 @@
+---
+title: "Training LLMs on Collective Intelligence"
+date: "2021-07-22"
+description: "How we're approaching training data curation to capture humanity's collective intelligence."
+author: "Zach Kelling"
+tags: ["Research", "Training"]
+---
+
+
+Language models are trained on text. That text represents the accumulated knowledge, reasoning, and creativity of countless individuals. Yet the curation process that selects training data receives surprisingly little attention.
+
+## The Data Problem
+
+Most large language models are trained on web scrapes filtered by simple heuristics. This approach has several issues:
+
+1. **Quality variance**: Web content ranges from expert research to spam
+2. **Hidden biases**: Filtering decisions embed value judgments
+3. **Provenance opacity**: It's unclear what's included or excluded
+4. **Legal ambiguity**: Copyright and consent questions remain unresolved
+
+## Our Approach: Transparent Curation
+
+At Zen, we're taking a different path. Our data pipeline operates on three principles.
+
+### Explicit Criteria
+
+Every filtering decision has documented rationale. When we exclude content, we record why. When we weight certain sources higher, we explain the reasoning. This creates an auditable trail.
+
+### Community Input
+
+Data curation involves value judgments. What counts as "quality"? Which perspectives matter? These aren't purely technical questions. We're building mechanisms for community input into curation criteria.
+
+### Provenance Tracking
+
+Each training example links to its source with metadata about:
+- Original publication context
+- Author information (when available)
+- Licensing terms
+- Processing steps applied
+
+## Technical Implementation
+
+We've developed a pipeline that processes documents through several stages:
+
+```
+Source -> Extraction -> Deduplication -> Quality Scoring -> Attribution -> Storage
+```
+
+The quality scoring model itself is trained on human judgments, with explicit criteria:
+- Factual accuracy (where verifiable)
+- Reasoning coherence
+- Writing clarity
+- Information density
+
+## Early Results
+
+Our initial corpus contains 2.3 trillion tokens with full provenance tracking. Early experiments suggest that careful curation can match larger but noisier datasets:
+
+| Corpus | Tokens | Benchmark Score |
+|--------|--------|-----------------|
+| Web-raw | 5T | 72.3 |
+| Web-filtered | 3T | 74.1 |
+| Zen-curated | 2.3T | 75.8 |
+
+The numbers are preliminary, but the direction is clear: quality over quantity.
+
+## What This Means
+
+Training on collective intelligence isn't just about scraping more data. It's about respecting the sources, maintaining transparency, and involving the community in decisions that shape AI behavior.
+
+We'll publish our full curation methodology and tooling in the coming months.
+
+---
+
+*Zach Kelling is a co-founder of Zoo Labs Foundation.*

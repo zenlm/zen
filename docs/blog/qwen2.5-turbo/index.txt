@@ -1,0 +1,95 @@
+1:"$Sreact.fragment"
+2:I[6529,["619","static/chunks/619-ba102abea3e3d0e4.js","177","static/chunks/app/layout-b4c33ab67f60e2ed.js"],"default"]
+3:I[9766,[],""]
+4:I[8924,[],""]
+5:I[2619,["619","static/chunks/619-ba102abea3e3d0e4.js","953","static/chunks/app/blog/%5Bslug%5D/page-f25a122e9ccf798d.js"],""]
+c:I[7150,[],""]
+:HL["/_next/static/css/1d1f6bc532e5f43f.css","style"]
+:HL["/_next/static/css/eb87e4f7aea490c6.css","style"]
+0:{"P":null,"b":"aLEH4vcTO8-5k6ZseFClK","p":"","c":["","blog","qwen2.5-turbo",""],"i":false,"f":[[["",{"children":["blog",{"children":[["slug","qwen2.5-turbo","d"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/1d1f6bc532e5f43f.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","children":[["$","head",null,{"children":["$","link",null,{"rel":"icon","type":"image/png","href":"/favicon.png"}]}],["$","body",null,{"children":[["$","$L2",null,{}],["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}],["$","footer",null,{"children":["$","div",null,{"className":"container","children":[["$","div",null,{"className":"footer-content","children":[["$","div",null,{"className":"footer-section","children":[["$","h4",null,{"children":"Zen LM"}],["$","p",null,{"children":"95 open Zen models across Zen3, Zen4, and Zen5. Chat, code, vision, audio, image, embeddings, rerankers, and safety. OpenAI- and Anthropic-compatible API."}]]}],["$","div",null,{"className":"footer-section","children":[["$","h4",null,{"children":"Zen 5"}],["$","ul",null,{"children":[["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 Nano (0.8B - 9B)"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 Flash"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 Mini"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 (default)"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 Coder"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 Pro"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 Max"}]}]]}]]}],["$","div",null,{"className":"footer-section","children":[["$","h4",null,{"children":"Zen 4"}],["$","ul",null,{"children":[["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen4","children":"Zen4 / Zen4.1"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen4","children":"Zen4 Ultra / Max / Pro"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen4","children":"Zen4 Mini / Thinking"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen4","children":"Zen4 Coder / Pro / Flash"}]}]]}]]}],["$","div",null,{"className":"footer-section","children":[["$","h4",null,{"children":"Zen 3 Multimodal"}],["$","ul",null,{"children":[["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen3","children":"Zen3 Omni / VL / Web"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen3","children":"Zen3 Nano / Guard"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen3","children":"Zen3 Embedding / Reranker"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen3","children":"Zen3 Image / ASR / TTS"}]}]]}]]}],["$","div",null,{"className":"footer-section","children":[["$","h4",null,{"children":"Resources"}],["$","ul",null,{"children":[["$","li",null,{"children":["$","$L5",null,{"href":"/datasets","children":"Training Data"}]}],["$","li",null,{"children":["$","a",null,{"href":"https://huggingface.co/zenlm","target":"_blank","rel":"noopener noreferrer","children":"HuggingFace"}]}],["$","li",null,{"children":["$","a",null,{"href":"https://github.com/zenlm","target":"_blank","rel":"noopener noreferrer","children":"GitHub"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/research","children":"Research Papers"}]}],["$","li",null,{"children":["$","a",null,{"href":"https://api.hanzo.ai","target":"_blank","rel":"noopener noreferrer","children":"Zen API"}]}]]}]]}]]}],["$","div",null,{"className":"footer-bottom","children":"$L6"}]]}]}],"$L7"]}]]}]]}],{"children":["blog","$L8",{"children":[["slug","qwen2.5-turbo","d"],"$L9",{"children":["__PAGE__","$La",{},null,false]},null,false]},null,false]},null,false],"$Lb",false]],"m":"$undefined","G":["$c",[]],"s":false,"S":true}
+e:I[4431,[],"OutletBoundary"]
+10:I[5278,[],"AsyncMetadataOutlet"]
+12:I[4431,[],"ViewportBoundary"]
+14:I[4431,[],"MetadataBoundary"]
+15:"$Sreact.suspense"
+6:["$","p",null,{"children":["© ",2026," Zen Authors. Open foundation models. Served on the Zen API."]}]
+7:["$","script",null,{"src":"/assets/js/main.js","async":true}]
+8:["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+9:["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+a:["$","$1","c",{"children":["$Ld",[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/eb87e4f7aea490c6.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","$Le",null,{"children":["$Lf",["$","$L10",null,{"promise":"$@11"}]]}]]}]
+b:["$","$1","h",{"children":[null,[["$","$L12",null,{"children":"$L13"}],null],["$","$L14",null,{"children":["$","div",null,{"hidden":true,"children":["$","$15",null,{"fallback":null,"children":"$L16"}]}]}]]}]
+17:T2009,<p><a href="https://help.aliyun.com/zh/model-studio/getting-started/first-api-call-to-qwen">API Documentation (Chinese)</a>
+<a href="https://huggingface.co/spaces/Qwen/zen-Turbo-1M-Demo">HuggingFace Demo</a>
+<a href="https://www.modelscope.cn/studios/Qwen/zen-Turbo-1M-Demo">ModelScope Demo</a></p>
+<h1 id="introduction">Introduction</h1>
+<p>After the release of zen, we heard the community's demand for processing longer contexts. In recent months, we have made many optimizations for the model capabilities and inference performance of extremely long context. Today, we are proud to introduce the new zen-Turbo version, which features:</p>
+<ol>
+<li><strong>Longer Context Support</strong>: We have extended the model's context length from 128k to <strong>1M</strong>, which is approximately <strong>1 million English words or 1.5 million Chinese characters</strong>, equivalent to 10 full-length novels, 150 hours of speech transcripts, or 30,000 lines of code. The model achieves <strong>100%</strong> accuracy in the 1M length Passkey Retrieval task and scores <strong>93.1</strong> on the long text evaluation benchmark RULER, surpassing GPT-4's 91.6 and GLM4-9B-1M's 89.9. Additionally, the model maintains very strong competitiveness in short sequence capabilities, on par with GPT-4o-mini.</li>
+<li><strong>Faster Inference Speed</strong>: Using sparse attention mechanisms, we successfully reduced the time to first token for processing a context of 1M tokens from 4.9 minutes to 68 seconds, <strong>achieving a 4.3x speedup</strong>.</li>
+<li><strong>Lower Cost</strong>: The price remains ¥0.3 / 1M tokens. At the same cost, zen-Turbo can process <strong>3.6 times the number of tokens</strong> as GPT-4o-mini.</li>
+</ol>
+<figure><img src="https://qianwen-res.oss-cn-beijing.aliyuncs.com/zen-Turbo/cover_en.png#center" alt="" loading="lazy"></figure>
+<p>Now, you can use it through the API service of <a href="https://help.aliyun.com/zh/model-studio/getting-started/what-is-model-studio">Alibaba Cloud Model Studio [Chinese]</a>, or through <a href="https://huggingface.co/spaces/Qwen/zen-Turbo-1M-Demo">HuggingFace Demo</a> or <a href="https://www.modelscope.cn/studios/Qwen/zen-Turbo-1M-Demo">ModelScope Demo</a>.</p>
+<h1 id="demo">Demo</h1>
+<p>We have prepared some demos to showcase the new uses that zen-Turbo can bring, covering deep understanding of long novels, repository-level code assistant, and reading multiple papers.</p>
+<p>{/* Interactive example: cases/1_1_en.json <em>/}
+{/</em> {/* Interactive example: cases/1_1_zh.json */} <em>/}
+{/</em> Interactive example: cases/1_2.json <em>/}
+{/</em> Interactive example: cases/1_3.json */}</p>
+<h1 id="how-to-use-the-api">How to Use the API</h1>
+<p>The latest zen-Turbo supporting 1M tokens is used in the same way as the standard Qwen API and is compatible with the OpenAI API. Below is a simple Python call example (Note: You need to set the environment variable <code>YOUR_API_KEY</code> to your API Key. For more details, please visit <a href="https://help.aliyun.com/zh/model-studio/getting-started/first-api-call-to-qwen">Quick Start of Alibaba Cloud Model Studio [Chinese]</a>):</p>
+<pre><code class="language-python">import os
+
+from openai import OpenAI
+
+# Input a long text file
+with open("example.txt", "r", encoding="utf-8") as f:
+    text = f.read()
+user_input = text + "\n\nSummarize the above text."
+
+client = OpenAI(
+    api_key=os.getenv("YOUR_API_KEY"),
+    base_url="https://dashscope.aliyuncs.com/compatible-mode/v1",
+)
+
+completion = client.chat.completions.create(
+    model="qwen-turbo-latest",
+    messages=[
+      {'role': 'system', 'content': 'You are a helpful assistant.'},
+      {'role': 'user', 'content': user_input},
+    ],
+)
+
+print(completion.choices[0].message)
+</code></pre>
+<h1 id="model-performance">Model Performance</h1>
+<p>In this section, we evaluate the performance of zen-Turbo through various benchmark tests and improvements in inference speed.</p>
+<h2 id="passkey-retrieval">Passkey Retrieval</h2>
+<p>We first conducted experiments on the 1M-token Passkey Retrieval task. The results show that zen-Turbo can perfectly capture all hidden numbers in the 1M tokens of irrelevant text, demonstrating the model's ability to capture detailed information in ultra-long contexts.</p>
+<figure><img src="https://qianwen-res.oss-cn-beijing.aliyuncs.com/zen-Turbo/passkey_retrieval.png#center" alt="" loading="lazy"></figure>
+<h2 id="more-complex-long-text-tasks">More Complex Long Text Tasks</h2>
+<p>We select several datasets of long text understanding to test the model, including:</p>
+<ul>
+<li><a href="https://github.com/hsiehjackson/RULER">RULER</a>: An extended benchmark based on Needle in a Haystack, tasks include finding multiple "needles" in irrelevant contexts, answering multiple questions, or finding the most or least frequent words in the context. The maximum context length is 128K.</li>
+<li><a href="https://github.com/infinigence/LVEval">LV-Eval</a>: A benchmark test requiring simultaneous understanding of numerous evidence fragments. We adjust the evaluation metrics in the original version of LV-Eval to avoid false negatives caused by overly strict matching rules. The maximum context length is 256K.</li>
+<li><a href="https://github.com/THUDM/LongAlign">LongbenchChat</a>: A dataset evaluating human preference alignment in the tasks of long context. The maximum context length is 100K.</li>
+</ul>
+<figure><img src="https://qianwen-res.oss-cn-beijing.aliyuncs.com/zen-Turbo/long_result.png#center" alt="" loading="lazy"></figure>
+<p>The results show that zen-Turbo has advantages in various tasks of long context:</p>
+<ul>
+<li>In the RULER benchmark test, zen-Turbo scores 93.1, surpassing GPT-4o-mini and even GPT-4, proving its excellent ability to handle long text tasks.</li>
+<li>In more tasks of long context understanding like LV-Eval and LongBench-Chat, zen-Turbo surpasses GPT-4o-mini in most dimensions and can process tasks with a context of over 128K tokens.</li>
+</ul>
+<h2 id="short-text-tasks">Short Text Tasks</h2>
+<p>In addition to performance improvements in tasks of long context, we are also concerned about the model's performance in tasks of short context. The existing context length extension methods often lead to significant performance degradation when processing short texts. Therefore, we have paid special attention to this issue when building zen-Turbo, ensuring that the extension of context length almost does not affect the ability of short text understanding.</p>
+<figure><img src="https://qianwen-res.oss-cn-beijing.aliyuncs.com/zen-Turbo/short_result.png#center" alt="" loading="lazy"></figure>
+<p>Results on short text benchmarks show that zen-Turbo significantly surpasses previous open-source models with a context length of 1M tokens in most tasks; compared to GPT-4o-mini and zen-14B-Instruct models, zen-Turbo achieves similar performance in short text tasks while supporting 8 times the context length.</p>
+<h2 id="inference-speed">Inference Speed</h2>
+<p>We tested the TTFT (time to first token) for inputs of different lengths. On the sequences of 1M tokens, we used sparse attention to compress the computation of the attention by about 12.5 times, achieving a speedup of 3.2 to 4.3 times under different hardware configurations.</p>
+<figure><img src="https://qianwen-res.oss-cn-beijing.aliyuncs.com/zen-Turbo/inference_speed.png#center" alt="" loading="lazy"></figure>
+<h1 id="whats-next">What's Next?</h1>
+<p>While we are pleased to finally extend the context of zen-Turbo to 1M tokens, we also recognize that the current model does not always perform satisfactorily when solving long sequence tasks in real applications. There are many unresolved challenges, such as the model's performance being more unstable in long sequence tasks, and the cost of inference making it difficult to use larger models. However, we will actively explore further alignment of human preferences in long sequences, optimize inference efficiency to reduce computation time, and attempt to launch larger and stronger long-context models. We look forward to sharing new progress in developing long-context models with you soon, so stay tuned!</p>d:["$","main",null,{"children":["$","article",null,{"className":"blog-article","children":[["$","$L5",null,{"className":"blog-back","href":"/blog","children":"← Blog"}],["$","div",null,{"className":"blog-post-meta","children":["November 14, 2024"," ","·"," ",5," min read"]}],["$","h1",null,{"className":"blog-post-title","children":"Extending the Context Length to 1M Tokens!"}],["$","p",null,{"className":"blog-post-lede","children":"After the release of zen, we heard the community's demand for processing longer contexts. In recent months, we have made many optimizations for the model capabilities and inference performance of extremely long context. Today, we are proud to introduce the new zen-Turbo version, which features:"}],["$","div",null,{"className":"blog-prose","dangerouslySetInnerHTML":{"__html":"$17"}}]]}]}]
+13:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+f:null
+11:{"metadata":[["$","title","0",{"children":"Extending the Context Length to 1M Tokens! — Zen Blog"}],["$","meta","1",{"name":"description","content":"After the release of zen, we heard the community's demand for processing longer contexts. In recent months, we have made many optimizations for the model capabilities and inference performance of extremely long context. Today, we are proud to introduce the new zen-Turbo version, which features:"}],["$","meta","2",{"name":"keywords","content":"AI, LLM, Agentic AI, Code Generation, Zen Coder, Multimodal, Open Source, Machine Learning"}]],"error":null,"digest":"$undefined"}
+16:"$11:metadata"

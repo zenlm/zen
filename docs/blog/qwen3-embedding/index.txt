@@ -1,0 +1,221 @@
+1:"$Sreact.fragment"
+2:I[6529,["619","static/chunks/619-ba102abea3e3d0e4.js","177","static/chunks/app/layout-b4c33ab67f60e2ed.js"],"default"]
+3:I[9766,[],""]
+4:I[8924,[],""]
+5:I[2619,["619","static/chunks/619-ba102abea3e3d0e4.js","953","static/chunks/app/blog/%5Bslug%5D/page-f25a122e9ccf798d.js"],""]
+c:I[7150,[],""]
+:HL["/_next/static/css/1d1f6bc532e5f43f.css","style"]
+:HL["/_next/static/css/eb87e4f7aea490c6.css","style"]
+0:{"P":null,"b":"aLEH4vcTO8-5k6ZseFClK","p":"","c":["","blog","qwen3-embedding",""],"i":false,"f":[[["",{"children":["blog",{"children":[["slug","qwen3-embedding","d"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/1d1f6bc532e5f43f.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","children":[["$","head",null,{"children":["$","link",null,{"rel":"icon","type":"image/png","href":"/favicon.png"}]}],["$","body",null,{"children":[["$","$L2",null,{}],["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}],["$","footer",null,{"children":["$","div",null,{"className":"container","children":[["$","div",null,{"className":"footer-content","children":[["$","div",null,{"className":"footer-section","children":[["$","h4",null,{"children":"Zen LM"}],["$","p",null,{"children":"95 open Zen models across Zen3, Zen4, and Zen5. Chat, code, vision, audio, image, embeddings, rerankers, and safety. OpenAI- and Anthropic-compatible API."}]]}],["$","div",null,{"className":"footer-section","children":[["$","h4",null,{"children":"Zen 5"}],["$","ul",null,{"children":[["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 Nano (0.8B - 9B)"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 Flash"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 Mini"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 (default)"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 Coder"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 Pro"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 Max"}]}]]}]]}],["$","div",null,{"className":"footer-section","children":[["$","h4",null,{"children":"Zen 4"}],["$","ul",null,{"children":[["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen4","children":"Zen4 / Zen4.1"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen4","children":"Zen4 Ultra / Max / Pro"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen4","children":"Zen4 Mini / Thinking"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen4","children":"Zen4 Coder / Pro / Flash"}]}]]}]]}],["$","div",null,{"className":"footer-section","children":[["$","h4",null,{"children":"Zen 3 Multimodal"}],["$","ul",null,{"children":[["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen3","children":"Zen3 Omni / VL / Web"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen3","children":"Zen3 Nano / Guard"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen3","children":"Zen3 Embedding / Reranker"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen3","children":"Zen3 Image / ASR / TTS"}]}]]}]]}],["$","div",null,{"className":"footer-section","children":[["$","h4",null,{"children":"Resources"}],["$","ul",null,{"children":[["$","li",null,{"children":["$","$L5",null,{"href":"/datasets","children":"Training Data"}]}],["$","li",null,{"children":["$","a",null,{"href":"https://huggingface.co/zenlm","target":"_blank","rel":"noopener noreferrer","children":"HuggingFace"}]}],["$","li",null,{"children":["$","a",null,{"href":"https://github.com/zenlm","target":"_blank","rel":"noopener noreferrer","children":"GitHub"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/research","children":"Research Papers"}]}],["$","li",null,{"children":["$","a",null,{"href":"https://api.hanzo.ai","target":"_blank","rel":"noopener noreferrer","children":"Zen API"}]}]]}]]}]]}],["$","div",null,{"className":"footer-bottom","children":"$L6"}]]}]}],"$L7"]}]]}]]}],{"children":["blog","$L8",{"children":[["slug","qwen3-embedding","d"],"$L9",{"children":["__PAGE__","$La",{},null,false]},null,false]},null,false]},null,false],"$Lb",false]],"m":"$undefined","G":["$c",[]],"s":false,"S":true}
+e:I[4431,[],"OutletBoundary"]
+10:I[5278,[],"AsyncMetadataOutlet"]
+12:I[4431,[],"ViewportBoundary"]
+14:I[4431,[],"MetadataBoundary"]
+15:"$Sreact.suspense"
+6:["$","p",null,{"children":["© ",2026," Zen Authors. Open foundation models. Served on the Zen API."]}]
+7:["$","script",null,{"src":"/assets/js/main.js","async":true}]
+8:["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+9:["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+a:["$","$1","c",{"children":["$Ld",[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/eb87e4f7aea490c6.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","$Le",null,{"children":["$Lf",["$","$L10",null,{"promise":"$@11"}]]}]]}]
+b:["$","$1","h",{"children":[null,[["$","$L12",null,{"children":"$L13"}],null],["$","$L14",null,{"children":["$","div",null,{"hidden":true,"children":["$","$15",null,{"fallback":null,"children":"$L16"}]}]}]]}]
+17:T21fe,<p>{/* <video src="https://qianwen-res.oss-cn-beijing.aliyuncs.com/zen/qwen2-main-video.m4v" controls playsinline preload="metadata" style="width:100%"></video> */}</p>
+<p><a href="https://github.com/QwenLM/Qwen3-Embedding">GITHUB</a>
+<a href="https://huggingface.co/Qwen">HUGGING FACE</a>
+<a href="https://modelscope.cn/organization/qwen">MODELSCOPE</a>
+<a href="https://discord.gg/yPEP2vHTu4">DISCORD</a></p>
+<p>We release <strong>Qwen3 Embedding series</strong>, a new proprietary model of the Qwen model family. These models are specifically designed for <strong>text embedding</strong>, <strong>retrieval</strong>, and <strong>reranking</strong> tasks, built on the Qwen3 foundation model. Leveraging Qwen3’s robust multilingual text understanding capabilities, the series achieves state-of-the-art performance across multiple benchmarks for text embedding and reranking tasks. We have open-sourced this series of text embedding and reranking models under the Apache 2.0 license on Hugging Face and ModelScope, and published the technical report and related code on GitHub.</p>
+<div>
+  <img src="https://mitalinlp.oss-cn-hangzhou.aliyuncs.com/dingkun/models/qwen-embedding/q3e-mteb-result-0605.png" alt="" width="800">
+</div>
+<p><strong>Evaluation results for reranking models</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Model</th><th>Param</th><th>MTEB-R</th><th>CMTEB-R</th><th>MMTEB-R</th><th>MLDR</th><th>MTEB-Code</th><th>FollowIR</th></tr></thead><tbody><tr><td><strong>Qwen3-Embedding-0.6B</strong></td><td>0.6B</td><td>61.82</td><td>71.02</td><td>64.64</td><td>50.26</td><td>75.41</td><td>5.09</td></tr><tr><td>Jina-multilingual-reranker-v2-base</td><td>0.3B</td><td>58.22</td><td>63.37</td><td>63.73</td><td>39.66</td><td>58.98</td><td>-0.68</td></tr><tr><td>gte-multilingual-reranker-base</td><td>0.3B</td><td>59.51</td><td>74.08</td><td>59.44</td><td>66.33</td><td>54.18</td><td>-1.64</td></tr><tr><td>BGE-reranker-v2-m3</td><td>0.6B</td><td>57.03</td><td>72.16</td><td>58.36</td><td>59.51</td><td>41.38</td><td>-0.01</td></tr><tr><td><strong>Qwen3-Reranker-0.6B</strong></td><td>0.6B</td><td>65.80</td><td>71.31</td><td>66.36</td><td>67.28</td><td>73.42</td><td>5.41</td></tr><tr><td><strong>Qwen3-Reranker-4B</strong></td><td>4B</td><td><strong>69.76</strong></td><td>75.94</td><td>72.74</td><td>69.97</td><td>81.20</td><td><strong>14.84</strong></td></tr><tr><td><strong>Qwen3-Reranker-8B</strong></td><td>8B</td><td>69.02</td><td><strong>77.45</strong></td><td><strong>72.94</strong></td><td><strong>70.19</strong></td><td><strong>81.22</strong></td><td>8.05</td></tr></tbody></table>
+<blockquote>
+<p><strong>Note</strong>:</p>
+<ul>
+<li>We use the text retrieval subsets of MTEB(eng, v2), MTEB(cmn, v1), MTEB (Multilingual) and MTEB (Code), which are denoted as MTEB-R, CMTEB-R, MMTEB-R and MTEB-Code.</li>
+<li>All scores are our runs based on the top-100 candidates retrieved by dense embedding model <a href="https://huggingface.co/Qwen/Qwen3-Embedding-0.6B">Qwen3-Embedding-0.6B</a>.</li>
+</ul>
+</blockquote>
+<p><strong>Key Features</strong>:</p>
+<p><strong>Exceptional Versatility</strong>: The embedding model has achieved state-of-the-art performance across a wide range of downstream application evaluations. The 8B size embedding model ranks No.1 in the MTEB multilingual leaderboard (as of June 5, 2025, score <strong>70.58</strong>). The reranking models excel in text retrieval scenarios, significantly improving search relevance.</p>
+<p><strong>Comprehensive Flexibility</strong>: The Qwen3 Embedding series offers a diverse range of sizes (from 0.6B to 8B) for both embedding and reranking models, catering to various use cases that prioritize efficiency and effectiveness. Developers can seamlessly combine these two modules. Additionally, the embedding model allows for flexible vector definitions across all dimensions, and both embedding and reranking models support user-defined instructions to enhance performance for specific tasks, languages, or scenarios.</p>
+<p><strong>Multilingual Capability</strong>: The Qwen3 Embedding series support over 100 languages, including various programming languages, and provides robust multilingual, cross-lingual, and code retrieval capabilities.</p>
+<p><strong>Model Overview</strong>:</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Model Type</th><th>Models</th><th>Size</th><th>Layers</th><th>Sequence Length</th><th>Embedding Dimension</th><th>MRL Support</th><th>Instruction Aware</th></tr></thead><tbody><tr><td><strong>Text Embedding</strong></td><td>Qwen3-Embedding-0.6B</td><td>0.6B</td><td>28</td><td>32K</td><td>1024</td><td>Yes</td><td>Yes</td></tr><tr><td></td><td>Qwen3-Embedding-4B</td><td>4B</td><td>36</td><td>32K</td><td>2560</td><td>Yes</td><td>Yes</td></tr><tr><td></td><td>Qwen3-Embedding-8B</td><td>8B</td><td>36</td><td>32K</td><td>4096</td><td>Yes</td><td>Yes</td></tr><tr><td><strong>Text Reranking</strong></td><td>Qwen3-Reranker-0.6B</td><td>0.6B</td><td>28</td><td>32K</td><td>-</td><td>-</td><td>Yes</td></tr><tr><td></td><td>Qwen3-Reranker-4B</td><td>4B</td><td>36</td><td>32K</td><td>-</td><td>-</td><td>Yes</td></tr><tr><td></td><td>Qwen3-Reranker-8B</td><td>8B</td><td>36</td><td>32K</td><td>-</td><td>-</td><td>Yes</td></tr></tbody></table>
+<p><em>Note: "MRL Support" indicates whether the embedding model supports custom dimensions for the final embedding. "Instruction Aware" notes whether the embedding or reranking model supports customizing the input instruction according to different tasks.</em></p>
+<h2 id="model-architecture">Model Architecture</h2>
+<p>Based on the Qwen3 foundation model, our Embedding and Reranking models are designed using dual-encoder and cross-encoder architectures. Through LoRA fine-tuning, we aim to fully preserve and enhance the text understanding capabilities of the base model. The Embedding model processes a single text segment as input, extracting the semantic representation by utilizing the hidden state vector corresponding to the final <code>[EOS]</code> token. In contrast, the Reranking model takes text pairs (such as user queries and candidate documents) as input, calculating and outputting a relevance score between the pairs using a cross-encoder structure.</p>
+<div>
+  <img src="https://mitalinlp.oss-cn-hangzhou.aliyuncs.com/dingkun/models/qwen-embedding/q3e-model-arc.png" alt="" width="600">
+</div>
+<h2 id="model-training">Model Training</h2>
+<p>The training framework for the Qwen3 Embedding series follows the multi-stage training paradigm established by the GTE-Qwen series. During the training of the Embedding model, we implemented a three-stage training structure: the first stage involves contrastive pre-training with a large volume of weakly supervised data; the second stage focuses on supervised training using high-quality labeled data; and the final stage integrates multiple candidate models through a merging strategy to enhance overall performance. This staged training mechanism effectively balances the model's generalization ability and task adaptability. For the Reranking model, based on empirical validation results, we directly employed high-quality labeled data for supervised training, significantly improving training efficiency. Notably, during the first stage of weakly supervised training for the Embedding model, we developed an innovative multi-task adaptable prompt system. By leveraging the text generation capabilities of the Qwen3 foundation model, we dynamically generated weakly supervised text pairs tailored to different task types and languages. This approach addressed the limitations of traditional methods, which often relied on community forums or open-source data for text relevance pair collection, facilitating the efficient generation of large-scale weakly supervised data.</p>
+<div>
+  <img src="https://mitalinlp.oss-cn-hangzhou.aliyuncs.com/dingkun/models/qwen-embedding/q3e-train-pipeline.png" alt="" width="600">
+</div>
+<h2 id="future-work">Future work</h2>
+<p>The Qwen3 Embedding series models represent a new starting point. Through ongoing optimizations of the Qwen foundation model, we will enhance the training efficiency of text embeddings and reranking models, thereby improving deployment performance across various scenarios. Additionally, we plan to expand our multimodal representation system to establish cross-modal semantic understanding capabilities. We look forward to seeing more developers explore a wider range of scenarios based on the Qwen3 Embedding series, driving deeper applications of the model across diverse contexts.</p>d:["$","main",null,{"children":["$","article",null,{"className":"blog-article","children":[["$","$L5",null,{"className":"blog-back","href":"/blog","children":"← Blog"}],["$","div",null,{"className":"blog-post-meta","children":["June 4, 2025"," ","·"," ",5," min read"]}],["$","h1",null,{"className":"blog-post-title","children":"Qwen3 Embedding: Advancing Text Embedding and Reranking Through Foundation Models"}],["$","p",null,{"className":"blog-post-lede","children":"{/*  {{< video src=\"https://qianwen-res.oss-cn-beijing.aliyuncs.com/zen/qwen2-main-video.m4v\" width=\"100%\" alt=\"zen Main Video\" autoplay=true loop=true controls=false muted=true playsinline=true >}}  */}"}],["$","div",null,{"className":"blog-prose","dangerouslySetInnerHTML":{"__html":"$17"}}]]}]}]
+13:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+f:null
+11:{"metadata":[["$","title","0",{"children":"Qwen3 Embedding: Advancing Text Embedding and Reranking Through Foundation Models — Zen Blog"}],["$","meta","1",{"name":"description","content":"{/*  {{< video src=\"https://qianwen-res.oss-cn-beijing.aliyuncs.com/zen/qwen2-main-video.m4v\" width=\"100%\" alt=\"zen Main Video\" autoplay=true loop=true controls=false muted=true playsinline=true >}}  */}"}],["$","meta","2",{"name":"keywords","content":"AI, LLM, Agentic AI, Code Generation, Zen Coder, Multimodal, Open Source, Machine Learning"}]],"error":null,"digest":"$undefined"}
+16:"$11:metadata"

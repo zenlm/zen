@@ -1,0 +1,243 @@
+---
+title: "SuRe + OPCM: Production-Grade Continual Learning for Open Models"
+date: "2026-02-28"
+description: "Deep dive on Surprise-Driven Prioritized Replay (SuRe) and Orthogonal Projection Continual Merging (OPCM) — the two SOTA techniques we use for catastrophic-forgetting-free LLM adaptation in the Zen model family."
+tags: ["Research", "Continual Learning", "SuRe", "OPCM", "OPLoRA"]
+---
+
+
+<LinkButton href="https://arxiv.org/abs/2510.13003" label="OPLoRA PAPER" external />
+<LinkButton href="https://arxiv.org/abs/2511.22367" label="SuRe PAPER" external />
+<LinkButton href="https://arxiv.org/abs/2501.09522" label="OPCM PAPER" external />
+<LinkButton href="https://arxiv.org/abs/2512.24615" label="YOUTU-AGENT PAPER" external />
+
+Every production LLM faces the same brutal constraint: the moment you start adapting a model on new data, it begins forgetting what it already knew. This is catastrophic forgetting — and it is not a theoretical concern. It is the reason most "continually updated" models in production are quietly replaced wholesale every few months rather than genuinely updated in place.
+
+For the Zen model family, wholesale replacement is not acceptable. We ship models that users build workflows around. Breaking behavioral continuity is a product failure, not just a research inconvenience. This post describes the four-technique stack we have assembled to solve this: **OPLoRA**, **SuRe**, **OPCM**, and **Youtu-Agent**.
+
+## The Plasticity-Stability Dilemma
+
+The core tension is simple. A model that adapts quickly to new distributions (high plasticity) tends to overwrite representations needed for old tasks (low stability). A model frozen to preserve old capabilities cannot learn anything new. Both extremes are useless in production.
+
+For LLMs specifically, the problem is compounded by scale. You cannot afford to retrain the full model on a joint corpus every time new data arrives — at 480B parameters that is measured in millions of dollars per update. Fine-tuning on new data alone causes forgetting. Replay of old data is expensive and raises data-licensing questions. The field has known this problem for decades but only recently produced techniques that work at LLM scale.
+
+We use four papers from late 2024 / early 2025, each addressing a different layer of the problem.
+
+## OPLoRA: Orthogonal Parameter Updates
+
+**Paper**: arXiv:2510.13003
+
+The simplest insight in continual learning is that not all parameter directions are equally important. The top singular vectors of the base model's weight matrices encode the most "load-bearing" representations — the ones responsible for broad capabilities. Fine-tuning along those directions is how forgetting happens.
+
+OPLoRA adds a projection step after each LoRA update. Let `Δ = BA` be the standard low-rank update (B ∈ ℝ^&#123;d×r&#125;, A ∈ ℝ^&#123;r×k&#125;). Before applying this update, we project it onto the orthogonal complement of the base model's top singular subspace:
+
+```
+Δ_orth = Δ - V_k V_k^T Δ
+```
+
+where `V_k` are the top-k right singular vectors of the pretrained weight matrix W₀. The result: updates flow only through directions that the base model does not heavily use. New knowledge accumulates in the null space of the existing representation.
+
+```python
+import torch
+
+def oplora_project(delta: torch.Tensor, base_weight: torch.Tensor, k: int = 64) -> torch.Tensor:
+    """Project LoRA update onto orthogonal complement of base weight top-k subspace."""
+    # Compute top-k right singular vectors of base weight
+    _, _, Vt = torch.linalg.svd(base_weight, full_matrices=False)
+    V_k = Vt[:k].T  # shape: (d_out, k)
+    # Project delta onto orthogonal complement
+    projection = V_k @ (V_k.T @ delta)
+    return delta - projection
+
+class OPLoRALayer(torch.nn.Module):
+    def __init__(self, base_weight: torch.Tensor, rank: int = 16, k: int = 64):
+        super().__init__()
+        d_out, d_in = base_weight.shape
+        self.base_weight = base_weight
+        self.k = k
+        self.lora_A = torch.nn.Parameter(torch.randn(rank, d_in) * 0.01)
+        self.lora_B = torch.nn.Parameter(torch.zeros(d_out, rank))
+        # Cache top-k right singular vectors
+        with torch.no_grad():
+            _, _, Vt = torch.linalg.svd(base_weight, full_matrices=False)
+            self.register_buffer('V_k', Vt[:k].T)
+
+    def forward(self, x: torch.Tensor) -> torch.Tensor:
+        delta = self.lora_B @ self.lora_A
+        delta_orth = delta - self.V_k @ (self.V_k.T @ delta)
+        return x @ (self.base_weight + delta_orth).T
+```
+
+The k hyperparameter controls the trade-off: larger k preserves more of the base model but leaves less room for new knowledge. We use k=64 for most Zen fine-tuning passes.
+
+## SuRe: Surprise-Driven Prioritized Replay
+
+**Paper**: arXiv:2511.22367
+
+Replay-based continual learning maintains a buffer of old examples and mixes them into each training batch. The problem is buffer efficiency: most buffered examples are easy for the current model and contribute nothing. SuRe fixes this with surprise-based prioritization.
+
+The surprise score for a token sequence x_t is simply the negative log-likelihood under the current model:
+
+```
+r_t = -log p_θ(x_t | x_{<t})
+```
+
+High surprise means the current model is uncertain about this sequence — it is more likely to be a case where forgetting is occurring. SuRe preferentially replays high-surprise examples, maximizing the utility of a fixed replay budget.
+
+Beyond replay prioritization, SuRe introduces a **dual EMA** (Exponential Moving Average) adapter structure:
+
+- **Fast LoRA** θ_f: high learning rate, adapts quickly to new data
+- **Slow LoRA** θ_s: low learning rate, tracks long-run behavioral drift
+
+At merge time, the two adapters are combined:
+
+```
+θ_merged = (1-α)θ_s + αθ_f
+```
+
+where α is a schedule parameter (typically 0.3). The slow adapter acts as a stability anchor while the fast adapter absorbs new signal. On the LNT (Learn-Not-To-Forget) benchmark, SuRe delivers +5 accuracy points over standard replay.
+
+```python
+import heapq
+from collections import deque
+from dataclasses import dataclass, field
+from typing import List, Tuple
+import torch
+
+@dataclass(order=True)
+class ReplayItem:
+    surprise: float
+    sequence: object = field(compare=False)
+
+class SuReBuffer:
+    def __init__(self, capacity: int = 10_000):
+        self.capacity = capacity
+        self._heap: List[ReplayItem] = []  # min-heap (lowest surprise at top)
+
+    def add(self, sequence, model: torch.nn.Module, tokenizer) -> None:
+        with torch.no_grad():
+            inputs = tokenizer(sequence, return_tensors='pt')
+            outputs = model(**inputs, labels=inputs['input_ids'])
+            surprise = outputs.loss.item()  # mean NLL = surprise score
+
+        item = ReplayItem(surprise=surprise, sequence=sequence)
+        if len(self._heap) < self.capacity:
+            heapq.heappush(self._heap, item)
+        elif surprise > self._heap[0].surprise:
+            # Replace lowest-surprise item with this higher-surprise one
+            heapq.heapreplace(self._heap, item)
+
+    def sample(self, n: int) -> List[str]:
+        """Sample n items, weighted toward high surprise."""
+        if not self._heap:
+            return []
+        items = sorted(self._heap, key=lambda x: -x.surprise)
+        return [item.sequence for item in items[:n]]
+
+class DualEMAAdapter:
+    def __init__(self, fast_lr: float = 1e-3, slow_lr: float = 1e-5, alpha: float = 0.3):
+        self.fast_lr = fast_lr
+        self.slow_lr = slow_lr
+        self.alpha = alpha
+
+    def merge(self, theta_fast: dict, theta_slow: dict) -> dict:
+        return {
+            k: (1 - self.alpha) * theta_slow[k] + self.alpha * theta_fast[k]
+            for k in theta_fast
+        }
+```
+
+In practice we run SuRe with a buffer of 50K sequences, sampling 512 high-surprise examples per training batch alongside 512 new-data examples. The buffer is refreshed every 1K steps as model NLL scores shift.
+
+## OPCM: Orthogonal Projection Continual Merging
+
+**Paper**: arXiv:2501.09522
+
+OPLoRA and SuRe handle forgetting during training. OPCM handles forgetting during **merging** — the step where multiple LoRA adapters trained on different task sequences are combined into a single weight delta.
+
+Naive merging (simple average of adapter weights) produces interference between tasks. OPCM applies sequential orthogonal projection: when merging adapter k+1 into the accumulated projection matrix, it removes the component that interferes with previously merged adapters.
+
+The update rule for the projection matrix P is:
+
+```
+P_{k+1} = P_k - P_k φ_k^T (φ_k P_k φ_k^T)^{-1} φ_k P_k
+```
+
+where φ_k is the gradient direction (or adapter weight direction) of the k-th task. This is the standard Gram-Schmidt orthogonalization applied iteratively to the task gradient subspace.
+
+The memory cost is O(|θ|) — a single projection matrix regardless of the number of tasks. This is a significant improvement over methods that cache full gradient histories. On sequential merge benchmarks, OPCM achieves 5-8% better retention than simultaneous averaging.
+
+```python
+import torch
+
+class OPCMStep:
+    """One step of Orthogonal Projection Continual Merging."""
+
+    def __init__(self, param_dim: int):
+        # P starts as identity — first task goes through unchanged
+        self.P = torch.eye(param_dim)
+
+    def merge(self, phi: torch.Tensor) -> torch.Tensor:
+        """
+        phi: task gradient direction (flattened), shape (d,)
+        Returns: projected phi that is orthogonal to all previous tasks.
+        Updates self.P for the next call.
+        """
+        phi_flat = phi.view(-1)
+        Pp = self.P @ phi_flat
+        denom = phi_flat @ Pp  # scalar: φ P φ^T
+        if denom.abs() < 1e-8:
+            return Pp  # already orthogonal
+        # Project P to remove this task's direction
+        outer = torch.outer(Pp, Pp) / denom
+        self.P = self.P - outer
+        return Pp
+```
+
+The key insight is ordering: merge tasks from largest to smallest gradient norm. This ensures the most influential task anchors the subspace, and subsequent tasks fill in orthogonal directions.
+
+## Youtu-Agent: Training-Free GRPO at Inference Time
+
+**Paper**: arXiv:2512.24615
+
+The three techniques above handle training-time continual learning. Youtu-Agent addresses a different but related problem: **eval-time adaptation** without any weight updates.
+
+Standard GRPO (Group Relative Policy Optimization) requires gradient computation — you sample multiple completions, score them, and backpropagate the relative reward signal. Youtu-Agent replaces gradient updates with in-context example accumulation.
+
+The mechanism: maintain an **experience ledger** of (prompt, completion, reward) triples. When a new prompt arrives, retrieve the highest-reward examples for similar prompts and include them in the context window. The model effectively performs few-shot adaptation on its own high-quality past outputs.
+
+This is training-free GRPO: the policy "improves" through demonstration rather than parameter updates. On AIME 2024, Youtu-Agent delivers +2.7% accuracy with zero weight updates. The experience ledger is updated online as new completions are scored.
+
+For Zen, we run Youtu-Agent as a lightweight inference-time layer: the ledger is stored in Redis, similarity search uses Zen Embedding (7680-dim), and retrieval adds ~15ms to inference latency.
+
+## How These Four Stack for Zen
+
+The four techniques operate at different timescales and are composable:
+
+```
+1. OPLoRA base training
+   └─ All Zen fine-tuning uses OPLoRA projection
+      Prevents overwriting base model subspace
+
+2. SuRe replay (every training step)
+   └─ High-surprise buffer examples mixed into batches
+      Dual EMA adapters maintain plasticity-stability balance
+
+3. OPCM periodic merge (every 1K-10K steps)
+   └─ Sequential adapter merging with orthogonal projection
+      Accumulated knowledge coexists without interference
+
+4. Youtu-Agent at inference (online)
+   └─ Experience ledger enables training-free behavioral adaptation
+      Zero weight updates, ~15ms overhead
+```
+
+In production, layers 1-3 run during scheduled training passes (nightly for Zen nano/eco, weekly for larger models). Layer 4 is always active.
+
+The combined result: Zen models accumulate behavioral improvements continuously without the forgetting catastrophes that plague naive fine-tuning. We have run this stack for three months on zen-nano with zero regressions on our standard capability benchmarks across 47 sequential fine-tuning events.
+
+The code for all four components is available in the [zen-trainer repository](https://github.com/zenlm/zen-trainer).
+
+---
+
+*Zen LM is a joint initiative of Hanzo AI Inc. (Techstars '17) and Zoo Labs Foundation (501c3).*

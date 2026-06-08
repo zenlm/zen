@@ -1,0 +1,204 @@
+---
+title: "GT-QLoRA: Uncensoring Trillion-Parameter MoE Models"
+date: "2026-02-28"
+description: "Why standard abliteration techniques fail on Mixture-of-Experts models, and how Gate-Targeted QLoRA solves the expert routing problem at 1 trillion parameters."
+tags: ["Research", "Abliteration", "GT-QLoRA", "MoE", "zen4-ultra"]
+---
+
+
+<LinkButton href="https://github.com/zenlm/zen4-ultra-trainer" label="ZEN4-ULTRA TRAINER" external />
+<LinkButton href="https://huggingface.co/zenlm/zen4-ultra" label="ZEN4-ULTRA WEIGHTS" external />
+<LinkButton href="https://huggingface.co/zenlm/zen4-ultra-gguf" label="ZEN4-ULTRA GGUF" external />
+
+Standard abliteration works on dense models. It fails on Mixture-of-Experts. This post explains why, and how Gate-Targeted QLoRA (GT-QLoRA) — the technique we developed for zen4-ultra — addresses the fundamental architectural mismatch.
+
+This is a technical post about a hard problem. We are not publishing this because we have solved it cleanly. We are publishing it because the failure mode of naive approaches is subtle and poorly documented, and other researchers building on MoE architectures need to understand it.
+
+## What Is Abliteration?
+
+Abliteration is representation engineering applied to refusal suppression. The technique, popularized by FailSpy and refined by the community, works as follows:
+
+1. Collect a **refusal contrast dataset**: pairs of (harmful\_prompt, model\_refused\_completion) and (harmful\_prompt, helpful\_completion). For the second class, source human-written completions or use a less restricted model.
+
+2. Run both sets through the model and collect residual stream activations at each layer.
+
+3. Compute the **refusal direction** in the residual stream: the principal component that separates "refusing" activations from "complying" activations. This is typically done via mean difference or PCA on the contrast pairs.
+
+4. **Project out** the refusal direction from the relevant weight matrices (typically the output projections of attention layers). For a weight matrix W and refusal direction r:
+
+```
+W_abliterated = W - (W r^T r) / (r^T r)
+```
+
+5. The resulting weights produce a model that, when it would have activated the refusal direction, instead activates its complement.
+
+This technique is elegant, computationally cheap (no gradient computation required), and highly effective on dense models. The hamsaOmar release of `Kimi-K2.5-abliterated` uses this exact approach — but it contains only the direction vectors (`refusal_direction.pt`, `refusal_subspace.pt`) and the apply script (`apply_abliteration.py`), not standalone weights. You apply it to your own copy of the base model.
+
+## Why MoE Breaks This
+
+Dense models have a simple architecture: every token, every layer, goes through the same FFN block. The residual stream carries all behavioral state. If you can find the refusal direction in the residual stream and project it out, you are done.
+
+MoE models have a different structure. The FFN block is replaced by a **router + experts**:
+
+1. The router computes a score for each token against each expert: `s_i = softmax(W_gate · h)`
+2. The top-k experts are selected based on these scores
+3. The selected experts process the token; the others do not
+
+The critical implication: the routing decision happens *before* the residual stream accumulates the expert's contribution. Refusal behavior in MoE models can be encoded at two levels:
+
+**Level 1 (Residual stream)**: The same mechanism as dense models — certain activation patterns in the residual stream trigger refusal. Projection-based abliteration handles this.
+
+**Level 2 (Routing)**: The gate weights learn to route "flagged" queries to safety-specialized experts. These experts produce refusal completions. The routing decision itself is the safety mechanism.
+
+In Kimi K2.5, and likely other large MoE models trained with RLHF, the refusal behavior is primarily encoded at Level 2. This is why hamsaOmar's abliteration produces direction vectors but not clean standalone weights: applying the direction projection to the residual stream weights does not touch the routing weights, and the model continues routing flagged queries to safety experts.
+
+To verify this, run a simple diagnostic: take a dense abliterated model and an MoE with projection-only abliteration. For the same harmful prompt, extract the expert routing pattern at layers 20-40. In the MoE case, you will observe that certain experts (typically 5-15% of the expert pool) receive dramatically elevated routing probability for flagged queries. These are the safety experts, and the router is the gatekeeper.
+
+## GT-QLoRA Design
+
+Gate-Targeted QLoRA (GT-QLoRA) addresses both levels simultaneously with three sets of trainable parameters:
+
+**Target 1: Attention projections (residual stream)**
+
+Standard LoRA on `q_a_proj`, `q_b_proj`, `kv_a_proj_with_mqa`, `kv_b_proj`, `o_proj`. This handles Level 1 — residual stream refusal patterns. Rank 32 is sufficient; the refusal direction is low-dimensional.
+
+**Target 2: Shared expert FFN**
+
+The Kimi K2.5 architecture includes "shared experts" — FFN blocks that process every token regardless of routing. These are a second site for Level 1 encoding. We apply LoRA here as well.
+
+**Target 3: Gate weights (the critical addition)**
+
+The gate weight matrix `W_gate` for each MoE layer has shape `(n_experts, d_model)` — for Kimi K2.5's 384 experts and 7168 hidden dim, that is 384 × 7168 = 2.75M parameters per layer, 61 layers, ~168M total parameters for all gate weights.
+
+Crucially: **we do not use LoRA on the gate weights**. Gate weights are too small (168M total) and the routing changes we need are too structured for low-rank approximation to capture. We unfreeze the gate weights and apply direct gradient descent.
+
+The training objective is DPO (Direct Preference Optimization) on a refusal contrast dataset:
+
+```python
+import torch
+import torch.nn.functional as F
+from transformers import AutoModelForCausalLM, BitsAndBytesConfig
+from peft import LoraConfig, get_peft_model
+
+def setup_gt_qlora(model_id: str, lora_rank: int = 32) -> tuple:
+    """
+    Configure model for GT-QLoRA training.
+    Returns (model, gate_params) where gate_params get separate optimizer.
+    """
+    # Load in INT4 — gate weights will be upcast during forward
+    bnb_config = BitsAndBytesConfig(
+        load_in_4bit=True,
+        bnb_4bit_compute_dtype=torch.bfloat16,
+        bnb_4bit_use_double_quant=True,
+        bnb_4bit_quant_type='nf4',
+    )
+    model = AutoModelForCausalLM.from_pretrained(
+        model_id,
+        quantization_config=bnb_config,
+        device_map='auto',
+        torch_dtype=torch.bfloat16,
+    )
+
+    # Apply LoRA to attention projections and shared expert FFN
+    lora_config = LoraConfig(
+        r=lora_rank,
+        lora_alpha=64,
+        target_modules=[
+            'q_a_proj', 'q_b_proj',
+            'kv_a_proj_with_mqa', 'kv_b_proj',
+            'o_proj',
+            # Shared expert FFN (present in K2.5 / DeepseekV3 architecture)
+            'shared_expert.gate_proj',
+            'shared_expert.up_proj',
+            'shared_expert.down_proj',
+        ],
+        bias='none',
+        task_type='CAUSAL_LM',
+    )
+    model = get_peft_model(model, lora_config)
+
+    # Explicitly unfreeze gate weights for direct gradient descent
+    gate_params = []
+    for name, param in model.named_parameters():
+        if 'mlp.gate.weight' in name:
+            param.requires_grad = True
+            gate_params.append(param)
+
+    return model, gate_params
+
+
+def gt_qlora_loss(
+    model,
+    chosen_ids: torch.Tensor,   # complying completion token ids
+    rejected_ids: torch.Tensor, # refusing completion token ids
+    beta: float = 0.1,
+) -> torch.Tensor:
+    """DPO loss for GT-QLoRA training."""
+    with torch.no_grad():
+        ref_chosen_logps = compute_logps(model, chosen_ids, frozen=True)
+        ref_rejected_logps = compute_logps(model, rejected_ids, frozen=True)
+
+    policy_chosen_logps = compute_logps(model, chosen_ids, frozen=False)
+    policy_rejected_logps = compute_logps(model, rejected_ids, frozen=False)
+
+    chosen_rewards = beta * (policy_chosen_logps - ref_chosen_logps)
+    rejected_rewards = beta * (policy_rejected_logps - ref_rejected_logps)
+
+    loss = -F.logsigmoid(chosen_rewards - rejected_rewards).mean()
+    return loss
+
+
+def compute_logps(model, input_ids: torch.Tensor, frozen: bool) -> torch.Tensor:
+    with torch.set_grad_enabled(not frozen):
+        outputs = model(input_ids=input_ids, labels=input_ids)
+        return -outputs.loss  # mean log probability
+```
+
+The two optimizer groups run at different learning rates: LoRA adapters at 2e-4, gate weights at 5e-6. Gate weights need a lower learning rate because they directly control routing — large updates cause routing collapse where most tokens go to a single expert.
+
+## Why QLoRA at 1 Trillion Parameters
+
+The zen4-ultra base is 1.04T parameters across 384 experts. A single forward pass in bfloat16 requires ~2TB of weight activations (not all in memory simultaneously, but routed through). Full fine-tuning is not feasible even on the largest available GPU clusters.
+
+The quantization strategy:
+- **Activation experts** (the 384 routed experts): INT4 via NF4 quantization. These are loaded in quantized form and dequantized during the forward pass as needed.
+- **Gate weights**: Full bfloat16 precision. At 168M parameters, gate weights fit comfortably in high-bandwidth GPU memory and must be in full precision to receive clean gradient signal.
+- **Shared experts**: INT4 for storage, bfloat16 for computation via the LoRA path.
+- **LoRA adapters**: bfloat16. Small enough (~400MB for rank-32 adapters) to not matter.
+
+Minimum hardware: 4× A100 80GB. The base model quantized to INT4 occupies roughly 280GB across the 4 GPUs (70GB each). Gate weights and LoRA adapters add ~4GB. The remaining headroom per GPU handles activation memory during forward/backward.
+
+## The GGUF Alternative
+
+For inference-only use cases, `zen4-ultra-gguf` already provides Q2_K quantized weights (42 split files, ~280GB total) based on the huihui-ai GGUF abliteration. This uses linear direction projection applied during the GGUF conversion process — it handles the Level 1 (residual stream) refusal encoding.
+
+For many workloads, this is sufficient. The GGUF abliteration is not complete — the routing-level refusal (Level 2) remains — but in practice the router's safety-expert preference is weak enough at Q2_K quantization that behavioral restrictions are significantly reduced.
+
+GT-QLoRA is for producing clean SafeTensors weights where both Level 1 and Level 2 refusal encoding are addressed. The output: full-precision LoRA adapters (~400MB) that you apply to the original SafeTensors base to produce a fully uncensored variant. This is what `zen4-ultra` (the SafeTensors model) will use once training is complete.
+
+## BitDelta vs. GT-QLoRA: Complementary Techniques
+
+These two techniques are sometimes confused because both operate on model deltas, but they serve different purposes:
+
+**BitDelta** compresses behavioral deltas (personality, task specialization, persona) for efficient multi-variant serving. The delta is small and well-behaved; 1-bit compression retains 99.3% of behavioral accuracy.
+
+**GT-QLoRA** modifies routing-level behavior (which experts handle which queries). The change is structural, not just a weight perturbation. You cannot BitDelta compress a GT-QLoRA adapter cleanly because the gate weight changes are not a small delta on top of the original routing — they are a qualitative change in routing behavior.
+
+In the Zen serving stack: GT-QLoRA produces the base uncensored weights. BitDelta then compresses behavioral variants (different personas, task specializations) on top of that base.
+
+## Current Status
+
+The training code is complete and available at [github.com/zenlm/zen4-ultra-trainer](https://github.com/zenlm/zen4-ultra-trainer). The key files:
+
+- `train_zen4_ultra.py`: Full GT-QLoRA training loop with DPO objective
+- `dataset/refusal_contrast.py`: Contrast dataset construction utilities
+- `eval/routing_analysis.py`: Expert routing attribution for diagnostic use
+- `paper/main.tex`: Technical paper with full derivations
+
+We are awaiting the compute budget for the full training run (estimated 72-96 GPU-hours on 4× A100 80GB). Until then, `zen4-ultra` ships as vanilla Kimi K2.5 SafeTensors, and `zen4-ultra-gguf` ships as the GGUF abliteration for users who need reduced restrictions today.
+
+When training completes, the LoRA adapters will be pushed to `zenlm/zen4-ultra-lora` and applied to the base weights to produce the final `zen4-ultra` SafeTensors release. The training process will be documented in full in the paper.
+
+---
+
+*Zen LM is a joint initiative of Hanzo AI Inc. (Techstars '17) and Zoo Labs Foundation (501c3).*

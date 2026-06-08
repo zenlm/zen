@@ -1,0 +1,249 @@
+---
+title: "Decentralized Compute for AI Training"
+date: "2024-08-05"
+description: "How we're building a decentralized compute network for training large AI models."
+author: "Zach Kelling"
+tags: ["Infrastructure", "Training", "Decentralization"]
+---
+
+
+Training large AI models requires significant compute resources. These resources are concentrated in a few hyperscalers, creating bottlenecks and single points of control. Today we announce the Zoo Compute Network, a decentralized alternative.
+
+## The Compute Concentration Problem
+
+Current AI training is dominated by:
+
+- **Cloud providers**: AWS, GCP, Azure control most AI-grade compute
+- **Hardware scarcity**: H100s have year-long waitlists
+- **High costs**: Training GPT-4 class models costs $100M+
+- **Geographic concentration**: Most clusters are in a few regions
+
+This concentration creates risks:
+
+1. **Access barriers**: Only well-funded organizations can train frontier models
+2. **Single points of failure**: Outages affect entire research programs
+3. **Regulatory exposure**: One jurisdiction can impact global AI development
+4. **Vendor lock-in**: Switching costs are enormous
+
+## The Zoo Compute Network
+
+The Zoo Compute Network aggregates distributed GPU resources into a unified training substrate. Anyone with suitable hardware can contribute. Anyone can access the aggregated compute.
+
+### Architecture
+
+```
++------------------+     +------------------+     +------------------+
+|  Compute Node 1  |     |  Compute Node 2  |     |  Compute Node N  |
+|  (8x H100)       |     |  (4x A100)       |     |  (16x H100)      |
++--------+---------+     +--------+---------+     +--------+---------+
+         |                        |                        |
+         v                        v                        v
++-----------------------------------------------------------------------+
+|                         Coordination Layer                             |
+|  - Task scheduling                                                     |
+|  - Gradient aggregation                                                |
+|  - Checkpoint management                                               |
+|  - Payment settlement                                                  |
++-----------------------------------------------------------------------+
+                                  |
+                                  v
++-----------------------------------------------------------------------+
+|                           Client Interface                             |
+|  - Job submission                                                      |
+|  - Progress monitoring                                                 |
+|  - Result retrieval                                                    |
++-----------------------------------------------------------------------+
+```
+
+### Node Requirements
+
+Compute nodes must meet minimum specifications:
+
+| Tier | GPU | Memory | Network | Uptime SLA |
+|------|-----|--------|---------|------------|
+| Bronze | 4x A100 40GB | 256GB | 100 Gbps | 95% |
+| Silver | 8x A100 80GB | 512GB | 200 Gbps | 99% |
+| Gold | 8x H100 80GB | 1TB | 400 Gbps | 99.5% |
+
+Nodes are verified through proof-of-work benchmarks before joining the network.
+
+### Coordination Protocol
+
+The coordination layer handles distributed training logistics:
+
+**Task Scheduling**
+
+Jobs are divided into tasks and assigned to available nodes:
+
+```python
+# Job submission
+job = ComputeJob(
+    model_config=model_config,
+    data_config=data_config,
+    training_config=training_config,
+    budget_max=10000,  # ZEN tokens
+)
+
+job_id = await network.submit(job)
+```
+
+The scheduler optimizes for:
+- Data locality (minimize transfers)
+- Network topology (co-locate communicating nodes)
+- Cost efficiency (use cheapest suitable nodes)
+- Reliability (distribute across failure domains)
+
+**Gradient Aggregation**
+
+Distributed training requires gradient synchronization. The network supports:
+
+- All-reduce for data-parallel training
+- Point-to-point for pipeline/tensor parallelism
+- Asynchronous updates for fault tolerance
+
+Aggregation happens through a tree topology that minimizes bandwidth usage.
+
+**Checkpoint Management**
+
+Training state is continuously checkpointed:
+
+```python
+# Automatic checkpointing
+checkpoint_config = CheckpointConfig(
+    interval=1000,  # steps
+    storage="ipfs",
+    redundancy=3,
+)
+```
+
+Checkpoints are content-addressed and distributed. Training can resume from any node.
+
+### Economics
+
+**For Compute Providers**
+
+Providers stake ZEN tokens as collateral and earn rewards for:
+
+- Uptime (base reward)
+- Computation completed (work reward)
+- Network contribution (bandwidth bonus)
+
+Slashing occurs for:
+- Downtime during committed periods
+- Incorrect computation (detected via verification)
+- Bandwidth violations
+
+Expected returns: 15-25% APY on staked tokens plus hardware depreciation coverage.
+
+**For Users**
+
+Users pay per compute-hour in ZEN tokens:
+
+| Tier | Price (ZEN/GPU-hour) | Approx USD |
+|------|----------------------|------------|
+| Bronze | 2.5 | $5 |
+| Silver | 4.0 | $8 |
+| Gold | 8.0 | $16 |
+
+Prices are market-determined through ongoing auctions. Users can specify maximum price and wait for availability.
+
+**Network Fee**
+
+5% of payments go to the network treasury, funding:
+- Protocol development
+- Security audits
+- Community grants
+
+### Verification
+
+How do we know compute was done correctly?
+
+**Sampling-Based Verification**
+
+Random subsets of computation are re-run by verifiers. Discrepancies trigger investigation:
+
+```
+P(detection) = 1 - (1 - sample_rate)^n
+```
+
+With 1% sampling and 100 steps, detection probability is 63%. With 5% sampling, it's 99.4%.
+
+**Gradient Consistency**
+
+Aggregated gradients are checked for statistical anomalies. Fabricated gradients have detectable patterns.
+
+**Trusted Execution (Optional)**
+
+For high-value jobs, nodes can run in TEE enclaves (SGX, TDX). Provides cryptographic attestation of correct execution.
+
+## Real-World Performance
+
+We've run several training jobs on the network:
+
+### Zen-2-7B Training
+
+- **Duration**: 3 weeks
+- **Nodes used**: 24 (rotating pool of 40)
+- **Total compute**: 8,400 GPU-hours
+- **Cost**: 21,000 ZEN (~$42,000)
+- **Efficiency**: 89% of centralized equivalent
+
+### Embedding Model Training
+
+- **Duration**: 5 days
+- **Nodes used**: 8
+- **Total compute**: 960 GPU-hours
+- **Cost**: 2,400 ZEN (~$4,800)
+- **Efficiency**: 94% of centralized equivalent
+
+Efficiency losses come from coordination overhead and network heterogeneity. Ongoing optimizations are closing the gap.
+
+## Joining the Network
+
+### As a Compute Provider
+
+1. **Hardware check**: Verify your setup meets tier requirements
+2. **Software install**: Run the Zoo Compute daemon
+3. **Stake**: Lock ZEN tokens as collateral
+4. **Benchmark**: Complete verification benchmarks
+5. **Operate**: Maintain uptime and connectivity
+
+Documentation: docs.zoo.ngo/compute/providers
+
+### As a User
+
+1. **Install client**: `pip install zoo-compute`
+2. **Fund account**: Acquire ZEN tokens
+3. **Submit jobs**: Use API or CLI
+
+```python
+from zoo_compute import Client
+
+client = Client(api_key="...")
+
+job = client.train(
+    config="./training_config.yaml",
+    max_budget=5000,
+)
+
+await job.wait()
+```
+
+Documentation: docs.zoo.ngo/compute/users
+
+## Roadmap
+
+**Q3 2024**: Public beta with 100+ nodes
+**Q4 2024**: Production launch, verification improvements
+**Q1 2025**: Cross-chain bridging for payments
+**Q2 2025**: TEE support for all tiers
+
+## Conclusion
+
+Decentralized compute is essential for decentralized AI. The Zoo Compute Network provides a permissionless, efficient, and verifiable substrate for training large models. As the network grows, it becomes more resilient and more accessible.
+
+Compute should be a utility, not a moat.
+
+---
+
+*Zach Kelling is a co-founder of Zoo Labs Foundation.*

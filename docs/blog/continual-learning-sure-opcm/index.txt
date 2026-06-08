@@ -1,0 +1,201 @@
+1:"$Sreact.fragment"
+2:I[6529,["619","static/chunks/619-ba102abea3e3d0e4.js","177","static/chunks/app/layout-b4c33ab67f60e2ed.js"],"default"]
+3:I[9766,[],""]
+4:I[8924,[],""]
+5:I[2619,["619","static/chunks/619-ba102abea3e3d0e4.js","953","static/chunks/app/blog/%5Bslug%5D/page-f25a122e9ccf798d.js"],""]
+c:I[7150,[],""]
+:HL["/_next/static/css/1d1f6bc532e5f43f.css","style"]
+:HL["/_next/static/css/eb87e4f7aea490c6.css","style"]
+0:{"P":null,"b":"aLEH4vcTO8-5k6ZseFClK","p":"","c":["","blog","continual-learning-sure-opcm",""],"i":false,"f":[[["",{"children":["blog",{"children":[["slug","continual-learning-sure-opcm","d"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/1d1f6bc532e5f43f.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","children":[["$","head",null,{"children":["$","link",null,{"rel":"icon","type":"image/png","href":"/favicon.png"}]}],["$","body",null,{"children":[["$","$L2",null,{}],["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}],["$","footer",null,{"children":["$","div",null,{"className":"container","children":[["$","div",null,{"className":"footer-content","children":[["$","div",null,{"className":"footer-section","children":[["$","h4",null,{"children":"Zen LM"}],["$","p",null,{"children":"95 open Zen models across Zen3, Zen4, and Zen5. Chat, code, vision, audio, image, embeddings, rerankers, and safety. OpenAI- and Anthropic-compatible API."}]]}],["$","div",null,{"className":"footer-section","children":[["$","h4",null,{"children":"Zen 5"}],["$","ul",null,{"children":[["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 Nano (0.8B - 9B)"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 Flash"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 Mini"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 (default)"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 Coder"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 Pro"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 Max"}]}]]}]]}],["$","div",null,{"className":"footer-section","children":[["$","h4",null,{"children":"Zen 4"}],["$","ul",null,{"children":[["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen4","children":"Zen4 / Zen4.1"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen4","children":"Zen4 Ultra / Max / Pro"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen4","children":"Zen4 Mini / Thinking"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen4","children":"Zen4 Coder / Pro / Flash"}]}]]}]]}],["$","div",null,{"className":"footer-section","children":[["$","h4",null,{"children":"Zen 3 Multimodal"}],["$","ul",null,{"children":[["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen3","children":"Zen3 Omni / VL / Web"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen3","children":"Zen3 Nano / Guard"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen3","children":"Zen3 Embedding / Reranker"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen3","children":"Zen3 Image / ASR / TTS"}]}]]}]]}],["$","div",null,{"className":"footer-section","children":[["$","h4",null,{"children":"Resources"}],["$","ul",null,{"children":[["$","li",null,{"children":["$","$L5",null,{"href":"/datasets","children":"Training Data"}]}],["$","li",null,{"children":["$","a",null,{"href":"https://huggingface.co/zenlm","target":"_blank","rel":"noopener noreferrer","children":"HuggingFace"}]}],["$","li",null,{"children":["$","a",null,{"href":"https://github.com/zenlm","target":"_blank","rel":"noopener noreferrer","children":"GitHub"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/research","children":"Research Papers"}]}],["$","li",null,{"children":["$","a",null,{"href":"https://api.hanzo.ai","target":"_blank","rel":"noopener noreferrer","children":"Zen API"}]}]]}]]}]]}],"$L6"]}]}],"$L7"]}]]}]]}],{"children":["blog","$L8",{"children":[["slug","continual-learning-sure-opcm","d"],"$L9",{"children":["__PAGE__","$La",{},null,false]},null,false]},null,false]},null,false],"$Lb",false]],"m":"$undefined","G":["$c",[]],"s":false,"S":true}
+e:I[4431,[],"OutletBoundary"]
+10:I[5278,[],"AsyncMetadataOutlet"]
+12:I[4431,[],"ViewportBoundary"]
+14:I[4431,[],"MetadataBoundary"]
+15:"$Sreact.suspense"
+6:["$","div",null,{"className":"footer-bottom","children":["$","p",null,{"children":["© ",2026," Zen Authors. Open foundation models. Served on the Zen API."]}]}]
+7:["$","script",null,{"src":"/assets/js/main.js","async":true}]
+8:["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+9:["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+a:["$","$1","c",{"children":["$Ld",[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/eb87e4f7aea490c6.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","$Le",null,{"children":["$Lf",["$","$L10",null,{"promise":"$@11"}]]}]]}]
+b:["$","$1","h",{"children":[null,[["$","$L12",null,{"children":"$L13"}],null],["$","$L14",null,{"children":["$","div",null,{"hidden":true,"children":["$","$15",null,{"fallback":null,"children":"$L16"}]}]}]]}]
+17:T33d2,<p><a href="https://arxiv.org/abs/2510.13003">OPLoRA PAPER</a>
+<a href="https://arxiv.org/abs/2511.22367">SuRe PAPER</a>
+<a href="https://arxiv.org/abs/2501.09522">OPCM PAPER</a>
+<a href="https://arxiv.org/abs/2512.24615">YOUTU-AGENT PAPER</a></p>
+<p>Every production LLM faces the same brutal constraint: the moment you start adapting a model on new data, it begins forgetting what it already knew. This is catastrophic forgetting — and it is not a theoretical concern. It is the reason most "continually updated" models in production are quietly replaced wholesale every few months rather than genuinely updated in place.</p>
+<p>For the Zen model family, wholesale replacement is not acceptable. We ship models that users build workflows around. Breaking behavioral continuity is a product failure, not just a research inconvenience. This post describes the four-technique stack we have assembled to solve this: <strong>OPLoRA</strong>, <strong>SuRe</strong>, <strong>OPCM</strong>, and <strong>Youtu-Agent</strong>.</p>
+<h2 id="the-plasticity-stability-dilemma">The Plasticity-Stability Dilemma</h2>
+<p>The core tension is simple. A model that adapts quickly to new distributions (high plasticity) tends to overwrite representations needed for old tasks (low stability). A model frozen to preserve old capabilities cannot learn anything new. Both extremes are useless in production.</p>
+<p>For LLMs specifically, the problem is compounded by scale. You cannot afford to retrain the full model on a joint corpus every time new data arrives — at 480B parameters that is measured in millions of dollars per update. Fine-tuning on new data alone causes forgetting. Replay of old data is expensive and raises data-licensing questions. The field has known this problem for decades but only recently produced techniques that work at LLM scale.</p>
+<p>We use four papers from late 2024 / early 2025, each addressing a different layer of the problem.</p>
+<h2 id="oplora-orthogonal-parameter-updates">OPLoRA: Orthogonal Parameter Updates</h2>
+<p><strong>Paper</strong>: arXiv:2510.13003</p>
+<p>The simplest insight in continual learning is that not all parameter directions are equally important. The top singular vectors of the base model's weight matrices encode the most "load-bearing" representations — the ones responsible for broad capabilities. Fine-tuning along those directions is how forgetting happens.</p>
+<p>OPLoRA adds a projection step after each LoRA update. Let <code>Δ = BA</code> be the standard low-rank update (B ∈ ℝ^{d×r}, A ∈ ℝ^{r×k}). Before applying this update, we project it onto the orthogonal complement of the base model's top singular subspace:</p>
+<pre><code>Δ_orth = Δ - V_k V_k^T Δ
+</code></pre>
+<p>where <code>V_k</code> are the top-k right singular vectors of the pretrained weight matrix W₀. The result: updates flow only through directions that the base model does not heavily use. New knowledge accumulates in the null space of the existing representation.</p>
+<pre><code class="language-python">import torch
+
+def oplora_project(delta: torch.Tensor, base_weight: torch.Tensor, k: int = 64) -> torch.Tensor:
+    """Project LoRA update onto orthogonal complement of base weight top-k subspace."""
+    # Compute top-k right singular vectors of base weight
+    _, _, Vt = torch.linalg.svd(base_weight, full_matrices=False)
+    V_k = Vt[:k].T  # shape: (d_out, k)
+    # Project delta onto orthogonal complement
+    projection = V_k @ (V_k.T @ delta)
+    return delta - projection
+
+class OPLoRALayer(torch.nn.Module):
+    def __init__(self, base_weight: torch.Tensor, rank: int = 16, k: int = 64):
+        super().__init__()
+        d_out, d_in = base_weight.shape
+        self.base_weight = base_weight
+        self.k = k
+        self.lora_A = torch.nn.Parameter(torch.randn(rank, d_in) * 0.01)
+        self.lora_B = torch.nn.Parameter(torch.zeros(d_out, rank))
+        # Cache top-k right singular vectors
+        with torch.no_grad():
+            _, _, Vt = torch.linalg.svd(base_weight, full_matrices=False)
+            self.register_buffer('V_k', Vt[:k].T)
+
+    def forward(self, x: torch.Tensor) -> torch.Tensor:
+        delta = self.lora_B @ self.lora_A
+        delta_orth = delta - self.V_k @ (self.V_k.T @ delta)
+        return x @ (self.base_weight + delta_orth).T
+</code></pre>
+<p>The k hyperparameter controls the trade-off: larger k preserves more of the base model but leaves less room for new knowledge. We use k=64 for most Zen fine-tuning passes.</p>
+<h2 id="sure-surprise-driven-prioritized-replay">SuRe: Surprise-Driven Prioritized Replay</h2>
+<p><strong>Paper</strong>: arXiv:2511.22367</p>
+<p>Replay-based continual learning maintains a buffer of old examples and mixes them into each training batch. The problem is buffer efficiency: most buffered examples are easy for the current model and contribute nothing. SuRe fixes this with surprise-based prioritization.</p>
+<p>The surprise score for a token sequence x_t is simply the negative log-likelihood under the current model:</p>
+<pre><code>r_t = -log p_θ(x_t | x_{&#x3C;t})
+</code></pre>
+<p>High surprise means the current model is uncertain about this sequence — it is more likely to be a case where forgetting is occurring. SuRe preferentially replays high-surprise examples, maximizing the utility of a fixed replay budget.</p>
+<p>Beyond replay prioritization, SuRe introduces a <strong>dual EMA</strong> (Exponential Moving Average) adapter structure:</p>
+<ul>
+<li><strong>Fast LoRA</strong> θ_f: high learning rate, adapts quickly to new data</li>
+<li><strong>Slow LoRA</strong> θ_s: low learning rate, tracks long-run behavioral drift</li>
+</ul>
+<p>At merge time, the two adapters are combined:</p>
+<pre><code>θ_merged = (1-α)θ_s + αθ_f
+</code></pre>
+<p>where α is a schedule parameter (typically 0.3). The slow adapter acts as a stability anchor while the fast adapter absorbs new signal. On the LNT (Learn-Not-To-Forget) benchmark, SuRe delivers +5 accuracy points over standard replay.</p>
+<pre><code class="language-python">import heapq
+from collections import deque
+from dataclasses import dataclass, field
+from typing import List, Tuple
+import torch
+
+@dataclass(order=True)
+class ReplayItem:
+    surprise: float
+    sequence: object = field(compare=False)
+
+class SuReBuffer:
+    def __init__(self, capacity: int = 10_000):
+        self.capacity = capacity
+        self._heap: List[ReplayItem] = []  # min-heap (lowest surprise at top)
+
+    def add(self, sequence, model: torch.nn.Module, tokenizer) -> None:
+        with torch.no_grad():
+            inputs = tokenizer(sequence, return_tensors='pt')
+            outputs = model(**inputs, labels=inputs['input_ids'])
+            surprise = outputs.loss.item()  # mean NLL = surprise score
+
+        item = ReplayItem(surprise=surprise, sequence=sequence)
+        if len(self._heap) &#x3C; self.capacity:
+            heapq.heappush(self._heap, item)
+        elif surprise > self._heap[0].surprise:
+            # Replace lowest-surprise item with this higher-surprise one
+            heapq.heapreplace(self._heap, item)
+
+    def sample(self, n: int) -> List[str]:
+        """Sample n items, weighted toward high surprise."""
+        if not self._heap:
+            return []
+        items = sorted(self._heap, key=lambda x: -x.surprise)
+        return [item.sequence for item in items[:n]]
+
+class DualEMAAdapter:
+    def __init__(self, fast_lr: float = 1e-3, slow_lr: float = 1e-5, alpha: float = 0.3):
+        self.fast_lr = fast_lr
+        self.slow_lr = slow_lr
+        self.alpha = alpha
+
+    def merge(self, theta_fast: dict, theta_slow: dict) -> dict:
+        return {
+            k: (1 - self.alpha) * theta_slow[k] + self.alpha * theta_fast[k]
+            for k in theta_fast
+        }
+</code></pre>
+<p>In practice we run SuRe with a buffer of 50K sequences, sampling 512 high-surprise examples per training batch alongside 512 new-data examples. The buffer is refreshed every 1K steps as model NLL scores shift.</p>
+<h2 id="opcm-orthogonal-projection-continual-merging">OPCM: Orthogonal Projection Continual Merging</h2>
+<p><strong>Paper</strong>: arXiv:2501.09522</p>
+<p>OPLoRA and SuRe handle forgetting during training. OPCM handles forgetting during <strong>merging</strong> — the step where multiple LoRA adapters trained on different task sequences are combined into a single weight delta.</p>
+<p>Naive merging (simple average of adapter weights) produces interference between tasks. OPCM applies sequential orthogonal projection: when merging adapter k+1 into the accumulated projection matrix, it removes the component that interferes with previously merged adapters.</p>
+<p>The update rule for the projection matrix P is:</p>
+<pre><code>P_{k+1} = P_k - P_k φ_k^T (φ_k P_k φ_k^T)^{-1} φ_k P_k
+</code></pre>
+<p>where φ_k is the gradient direction (or adapter weight direction) of the k-th task. This is the standard Gram-Schmidt orthogonalization applied iteratively to the task gradient subspace.</p>
+<p>The memory cost is O(|θ|) — a single projection matrix regardless of the number of tasks. This is a significant improvement over methods that cache full gradient histories. On sequential merge benchmarks, OPCM achieves 5-8% better retention than simultaneous averaging.</p>
+<pre><code class="language-python">import torch
+
+class OPCMStep:
+    """One step of Orthogonal Projection Continual Merging."""
+
+    def __init__(self, param_dim: int):
+        # P starts as identity — first task goes through unchanged
+        self.P = torch.eye(param_dim)
+
+    def merge(self, phi: torch.Tensor) -> torch.Tensor:
+        """
+        phi: task gradient direction (flattened), shape (d,)
+        Returns: projected phi that is orthogonal to all previous tasks.
+        Updates self.P for the next call.
+        """
+        phi_flat = phi.view(-1)
+        Pp = self.P @ phi_flat
+        denom = phi_flat @ Pp  # scalar: φ P φ^T
+        if denom.abs() &#x3C; 1e-8:
+            return Pp  # already orthogonal
+        # Project P to remove this task's direction
+        outer = torch.outer(Pp, Pp) / denom
+        self.P = self.P - outer
+        return Pp
+</code></pre>
+<p>The key insight is ordering: merge tasks from largest to smallest gradient norm. This ensures the most influential task anchors the subspace, and subsequent tasks fill in orthogonal directions.</p>
+<h2 id="youtu-agent-training-free-grpo-at-inference-time">Youtu-Agent: Training-Free GRPO at Inference Time</h2>
+<p><strong>Paper</strong>: arXiv:2512.24615</p>
+<p>The three techniques above handle training-time continual learning. Youtu-Agent addresses a different but related problem: <strong>eval-time adaptation</strong> without any weight updates.</p>
+<p>Standard GRPO (Group Relative Policy Optimization) requires gradient computation — you sample multiple completions, score them, and backpropagate the relative reward signal. Youtu-Agent replaces gradient updates with in-context example accumulation.</p>
+<p>The mechanism: maintain an <strong>experience ledger</strong> of (prompt, completion, reward) triples. When a new prompt arrives, retrieve the highest-reward examples for similar prompts and include them in the context window. The model effectively performs few-shot adaptation on its own high-quality past outputs.</p>
+<p>This is training-free GRPO: the policy "improves" through demonstration rather than parameter updates. On AIME 2024, Youtu-Agent delivers +2.7% accuracy with zero weight updates. The experience ledger is updated online as new completions are scored.</p>
+<p>For Zen, we run Youtu-Agent as a lightweight inference-time layer: the ledger is stored in Redis, similarity search uses Zen Embedding (7680-dim), and retrieval adds ~15ms to inference latency.</p>
+<h2 id="how-these-four-stack-for-zen">How These Four Stack for Zen</h2>
+<p>The four techniques operate at different timescales and are composable:</p>
+<pre><code>1. OPLoRA base training
+   └─ All Zen fine-tuning uses OPLoRA projection
+      Prevents overwriting base model subspace
+
+2. SuRe replay (every training step)
+   └─ High-surprise buffer examples mixed into batches
+      Dual EMA adapters maintain plasticity-stability balance
+
+3. OPCM periodic merge (every 1K-10K steps)
+   └─ Sequential adapter merging with orthogonal projection
+      Accumulated knowledge coexists without interference
+
+4. Youtu-Agent at inference (online)
+   └─ Experience ledger enables training-free behavioral adaptation
+      Zero weight updates, ~15ms overhead
+</code></pre>
+<p>In production, layers 1-3 run during scheduled training passes (nightly for Zen nano/eco, weekly for larger models). Layer 4 is always active.</p>
+<p>The combined result: Zen models accumulate behavioral improvements continuously without the forgetting catastrophes that plague naive fine-tuning. We have run this stack for three months on zen-nano with zero regressions on our standard capability benchmarks across 47 sequential fine-tuning events.</p>
+<p>The code for all four components is available in the <a href="https://github.com/zenlm/zen-trainer">zen-trainer repository</a>.</p>
+<hr>
+<p><em>Zen LM is a joint initiative of Hanzo AI Inc. (Techstars '17) and Zoo Labs Foundation (501c3).</em></p>d:["$","main",null,{"children":["$","article",null,{"className":"blog-article","children":[["$","$L5",null,{"className":"blog-back","href":"/blog","children":"← Blog"}],["$","div",null,{"className":"blog-post-meta","children":["February 27, 2026"," ","·"," ",8," min read"]}],["$","h1",null,{"className":"blog-post-title","children":"SuRe + OPCM: Production-Grade Continual Learning for Open Models"}],["$","p",null,{"className":"blog-post-lede","children":"Deep dive on Surprise-Driven Prioritized Replay (SuRe) and Orthogonal Projection Continual Merging (OPCM) — the two SOTA techniques we use for catastrophic-forgetting-free LLM adaptation in the Zen model family."}],["$","div",null,{"className":"blog-prose","dangerouslySetInnerHTML":{"__html":"$17"}}]]}]}]
+13:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+f:null
+11:{"metadata":[["$","title","0",{"children":"SuRe + OPCM: Production-Grade Continual Learning for Open Models — Zen Blog"}],["$","meta","1",{"name":"description","content":"Deep dive on Surprise-Driven Prioritized Replay (SuRe) and Orthogonal Projection Continual Merging (OPCM) — the two SOTA techniques we use for catastrophic-forgetting-free LLM adaptation in the Zen model family."}],["$","meta","2",{"name":"keywords","content":"AI, LLM, Agentic AI, Code Generation, Zen Coder, Multimodal, Open Source, Machine Learning"}]],"error":null,"digest":"$undefined"}
+16:"$11:metadata"

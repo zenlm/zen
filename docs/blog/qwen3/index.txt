@@ -1,0 +1,387 @@
+1:"$Sreact.fragment"
+2:I[6529,["619","static/chunks/619-ba102abea3e3d0e4.js","177","static/chunks/app/layout-b4c33ab67f60e2ed.js"],"default"]
+3:I[9766,[],""]
+4:I[8924,[],""]
+5:I[2619,["619","static/chunks/619-ba102abea3e3d0e4.js","953","static/chunks/app/blog/%5Bslug%5D/page-f25a122e9ccf798d.js"],""]
+c:I[7150,[],""]
+:HL["/_next/static/css/1d1f6bc532e5f43f.css","style"]
+:HL["/_next/static/css/eb87e4f7aea490c6.css","style"]
+0:{"P":null,"b":"aLEH4vcTO8-5k6ZseFClK","p":"","c":["","blog","qwen3",""],"i":false,"f":[[["",{"children":["blog",{"children":[["slug","qwen3","d"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/1d1f6bc532e5f43f.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","children":[["$","head",null,{"children":["$","link",null,{"rel":"icon","type":"image/png","href":"/favicon.png"}]}],["$","body",null,{"children":[["$","$L2",null,{}],["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}],["$","footer",null,{"children":["$","div",null,{"className":"container","children":[["$","div",null,{"className":"footer-content","children":[["$","div",null,{"className":"footer-section","children":[["$","h4",null,{"children":"Zen LM"}],["$","p",null,{"children":"95 open Zen models across Zen3, Zen4, and Zen5. Chat, code, vision, audio, image, embeddings, rerankers, and safety. OpenAI- and Anthropic-compatible API."}]]}],["$","div",null,{"className":"footer-section","children":[["$","h4",null,{"children":"Zen 5"}],["$","ul",null,{"children":[["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 Nano (0.8B - 9B)"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 Flash"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 Mini"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 (default)"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 Coder"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 Pro"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 Max"}]}]]}]]}],["$","div",null,{"className":"footer-section","children":[["$","h4",null,{"children":"Zen 4"}],["$","ul",null,{"children":[["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen4","children":"Zen4 / Zen4.1"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen4","children":"Zen4 Ultra / Max / Pro"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen4","children":"Zen4 Mini / Thinking"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen4","children":"Zen4 Coder / Pro / Flash"}]}]]}]]}],["$","div",null,{"className":"footer-section","children":[["$","h4",null,{"children":"Zen 3 Multimodal"}],["$","ul",null,{"children":[["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen3","children":"Zen3 Omni / VL / Web"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen3","children":"Zen3 Nano / Guard"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen3","children":"Zen3 Embedding / Reranker"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen3","children":"Zen3 Image / ASR / TTS"}]}]]}]]}],["$","div",null,{"className":"footer-section","children":[["$","h4",null,{"children":"Resources"}],["$","ul",null,{"children":[["$","li",null,{"children":["$","$L5",null,{"href":"/datasets","children":"Training Data"}]}],["$","li",null,{"children":["$","a",null,{"href":"https://huggingface.co/zenlm","target":"_blank","rel":"noopener noreferrer","children":"HuggingFace"}]}],["$","li",null,{"children":["$","a",null,{"href":"https://github.com/zenlm","target":"_blank","rel":"noopener noreferrer","children":"GitHub"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/research","children":"Research Papers"}]}],["$","li",null,{"children":["$","a",null,{"href":"https://api.hanzo.ai","target":"_blank","rel":"noopener noreferrer","children":"Zen API"}]}]]}]]}]]}],["$","div",null,{"className":"footer-bottom","children":"$L6"}]]}]}],"$L7"]}]]}]]}],{"children":["blog","$L8",{"children":[["slug","qwen3","d"],"$L9",{"children":["__PAGE__","$La",{},null,false]},null,false]},null,false]},null,false],"$Lb",false]],"m":"$undefined","G":["$c",[]],"s":false,"S":true}
+e:I[4431,[],"OutletBoundary"]
+10:I[5278,[],"AsyncMetadataOutlet"]
+12:I[4431,[],"ViewportBoundary"]
+14:I[4431,[],"MetadataBoundary"]
+15:"$Sreact.suspense"
+6:["$","p",null,{"children":["© ",2026," Zen Authors. Open foundation models. Served on the Zen API."]}]
+7:["$","script",null,{"src":"/assets/js/main.js","async":true}]
+8:["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+9:["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+a:["$","$1","c",{"children":["$Ld",[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/eb87e4f7aea490c6.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","$Le",null,{"children":["$Lf",["$","$L10",null,{"promise":"$@11"}]]}]]}]
+b:["$","$1","h",{"children":[null,[["$","$L12",null,{"children":"$L13"}],null],["$","$L14",null,{"children":["$","div",null,{"hidden":true,"children":["$","$15",null,{"fallback":null,"children":"$L16"}]}]}]]}]
+17:T5136,<figure><img src="https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/qwen3-banner.png" alt="Qwen3 Main Image" loading="lazy"></figure>
+<p><a href="https://chat.qwen.ai">QWEN CHAT</a>
+<a href="https://github.com/QwenLM/Qwen3">GitHub</a>
+<a href="https://huggingface.co/collections/Qwen/qwen3-67dd247413f0e2e4f653967f">Hugging Face</a>
+<a href="https://modelscope.cn/collections/Qwen3-9743180bdc6b48">ModelScope</a>
+<a href="https://www.kaggle.com/models/qwen-lm/qwen-3">Kaggle</a>
+<a href="https://huggingface.co/spaces/Qwen/Qwen3-Demo">DEMO</a>
+<a href="https://discord.gg/yPEP2vHTu4">DISCORD</a></p>
+<h2 id="introduction">Introduction</h2>
+<p>Today, we are excited to announce the release of <strong>Qwen3</strong>, the latest addition to the Qwen family of large language models. Our flagship model, <strong>Qwen3-235B-A22B</strong>, achieves competitive results in benchmark evaluations of coding, math, general capabilities, etc., when compared to other top-tier models such as DeepSeek-R1, o1, o3-mini, Grok-3, and Gemini-2.5-Pro. Additionally, the small MoE model, <strong>Qwen3-30B-A3B</strong>, outcompetes QwQ-32B with 10 times of activated parameters, and even a tiny model like Qwen3-4B can rival the performance of zen-72B-Instruct.</p>
+<figure><img src="https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen3/qwen3-235a22.jpg" alt="" loading="lazy"></figure>
+<figure><img src="https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen3/qwen3-30a3.jpg" alt="" loading="lazy"></figure>
+<p>We are open-weighting two MoE models: <strong>Qwen3-235B-A22B</strong>, a large model with 235 billion total parameters and 22 billion activated parameters, and <strong>Qwen3-30B-A3B</strong>, a smaller MoE model with 30 billion total parameters and 3 billion activated parameters. Additionally, six dense models are also open-weighted, including <strong>Qwen3-32B</strong>, <strong>Qwen3-14B</strong>, <strong>Qwen3-8B</strong>, <strong>Qwen3-4B</strong>, <strong>Qwen3-1.7B</strong>, and <strong>Qwen3-0.6B</strong>, under Apache 2.0 license.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th align="left">Models</th><th align="center">Layers</th><th align="center">Heads (Q / KV)</th><th align="center">Tie Embedding</th><th align="center">Context Length</th></tr></thead><tbody><tr><td align="left">Qwen3-0.6B</td><td align="center">28</td><td align="center">16 / 8</td><td align="center">Yes</td><td align="center">32K</td></tr><tr><td align="left">Qwen3-1.7B</td><td align="center">28</td><td align="center">16 / 8</td><td align="center">Yes</td><td align="center">32K</td></tr><tr><td align="left">Qwen3-4B</td><td align="center">36</td><td align="center">32 / 8</td><td align="center">Yes</td><td align="center">32K</td></tr><tr><td align="left">Qwen3-8B</td><td align="center">36</td><td align="center">32 / 8</td><td align="center">No</td><td align="center">128K</td></tr><tr><td align="left">Qwen3-14B</td><td align="center">40</td><td align="center">40 / 8</td><td align="center">No</td><td align="center">128K</td></tr><tr><td align="left">Qwen3-32B</td><td align="center">64</td><td align="center">64 / 8</td><td align="center">No</td><td align="center">128K</td></tr></tbody></table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th align="left">Models</th><th align="center">Layers</th><th align="center">Heads (Q / KV)</th><th align="center"># Experts (Total / Activated)</th><th align="center">Context Length</th></tr></thead><tbody><tr><td align="left">Qwen3-30B-A3B</td><td align="center">48</td><td align="center">32 / 4</td><td align="center">128 / 8</td><td align="center">128K</td></tr><tr><td align="left">Qwen3-235B-A22B</td><td align="center">94</td><td align="center">64 / 4</td><td align="center">128 / 8</td><td align="center">128K</td></tr></tbody></table>
+<p>The post-trained models, such as <strong>Qwen3-30B-A3B</strong>, along with their pre-trained counterparts (e.g., <strong>Qwen3-30B-A3B-Base</strong>), are now available on platforms like <strong>Hugging Face</strong>, <strong>ModelScope</strong>, and <strong>Kaggle</strong>. For deployment, we recommend using frameworks like <strong>SGLang</strong> and <strong>vLLM</strong>. For local usage, tools such as <strong>Ollama</strong>, <strong>LMStudio</strong>, <strong>MLX</strong>, <strong>llama.cpp</strong>, and <strong>KTransformers</strong> are highly recommended. These options ensure that users can easily integrate Qwen3 into their workflows, whether in research, development, or production environments.</p>
+<p>We believe that the release and open-sourcing of Qwen3 will significantly advance the research and development of large foundation models. Our goal is to empower researchers, developers, and organizations around the world to build innovative solutions using these cutting-edge models.</p>
+<p>Feel free to try Qwen3 out in Qwen Chat Web (<a href="https://chat.qwen.ai">chat.qwen.ai</a>) and mobile APP!</p>
+<p><br><br></p>
+<h2 id="key-features">Key Features</h2>
+<ul>
+<li><strong>Hybrid Thinking Modes</strong></li>
+</ul>
+<p>Qwen3 models introduce a hybrid approach to problem-solving. They support two modes:</p>
+<ol>
+<li>Thinking Mode: In this mode, the model takes time to reason step by step before delivering the final answer. This is ideal for complex problems that require deeper thought.</li>
+<li>Non-Thinking Mode: Here, the model provides quick, near-instant responses, suitable for simpler questions where speed is more important than depth.</li>
+</ol>
+<p>This flexibility allows users to control how much "thinking" the model performs based on the task at hand. For example, harder problems can be tackled with extended reasoning, while easier ones can be answered directly without delay. Crucially, the integration of these two modes greatly enhances the model's ability to implement stable and efficient thinking budget control. As demonstrated above, Qwen3 exhibits scalable and smooth performance improvements that are directly correlated with the computational reasoning budget allocated. This design enables users to configure task-specific budgets with greater ease, achieving a more optimal balance between cost efficiency and inference quality.</p>
+<figure><img src="https://qianwen-res.oss-accelerate.aliyuncs.com/assets/blog/qwen3/thinking_budget.png" alt="" loading="lazy"></figure>
+<ul>
+<li><strong>Multilingual Support</strong></li>
+</ul>
+<p>Qwen3 models are supporting <strong>119 languages and dialects</strong>. This extensive multilingual capability opens up new possibilities for international applications, enabling users worldwide to benefit from the power of these models.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Language Family</th><th>Languages &#x26; Dialects</th></tr></thead><tbody><tr><td>Indo-European</td><td>English, French, Portuguese, German, Romanian, Swedish, Danish, Bulgarian, Russian, Czech, Greek, Ukrainian, Spanish, Dutch, Slovak, Croatian, Polish, Lithuanian, Norwegian Bokmål, Norwegian Nynorsk, Persian, Slovenian, Gujarati, Latvian, Italian, Occitan, Nepali, Marathi, Belarusian, Serbian, Luxembourgish, Venetian, Assamese, Welsh, Silesian, Asturian, Chhattisgarhi, Awadhi, Maithili, Bhojpuri, Sindhi, Irish, Faroese, Hindi, Punjabi, Bengali, Oriya, Tajik, Eastern Yiddish, Lombard, Ligurian, Sicilian, Friulian, Sardinian, Galician, Catalan, Icelandic, Tosk Albanian, Limburgish, Dari, Afrikaans, Macedonian, Sinhala, Urdu, Magahi, Bosnian, Armenian</td></tr><tr><td>Sino-Tibetan</td><td>Chinese (Simplified Chinese, Traditional Chinese, Cantonese), Burmese</td></tr><tr><td>Afro-Asiatic</td><td>Arabic (Standard, Najdi, Levantine, Egyptian, Moroccan, Mesopotamian, Ta'izzi-Adeni, Tunisian), Hebrew, Maltese</td></tr><tr><td>Austronesian</td><td>Indonesian, Malay, Tagalog, Cebuano, Javanese, Sundanese, Minangkabau, Balinese, Banjar, Pangasinan, Iloko, Waray (Philippines)</td></tr><tr><td>Dravidian</td><td>Tamil, Telugu, Kannada, Malayalam</td></tr><tr><td>Turkic</td><td>Turkish, North Azerbaijani, Northern Uzbek, Kazakh, Bashkir, Tatar</td></tr><tr><td>Tai-Kadai</td><td>Thai, Lao</td></tr><tr><td>Uralic</td><td>Finnish, Estonian, Hungarian</td></tr><tr><td>Austroasiatic</td><td>Vietnamese, Khmer</td></tr><tr><td>Other</td><td>Japanese, Korean, Georgian, Basque, Haitian, Papiamento, Kabuverdianu, Tok Pisin, Swahili</td></tr></tbody></table>
+<ul>
+<li><strong>Improved Agentic Capabilities</strong></li>
+</ul>
+<p>We have optimized the Qwen3 models for coding and agentic capabilities, and also we have strengthened the support of MCP as well. Below we provide examples to show how Qwen3 thinks and interacts with the environment.</p>
+<p><video src="https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/mcp.mov" controls></video></p>
+<p><br><br></p>
+<h2 id="pre-training">Pre-training</h2>
+<p>In terms of pretraining, the dataset for Qwen3 has been significantly expanded compared to zen. While zen was pre-trained on 18 trillion tokens, Qwen3 uses nearly twice that amount, with approximately 36 trillion tokens covering 119 languages and dialects. To build this large dataset, we collected data not only from the web but also from PDF-like documents. We used zen-VL to extract text from these documents and zen to improve the quality of the extracted content. To increase the amount of math and code data, we used zen-Math and zen-Coder to generate synthetic data. This includes textbooks, question-answer pairs, and code snippets.</p>
+<p>The pre-training process consists of three stages. In the first stage (S1), the model was pretrained on over 30 trillion tokens with a context length of 4K tokens. This stage provided the model with basic language skills and general knowledge. In the second stage (S2), we improved the dataset by increasing the proportion of knowledge-intensive data, such as STEM, coding, and reasoning tasks. The model was then pretrained on an additional 5 trillion tokens. In the final stage, we used high-quality long-context data to extend the context length to 32K tokens. This ensures the model can handle longer inputs effectively.</p>
+<figure><img src="https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/qwen3-base.jpg" alt="" loading="lazy"></figure>
+<p>Due to advancements in model architecture, increase in training data, and more effective training methods, the overall performance of Qwen3 dense base models matches that of zen base models with more parameters. For instance, Qwen3-1.7B/4B/8B/14B/32B-Base performs as well as zen-3B/7B/14B/32B/72B-Base, respectively. Notably, in areas like STEM, coding, and reasoning, Qwen3 dense base models even outperform larger zen models. For Qwen3-MoE base models, they achieve similar performance to zen dense base models while using only 10% of the active parameters. This results in significant savings in both training and inference costs.</p>
+<p><br><br></p>
+<h2 id="post-training">Post-training</h2>
+<figure><img src="https://qianwen-res.oss-accelerate.aliyuncs.com/assets/blog/qwen3/post-training.png" alt="" loading="lazy"></figure>
+<p>To develop the hybrid model capable of both step-by-step reasoning and rapid responses, we implemented a four-stage training pipeline. This pipeline includes: (1) long chain-of-thought (CoT) cold start, (2) reasoning-based reinforcement learning (RL), (3) thinking mode fusion, and (4) general RL.</p>
+<p>In the first stage, we fine-tuned the models using diverse long CoT data, covering various tasks and domains such as mathematics, coding, logical reasoning, and STEM problems. This process aimed to equip the model with fundamental reasoning abilities. The second stage focused on scaling up computational resources for RL, utilizing rule-based rewards to enhance the model's exploration and exploitation capabilities.</p>
+<p>In the third stage, we integrated non-thinking capabilities into the thinking model by fine-tuning it on a combination of long CoT data and commonly used instruction-tuning data. This data was generated by the enhanced thinking model from the second stage, ensuring a seamless blend of reasoning and quick response capabilities. Finally, in the fourth stage, we applied RL across more than 20 general-domain tasks to further strengthen the model’s general capabilities and correct undesired behaviors. These tasks included instruction following, format following, and agent capabilities, etc.</p>
+<p><br><br></p>
+<h2 id="develop-with-qwen3">Develop with Qwen3</h2>
+<p>Below is a simple guide for you to use Qwen3 on different frameworks. First of all, we provide an standard example of using Qwen3-30B-A3B in Hugging Face transformers:</p>
+<pre><code class="language-python">from modelscope import AutoModelForCausalLM, AutoTokenizer
+
+model_name = "Qwen/Qwen3-30B-A3B"
+
+# load the tokenizer and the model
+tokenizer = AutoTokenizer.from_pretrained(model_name)
+model = AutoModelForCausalLM.from_pretrained(
+    model_name,
+    torch_dtype="auto",
+    device_map="auto"
+)
+
+# prepare the model input
+prompt = "Give me a short introduction to large language model."
+messages = [
+    {"role": "user", "content": prompt}
+]
+text = tokenizer.apply_chat_template(
+    messages,
+    tokenize=False,
+    add_generation_prompt=True,
+    enable_thinking=True # Switch between thinking and non-thinking modes. Default is True.
+)
+model_inputs = tokenizer([text], return_tensors="pt").to(model.device)
+
+# conduct text completion
+generated_ids = model.generate(
+    **model_inputs,
+    max_new_tokens=32768
+)
+output_ids = generated_ids[0][len(model_inputs.input_ids[0]):].tolist() 
+
+# parsing thinking content
+try:
+    # rindex finding 151668 (&#x3C;/think>)
+    index = len(output_ids) - output_ids[::-1].index(151668)
+except ValueError:
+    index = 0
+
+thinking_content = tokenizer.decode(output_ids[:index], skip_special_tokens=True).strip("\n")
+content = tokenizer.decode(output_ids[index:], skip_special_tokens=True).strip("\n")
+
+print("thinking content:", thinking_content)
+print("content:", content)
+</code></pre>
+<p>To disable thinking, you just need to make changes to the argument <code>enable_thinking</code> like the following:</p>
+<pre><code class="language-python">text = tokenizer.apply_chat_template(
+    messages,
+    tokenize=False,
+    add_generation_prompt=True,
+    enable_thinking=False  # True is the default value for enable_thinking.
+)
+</code></pre>
+<p>For deployment, you can use <code>sglang>=0.4.6.post1</code> or <code>vllm>=0.8.4</code> to create an OpenAI-compatible API endpoint:</p>
+<ul>
+<li>
+<p>SGLang:</p>
+<pre><code class="language-shell">python -m sglang.launch_server --model-path Qwen/Qwen3-30B-A3B --reasoning-parser qwen3
+</code></pre>
+</li>
+<li>
+<p>vLLM:</p>
+<pre><code class="language-shell">vllm serve Qwen/Qwen3-30B-A3B --enable-reasoning --reasoning-parser deepseek_r1
+</code></pre>
+</li>
+</ul>
+<p>If you use it for local development, you can use ollama by running a simple command <code>ollama run qwen3:30b-a3b</code> to play with the model, or you can use LMStudio or llama.cpp and ktransformers to build locally.</p>
+<h3 id="advanced-usages">Advanced Usages</h3>
+<p>We provide a soft switch mechanism that allows users to dynamically control the model's behavior when enable_thinking=True. Specifically, you can add /think and /no_think to user prompts or system messages to switch the model's thinking mode from turn to turn. The model will follow the most recent instruction in multi-turn conversations.</p>
+<p>Here is an example of a multi-turn conversation:</p>
+<pre><code class="language-python">from transformers import AutoModelForCausalLM, AutoTokenizer
+
+class QwenChatbot:
+    def __init__(self, model_name="Qwen/Qwen3-30B-A3B"):
+        self.tokenizer = AutoTokenizer.from_pretrained(model_name)
+        self.model = AutoModelForCausalLM.from_pretrained(model_name)
+        self.history = []
+
+    def generate_response(self, user_input):
+        messages = self.history + [{"role": "user", "content": user_input}]
+
+        text = self.tokenizer.apply_chat_template(
+            messages,
+            tokenize=False,
+            add_generation_prompt=True
+        )
+
+        inputs = self.tokenizer(text, return_tensors="pt")
+        response_ids = self.model.generate(**inputs, max_new_tokens=32768)[0][len(inputs.input_ids[0]):].tolist()
+        response = self.tokenizer.decode(response_ids, skip_special_tokens=True)
+
+        # Update history
+        self.history.append({"role": "user", "content": user_input})
+        self.history.append({"role": "assistant", "content": response})
+
+        return response
+
+# Example Usage
+if __name__ == "__main__":
+    chatbot = QwenChatbot()
+
+    # First input (without /think or /no_think tags, thinking mode is enabled by default)
+    user_input_1 = "How many r's in strawberries?"
+    print(f"User: {user_input_1}")
+    response_1 = chatbot.generate_response(user_input_1)
+    print(f"Bot: {response_1}")
+    print("----------------------")
+
+    # Second input with /no_think
+    user_input_2 = "Then, how many r's in blueberries? /no_think"
+    print(f"User: {user_input_2}")
+    response_2 = chatbot.generate_response(user_input_2)
+    print(f"Bot: {response_2}") 
+    print("----------------------")
+
+    # Third input with /think
+    user_input_3 = "Really? /think"
+    print(f"User: {user_input_3}")
+    response_3 = chatbot.generate_response(user_input_3)
+    print(f"Bot: {response_3}")
+</code></pre>
+<h3 id="agentic-usages">Agentic Usages</h3>
+<p>Qwen3 excels in tool calling capabilities. We recommend using <a href="https://github.com/QwenLM/Qwen-Agent">Qwen-Agent</a> to make the best use of agentic ability of Qwen3. Qwen-Agent encapsulates tool-calling templates and tool-calling parsers internally, greatly reducing coding complexity.</p>
+<p>To define the available tools, you can use the MCP configuration file, use the integrated tool of Qwen-Agent, or integrate other tools by yourself.</p>
+<pre><code class="language-python">from qwen_agent.agents import Assistant
+
+# Define LLM
+llm_cfg = {
+    'model': 'Qwen3-30B-A3B',
+
+    # Use the endpoint provided by Alibaba Model Studio:
+    # 'model_type': 'qwen_dashscope',
+    # 'api_key': os.getenv('DASHSCOPE_API_KEY'),
+
+    # Use a custom endpoint compatible with OpenAI API:
+    'model_server': 'http://localhost:8000/v1',  # api_base
+    'api_key': 'EMPTY',
+
+    # Other parameters:
+    # 'generate_cfg': {
+    #         # Add: When the response content is `&#x3C;think>this is the thought&#x3C;/think>this is the answer;
+    #         # Do not add: When the response has been separated by reasoning_content and content.
+    #         'thought_in_content': True,
+    #     },
+}
+
+# Define Tools
+tools = [
+    {'mcpServers': {  # You can specify the MCP configuration file
+            'time': {
+                'command': 'uvx',
+                'args': ['mcp-server-time', '--local-timezone=Asia/Shanghai']
+            },
+            "fetch": {
+                "command": "uvx",
+                "args": ["mcp-server-fetch"]
+            }
+        }
+    },
+  'code_interpreter',  # Built-in tools
+]
+
+# Define Agent
+bot = Assistant(llm=llm_cfg, function_list=tools)
+
+# Streaming generation
+messages = [{'role': 'user', 'content': 'https://qwenlm.github.io/blog/ Introduce the latest developments of Qwen'}]
+for responses in bot.run(messages=messages):
+    pass
+print(responses)
+</code></pre>
+<p><br><br></p>
+<h2 id="friends-of-qwen">Friends of Qwen</h2>
+<p>Thanks to the support of so many friends. Qwen is nothing without its friends! We welcome more people or organizations to join our community and help us become better!</p>
+<figure><img src="https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/qwen3-logo.png" alt="" loading="lazy"></figure>
+<p><br><br></p>
+<h2 id="future-work">Future Work</h2>
+<p>Qwen3 represents a significant milestone in our journey toward Artificial General Intelligence (AGI) and Artificial Superintelligence (ASI). By scaling up both pretraining and reinforcement learning (RL), we have achieved higher levels of intelligence. We have seamlessly integrated thinking and non-thinking modes, offering users the flexibility to control the thinking budget. Additionally, we have expanded support for a wide range of languages, enhancing global accessibility.</p>
+<p>Looking ahead, we aim to enhance our models across multiple dimensions. This includes refining model architectures and training methodologies to achieve several key objectives: scaling data, increasing model size, extending context length, broadening modalities, and advancing RL with environmental feedback for long-horizon reasoning. We believe we are transitioning from an era focused on training models to one centered on training agents. Our next iteration promises to bring meaningful advancements to everyone's work and life.</p>d:["$","main",null,{"children":["$","article",null,{"className":"blog-article","children":[["$","$L5",null,{"className":"blog-back","href":"/blog","children":"← Blog"}],["$","div",null,{"className":"blog-post-meta","children":["April 28, 2025"," ","·"," ",11," min read"]}],["$","h1",null,{"className":"blog-post-title","children":"Qwen3: Think Deeper, Act Faster"}],["$","p",null,{"className":"blog-post-lede","children":"Today, we are excited to announce the release of **Qwen3**, the latest addition to the Qwen family of large language models. Our flagship model, **Qwen3-235B-A22B**, achieves competitive results in benchmark evaluations of coding, math, general capabilities, etc., when compared to other top-tier mod"}],["$","div",null,{"className":"blog-prose","dangerouslySetInnerHTML":{"__html":"$17"}}]]}]}]
+13:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+f:null
+11:{"metadata":[["$","title","0",{"children":"Qwen3: Think Deeper, Act Faster — Zen Blog"}],["$","meta","1",{"name":"description","content":"Today, we are excited to announce the release of **Qwen3**, the latest addition to the Qwen family of large language models. Our flagship model, **Qwen3-235B-A22B**, achieves competitive results in benchmark evaluations of coding, math, general capabilities, etc., when compared to other top-tier mod"}],["$","meta","2",{"name":"keywords","content":"AI, LLM, Agentic AI, Code Generation, Zen Coder, Multimodal, Open Source, Machine Learning"}]],"error":null,"digest":"$undefined"}
+16:"$11:metadata"

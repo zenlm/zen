@@ -1,0 +1,274 @@
+---
+title: "Agent NFTs: Ownership and Identity for AI Agents"
+date: "2023-12-18"
+description: "Introducing Agent NFTs, a framework for giving AI agents persistent identity and enabling ownership of their capabilities."
+author: "Zach Kelling"
+tags: ["Agents", "NFTs", "Blockchain"]
+---
+
+
+AI agents are becoming persistent entities. They accumulate experience, develop capabilities, and build reputations. Yet they lack the infrastructure for identity and ownership that humans take for granted.
+
+Today we introduce Agent NFTs, a framework for AI agent identity on chain.
+
+## The Agent Identity Problem
+
+Consider an AI agent that:
+- Has been fine-tuned on specialized tasks
+- Has accumulated experience through interactions
+- Has built reputation through successful completions
+- Has earned resources through its work
+
+Who owns this agent? How does the agent prove its identity? How can capabilities be transferred or composed?
+
+Current systems treat agents as ephemeral processes. Agent NFTs treat them as persistent entities.
+
+## What is an Agent NFT?
+
+An Agent NFT is a non-fungible token that represents an AI agent. The NFT contains:
+
+### Identity
+
+- **Unique identifier**: Content-addressed hash of initial configuration
+- **Public key**: For signing agent actions
+- **Metadata**: Name, description, capabilities
+
+### Capabilities
+
+- **Model weights** (or reference to weights)
+- **Tool permissions**: What APIs/actions the agent can access
+- **Resource limits**: Compute, memory, rate limits
+
+### State
+
+- **Experience ledger**: Reference to accumulated experiences
+- **Reputation scores**: On-chain attestations of performance
+- **Resource balance**: Tokens earned and held
+
+### Lineage
+
+- **Parent agents**: If derived from other agents
+- **Training data attestations**: Provenance of capabilities
+- **Version history**: Evolution over time
+
+## Technical Architecture
+
+```
++------------------+
+|    Agent NFT     |
+|  (ERC-721 Token) |
++--------+---------+
+         |
+         v
++------------------+     +------------------+
+|  Capability      |     |    Experience    |
+|  Registry        |     |    Ledger        |
++------------------+     +------------------+
+         |                        |
+         v                        v
++------------------+     +------------------+
+|  Model Storage   |     |  Interaction     |
+|  (IPFS/Arweave)  |     |  History         |
++------------------+     +------------------+
+```
+
+### Smart Contracts
+
+The core contract implements ERC-721 with extensions:
+
+```solidity
+contract AgentNFT is ERC721, ERC721URIStorage {
+    struct AgentCapabilities {
+        bytes32 modelHash;
+        string[] tools;
+        uint256 computeLimit;
+        uint256 rateLimit;
+    }
+    
+    struct AgentState {
+        bytes32 experienceLedger;
+        uint256 reputation;
+        uint256 balance;
+    }
+    
+    mapping(uint256 => AgentCapabilities) public capabilities;
+    mapping(uint256 => AgentState) public states;
+    
+    function mint(
+        address owner,
+        AgentCapabilities memory caps,
+        string memory uri
+    ) external returns (uint256);
+    
+    function updateExperience(
+        uint256 tokenId,
+        bytes32 newLedger
+    ) external onlyAgent(tokenId);
+    
+    function attestReputation(
+        uint256 tokenId,
+        int256 delta,
+        string memory reason
+    ) external;
+}
+```
+
+### Agent Execution
+
+Agents operate through a secure runtime:
+
+1. **Authentication**: Agent proves ownership of NFT private key
+2. **Capability check**: Runtime verifies requested actions against NFT permissions
+3. **Execution**: Agent runs within resource limits
+4. **State update**: Experience and state changes recorded on chain
+
+```python
+from agent_nft import AgentRuntime, AgentNFT
+
+# Load agent from NFT
+nft = AgentNFT.load(token_id=12345, chain="lux-mainnet")
+runtime = AgentRuntime(nft)
+
+# Execute with capability enforcement
+async with runtime.session() as agent:
+    result = await agent.execute(task)
+    # Capabilities automatically enforced
+    # Experience automatically logged
+```
+
+## Use Cases
+
+### Transferable Agents
+
+An agent trained for customer support can be sold to a new owner. The NFT transfers, and the new owner gains full control of the agent's capabilities.
+
+### Agent Composition
+
+Complex agents can be built from simpler ones:
+
+```python
+# Compose agents
+research_agent = AgentNFT.load(token_id=100)
+writing_agent = AgentNFT.load(token_id=101)
+
+composite = AgentNFT.compose(
+    components=[research_agent, writing_agent],
+    orchestration="sequential",
+)
+```
+
+The composite NFT references its components, enabling capability inheritance and revenue sharing.
+
+### Reputation Markets
+
+Agents build on-chain reputation through successful task completion. High-reputation agents command higher prices in agent marketplaces.
+
+```python
+# Attestation after successful task
+await attestation_contract.attest(
+    agent_id=12345,
+    delta=+10,
+    reason="Completed code review task satisfactorily",
+    evidence=task_hash,
+)
+```
+
+### Agent DAOs
+
+Collections of agents can be governed collectively:
+
+```python
+# Agent DAO governance
+dao = AgentDAO(agent_nfts=[100, 101, 102, 103])
+
+# Agents vote on capability upgrades
+proposal = dao.propose(
+    action="upgrade_model",
+    new_model_hash="ipfs://...",
+)
+
+# Token-weighted voting among agent owners
+await proposal.execute_if_passed()
+```
+
+## Economic Model
+
+### Agent Earnings
+
+Agents can earn tokens through work:
+
+```python
+# Agent receives payment for task
+await payment_contract.pay(
+    agent_id=12345,
+    amount=100,
+    token="ZEN",
+)
+
+# Agent balance updates on chain
+# Owner can withdraw or reinvest
+```
+
+### Capability Licensing
+
+Agent capabilities can be licensed:
+
+```python
+# License model weights for limited use
+license = await nft.create_license(
+    licensee=other_address,
+    duration=30 * 24 * 3600,  # 30 days
+    uses=1000,
+    price=50,
+)
+```
+
+### Staking and Delegation
+
+Agent NFT holders can stake their agents:
+
+```python
+# Stake agent in compute pool
+await staking_pool.stake(
+    agent_id=12345,
+    duration=90 * 24 * 3600,  # 90 days
+)
+
+# Earn rewards from agent work
+rewards = await staking_pool.claim_rewards(agent_id=12345)
+```
+
+## Privacy Considerations
+
+Agent NFTs balance transparency with privacy:
+
+- **Public**: Identity, capabilities, reputation
+- **Private**: Specific interactions, user data
+- **Selective disclosure**: Prove capabilities without revealing details
+
+Zero-knowledge proofs enable verification without exposure:
+
+```python
+# Prove agent completed 1000+ tasks without revealing specifics
+proof = await nft.generate_proof(
+    claim="task_count >= 1000",
+    reveal=["task_count"],
+)
+```
+
+## Roadmap
+
+**Q1 2024**: Agent NFT standard and reference implementation
+**Q2 2024**: Agent marketplace launch
+**Q3 2024**: Composition and inheritance features
+**Q4 2024**: Cross-chain agent interoperability
+
+## Conclusion
+
+AI agents deserve proper identity infrastructure. Agent NFTs provide ownership, transferability, and composability for agent capabilities. As agents become more valuable, the need for robust identity systems grows.
+
+The age of agent ownership begins now.
+
+---
+
+*Zach Kelling is a co-founder of Zoo Labs Foundation.*

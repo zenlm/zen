@@ -6,8 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "export": "next build && next export -o docs",
-    "deploy": "npm run export && touch docs/.nojekyll"
+    "export": "next build && rm -rf docs && mv out docs && touch docs/.nojekyll",
+    "deploy": "npm run export"
   },
   "dependencies": {
     "next": "^15.1.3",

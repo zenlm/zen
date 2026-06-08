@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { Metadata } from 'next';
+import CatalogSection from '../../components/CatalogSection';
 
 export const metadata: Metadata = {
   title: 'Zen Models - 95 open foundation models from 0.6B to 1T+',
@@ -721,6 +722,8 @@ export default function ModelsPage() {
           </div>
         </div>
       </section>
+
+      <CatalogSection />
     </main>
   );
 }

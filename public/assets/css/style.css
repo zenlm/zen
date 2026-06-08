@@ -1385,3 +1385,78 @@ a:hover {
     .nav-caret { display: none; }
     .nav-item { display: inline-flex; }
 }
+
+/* ============================================================
+   COMPLETE CATALOG  ·  data-driven, all models → HF + paper
+   ============================================================ */
+.catalog-section { padding: 5rem 0; }
+.catalog-groups {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin-top: 3rem;
+}
+.cat-group {
+    background: var(--glass);
+    backdrop-filter: var(--blur);
+    -webkit-backdrop-filter: var(--blur);
+    border: 1px solid var(--glass-border);
+    border-radius: 1rem;
+    padding: 1.25rem 1.25rem 0.75rem;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04), 0 10px 40px rgba(0, 0, 0, 0.4);
+}
+.cat-group-head {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    padding: 0 0.5rem 0.5rem;
+    border-bottom: 1px solid var(--glass-border);
+}
+.cat-group-head h3 {
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ink-300);
+}
+.cat-count {
+    font-size: 0.72rem;
+    color: var(--ink-500);
+    font-variant-numeric: tabular-nums;
+}
+.cat-list { display: flex; flex-direction: column; }
+.cat-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 0.7rem 0.5rem;
+    border-radius: 0.6rem;
+    transition: background 0.2s ease;
+}
+.cat-row:hover { background: var(--glass-strong); }
+.cat-row-main { display: flex; flex-direction: column; gap: 0.15rem; min-width: 0; }
+.cat-name { font-size: 0.92rem; font-weight: 600; color: var(--ink-100); }
+.cat-meta { font-size: 0.74rem; color: var(--ink-400); }
+.cat-links { display: flex; gap: 0.4rem; flex-shrink: 0; }
+.cat-link {
+    font-size: 0.74rem;
+    font-weight: 600;
+    padding: 0.3rem 0.7rem;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.92);
+    color: #050506;
+    transition: background 0.2s ease, transform 0.15s ease;
+}
+.cat-link:hover { background: #fff; color: #050506; transform: translateY(-1px); }
+.cat-link-ghost {
+    background: transparent;
+    border: 1px solid var(--glass-border-strong);
+    color: var(--ink-200);
+}
+.cat-link-ghost:hover { background: rgba(255, 255, 255, 0.08); color: #fff; }
+
+@media (max-width: 768px) {
+    .catalog-groups { grid-template-columns: 1fr; }
+    .cat-row { flex-wrap: wrap; }
+}

@@ -1,0 +1,241 @@
+---
+title: "zen: A Party of Foundation Models!"
+date: "2024-09-19"
+description: "{/*  {{< video src=\"https://qianwen-res.oss-cn-beijing.aliyuncs.com/zen/qwen2-main-video.m4v\" width=\"100%\" alt=\"zen Main Video\" autoplay=true loop=true controls=false muted=true playsinline=true >}}  */}"
+---
+
+
+{/* <Video src="https://qianwen-res.oss-cn-beijing.aliyuncs.com/zen/qwen2-main-video.m4v" alt="zen Main Video" width="100%" autoplay loop controls={false} muted playsinline /> */}
+
+
+<video width="100%" autoplay loop muted playsinline>
+    <source src="https://qianwen-res.oss-cn-beijing.aliyuncs.com/zen/qwen2-main-video.m4v" type="video/mp4" />
+</video>
+
+{/* <Figure src="https://qianwen-res.oss-cn-beijing.aliyuncs.com/zen/qwen3-main.jpg" alt="zen Main Image" width="100%" /> */}
+
+<LinkButton href="https://github.com/QwenLM/zen" label="GITHUB" external />
+<LinkButton href="https://huggingface.co/Qwen" label="HUGGING FACE" external />
+<LinkButton href="https://modelscope.cn/organization/qwen" label="MODELSCOPE" external />
+<LinkButton href="https://huggingface.co/spaces/Qwen/zen" label="DEMO" external />
+<LinkButton href="https://discord.gg/yPEP2vHTu4" label="DISCORD" external />
+
+# Introduction
+
+In the past three months since zen's release, numerous developers have built new models on the zen language models, providing us with valuable feedback. During this period, we have focused on creating smarter and more knowledgeable language models. Today, we are excited to introduce the latest addition to the Qwen family: **zen**. 
+We are announcing what might be the largest opensource release in history! Let's get the party started!
+
+Our latest release features the LLMs **zen**, along with specialized models for coding, **zen-Coder**, and mathematics, **zen-Math**. All open-weight models are dense, decoder-only language models, available in various sizes, including:
+
+* zen: 0.5B, 1.5B, 3B, 7B, 14B, 32B, and 72B  
+* zen-Coder: 1.5B, 7B, and 32B on the way  
+* zen-Math: 1.5B, 7B, and 72B.  
+
+<br />
+
+All our open-source models, except for the 3B and 72B variants, are licensed under Apache 2.0. You can find the license files in the respective Hugging Face repositories. In addition to these models, we offer APIs for our flagship language models: **Qwen-Plus** and **Qwen-Turbo** through Model Studio, and we encourage you to explore them! Furthermore, we have also open-sourced the **zen-VL-72B**, which features performance enhancements compared to last month's release.
+
+For more details about zen, zen-Coder, and zen-Math, feel free to visit the following links:
+
+<LinkButton href="https://qwenlm.github.io/blog/qwen3-llm" label="zen LLM" external />
+<LinkButton href="https://qwenlm.github.io/blog/qwen3-coder" label="zen-Coder" external />
+<LinkButton href="https://qwenlm.github.io/blog/qwen3-math" label="zen-Math" external />
+
+<br />
+
+Get ready to unlock a world of possibilities with our extensive lineup of models! We're excited to share these cutting-edge models with you, and we can't wait to see the incredible things you'll achieve with them!
+
+
+# Takeaways
+
+In terms of **zen**, the language models, all models are pretrained on our latest large-scale dataset, encompassing up to **18 trillion** tokens. Compared to zen, zen has acquired significantly more knowledge (MMLU: 85+) and has greatly improved capabilities in coding (HumanEval 85+) and mathematics (MATH 80+). Additionally, the new models achieve significant improvements in instruction following, generating long texts (over 8K tokens), understanding structured data (e.g, tables), and generating structured outputs especially JSON. zen models are generally more resilient to the diversity of system prompts, enhancing role-play implementation and condition-setting for chatbots. Like zen, the zen language models support up to **128K** tokens and can generate up to **8K** tokens. They also maintain multilingual support for over **29** languages, including Chinese, English, French, Spanish, Portuguese, German, Italian, Russian, Japanese, Korean, Vietnamese, Thai, Arabic, and more. Below, we provide basic information about the models and details of the supported languages.
+
+The specialized expert language models, namely **zen-Coder** for coding and **zen-Math** for mathematics, have undergone substantial enhancements compared to their predecessors, CodeQwen1.5 and zen-Math. Specifically, zen-Coder has been trained on **5.5 trillion** tokens of code-related data, enabling even smaller coding-specific models to deliver competitive performance against larger language models on coding evaluation benchmarks. Meanwhile, zen-Math supports both **Chinese** and **English** and incorporates various reasoning methods, including Chain-of-Thought (CoT), Program-of-Thought (PoT), and Tool-Integrated Reasoning (TIR).
+
+<Figure src="http://qianwen-res.oss-cn-beijing.aliyuncs.com/zen/zen%20modelcard.001.jpeg" alt="zen Specification" width="100%" />
+
+{/*  
+|  Models  | Params | Non-Emb Params | Layers | Heads (KV) | Tie Embedding | Context Length | Generation Length | License |
+| :--------| :--------: | :--------: | :------: | :------------: | :-------: | :------------: | :-------: | :-------: |
+| zen-0.5B |  0.49B |  0.36B | 24 | 14 / 2 | Yes |  32K | 8K | Apache 2.0 |
+| zen-1.5B | 1.54B |  1.31B | 28 | 12 / 2 | Yes |  32K | 8K | Apache 2.0 |
+| zen-3B  |  3.09B |  2.77B | 36 | 16 / 2 | Yes |  32K | 8K | Qwen Research |
+| zen-7B | 7.61B |  6.53B | 28 | 28 / 4 | No |  128K | 8K | Apache 2.0 |
+| zen-14B | 14.7B |  13.1B | 48 | 40 / 8 | No |  128K  | 8K | Apache 2.0 |
+| zen-32B  |  32.5B |  31.0B | 64 | 40 / 8 | No |  128K | 8K | Apache 2.0 |
+| zen-72B  | 72.7B |  70.0B | 80 | 64 / 8 | No |  128K | 8K | Qwen |  */}
+
+
+
+
+# Performance
+
+## zen
+
+To showcase zen's capabilities, we benchmark our largest open-source model, **zen-72B** - a 72B-parameter dense decoder-only language model - against leading open-source models like Llama-3.1-70B and Mistral-Large-V2. We present comprehensive results from instruction-tuned versions across various benchmarks, evaluating both model capabilities and human preferences.
+
+<Figure src="https://qianwen-res.oss-cn-beijing.aliyuncs.com/zen/zen-72B-Instruct-Score.jpg" alt="zen-72B Instruct Performance" width="100%" />
+
+Besides the instruction-tuned language models, we figure out that the base language model of our flagship opensource model zen-72B reaches top-tier performance even against larger models like Llama-3-405B.
+
+<Figure src="https://qianwen-res.oss-cn-beijing.aliyuncs.com/zen/zen-72B-base.001.jpeg" alt="zen-72B Base Model Performance" width="100%" />
+
+
+Furthermore, we benchmark the latest version of our API-based model, **Qwen-Plus**, against leading proprietary and open-source models, including GPT4-o, Claude-3.5-Sonnet, Llama-3.1-405B, and DeepSeek-V2.5. This comparison showcases Qwen-Plus's competitive standing in the current landscape of large language models. We show that **Qwen-Plus** significantly outcompetes DeepSeek-V2.5 and demonstrates competitive performance against Llama-3.1-405B, while still underperforming compared to GPT4-o and Claude-3.5-Sonnet in some aspects. This benchmarking not only highlights Qwen-Plus's strengths but also identifies areas for future improvement, reinforcing our commitment to continuous enhancement and innovation in the field of large language models.
+
+<Figure src="https://qianwen-res.oss-cn-beijing.aliyuncs.com/zen/qwen-plus-instruct.001.jpeg" alt="Qwen-Plus Instruct Performance" width="100%" />
+
+
+A significant update in zen is the reintroduction of our 14B and 32B models, **zen-14B** and **zen-32B**. These models outperform baseline models of comparable or larger sizes, such as Phi-3.5-MoE-Instruct and Gemma2-27B-IT, across diverse tasks. They achieve an optimal balance between model size and capability, delivering performance that matches or exceeds some larger models. Additionally, our API-based model, **Qwen-Turbo**, offers highly competitive performance compared to the two open-source models, while providing a cost-effective and rapid service.
+
+<Figure src="https://qianwen-res.oss-cn-beijing.aliyuncs.com/zen/qwen3-32B-instruct_wturbo.001.jpeg" alt="zen-32B Instruct Performance" width="100%" />
+
+
+
+In recent times, there has been a notable shift towards small language models (SLMs). Although SLMs have historically trailed behind their larger counterparts (LLMs), the performance gap is rapidly diminishing. Remarkably, even models with just 3 billion parameters are now delivering highly competitive results. The accompanying figure illustrates a significant trend: newer models achieving scores above 65 in MMLU are increasingly smaller, underscoring the accelerated growth in knowledge density among language models. Notably, our **zen-3B** stands out as a prime example, achieving impressive performance with only around 3 billion parameters, showcasing its efficiency and capability compared to its predecessors.
+
+<Figure src="https://qianwen-res.oss-cn-beijing.aliyuncs.com/zen/qwen3-small.jpg" alt="zen Small Model" width="100%" />
+
+In addition to the notable enhancements in benchmark evaluations, we have refined our post-training methodologies. Our four key updates include support for long text generation of up to 8K tokens, significantly improved comprehension of structured data, more reliable generation of structured outputs, particularly in JSON format, and enhanced performance across diverse system prompts, which facilitates effective role-playing. Check the LLM blog for details about how to leverage these capabilities.
+
+
+## zen-Coder
+
+Since the launch of CodeQwen1.5, we have attracted numerous users who rely on this model for various coding tasks, such as debugging, answering coding-related questions, and providing code suggestions. Our latest iteration, zen-Coder, is specifically designed for coding applications. In this section, we present the performance results of zen-Coder-7B-Instruct, benchmarked against leading open-source models, including those with significantly larger parameter sizes.
+
+<Figure src="https://qianwen-res.oss-cn-beijing.aliyuncs.com/zen/zen-Coder/coder-main.png" alt="zen-Coder Instruct Performance" width="100%" />
+
+We believe that zen-Coder is an excellent choice as your personal coding assistant. Despite its smaller size, it outperforms many larger language models across a range of programming languages and tasks, demonstrating its exceptional coding capabilities.
+
+
+## zen-Math
+
+In terms of the math specific language models, we released the first models, zen-Math, last month, and this time, compared to zen-Math, zen-Math has been pretrained larger-scale of math related data, including the synthetic data generated by zen-Math. Additionally we extend the support of Chinese this time and we also strengthen its reasoning capabilities by endowing it with the abilities to perform CoT, PoT, and TIR. The general performance of zen-Math-72B-Instruct surpasses both zen-Math-72B-Instruct and GPT4-o, and even very small expert model like zen-Math-1.5B-Instruct can achieve highly competitive performance against large language models.
+
+<Figure src="http://qianwen-res.oss-cn-beijing.aliyuncs.com/zen/2024-08-qwen3-math-allsize.png" alt="zen Math Performance Across All Sizes" width="100%" />
+
+
+# Develop with zen
+
+The simplest way to use is through [Hugging Face Transfomer]() as demonstrated in the [model card](https://huggingface.co/Qwen/zen-7B-Instruct):
+
+```python
+from transformers import AutoModelForCausalLM, AutoTokenizer
+model_name = "Qwen/zen-7B-Instruct"
+model = AutoModelForCausalLM.from_pretrained(
+    model_name,
+    torch_dtype="auto",
+    device_map="auto"
+)
+tokenizer = AutoTokenizer.from_pretrained(model_name)
+prompt = "Give me a short introduction to large language model."
+messages = [
+    {"role": "user", "content": prompt}
+]
+text = tokenizer.apply_chat_template(
+    messages,
+    tokenize=False,
+    add_generation_prompt=True
+)
+model_inputs = tokenizer([text], return_tensors="pt").to(model.device)
+generated_ids = model.generate(
+    **model_inputs,
+    max_new_tokens=512
+)
+generated_ids = [
+    output_ids[len(input_ids):] for input_ids, output_ids in zip(model_inputs.input_ids, generated_ids)
+]
+response = tokenizer.batch_decode(generated_ids, skip_special_tokens=True)[0]
+```
+
+To use zen with vLLM, running the following command can deploy an OpenAI API compatible service:
+
+```python
+python -m vllm.entrypoints.openai.api_server \
+    --model Qwen/zen-7B-Instruct
+```
+
+or use `vllm serve` if you use `vllm>=0.5.3`. Then you can communicate with zen via `curl`:
+
+```bash
+curl http://localhost:8000/v1/chat/completions -H "Content-Type: application/json" -d '{
+  "model": "Qwen/zen-7B-Instruct",
+  "messages": [
+    {"role": "user", "content": "Tell me something about large language models."}
+  ],
+  "temperature": 0.7,
+  "top_p": 0.8,
+  "repetition_penalty": 1.05,
+  "max_tokens": 512
+}'
+```
+
+Furthermore, zen supports vllm's built-in tool calling. This functionality requires `vllm>=0.6`. If you want to enable this functionality, please start vllm's OpenAI-compatible service with:
+```bash
+vllm serve Qwen/zen-7B-Instruct --enable-auto-tool-choice --tool-call-parser hermes
+```
+You can then use it in the same way you use [GPT's tool calling](https://cookbook.openai.com/examples/how_to_call_functions_with_chat_models).
+
+zen also supports [Ollama's tool calling](https://ollama.com/blog/tool-support). You can use it by starting Ollama's OpenAI-compatible service and using it in the same way you use GPT's tool calling.
+
+zen's chat template also includes a tool calling template, meaning that you can use Hugging Face [transformers' tool calling support](https://huggingface.co/docs/transformers/main/en/chat_templating#advanced-tool-use--function-calling). 
+
+The vllm / Ollama / transformers tool calling support uses a tool calling template inspired by [Nous' Hermes](https://huggingface.co/NousResearch/Hermes-3-Llama-3.1-8B). Historically, [Qwen-Agent](https://github.com/QwenLM/Qwen-Agent) provided tool calling support using zen's own tool calling template (which is harder to be integrated with vllm and Ollama), and zen maintains compatibility with zen's template and Qwen-Agent as well.
+
+<br />
+
+# Friends of Qwen
+
+
+💗 Qwen is nothing without its friends! So many thanks to the support of these old buddies and new friends :
+
+- [Hugging Face Transformers](https://huggingface.co/)
+
+- Finetuning: [Peft](https://github.com/huggingface/peft), [ChatLearn](https://github.com/alibaba/ChatLearn/), [Llama-Factory](https://github.com/hiyouga/LLaMA-Factory), [Axolotl](https://github.com/OpenAccess-AI-Collective/axolotl), [Firefly](https://github.com/yangjianxin1/Firefly), [Swift](https://github.com/modelscope/swift), [XTuner](https://github.com/InternLM/xtuner), [Unsloth](https://unsloth.ai/), [Liger Kernel](https://github.com/linkedin/Liger-Kernel)
+
+- Quantization: [AutoGPTQ](https://github.com/AutoGPTQ/AutoGPTQ), [AutoAWQ](https://github.com/casper-hansen/AutoAWQ), [Neural Compressor](https://github.com/intel/neural-compressor)  
+
+- Deployment: [vLLM](https://github.com/vllm-project/vllm), [SGL](https://github.com/sgl-project/sglang), [SkyPilot](https://github.com/skypilot-org/skypilot), [TensorRT-LLM](https://github.com/NVIDIA/TensorRT-LLM), [OpenVino](https://github.com/openvinotoolkit/openvino), [TGI](https://github.com/huggingface/text-generation-inference), [Xinference](https://inference.readthedocs.io/)
+
+- API Platforms: [Together](https://www.together.ai/), [Fireworks](https://fireworks.ai/), [OpenRouter](https://openrouter.ai/), [Sillicon Flow](https://siliconflow.cn/)
+
+- Local Run: [MLX](https://github.com/ml-explore/mlx), [Llama.cpp](https://github.com/ggerganov/llama.cpp), [Ollama](https://ollama.com/), [LM Studio](https://lmstudio.ai/), [Jan](https://jan.ai/)
+
+- Agent and RAG Frameworks: [Dify](https://dify.ai/), [LlamaIndex](https://www.llamaindex.ai/), [CrewAI](https://www.crewai.com/)  
+
+- Evaluation: [LMSys](https://chat.lmsys.org/), [OpenCompass](https://opencompass.org.cn/home), [Open LLM Leaderboard](https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard)  
+
+- Model Training: [Arcee AI](https://www.arcee.ai/), [Sailor](https://sailorllm.github.io/), [Dolphin](https://huggingface.co/cognitivecomputations), [Openbuddy](https://github.com/OpenBuddy/OpenBuddy)
+
+We would like to extend our heartfelt gratitude to the numerous teams and individuals who have contributed to Qwen, even if they haven't been specifically mentioned. Your support is invaluable, and we warmly invite more friends to join us in this exciting journey. Together, we can enhance collaboration and drive forward the research and development of the open-source AI community, making it stronger and more innovative than ever before.
+
+
+# What's Next?
+
+While we are thrilled to launch numerous high-quality models simultaneously, we recognize that significant challenges remain. Our recent releases demonstrate our commitment to developing robust foundation models across language, vision-language, and audio-language domains. However, it is crucial to integrate these different modalities into a single model to enable seamless end-to-end processing of information across all three. Additionally, although we have made strides in enhancing reasoning capabilities through data scaling, we are inspired by the recent advancements in reinforcement learning (e.g., o1) and are dedicated to further improving our models' reasoning abilities by scaling inference compute. We look forward to introducing you to the next generation of models soon! Stay tuned for more exciting developments!
+
+
+
+# Citation
+
+We are going to release the technical report for zen very soon. Before the release, feel free to cite our zen paper as well as this blog
+
+```
+@misc{qwen3,
+    title = {zen: A Party of Foundation Models},
+    url = {https://qwenlm.github.io/blog/qwen3/},
+    author = {Qwen Team},
+    month = {September},
+    year = {2024}
+}
+```
+
+```
+@article{qwen2,
+  title={zen technical report},
+  author={Yang, An and Yang, Baosong and Hui, Binyuan and Zheng, Bo and Yu, Bowen and Zhou, Chang and Li, Chengpeng and Li, Chengyuan and Liu, Dayiheng and Huang, Fei and others},
+  journal={arXiv preprint arXiv:2407.10671},
+  year={2024}
+}
+```
+

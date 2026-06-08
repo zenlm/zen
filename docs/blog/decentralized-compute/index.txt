@@ -1,0 +1,260 @@
+1:"$Sreact.fragment"
+2:I[6529,["619","static/chunks/619-ba102abea3e3d0e4.js","177","static/chunks/app/layout-b4c33ab67f60e2ed.js"],"default"]
+3:I[9766,[],""]
+4:I[8924,[],""]
+5:I[2619,["619","static/chunks/619-ba102abea3e3d0e4.js","953","static/chunks/app/blog/%5Bslug%5D/page-f25a122e9ccf798d.js"],""]
+c:I[7150,[],""]
+:HL["/_next/static/css/1d1f6bc532e5f43f.css","style"]
+:HL["/_next/static/css/eb87e4f7aea490c6.css","style"]
+0:{"P":null,"b":"aLEH4vcTO8-5k6ZseFClK","p":"","c":["","blog","decentralized-compute",""],"i":false,"f":[[["",{"children":["blog",{"children":[["slug","decentralized-compute","d"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/1d1f6bc532e5f43f.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","children":[["$","head",null,{"children":["$","link",null,{"rel":"icon","type":"image/png","href":"/favicon.png"}]}],["$","body",null,{"children":[["$","$L2",null,{}],["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}],["$","footer",null,{"children":["$","div",null,{"className":"container","children":[["$","div",null,{"className":"footer-content","children":[["$","div",null,{"className":"footer-section","children":[["$","h4",null,{"children":"Zen LM"}],["$","p",null,{"children":"95 open Zen models across Zen3, Zen4, and Zen5. Chat, code, vision, audio, image, embeddings, rerankers, and safety. OpenAI- and Anthropic-compatible API."}]]}],["$","div",null,{"className":"footer-section","children":[["$","h4",null,{"children":"Zen 5"}],["$","ul",null,{"children":[["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 Nano (0.8B - 9B)"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 Flash"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 Mini"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 (default)"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 Coder"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 Pro"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 Max"}]}]]}]]}],["$","div",null,{"className":"footer-section","children":[["$","h4",null,{"children":"Zen 4"}],["$","ul",null,{"children":[["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen4","children":"Zen4 / Zen4.1"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen4","children":"Zen4 Ultra / Max / Pro"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen4","children":"Zen4 Mini / Thinking"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen4","children":"Zen4 Coder / Pro / Flash"}]}]]}]]}],["$","div",null,{"className":"footer-section","children":[["$","h4",null,{"children":"Zen 3 Multimodal"}],["$","ul",null,{"children":[["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen3","children":"Zen3 Omni / VL / Web"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen3","children":"Zen3 Nano / Guard"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen3","children":"Zen3 Embedding / Reranker"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen3","children":"Zen3 Image / ASR / TTS"}]}]]}]]}],["$","div",null,{"className":"footer-section","children":[["$","h4",null,{"children":"Resources"}],["$","ul",null,{"children":[["$","li",null,{"children":["$","$L5",null,{"href":"/datasets","children":"Training Data"}]}],["$","li",null,{"children":["$","a",null,{"href":"https://huggingface.co/zenlm","target":"_blank","rel":"noopener noreferrer","children":"HuggingFace"}]}],["$","li",null,{"children":["$","a",null,{"href":"https://github.com/zenlm","target":"_blank","rel":"noopener noreferrer","children":"GitHub"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/research","children":"Research Papers"}]}],["$","li",null,{"children":["$","a",null,{"href":"https://api.hanzo.ai","target":"_blank","rel":"noopener noreferrer","children":"Zen API"}]}]]}]]}]]}],"$L6"]}]}],"$L7"]}]]}]]}],{"children":["blog","$L8",{"children":[["slug","decentralized-compute","d"],"$L9",{"children":["__PAGE__","$La",{},null,false]},null,false]},null,false]},null,false],"$Lb",false]],"m":"$undefined","G":["$c",[]],"s":false,"S":true}
+e:I[4431,[],"OutletBoundary"]
+10:I[5278,[],"AsyncMetadataOutlet"]
+12:I[4431,[],"ViewportBoundary"]
+14:I[4431,[],"MetadataBoundary"]
+15:"$Sreact.suspense"
+6:["$","div",null,{"className":"footer-bottom","children":["$","p",null,{"children":["© ",2026," Zen Authors. Open foundation models. Served on the Zen API."]}]}]
+7:["$","script",null,{"src":"/assets/js/main.js","async":true}]
+8:["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+9:["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+a:["$","$1","c",{"children":["$Ld",[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/eb87e4f7aea490c6.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","$Le",null,{"children":["$Lf",["$","$L10",null,{"promise":"$@11"}]]}]]}]
+b:["$","$1","h",{"children":[null,[["$","$L12",null,{"children":"$L13"}],null],["$","$L14",null,{"children":["$","div",null,{"hidden":true,"children":["$","$15",null,{"fallback":null,"children":"$L16"}]}]}]]}]
+17:T2585,<p>Training large AI models requires significant compute resources. These resources are concentrated in a few hyperscalers, creating bottlenecks and single points of control. Today we announce the Zoo Compute Network, a decentralized alternative.</p>
+<h2 id="the-compute-concentration-problem">The Compute Concentration Problem</h2>
+<p>Current AI training is dominated by:</p>
+<ul>
+<li><strong>Cloud providers</strong>: AWS, GCP, Azure control most AI-grade compute</li>
+<li><strong>Hardware scarcity</strong>: H100s have year-long waitlists</li>
+<li><strong>High costs</strong>: Training GPT-4 class models costs $100M+</li>
+<li><strong>Geographic concentration</strong>: Most clusters are in a few regions</li>
+</ul>
+<p>This concentration creates risks:</p>
+<ol>
+<li><strong>Access barriers</strong>: Only well-funded organizations can train frontier models</li>
+<li><strong>Single points of failure</strong>: Outages affect entire research programs</li>
+<li><strong>Regulatory exposure</strong>: One jurisdiction can impact global AI development</li>
+<li><strong>Vendor lock-in</strong>: Switching costs are enormous</li>
+</ol>
+<h2 id="the-zoo-compute-network">The Zoo Compute Network</h2>
+<p>The Zoo Compute Network aggregates distributed GPU resources into a unified training substrate. Anyone with suitable hardware can contribute. Anyone can access the aggregated compute.</p>
+<h3 id="architecture">Architecture</h3>
+<pre><code>+------------------+     +------------------+     +------------------+
+|  Compute Node 1  |     |  Compute Node 2  |     |  Compute Node N  |
+|  (8x H100)       |     |  (4x A100)       |     |  (16x H100)      |
++--------+---------+     +--------+---------+     +--------+---------+
+         |                        |                        |
+         v                        v                        v
++-----------------------------------------------------------------------+
+|                         Coordination Layer                             |
+|  - Task scheduling                                                     |
+|  - Gradient aggregation                                                |
+|  - Checkpoint management                                               |
+|  - Payment settlement                                                  |
++-----------------------------------------------------------------------+
+                                  |
+                                  v
++-----------------------------------------------------------------------+
+|                           Client Interface                             |
+|  - Job submission                                                      |
+|  - Progress monitoring                                                 |
+|  - Result retrieval                                                    |
++-----------------------------------------------------------------------+
+</code></pre>
+<h3 id="node-requirements">Node Requirements</h3>
+<p>Compute nodes must meet minimum specifications:</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Tier</th><th>GPU</th><th>Memory</th><th>Network</th><th>Uptime SLA</th></tr></thead><tbody><tr><td>Bronze</td><td>4x A100 40GB</td><td>256GB</td><td>100 Gbps</td><td>95%</td></tr><tr><td>Silver</td><td>8x A100 80GB</td><td>512GB</td><td>200 Gbps</td><td>99%</td></tr><tr><td>Gold</td><td>8x H100 80GB</td><td>1TB</td><td>400 Gbps</td><td>99.5%</td></tr></tbody></table>
+<p>Nodes are verified through proof-of-work benchmarks before joining the network.</p>
+<h3 id="coordination-protocol">Coordination Protocol</h3>
+<p>The coordination layer handles distributed training logistics:</p>
+<p><strong>Task Scheduling</strong></p>
+<p>Jobs are divided into tasks and assigned to available nodes:</p>
+<pre><code class="language-python"># Job submission
+job = ComputeJob(
+    model_config=model_config,
+    data_config=data_config,
+    training_config=training_config,
+    budget_max=10000,  # ZEN tokens
+)
+
+job_id = await network.submit(job)
+</code></pre>
+<p>The scheduler optimizes for:</p>
+<ul>
+<li>Data locality (minimize transfers)</li>
+<li>Network topology (co-locate communicating nodes)</li>
+<li>Cost efficiency (use cheapest suitable nodes)</li>
+<li>Reliability (distribute across failure domains)</li>
+</ul>
+<p><strong>Gradient Aggregation</strong></p>
+<p>Distributed training requires gradient synchronization. The network supports:</p>
+<ul>
+<li>All-reduce for data-parallel training</li>
+<li>Point-to-point for pipeline/tensor parallelism</li>
+<li>Asynchronous updates for fault tolerance</li>
+</ul>
+<p>Aggregation happens through a tree topology that minimizes bandwidth usage.</p>
+<p><strong>Checkpoint Management</strong></p>
+<p>Training state is continuously checkpointed:</p>
+<pre><code class="language-python"># Automatic checkpointing
+checkpoint_config = CheckpointConfig(
+    interval=1000,  # steps
+    storage="ipfs",
+    redundancy=3,
+)
+</code></pre>
+<p>Checkpoints are content-addressed and distributed. Training can resume from any node.</p>
+<h3 id="economics">Economics</h3>
+<p><strong>For Compute Providers</strong></p>
+<p>Providers stake ZEN tokens as collateral and earn rewards for:</p>
+<ul>
+<li>Uptime (base reward)</li>
+<li>Computation completed (work reward)</li>
+<li>Network contribution (bandwidth bonus)</li>
+</ul>
+<p>Slashing occurs for:</p>
+<ul>
+<li>Downtime during committed periods</li>
+<li>Incorrect computation (detected via verification)</li>
+<li>Bandwidth violations</li>
+</ul>
+<p>Expected returns: 15-25% APY on staked tokens plus hardware depreciation coverage.</p>
+<p><strong>For Users</strong></p>
+<p>Users pay per compute-hour in ZEN tokens:</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Tier</th><th>Price (ZEN/GPU-hour)</th><th>Approx USD</th></tr></thead><tbody><tr><td>Bronze</td><td>2.5</td><td>$5</td></tr><tr><td>Silver</td><td>4.0</td><td>$8</td></tr><tr><td>Gold</td><td>8.0</td><td>$16</td></tr></tbody></table>
+<p>Prices are market-determined through ongoing auctions. Users can specify maximum price and wait for availability.</p>
+<p><strong>Network Fee</strong></p>
+<p>5% of payments go to the network treasury, funding:</p>
+<ul>
+<li>Protocol development</li>
+<li>Security audits</li>
+<li>Community grants</li>
+</ul>
+<h3 id="verification">Verification</h3>
+<p>How do we know compute was done correctly?</p>
+<p><strong>Sampling-Based Verification</strong></p>
+<p>Random subsets of computation are re-run by verifiers. Discrepancies trigger investigation:</p>
+<pre><code>P(detection) = 1 - (1 - sample_rate)^n
+</code></pre>
+<p>With 1% sampling and 100 steps, detection probability is 63%. With 5% sampling, it's 99.4%.</p>
+<p><strong>Gradient Consistency</strong></p>
+<p>Aggregated gradients are checked for statistical anomalies. Fabricated gradients have detectable patterns.</p>
+<p><strong>Trusted Execution (Optional)</strong></p>
+<p>For high-value jobs, nodes can run in TEE enclaves (SGX, TDX). Provides cryptographic attestation of correct execution.</p>
+<h2 id="real-world-performance">Real-World Performance</h2>
+<p>We've run several training jobs on the network:</p>
+<h3 id="zen-2-7b-training">Zen-2-7B Training</h3>
+<ul>
+<li><strong>Duration</strong>: 3 weeks</li>
+<li><strong>Nodes used</strong>: 24 (rotating pool of 40)</li>
+<li><strong>Total compute</strong>: 8,400 GPU-hours</li>
+<li><strong>Cost</strong>: 21,000 ZEN (~$42,000)</li>
+<li><strong>Efficiency</strong>: 89% of centralized equivalent</li>
+</ul>
+<h3 id="embedding-model-training">Embedding Model Training</h3>
+<ul>
+<li><strong>Duration</strong>: 5 days</li>
+<li><strong>Nodes used</strong>: 8</li>
+<li><strong>Total compute</strong>: 960 GPU-hours</li>
+<li><strong>Cost</strong>: 2,400 ZEN (~$4,800)</li>
+<li><strong>Efficiency</strong>: 94% of centralized equivalent</li>
+</ul>
+<p>Efficiency losses come from coordination overhead and network heterogeneity. Ongoing optimizations are closing the gap.</p>
+<h2 id="joining-the-network">Joining the Network</h2>
+<h3 id="as-a-compute-provider">As a Compute Provider</h3>
+<ol>
+<li><strong>Hardware check</strong>: Verify your setup meets tier requirements</li>
+<li><strong>Software install</strong>: Run the Zoo Compute daemon</li>
+<li><strong>Stake</strong>: Lock ZEN tokens as collateral</li>
+<li><strong>Benchmark</strong>: Complete verification benchmarks</li>
+<li><strong>Operate</strong>: Maintain uptime and connectivity</li>
+</ol>
+<p>Documentation: docs.zoo.ngo/compute/providers</p>
+<h3 id="as-a-user">As a User</h3>
+<ol>
+<li><strong>Install client</strong>: <code>pip install zoo-compute</code></li>
+<li><strong>Fund account</strong>: Acquire ZEN tokens</li>
+<li><strong>Submit jobs</strong>: Use API or CLI</li>
+</ol>
+<pre><code class="language-python">from zoo_compute import Client
+
+client = Client(api_key="...")
+
+job = client.train(
+    config="./training_config.yaml",
+    max_budget=5000,
+)
+
+await job.wait()
+</code></pre>
+<p>Documentation: docs.zoo.ngo/compute/users</p>
+<h2 id="roadmap">Roadmap</h2>
+<p><strong>Q3 2024</strong>: Public beta with 100+ nodes
+<strong>Q4 2024</strong>: Production launch, verification improvements
+<strong>Q1 2025</strong>: Cross-chain bridging for payments
+<strong>Q2 2025</strong>: TEE support for all tiers</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>Decentralized compute is essential for decentralized AI. The Zoo Compute Network provides a permissionless, efficient, and verifiable substrate for training large models. As the network grows, it becomes more resilient and more accessible.</p>
+<p>Compute should be a utility, not a moat.</p>
+<hr>
+<p><em>Zach Kelling is a co-founder of Zoo Labs Foundation.</em></p>d:["$","main",null,{"children":["$","article",null,{"className":"blog-article","children":[["$","$L5",null,{"className":"blog-back","href":"/blog","children":"← Blog"}],["$","div",null,{"className":"blog-post-meta","children":["August 4, 2024"," ","·"," ",5," min read"]}],["$","h1",null,{"className":"blog-post-title","children":"Decentralized Compute for AI Training"}],["$","p",null,{"className":"blog-post-lede","children":"How we're building a decentralized compute network for training large AI models."}],["$","div",null,{"className":"blog-prose","dangerouslySetInnerHTML":{"__html":"$17"}}]]}]}]
+13:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+f:null
+11:{"metadata":[["$","title","0",{"children":"Decentralized Compute for AI Training — Zen Blog"}],["$","meta","1",{"name":"description","content":"How we're building a decentralized compute network for training large AI models."}],["$","meta","2",{"name":"keywords","content":"AI, LLM, Agentic AI, Code Generation, Zen Coder, Multimodal, Open Source, Machine Learning"}]],"error":null,"digest":"$undefined"}
+16:"$11:metadata"

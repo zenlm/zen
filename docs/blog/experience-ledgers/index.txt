@@ -1,0 +1,84 @@
+1:"$Sreact.fragment"
+2:I[6529,["619","static/chunks/619-ba102abea3e3d0e4.js","177","static/chunks/app/layout-b4c33ab67f60e2ed.js"],"default"]
+3:I[9766,[],""]
+4:I[8924,[],""]
+5:I[2619,["619","static/chunks/619-ba102abea3e3d0e4.js","953","static/chunks/app/blog/%5Bslug%5D/page-f25a122e9ccf798d.js"],""]
+c:I[7150,[],""]
+:HL["/_next/static/css/1d1f6bc532e5f43f.css","style"]
+:HL["/_next/static/css/eb87e4f7aea490c6.css","style"]
+0:{"P":null,"b":"aLEH4vcTO8-5k6ZseFClK","p":"","c":["","blog","experience-ledgers",""],"i":false,"f":[[["",{"children":["blog",{"children":[["slug","experience-ledgers","d"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/1d1f6bc532e5f43f.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","children":[["$","head",null,{"children":["$","link",null,{"rel":"icon","type":"image/png","href":"/favicon.png"}]}],["$","body",null,{"children":[["$","$L2",null,{}],["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}],["$","footer",null,{"children":["$","div",null,{"className":"container","children":[["$","div",null,{"className":"footer-content","children":[["$","div",null,{"className":"footer-section","children":[["$","h4",null,{"children":"Zen LM"}],["$","p",null,{"children":"95 open Zen models across Zen3, Zen4, and Zen5. Chat, code, vision, audio, image, embeddings, rerankers, and safety. OpenAI- and Anthropic-compatible API."}]]}],["$","div",null,{"className":"footer-section","children":[["$","h4",null,{"children":"Zen 5"}],["$","ul",null,{"children":[["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 Nano (0.8B - 9B)"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 Flash"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 Mini"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 (default)"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 Coder"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 Pro"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 Max"}]}]]}]]}],["$","div",null,{"className":"footer-section","children":[["$","h4",null,{"children":"Zen 4"}],["$","ul",null,{"children":[["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen4","children":"Zen4 / Zen4.1"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen4","children":"Zen4 Ultra / Max / Pro"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen4","children":"Zen4 Mini / Thinking"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen4","children":"Zen4 Coder / Pro / Flash"}]}]]}]]}],["$","div",null,{"className":"footer-section","children":[["$","h4",null,{"children":"Zen 3 Multimodal"}],["$","ul",null,{"children":[["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen3","children":"Zen3 Omni / VL / Web"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen3","children":"Zen3 Nano / Guard"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen3","children":"Zen3 Embedding / Reranker"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen3","children":"Zen3 Image / ASR / TTS"}]}]]}]]}],["$","div",null,{"className":"footer-section","children":[["$","h4",null,{"children":"Resources"}],["$","ul",null,{"children":[["$","li",null,{"children":["$","$L5",null,{"href":"/datasets","children":"Training Data"}]}],["$","li",null,{"children":["$","a",null,{"href":"https://huggingface.co/zenlm","target":"_blank","rel":"noopener noreferrer","children":"HuggingFace"}]}],["$","li",null,{"children":["$","a",null,{"href":"https://github.com/zenlm","target":"_blank","rel":"noopener noreferrer","children":"GitHub"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/research","children":"Research Papers"}]}],["$","li",null,{"children":["$","a",null,{"href":"https://api.hanzo.ai","target":"_blank","rel":"noopener noreferrer","children":"Zen API"}]}]]}]]}]]}],"$L6"]}]}],"$L7"]}]]}]]}],{"children":["blog","$L8",{"children":[["slug","experience-ledgers","d"],"$L9",{"children":["__PAGE__","$La",{},null,false]},null,false]},null,false]},null,false],"$Lb",false]],"m":"$undefined","G":["$c",[]],"s":false,"S":true}
+e:I[4431,[],"OutletBoundary"]
+10:I[5278,[],"AsyncMetadataOutlet"]
+12:I[4431,[],"ViewportBoundary"]
+14:I[4431,[],"MetadataBoundary"]
+15:"$Sreact.suspense"
+6:["$","div",null,{"className":"footer-bottom","children":["$","p",null,{"children":["© ",2026," Zen Authors. Open foundation models. Served on the Zen API."]}]}]
+7:["$","script",null,{"src":"/assets/js/main.js","async":true}]
+8:["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+9:["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+a:["$","$1","c",{"children":["$Ld",[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/eb87e4f7aea490c6.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","$Le",null,{"children":["$Lf",["$","$L10",null,{"promise":"$@11"}]]}]]}]
+b:["$","$1","h",{"children":[null,[["$","$L12",null,{"children":"$L13"}],null],["$","$L14",null,{"children":["$","div",null,{"hidden":true,"children":["$","$15",null,{"fallback":null,"children":"$L16"}]}]}]]}]
+17:T1223,<p>AI agents today suffer from amnesia. Each conversation starts fresh. Each session forgets the last. This isn't just an inconvenience; it's a fundamental limitation on what agents can become.</p>
+<p>Today we introduce experience ledgers, a framework for persistent, verifiable agent memory.</p>
+<h2 id="the-memory-problem">The Memory Problem</h2>
+<p>Current language models operate in bounded context windows. Information from past interactions must be explicitly retrieved or summarized. This creates several challenges:</p>
+<ol>
+<li><strong>Context limits</strong>: Models can only attend to finite token sequences</li>
+<li><strong>Retrieval failures</strong>: Important context gets lost or incorrectly recalled</li>
+<li><strong>No learning</strong>: Agents don't improve from experience within deployment</li>
+<li><strong>Trust gap</strong>: Users can't verify what the agent "remembers"</li>
+</ol>
+<h2 id="experience-ledgers">Experience Ledgers</h2>
+<p>An experience ledger is an append-only log of agent experiences with cryptographic attestation. Think of it as a blockchain for agent memory, but optimized for AI workloads.</p>
+<h3 id="core-properties">Core Properties</h3>
+<p><strong>Append-only</strong>: Experiences are added but never modified or deleted. This creates an immutable record of agent history.</p>
+<p><strong>Content-addressed</strong>: Each experience has a unique hash based on its content. References are stable and verifiable.</p>
+<p><strong>Selective disclosure</strong>: Agents can prove they have certain experiences without revealing all memories. Zero-knowledge proofs enable privacy-preserving verification.</p>
+<p><strong>Hierarchical summarization</strong>: Raw experiences are continuously summarized at multiple abstraction levels. Agents can navigate from high-level patterns to specific instances.</p>
+<h3 id="architecture">Architecture</h3>
+<pre><code>Raw Experience -> Embedding -> Index -> Summary Layer -> Abstract Layer
+       |              |           |            |              |
+       v              v           v            v              v
+    [Ledger]    [Vector DB]  [Search]   [Compression]   [Reasoning]
+</code></pre>
+<p>Each layer serves a different purpose:</p>
+<ul>
+<li><strong>Raw layer</strong>: Complete transcripts, full fidelity</li>
+<li><strong>Embedding layer</strong>: Semantic similarity search</li>
+<li><strong>Index layer</strong>: Structured retrieval by metadata</li>
+<li><strong>Summary layer</strong>: Compressed representations</li>
+<li><strong>Abstract layer</strong>: High-level patterns and beliefs</li>
+</ul>
+<h2 id="implementation">Implementation</h2>
+<p>We've built a reference implementation using:</p>
+<ul>
+<li><strong>Storage</strong>: Content-addressed blocks on IPFS</li>
+<li><strong>Attestation</strong>: Ed25519 signatures for each entry</li>
+<li><strong>Indexing</strong>: HNSW vectors with metadata filtering</li>
+<li><strong>Summarization</strong>: Hierarchical abstractive compression</li>
+</ul>
+<p>The system maintains consistency between layers. When raw experiences update, summaries regenerate. When summaries change, abstractions refresh.</p>
+<h2 id="use-cases">Use Cases</h2>
+<h3 id="personalized-assistants">Personalized Assistants</h3>
+<p>An agent with an experience ledger remembers user preferences, past conversations, and accumulated context. The user can audit this memory and request modifications.</p>
+<h3 id="collaborative-research">Collaborative Research</h3>
+<p>Multiple agents working on a problem can share experience ledgers. Discoveries propagate. Dead ends are remembered. The collective makes progress.</p>
+<h3 id="verifiable-ai">Verifiable AI</h3>
+<p>When an agent claims expertise or references past interactions, the ledger provides proof. Trust becomes verifiable rather than assumed.</p>
+<h2 id="privacy-considerations">Privacy Considerations</h2>
+<p>Persistent memory raises legitimate privacy concerns. Our design addresses these through:</p>
+<ul>
+<li><strong>User control</strong>: Users own their ledger data</li>
+<li><strong>Selective sync</strong>: Choose what experiences to persist</li>
+<li><strong>Cryptographic deletion</strong>: Encrypted entries can be made unreadable</li>
+<li><strong>Audit logs</strong>: All access is recorded</li>
+</ul>
+<h2 id="whats-next">What's Next</h2>
+<p>We're releasing the experience ledger specification and reference implementation under Apache 2.0. Initial integration with Zen models comes next quarter.</p>
+<p>Memory transforms what agents can do. It's time to give them the ability to remember.</p>
+<hr>
+<p><em>Zach Kelling is a co-founder of Zoo Labs Foundation.</em></p>d:["$","main",null,{"children":["$","article",null,{"className":"blog-article","children":[["$","$L5",null,{"className":"blog-back","href":"/blog","children":"← Blog"}],["$","div",null,{"className":"blog-post-meta","children":["February 13, 2022"," ","·"," ",3," min read"]}],["$","h1",null,{"className":"blog-post-title","children":"Experience Ledgers: Persistent Memory for AI Agents"}],["$","p",null,{"className":"blog-post-lede","children":"Introducing experience ledgers, a framework for giving AI agents persistent, verifiable memory."}],["$","div",null,{"className":"blog-prose","dangerouslySetInnerHTML":{"__html":"$17"}}]]}]}]
+13:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+f:null
+11:{"metadata":[["$","title","0",{"children":"Experience Ledgers: Persistent Memory for AI Agents — Zen Blog"}],["$","meta","1",{"name":"description","content":"Introducing experience ledgers, a framework for giving AI agents persistent, verifiable memory."}],["$","meta","2",{"name":"keywords","content":"AI, LLM, Agentic AI, Code Generation, Zen Coder, Multimodal, Open Source, Machine Learning"}]],"error":null,"digest":"$undefined"}
+16:"$11:metadata"

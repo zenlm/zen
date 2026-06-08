@@ -1,0 +1,171 @@
+1:"$Sreact.fragment"
+2:I[6529,["619","static/chunks/619-ba102abea3e3d0e4.js","177","static/chunks/app/layout-b4c33ab67f60e2ed.js"],"default"]
+3:I[9766,[],""]
+4:I[8924,[],""]
+5:I[2619,["619","static/chunks/619-ba102abea3e3d0e4.js","953","static/chunks/app/blog/%5Bslug%5D/page-f25a122e9ccf798d.js"],""]
+c:I[7150,[],""]
+:HL["/_next/static/css/1d1f6bc532e5f43f.css","style"]
+:HL["/_next/static/css/eb87e4f7aea490c6.css","style"]
+0:{"P":null,"b":"aLEH4vcTO8-5k6ZseFClK","p":"","c":["","blog","zoo-foundation-launch",""],"i":false,"f":[[["",{"children":["blog",{"children":[["slug","zoo-foundation-launch","d"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/1d1f6bc532e5f43f.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","children":[["$","head",null,{"children":["$","link",null,{"rel":"icon","type":"image/png","href":"/favicon.png"}]}],["$","body",null,{"children":[["$","$L2",null,{}],["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}],["$","footer",null,{"children":["$","div",null,{"className":"container","children":[["$","div",null,{"className":"footer-content","children":[["$","div",null,{"className":"footer-section","children":[["$","h4",null,{"children":"Zen LM"}],["$","p",null,{"children":"95 open Zen models across Zen3, Zen4, and Zen5. Chat, code, vision, audio, image, embeddings, rerankers, and safety. OpenAI- and Anthropic-compatible API."}]]}],["$","div",null,{"className":"footer-section","children":[["$","h4",null,{"children":"Zen 5"}],["$","ul",null,{"children":[["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 Nano (0.8B - 9B)"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 Flash"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 Mini"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 (default)"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 Coder"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 Pro"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 Max"}]}]]}]]}],["$","div",null,{"className":"footer-section","children":[["$","h4",null,{"children":"Zen 4"}],["$","ul",null,{"children":[["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen4","children":"Zen4 / Zen4.1"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen4","children":"Zen4 Ultra / Max / Pro"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen4","children":"Zen4 Mini / Thinking"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen4","children":"Zen4 Coder / Pro / Flash"}]}]]}]]}],["$","div",null,{"className":"footer-section","children":[["$","h4",null,{"children":"Zen 3 Multimodal"}],["$","ul",null,{"children":[["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen3","children":"Zen3 Omni / VL / Web"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen3","children":"Zen3 Nano / Guard"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen3","children":"Zen3 Embedding / Reranker"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen3","children":"Zen3 Image / ASR / TTS"}]}]]}]]}],["$","div",null,{"className":"footer-section","children":[["$","h4",null,{"children":"Resources"}],["$","ul",null,{"children":[["$","li",null,{"children":["$","$L5",null,{"href":"/datasets","children":"Training Data"}]}],["$","li",null,{"children":["$","a",null,{"href":"https://huggingface.co/zenlm","target":"_blank","rel":"noopener noreferrer","children":"HuggingFace"}]}],["$","li",null,{"children":["$","a",null,{"href":"https://github.com/zenlm","target":"_blank","rel":"noopener noreferrer","children":"GitHub"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/research","children":"Research Papers"}]}],["$","li",null,{"children":["$","a",null,{"href":"https://api.hanzo.ai","target":"_blank","rel":"noopener noreferrer","children":"Zen API"}]}]]}]]}]]}],"$L6"]}]}],"$L7"]}]]}]]}],{"children":["blog","$L8",{"children":[["slug","zoo-foundation-launch","d"],"$L9",{"children":["__PAGE__","$La",{},null,false]},null,false]},null,false]},null,false],"$Lb",false]],"m":"$undefined","G":["$c",[]],"s":false,"S":true}
+e:I[4431,[],"OutletBoundary"]
+10:I[5278,[],"AsyncMetadataOutlet"]
+12:I[4431,[],"ViewportBoundary"]
+14:I[4431,[],"MetadataBoundary"]
+15:"$Sreact.suspense"
+6:["$","div",null,{"className":"footer-bottom","children":["$","p",null,{"children":["© ",2026," Zen Authors. Open foundation models. Served on the Zen API."]}]}]
+7:["$","script",null,{"src":"/assets/js/main.js","async":true}]
+8:["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+9:["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+a:["$","$1","c",{"children":["$Ld",[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/eb87e4f7aea490c6.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","$Le",null,{"children":["$Lf",["$","$L10",null,{"promise":"$@11"}]]}]]}]
+b:["$","$1","h",{"children":[null,[["$","$L12",null,{"children":"$L13"}],null],["$","$L14",null,{"children":["$","div",null,{"hidden":true,"children":["$","$15",null,{"fallback":null,"children":"$L16"}]}]}]]}]
+17:T1a4b,<p>Three years ago, we started Zen with a simple belief: AI should be open, decentralized, and governed by its community. Today we formalize that mission with the launch of Zoo Labs Foundation.</p>
+<h2 id="why-a-foundation">Why a Foundation?</h2>
+<p>The work we're doing transcends any single company. Open AI development, decentralized science, and community governance require sustained, mission-driven effort. A foundation structure ensures:</p>
+<ul>
+<li><strong>Mission permanence</strong>: The foundation's charter protects the mission from commercial pressures</li>
+<li><strong>Community ownership</strong>: Governance tokens give stakeholders genuine control</li>
+<li><strong>Research independence</strong>: Researchers pursue important problems, not just profitable ones</li>
+<li><strong>Open infrastructure</strong>: Tools and systems remain open and accessible</li>
+</ul>
+<h2 id="the-foundations-mission">The Foundation's Mission</h2>
+<p>Zoo Labs Foundation exists to advance open AI research and decentralized science. We pursue this through:</p>
+<h3 id="open-research">Open Research</h3>
+<p>All research conducted under the foundation is published openly. This includes:</p>
+<ul>
+<li>Model weights and training code</li>
+<li>Dataset documentation and curation tools</li>
+<li>Benchmark results and evaluation frameworks</li>
+<li>Negative results and failed experiments</li>
+</ul>
+<p>Transparency accelerates progress. Hiding failures wastes collective effort.</p>
+<h3 id="decentralized-infrastructure">Decentralized Infrastructure</h3>
+<p>We build and maintain infrastructure for decentralized AI:</p>
+<ul>
+<li>Federated training networks</li>
+<li>Verifiable inference systems</li>
+<li>Agent identity frameworks</li>
+<li>Distributed compute protocols</li>
+</ul>
+<p>This infrastructure enables others to build decentralized AI applications without starting from scratch.</p>
+<h3 id="community-governance">Community Governance</h3>
+<p>Decisions about foundation direction are made by the community:</p>
+<ul>
+<li>ZIPs (Zoo Improvement Proposals) for major changes</li>
+<li>Token-weighted voting for resource allocation</li>
+<li>Working groups for focused initiatives</li>
+<li>Open forums for discussion and debate</li>
+</ul>
+<h2 id="structure">Structure</h2>
+<p>The foundation operates through several bodies:</p>
+<h3 id="research-labs">Research Labs</h3>
+<p>Full-time researchers pursuing core AI and DeSci research. Current focus areas:</p>
+<ul>
+<li>Large language models</li>
+<li>Multimodal understanding</li>
+<li>Alignment and safety</li>
+<li>Cryptographic verification</li>
+</ul>
+<h3 id="grants-program">Grants Program</h3>
+<p>Funding for external researchers and projects aligned with the mission. Initial fund: $10M over three years.</p>
+<p>Priority areas:</p>
+<ul>
+<li>Open model development</li>
+<li>Decentralized training methods</li>
+<li>AI safety research</li>
+<li>DeSci infrastructure</li>
+</ul>
+<h3 id="working-groups">Working Groups</h3>
+<p>Community-led groups focusing on specific areas:</p>
+<ul>
+<li><strong>Model Development</strong>: Coordinating open model training</li>
+<li><strong>Infrastructure</strong>: Building and maintaining shared tools</li>
+<li><strong>Governance</strong>: Improving foundation governance</li>
+<li><strong>Outreach</strong>: Education and community growth</li>
+</ul>
+<h2 id="initial-projects">Initial Projects</h2>
+<p>The foundation launches with several active projects:</p>
+<h3 id="zen-20">Zen 2.0</h3>
+<p>Our next-generation language model series. Currently training:</p>
+<ul>
+<li><strong>Zen-2-7B</strong>: General-purpose base model</li>
+<li><strong>Zen-2-34B</strong>: Enhanced reasoning and knowledge</li>
+<li><strong>Zen-2-70B</strong>: Frontier capabilities (in planning)</li>
+</ul>
+<p>All models released under Apache 2.0.</p>
+<h3 id="training-gym">Training Gym</h3>
+<p>Open source infrastructure for model training. Now includes:</p>
+<ul>
+<li>Distributed training framework</li>
+<li>Evaluation harness</li>
+<li>Experiment tracking</li>
+<li>Model registry</li>
+</ul>
+<h3 id="experience-ledgers">Experience Ledgers</h3>
+<p>Persistent memory for AI agents. Production release scheduled for Q2 2024.</p>
+<h3 id="proof-of-ai">Proof of AI</h3>
+<p>Verifiable inference framework. SDK available now for models up to 500M parameters.</p>
+<h2 id="governance">Governance</h2>
+<h3 id="zen-token">ZEN Token</h3>
+<p>The ZEN token governs the foundation:</p>
+<ul>
+<li><strong>Voting</strong>: Token holders vote on proposals</li>
+<li><strong>Delegation</strong>: Delegate votes to representatives</li>
+<li><strong>Staking</strong>: Stake tokens to participate in working groups</li>
+</ul>
+<p>Token distribution:</p>
+<ul>
+<li>40% Community treasury (vested over 4 years)</li>
+<li>25% Early contributors</li>
+<li>20% Foundation reserve</li>
+<li>15% Grants program</li>
+</ul>
+<h3 id="zips-process">ZIPs Process</h3>
+<p>Major decisions go through the ZIPs process:</p>
+<ol>
+<li><strong>Draft</strong>: Author writes proposal</li>
+<li><strong>Discussion</strong>: Community feedback (minimum 2 weeks)</li>
+<li><strong>Revision</strong>: Author incorporates feedback</li>
+<li><strong>Vote</strong>: Token holders vote (5-day voting period)</li>
+<li><strong>Implementation</strong>: Approved proposals are executed</li>
+</ol>
+<h3 id="transparency">Transparency</h3>
+<p>All foundation operations are transparent:</p>
+<ul>
+<li>Financial reports published quarterly</li>
+<li>Research progress shared monthly</li>
+<li>Governance votes recorded on chain</li>
+<li>Meeting notes published publicly</li>
+</ul>
+<h2 id="join-us">Join Us</h2>
+<p>The foundation is as strong as its community. Ways to participate:</p>
+<h3 id="contribute">Contribute</h3>
+<ul>
+<li>Submit research proposals</li>
+<li>Contribute code to open projects</li>
+<li>Participate in governance</li>
+<li>Join working groups</li>
+</ul>
+<h3 id="build">Build</h3>
+<ul>
+<li>Use foundation infrastructure</li>
+<li>Build on open models</li>
+<li>Integrate with our tools</li>
+<li>Launch complementary projects</li>
+</ul>
+<h3 id="support">Support</h3>
+<ul>
+<li>Acquire ZEN tokens</li>
+<li>Provide compute resources</li>
+<li>Fund specific research</li>
+<li>Spread the word</li>
+</ul>
+<h2 id="the-road-ahead">The Road Ahead</h2>
+<p>We're at the beginning. The foundation launches with a strong base: years of research, working infrastructure, and a committed community. But the hardest work is ahead.</p>
+<p>Building open, decentralized AI systems that benefit everyone is ambitious. It requires sustained effort, careful governance, and broad participation. The foundation provides the structure. The community provides the energy.</p>
+<p>Join us at zoo.ngo.</p>
+<hr>
+<p><em>Zach Kelling is a co-founder of Zoo Labs Foundation.</em></p>d:["$","main",null,{"children":["$","article",null,{"className":"blog-article","children":[["$","$L5",null,{"className":"blog-back","href":"/blog","children":"← Blog"}],["$","div",null,{"className":"blog-post-meta","children":["February 11, 2024"," ","·"," ",4," min read"]}],["$","h1",null,{"className":"blog-post-title","children":"Announcing the Zoo Labs Foundation"}],["$","p",null,{"className":"blog-post-lede","children":"Today we formally launch Zoo Labs Foundation, an open research network dedicated to decentralized AI and decentralized science."}],["$","div",null,{"className":"blog-prose","dangerouslySetInnerHTML":{"__html":"$17"}}]]}]}]
+13:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+f:null
+11:{"metadata":[["$","title","0",{"children":"Announcing the Zoo Labs Foundation — Zen Blog"}],["$","meta","1",{"name":"description","content":"Today we formally launch Zoo Labs Foundation, an open research network dedicated to decentralized AI and decentralized science."}],["$","meta","2",{"name":"keywords","content":"AI, LLM, Agentic AI, Code Generation, Zen Coder, Multimodal, Open Source, Machine Learning"}]],"error":null,"digest":"$undefined"}
+16:"$11:metadata"

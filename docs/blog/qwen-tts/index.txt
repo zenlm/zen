@@ -1,0 +1,239 @@
+1:"$Sreact.fragment"
+2:I[6529,["619","static/chunks/619-ba102abea3e3d0e4.js","177","static/chunks/app/layout-b4c33ab67f60e2ed.js"],"default"]
+3:I[9766,[],""]
+4:I[8924,[],""]
+5:I[2619,["619","static/chunks/619-ba102abea3e3d0e4.js","953","static/chunks/app/blog/%5Bslug%5D/page-f25a122e9ccf798d.js"],""]
+c:I[7150,[],""]
+:HL["/_next/static/css/1d1f6bc532e5f43f.css","style"]
+:HL["/_next/static/css/eb87e4f7aea490c6.css","style"]
+0:{"P":null,"b":"aLEH4vcTO8-5k6ZseFClK","p":"","c":["","blog","qwen-tts",""],"i":false,"f":[[["",{"children":["blog",{"children":[["slug","qwen-tts","d"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/1d1f6bc532e5f43f.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","children":[["$","head",null,{"children":["$","link",null,{"rel":"icon","type":"image/png","href":"/favicon.png"}]}],["$","body",null,{"children":[["$","$L2",null,{}],["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}],["$","footer",null,{"children":["$","div",null,{"className":"container","children":[["$","div",null,{"className":"footer-content","children":[["$","div",null,{"className":"footer-section","children":[["$","h4",null,{"children":"Zen LM"}],["$","p",null,{"children":"95 open Zen models across Zen3, Zen4, and Zen5. Chat, code, vision, audio, image, embeddings, rerankers, and safety. OpenAI- and Anthropic-compatible API."}]]}],["$","div",null,{"className":"footer-section","children":[["$","h4",null,{"children":"Zen 5"}],["$","ul",null,{"children":[["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 Nano (0.8B - 9B)"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 Flash"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 Mini"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 (default)"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 Coder"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 Pro"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 Max"}]}]]}]]}],["$","div",null,{"className":"footer-section","children":[["$","h4",null,{"children":"Zen 4"}],["$","ul",null,{"children":[["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen4","children":"Zen4 / Zen4.1"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen4","children":"Zen4 Ultra / Max / Pro"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen4","children":"Zen4 Mini / Thinking"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen4","children":"Zen4 Coder / Pro / Flash"}]}]]}]]}],["$","div",null,{"className":"footer-section","children":[["$","h4",null,{"children":"Zen 3 Multimodal"}],["$","ul",null,{"children":[["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen3","children":"Zen3 Omni / VL / Web"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen3","children":"Zen3 Nano / Guard"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen3","children":"Zen3 Embedding / Reranker"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen3","children":"Zen3 Image / ASR / TTS"}]}]]}]]}],["$","div",null,{"className":"footer-section","children":[["$","h4",null,{"children":"Resources"}],["$","ul",null,{"children":[["$","li",null,{"children":["$","$L5",null,{"href":"/datasets","children":"Training Data"}]}],["$","li",null,{"children":["$","a",null,{"href":"https://huggingface.co/zenlm","target":"_blank","rel":"noopener noreferrer","children":"HuggingFace"}]}],["$","li",null,{"children":["$","a",null,{"href":"https://github.com/zenlm","target":"_blank","rel":"noopener noreferrer","children":"GitHub"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/research","children":"Research Papers"}]}],["$","li",null,{"children":["$","a",null,{"href":"https://api.hanzo.ai","target":"_blank","rel":"noopener noreferrer","children":"Zen API"}]}]]}]]}]]}],["$","div",null,{"className":"footer-bottom","children":"$L6"}]]}]}],"$L7"]}]]}]]}],{"children":["blog","$L8",{"children":[["slug","qwen-tts","d"],"$L9",{"children":["__PAGE__","$La",{},null,false]},null,false]},null,false]},null,false],"$Lb",false]],"m":"$undefined","G":["$c",[]],"s":false,"S":true}
+e:I[4431,[],"OutletBoundary"]
+10:I[5278,[],"AsyncMetadataOutlet"]
+12:I[4431,[],"ViewportBoundary"]
+14:I[4431,[],"MetadataBoundary"]
+15:"$Sreact.suspense"
+6:["$","p",null,{"children":["© ",2026," Zen Authors. Open foundation models. Served on the Zen API."]}]
+7:["$","script",null,{"src":"/assets/js/main.js","async":true}]
+8:["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+9:["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+a:["$","$1","c",{"children":["$Ld",[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/eb87e4f7aea490c6.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","$Le",null,{"children":["$Lf",["$","$L10",null,{"promise":"$@11"}]]}]]}]
+b:["$","$1","h",{"children":[null,[["$","$L12",null,{"children":"$L13"}],null],["$","$L14",null,{"children":["$","div",null,{"hidden":true,"children":["$","$15",null,{"fallback":null,"children":"$L16"}]}]}]]}]
+17:T2e5e,<p><a href="https://help.aliyun.com/zh/model-studio/qwen-tts">API</a>
+<a href="https://discord.gg/yPEP2vHTu4">DISCORD</a></p>
+<h2 id="introduction">Introduction</h2>
+<p>Here we introduce the latest update of <strong>Qwen-TTS</strong> (<code>qwen-tts-latest</code> or <code>qwen-tts-2025-05-22</code>) through <a href="https://help.aliyun.com/zh/model-studio/qwen-tts">Qwen API</a> . Trained on a large-scale dataset encompassing over millions of hours of speech, Qwen-TTS achieves human-level naturalness and expressiveness. Notably, Qwen-TTS automatically adjusts prosody, pacing, and emotional inflections in response to the input text. Notably, Qwen-TTS supports the generation of 3 Chinese dialects, including Pekingese, Shanghainese, and Sichuanese.</p>
+<p>As of now, Qwen-TTS supports 7 Chinese-English bilingual voices, including Cherry, Ethan, Chelsie, Serena, Dylan (Pekingese), Jada (Shanghainese) and Sunny (Sichuanese). More languages and stylistic options will be released in the near future.</p>
+<h2 id="samples-of-chinese-dialects">Samples of Chinese Dialects</h2>
+<p>Here are some samples showcase Qwen-TTS's ability to capture dialects and natural speech patterns.</p>
+<table class="tg"><thead>
+  <tr>
+    <th class="tg-19xi">Speaker</th>
+    <th class="tg-19xi">Dialects</th>
+    <th class="tg-19xi">Text</th>
+    <th class="tg-19xi">Sample</th>
+  </tr></thead>
+<tbody>
+  <tr>
+    <td class="tg-t0cb" rowspan="2">Dylan</td>
+    <td class="tg-t0cb" rowspan="2">Beijing</td>
+    <td class="tg-t0cb">我们家那边后面有一个后山，就护城河那边，完了呢我们就在山上啊就其实也没什么，就是在土坡上跑来跑去，然后谁捡个那个嗯比较威风的棍，完了我们就呃得瞎打呃，要不就是什么掏个洞啊什么的。</td>
+    <td class="tg-hxmt"><audio controls><source src="https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen-TTS/sample/北京话-zh.wav" type="audio/wav"></audio></td>
+  </tr>
+  <tr>
+    <td class="tg-t0cb">得有自己的想法，别净跟着别人瞎起哄，多动动脑子，有点儿结构化的思维啥的。</td>
+    <td class="tg-hxmt"><audio controls><source src="https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen-TTS/sample/北京话-zh0.wav" type="audio/wav"></audio></td>
+  </tr>
+  <tr>
+    <td class="tg-t0cb" rowspan="2">Jada</td>
+    <td class="tg-t0cb" rowspan="2">Shanghai</td>
+    <td class="tg-t0cb">侬只小赤佬，啊呀，数学句子错它八道题，还想吃肯德基啊！夜到麻将队三缺一啊，嘿嘿，叫阿三头来顶嘛！哦，提前上料这样产品，还要卖300块硬币啊。</td>
+    <td class="tg-hxmt"><audio controls><source src="https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen-TTS/sample/上海话-zh.wav" type="audio/wav"></audio></td>
+  </tr>
+  <tr>
+    <td class="tg-t0cb">侬来帮伊向暖吧，天光已经暗转亮哉。</td>
+    <td class="tg-hxmt"><audio controls><source src="https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen-TTS/sample/上海话-zh0.wav" type="audio/wav"></audio></td>
+  </tr>
+  <tr>
+    <td class="tg-t0cb" rowspan="2">Sunny</td>
+    <td class="tg-t0cb" rowspan="2">Sichuan</td>
+    <td class="tg-t0cb">胖娃胖嘟嘟，骑马上成都，成都又好耍。胖娃骑白马，白马跳得高。胖娃耍关刀，关刀耍得圆。胖娃吃汤圆。</td>
+    <td class="tg-hxmt"><audio controls><source src="https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen-TTS/sample/四川话-zh.wav" type="audio/wav"></audio></td>
+  </tr>
+  <tr>
+    <td class="tg-t0cb">他一辈子的使命就是不停地爬哟，爬到大海头上去，不管有好多远！</td>
+    <td class="tg-x5q1"><audio controls><source src="https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen-TTS/sample/四川话-zh0.wav" type="audio/wav"></audio></td>
+  </tr>
+</tbody></table>
+<h2 id="additional-results">Additional Results</h2>
+<p>Qwen-TTS has demonstrated human-level performance, and metrics on the SeedTTS-Eval benchmark is shown below:</p>
+<table class="tg"><thead>
+  <tr>
+    <th class="tg-qv16" rowspan="2">Speaker</th>
+    <th class="tg-qv16" colspan="3">WER (↓) </th>
+    <th class="tg-qv16" colspan="3">SIM (↑) </th>
+  </tr>
+  <tr>
+    <th class="tg-lvth">zh</th>
+    <th class="tg-lvth">en</th>
+    <th class="tg-lvth">hard</th>
+    <th class="tg-lvth">zh</th>
+    <th class="tg-lvth">en</th>
+    <th class="tg-lvth">hard</th>
+  </tr></thead>
+<tbody>
+  <tr>
+    <td class="tg-lvth">Chelsie</td>
+    <td class="tg-lvth">1.256</td>
+    <td class="tg-lvth">2.004</td>
+    <td class="tg-lvth">6.171</td>
+    <td class="tg-lvth">0.658</td>
+    <td class="tg-lvth">0.473</td>
+    <td class="tg-lvth">0.662</td>
+  </tr>
+  <tr>
+    <td class="tg-lvth">Serena</td>
+    <td class="tg-lvth">1.495</td>
+    <td class="tg-lvth">2.206</td>
+    <td class="tg-lvth">7.394</td>
+    <td class="tg-lvth">0.804</td>
+    <td class="tg-lvth">0.508</td>
+    <td class="tg-lvth">0.803</td>
+  </tr>
+  <tr>
+    <td class="tg-lvth">Ethan</td>
+    <td class="tg-lvth">1.489</td>
+    <td class="tg-lvth">1.969</td>
+    <td class="tg-lvth">6.754</td>
+    <td class="tg-lvth">0.777</td>
+    <td class="tg-lvth">0.558</td>
+    <td class="tg-lvth">0.779</td>
+  </tr>
+  <tr>
+    <td class="tg-lvth">Cherry</td>
+    <td class="tg-lvth">1.209</td>
+    <td class="tg-lvth">1.967</td>
+    <td class="tg-lvth">6.069</td>
+    <td class="tg-lvth">0.799</td>
+    <td class="tg-lvth">0.664</td>
+    <td class="tg-lvth">0.801</td>
+  </tr>
+</tbody></table>
+<p>Here are some Chinese-English bilingual samples for these four speakers:</p>
+<table class="tg"><thead>
+  <tr>
+    <th class="tg-19xi"><span style="fontWeight: 700; color: #1F1F1F; backgroundColor: #FFF">Speaker</span></th>
+    <th class="tg-19xi"><span style="fontWeight: 700; color: #1F1F1F; backgroundColor: #FFF">Text</span></th>
+    <th class="tg-19xi"><span style="fontWeight: 700; color: #1F1F1F; backgroundColor: #FFF">Sample</span></th>
+  </tr></thead>
+<tbody>
+  <tr>
+    <td class="tg-t0cb" rowspan="2"><span style="color: #1F1F1F; backgroundColor: #FFF">Cherry</span></td>
+    <td class="tg-t0cb">对吧！我就特别喜欢这种超市，尤其是过年的时候，去逛超市就觉得超级超级开心，然后买点儿东西就要买好多好多东西，这个也想买那个也想买，然后买一堆东西带回去。</td>
+    <td class="tg-hxmt"><audio controls><source src="https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen-TTS/sample/tts_sample/Cherry_ZH.wav" type="audio/wav"></audio></td>
+  </tr>
+  <tr>
+    <td class="tg-t0cb">Take a look at http://www.granite.ab.ca/access/email.</td>
+    <td class="tg-hxmt"><audio controls><source src="https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen-TTS/sample/tts_sample/Cherry_EN.wav" type="audio/wav"></audio></td>
+  </tr>
+  <tr>
+    <td class="tg-t0cb" rowspan="2"><span style="color: #1F1F1F; backgroundColor: #FFF">Ethan</span></td>
+    <td class="tg-t0cb">啊？真的假的？他们俩拍吻戏。可是我觉得他们两个没有CP感欸。</td>
+    <td class="tg-hxmt"><audio controls><source src="https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen-TTS/sample/tts_sample/Ethan_ZH.wav" type="audio/wav"></audio></td>
+  </tr>
+  <tr>
+    <td class="tg-t0cb"><span style="color: #1F1F1F; backgroundColor: #FFF">Jane's eyes wide with terror, she screamed, "The brakes aren't working! What do we do now? We're completely trapped, and we're heading straight for that wall, I can't stop it!" Then, a strange calm washed over her as she murmured, "Well, at least the view was nice. It's almost poetic, this beautiful scene for our grand finale, isn't it?"</span></td>
+    <td class="tg-hxmt"><audio controls><source src="https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen-TTS/sample/tts_sample/Ethan_EN.wav" type="audio/wav"></audio></td>
+  </tr>
+  <tr>
+    <td class="tg-t0cb" rowspan="2"><span style="color: #1F1F1F; backgroundColor: #FFF">Chelsie</span></td>
+    <td class="tg-t0cb">哼！还让不让人好好减肥啦，不行，你要请我一顿好的赔偿我哦。</td>
+    <td class="tg-hxmt"><audio controls><source src="https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen-TTS/sample/tts_sample/Chelsie_ZH.wav" type="audio/wav"></audio></td>
+  </tr>
+  <tr>
+    <td class="tg-t0cb">"Oh my gosh! Are we really going to the Maldives? That’s unbelievable!" Jennie squealed.</td>
+    <td class="tg-hxmt"><audio controls><source src="https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen-TTS/sample/tts_sample/Chelsie_EN.wav" type="audio/wav"></audio></td>
+  </tr>
+  <tr>
+    <td class="tg-t0cb" rowspan="2"><span style="color: #1F1F1F; backgroundColor: #FFF">Serena</span></td>
+    <td class="tg-t0cb">小狗，么么么么么，你快看它，它好可爱。哇，它倒立了是不是，太厉害了！好呀，我们要不要用狗粮把它拐回家，嗯？</td>
+    <td class="tg-hxmt"><audio controls><source src="https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen-TTS/sample/tts_sample/Serena_ZH.wav" type="audio/wav"></audio></td>
+  </tr>
+  <tr>
+    <td class="tg-t0cb">You can call me directly at 4257037344 or my cell 4254447474 or send me a meeting request with all the appropriate information.</td>
+    <td class="tg-hxmt"><audio controls><source src="https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen-TTS/sample/tts_sample/Serena_EN.wav" type="audio/wav"></audio></td>
+  </tr>
+</tbody></table>
+<h2 id="how-to-use">How to use</h2>
+<p>Using Qwen-TTS with Qwen API is simple. We demonstrate a code snippet for you to play with it below:</p>
+<pre><code class="language-python">import os
+import requests
+import dashscope
+
+
+def get_api_key():
+    api_key = os.getenv("DASHSCOPE_API_KEY")
+    if not api_key:
+        raise EnvironmentError("DASHSCOPE_API_KEY environment variable not set.")
+    return api_key
+
+
+def synthesize_speech(text, voice="Dylan", model="qwen-tts-latest"):
+    api_key = get_api_key()
+    try:
+        response = dashscope.audio.qwen_tts.SpeechSynthesizer.call(
+            model=model,
+            api_key=api_key,
+            text=text,
+            voice=voice,
+        )
+        
+        # Check if response is None
+        if response is None:
+            raise RuntimeError("API call returned None response")
+        
+        # Check if response.output is None
+        if response.output is None:
+            raise RuntimeError("API call failed: response.output is None")
+        
+        # Check if response.output.audio exists
+        if not hasattr(response.output, 'audio') or response.output.audio is None:
+            raise RuntimeError("API call failed: response.output.audio is None or missing")
+        
+        audio_url = response.output.audio["url"]
+        return audio_url
+    except Exception as e:
+        raise RuntimeError(f"Speech synthesis failed: {e}")
+
+
+def download_audio(audio_url, save_path):
+    try:
+        resp = requests.get(audio_url, timeout=10)
+        resp.raise_for_status()
+        with open(save_path, 'wb') as f:
+            f.write(resp.content)
+        print(f"Audio file saved to: {save_path}")
+    except Exception as e:
+        raise RuntimeError(f"Download failed: {e}")
+
+
+def main():
+    text = (
+        """哟，您猜怎么着？今儿个我看NBA，库里投篮跟闹着玩似的，张手就来，篮筐都得喊他“亲爹”了"""
+    )
+    save_path = "downloaded_audio.wav"
+    try:
+        audio_url = synthesize_speech(text)
+        download_audio(audio_url, save_path)
+    except Exception as e:
+        print(e)
+
+
+if __name__ == "__main__":
+    main()
+</code></pre>
+<h2 id="summary">Summary</h2>
+<p>Qwen-TTS is a text-to-speech model that supports Chinese-English bilingual synthesis and several Chinese dialects. It aims to produce natural and expressive speech, and is available via API. While it shows promising results, we look forward to further improvements and broader language support in the future.</p>d:["$","main",null,{"children":["$","article",null,{"className":"blog-article","children":[["$","$L5",null,{"className":"blog-back","href":"/blog","children":"← Blog"}],["$","div",null,{"className":"blog-post-meta","children":["June 26, 2025"," ","·"," ",6," min read"]}],["$","h1",null,{"className":"blog-post-title","children":"Time to Speak Some Dialects, Qwen-TTS!"}],["$","p",null,{"className":"blog-post-lede","children":"Here we introduce the latest update of **Qwen-TTS** (`qwen-tts-latest` or `qwen-tts-2025-05-22`) through [Qwen API](https://help.aliyun.com/zh/model-studio/qwen-tts) . Trained on a large-scale dataset encompassing over millions of hours of speech, Qwen-TTS achieves human-level naturalness and expres"}],["$","div",null,{"className":"blog-prose","dangerouslySetInnerHTML":{"__html":"$17"}}]]}]}]
+13:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+f:null
+11:{"metadata":[["$","title","0",{"children":"Time to Speak Some Dialects, Qwen-TTS! — Zen Blog"}],["$","meta","1",{"name":"description","content":"Here we introduce the latest update of **Qwen-TTS** (`qwen-tts-latest` or `qwen-tts-2025-05-22`) through [Qwen API](https://help.aliyun.com/zh/model-studio/qwen-tts) . Trained on a large-scale dataset encompassing over millions of hours of speech, Qwen-TTS achieves human-level naturalness and expres"}],["$","meta","2",{"name":"keywords","content":"AI, LLM, Agentic AI, Code Generation, Zen Coder, Multimodal, Open Source, Machine Learning"}]],"error":null,"digest":"$undefined"}
+16:"$11:metadata"

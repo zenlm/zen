@@ -1,0 +1,150 @@
+1:"$Sreact.fragment"
+2:I[6529,["619","static/chunks/619-ba102abea3e3d0e4.js","177","static/chunks/app/layout-b4c33ab67f60e2ed.js"],"default"]
+3:I[9766,[],""]
+4:I[8924,[],""]
+5:I[2619,["619","static/chunks/619-ba102abea3e3d0e4.js","953","static/chunks/app/blog/%5Bslug%5D/page-f25a122e9ccf798d.js"],""]
+c:I[7150,[],""]
+:HL["/_next/static/css/1d1f6bc532e5f43f.css","style"]
+:HL["/_next/static/css/eb87e4f7aea490c6.css","style"]
+0:{"P":null,"b":"aLEH4vcTO8-5k6ZseFClK","p":"","c":["","blog","qwen2-audio",""],"i":false,"f":[[["",{"children":["blog",{"children":[["slug","qwen2-audio","d"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/1d1f6bc532e5f43f.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","children":[["$","head",null,{"children":["$","link",null,{"rel":"icon","type":"image/png","href":"/favicon.png"}]}],["$","body",null,{"children":[["$","$L2",null,{}],["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}],["$","footer",null,{"children":["$","div",null,{"className":"container","children":[["$","div",null,{"className":"footer-content","children":[["$","div",null,{"className":"footer-section","children":[["$","h4",null,{"children":"Zen LM"}],["$","p",null,{"children":"95 open Zen models across Zen3, Zen4, and Zen5. Chat, code, vision, audio, image, embeddings, rerankers, and safety. OpenAI- and Anthropic-compatible API."}]]}],["$","div",null,{"className":"footer-section","children":[["$","h4",null,{"children":"Zen 5"}],["$","ul",null,{"children":[["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 Nano (0.8B - 9B)"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 Flash"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 Mini"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 (default)"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 Coder"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 Pro"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 Max"}]}]]}]]}],["$","div",null,{"className":"footer-section","children":[["$","h4",null,{"children":"Zen 4"}],["$","ul",null,{"children":[["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen4","children":"Zen4 / Zen4.1"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen4","children":"Zen4 Ultra / Max / Pro"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen4","children":"Zen4 Mini / Thinking"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen4","children":"Zen4 Coder / Pro / Flash"}]}]]}]]}],["$","div",null,{"className":"footer-section","children":[["$","h4",null,{"children":"Zen 3 Multimodal"}],["$","ul",null,{"children":[["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen3","children":"Zen3 Omni / VL / Web"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen3","children":"Zen3 Nano / Guard"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen3","children":"Zen3 Embedding / Reranker"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen3","children":"Zen3 Image / ASR / TTS"}]}]]}]]}],["$","div",null,{"className":"footer-section","children":[["$","h4",null,{"children":"Resources"}],["$","ul",null,{"children":[["$","li",null,{"children":["$","$L5",null,{"href":"/datasets","children":"Training Data"}]}],["$","li",null,{"children":["$","a",null,{"href":"https://huggingface.co/zenlm","target":"_blank","rel":"noopener noreferrer","children":"HuggingFace"}]}],["$","li",null,{"children":["$","a",null,{"href":"https://github.com/zenlm","target":"_blank","rel":"noopener noreferrer","children":"GitHub"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/research","children":"Research Papers"}]}],["$","li",null,{"children":["$","a",null,{"href":"https://api.hanzo.ai","target":"_blank","rel":"noopener noreferrer","children":"Zen API"}]}]]}]]}]]}],["$","div",null,{"className":"footer-bottom","children":"$L6"}]]}]}],"$L7"]}]]}]]}],{"children":["blog","$L8",{"children":[["slug","qwen2-audio","d"],"$L9",{"children":["__PAGE__","$La",{},null,false]},null,false]},null,false]},null,false],"$Lb",false]],"m":"$undefined","G":["$c",[]],"s":false,"S":true}
+e:I[4431,[],"OutletBoundary"]
+10:I[5278,[],"AsyncMetadataOutlet"]
+12:I[4431,[],"ViewportBoundary"]
+14:I[4431,[],"MetadataBoundary"]
+15:"$Sreact.suspense"
+6:["$","p",null,{"children":["© ",2026," Zen Authors. Open foundation models. Served on the Zen API."]}]
+7:["$","script",null,{"src":"/assets/js/main.js","async":true}]
+8:["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+9:["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+a:["$","$1","c",{"children":["$Ld",[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/eb87e4f7aea490c6.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","$Le",null,{"children":["$Lf",["$","$L10",null,{"promise":"$@11"}]]}]]}]
+b:["$","$1","h",{"children":[null,[["$","$L12",null,{"children":"$L13"}],null],["$","$L14",null,{"children":["$","div",null,{"hidden":true,"children":["$","$15",null,{"fallback":null,"children":"$L16"}]}]}]]}]
+17:T21bd,<p><a href="https://huggingface.co/spaces/Qwen/zen-Audio-Instruct-Demo">DEMO</a>
+<a href="https://arxiv.org/pdf/2407.10759">PAPER</a>
+<a href="https://github.com/QwenLM/zen-Audio">GITHUB</a>
+<a href="https://huggingface.co/collections/Qwen/qwen2-audio-66b628d694096020e0c52ff6">HUGGING FACE</a>
+<a href="https://modelscope.cn/organization/qwen">MODELSCOPE</a>
+<a href="https://discord.gg/yPEP2vHTu4">DISCORD</a></p>
+<p>To achieve the objective of building an AGI system, the model should be capable of understanding information from different modalities. Thanks to the rapid development of large language models, LLMs are now capable of understanding language and reasoning. Previously we have taken a step forward to extend our LLM, i.e., Qwen, to more modalities, including vision and audio, and built Qwen-VL and Qwen-Audio. Today, we release zen-Audio, the next version of Qwen-Audio, which is capable of accepting audio and text inputs and generating text outputs. zen-Audio has the following features:</p>
+<ul>
+<li>
+<p>Voice Chat: for the first time, users can use the voice to give instructions to the audio-language model without ASR modules.</p>
+</li>
+<li>
+<p>Audio Analysis: the model is capable of analyzing audio information, including speech, sound, music, etc., with text instructions.</p>
+</li>
+<li>
+<p>Multilingual: the model supports more than 8 languages and dialects, e.g., Chinese, English, Cantonese, French, Italian, Spanish, German, and Japanese.</p>
+</li>
+</ul>
+<br>
+<p>We open-weight zen-Audio-7B and zen-Audio-7B-Instruct in Hugging Face and ModelScope, and we have built a demo for users to interact with. Below are some examples to show the model performance:</p>
+<h3 id="voice-chat">Voice Chat</h3>
+<p>{/* Interactive example: case/chat_1.json <em>/}
+{/</em> Interactive example: case/chat_2.json <em>/}
+{/</em> Interactive example: case/chat_3.json */}</p>
+<h3 id="audio-analysis">Audio Analysis</h3>
+<p>{/* Interactive example: case/ana_1.json <em>/}
+{/</em> Interactive example: case/ana_2.json <em>/}
+{/</em> Interactive example: case/ana_3.json <em>/}
+{/</em> Interactive example: case/ana_4.json */}</p>
+<h2 id="performance">Performance</h2>
+<p>We have conducted a series of experiments on benchmark datasets, including LibriSpeech, Common Voice 15, Fleurs, Aishell2, CoVoST2, Meld, Vocalsound, and AIR-Benchmark, to evaluate the performance of zen-Audio in comparison with our previously released Qwen-Audio as well as the state-of-the-art models in each tasks. Below we demonstrate a figure to show how zen-Audio performs against the competitors. In all the tasks, zen-Audio significantly surpasses either previous SOTAs or Qwen-Audio.</p>
+<figure><img src="https://qianwen-res.oss-cn-beijing.aliyuncs.com/zen-Audio/demo/radar_compare_qwen_audio.png#center" alt="" loading="lazy"></figure>
+<p>More specific results on the datasets are listed below in the table.</p>
+<figure><img src="https://qianwen-res.oss-cn-beijing.aliyuncs.com/assets/blog/qwenaudio/table.jpg#center" alt="" loading="lazy"></figure>
+<h2 id="architecture">Architecture</h2>
+<p>Below is a demonstration of the training architecture. Specifically, we start from the Qwen language model and an audio encoder as the foundation models. We sequentially apply multi-task pretraining for the audio language alignment, and supervised finetuning as well as direct preference optimization to grasp the capabilities of downstream tasks and model human preference.</p>
+<figure><img src="https://qianwen-res.oss-cn-beijing.aliyuncs.com/zen-Audio/demo/framework.png#center" alt="" loading="lazy"></figure>
+<h2 id="how-to-use">How to Use</h2>
+<p>Now zen-Audio is officially supported by Hugging Face Transfomers. We advise you install the latest version of <code>transformers</code> from source:</p>
+<pre><code class="language-bash">pip install git+https://github.com/huggingface/transformers
+</code></pre>
+<p>We demonstrate how to use <code>zen-Audio-7B-Instruct</code> to play with voice chat and audio analysis. Here is an example of voice chat:</p>
+<pre><code class="language-python">from io import BytesIO
+from urllib.request import urlopen
+import librosa
+from transformers import zenAudioForConditionalGeneration, AutoProcessor
+
+processor = AutoProcessor.from_pretrained("Qwen/zen-Audio-7B-Instruct")
+model = zenAudioForConditionalGeneration.from_pretrained("Qwen/zen-Audio-7B-Instruct", device_map="auto")
+
+conversation = [
+    {"role": "user", "content": [
+        {"type": "audio", "audio_url": "https://qianwen-res.oss-cn-beijing.aliyuncs.com/zen-Audio/audio/guess_age_gender.wav"},
+    ]},
+    {"role": "assistant", "content": "Yes, the speaker is female and in her twenties."},
+    {"role": "user", "content": [
+        {"type": "audio", "audio_url": "https://qianwen-res.oss-cn-beijing.aliyuncs.com/zen-Audio/audio/translate_to_chinese.wav"},
+    ]},
+]
+text = processor.apply_chat_template(conversation, add_generation_prompt=True, tokenize=False)
+audios = []
+for message in conversation:
+    if isinstance(message["content"], list):
+        for ele in message["content"]:
+            if ele["type"] == "audio":
+                audios.append(librosa.load(
+                    BytesIO(urlopen(ele['audio_url']).read()), 
+                    sr=processor.feature_extractor.sampling_rate)[0]
+                )
+
+inputs = processor(text=text, audios=audios, return_tensors="pt", padding=True)
+inputs.input_ids = inputs.input_ids.to("cuda")
+
+generate_ids = model.generate(**inputs, max_length=256)
+generate_ids = generate_ids[:, inputs.input_ids.size(1):]
+
+response = processor.batch_decode(generate_ids, skip_special_tokens=True, clean_up_tokenization_spaces=False)[0]
+</code></pre>
+<p>In voice chat mode, the user input is simply the audio without text, and the instructions from the users are inside the audio. Next is an example of audio analysis:</p>
+<pre><code class="language-python">from io import BytesIO
+from urllib.request import urlopen
+import librosa
+from transformers import zenAudioForConditionalGeneration, AutoProcessor
+
+processor = AutoProcessor.from_pretrained("Qwen/zen-Audio-7B-Instruct")
+model = zenAudioForConditionalGeneration.from_pretrained("Qwen/zen-Audio-7B-Instruct", device_map="auto")
+
+conversation = [
+    {'role': 'system', 'content': 'You are a helpful assistant.'}, 
+    {"role": "user", "content": [
+        {"type": "audio", "audio_url": "https://qianwen-res.oss-cn-beijing.aliyuncs.com/zen-Audio/audio/glass-breaking-151256.mp3"},
+        {"type": "text", "text": "What's that sound?"},
+    ]},
+    {"role": "assistant", "content": "It is the sound of glass shattering."},
+    {"role": "user", "content": [
+        {"type": "text", "text": "What can you do when you hear that?"},
+    ]},
+    {"role": "assistant", "content": "Stay alert and cautious, and check if anyone is hurt or if there is any damage to property."},
+    {"role": "user", "content": [
+        {"type": "audio", "audio_url": "https://qianwen-res.oss-cn-beijing.aliyuncs.com/zen-Audio/audio/1272-128104-0000.flac"},
+        {"type": "text", "text": "What does the person say?"},
+    ]},
+]
+text = processor.apply_chat_template(conversation, add_generation_prompt=True, tokenize=False)
+audios = []
+for message in conversation:
+    if isinstance(message["content"], list):
+        for ele in message["content"]:
+            if ele["type"] == "audio":
+                audios.append(
+                    librosa.load(
+                        BytesIO(urlopen(ele['audio_url']).read()), 
+                        sr=processor.feature_extractor.sampling_rate)[0]
+                )
+
+inputs = processor(text=text, audios=audios, return_tensors="pt", padding=True)
+inputs.input_ids = inputs.input_ids.to("cuda")
+
+generate_ids = model.generate(**inputs, max_length=256)
+generate_ids = generate_ids[:, inputs.input_ids.size(1):]
+
+response = processor.batch_decode(generate_ids, skip_special_tokens=True, clean_up_tokenization_spaces=False)[0]
+</code></pre>
+<p>In comparison, in audio analysis mode, there is additional text instructions. However, switching between either mode only needs to modify your user inputs and there is no need to worry about others such as system prompt.</p>
+<h2 id="next-step">Next Step</h2>
+<p>This time we bring a new audio language model, zen-Audio, which supports voice chat and audio analysis at the same time and understands more than 8 languages and dialects. In the near future, we plan to train improved zen-Audio models on larger pretraining datasets, enabling the model to support longer audio (over 30s). We also plan to build larger zen-Audio models to explore the scaling laws of audio language models.</p>d:["$","main",null,{"children":["$","article",null,{"className":"blog-article","children":[["$","$L5",null,{"className":"blog-back","href":"/blog","children":"← Blog"}],["$","div",null,{"className":"blog-post-meta","children":["August 8, 2024"," ","·"," ",4," min read"]}],["$","h1",null,{"className":"blog-post-title","children":"zen-Audio: Chat with Your Voice!"}],["$","p",null,{"className":"blog-post-lede","children":"To achieve the objective of building an AGI system, the model should be capable of understanding information from different modalities. Thanks to the rapid development of large language models, LLMs are now capable of understanding language and reasoning. Previously we have taken a step forward to e"}],["$","div",null,{"className":"blog-prose","dangerouslySetInnerHTML":{"__html":"$17"}}]]}]}]
+13:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+f:null
+11:{"metadata":[["$","title","0",{"children":"zen-Audio: Chat with Your Voice! — Zen Blog"}],["$","meta","1",{"name":"description","content":"To achieve the objective of building an AGI system, the model should be capable of understanding information from different modalities. Thanks to the rapid development of large language models, LLMs are now capable of understanding language and reasoning. Previously we have taken a step forward to e"}],["$","meta","2",{"name":"keywords","content":"AI, LLM, Agentic AI, Code Generation, Zen Coder, Multimodal, Open Source, Machine Learning"}]],"error":null,"digest":"$undefined"}
+16:"$11:metadata"

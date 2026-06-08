@@ -1,0 +1,237 @@
+1:"$Sreact.fragment"
+2:I[6529,["619","static/chunks/619-ba102abea3e3d0e4.js","177","static/chunks/app/layout-b4c33ab67f60e2ed.js"],"default"]
+3:I[9766,[],""]
+4:I[8924,[],""]
+5:I[2619,["619","static/chunks/619-ba102abea3e3d0e4.js","953","static/chunks/app/blog/%5Bslug%5D/page-f25a122e9ccf798d.js"],""]
+c:I[7150,[],""]
+:HL["/_next/static/css/1d1f6bc532e5f43f.css","style"]
+:HL["/_next/static/css/eb87e4f7aea490c6.css","style"]
+0:{"P":null,"b":"aLEH4vcTO8-5k6ZseFClK","p":"","c":["","blog","qwen-moe",""],"i":false,"f":[[["",{"children":["blog",{"children":[["slug","qwen-moe","d"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/1d1f6bc532e5f43f.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","children":[["$","head",null,{"children":["$","link",null,{"rel":"icon","type":"image/png","href":"/favicon.png"}]}],["$","body",null,{"children":[["$","$L2",null,{}],["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}],["$","footer",null,{"children":["$","div",null,{"className":"container","children":[["$","div",null,{"className":"footer-content","children":[["$","div",null,{"className":"footer-section","children":[["$","h4",null,{"children":"Zen LM"}],["$","p",null,{"children":"95 open Zen models across Zen3, Zen4, and Zen5. Chat, code, vision, audio, image, embeddings, rerankers, and safety. OpenAI- and Anthropic-compatible API."}]]}],["$","div",null,{"className":"footer-section","children":[["$","h4",null,{"children":"Zen 5"}],["$","ul",null,{"children":[["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 Nano (0.8B - 9B)"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 Flash"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 Mini"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 (default)"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 Coder"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 Pro"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 Max"}]}]]}]]}],["$","div",null,{"className":"footer-section","children":[["$","h4",null,{"children":"Zen 4"}],["$","ul",null,{"children":[["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen4","children":"Zen4 / Zen4.1"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen4","children":"Zen4 Ultra / Max / Pro"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen4","children":"Zen4 Mini / Thinking"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen4","children":"Zen4 Coder / Pro / Flash"}]}]]}]]}],["$","div",null,{"className":"footer-section","children":[["$","h4",null,{"children":"Zen 3 Multimodal"}],["$","ul",null,{"children":[["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen3","children":"Zen3 Omni / VL / Web"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen3","children":"Zen3 Nano / Guard"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen3","children":"Zen3 Embedding / Reranker"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen3","children":"Zen3 Image / ASR / TTS"}]}]]}]]}],["$","div",null,{"className":"footer-section","children":[["$","h4",null,{"children":"Resources"}],["$","ul",null,{"children":[["$","li",null,{"children":["$","$L5",null,{"href":"/datasets","children":"Training Data"}]}],["$","li",null,{"children":["$","a",null,{"href":"https://huggingface.co/zenlm","target":"_blank","rel":"noopener noreferrer","children":"HuggingFace"}]}],["$","li",null,{"children":["$","a",null,{"href":"https://github.com/zenlm","target":"_blank","rel":"noopener noreferrer","children":"GitHub"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/research","children":"Research Papers"}]}],["$","li",null,{"children":["$","a",null,{"href":"https://api.hanzo.ai","target":"_blank","rel":"noopener noreferrer","children":"Zen API"}]}]]}]]}]]}],["$","div",null,{"className":"footer-bottom","children":"$L6"}]]}]}],"$L7"]}]]}]]}],{"children":["blog","$L8",{"children":[["slug","qwen-moe","d"],"$L9",{"children":["__PAGE__","$La",{},null,false]},null,false]},null,false]},null,false],"$Lb",false]],"m":"$undefined","G":["$c",[]],"s":false,"S":true}
+e:I[4431,[],"OutletBoundary"]
+10:I[5278,[],"AsyncMetadataOutlet"]
+12:I[4431,[],"ViewportBoundary"]
+14:I[4431,[],"MetadataBoundary"]
+15:"$Sreact.suspense"
+6:["$","p",null,{"children":["© ",2026," Zen Authors. Open foundation models. Served on the Zen API."]}]
+7:["$","script",null,{"src":"/assets/js/main.js","async":true}]
+8:["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+9:["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+a:["$","$1","c",{"children":["$Ld",[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/eb87e4f7aea490c6.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","$Le",null,{"children":["$Lf",["$","$L10",null,{"promise":"$@11"}]]}]]}]
+b:["$","$1","h",{"children":[null,[["$","$L12",null,{"children":"$L13"}],null],["$","$L14",null,{"children":["$","div",null,{"hidden":true,"children":["$","$15",null,{"fallback":null,"children":"$L16"}]}]}]]}]
+17:T34ca,<p><a href="https://github.com/QwenLM/Qwen1.5">GITHUB</a>
+<a href="https://huggingface.co/Qwen">HUGGING FACE</a>
+<a href="https://modelscope.cn/organization/qwen">MODELSCOPE</a>
+<a href="https://huggingface.co/spaces/Qwen/qwen1.5-MoE-A2.7B-Chat-demo">DEMO</a>
+<a href="https://discord.gg/yPEP2vHTu4">DISCORD</a></p>
+<h1 id="introduction">Introduction</h1>
+<p>Since the surge in interest sparked by Mixtral, research on mixture-of-expert (MoE) models has gained significant momentum. Both researchers and practitioners are keenly interested in understanding how to effectively train such models and assessing their efficiency and effectiveness. Today, we introduce Qwen1.5-MoE-A2.7B, a small MoE model with only 2.7 billion activated parameters yet matching the performance of state-of-the-art 7B models like Mistral 7B and Qwen1.5-7B.</p>
+<p>Compared to Qwen1.5-7B, which contains 6.5 billion non-embedding parameters, Qwen1.5-MoE-A2.7B contains only 2.0 billion non-embedding parameters, approximately one-third of Qwen1.5-7B's size. Notably, it achieves a 75% decrease in training expenses and accelerates inference speed by a factor of 1.74, offering substantial improvements in resource utilization without compromising performance.</p>
+<figure><img src="https://qianwen-res.oss-accelerate.aliyuncs.com/assets/blog/qwen1.5/qwen-moe.jpg#center" alt="" loading="lazy"></figure>
+<h1 id="architecture">Architecture</h1>
+<p>We build the Qwen1.5-MoE models with a specially designed MoE architecture. Typically, as seen in methods like Mixtral, MoE layers within each transformer block employ eight experts and utilize a top-2 gating strategy for routing purposes. This configuration, while straightforward and efficacious, presents ample scope for enhancement. Consequently, through an extensive series of experiments, we have introduced several modifications to this architecture:</p>
+<ul>
+<li>Finegrained experts</li>
+<li>Initialization, which we call it "upcycling"</li>
+<li>Routing mechanism, with shared and routing experts
+<br><br></li>
+</ul>
+<p>Previous research projects such as DeepSeek-MoE and DBRX have demonstrated the effectiveness of using fine-grained experts. Conventionally, when transitioning from a standard FFN layer to a Mixture-of-Experts (MoE) layer, one merely replicates the FFN multiple times to create multiple experts. However, in the context of fine-grained experts, the goal is to generate a larger number of experts without increasing the parameter count. To accomplish this, we partition a single FFN into several segments, each serving as an individual expert. This is a more nuanced approach to constructing experts. We have identified an optimal configuration with a total of 64 experts, representing an 8-time increase compared to the conventional MoE setup of 8 experts.</p>
+<p>The initialization stage of the model is critical. Our initial experiments suggest that training a MoE model from scratch may prove inefficient and challenging to elevate it to the anticipated peak performance. Instead, we start by repurposing our existing Qwen-1.8B, transforming it into Qwen1.5-MoE-A2.7B. A noteworthy finding is that introducing randomness during initialization significantly expedites convergence and results in superior overall performance throughout the pre-training process.</p>
+<p>An essential aspect deserving attention is the routing methodology employed. Presently, there is a growing trend towards using shared and routing-specific experts within the MoE layer. To view it from a broader perspective, this is a generalized MoE routing approach, as having zero shared experts effectively reduces to the conventional MoE routing setup. In the case of Qwen1.5-MoE-A2.7B model, we have incorporated 4 shared experts to be always activated alongside 60 routing experts with 4 to be activated. This configuration offers a more adaptable method for constructing the MoE routing mechanism, providing greater flexibility and efficiency.</p>
+<h1 id="performance">Performance</h1>
+<p>In order to thoroughly assess and showcase the capabilities and superiority of our newly developed model, we have conducted extensive evaluations across various benchmark datasets for both the base and chat models. For the base model, we evaluated its performance on 3 benchmarks: MMLU, GSM8K, and HumanEval for evaluating language understanding, mathematics, and coding. Additionally, to gauge its multilingual proficiency, we followed the evaluation protocol of Qwen1.5 and tested it on several benchmarks that spanned diverse domains such as exams, understanding, math, and translation, presenting an aggregate score in the "Multilingual" column. For the chat model, rather than employing traditional benchmarks, we subjected it to testing using MT-Bench.</p>
+<p>In this comparative analysis, we juxtaposed Qwen1.5-MoE-A2.7B against top-performing 7B base models like Mistral-7B (v0.1 base and v0.2 instruct), Gemma-7B, and Qwen1.5-7B. Furthermore, we included a comparison with other MoE models of comparable parameter counts, notably DeepSeekMoE 16B. The results are summarized in the table below:</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th align="left">Model</th><th align="center">MMLU</th><th align="center">GSM8K</th><th align="center">HumanEval</th><th align="center">Multilingual</th><th align="center">MT-Bench</th></tr></thead><tbody><tr><td align="left">Mistral-7B</td><td align="center">64.1</td><td align="center">47.5</td><td align="center">27.4</td><td align="center">40.0</td><td align="center">7.60</td></tr><tr><td align="left">Gemma-7B</td><td align="center">64.6</td><td align="center">50.9</td><td align="center">32.3</td><td align="center">-</td><td align="center">-</td></tr><tr><td align="left">Qwen1.5-7B</td><td align="center">61.0</td><td align="center">62.5</td><td align="center">36.0</td><td align="center">45.2</td><td align="center">7.60</td></tr><tr><td align="left">DeepSeekMoE 16B</td><td align="center">45.0</td><td align="center">18.8</td><td align="center">26.8</td><td align="center">-</td><td align="center">6.93</td></tr><tr><td align="left">Qwen1.5-MoE-A2.7B</td><td align="center">62.5</td><td align="center">61.5</td><td align="center">34.2</td><td align="center">40.8</td><td align="center">7.17</td></tr></tbody></table>
+<p>The Qwen1.5-MoE-A2.7B model has demonstrated competitive performance akin to the top 7B models in various evaluations. Despite this parity, our analysis reveals untapped potential for enhancement in the domain of chat models specifically. As such, we are committed to furthering our research efforts towards refining the effective finetuning strategies for MoE models.</p>
+<h1 id="costs-and-efficiency">Costs and Efficiency</h1>
+<p>The training costs of MoE models deviates significantly from that of their dense counterparts. Despite a larger parameter count, MoE models' training expenses can be notably reduced due to sparsity. To better understand this, let's first delve into three key components: total number of parameters, the count of active parameters, and non-embedding parameters and make a comparison between models:</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th align="left">Model</th><th align="center">#Parameters</th><th align="center">#(Activated) Parameters</th><th align="center">#(Activated) Non-embedding parameters</th></tr></thead><tbody><tr><td align="left">Mistral-7B</td><td align="center">7.2</td><td align="center">7.2</td><td align="center">7.0</td></tr><tr><td align="left">Qwen1.5-7B</td><td align="center">7.7</td><td align="center">7.7</td><td align="center">6.4</td></tr><tr><td align="left">Gemma-7B</td><td align="center">8.5</td><td align="center">7.8</td><td align="center">7.8</td></tr><tr><td align="left">DeepSeekMoE 16B</td><td align="center">16.4</td><td align="center">2.8</td><td align="center">2.4</td></tr><tr><td align="left">Qwen1.5-MoE-A2.7B</td><td align="center">14.3</td><td align="center">2.7</td><td align="center">2.0</td></tr></tbody></table>
+<p>It is obvious that the count of non-embedding parameters of our MoE model is much smaller than those of 7B models. In our practical implementation, we have observed a remarkable reduction of 75% in training costs when using Qwen1.5-MoE-A2.7B in comparison to Qwen1.5-7B. Of particular significance is the fact that, through upcycling, the necessity for training an equivalent volume of tokens as in the original model has been eliminated. This constitutes a substantial enhancement in terms of economizing on training expenses.</p>
+<p>We have deployed both Qwen1.5-7B and Qwen1.5-MoE-A2.7B models with vLLM and conducted performance tests using a single NVIDIA A100-80G GPU. Under the experimental setup where the input token count was set at 1000 and the output tokens at 1000, we measured the performance in terms of throughput (requests processed per second) and tokens per second (TPS):</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th align="left">Model</th><th align="left">Throughput</th><th>TPS</th></tr></thead><tbody><tr><td align="left">Qwen1.5-7B-Chat</td><td align="left">1.15</td><td>2298.89</td></tr><tr><td align="left">Qwen1.5-MoE-A2.7B-Chat</td><td align="left">2.01</td><td>4010.27</td></tr></tbody></table>
+<p>The Qwen1.5-MoE-A2.7B model exhibits an impressive improvement in speed, being approximately 1.74 times faster compared to the Qwen1.5-7B model. This acceleration is primarily attributed to the fact that the MoE architecture activates a notably smaller portion of its total parameters, thereby reducing computational demands. Moreover, the integration of shared experts contributes substantially to enhancing the model's inference efficiency. Consequently, despite the increased memory requirements associated with MoE models, they demonstrate clear advantages in terms of both throughput and inference speed.</p>
+<h1 id="develop-with-qwen15-moe">Develop with Qwen1.5-MoE</h1>
+<p>To utilize the Qwen1.5-MoE model with the <code>qwen2_moe</code> implementation in Hugging Face's transformers, since the latest release does not include this feature yet, you will have to install transformers from source instead of installing it via pip or conda:</p>
+<pre><code class="language-bash">git clone https://github.com/huggingface/transformers
+cd transformers
+pip install -e .
+</code></pre>
+<p>The following step is indeed straightforward and akin to using models such as Qwen1.5, Mistral, or Llama. We demonstrate an example of the usage of Qwen1.5-MoE-A2.7B-Chat. To use the quantized model instead, you can just substitute the model name <code> Qwen1.5-MoE-A2.7B-Chat</code> with <code> Qwen1.5-MoE-A2.7B-Chat-GPTQ-Int4</code> (temporarily AWQ is not supported).</p>
+<pre><code class="language-python">from transformers import AutoModelForCausalLM, AutoTokenizer
+
+model = AutoModelForCausalLM.from_pretrained(
+    "Qwen/Qwen1.5-MoE-A2.7B-Chat-GPTQ-Int4",
+    device_map="auto"
+)
+tokenizer = AutoTokenizer.from_pretrained("Qwen/Qwen1.5-MoE-A2.7B-Chat")
+
+prompt = "Give me a short introduction to large language model."
+messages = [
+    {"role": "system", "content": "You are a helpful assistant."},
+    {"role": "user", "content": prompt}
+]
+text = tokenizer.apply_chat_template(
+    messages,
+    tokenize=False,
+    add_generation_prompt=True
+)
+model_inputs = tokenizer([text], return_tensors="pt").to(model.device)
+
+generated_ids = model.generate(
+    model_inputs.input_ids,
+    max_new_tokens=512
+)
+generated_ids = [
+    output_ids[len(input_ids):] for input_ids, output_ids in zip(model_inputs.input_ids, generated_ids)
+]
+
+response = tokenizer.batch_decode(generated_ids, skip_special_tokens=True)[0]
+</code></pre>
+<p>To use the model with vLLM, follow our fork first and then install vLLM from source as well:</p>
+<pre><code class="language-bash">git clone https://github.com/vllm-project/vllm.git
+cd vllm
+pip install -e .
+</code></pre>
+<p>Here we demonstrate an example to show how to use vLLM to build an OpenAI-API compatible interface for our model:</p>
+<pre><code class="language-shell">python -m vllm.entrypoints.openai.api_server --model Qwen/Qwen1.5-MoE-A2.7B-Chat
+</code></pre>
+<pre><code class="language-shell">curl http://localhost:8000/v1/chat/completions \
+    -H "Content-Type: application/json" \
+    -d '{
+    "model": "Qwen/Qwen1.5-MoE-A2.7B-Chat",
+    "messages": [
+    {"role": "system", "content": "You are a helpful assistant."},
+    {"role": "user", "content": "Tell me something about large language models."}
+    ]
+    }'
+</code></pre>
+<p>There remains an extensive array of tasks on our agenda, including the support of llama.cpp for GGUF files, MLX support, etc. We will continue updating the support of third-party frameworks.</p>
+<h1 id="conclusion">Conclusion</h1>
+<p>We are thrilled to introduce our pioneering MoE model, Qwen1.5-MoE-A2.7B, which achieves parity with contemporary 7B parameter models. Furthermore, we have shown substantial reductions in both training costs and inference time when compared to conventional 7B models. Our model developments underscore the vast potential of MoE models. In light of these encouraging outcomes, we remain steadfast in our commitment to advancing this technology further.</p>
+<h1 id="citation">Citation</h1>
+<pre><code>@misc{qwen_moe,
+    title = {Qwen1.5-MoE: Matching 7B Model Performance with 1/3 Activated Parameters"},
+    url = {https://qwenlm.github.io/blog/qwen-moe/},
+    author = {Qwen Team},
+    month = {February},
+    year = {2024}
+}
+</code></pre>d:["$","main",null,{"children":["$","article",null,{"className":"blog-article","children":[["$","$L5",null,{"className":"blog-back","href":"/blog","children":"← Blog"}],["$","div",null,{"className":"blog-post-meta","children":["March 27, 2024"," ","·"," ",8," min read"]}],["$","h1",null,{"className":"blog-post-title","children":"Qwen1.5-MoE: Matching 7B Model Performance with 1/3 Activated Parameters"}],["$","p",null,{"className":"blog-post-lede","children":"Since the surge in interest sparked by Mixtral, research on mixture-of-expert (MoE) models has gained significant momentum. Both researchers and practitioners are keenly interested in understanding how to effectively train such models and assessing their efficiency and effectiveness. Today, we intro"}],["$","div",null,{"className":"blog-prose","dangerouslySetInnerHTML":{"__html":"$17"}}]]}]}]
+13:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+f:null
+11:{"metadata":[["$","title","0",{"children":"Qwen1.5-MoE: Matching 7B Model Performance with 1/3 Activated Parameters — Zen Blog"}],["$","meta","1",{"name":"description","content":"Since the surge in interest sparked by Mixtral, research on mixture-of-expert (MoE) models has gained significant momentum. Both researchers and practitioners are keenly interested in understanding how to effectively train such models and assessing their efficiency and effectiveness. Today, we intro"}],["$","meta","2",{"name":"keywords","content":"AI, LLM, Agentic AI, Code Generation, Zen Coder, Multimodal, Open Source, Machine Learning"}]],"error":null,"digest":"$undefined"}
+16:"$11:metadata"

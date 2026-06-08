@@ -44,7 +44,7 @@ const NAV_MENUS: NavMenu[] = [
     items: [
       { label: 'Research Papers', description: 'Technical reports across the Zen family', href: '/research' },
       { label: 'Papers Archive', description: 'Full paper archive — papers.zenlm.org', href: 'https://papers.zenlm.org', external: true },
-      { label: 'Blog', description: 'Releases and deep dives — blog.zenlm.org', href: 'https://blog.zenlm.org', external: true },
+      { label: 'Blog', description: 'Research notes, deep dives, and releases', href: '/blog' },
     ],
   },
 ];
@@ -124,6 +124,9 @@ export default function Header() {
                   </div>
                 </div>
               ))}
+              <Link href="/blog" className={isActive('/blog') ? 'active' : ''}>
+                Blog
+              </Link>
             </div>
             <div className="logo-links">
               <a href="https://github.com/zenlm" target="_blank" rel="noopener noreferrer" className="icon-link" title="GitHub">

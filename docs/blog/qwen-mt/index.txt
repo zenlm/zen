@@ -1,0 +1,260 @@
+1:"$Sreact.fragment"
+2:I[6529,["619","static/chunks/619-ba102abea3e3d0e4.js","177","static/chunks/app/layout-b4c33ab67f60e2ed.js"],"default"]
+3:I[9766,[],""]
+4:I[8924,[],""]
+5:I[2619,["619","static/chunks/619-ba102abea3e3d0e4.js","953","static/chunks/app/blog/%5Bslug%5D/page-f25a122e9ccf798d.js"],""]
+c:I[7150,[],""]
+:HL["/_next/static/css/1d1f6bc532e5f43f.css","style"]
+:HL["/_next/static/css/eb87e4f7aea490c6.css","style"]
+0:{"P":null,"b":"aLEH4vcTO8-5k6ZseFClK","p":"","c":["","blog","qwen-mt",""],"i":false,"f":[[["",{"children":["blog",{"children":[["slug","qwen-mt","d"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/1d1f6bc532e5f43f.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","children":[["$","head",null,{"children":["$","link",null,{"rel":"icon","type":"image/png","href":"/favicon.png"}]}],["$","body",null,{"children":[["$","$L2",null,{}],["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}],["$","footer",null,{"children":["$","div",null,{"className":"container","children":[["$","div",null,{"className":"footer-content","children":[["$","div",null,{"className":"footer-section","children":[["$","h4",null,{"children":"Zen LM"}],["$","p",null,{"children":"95 open Zen models across Zen3, Zen4, and Zen5. Chat, code, vision, audio, image, embeddings, rerankers, and safety. OpenAI- and Anthropic-compatible API."}]]}],["$","div",null,{"className":"footer-section","children":[["$","h4",null,{"children":"Zen 5"}],["$","ul",null,{"children":[["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 Nano (0.8B - 9B)"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 Flash"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 Mini"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 (default)"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 Coder"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 Pro"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 Max"}]}]]}]]}],["$","div",null,{"className":"footer-section","children":[["$","h4",null,{"children":"Zen 4"}],["$","ul",null,{"children":[["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen4","children":"Zen4 / Zen4.1"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen4","children":"Zen4 Ultra / Max / Pro"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen4","children":"Zen4 Mini / Thinking"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen4","children":"Zen4 Coder / Pro / Flash"}]}]]}]]}],["$","div",null,{"className":"footer-section","children":[["$","h4",null,{"children":"Zen 3 Multimodal"}],["$","ul",null,{"children":[["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen3","children":"Zen3 Omni / VL / Web"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen3","children":"Zen3 Nano / Guard"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen3","children":"Zen3 Embedding / Reranker"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen3","children":"Zen3 Image / ASR / TTS"}]}]]}]]}],["$","div",null,{"className":"footer-section","children":[["$","h4",null,{"children":"Resources"}],["$","ul",null,{"children":[["$","li",null,{"children":["$","$L5",null,{"href":"/datasets","children":"Training Data"}]}],["$","li",null,{"children":["$","a",null,{"href":"https://huggingface.co/zenlm","target":"_blank","rel":"noopener noreferrer","children":"HuggingFace"}]}],["$","li",null,{"children":["$","a",null,{"href":"https://github.com/zenlm","target":"_blank","rel":"noopener noreferrer","children":"GitHub"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/research","children":"Research Papers"}]}],["$","li",null,{"children":["$","a",null,{"href":"https://api.hanzo.ai","target":"_blank","rel":"noopener noreferrer","children":"Zen API"}]}]]}]]}]]}],["$","div",null,{"className":"footer-bottom","children":"$L6"}]]}]}],"$L7"]}]]}]]}],{"children":["blog","$L8",{"children":[["slug","qwen-mt","d"],"$L9",{"children":["__PAGE__","$La",{},null,false]},null,false]},null,false]},null,false],"$Lb",false]],"m":"$undefined","G":["$c",[]],"s":false,"S":true}
+e:I[4431,[],"OutletBoundary"]
+10:I[5278,[],"AsyncMetadataOutlet"]
+12:I[4431,[],"ViewportBoundary"]
+14:I[4431,[],"MetadataBoundary"]
+15:"$Sreact.suspense"
+6:["$","p",null,{"children":["© ",2026," Zen Authors. Open foundation models. Served on the Zen API."]}]
+7:["$","script",null,{"src":"/assets/js/main.js","async":true}]
+8:["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+9:["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+a:["$","$1","c",{"children":["$Ld",[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/eb87e4f7aea490c6.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","$Le",null,{"children":["$Lf",["$","$L10",null,{"promise":"$@11"}]]}]]}]
+b:["$","$1","h",{"children":[null,[["$","$L12",null,{"children":"$L13"}],null],["$","$L14",null,{"children":["$","div",null,{"hidden":true,"children":["$","$15",null,{"fallback":null,"children":"$L16"}]}]}]]}]
+17:T3a82,<p><a href="https://huggingface.co/spaces/Qwen/Qwen3-MT-Demo">DEMO</a>
+<a href="https://modelstudio.console.alibabacloud.com/?tab=doc#/doc/?type=model&#x26;url=https://www.alibabacloud.com/help/en/doc-detail/2840914_2.html&#x26;renderType=component&#x26;modelId=qwen-mt-turbo">API</a>
+<a href="https://discord.gg/yPEP2vHTu4">DISCORD</a></p>
+<h2 id="introduction">Introduction</h2>
+<p>Here we introduce the latest update of Qwen-MT (qwen-mt-turbo) via <a href="https://modelstudio.console.alibabacloud.com/?tab=doc#/doc/?type=model&#x26;url=https://www.alibabacloud.com/help/en/doc-detail/2840914_2.html&#x26;renderType=component&#x26;modelId=qwen-mt-turbo">Qwen API</a>. This update builds upon the powerful Qwen3, leveraging trillions multilingual and translation tokens to comprehensively enhance the model’s multilingual understanding and translation capabilities. By integrating reinforcement learning techniques, the model achieves significant improvements in translation accuracy and linguistic fluency.</p>
+<p>Key Features:</p>
+<ul>
+<li><strong>Multilingual Support for 92 Languages</strong>: Qwen-MT enables high-quality translation across 92 major official languages and prominent dialects, covering over 95% of the global population to meet diverse cross-lingual communication needs.</li>
+<li><strong>High Customizability</strong>: The new version provides advanced translation capabilities such as terminology intervention, domain prompts and translation memory. By enabling customizable prompt engineering, it delivers optimized translation performance tailored to complex, domain-specific, and mission-critical application scenarios.</li>
+<li><strong>Low Latency &#x26; Cost Efficiency</strong>: By leveraging a lightweight Mixture of Experts (MoE) architecture, Qwen-MT achieves high translation performance with faster response times and significantly reduced API costs (as low as $0.5 per million output tokens). This is particularly well-suited for high-concurrency environments and latency-sensitive applications.</li>
+</ul>
+<p><br><br></p>
+<h2 id="translation-quality">Translation Quality</h2>
+<h3 id="automatic-evaluation">Automatic Evaluation</h3>
+<p>We evaluate Qwen-MT on multi-domain translation benchmark, specifically Chinese-English and English-German translation, as well as WMT24 multilingual translation benchmark. Experimental results demonstrate that Qwen-MT significantly outperforms comparably-sized models including GPT-4.1-mini, Gemini-2.5-Flash, and Qwen3-8B. Notably, even when compared to state-of-the-art large language models such as GPT-4.1, Gemini-2.5-Pro, and Qwen3-235B-A22B, Qwen-MT maintains competitive translation quality while its optimized lightweight architecture enables rapid translation processing.</p>
+<figure><img src="https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/qwen-mt-001.jpeg" alt="" loading="lazy"></figure>
+<h3 id="human-evaluation">Human Evaluation</h3>
+<p>Automatic evaluation methods have inherent limitations, we further implemented human evaluation protocols leveraging real-world translation data across ten major languages: Chinese, English, Japanese, Korean, Thai, Arabic, Italian, Russian, Spanish, and French. Our rigorous evaluation framework involved three independent professional translators scoring each test sample, followed by systematic cross-validation procedures to ensure both objectivity and reliability of the assessment outcomes. Notably, Qwen-MT achieved superior performance metrics, demonstrating significant advantages in both acceptance rates and excellence rates, validating its exceptional translation capabilities in practical deployment scenarios.</p>
+<figure><img src="https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/qwen-mt-002.jpeg" alt="" loading="lazy"></figure>
+<figure><img src="https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/qwen-mt-003.png" alt="" loading="lazy"></figure>
+<p>Here are some translation examples：</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th align="left">Source Text</th><th align="left">Qwen-MT</th></tr></thead><tbody><tr><td align="left">Make your <strong>cubicle</strong> neat, tidy and make it a <strong>homey charm</strong>.</td><td align="left">让你的<strong>隔间</strong>整洁有序，营造出<strong>温馨舒适</strong>的氛围。</td></tr><tr><td align="left">Little study <strong>hack</strong> for <strong>y’all</strong>… do your homework/assignments the first day it was given to you… NO PROCRASTINATING!!! <strong>the day it was assigned</strong></td><td align="left">给<strong>大家</strong>一个学习小<strong>技巧</strong>……拿到作业/任务的第一天就完成它……千万别拖延！<strong>就在布置的当天完成！</strong></td></tr><tr><td align="left"><strong>Kim</strong> <strong>also</strong> attended her ex's first Donda <strong>listening party</strong> at Atlanta's Mercedes-Benz Stadium on July 22.</td><td align="left"><strong>金·卡戴珊也</strong>于7月22日出席了她前男友在亚特兰大的梅赛德斯-奔驰体育场举行的首场《Donda》专辑<strong>试听会</strong>。</td></tr><tr><td align="left">作为互联网公司搬砖的表示，用结果来推导自己的论点，真是闲得蛋疼，马后炮事后诸葛亮就别分析那么多。</td><td align="left">As a representation of <strong>working hard</strong> at an internet company, it's really <strong>annoying</strong> to use results to deduce one's own arguments. Don't overanalyze things after the fact <strong>like a hindsight expert</strong>.</td></tr><tr><td align="left"><strong>浪姐</strong>一、二季还行，挺励志的。虽然什么成团确实挺扯的，起码过程也算新鲜，可以看。后面就有点<strong>炒回锅肉</strong>的赶脚了：大家意识到了浪姐的讨论度，然后都来上浪姐，浪姐有需要继续办下去，所以就有了故取所需的<strong>赶脚</strong>。</td><td align="left">Seasons one and two of "<strong>Sister Who Makes Waves</strong>" were decent and quite inspiring. Although the idea of forming a group was indeed ridiculous, at least the process itself was fresh and worth watching. Later on, it started to <strong>feel like</strong> <strong>reheated leftovers</strong>: everyone realized the show's popularity, so they all jumped on the bandwagon. Since the show needed to continue, it <strong>felt like</strong> everything was being done for the sake of convenience.</td></tr><tr><td align="left">发言人陈斌华表示：大陆企业出品的<strong>3A游戏《黑神话：悟空》</strong>，受到<strong>岛内</strong>青年、游戏爱好者的追捧和好评。一方面是游戏本身制作精良、体验感好、趣味性强；另一方面是取材于**《西游记》<strong>的故事和人物角色，融入了大量古代建筑、东方美学、国风音乐等中华文化元素，<strong>岛内玩家</strong>很熟悉、易亲近，毕竟大家都是读着</strong>四大名著**长大的中国人。</td><td align="left">Spokesperson Chen Binhua stated: The <strong>3A game "Black Myth: Wukong"</strong> produced by a mainland company, has been enthusiastically embraced and highly praised by young people and gaming enthusiasts <strong>in Taiwan</strong>. On one hand, the game itself is well-made, offers an excellent experience, and is highly engaging. On the other hand, it draws inspiration from the story and characters of <strong>"Journey to the West,"</strong> incorporating numerous elements of traditional Chinese culture, such as ancient architecture, Eastern aesthetics, and national-style music. These elements are familiar and easily relatable to <strong>players in Taiwan</strong>, after all, they are all Chinese who grew up reading the Four Great Classical Novels.</td></tr><tr><td align="left">且夫秦欲璧，赵弗予璧，两无所曲直也。入璧而秦弗予城，曲在秦；秦出城而璧归，曲在赵。</td><td align="left">Moreover, if Qin desires the jade, and Zhao refuses to give it, neither side is at fault. If Zhao gives the jade but Qin does not provide the city, the fault lies with Qin; if Qin provides the city but the jade returns to Zhao, the fault lies with Zhao.</td></tr></tbody></table>
+<p><br><br></p>
+<h2 id="language-support">Language Support</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th align="left">Language Family</th><th align="left">Language Name</th></tr></thead><tbody><tr><td align="left">Indo-European</td><td align="left">Afrikaans, Armenian, Assamese, Asturian, Belarusian, Bengali, Bosnian, Bulgarian, Catalan, Croatian, Czech, Danish, Dutch, English, French, Galician, German, Greek, Gujarati, Hindi, Icelandic, Italian, Latvian, Lithuanian, Luxembourgish, Macedonian, Maithili, Marathi, Nepali, Norwegian Bokmål, Norwegian Nynorsk, Occitan, Odia, Polish, Portuguese, Romanian, Russian, Serbian, Sicilian, Sindhi, Sinhala, Slovak, Slovenian, Spanish, Swedish, Tosk Albanian, Ukrainian, Urdu, Venetian, Welsh, Western Persian</td></tr><tr><td align="left">Sino-Tibetan</td><td align="left">Chinese (Cantonese, Simplified, and Traditional), Burmese</td></tr><tr><td align="left">Afro-Asiatic</td><td align="left">Arabic (Standard, Egyptian, Mesopotamian, Moroccan, Najdi, North Levantine, South Levantine, Ta’izzi-Adeni, and Tunisian), Hebrew, Maltese</td></tr><tr><td align="left">Austronesian</td><td align="left">Cebuano, Indonesian, Javanese, Malay, Pangasinan, Tagalog, Waray</td></tr><tr><td align="left">Dravidian</td><td align="left">Kannada, Tamil, Telugu</td></tr><tr><td align="left">Turkic</td><td align="left">Kazakh, North Azerbaijani, Northern Uzbek, Turkish</td></tr><tr><td align="left">Tai-Kadai</td><td align="left">Thai, Lao</td></tr><tr><td align="left">Uralic</td><td align="left">Estonian, Finnish, Hungarian</td></tr><tr><td align="left">Austroasiatic</td><td align="left">Khmer, Vietnamese</td></tr><tr><td align="left">Other</td><td align="left">Basque, Georgian, Japanese, Korean, Swahili</td></tr></tbody></table>
+<p><br><br></p>
+<h2 id="how-to-use">How to use</h2>
+<p>You can easily use Qwen-MT through Qwen API. Here we take a simple scenario of translating from Chinese to English as an example.</p>
+<pre><code class="language-python">import os
+from openai import OpenAI
+
+client = OpenAI(
+    api_key=os.getenv("DASHSCOPE_API_KEY"),
+    base_url="https://dashscope-intl.aliyuncs.com/compatible-mode/v1",
+)
+
+messages = [
+    {
+        "role": "user",
+        "content": "我看到这个视频后没有笑"
+    }
+]
+
+translation_options = {
+    "source_lang": "auto",
+    "target_lang": "English"
+}
+
+completion = client.chat.completions.create(
+    model="qwen-mt-turbo",
+    messages=messages,
+    extra_body={
+        "translation_options": translation_options
+    }
+)
+
+print(completion.choices[0].message.content)
+</code></pre>
+<p>Qwen-MT supports features such as terminology intervention, domain prompts, and translation memory. For instance, in a translation scenario involves specialized terms, users can predefine key terminology pairs and inject them as parameters into the model, ensuring consistent application of user-specified lexicon throughout the output.</p>
+<pre><code class="language-python">import os
+from openai import OpenAI
+
+client = OpenAI(
+    api_key=os.getenv("DASHSCOPE_API_KEY"),
+    base_url="https://dashscope-intl.aliyuncs.com/compatible-mode/v1",
+)
+
+messages = [
+    {
+        "role": "user",
+        "content": "而这套生物传感器运用了石墨烯这种新型材料，它的目标物是化学元素，敏锐的“嗅觉”让它能更深度、准确地体现身体健康状况。"
+    }
+]
+
+translation_options = {
+    "source_lang": "Chinese",
+    "target_lang": "English",
+    "terms": [
+        {
+            "source": "生物传感器",
+            "target": "biological sensor"
+        },
+        {
+            "source": "石墨烯",
+            "target": "graphene"
+        },
+        {
+            "source": "化学元素",
+            "target": "chemical elements"
+        },
+        {
+            "source": "身体健康状况",
+            "target": "health status of the body"
+        }
+    ]
+}
+
+completion = client.chat.completions.create(
+    model="qwen-mt-turbo",
+    messages=messages,
+    extra_body={
+        "translation_options": translation_options
+    }
+)
+    
+print(completion.choices[0].message.content)
+
+# Response:
+# This biological sensor uses graphene, a new material, and its target is chemical elements. Its sensitive "nose" can more deeply and accurately reflect the health status of the body. 
+</code></pre>
+<p>Moreover, translation style must adapt to contextual nuances. For example, in legal and official contexts, formal register is imperative, whereas social media communication demands a conversational tone. To ensure appropriate stylistic adaptation, users can provide contextual details and stylistic preferences in natural language alongside their source text.</p>
+<pre><code class="language-python">import os
+from openai import OpenAI
+
+client = OpenAI(
+    api_key=os.getenv("DASHSCOPE_API_KEY"),
+    base_url="https://dashscope-intl.aliyuncs.com/compatible-mode/v1",
+)
+
+messages = [
+    {
+        "role": "user",
+        "content": "第二个SELECT语句返回一个数字，表示在没有LIMIT子句的情况下，第一个SELECT语句返回了多少行。"
+    }
+]
+
+translation_options = {
+    "source_lang": "Chinese",
+    "target_lang": "English",
+    "domains": "The sentence is from Ali Cloud IT domain. It mainly involves computer-related software development and usage methods, including many terms related to computer software and hardware. Pay attention to professional troubleshooting terminologies and sentence patterns when translating. Translate into this IT domain style."
+}
+
+completion = client.chat.completions.create(
+    model="qwen-mt-turbo",
+    messages=messages,
+    extra_body={
+        "translation_options": translation_options
+    }
+)
+    
+print(completion.choices[0].message.content)
+
+# Response:
+# The second SELECT statement returns a number that indicates how many rows were returned by the first SELECT statement without LIMIT clause.
+</code></pre>
+<p>For more advanced features, please refer to <a href="https://www.alibabacloud.com/help/en/model-studio/translation-abilities">Qwen API</a>.</p>
+<p><br><br></p>
+<h2 id="conclusion">Conclusion</h2>
+<p>Qwen-MT is an advanced machine translation model that supports translations among 92 languages. It aims to provide global users with smart, flexible, and efficient translation experience through APIs. While "faithfulness, fluency, and elegance" remains an ongoing journey filled with challenges, we are persistently exploring and improving. Looking ahead, we will continue to enhance translation accuracy and naturalness, expand coverage to more languages, ultimately dismantling language barriers to realize truly borderless communication.</p>
+<p><br><br></p>d:["$","main",null,{"children":["$","article",null,{"className":"blog-article","children":[["$","$L5",null,{"className":"blog-back","href":"/blog","children":"← Blog"}],["$","div",null,{"className":"blog-post-meta","children":["July 23, 2025"," ","·"," ",9," min read"]}],["$","h1",null,{"className":"blog-post-title","children":"Qwen-MT: Where Speed Meets Smart Translation"}],["$","p",null,{"className":"blog-post-lede","children":"Here we introduce the latest update of Qwen-MT (qwen-mt-turbo) via [Qwen API](https://modelstudio.console.alibabacloud.com/?tab=doc#/doc/?type=model&url=https://www.alibabacloud.com/help/en/doc-detail/2840914_2.html&renderType=component&modelId=qwen-mt-turbo). This update builds upon the powerful Qw"}],["$","div",null,{"className":"blog-prose","dangerouslySetInnerHTML":{"__html":"$17"}}]]}]}]
+13:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+f:null
+11:{"metadata":[["$","title","0",{"children":"Qwen-MT: Where Speed Meets Smart Translation — Zen Blog"}],["$","meta","1",{"name":"description","content":"Here we introduce the latest update of Qwen-MT (qwen-mt-turbo) via [Qwen API](https://modelstudio.console.alibabacloud.com/?tab=doc#/doc/?type=model&url=https://www.alibabacloud.com/help/en/doc-detail/2840914_2.html&renderType=component&modelId=qwen-mt-turbo). This update builds upon the powerful Qw"}],["$","meta","2",{"name":"keywords","content":"AI, LLM, Agentic AI, Code Generation, Zen Coder, Multimodal, Open Source, Machine Learning"}]],"error":null,"digest":"$undefined"}
+16:"$11:metadata"

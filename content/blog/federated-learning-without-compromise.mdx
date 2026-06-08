@@ -1,0 +1,128 @@
+---
+title: "Federated Learning Without Compromise"
+date: "2022-05-30"
+description: "Privacy-preserving machine learning that maintains model quality through novel aggregation protocols."
+author: "Zach Kelling"
+tags: ["Research", "Federated Learning", "Privacy"]
+---
+
+
+# The Privacy-Utility Tradeoff
+
+Federated learning promises to train models on distributed data without centralizing sensitive information. In practice, existing approaches force uncomfortable tradeoffs:
+
+- **Differential privacy** adds noise that degrades model quality
+- **Secure aggregation** increases communication costs
+- **Data heterogeneity** causes convergence problems
+- **Byzantine participants** can poison the model
+
+We present techniques that mitigate these tradeoffs.
+
+## Our Approach
+
+### Adaptive Clipping
+
+Standard gradient clipping uses a fixed threshold $C$:
+
+$$g_i^{clipped} = g_i \cdot \min\left(1, \frac{C}{\|g_i\|}\right)$$
+
+This destroys information when gradients naturally vary in magnitude across layers and training phases. Our adaptive approach learns per-layer, per-phase thresholds:
+
+$$C_{l,t} = \alpha \cdot \text{median}(\|g_{l,1:t}\|) + \beta \cdot \text{std}(\|g_{l,1:t}\|)$$
+
+This preserves gradient structure while bounding sensitivity.
+
+### Hierarchical Aggregation
+
+Instead of flat aggregation across all participants, we organize contributors into hierarchical clusters:
+
+```
+                    Global Model
+                        |
+           +------------+------------+
+           |            |            |
+        Region A     Region B     Region C
+           |            |            |
+        +--+--+      +--+--+      +--+--+
+        |     |      |     |      |     |
+       n1    n2     n3    n4     n5    n6
+```
+
+Benefits:
+
+1. **Reduced communication**: Nodes communicate within clusters first
+2. **Natural trust boundaries**: Clusters can enforce local policies
+3. **Improved convergence**: Intra-cluster data is more homogeneous
+
+### Byzantine-Resilient Selection
+
+We filter malicious updates using coordinate-wise median aggregation with outlier detection:
+
+$$\hat{g}_j = \text{median}\{g_{i,j} : d(g_{i,j}, \mu_j) < k \cdot \sigma_j\}$$
+
+For each coordinate $j$, we exclude updates more than $k$ standard deviations from the median. This provides Byzantine resilience without requiring honest majority assumptions.
+
+## Experimental Results
+
+We evaluated on federated CIFAR-10 with non-IID data distribution:
+
+| Method | Accuracy | Privacy Budget ($\varepsilon$) | Rounds |
+|--------|----------|-------------------------------|--------|
+| FedAvg | 82.3% | $\infty$ | 500 |
+| DP-FedAvg | 71.8% | 8.0 | 800 |
+| Ours | 79.6% | 4.0 | 550 |
+
+Our approach achieves near-baseline accuracy with stronger privacy guarantees and fewer communication rounds.
+
+## Convergence Analysis
+
+Under standard smoothness and convexity assumptions, our hierarchical aggregation converges at rate:
+
+$$\mathbb{E}[F(\bar{w}_T) - F(w^*)] \leq \mathcal{O}\left(\frac{1}{\sqrt{T}} + \frac{\sigma^2}{K} + \frac{\delta^2}{H}\right)$$
+
+Where:
+- $T$ = total rounds
+- $K$ = participants per cluster
+- $H$ = number of clusters
+- $\sigma^2$ = gradient variance
+- $\delta^2$ = inter-cluster heterogeneity
+
+The hierarchical structure reduces the effective heterogeneity term.
+
+## Implementation
+
+Our reference implementation is available under Apache 2.0:
+
+```python
+from zen_fl import FederatedTrainer, AdaptiveClipping, HierarchicalAggregator
+
+trainer = FederatedTrainer(
+    model=model,
+    clipper=AdaptiveClipping(alpha=1.0, beta=0.5),
+    aggregator=HierarchicalAggregator(n_clusters=10),
+    privacy_budget=4.0,
+)
+
+trainer.train(participants, rounds=500)
+```
+
+## Deployment Considerations
+
+Real-world federated learning faces practical challenges:
+
+1. **Stragglers**: Asynchronous aggregation handles slow participants
+2. **Dropout**: Robust aggregation tolerates missing updates
+3. **Compute heterogeneity**: Adaptive local steps match device capabilities
+4. **Bandwidth limits**: Gradient compression reduces communication
+
+Our implementation addresses each through configurable policies.
+
+## Conclusion
+
+Privacy-preserving machine learning need not sacrifice model quality. Through adaptive clipping, hierarchical aggregation, and Byzantine-resilient selection, we achieve strong privacy with minimal utility loss.
+
+The code is open. The techniques are documented. Privacy-preserving AI is achievable today.
+
+---
+
+*Full technical details in "Federated Learning Without Compromise: Practical Privacy-Preserving Aggregation" (2022).*

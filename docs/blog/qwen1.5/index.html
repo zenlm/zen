@@ -1,0 +1,1136 @@
+<!DOCTYPE html><!--aLEH4vcTO8_5k6ZseFClK--><html lang="en"><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="/_next/static/css/1d1f6bc532e5f43f.css" data-precedence="next"/><link rel="stylesheet" href="/_next/static/css/eb87e4f7aea490c6.css" data-precedence="next"/><link rel="preload" as="script" fetchPriority="low" href="/_next/static/chunks/webpack-f43ad49c79db3299.js"/><script src="/_next/static/chunks/4bd1b696-c023c6e3521b1417.js" async=""></script><script src="/_next/static/chunks/255-81ba70bd132d3eed.js" async=""></script><script src="/_next/static/chunks/main-app-6551dd01cf9d54fc.js" async=""></script><script src="/_next/static/chunks/619-ba102abea3e3d0e4.js" async=""></script><script src="/_next/static/chunks/app/layout-b4c33ab67f60e2ed.js" async=""></script><script src="/_next/static/chunks/app/blog/%5Bslug%5D/page-f25a122e9ccf798d.js" async=""></script><script src="/assets/js/main.js" async=""></script><link rel="icon" type="image/png" href="/favicon.png"/><title>Introducing Qwen1.5 — Zen Blog</title><meta name="description" content="In recent months, our focus has been on developing a &quot;good&quot; model while optimizing the developer experience. As we progress towards **Qwen1.5**, the next iteration in our Qwen series, this update arrives just before the Chinese New Year."/><meta name="keywords" content="AI, LLM, Agentic AI, Code Generation, Zen Coder, Multimodal, Open Source, Machine Learning"/><script src="/_next/static/chunks/polyfills-42372ed130431b0a.js" noModule=""></script></head><body><div hidden=""><!--$--><!--/$--></div><header><nav class="navbar"><div class="container"><div class="logo"><a href="/"><svg class="enso logo-img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="34" height="34" fill="none" role="img" aria-label="Zen ensō"><defs><linearGradient id="_R_adb_" x1="12%" y1="0%" x2="88%" y2="100%"><stop offset="0%" stop-color="#ffffff"></stop><stop offset="50%" stop-color="#d4d4d8"></stop><stop offset="100%" stop-color="#7c7c82"></stop></linearGradient></defs><path class="enso-stroke" pathLength="1" d="M58 13 C38 9 17 22 13 44 C9 68 26 89 50 90 C74 91 91 74 89 50 C88 41 87 35 84 30" stroke="url(#_R_adb_)" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"></path></svg><div class="logo-text"><h1>Zen LM</h1></div></a></div><div class="header-right"><div class="nav-links"><a class="" href="/">Home</a><div class="nav-item"><a class="" href="/models/">Models<svg class="nav-caret" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"></path></svg></a><div class="nav-dropdown"><div class="nav-dropdown-inner"><a class="dd-item" href="/models/#zen5"><div class="dd-item-text"><span class="dd-item-label">Zen5<span class="dd-tag">Latest</span></span><span class="dd-item-desc">Frontier agentic — 256K–1M context, native tool use</span></div><svg class="dd-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a><a class="dd-item" href="/models/#zen4"><div class="dd-item-text"><span class="dd-item-label">Zen4<span class="dd-tag">Stable</span></span><span class="dd-item-desc">Production chat &amp; code — MoE flagships and coders</span></div><svg class="dd-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a><a class="dd-item" href="/models/#zen3"><div class="dd-item-text"><span class="dd-item-label">Zen3</span><span class="dd-item-desc">Multimodal &amp; specialty — vision, audio, image, safety</span></div><svg class="dd-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a><a class="dd-item" href="/models/"><div class="dd-item-text"><span class="dd-item-label">All models</span><span class="dd-item-desc">Browse the full catalog — 95 open models</span></div><svg class="dd-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a></div></div></div><div class="nav-item"><a class="" href="/datasets/">Datasets<svg class="nav-caret" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"></path></svg></a><div class="nav-dropdown"><div class="nav-dropdown-inner"><a class="dd-item" href="/datasets/"><div class="dd-item-text"><span class="dd-item-label">Zen Agentic Dataset<span class="dd-tag">New</span></span><span class="dd-item-desc">10B+ tokens of real tool use and reasoning</span></div><svg class="dd-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a><a class="dd-item" href="/datasets/"><div class="dd-item-text"><span class="dd-item-label">Training Data</span><span class="dd-item-desc">Curation, sources, and methodology</span></div><svg class="dd-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a><a class="dd-item" href="https://huggingface.co/datasets/hanzoai/zen-agentic-dataset" target="_blank" rel="noopener noreferrer"><div class="dd-item-text"><span class="dd-item-label">On HuggingFace</span><span class="dd-item-desc">Download and license the datasets</span></div><svg class="dd-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a></div></div></div><div class="nav-item"><a class="" href="/research/">Research<svg class="nav-caret" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"></path></svg></a><div class="nav-dropdown"><div class="nav-dropdown-inner"><a class="dd-item" href="/research/"><div class="dd-item-text"><span class="dd-item-label">Research Papers</span><span class="dd-item-desc">Technical reports across the Zen family</span></div><svg class="dd-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a><a class="dd-item" href="https://papers.zenlm.org" target="_blank" rel="noopener noreferrer"><div class="dd-item-text"><span class="dd-item-label">Papers Archive</span><span class="dd-item-desc">Full paper archive — papers.zenlm.org</span></div><svg class="dd-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a><a class="dd-item" href="/blog/"><div class="dd-item-text"><span class="dd-item-label">Blog</span><span class="dd-item-desc">Research notes, deep dives, and releases</span></div><svg class="dd-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a></div></div></div><a class="active" href="/blog/">Blog</a></div><div class="logo-links"><a href="https://github.com/zenlm" target="_blank" rel="noopener noreferrer" class="icon-link" title="GitHub"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"></path></svg></a><a href="https://huggingface.co/zenlm" target="_blank" rel="noopener noreferrer" class="icon-link" title="HuggingFace"><svg width="28" height="28" viewBox="0 0 32 32" fill="currentColor" aria-hidden="true"><circle cx="16" cy="16" r="13" fill="#d4d4d8"></circle><circle cx="11" cy="14" r="2" fill="#18181b"></circle><circle cx="21" cy="14" r="2" fill="#18181b"></circle><path d="M11 19 Q16 24 21 19" stroke="#18181b" stroke-width="1.6" fill="none" stroke-linecap="round"></path></svg></a></div><div class="nav-item try-item"><a href="https://hanzo.chat/?model=zen5" target="_blank" rel="noopener noreferrer" class="btn-try">Try Zen<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a><div class="nav-dropdown nav-dropdown-right"><div class="nav-dropdown-inner"><a class="dd-item" href="https://hanzo.chat/?model=zen5" target="_blank" rel="noopener noreferrer"><div class="dd-item-text"><span class="dd-item-label">Zen5<span class="dd-tag">Latest</span></span><span class="dd-item-desc">Chat with the frontier model — live now</span></div><svg class="dd-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a><a class="dd-item" href="https://hanzo.chat/?model=zen4" target="_blank" rel="noopener noreferrer"><div class="dd-item-text"><span class="dd-item-label">Zen4<span class="dd-tag">Stable</span></span><span class="dd-item-desc">Chat with the production family</span></div><svg class="dd-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a><a class="dd-item" href="https://api.hanzo.ai" target="_blank" rel="noopener noreferrer"><div class="dd-item-text"><span class="dd-item-label">Zen API</span><span class="dd-item-desc">OpenAI- &amp; Anthropic-compatible. One key.</span></div><svg class="dd-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a><a class="dd-item" href="https://hanzo.chat" target="_blank" rel="noopener noreferrer"><div class="dd-item-text"><span class="dd-item-label">Zen Chat</span><span class="dd-item-desc">Open the full chat experience</span></div><svg class="dd-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a></div></div></div></div></div></nav></header><main><article class="blog-article"><a class="blog-back" href="/blog/">← Blog</a><div class="blog-post-meta">February 3, 2024<!-- --> <!-- -->·<!-- --> <!-- -->18<!-- --> min read</div><h1 class="blog-post-title">Introducing Qwen1.5</h1><p class="blog-post-lede">In recent months, our focus has been on developing a &quot;good&quot; model while optimizing the developer experience. As we progress towards **Qwen1.5**, the next iteration in our Qwen series, this update arrives just before the Chinese New Year.</p><div class="blog-prose"><p><a href="https://github.com/QwenLM/Qwen1.5">GITHUB</a>
+<a href="https://huggingface.co/Qwen">HUGGING FACE</a>
+<a href="https://modelscope.cn/organization/qwen">MODELSCOPE</a>
+<a href="https://huggingface.co/spaces/Qwen/Qwen1.5-72B-Chat">DEMO</a>
+<a href="https://discord.gg/yPEP2vHTu4">DISCORD</a></p>
+<h1 id="introduction">Introduction</h1>
+<p>In recent months, our focus has been on developing a "good" model while optimizing the developer experience. As we progress towards <strong>Qwen1.5</strong>, the next iteration in our Qwen series, this update arrives just before the Chinese New Year.</p>
+<figure><img src="https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/assets/blog/qwen1.5/intro.jpg#center" alt="" loading="lazy"></figure>
+<p>With Qwen1.5, we are open-sourcing base and chat models across six sizes: 0.5B, 1.8B, 4B, 7B, 14B, 32B, 72B, and 110B, and also an MoE model (see <a href="https://qwenlm.github.io/blog/qwen-moe/">blog</a> for more information). In line with tradition, we're also providing quantized models, including Int4 and Int8 GPTQ models, as well as AWQ and GGUF quantized models. To enhance the developer experience, we've merged Qwen1.5's code into Hugging Face transformers, making it accessible with <code>transformers>=4.37.0</code> without needing <code>trust_remote_code</code>.</p>
+<p>We've collaborated with frameworks like <a href="https://vllm.readthedocs.io/">vLLM</a>, <a href="https://github.com/sgl-project/sglang">SGLang</a> for deployment, <a href="https://github.com/casper-hansen/AutoAWQ">AutoAWQ</a>, <a href="https://github.com/AutoGPTQ/AutoGPTQ">AutoGPTQ</a> for quantization, <a href="https://github.com/OpenAccess-AI-Collective/axolotl">Axolotl</a>, <a href="https://github.com/hiyouga/LLaMA-Factory">LLaMA-Factory</a> for finetuning, and <a href="https://github.com/ggerganov/llama.cpp">llama.cpp</a> for local LLM inference, all of which now support Qwen1.5. The Qwen1.5 series is available on platforms such as <a href="https://ollama.ai/">Ollama</a> and <a href="https://lmstudio.ai/">LMStudio</a>. Additionally, API services are offered not only on DashScope but also on <a href="https://together.ai/">together.ai</a>, with global accessibility. Visit <a href="https://api.together.ai/">here</a> to get started, and we recommend trying out <a href="https://api.together.xyz/playground/chat/Qwen/Qwen1.5-72B-Chat">Qwen1.5-72B-chat</a>.</p>
+<figure><img src="https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/assets/blog/qwen1.5/com.jpg#center" alt="" loading="lazy"></figure>
+<p>This release brings substantial improvements to the alignment of chat models with human preferences and enhanced multilingual capabilities. All models now uniformly support a context length of up to 32768 tokens. There have also been minor improvements in the quality of base language models that may benefit your finetuning endeavors. This step represents a small stride toward our objective of creating a truly "good" model.</p>
+<h1 id="performance">Performance</h1>
+<p>To provide a better understanding of the performance of Qwen1.5, we have conducted a comprehensive evaluation of both base and chat models on different capabilities, including basic capabilities such as language understanding, coding, reasoning, multilingual capabilities, human preference, agent, retrieval-augmented generation (RAG), etc.</p>
+<h2 id="basic-capabilities">Basic Capabilities</h2>
+<p>To assess the basic capabilities of language models, we have conducted evaluations on traditional benchmarks, including MMLU (5-shot), C-Eval, Humaneval, GS8K, BBH, etc.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th align="left">Model</th><th align="center">MMLU</th><th align="center">C-Eval</th><th align="center">GSM8K</th><th align="center">MATH</th><th align="center">HumanEval</th><th align="center">MBPP</th><th align="center">BBH</th><th align="center">CMMLU</th></tr></thead><tbody><tr><td align="left">GPT-4</td><td align="center">86.4</td><td align="center">69.9</td><td align="center">92.0</td><td align="center">45.8</td><td align="center">67.0</td><td align="center">61.8</td><td align="center">86.7</td><td align="center">71.0</td></tr><tr><td align="left">Llama2-7B</td><td align="center">46.8</td><td align="center">32.5</td><td align="center">16.7</td><td align="center">3.3</td><td align="center">12.8</td><td align="center">20.8</td><td align="center">38.2</td><td align="center">31.8</td></tr><tr><td align="left">Llama2-13B</td><td align="center">55.0</td><td align="center">41.4</td><td align="center">29.6</td><td align="center">5.0</td><td align="center">18.9</td><td align="center">30.3</td><td align="center">45.6</td><td align="center">38.4</td></tr><tr><td align="left">Llama2-34B</td><td align="center">62.6</td><td align="center">-</td><td align="center">42.2</td><td align="center">6.2</td><td align="center">22.6</td><td align="center">33.0</td><td align="center">44.1</td><td align="center">-</td></tr><tr><td align="left">Llama2-70B</td><td align="center">69.8</td><td align="center">50.1</td><td align="center">54.4</td><td align="center">10.6</td><td align="center">23.7</td><td align="center">37.7</td><td align="center">58.4</td><td align="center">53.6</td></tr><tr><td align="left">Mistral-7B</td><td align="center">64.1</td><td align="center">47.4</td><td align="center">47.5</td><td align="center">11.3</td><td align="center">27.4</td><td align="center">38.6</td><td align="center">56.7</td><td align="center">44.7</td></tr><tr><td align="left">Mixtral-8x7B</td><td align="center">70.6</td><td align="center">-</td><td align="center">74.4</td><td align="center">28.4</td><td align="center">40.2</td><td align="center">60.7</td><td align="center">-</td><td align="center">-</td></tr><tr><td align="left">Qwen1.5-7B</td><td align="center">61.0</td><td align="center">74.1</td><td align="center">62.5</td><td align="center">20.3</td><td align="center">36.0</td><td align="center">37.4</td><td align="center">40.2</td><td align="center">73.1</td></tr><tr><td align="left">Qwen1.5-14B</td><td align="center">67.6</td><td align="center">78.7</td><td align="center">70.1</td><td align="center">29.2</td><td align="center">37.8</td><td align="center">44.0</td><td align="center">53.7</td><td align="center">77.6</td></tr><tr><td align="left">Qwen1.5-32B</td><td align="center">73.4</td><td align="center">83.5</td><td align="center">77.4</td><td align="center">36.1</td><td align="center">37.2</td><td align="center">49.4</td><td align="center">66.8</td><td align="center">82.3</td></tr><tr><td align="left">Qwen1.5-72B</td><td align="center">77.5</td><td align="center">84.1</td><td align="center">79.5</td><td align="center">34.1</td><td align="center">41.5</td><td align="center">53.4</td><td align="center">65.5</td><td align="center">83.5</td></tr></tbody></table>
+<p>At every model size, Qwen1.5 demonstrates strong performance across the diverse evaluation benchmarks. In particular, Qwen1.5-72B outperforms Llama2-70B across all benchmarks, showcasing its exceptional capabilities in language understanding, reasoning, and math.</p>
+<p>In light of the recent surge in interest for small language models, we have compared Qwen1.5 with sizes smaller than 7 billion parameters, against the most outstanding small-scale models within the community. The results are shown below:</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th align="left">Model</th><th align="center">Non-Emb Params</th><th align="center">MMLU</th><th align="center">C-Eval</th><th align="center">GSM8K</th><th align="center">MATH</th><th align="center">HumanEval</th><th align="center">MBPP</th><th align="center">BBH</th><th align="center">CMMLU</th></tr></thead><tbody><tr><td align="left">Tinyllama-1.1B</td><td align="center">1.1B</td><td align="center">24.3</td><td align="center">25.0</td><td align="center">2.3</td><td align="center">0.7</td><td align="center">6.7</td><td align="center">19.9</td><td align="center">28.8</td><td align="center">24.0</td></tr><tr><td align="left">Gemini-Nano-3B</td><td align="center">-</td><td align="center">-</td><td align="center">-</td><td align="center">22.8</td><td align="center">-</td><td align="center">-</td><td align="center">27.2</td><td align="center">42.4</td><td align="center">-</td></tr><tr><td align="left">StableLM-Zephyr-3B</td><td align="center">2.7B</td><td align="center">45.9</td><td align="center">30.3</td><td align="center">52.5</td><td align="center">12.5</td><td align="center">35.4</td><td align="center">31.9</td><td align="center">37.7</td><td align="center">30.9</td></tr><tr><td align="left">Phi-2</td><td align="center">2.5B</td><td align="center">52.7</td><td align="center">23.4</td><td align="center">57.2</td><td align="center">3.5</td><td align="center">47.6</td><td align="center">55.0</td><td align="center">43.4</td><td align="center">24.2</td></tr><tr><td align="left">MiniCPM-2B</td><td align="center">2.4B</td><td align="center">53.5</td><td align="center">51.1</td><td align="center">53.8</td><td align="center">10.2</td><td align="center">50.0</td><td align="center">47.3</td><td align="center">36.9</td><td align="center">51.1</td></tr><tr><td align="left">Gemma-2B</td><td align="center">2.0B</td><td align="center">42.3</td><td align="center">-</td><td align="center">17.7</td><td align="center">11.8</td><td align="center">22.0</td><td align="center">29.2</td><td align="center">35.2</td><td align="center">-</td></tr><tr><td align="left">Qwen1.5-0.5B</td><td align="center">0.3B</td><td align="center">39.2</td><td align="center">50.5</td><td align="center">22.0</td><td align="center">3.1</td><td align="center">12.2</td><td align="center">6.8</td><td align="center">18.3</td><td align="center">46.6</td></tr><tr><td align="left">Qwen1.5-1.8B</td><td align="center">1.2B</td><td align="center">46.8</td><td align="center">59.7</td><td align="center">38.4</td><td align="center">10.1</td><td align="center">20.1</td><td align="center">18.0</td><td align="center">24.2</td><td align="center">57.8</td></tr><tr><td align="left">Qwen1.5-4B</td><td align="center">3.1B</td><td align="center">56.1</td><td align="center">67.6</td><td align="center">57.0</td><td align="center">10.0</td><td align="center">25.6</td><td align="center">29.2</td><td align="center">32.5</td><td align="center">66.7</td></tr><tr><td align="left">Qwen1.5-MoE-A2.7B</td><td align="center">2.0B</td><td align="center">62.5</td><td align="center">79.2</td><td align="center">61.5</td><td align="center">21.9</td><td align="center">34.2</td><td align="center">36.6</td><td align="center">39.1</td><td align="center">79.2</td></tr></tbody></table>
+<p>We can confidently assert that Qwen1.5 base models under 7 billion parameters are highly competitive with the leading small-scale models in the community. In the future, we will continue to improve the quality of small models and exploring methods for effectively transferring the advanced capabilities inherent in larger models into the smaller ones.</p>
+<h2 id="aligning-with-human-preference">Aligning with Human Preference</h2>
+<p>Alignment aims to enhance instruction-following capabilities of LLMs and help provide responses that are closely aligned with human preferences. Recognizing the significance of integrating human preferences into the learning process, we effectively employed techniques such as Direct Policy Optimization (DPO) and Proximal Policy Optimization (PPO) in aligning the latest Qwen series.</p>
+<p>However, assessing the quality of such chat models poses a significant challenge.
+Admittedly, while comprehensive human evaluation is the optimal approach, it faces significant challenges pertaining to scalability and reproducibility.
+Therefore, we initially evaluate our models on two widely-used benchmarks, utilizing advanced LLMs as judges: MT-Bench and Alpaca-Eval. The results are presented below:</p>
+<figure><img src="https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/assets/blog/qwen1.5/sft.jpg#center" alt="" loading="lazy"></figure>
+<p>We notice there are non-negligible variance in the scores on MT-Bench. So we have three runs with different seeds in our results and we report the average score with standard deviation.</p>
+<table>
+    <tbody><tr>
+        <th rowspan="2">Models</th>
+        <th colspan="1">MT-Bench</th>
+        <th colspan="2">AlpacaEval 2.0</th>
+    </tr>
+    <tr>
+        <th>Avg. Score</th><th>Win Rate</th><th>Length</th>
+    </tr>
+    <tr>
+        <td>Qwen1.5-72B-Chat</td>
+        <td>8.61<sub>0.04</sub> (8.67/8.61/8.56)</td>
+        <td>27.18<sub>1.30</sub></td>
+        <td>1600</td>
+    </tr>
+    <tr>
+        <td>Qwen1.5-14B-Chat</td>
+        <td>7.91<sub>0.11</sub> (7.99/7.99/7.77)</td>
+        <td>19.7<sub>1.12</sub></td>
+        <td>1608</td>
+    </tr>
+    <tr>
+        <td>Qwen1.5-7B-Chat</td>
+        <td>7.60<sub>0.05</sub> (7.58/7.55/7.66)</td>
+        <td>13.20<sub>1.43</sub> </td>
+        <td>1606</td>
+    </tr>
+</tbody></table>
+<p>Despite still significantly trailing behind GPT-4-Turbo, the largest open-source Qwen1.5 model, Qwen1.5-72B-Chat, exhibits superior performance, surpassing Claude-2.1, GPT-3.5-Turbo-0613, Mixtral-8x7b-instruct, and TULU 2 DPO 70B, being on par with Mistral Medium, on both MT-Bench and Alpaca-Eval v2.</p>
+<p>Furthermore, although the scoring of LLM Judges may seemingly correlate with the lengths of responses, our observations indicate that our models do not generate lengthy responses to manipulate the bias of LLM judges. The average length of Qwen1.5-Chat on AlpacaEval 2.0 is only 1618, which aligns with the length of GPT-4 and is shorter than that of GPT-4-Turbo. Additionally, our experiments with our web service and app also reveal that users prefer the majority of responses from the new chat models.</p>
+<p>{/*  &#x3C;iframe
+src="<a href="https://qwen-qwen1-5-72b-chat.hf.space">https://qwen-qwen1-5-72b-chat.hf.space</a>"
+frameborder="0"
+width="850"
+height="1000"</p>
+<blockquote>
+  */}
+</blockquote>
+<h2 id="multilingual-understanding-of-base-models">Multilingual Understanding of Base Models</h2>
+<p>We have carefully selected a diverse set of 12 languages from Europe, East Asia, and Southeast Asia to thoroughly evaluate the multilingual capabilities of our foundational model. In order to accomplish this, we have curated test sets from the community's open-source repositories, covering four distinct dimensions: Exams, Understanding, Translation, and Math. The table below provides detailed information about each test set, including evaluation settings, metrics, and the languages they encompass:</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th align="left">Dataset</th><th align="center">Category</th><th align="center">Method/Metric</th><th align="center">Languages</th></tr></thead><tbody><tr><td align="left">MMLU-multi</td><td align="center">Exams</td><td align="center">5-shot/Acc</td><td align="center">ar, es, fr, pt, de, it, ru, ja, ko, id</td></tr><tr><td align="left">M3Exams</td><td align="center">Exams</td><td align="center">5-shot/Acc</td><td align="center">pt, it, vi, th</td></tr><tr><td align="left">BELEBELE</td><td align="center">Understanding</td><td align="center">5-shot/Acc</td><td align="center">ar, es, fr, pt, de, it, ru, ja, ko, vi, th, id</td></tr><tr><td align="left">XWinograd</td><td align="center">Understanding</td><td align="center">5-shot/Acc</td><td align="center">fr, pt, ru, ja</td></tr><tr><td align="left">XCOPA</td><td align="center">Understanding</td><td align="center">5-shot/Acc</td><td align="center">vi, id, th</td></tr><tr><td align="left">PAWS-X</td><td align="center">Understanding</td><td align="center">5-shot/Acc</td><td align="center">es, fr, de, ja, ko</td></tr><tr><td align="left">XStoryCloze</td><td align="center">Understanding</td><td align="center">0-shot/Acc</td><td align="center">ar, es, ru, id</td></tr><tr><td align="left">Flores(zh/en↔xx)</td><td align="center">Translation</td><td align="center">5-shot/BLEU</td><td align="center">ar, es, fr, pt, de, it, ru, ja, ko, vi, th, id</td></tr><tr><td align="left">MGSM</td><td align="center">Math</td><td align="center">8-shot/Acc</td><td align="center">es, fr, ru, de, ja, th</td></tr></tbody></table>
+<p>The detailed results are demonstrated below:</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th align="left">Models</th><th align="center">Exams</th><th align="center">Understanding</th><th align="center">Math</th><th align="center">Translation</th></tr></thead><tbody><tr><td align="left">GPT-3.5</td><td align="center">52.24</td><td align="center">71.84</td><td align="center">32.80</td><td align="center">31.85</td></tr><tr><td align="left">GPT-4</td><td align="center">71.64</td><td align="center">83.82</td><td align="center">80.13</td><td align="center">34.37</td></tr><tr><td align="left">Llama2-7B</td><td align="center">34.03</td><td align="center">50.13</td><td align="center">9.40</td><td align="center">22.19</td></tr><tr><td align="left">Llama2-13B</td><td align="center">39.55</td><td align="center">57.26</td><td align="center">16.80</td><td align="center">25.89</td></tr><tr><td align="left">Llama2-70B</td><td align="center">55.88</td><td align="center">73.19</td><td align="center">40.20</td><td align="center">31.56</td></tr><tr><td align="left">Mistral-7B</td><td align="center">47.12</td><td align="center">63.30</td><td align="center">26.33</td><td align="center">23.33</td></tr><tr><td align="left">Mixtral-8x7B</td><td align="center">56.08</td><td align="center">70.70</td><td align="center">45.00</td><td align="center">29.78</td></tr><tr><td align="left">Qwen1.5-0.5B</td><td align="center">26.98</td><td align="center">44.08</td><td align="center">3.13</td><td align="center">9.17</td></tr><tr><td align="left">Qwen1.5-1.8B</td><td align="center">33.57</td><td align="center">48.37</td><td align="center">6.47</td><td align="center">16.19</td></tr><tr><td align="left">Qwen1.5-4B</td><td align="center">41.43</td><td align="center">59.76</td><td align="center">21.33</td><td align="center">23.34</td></tr><tr><td align="left">Qwen1.5-MoE-A2.7B</td><td align="center">44.54</td><td align="center">61.08</td><td align="center">30.20</td><td align="center">27.35</td></tr><tr><td align="left">Qwen1.5-7B</td><td align="center">47.70</td><td align="center">67.63</td><td align="center">37.27</td><td align="center">28.36</td></tr><tr><td align="left">Qwen1.5-14B</td><td align="center">55.72</td><td align="center">74.10</td><td align="center">49.93</td><td align="center">31.69</td></tr><tr><td align="left">Qwen1.5-72B</td><td align="center">66.35</td><td align="center">78.16</td><td align="center">61.67</td><td align="center">35.57</td></tr></tbody></table>
+<p>The base models of Qwen1.5 showcase impressive multilingual capabilities, as demonstrated by its performance across a diverse set of 12 languages. In evaluations covering various dimensions such as exams, understanding, translation, and math, Qwen1.5 consistently delivers strong results. From languages like Arabic, Spanish, and French to Japanese, Korean, and Thai, Qwen1.5 demonstrates its ability to comprehend and generate high-quality content across different linguistic contexts.
+We compared Qwen1.5-72B-Chat with GPT-3.5, and the results are shown below:</p>
+<figure><img src="https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/assets/blog/qwen1.5/lang.png#center" alt="" loading="lazy"></figure>
+<p>These results demonstrate the strong multilingual capabilities of Qwen1.5 chat models, which can serve downstream applications, such as translation, language understanding, and multilingual chat. Also, we believe that the improvements in multilingual capabilities can also level up the general capabilities.</p>
+<h2 id="support-of-long-context">Support of Long Context</h2>
+<p>With the increasing demand for long-context understanding, we have expanded the capability of all models to support contexts up to 32K tokens. We have evaluated the performance of Qwen1.5 models on the <a href="https://github.com/OpenLMLab/LEval">L-Eval benchmark</a>, which measures the ability of models to generate responses based on long context. The results are shown below:</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th align="left">Models</th><th align="center">Coursera</th><th align="center">GSM</th><th align="center">QuALITY</th><th align="center">TOEFL</th><th align="center">SFiction</th><th align="center">Avg.</th></tr></thead><tbody><tr><td align="left">GPT3.5-turbo-16k</td><td align="center">63.51</td><td align="center">84.00</td><td align="center">61.38</td><td align="center">78.43</td><td align="center">64.84</td><td align="center">70.43</td></tr><tr><td align="left">Claude1.3-100k</td><td align="center">60.03</td><td align="center">88.00</td><td align="center">73.76</td><td align="center">83.64</td><td align="center">72.65</td><td align="center">75.62</td></tr><tr><td align="left">GPT4-32k</td><td align="center">75.58</td><td align="center">96.00</td><td align="center">82.17</td><td align="center">84.38</td><td align="center">74.99</td><td align="center">82.62</td></tr><tr><td align="left">Qwen-72B-Chat</td><td align="center">58.13</td><td align="center">76.00</td><td align="center">77.22</td><td align="center">86.24</td><td align="center">69.53</td><td align="center">73.42</td></tr><tr><td align="left">Qwen1.5-0.5B-Chat</td><td align="center">30.81</td><td align="center">6.00</td><td align="center">34.16</td><td align="center">40.52</td><td align="center">49.22</td><td align="center">32.14</td></tr><tr><td align="left">Qwen1.5-1.8B-Chat</td><td align="center">39.24</td><td align="center">37.00</td><td align="center">42.08</td><td align="center">55.76</td><td align="center">44.53</td><td align="center">43.72</td></tr><tr><td align="left">Qwen1.5-4B-Chat</td><td align="center">54.94</td><td align="center">47.00</td><td align="center">57.92</td><td align="center">69.15</td><td align="center">56.25</td><td align="center">57.05</td></tr><tr><td align="left">Qwen1.5-7B-Chat</td><td align="center">59.74</td><td align="center">60.00</td><td align="center">64.36</td><td align="center">79.18</td><td align="center">62.50</td><td align="center">65.16</td></tr><tr><td align="left">Qwen1.5-14B-Chat</td><td align="center">69.04</td><td align="center">79.00</td><td align="center">74.75</td><td align="center">83.64</td><td align="center">75.78</td><td align="center">76.44</td></tr><tr><td align="left">Qwen1.5-72B-Chat</td><td align="center">71.95</td><td align="center">82.00</td><td align="center">77.72</td><td align="center">85.50</td><td align="center">73.44</td><td align="center">78.12</td></tr></tbody></table>
+<p>In terms of the performance, even a small model like Qwen1.5-7B-Chat demonstrates competitive performance against GPT-3.5 on 4 out of 5 tasks. Our best model, Qwen1.5-72B-Chat, significantly outperforms GPT3.5-turbo-16k and only slightly falls behind GPT4-32k. These results highlight our outstanding performance within 32K tokens, yet they do not imply that our models are limited to supporting only 32K tokens. You can modify <code>max_position_embedding</code> and <code>sliding_window</code> in <code>config.json</code> to a larger value to see if the model performance is still satisfactory for your tasks.</p>
+<h2 id="capabilities-to-connect-with-external-systems">Capabilities to Connect with External Systems</h2>
+<p>Large language models (LLMs) are popular in part due to their ability to integrate external knowledge and tools. Retrieval-Augmented Generation (RAG) has gained traction as it mitigates common LLM issues like hallucination, real-time data shortage, and private information handling. Additionally, strong LLMs typically excel at using APIs and tools via function calling, making them ideal for serving as AI agents.</p>
+<p>We first assess the performance of Qwen1.5-Chat on <a href="https://arxiv.org/abs/2309.01431">RGB</a>, an RAG benchmark for which we have not performed any specific optimization:</p>
+<table>
+    <tbody><tr>
+        <th colspan="5">RGB English Benchmark for Retrieval-Augmented Generation</th>
+    </tr>
+    <tr>
+        <th>Models</th>
+        <th>Noise 0.8 (Acc.↑)</th>
+        <th>Rejection 1.0 (Acc.↑)</th>
+        <th>Integration 0.4 (Acc.↑)</th>
+        <th>Counterfactual (Acc.↑)</th>
+    </tr>
+    <tr>
+        <td>GPT4-Turbo</td>
+        <td>85.67</td>
+        <td>47.33</td>
+        <td>60.00</td>
+        <td>90.00</td>
+    </tr>
+    <tr>
+        <td>GPT3.5-Turbo</td>
+        <td>74.33</td>
+        <td>27.67</td>
+        <td>47.00</td>
+        <td>21.00</td>
+    </tr>
+    <tr>
+        <td>Llama2-70B-Chat</td>
+        <td>82.00</td>
+        <td>31.00</td>
+        <td>56.00</td>
+        <td>15.00</td>
+    </tr>
+    <tr>
+        <td>Mistral-7B-Instruct-v0.2</td>
+        <td>82.00</td>
+        <td>31.00</td>
+        <td>56.00</td>
+        <td>15.00</td>
+    </tr>
+    <tr>
+        <td>Mixtral-8x7B-Instruct-v0.1</td>
+        <td>82.67</td>
+        <td>37.00</td>
+        <td>67.00</td>
+        <td>8.00</td>
+    </tr>
+    <tr>
+        <td>Qwen1.5-7B-Chat</td>
+        <td>77.67</td>
+        <td>25.00</td>
+        <td>52.00</td>
+        <td>9.00 </td>
+    </tr>
+    <tr>
+        <td>Qwen1.5-14B-Chat</td>
+        <td>80.67</td>
+        <td>24.00</td>
+        <td>60.00</td>
+        <td>8.00 </td>
+    </tr>
+    <tr>
+        <td>Qwen1.5-72B-Chat</td>
+        <td>81.67</td>
+        <td>48.67</td>
+        <td>61.00</td>
+        <td>28.00</td>
+    </tr>
+    <tr>
+        <th colspan="5">RGB Chinese Benchmark for Retrieval-Augmented Generation</th>
+    </tr>
+    <tr>
+        <th>Models</th>
+        <th>Noise 0.8 (Acc.↑)</th>
+        <th>Rejection 1.0 (Acc.↑)</th>
+        <th>Integration 0.4 (Acc.↑)</th>
+        <th>Counterfactual (Acc.↑)</th>
+    </tr>
+    <tr>
+        <td>GPT4-Turbo</td>
+        <td>75.00</td>
+        <td>38.67</td>
+        <td>63.00</td>
+        <td>90.00</td>
+    </tr>
+    <tr>
+        <td>GPT3.5-Turbo</td>
+        <td>69.00</td>
+        <td>13.00</td>
+        <td>55.00</td>
+        <td>25.00</td>
+    </tr>
+    <tr>
+        <td>Llama2-70B-Chat</td>
+        <td>28.00</td>
+        <td>17.00</td>
+        <td>32.00</td>
+        <td>8.00 </td>
+    </tr>
+    <tr>
+        <td>Mistral-7B-Instruct-v0.2</td>
+        <td>54.67</td>
+        <td>28.67</td>
+        <td>37.00</td>
+        <td>4.00 </td>
+    </tr>
+    <tr>
+        <td>Mixtral-8x7B-Instruct-v0.1</td>
+        <td>27.33</td>
+        <td>4.00 </td>
+        <td>24.00</td>
+        <td>4.00 </td>
+    </tr>
+    <tr>
+        <td>Qwen1.5-7B-Chat</td>
+        <td>71.00</td>
+        <td>10.33</td>
+        <td>54.00</td>
+        <td>20.00</td>
+    </tr>
+    <tr>
+        <td>Qwen1.5-14B-Chat</td>
+        <td>75.00</td>
+        <td>16.67</td>
+        <td>55.00</td>
+        <td>22.00</td>
+    </tr>
+    <tr>
+        <td>Qwen1.5-72B-Chat</td>
+        <td>76.00</td>
+        <td>51.00</td>
+        <td>66.00</td>
+        <td>44.00</td>
+    </tr>
+</tbody></table>
+<p>We then assess Qwen's capacity to function as a general-purpose agent by testing it on the <a href="https://open-compass.github.io/T-Eval/">T-Eval</a> benchmark. None of the Qwen models have undergone any optimization tailored specifically for this benchmark:</p>
+<table>
+    <tbody><tr>
+        <th colspan="8">Agent Performance on T-Eval English</th>
+    </tr>
+    <tr>
+        <th>Models</th>
+        <th>Overall   </th>
+        <th>Instruct  </th>
+        <th>Plan      </th>
+        <th>Reason    </th>
+        <th>Retrieve  </th>
+        <th>Understand</th>
+        <th>Review    </th>
+    </tr>
+    <tr>
+        <td>GPT4-Turbo</td>
+        <td>86.4</td>
+        <td>96.3</td>
+        <td>87.8</td>
+        <td>65.3</td>
+        <td>88.9</td>
+        <td>85.8</td>
+        <td>94.5</td>
+    </tr>
+    <tr>
+        <td>Llama-2-70B-Chat</td>
+        <td>58.59</td>
+        <td>77.80</td>
+        <td>63.75</td>
+        <td>39.07</td>
+        <td>51.35</td>
+        <td>50.34</td>
+        <td>69.20</td>
+    </tr>
+    <tr>
+        <td>Mistral-7B-Instruct-v0.2</td>
+        <td>46.68</td>
+        <td>63.57</td>
+        <td>60.88</td>
+        <td>32.59</td>
+        <td>17.58</td>
+        <td>38.08</td>
+        <td>67.35</td>
+    </tr>
+    <tr>
+        <td>Mixtral-8x7B-Instruct-v0.1</td>
+        <td>62.15</td>
+        <td>42.39</td>
+        <td>46.48</td>
+        <td>60.35</td>
+        <td>76.69</td>
+        <td>73.70</td>
+        <td>73.31</td>
+    </tr>
+    <tr>
+        <td>Qwen1.5-7B-Chat</td>
+        <td>59.67</td>
+        <td>71.12</td>
+        <td>62.95</td>
+        <td>37.60</td>
+        <td>61.17</td>
+        <td>53.75</td>
+        <td>71.46</td>
+    </tr>
+    <tr>
+        <td>Qwen1.5-14B-Chat</td>
+        <td>71.77</td>
+        <td>86.16</td>
+        <td>73.09</td>
+        <td>49.51</td>
+        <td>72.07</td>
+        <td>66.03</td>
+        <td>83.78</td>
+    </tr>
+    <tr>
+        <td>Qwen1.5-72B-Chat</td>
+        <td>76.69</td>
+        <td>80.96</td>
+        <td>83.12</td>
+        <td>56.89</td>
+        <td>80.17</td>
+        <td>76.68</td>
+        <td>82.34</td>
+    </tr>
+    <tr>
+        <th colspan="8">Agent Performance on T-Eval Chinese</th>
+    </tr>
+    <tr>
+        <th>Models</th>
+        <th>Overall   </th>
+        <th>Instruct  </th>
+        <th>Plan      </th>
+        <th>Reason    </th>
+        <th>Retrieve  </th>
+        <th>Understand</th>
+        <th>Review    </th>
+    </tr>
+    <tr>
+        <td>GPT4-Turbo</td>
+        <td>85.9</td>
+        <td>97.6</td>
+        <td>87.0</td>
+        <td>68.4</td>
+        <td>89.2</td>
+        <td>86.8</td>
+        <td>86.0</td>
+    </tr>
+    <tr>
+        <td>Llama-2-70B-Chat</td>
+        <td>51.15</td>
+        <td>53.78</td>
+        <td>56.65</td>
+        <td>34.27</td>
+        <td>48.24</td>
+        <td>50.49</td>
+        <td>63.45</td>
+    </tr>
+    <tr>
+        <td>Mistral-7B-Instruct-v0.2</td>
+        <td>46.26</td>
+        <td>49.64</td>
+        <td>61.82</td>
+        <td>36.17</td>
+        <td>20.26</td>
+        <td>47.25</td>
+        <td>62.42</td>
+    </tr>
+    <tr>
+        <td>Mixtral-8x7B-Instruct-v0.1</td>
+        <td>62.77</td>
+        <td>26.38</td>
+        <td>60.79</td>
+        <td>62.02</td>
+        <td>76.60</td>
+        <td>77.74</td>
+        <td>73.10</td>
+    </tr>
+    <tr>
+        <td>Qwen1.5-7B-Chat</td>
+        <td>53.15</td>
+        <td>60.56</td>
+        <td>62.31</td>
+        <td>42.07</td>
+        <td>55.28</td>
+        <td>55.76</td>
+        <td>42.92</td>
+    </tr>
+    <tr>
+        <td>Qwen1.5-14B-Chat</td>
+        <td>64.85</td>
+        <td>84.25</td>
+        <td>64.77</td>
+        <td>54.68</td>
+        <td>72.35</td>
+        <td>68.88</td>
+        <td>44.15</td>
+    </tr>
+    <tr>
+        <td>Qwen1.5-72B-Chat</td>
+        <td>72.88</td>
+        <td>97.50</td>
+        <td>80.83</td>
+        <td>58.11</td>
+        <td>76.14</td>
+        <td>71.94</td>
+        <td>52.77</td>
+    </tr>
+</tbody></table>
+<p>To test the capabilities of tool using, also known as function calling, we follow our previous practice and use our opensourced evaluation <a href="https://github.com/QwenLM/Qwen/blob/main/eval/evaluate_plugin.py">benchmark</a> for assessing the models' ability to appropriately select and use tools:</p>
+<table>
+    <tbody><tr>
+        <th colspan="4">Tool-Use Benchmark</th>
+    </tr>
+    <tr>
+        <th>Models</th><th>Tool Selection (Acc.↑)</th><th>Tool Input (Rouge-L↑)</th><th>False Positive (Acc.↑)</th>
+    </tr>
+    <tr>
+        <td>GPT-4</td>
+        <td>98.0</td>
+        <td>95.3</td>
+        <td>76.1</td>
+    </tr>
+    <tr>
+        <td>GPT-3.5</td>
+        <td>74.5</td>
+        <td>80.7</td>
+        <td>19.4</td>
+    </tr>
+    <tr>
+        <td>Llama-2-70B-Chat</td>
+        <td>88.54</td>
+        <td>70.36</td>
+        <td>0.37 </td>
+    </tr>
+    <tr>
+        <td>Mistral-7B-Instruct-v0.2</td>
+        <td>94.79</td>
+        <td>82.81</td>
+        <td>6.34 </td>
+    </tr>
+    <tr>
+        <td>Mixtral-8x7B-Instruct-v0.1</td>
+        <td>99.31</td>
+        <td>94.46</td>
+        <td>31.34</td>
+    </tr>
+    <tr>
+        <td>Qwen1.5-7B-Chat</td>
+        <td>95.83</td>
+        <td>89.48</td>
+        <td>92.54</td>
+    </tr>
+    <tr>
+        <td>Qwen1.5-14B-Chat</td>
+        <td>93.06</td>
+        <td>88.74</td>
+        <td>92.91</td>
+    </tr>
+    <tr>
+        <td>Qwen1.5-72B-Chat</td>
+        <td>95.14</td>
+        <td>91.14</td>
+        <td>98.51</td>
+    </tr>
+</tbody></table>
+<p>Finally, since the Python code interpreter has emerged as an increasingly powerful tool for advanced LLMs, we also evaluate our models' capability in utilizing this tool on our previously open-sourced <a href="https://github.com/QwenLM/Qwen-Agent/tree/main/benchmark">benchmark</a>:</p>
+<table>
+    <tbody><tr>
+        <th colspan="5">Code Interpreter Benchmark</th>
+    </tr>
+    <tr>
+        <th rowspan="2">Models</th>
+        <th colspan="3">Accuracy of Code Execution Results (%)</th>
+        <th colspan="1">Executable Rate of Code (%)</th>
+    </tr>
+    <tr>
+        <th>Math↑</th><th>Visualization-Hard↑</th><th>Visualization-Easy↑</th><th>General↑</th>
+    </tr>
+    <tr>
+        <td>GPT-4</td>
+        <td>82.8</td>
+        <td>66.7</td>
+        <td>60.8</td>
+        <td>82.8</td>
+    </tr>
+    <tr>
+        <td>GPT-3.5</td>
+        <td>47.3</td>
+        <td>33.3</td>
+        <td>55.7</td>
+        <td>74.1</td>
+    </tr>
+    <tr>
+        <td>Mistral-7B-Instruct-v0.2</td>
+        <td>25.5</td>
+        <td>19.1 </td>
+        <td>44.3 </td>
+        <td>62.1</td>
+    </tr>
+    <tr>
+        <td>Mixtral-8x7B-Instruct-v0.1</td>
+        <td>47.8</td>
+        <td>33.3</td>
+        <td>54.4</td>
+        <td>60.3</td>
+    </tr>
+    <tr>
+        <td>Qwen1.5-7B-Chat</td>
+        <td>54.0</td>
+        <td>35.7</td>
+        <td>36.7</td>
+        <td>65.5</td>
+    </tr>
+    <tr>
+        <td>Qwen1.5-14B-Chat</td>
+        <td>62.1</td>
+        <td>46.4</td>
+        <td>48.1</td>
+        <td>70.6</td>
+    </tr>
+    <tr>
+        <td>Qwen1.5-72B-Chat</td>
+        <td>73.1</td>
+        <td>52.3</td>
+        <td>50.6</td>
+        <td>87.9</td>
+    </tr>
+</tbody></table>
+<p>Larger Qwen1.5-Chat models generally outperform smaller ones, nearing GPT-4's tool-use performance. However, in code interpreter tasks like math problem-solving and visualization, even the largest Qwen1.5-72B-Chat model lags significantly behind GPT-4 due to coding capabilities. We aim in future versions to enhance the coding capabilities of all Qwen models during both pre-training and alignment.</p>
+<h1 id="develop-with-qwen15">Develop with Qwen1.5</h1>
+<p>The biggest difference in Qwen1.5 is the integration of Qwen1.5 to Hugging Face transformers. Since 4.37.0, you can use Qwen1.5 without our custom code, which means that you can load the model like the following:</p>
+<pre><code class="language-python">from transformers import AutoModelForCausalLM
+# This is what we previously used
+model = AutoModelForCausalLM.from_pretrained("Qwen/Qwen-7B-Chat", device_map="auto", trust_remote_code=True)
+# This is what you can use now
+model = AutoModelForCausalLM.from_pretrained("Qwen/Qwen1.5-7B-Chat", device_map="auto")
+</code></pre>
+<p>The usage of Qwen1.5 for chat is different from the previous version. You can use the following code to chat with Qwen1.5:</p>
+<pre><code class="language-python">from transformers import AutoModelForCausalLM, AutoTokenizer
+device = "cuda" # the device to load the model onto
+
+model = AutoModelForCausalLM.from_pretrained(
+    "Qwen/Qwen1.5-14B-Chat-AWQ",
+    device_map="auto"
+)
+tokenizer = AutoTokenizer.from_pretrained("Qwen/Qwen1.5-14B-Chat-AWQ")
+
+prompt = "Give me a short introduction to large language model."
+messages = [
+    {"role": "system", "content": "You are a helpful assistant."},
+    {"role": "user", "content": prompt}
+]
+text = tokenizer.apply_chat_template(
+    messages,
+    tokenize=False,
+    add_generation_prompt=True
+)
+model_inputs = tokenizer([text], return_tensors="pt").to(device)
+
+generated_ids = model.generate(
+    model_inputs.input_ids,
+    max_new_tokens=512
+)
+generated_ids = [
+    output_ids[len(input_ids):] for input_ids, output_ids in zip(model_inputs.input_ids, generated_ids)
+]
+
+response = tokenizer.batch_decode(generated_ids, skip_special_tokens=True)[0]
+</code></pre>
+<p>For chat models, we no longer use a specific <code>model.chat()</code> method, but instead we use <code>model.generate()</code> with the chat template written in <code>tokenizer_config.json</code> so that we can use <code>tokenizer.apply_chat_template()</code> to generate the input, and we use <code>eos_token</code> to control when to stop the generation.</p>
+<p>We also provide AWQ models and GPTQ models (including Int4 and Int8 models) for you to use Qwen1.5 in low-resource or deployment scenarios. As Huggingface transformers supports <a href="https://github.com/casper-hansen/AutoAWQ">AWQ</a> and <a href="https://github.com/AutoGPTQ/AutoGPTQ">GPTQ</a>, you can use them in the same way above only with the corresponding model names.</p>
+<p>Furthermore, we have integrated our code to popular inference frameworks so that you can deploy your model easily. Now <code>vLLM>=0.3.0</code> and <code>SGLang>=0.1.11</code> officially support Qwen1.5. Check their official github repos and docs to learn about the detailed usage. Here we demonstrate an example to show how to use vLLM to build an OpenAI-API compatible interface for our model:</p>
+<pre><code class="language-shell">python -m vllm.entrypoints.openai.api_server --model Qwen/Qwen1.5-7B-Chat
+</code></pre>
+<pre><code class="language-shell">curl http://localhost:8000/v1/chat/completions \
+    -H "Content-Type: application/json" \
+    -d '{
+    "model": "Qwen/Qwen1.5-7B-Chat",
+    "messages": [
+    {"role": "system", "content": "You are a helpful assistant."},
+    {"role": "user", "content": "Tell me something about large language models."}
+    ]
+    }'
+</code></pre>
+<p>For users to run LLM locally, llama.cpp also provides support to Qwen1.5, and we officially provide quantized models in the GGUF format in our HF model hub. You can use the following code to run Qwen1.5 in llama.cpp:</p>
+<pre><code class="language-shell">./main -m qwen1.5-7b-chat-q2_k.gguf -n 512 --color -i -cml -f prompts/chat-with-qwen.txt
+</code></pre>
+<p>Besides, you can use the GGUF file with Ollama. Thanks to the support of <a href="https://ollama.ai/">Ollama</a>, you can now directly use one line of command:</p>
+<pre><code class="language-shell">ollama run qwen
+</code></pre>
+<p>Or you can use the GGUF file to play with <a href="https://github.com/Mozilla-Ocho/llamafile">llamafile</a> to run our models with a single file.</p>
+<p>To make a web demo locally, we advise you to use <a href="https://github.com/oobabooga/text-generation-webui">Text generation web UI</a> which is very easy to use.</p>
+<p>For advanced developers that hope to train better or more suitable models for themselves, such as post-training, Qwen1.5 is supported by Hugging face <code>trainer</code> and Peft. Also, there are easy-to-use frameworks that support both supervised finetuning (SFT) and alignment (PPO, DPO, etc.). Now, both <a href="https://github.com/hiyouga/LLaMA-Factory">LLaMA-Factory</a> and <a href="https://github.com/OpenAccess-AI-Collective/axolotl">Axolotl</a> have supported the training of Qwen1.5. We advise you to turn to their official github repos and docs for more advanced usages.</p>
+<p>If you would like to use Qwen1.5 for downstream applications, such as RAG, tool use, agent, you can now build OpenAI-API compatible API or run local models for famous frameworks, e.g., <a href="https://www.llamaindex.ai/">LlamaIndex</a>, <a href="https://www.langchain.com/">LangChain</a>, <a href="https://www.crewai.io/">CrewAI</a>.</p>
+<p>Overall, as we care about your developing experience, we not only have tried our best to provide good models to the community but also have made efforts to make things easier for all of you. We hope that you can enjoy using Qwen1.5 and that it can help you with your tasks of either research or applications.</p>
+<h1 id="conclusion">Conclusion</h1>
+<p>We are excited to introduce Qwen1.5, the next version of our Qwen series. In this release, we have opensourced both base and chat models of 6 sizes, including 0.5B, 1.8B, 4B, 7B, 14B, and 72B, and we have also provided quantized models. We have merged our code of Qwen1.5 to Hugging face transformers, and you can directly use it with <code>transformers>=4.37.0</code> without <code>trust_remote_code</code>. Additionally, we have had frameworks, e.g., vLLM, SGLang, AutoGPTQ, etc., supported Qwen1.5. We believe from now on, using our models will be much easier. We believe that this release is though a small step towards model quality, but it is a big step towards developer experience. Hope you like it and enjoy using it. Join our <a href="https://discord.gg/yPEP2vHTu4">Discord</a> or <a href="https://github.com/QwenLM/Qwen/blob/main/assets/wechat.png">WeChat</a> to share your experience, comments, or whatever you like with us. We are looking forward to hearing from you.</p>
+<h1 id="citation">Citation</h1>
+<pre><code>@misc{qwen1.5,
+    title = {Introducing Qwen1.5},
+    url = {https://qwenlm.github.io/blog/qwen1.5/},
+    author = {Qwen Team},
+    month = {February},
+    year = {2024}
+}
+</code></pre></div></article></main><!--$--><!--/$--><footer><div class="container"><div class="footer-content"><div class="footer-section"><h4>Zen LM</h4><p>95 open Zen models across Zen3, Zen4, and Zen5. Chat, code, vision, audio, image, embeddings, rerankers, and safety. OpenAI- and Anthropic-compatible API.</p></div><div class="footer-section"><h4>Zen 5</h4><ul><li><a href="/models/#zen5">Zen5 Nano (0.8B - 9B)</a></li><li><a href="/models/#zen5">Zen5 Flash</a></li><li><a href="/models/#zen5">Zen5 Mini</a></li><li><a href="/models/#zen5">Zen5 (default)</a></li><li><a href="/models/#zen5">Zen5 Coder</a></li><li><a href="/models/#zen5">Zen5 Pro</a></li><li><a href="/models/#zen5">Zen5 Max</a></li></ul></div><div class="footer-section"><h4>Zen 4</h4><ul><li><a href="/models/#zen4">Zen4 / Zen4.1</a></li><li><a href="/models/#zen4">Zen4 Ultra / Max / Pro</a></li><li><a href="/models/#zen4">Zen4 Mini / Thinking</a></li><li><a href="/models/#zen4">Zen4 Coder / Pro / Flash</a></li></ul></div><div class="footer-section"><h4>Zen 3 Multimodal</h4><ul><li><a href="/models/#zen3">Zen3 Omni / VL / Web</a></li><li><a href="/models/#zen3">Zen3 Nano / Guard</a></li><li><a href="/models/#zen3">Zen3 Embedding / Reranker</a></li><li><a href="/models/#zen3">Zen3 Image / ASR / TTS</a></li></ul></div><div class="footer-section"><h4>Resources</h4><ul><li><a href="/datasets/">Training Data</a></li><li><a href="https://huggingface.co/zenlm" target="_blank" rel="noopener noreferrer">HuggingFace</a></li><li><a href="https://github.com/zenlm" target="_blank" rel="noopener noreferrer">GitHub</a></li><li><a href="/research/">Research Papers</a></li><li><a href="https://api.hanzo.ai" target="_blank" rel="noopener noreferrer">Zen API</a></li></ul></div></div><div class="footer-bottom"><p>© <!-- -->2026<!-- --> Zen Authors. Open foundation models. Served on the Zen API.</p></div></div></footer><script src="/_next/static/chunks/webpack-f43ad49c79db3299.js" id="_R_" async=""></script><script>(self.__next_f=self.__next_f||[]).push([0])</script><script>self.__next_f.push([1,"1:\"$Sreact.fragment\"\n2:I[6529,[\"619\",\"static/chunks/619-ba102abea3e3d0e4.js\",\"177\",\"static/chunks/app/layout-b4c33ab67f60e2ed.js\"],\"default\"]\n3:I[9766,[],\"\"]\n4:I[8924,[],\"\"]\n5:I[2619,[\"619\",\"static/chunks/619-ba102abea3e3d0e4.js\",\"953\",\"static/chunks/app/blog/%5Bslug%5D/page-f25a122e9ccf798d.js\"],\"\"]\nc:I[7150,[],\"\"]\n:HL[\"/_next/static/css/1d1f6bc532e5f43f.css\",\"style\"]\n:HL[\"/_next/static/css/eb87e4f7aea490c6.css\",\"style\"]\n"])</script><script>self.__next_f.push([1,"0:{\"P\":null,\"b\":\"aLEH4vcTO8-5k6ZseFClK\",\"p\":\"\",\"c\":[\"\",\"blog\",\"qwen1.5\",\"\"],\"i\":false,\"f\":[[[\"\",{\"children\":[\"blog\",{\"children\":[[\"slug\",\"qwen1.5\",\"d\"],{\"children\":[\"__PAGE__\",{}]}]}]},\"$undefined\",\"$undefined\",true],[\"\",[\"$\",\"$1\",\"c\",{\"children\":[[[\"$\",\"link\",\"0\",{\"rel\":\"stylesheet\",\"href\":\"/_next/static/css/1d1f6bc532e5f43f.css\",\"precedence\":\"next\",\"crossOrigin\":\"$undefined\",\"nonce\":\"$undefined\"}]],[\"$\",\"html\",null,{\"lang\":\"en\",\"children\":[[\"$\",\"head\",null,{\"children\":[\"$\",\"link\",null,{\"rel\":\"icon\",\"type\":\"image/png\",\"href\":\"/favicon.png\"}]}],[\"$\",\"body\",null,{\"children\":[[\"$\",\"$L2\",null,{}],[\"$\",\"$L3\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L4\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":[[[\"$\",\"title\",null,{\"children\":\"404: This page could not be found.\"}],[\"$\",\"div\",null,{\"style\":{\"fontFamily\":\"system-ui,\\\"Segoe UI\\\",Roboto,Helvetica,Arial,sans-serif,\\\"Apple Color Emoji\\\",\\\"Segoe UI Emoji\\\"\",\"height\":\"100vh\",\"textAlign\":\"center\",\"display\":\"flex\",\"flexDirection\":\"column\",\"alignItems\":\"center\",\"justifyContent\":\"center\"},\"children\":[\"$\",\"div\",null,{\"children\":[[\"$\",\"style\",null,{\"dangerouslySetInnerHTML\":{\"__html\":\"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}\"}}],[\"$\",\"h1\",null,{\"className\":\"next-error-h1\",\"style\":{\"display\":\"inline-block\",\"margin\":\"0 20px 0 0\",\"padding\":\"0 23px 0 0\",\"fontSize\":24,\"fontWeight\":500,\"verticalAlign\":\"top\",\"lineHeight\":\"49px\"},\"children\":404}],[\"$\",\"div\",null,{\"style\":{\"display\":\"inline-block\"},\"children\":[\"$\",\"h2\",null,{\"style\":{\"fontSize\":14,\"fontWeight\":400,\"lineHeight\":\"49px\",\"margin\":0},\"children\":\"This page could not be found.\"}]}]]}]}]],[]],\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}],[\"$\",\"footer\",null,{\"children\":[\"$\",\"div\",null,{\"className\":\"container\",\"children\":[[\"$\",\"div\",null,{\"className\":\"footer-content\",\"children\":[[\"$\",\"div\",null,{\"className\":\"footer-section\",\"children\":[[\"$\",\"h4\",null,{\"children\":\"Zen LM\"}],[\"$\",\"p\",null,{\"children\":\"95 open Zen models across Zen3, Zen4, and Zen5. Chat, code, vision, audio, image, embeddings, rerankers, and safety. OpenAI- and Anthropic-compatible API.\"}]]}],[\"$\",\"div\",null,{\"className\":\"footer-section\",\"children\":[[\"$\",\"h4\",null,{\"children\":\"Zen 5\"}],[\"$\",\"ul\",null,{\"children\":[[\"$\",\"li\",null,{\"children\":[\"$\",\"$L5\",null,{\"href\":\"/models#zen5\",\"children\":\"Zen5 Nano (0.8B - 9B)\"}]}],[\"$\",\"li\",null,{\"children\":[\"$\",\"$L5\",null,{\"href\":\"/models#zen5\",\"children\":\"Zen5 Flash\"}]}],[\"$\",\"li\",null,{\"children\":[\"$\",\"$L5\",null,{\"href\":\"/models#zen5\",\"children\":\"Zen5 Mini\"}]}],[\"$\",\"li\",null,{\"children\":[\"$\",\"$L5\",null,{\"href\":\"/models#zen5\",\"children\":\"Zen5 (default)\"}]}],[\"$\",\"li\",null,{\"children\":[\"$\",\"$L5\",null,{\"href\":\"/models#zen5\",\"children\":\"Zen5 Coder\"}]}],[\"$\",\"li\",null,{\"children\":[\"$\",\"$L5\",null,{\"href\":\"/models#zen5\",\"children\":\"Zen5 Pro\"}]}],[\"$\",\"li\",null,{\"children\":[\"$\",\"$L5\",null,{\"href\":\"/models#zen5\",\"children\":\"Zen5 Max\"}]}]]}]]}],[\"$\",\"div\",null,{\"className\":\"footer-section\",\"children\":[[\"$\",\"h4\",null,{\"children\":\"Zen 4\"}],[\"$\",\"ul\",null,{\"children\":[[\"$\",\"li\",null,{\"children\":[\"$\",\"$L5\",null,{\"href\":\"/models#zen4\",\"children\":\"Zen4 / Zen4.1\"}]}],[\"$\",\"li\",null,{\"children\":[\"$\",\"$L5\",null,{\"href\":\"/models#zen4\",\"children\":\"Zen4 Ultra / Max / Pro\"}]}],[\"$\",\"li\",null,{\"children\":[\"$\",\"$L5\",null,{\"href\":\"/models#zen4\",\"children\":\"Zen4 Mini / Thinking\"}]}],[\"$\",\"li\",null,{\"children\":[\"$\",\"$L5\",null,{\"href\":\"/models#zen4\",\"children\":\"Zen4 Coder / Pro / Flash\"}]}]]}]]}],[\"$\",\"div\",null,{\"className\":\"footer-section\",\"children\":[[\"$\",\"h4\",null,{\"children\":\"Zen 3 Multimodal\"}],[\"$\",\"ul\",null,{\"children\":[[\"$\",\"li\",null,{\"children\":[\"$\",\"$L5\",null,{\"href\":\"/models#zen3\",\"children\":\"Zen3 Omni / VL / Web\"}]}],[\"$\",\"li\",null,{\"children\":[\"$\",\"$L5\",null,{\"href\":\"/models#zen3\",\"children\":\"Zen3 Nano / Guard\"}]}],[\"$\",\"li\",null,{\"children\":[\"$\",\"$L5\",null,{\"href\":\"/models#zen3\",\"children\":\"Zen3 Embedding / Reranker\"}]}],[\"$\",\"li\",null,{\"children\":[\"$\",\"$L5\",null,{\"href\":\"/models#zen3\",\"children\":\"Zen3 Image / ASR / TTS\"}]}]]}]]}],[\"$\",\"div\",null,{\"className\":\"footer-section\",\"children\":[[\"$\",\"h4\",null,{\"children\":\"Resources\"}],[\"$\",\"ul\",null,{\"children\":[[\"$\",\"li\",null,{\"children\":[\"$\",\"$L5\",null,{\"href\":\"/datasets\",\"children\":\"Training Data\"}]}],[\"$\",\"li\",null,{\"children\":[\"$\",\"a\",null,{\"href\":\"https://huggingface.co/zenlm\",\"target\":\"_blank\",\"rel\":\"noopener noreferrer\",\"children\":\"HuggingFace\"}]}],[\"$\",\"li\",null,{\"children\":[\"$\",\"a\",null,{\"href\":\"https://github.com/zenlm\",\"target\":\"_blank\",\"rel\":\"noopener noreferrer\",\"children\":\"GitHub\"}]}],[\"$\",\"li\",null,{\"children\":[\"$\",\"$L5\",null,{\"href\":\"/research\",\"children\":\"Research Papers\"}]}],[\"$\",\"li\",null,{\"children\":[\"$\",\"a\",null,{\"href\":\"https://api.hanzo.ai\",\"target\":\"_blank\",\"rel\":\"noopener noreferrer\",\"children\":\"Zen API\"}]}]]}]]}]]}],[\"$\",\"div\",null,{\"className\":\"footer-bottom\",\"children\":\"$L6\"}]]}]}],\"$L7\"]}]]}]]}],{\"children\":[\"blog\",\"$L8\",{\"children\":[[\"slug\",\"qwen1.5\",\"d\"],\"$L9\",{\"children\":[\"__PAGE__\",\"$La\",{},null,false]},null,false]},null,false]},null,false],\"$Lb\",false]],\"m\":\"$undefined\",\"G\":[\"$c\",[]],\"s\":false,\"S\":true}\n"])</script><script>self.__next_f.push([1,"e:I[4431,[],\"OutletBoundary\"]\n10:I[5278,[],\"AsyncMetadataOutlet\"]\n12:I[4431,[],\"ViewportBoundary\"]\n14:I[4431,[],\"MetadataBoundary\"]\n15:\"$Sreact.suspense\"\n6:[\"$\",\"p\",null,{\"children\":[\"© \",2026,\" Zen Authors. Open foundation models. Served on the Zen API.\"]}]\n7:[\"$\",\"script\",null,{\"src\":\"/assets/js/main.js\",\"async\":true}]\n8:[\"$\",\"$1\",\"c\",{\"children\":[null,[\"$\",\"$L3\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L4\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":\"$undefined\",\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}]]}]\n9:[\"$\",\"$1\",\"c\",{\"children\":[null,[\"$\",\"$L3\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L4\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":\"$undefined\",\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}]]}]\na:[\"$\",\"$1\",\"c\",{\"children\":[\"$Ld\",[[\"$\",\"link\",\"0\",{\"rel\":\"stylesheet\",\"href\":\"/_next/static/css/eb87e4f7aea490c6.css\",\"precedence\":\"next\",\"crossOrigin\":\"$undefined\",\"nonce\":\"$undefined\"}]],[\"$\",\"$Le\",null,{\"children\":[\"$Lf\",[\"$\",\"$L10\",null,{\"promise\":\"$@11\"}]]}]]}]\nb:[\"$\",\"$1\",\"h\",{\"children\":[null,[[\"$\",\"$L12\",null,{\"children\":\"$L13\"}],null],[\"$\",\"$L14\",null,{\"children\":[\"$\",\"div\",null,{\"hidden\":true,\"children\":[\"$\",\"$15\",null,{\"fallback\":null,\"children\":\"$L16\"}]}]}]]}]\n"])</script><script>self.__next_f.push([1,"17:Ta32a,"])</script><script>self.__next_f.push([1,"\u003cp\u003e\u003ca href=\"https://github.com/QwenLM/Qwen1.5\"\u003eGITHUB\u003c/a\u003e\n\u003ca href=\"https://huggingface.co/Qwen\"\u003eHUGGING FACE\u003c/a\u003e\n\u003ca href=\"https://modelscope.cn/organization/qwen\"\u003eMODELSCOPE\u003c/a\u003e\n\u003ca href=\"https://huggingface.co/spaces/Qwen/Qwen1.5-72B-Chat\"\u003eDEMO\u003c/a\u003e\n\u003ca href=\"https://discord.gg/yPEP2vHTu4\"\u003eDISCORD\u003c/a\u003e\u003c/p\u003e\n\u003ch1 id=\"introduction\"\u003eIntroduction\u003c/h1\u003e\n\u003cp\u003eIn recent months, our focus has been on developing a \"good\" model while optimizing the developer experience. As we progress towards \u003cstrong\u003eQwen1.5\u003c/strong\u003e, the next iteration in our Qwen series, this update arrives just before the Chinese New Year.\u003c/p\u003e\n\u003cfigure\u003e\u003cimg src=\"https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/assets/blog/qwen1.5/intro.jpg#center\" alt=\"\" loading=\"lazy\"\u003e\u003c/figure\u003e\n\u003cp\u003eWith Qwen1.5, we are open-sourcing base and chat models across six sizes: 0.5B, 1.8B, 4B, 7B, 14B, 32B, 72B, and 110B, and also an MoE model (see \u003ca href=\"https://qwenlm.github.io/blog/qwen-moe/\"\u003eblog\u003c/a\u003e for more information). In line with tradition, we're also providing quantized models, including Int4 and Int8 GPTQ models, as well as AWQ and GGUF quantized models. To enhance the developer experience, we've merged Qwen1.5's code into Hugging Face transformers, making it accessible with \u003ccode\u003etransformers\u003e=4.37.0\u003c/code\u003e without needing \u003ccode\u003etrust_remote_code\u003c/code\u003e.\u003c/p\u003e\n\u003cp\u003eWe've collaborated with frameworks like \u003ca href=\"https://vllm.readthedocs.io/\"\u003evLLM\u003c/a\u003e, \u003ca href=\"https://github.com/sgl-project/sglang\"\u003eSGLang\u003c/a\u003e for deployment, \u003ca href=\"https://github.com/casper-hansen/AutoAWQ\"\u003eAutoAWQ\u003c/a\u003e, \u003ca href=\"https://github.com/AutoGPTQ/AutoGPTQ\"\u003eAutoGPTQ\u003c/a\u003e for quantization, \u003ca href=\"https://github.com/OpenAccess-AI-Collective/axolotl\"\u003eAxolotl\u003c/a\u003e, \u003ca href=\"https://github.com/hiyouga/LLaMA-Factory\"\u003eLLaMA-Factory\u003c/a\u003e for finetuning, and \u003ca href=\"https://github.com/ggerganov/llama.cpp\"\u003ellama.cpp\u003c/a\u003e for local LLM inference, all of which now support Qwen1.5. The Qwen1.5 series is available on platforms such as \u003ca href=\"https://ollama.ai/\"\u003eOllama\u003c/a\u003e and \u003ca href=\"https://lmstudio.ai/\"\u003eLMStudio\u003c/a\u003e. Additionally, API services are offered not only on DashScope but also on \u003ca href=\"https://together.ai/\"\u003etogether.ai\u003c/a\u003e, with global accessibility. Visit \u003ca href=\"https://api.together.ai/\"\u003ehere\u003c/a\u003e to get started, and we recommend trying out \u003ca href=\"https://api.together.xyz/playground/chat/Qwen/Qwen1.5-72B-Chat\"\u003eQwen1.5-72B-chat\u003c/a\u003e.\u003c/p\u003e\n\u003cfigure\u003e\u003cimg src=\"https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/assets/blog/qwen1.5/com.jpg#center\" alt=\"\" loading=\"lazy\"\u003e\u003c/figure\u003e\n\u003cp\u003eThis release brings substantial improvements to the alignment of chat models with human preferences and enhanced multilingual capabilities. All models now uniformly support a context length of up to 32768 tokens. There have also been minor improvements in the quality of base language models that may benefit your finetuning endeavors. This step represents a small stride toward our objective of creating a truly \"good\" model.\u003c/p\u003e\n\u003ch1 id=\"performance\"\u003ePerformance\u003c/h1\u003e\n\u003cp\u003eTo provide a better understanding of the performance of Qwen1.5, we have conducted a comprehensive evaluation of both base and chat models on different capabilities, including basic capabilities such as language understanding, coding, reasoning, multilingual capabilities, human preference, agent, retrieval-augmented generation (RAG), etc.\u003c/p\u003e\n\u003ch2 id=\"basic-capabilities\"\u003eBasic Capabilities\u003c/h2\u003e\n\u003cp\u003eTo assess the basic capabilities of language models, we have conducted evaluations on traditional benchmarks, including MMLU (5-shot), C-Eval, Humaneval, GS8K, BBH, etc.\u003c/p\u003e\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\u003ctable\u003e\u003cthead\u003e\u003ctr\u003e\u003cth align=\"left\"\u003eModel\u003c/th\u003e\u003cth align=\"center\"\u003eMMLU\u003c/th\u003e\u003cth align=\"center\"\u003eC-Eval\u003c/th\u003e\u003cth align=\"center\"\u003eGSM8K\u003c/th\u003e\u003cth align=\"center\"\u003eMATH\u003c/th\u003e\u003cth align=\"center\"\u003eHumanEval\u003c/th\u003e\u003cth align=\"center\"\u003eMBPP\u003c/th\u003e\u003cth align=\"center\"\u003eBBH\u003c/th\u003e\u003cth align=\"center\"\u003eCMMLU\u003c/th\u003e\u003c/tr\u003e\u003c/thead\u003e\u003ctbody\u003e\u003ctr\u003e\u003ctd align=\"left\"\u003eGPT-4\u003c/td\u003e\u003ctd align=\"center\"\u003e86.4\u003c/td\u003e\u003ctd align=\"center\"\u003e69.9\u003c/td\u003e\u003ctd align=\"center\"\u003e92.0\u003c/td\u003e\u003ctd align=\"center\"\u003e45.8\u003c/td\u003e\u003ctd align=\"center\"\u003e67.0\u003c/td\u003e\u003ctd align=\"center\"\u003e61.8\u003c/td\u003e\u003ctd align=\"center\"\u003e86.7\u003c/td\u003e\u003ctd align=\"center\"\u003e71.0\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd align=\"left\"\u003eLlama2-7B\u003c/td\u003e\u003ctd align=\"center\"\u003e46.8\u003c/td\u003e\u003ctd align=\"center\"\u003e32.5\u003c/td\u003e\u003ctd align=\"center\"\u003e16.7\u003c/td\u003e\u003ctd align=\"center\"\u003e3.3\u003c/td\u003e\u003ctd align=\"center\"\u003e12.8\u003c/td\u003e\u003ctd align=\"center\"\u003e20.8\u003c/td\u003e\u003ctd align=\"center\"\u003e38.2\u003c/td\u003e\u003ctd align=\"center\"\u003e31.8\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd align=\"left\"\u003eLlama2-13B\u003c/td\u003e\u003ctd align=\"center\"\u003e55.0\u003c/td\u003e\u003ctd align=\"center\"\u003e41.4\u003c/td\u003e\u003ctd align=\"center\"\u003e29.6\u003c/td\u003e\u003ctd align=\"center\"\u003e5.0\u003c/td\u003e\u003ctd align=\"center\"\u003e18.9\u003c/td\u003e\u003ctd align=\"center\"\u003e30.3\u003c/td\u003e\u003ctd align=\"center\"\u003e45.6\u003c/td\u003e\u003ctd align=\"center\"\u003e38.4\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd align=\"left\"\u003eLlama2-34B\u003c/td\u003e\u003ctd align=\"center\"\u003e62.6\u003c/td\u003e\u003ctd align=\"center\"\u003e-\u003c/td\u003e\u003ctd align=\"center\"\u003e42.2\u003c/td\u003e\u003ctd align=\"center\"\u003e6.2\u003c/td\u003e\u003ctd align=\"center\"\u003e22.6\u003c/td\u003e\u003ctd align=\"center\"\u003e33.0\u003c/td\u003e\u003ctd align=\"center\"\u003e44.1\u003c/td\u003e\u003ctd align=\"center\"\u003e-\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd align=\"left\"\u003eLlama2-70B\u003c/td\u003e\u003ctd align=\"center\"\u003e69.8\u003c/td\u003e\u003ctd align=\"center\"\u003e50.1\u003c/td\u003e\u003ctd align=\"center\"\u003e54.4\u003c/td\u003e\u003ctd align=\"center\"\u003e10.6\u003c/td\u003e\u003ctd align=\"center\"\u003e23.7\u003c/td\u003e\u003ctd align=\"center\"\u003e37.7\u003c/td\u003e\u003ctd align=\"center\"\u003e58.4\u003c/td\u003e\u003ctd align=\"center\"\u003e53.6\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd align=\"left\"\u003eMistral-7B\u003c/td\u003e\u003ctd align=\"center\"\u003e64.1\u003c/td\u003e\u003ctd align=\"center\"\u003e47.4\u003c/td\u003e\u003ctd align=\"center\"\u003e47.5\u003c/td\u003e\u003ctd align=\"center\"\u003e11.3\u003c/td\u003e\u003ctd align=\"center\"\u003e27.4\u003c/td\u003e\u003ctd align=\"center\"\u003e38.6\u003c/td\u003e\u003ctd align=\"center\"\u003e56.7\u003c/td\u003e\u003ctd align=\"center\"\u003e44.7\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd align=\"left\"\u003eMixtral-8x7B\u003c/td\u003e\u003ctd align=\"center\"\u003e70.6\u003c/td\u003e\u003ctd align=\"center\"\u003e-\u003c/td\u003e\u003ctd align=\"center\"\u003e74.4\u003c/td\u003e\u003ctd align=\"center\"\u003e28.4\u003c/td\u003e\u003ctd align=\"center\"\u003e40.2\u003c/td\u003e\u003ctd align=\"center\"\u003e60.7\u003c/td\u003e\u003ctd align=\"center\"\u003e-\u003c/td\u003e\u003ctd align=\"center\"\u003e-\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd align=\"left\"\u003eQwen1.5-7B\u003c/td\u003e\u003ctd align=\"center\"\u003e61.0\u003c/td\u003e\u003ctd align=\"center\"\u003e74.1\u003c/td\u003e\u003ctd align=\"center\"\u003e62.5\u003c/td\u003e\u003ctd align=\"center\"\u003e20.3\u003c/td\u003e\u003ctd align=\"center\"\u003e36.0\u003c/td\u003e\u003ctd align=\"center\"\u003e37.4\u003c/td\u003e\u003ctd align=\"center\"\u003e40.2\u003c/td\u003e\u003ctd align=\"center\"\u003e73.1\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd align=\"left\"\u003eQwen1.5-14B\u003c/td\u003e\u003ctd align=\"center\"\u003e67.6\u003c/td\u003e\u003ctd align=\"center\"\u003e78.7\u003c/td\u003e\u003ctd align=\"center\"\u003e70.1\u003c/td\u003e\u003ctd align=\"center\"\u003e29.2\u003c/td\u003e\u003ctd align=\"center\"\u003e37.8\u003c/td\u003e\u003ctd align=\"center\"\u003e44.0\u003c/td\u003e\u003ctd align=\"center\"\u003e53.7\u003c/td\u003e\u003ctd align=\"center\"\u003e77.6\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd align=\"left\"\u003eQwen1.5-32B\u003c/td\u003e\u003ctd align=\"center\"\u003e73.4\u003c/td\u003e\u003ctd align=\"center\"\u003e83.5\u003c/td\u003e\u003ctd align=\"center\"\u003e77.4\u003c/td\u003e\u003ctd align=\"center\"\u003e36.1\u003c/td\u003e\u003ctd align=\"center\"\u003e37.2\u003c/td\u003e\u003ctd align=\"center\"\u003e49.4\u003c/td\u003e\u003ctd align=\"center\"\u003e66.8\u003c/td\u003e\u003ctd align=\"center\"\u003e82.3\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd align=\"left\"\u003eQwen1.5-72B\u003c/td\u003e\u003ctd align=\"center\"\u003e77.5\u003c/td\u003e\u003ctd align=\"center\"\u003e84.1\u003c/td\u003e\u003ctd align=\"center\"\u003e79.5\u003c/td\u003e\u003ctd align=\"center\"\u003e34.1\u003c/td\u003e\u003ctd align=\"center\"\u003e41.5\u003c/td\u003e\u003ctd align=\"center\"\u003e53.4\u003c/td\u003e\u003ctd align=\"center\"\u003e65.5\u003c/td\u003e\u003ctd align=\"center\"\u003e83.5\u003c/td\u003e\u003c/tr\u003e\u003c/tbody\u003e\u003c/table\u003e\n\u003cp\u003eAt every model size, Qwen1.5 demonstrates strong performance across the diverse evaluation benchmarks. In particular, Qwen1.5-72B outperforms Llama2-70B across all benchmarks, showcasing its exceptional capabilities in language understanding, reasoning, and math.\u003c/p\u003e\n\u003cp\u003eIn light of the recent surge in interest for small language models, we have compared Qwen1.5 with sizes smaller than 7 billion parameters, against the most outstanding small-scale models within the community. The results are shown below:\u003c/p\u003e\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\u003ctable\u003e\u003cthead\u003e\u003ctr\u003e\u003cth align=\"left\"\u003eModel\u003c/th\u003e\u003cth align=\"center\"\u003eNon-Emb Params\u003c/th\u003e\u003cth align=\"center\"\u003eMMLU\u003c/th\u003e\u003cth align=\"center\"\u003eC-Eval\u003c/th\u003e\u003cth align=\"center\"\u003eGSM8K\u003c/th\u003e\u003cth align=\"center\"\u003eMATH\u003c/th\u003e\u003cth align=\"center\"\u003eHumanEval\u003c/th\u003e\u003cth align=\"center\"\u003eMBPP\u003c/th\u003e\u003cth align=\"center\"\u003eBBH\u003c/th\u003e\u003cth align=\"center\"\u003eCMMLU\u003c/th\u003e\u003c/tr\u003e\u003c/thead\u003e\u003ctbody\u003e\u003ctr\u003e\u003ctd align=\"left\"\u003eTinyllama-1.1B\u003c/td\u003e\u003ctd align=\"center\"\u003e1.1B\u003c/td\u003e\u003ctd align=\"center\"\u003e24.3\u003c/td\u003e\u003ctd align=\"center\"\u003e25.0\u003c/td\u003e\u003ctd align=\"center\"\u003e2.3\u003c/td\u003e\u003ctd align=\"center\"\u003e0.7\u003c/td\u003e\u003ctd align=\"center\"\u003e6.7\u003c/td\u003e\u003ctd align=\"center\"\u003e19.9\u003c/td\u003e\u003ctd align=\"center\"\u003e28.8\u003c/td\u003e\u003ctd align=\"center\"\u003e24.0\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd align=\"left\"\u003eGemini-Nano-3B\u003c/td\u003e\u003ctd align=\"center\"\u003e-\u003c/td\u003e\u003ctd align=\"center\"\u003e-\u003c/td\u003e\u003ctd align=\"center\"\u003e-\u003c/td\u003e\u003ctd align=\"center\"\u003e22.8\u003c/td\u003e\u003ctd align=\"center\"\u003e-\u003c/td\u003e\u003ctd align=\"center\"\u003e-\u003c/td\u003e\u003ctd align=\"center\"\u003e27.2\u003c/td\u003e\u003ctd align=\"center\"\u003e42.4\u003c/td\u003e\u003ctd align=\"center\"\u003e-\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd align=\"left\"\u003eStableLM-Zephyr-3B\u003c/td\u003e\u003ctd align=\"center\"\u003e2.7B\u003c/td\u003e\u003ctd align=\"center\"\u003e45.9\u003c/td\u003e\u003ctd align=\"center\"\u003e30.3\u003c/td\u003e\u003ctd align=\"center\"\u003e52.5\u003c/td\u003e\u003ctd align=\"center\"\u003e12.5\u003c/td\u003e\u003ctd align=\"center\"\u003e35.4\u003c/td\u003e\u003ctd align=\"center\"\u003e31.9\u003c/td\u003e\u003ctd align=\"center\"\u003e37.7\u003c/td\u003e\u003ctd align=\"center\"\u003e30.9\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd align=\"left\"\u003ePhi-2\u003c/td\u003e\u003ctd align=\"center\"\u003e2.5B\u003c/td\u003e\u003ctd align=\"center\"\u003e52.7\u003c/td\u003e\u003ctd align=\"center\"\u003e23.4\u003c/td\u003e\u003ctd align=\"center\"\u003e57.2\u003c/td\u003e\u003ctd align=\"center\"\u003e3.5\u003c/td\u003e\u003ctd align=\"center\"\u003e47.6\u003c/td\u003e\u003ctd align=\"center\"\u003e55.0\u003c/td\u003e\u003ctd align=\"center\"\u003e43.4\u003c/td\u003e\u003ctd align=\"center\"\u003e24.2\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd align=\"left\"\u003eMiniCPM-2B\u003c/td\u003e\u003ctd align=\"center\"\u003e2.4B\u003c/td\u003e\u003ctd align=\"center\"\u003e53.5\u003c/td\u003e\u003ctd align=\"center\"\u003e51.1\u003c/td\u003e\u003ctd align=\"center\"\u003e53.8\u003c/td\u003e\u003ctd align=\"center\"\u003e10.2\u003c/td\u003e\u003ctd align=\"center\"\u003e50.0\u003c/td\u003e\u003ctd align=\"center\"\u003e47.3\u003c/td\u003e\u003ctd align=\"center\"\u003e36.9\u003c/td\u003e\u003ctd align=\"center\"\u003e51.1\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd align=\"left\"\u003eGemma-2B\u003c/td\u003e\u003ctd align=\"center\"\u003e2.0B\u003c/td\u003e\u003ctd align=\"center\"\u003e42.3\u003c/td\u003e\u003ctd align=\"center\"\u003e-\u003c/td\u003e\u003ctd align=\"center\"\u003e17.7\u003c/td\u003e\u003ctd align=\"center\"\u003e11.8\u003c/td\u003e\u003ctd align=\"center\"\u003e22.0\u003c/td\u003e\u003ctd align=\"center\"\u003e29.2\u003c/td\u003e\u003ctd align=\"center\"\u003e35.2\u003c/td\u003e\u003ctd align=\"center\"\u003e-\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd align=\"left\"\u003eQwen1.5-0.5B\u003c/td\u003e\u003ctd align=\"center\"\u003e0.3B\u003c/td\u003e\u003ctd align=\"center\"\u003e39.2\u003c/td\u003e\u003ctd align=\"center\"\u003e50.5\u003c/td\u003e\u003ctd align=\"center\"\u003e22.0\u003c/td\u003e\u003ctd align=\"center\"\u003e3.1\u003c/td\u003e\u003ctd align=\"center\"\u003e12.2\u003c/td\u003e\u003ctd align=\"center\"\u003e6.8\u003c/td\u003e\u003ctd align=\"center\"\u003e18.3\u003c/td\u003e\u003ctd align=\"center\"\u003e46.6\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd align=\"left\"\u003eQwen1.5-1.8B\u003c/td\u003e\u003ctd align=\"center\"\u003e1.2B\u003c/td\u003e\u003ctd align=\"center\"\u003e46.8\u003c/td\u003e\u003ctd align=\"center\"\u003e59.7\u003c/td\u003e\u003ctd align=\"center\"\u003e38.4\u003c/td\u003e\u003ctd align=\"center\"\u003e10.1\u003c/td\u003e\u003ctd align=\"center\"\u003e20.1\u003c/td\u003e\u003ctd align=\"center\"\u003e18.0\u003c/td\u003e\u003ctd align=\"center\"\u003e24.2\u003c/td\u003e\u003ctd align=\"center\"\u003e57.8\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd align=\"left\"\u003eQwen1.5-4B\u003c/td\u003e\u003ctd align=\"center\"\u003e3.1B\u003c/td\u003e\u003ctd align=\"center\"\u003e56.1\u003c/td\u003e\u003ctd align=\"center\"\u003e67.6\u003c/td\u003e\u003ctd align=\"center\"\u003e57.0\u003c/td\u003e\u003ctd align=\"center\"\u003e10.0\u003c/td\u003e\u003ctd align=\"center\"\u003e25.6\u003c/td\u003e\u003ctd align=\"center\"\u003e29.2\u003c/td\u003e\u003ctd align=\"center\"\u003e32.5\u003c/td\u003e\u003ctd align=\"center\"\u003e66.7\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd align=\"left\"\u003eQwen1.5-MoE-A2.7B\u003c/td\u003e\u003ctd align=\"center\"\u003e2.0B\u003c/td\u003e\u003ctd align=\"center\"\u003e62.5\u003c/td\u003e\u003ctd align=\"center\"\u003e79.2\u003c/td\u003e\u003ctd align=\"center\"\u003e61.5\u003c/td\u003e\u003ctd align=\"center\"\u003e21.9\u003c/td\u003e\u003ctd align=\"center\"\u003e34.2\u003c/td\u003e\u003ctd align=\"center\"\u003e36.6\u003c/td\u003e\u003ctd align=\"center\"\u003e39.1\u003c/td\u003e\u003ctd align=\"center\"\u003e79.2\u003c/td\u003e\u003c/tr\u003e\u003c/tbody\u003e\u003c/table\u003e\n\u003cp\u003eWe can confidently assert that Qwen1.5 base models under 7 billion parameters are highly competitive with the leading small-scale models in the community. In the future, we will continue to improve the quality of small models and exploring methods for effectively transferring the advanced capabilities inherent in larger models into the smaller ones.\u003c/p\u003e\n\u003ch2 id=\"aligning-with-human-preference\"\u003eAligning with Human Preference\u003c/h2\u003e\n\u003cp\u003eAlignment aims to enhance instruction-following capabilities of LLMs and help provide responses that are closely aligned with human preferences. Recognizing the significance of integrating human preferences into the learning process, we effectively employed techniques such as Direct Policy Optimization (DPO) and Proximal Policy Optimization (PPO) in aligning the latest Qwen series.\u003c/p\u003e\n\u003cp\u003eHowever, assessing the quality of such chat models poses a significant challenge.\nAdmittedly, while comprehensive human evaluation is the optimal approach, it faces significant challenges pertaining to scalability and reproducibility.\nTherefore, we initially evaluate our models on two widely-used benchmarks, utilizing advanced LLMs as judges: MT-Bench and Alpaca-Eval. The results are presented below:\u003c/p\u003e\n\u003cfigure\u003e\u003cimg src=\"https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/assets/blog/qwen1.5/sft.jpg#center\" alt=\"\" loading=\"lazy\"\u003e\u003c/figure\u003e\n\u003cp\u003eWe notice there are non-negligible variance in the scores on MT-Bench. So we have three runs with different seeds in our results and we report the average score with standard deviation.\u003c/p\u003e\n\u003ctable\u003e\n    \u003ctbody\u003e\u003ctr\u003e\n        \u003cth rowspan=\"2\"\u003eModels\u003c/th\u003e\n        \u003cth colspan=\"1\"\u003eMT-Bench\u003c/th\u003e\n        \u003cth colspan=\"2\"\u003eAlpacaEval 2.0\u003c/th\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n        \u003cth\u003eAvg. Score\u003c/th\u003e\u003cth\u003eWin Rate\u003c/th\u003e\u003cth\u003eLength\u003c/th\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n        \u003ctd\u003eQwen1.5-72B-Chat\u003c/td\u003e\n        \u003ctd\u003e8.61\u003csub\u003e0.04\u003c/sub\u003e (8.67/8.61/8.56)\u003c/td\u003e\n        \u003ctd\u003e27.18\u003csub\u003e1.30\u003c/sub\u003e\u003c/td\u003e\n        \u003ctd\u003e1600\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n        \u003ctd\u003eQwen1.5-14B-Chat\u003c/td\u003e\n        \u003ctd\u003e7.91\u003csub\u003e0.11\u003c/sub\u003e (7.99/7.99/7.77)\u003c/td\u003e\n        \u003ctd\u003e19.7\u003csub\u003e1.12\u003c/sub\u003e\u003c/td\u003e\n        \u003ctd\u003e1608\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n        \u003ctd\u003eQwen1.5-7B-Chat\u003c/td\u003e\n        \u003ctd\u003e7.60\u003csub\u003e0.05\u003c/sub\u003e (7.58/7.55/7.66)\u003c/td\u003e\n        \u003ctd\u003e13.20\u003csub\u003e1.43\u003c/sub\u003e \u003c/td\u003e\n        \u003ctd\u003e1606\u003c/td\u003e\n    \u003c/tr\u003e\n\u003c/tbody\u003e\u003c/table\u003e\n\u003cp\u003eDespite still significantly trailing behind GPT-4-Turbo, the largest open-source Qwen1.5 model, Qwen1.5-72B-Chat, exhibits superior performance, surpassing Claude-2.1, GPT-3.5-Turbo-0613, Mixtral-8x7b-instruct, and TULU 2 DPO 70B, being on par with Mistral Medium, on both MT-Bench and Alpaca-Eval v2.\u003c/p\u003e\n\u003cp\u003eFurthermore, although the scoring of LLM Judges may seemingly correlate with the lengths of responses, our observations indicate that our models do not generate lengthy responses to manipulate the bias of LLM judges. The average length of Qwen1.5-Chat on AlpacaEval 2.0 is only 1618, which aligns with the length of GPT-4 and is shorter than that of GPT-4-Turbo. Additionally, our experiments with our web service and app also reveal that users prefer the majority of responses from the new chat models.\u003c/p\u003e\n\u003cp\u003e{/*  \u0026#x3C;iframe\nsrc=\"\u003ca href=\"https://qwen-qwen1-5-72b-chat.hf.space\"\u003ehttps://qwen-qwen1-5-72b-chat.hf.space\u003c/a\u003e\"\nframeborder=\"0\"\nwidth=\"850\"\nheight=\"1000\"\u003c/p\u003e\n\u003cblockquote\u003e\n  */}\n\u003c/blockquote\u003e\n\u003ch2 id=\"multilingual-understanding-of-base-models\"\u003eMultilingual Understanding of Base Models\u003c/h2\u003e\n\u003cp\u003eWe have carefully selected a diverse set of 12 languages from Europe, East Asia, and Southeast Asia to thoroughly evaluate the multilingual capabilities of our foundational model. In order to accomplish this, we have curated test sets from the community's open-source repositories, covering four distinct dimensions: Exams, Understanding, Translation, and Math. The table below provides detailed information about each test set, including evaluation settings, metrics, and the languages they encompass:\u003c/p\u003e\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\u003ctable\u003e\u003cthead\u003e\u003ctr\u003e\u003cth align=\"left\"\u003eDataset\u003c/th\u003e\u003cth align=\"center\"\u003eCategory\u003c/th\u003e\u003cth align=\"center\"\u003eMethod/Metric\u003c/th\u003e\u003cth align=\"center\"\u003eLanguages\u003c/th\u003e\u003c/tr\u003e\u003c/thead\u003e\u003ctbody\u003e\u003ctr\u003e\u003ctd align=\"left\"\u003eMMLU-multi\u003c/td\u003e\u003ctd align=\"center\"\u003eExams\u003c/td\u003e\u003ctd align=\"center\"\u003e5-shot/Acc\u003c/td\u003e\u003ctd align=\"center\"\u003ear, es, fr, pt, de, it, ru, ja, ko, id\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd align=\"left\"\u003eM3Exams\u003c/td\u003e\u003ctd align=\"center\"\u003eExams\u003c/td\u003e\u003ctd align=\"center\"\u003e5-shot/Acc\u003c/td\u003e\u003ctd align=\"center\"\u003ept, it, vi, th\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd align=\"left\"\u003eBELEBELE\u003c/td\u003e\u003ctd align=\"center\"\u003eUnderstanding\u003c/td\u003e\u003ctd align=\"center\"\u003e5-shot/Acc\u003c/td\u003e\u003ctd align=\"center\"\u003ear, es, fr, pt, de, it, ru, ja, ko, vi, th, id\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd align=\"left\"\u003eXWinograd\u003c/td\u003e\u003ctd align=\"center\"\u003eUnderstanding\u003c/td\u003e\u003ctd align=\"center\"\u003e5-shot/Acc\u003c/td\u003e\u003ctd align=\"center\"\u003efr, pt, ru, ja\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd align=\"left\"\u003eXCOPA\u003c/td\u003e\u003ctd align=\"center\"\u003eUnderstanding\u003c/td\u003e\u003ctd align=\"center\"\u003e5-shot/Acc\u003c/td\u003e\u003ctd align=\"center\"\u003evi, id, th\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd align=\"left\"\u003ePAWS-X\u003c/td\u003e\u003ctd align=\"center\"\u003eUnderstanding\u003c/td\u003e\u003ctd align=\"center\"\u003e5-shot/Acc\u003c/td\u003e\u003ctd align=\"center\"\u003ees, fr, de, ja, ko\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd align=\"left\"\u003eXStoryCloze\u003c/td\u003e\u003ctd align=\"center\"\u003eUnderstanding\u003c/td\u003e\u003ctd align=\"center\"\u003e0-shot/Acc\u003c/td\u003e\u003ctd align=\"center\"\u003ear, es, ru, id\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd align=\"left\"\u003eFlores(zh/en↔xx)\u003c/td\u003e\u003ctd align=\"center\"\u003eTranslation\u003c/td\u003e\u003ctd align=\"center\"\u003e5-shot/BLEU\u003c/td\u003e\u003ctd align=\"center\"\u003ear, es, fr, pt, de, it, ru, ja, ko, vi, th, id\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd align=\"left\"\u003eMGSM\u003c/td\u003e\u003ctd align=\"center\"\u003eMath\u003c/td\u003e\u003ctd align=\"center\"\u003e8-shot/Acc\u003c/td\u003e\u003ctd align=\"center\"\u003ees, fr, ru, de, ja, th\u003c/td\u003e\u003c/tr\u003e\u003c/tbody\u003e\u003c/table\u003e\n\u003cp\u003eThe detailed results are demonstrated below:\u003c/p\u003e\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\u003ctable\u003e\u003cthead\u003e\u003ctr\u003e\u003cth align=\"left\"\u003eModels\u003c/th\u003e\u003cth align=\"center\"\u003eExams\u003c/th\u003e\u003cth align=\"center\"\u003eUnderstanding\u003c/th\u003e\u003cth align=\"center\"\u003eMath\u003c/th\u003e\u003cth align=\"center\"\u003eTranslation\u003c/th\u003e\u003c/tr\u003e\u003c/thead\u003e\u003ctbody\u003e\u003ctr\u003e\u003ctd align=\"left\"\u003eGPT-3.5\u003c/td\u003e\u003ctd align=\"center\"\u003e52.24\u003c/td\u003e\u003ctd align=\"center\"\u003e71.84\u003c/td\u003e\u003ctd align=\"center\"\u003e32.80\u003c/td\u003e\u003ctd align=\"center\"\u003e31.85\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd align=\"left\"\u003eGPT-4\u003c/td\u003e\u003ctd align=\"center\"\u003e71.64\u003c/td\u003e\u003ctd align=\"center\"\u003e83.82\u003c/td\u003e\u003ctd align=\"center\"\u003e80.13\u003c/td\u003e\u003ctd align=\"center\"\u003e34.37\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd align=\"left\"\u003eLlama2-7B\u003c/td\u003e\u003ctd align=\"center\"\u003e34.03\u003c/td\u003e\u003ctd align=\"center\"\u003e50.13\u003c/td\u003e\u003ctd align=\"center\"\u003e9.40\u003c/td\u003e\u003ctd align=\"center\"\u003e22.19\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd align=\"left\"\u003eLlama2-13B\u003c/td\u003e\u003ctd align=\"center\"\u003e39.55\u003c/td\u003e\u003ctd align=\"center\"\u003e57.26\u003c/td\u003e\u003ctd align=\"center\"\u003e16.80\u003c/td\u003e\u003ctd align=\"center\"\u003e25.89\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd align=\"left\"\u003eLlama2-70B\u003c/td\u003e\u003ctd align=\"center\"\u003e55.88\u003c/td\u003e\u003ctd align=\"center\"\u003e73.19\u003c/td\u003e\u003ctd align=\"center\"\u003e40.20\u003c/td\u003e\u003ctd align=\"center\"\u003e31.56\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd align=\"left\"\u003eMistral-7B\u003c/td\u003e\u003ctd align=\"center\"\u003e47.12\u003c/td\u003e\u003ctd align=\"center\"\u003e63.30\u003c/td\u003e\u003ctd align=\"center\"\u003e26.33\u003c/td\u003e\u003ctd align=\"center\"\u003e23.33\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd align=\"left\"\u003eMixtral-8x7B\u003c/td\u003e\u003ctd align=\"center\"\u003e56.08\u003c/td\u003e\u003ctd align=\"center\"\u003e70.70\u003c/td\u003e\u003ctd align=\"center\"\u003e45.00\u003c/td\u003e\u003ctd align=\"center\"\u003e29.78\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd align=\"left\"\u003eQwen1.5-0.5B\u003c/td\u003e\u003ctd align=\"center\"\u003e26.98\u003c/td\u003e\u003ctd align=\"center\"\u003e44.08\u003c/td\u003e\u003ctd align=\"center\"\u003e3.13\u003c/td\u003e\u003ctd align=\"center\"\u003e9.17\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd align=\"left\"\u003eQwen1.5-1.8B\u003c/td\u003e\u003ctd align=\"center\"\u003e33.57\u003c/td\u003e\u003ctd align=\"center\"\u003e48.37\u003c/td\u003e\u003ctd align=\"center\"\u003e6.47\u003c/td\u003e\u003ctd align=\"center\"\u003e16.19\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd align=\"left\"\u003eQwen1.5-4B\u003c/td\u003e\u003ctd align=\"center\"\u003e41.43\u003c/td\u003e\u003ctd align=\"center\"\u003e59.76\u003c/td\u003e\u003ctd align=\"center\"\u003e21.33\u003c/td\u003e\u003ctd align=\"center\"\u003e23.34\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd align=\"left\"\u003eQwen1.5-MoE-A2.7B\u003c/td\u003e\u003ctd align=\"center\"\u003e44.54\u003c/td\u003e\u003ctd align=\"center\"\u003e61.08\u003c/td\u003e\u003ctd align=\"center\"\u003e30.20\u003c/td\u003e\u003ctd align=\"center\"\u003e27.35\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd align=\"left\"\u003eQwen1.5-7B\u003c/td\u003e\u003ctd align=\"center\"\u003e47.70\u003c/td\u003e\u003ctd align=\"center\"\u003e67.63\u003c/td\u003e\u003ctd align=\"center\"\u003e37.27\u003c/td\u003e\u003ctd align=\"center\"\u003e28.36\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd align=\"left\"\u003eQwen1.5-14B\u003c/td\u003e\u003ctd align=\"center\"\u003e55.72\u003c/td\u003e\u003ctd align=\"center\"\u003e74.10\u003c/td\u003e\u003ctd align=\"center\"\u003e49.93\u003c/td\u003e\u003ctd align=\"center\"\u003e31.69\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd align=\"left\"\u003eQwen1.5-72B\u003c/td\u003e\u003ctd align=\"center\"\u003e66.35\u003c/td\u003e\u003ctd align=\"center\"\u003e78.16\u003c/td\u003e\u003ctd align=\"center\"\u003e61.67\u003c/td\u003e\u003ctd align=\"center\"\u003e35.57\u003c/td\u003e\u003c/tr\u003e\u003c/tbody\u003e\u003c/table\u003e\n\u003cp\u003eThe base models of Qwen1.5 showcase impressive multilingual capabilities, as demonstrated by its performance across a diverse set of 12 languages. In evaluations covering various dimensions such as exams, understanding, translation, and math, Qwen1.5 consistently delivers strong results. From languages like Arabic, Spanish, and French to Japanese, Korean, and Thai, Qwen1.5 demonstrates its ability to comprehend and generate high-quality content across different linguistic contexts.\nWe compared Qwen1.5-72B-Chat with GPT-3.5, and the results are shown below:\u003c/p\u003e\n\u003cfigure\u003e\u003cimg src=\"https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/assets/blog/qwen1.5/lang.png#center\" alt=\"\" loading=\"lazy\"\u003e\u003c/figure\u003e\n\u003cp\u003eThese results demonstrate the strong multilingual capabilities of Qwen1.5 chat models, which can serve downstream applications, such as translation, language understanding, and multilingual chat. Also, we believe that the improvements in multilingual capabilities can also level up the general capabilities.\u003c/p\u003e\n\u003ch2 id=\"support-of-long-context\"\u003eSupport of Long Context\u003c/h2\u003e\n\u003cp\u003eWith the increasing demand for long-context understanding, we have expanded the capability of all models to support contexts up to 32K tokens. We have evaluated the performance of Qwen1.5 models on the \u003ca href=\"https://github.com/OpenLMLab/LEval\"\u003eL-Eval benchmark\u003c/a\u003e, which measures the ability of models to generate responses based on long context. The results are shown below:\u003c/p\u003e\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\u003ctable\u003e\u003cthead\u003e\u003ctr\u003e\u003cth align=\"left\"\u003eModels\u003c/th\u003e\u003cth align=\"center\"\u003eCoursera\u003c/th\u003e\u003cth align=\"center\"\u003eGSM\u003c/th\u003e\u003cth align=\"center\"\u003eQuALITY\u003c/th\u003e\u003cth align=\"center\"\u003eTOEFL\u003c/th\u003e\u003cth align=\"center\"\u003eSFiction\u003c/th\u003e\u003cth align=\"center\"\u003eAvg.\u003c/th\u003e\u003c/tr\u003e\u003c/thead\u003e\u003ctbody\u003e\u003ctr\u003e\u003ctd align=\"left\"\u003eGPT3.5-turbo-16k\u003c/td\u003e\u003ctd align=\"center\"\u003e63.51\u003c/td\u003e\u003ctd align=\"center\"\u003e84.00\u003c/td\u003e\u003ctd align=\"center\"\u003e61.38\u003c/td\u003e\u003ctd align=\"center\"\u003e78.43\u003c/td\u003e\u003ctd align=\"center\"\u003e64.84\u003c/td\u003e\u003ctd align=\"center\"\u003e70.43\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd align=\"left\"\u003eClaude1.3-100k\u003c/td\u003e\u003ctd align=\"center\"\u003e60.03\u003c/td\u003e\u003ctd align=\"center\"\u003e88.00\u003c/td\u003e\u003ctd align=\"center\"\u003e73.76\u003c/td\u003e\u003ctd align=\"center\"\u003e83.64\u003c/td\u003e\u003ctd align=\"center\"\u003e72.65\u003c/td\u003e\u003ctd align=\"center\"\u003e75.62\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd align=\"left\"\u003eGPT4-32k\u003c/td\u003e\u003ctd align=\"center\"\u003e75.58\u003c/td\u003e\u003ctd align=\"center\"\u003e96.00\u003c/td\u003e\u003ctd align=\"center\"\u003e82.17\u003c/td\u003e\u003ctd align=\"center\"\u003e84.38\u003c/td\u003e\u003ctd align=\"center\"\u003e74.99\u003c/td\u003e\u003ctd align=\"center\"\u003e82.62\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd align=\"left\"\u003eQwen-72B-Chat\u003c/td\u003e\u003ctd align=\"center\"\u003e58.13\u003c/td\u003e\u003ctd align=\"center\"\u003e76.00\u003c/td\u003e\u003ctd align=\"center\"\u003e77.22\u003c/td\u003e\u003ctd align=\"center\"\u003e86.24\u003c/td\u003e\u003ctd align=\"center\"\u003e69.53\u003c/td\u003e\u003ctd align=\"center\"\u003e73.42\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd align=\"left\"\u003eQwen1.5-0.5B-Chat\u003c/td\u003e\u003ctd align=\"center\"\u003e30.81\u003c/td\u003e\u003ctd align=\"center\"\u003e6.00\u003c/td\u003e\u003ctd align=\"center\"\u003e34.16\u003c/td\u003e\u003ctd align=\"center\"\u003e40.52\u003c/td\u003e\u003ctd align=\"center\"\u003e49.22\u003c/td\u003e\u003ctd align=\"center\"\u003e32.14\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd align=\"left\"\u003eQwen1.5-1.8B-Chat\u003c/td\u003e\u003ctd align=\"center\"\u003e39.24\u003c/td\u003e\u003ctd align=\"center\"\u003e37.00\u003c/td\u003e\u003ctd align=\"center\"\u003e42.08\u003c/td\u003e\u003ctd align=\"center\"\u003e55.76\u003c/td\u003e\u003ctd align=\"center\"\u003e44.53\u003c/td\u003e\u003ctd align=\"center\"\u003e43.72\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd align=\"left\"\u003eQwen1.5-4B-Chat\u003c/td\u003e\u003ctd align=\"center\"\u003e54.94\u003c/td\u003e\u003ctd align=\"center\"\u003e47.00\u003c/td\u003e\u003ctd align=\"center\"\u003e57.92\u003c/td\u003e\u003ctd align=\"center\"\u003e69.15\u003c/td\u003e\u003ctd align=\"center\"\u003e56.25\u003c/td\u003e\u003ctd align=\"center\"\u003e57.05\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd align=\"left\"\u003eQwen1.5-7B-Chat\u003c/td\u003e\u003ctd align=\"center\"\u003e59.74\u003c/td\u003e\u003ctd align=\"center\"\u003e60.00\u003c/td\u003e\u003ctd align=\"center\"\u003e64.36\u003c/td\u003e\u003ctd align=\"center\"\u003e79.18\u003c/td\u003e\u003ctd align=\"center\"\u003e62.50\u003c/td\u003e\u003ctd align=\"center\"\u003e65.16\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd align=\"left\"\u003eQwen1.5-14B-Chat\u003c/td\u003e\u003ctd align=\"center\"\u003e69.04\u003c/td\u003e\u003ctd align=\"center\"\u003e79.00\u003c/td\u003e\u003ctd align=\"center\"\u003e74.75\u003c/td\u003e\u003ctd align=\"center\"\u003e83.64\u003c/td\u003e\u003ctd align=\"center\"\u003e75.78\u003c/td\u003e\u003ctd align=\"center\"\u003e76.44\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd align=\"left\"\u003eQwen1.5-72B-Chat\u003c/td\u003e\u003ctd align=\"center\"\u003e71.95\u003c/td\u003e\u003ctd align=\"center\"\u003e82.00\u003c/td\u003e\u003ctd align=\"center\"\u003e77.72\u003c/td\u003e\u003ctd align=\"center\"\u003e85.50\u003c/td\u003e\u003ctd align=\"center\"\u003e73.44\u003c/td\u003e\u003ctd align=\"center\"\u003e78.12\u003c/td\u003e\u003c/tr\u003e\u003c/tbody\u003e\u003c/table\u003e\n\u003cp\u003eIn terms of the performance, even a small model like Qwen1.5-7B-Chat demonstrates competitive performance against GPT-3.5 on 4 out of 5 tasks. Our best model, Qwen1.5-72B-Chat, significantly outperforms GPT3.5-turbo-16k and only slightly falls behind GPT4-32k. These results highlight our outstanding performance within 32K tokens, yet they do not imply that our models are limited to supporting only 32K tokens. You can modify \u003ccode\u003emax_position_embedding\u003c/code\u003e and \u003ccode\u003esliding_window\u003c/code\u003e in \u003ccode\u003econfig.json\u003c/code\u003e to a larger value to see if the model performance is still satisfactory for your tasks.\u003c/p\u003e\n\u003ch2 id=\"capabilities-to-connect-with-external-systems\"\u003eCapabilities to Connect with External Systems\u003c/h2\u003e\n\u003cp\u003eLarge language models (LLMs) are popular in part due to their ability to integrate external knowledge and tools. Retrieval-Augmented Generation (RAG) has gained traction as it mitigates common LLM issues like hallucination, real-time data shortage, and private information handling. Additionally, strong LLMs typically excel at using APIs and tools via function calling, making them ideal for serving as AI agents.\u003c/p\u003e\n\u003cp\u003eWe first assess the performance of Qwen1.5-Chat on \u003ca href=\"https://arxiv.org/abs/2309.01431\"\u003eRGB\u003c/a\u003e, an RAG benchmark for which we have not performed any specific optimization:\u003c/p\u003e\n\u003ctable\u003e\n    \u003ctbody\u003e\u003ctr\u003e\n        \u003cth colspan=\"5\"\u003eRGB English Benchmark for Retrieval-Augmented Generation\u003c/th\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n        \u003cth\u003eModels\u003c/th\u003e\n        \u003cth\u003eNoise 0.8 (Acc.↑)\u003c/th\u003e\n        \u003cth\u003eRejection 1.0 (Acc.↑)\u003c/th\u003e\n        \u003cth\u003eIntegration 0.4 (Acc.↑)\u003c/th\u003e\n        \u003cth\u003eCounterfactual (Acc.↑)\u003c/th\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n        \u003ctd\u003eGPT4-Turbo\u003c/td\u003e\n        \u003ctd\u003e85.67\u003c/td\u003e\n        \u003ctd\u003e47.33\u003c/td\u003e\n        \u003ctd\u003e60.00\u003c/td\u003e\n        \u003ctd\u003e90.00\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n        \u003ctd\u003eGPT3.5-Turbo\u003c/td\u003e\n        \u003ctd\u003e74.33\u003c/td\u003e\n        \u003ctd\u003e27.67\u003c/td\u003e\n        \u003ctd\u003e47.00\u003c/td\u003e\n        \u003ctd\u003e21.00\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n        \u003ctd\u003eLlama2-70B-Chat\u003c/td\u003e\n        \u003ctd\u003e82.00\u003c/td\u003e\n        \u003ctd\u003e31.00\u003c/td\u003e\n        \u003ctd\u003e56.00\u003c/td\u003e\n        \u003ctd\u003e15.00\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n        \u003ctd\u003eMistral-7B-Instruct-v0.2\u003c/td\u003e\n        \u003ctd\u003e82.00\u003c/td\u003e\n        \u003ctd\u003e31.00\u003c/td\u003e\n        \u003ctd\u003e56.00\u003c/td\u003e\n        \u003ctd\u003e15.00\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n        \u003ctd\u003eMixtral-8x7B-Instruct-v0.1\u003c/td\u003e\n        \u003ctd\u003e82.67\u003c/td\u003e\n        \u003ctd\u003e37.00\u003c/td\u003e\n        \u003ctd\u003e67.00\u003c/td\u003e\n        \u003ctd\u003e8.00\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n        \u003ctd\u003eQwen1.5-7B-Chat\u003c/td\u003e\n        \u003ctd\u003e77.67\u003c/td\u003e\n        \u003ctd\u003e25.00\u003c/td\u003e\n        \u003ctd\u003e52.00\u003c/td\u003e\n        \u003ctd\u003e9.00 \u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n        \u003ctd\u003eQwen1.5-14B-Chat\u003c/td\u003e\n        \u003ctd\u003e80.67\u003c/td\u003e\n        \u003ctd\u003e24.00\u003c/td\u003e\n        \u003ctd\u003e60.00\u003c/td\u003e\n        \u003ctd\u003e8.00 \u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n        \u003ctd\u003eQwen1.5-72B-Chat\u003c/td\u003e\n        \u003ctd\u003e81.67\u003c/td\u003e\n        \u003ctd\u003e48.67\u003c/td\u003e\n        \u003ctd\u003e61.00\u003c/td\u003e\n        \u003ctd\u003e28.00\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n        \u003cth colspan=\"5\"\u003eRGB Chinese Benchmark for Retrieval-Augmented Generation\u003c/th\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n        \u003cth\u003eModels\u003c/th\u003e\n        \u003cth\u003eNoise 0.8 (Acc.↑)\u003c/th\u003e\n        \u003cth\u003eRejection 1.0 (Acc.↑)\u003c/th\u003e\n        \u003cth\u003eIntegration 0.4 (Acc.↑)\u003c/th\u003e\n        \u003cth\u003eCounterfactual (Acc.↑)\u003c/th\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n        \u003ctd\u003eGPT4-Turbo\u003c/td\u003e\n        \u003ctd\u003e75.00\u003c/td\u003e\n        \u003ctd\u003e38.67\u003c/td\u003e\n        \u003ctd\u003e63.00\u003c/td\u003e\n        \u003ctd\u003e90.00\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n        \u003ctd\u003eGPT3.5-Turbo\u003c/td\u003e\n        \u003ctd\u003e69.00\u003c/td\u003e\n        \u003ctd\u003e13.00\u003c/td\u003e\n        \u003ctd\u003e55.00\u003c/td\u003e\n        \u003ctd\u003e25.00\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n        \u003ctd\u003eLlama2-70B-Chat\u003c/td\u003e\n        \u003ctd\u003e28.00\u003c/td\u003e\n        \u003ctd\u003e17.00\u003c/td\u003e\n        \u003ctd\u003e32.00\u003c/td\u003e\n        \u003ctd\u003e8.00 \u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n        \u003ctd\u003eMistral-7B-Instruct-v0.2\u003c/td\u003e\n        \u003ctd\u003e54.67\u003c/td\u003e\n        \u003ctd\u003e28.67\u003c/td\u003e\n        \u003ctd\u003e37.00\u003c/td\u003e\n        \u003ctd\u003e4.00 \u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n        \u003ctd\u003eMixtral-8x7B-Instruct-v0.1\u003c/td\u003e\n        \u003ctd\u003e27.33\u003c/td\u003e\n        \u003ctd\u003e4.00 \u003c/td\u003e\n        \u003ctd\u003e24.00\u003c/td\u003e\n        \u003ctd\u003e4.00 \u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n        \u003ctd\u003eQwen1.5-7B-Chat\u003c/td\u003e\n        \u003ctd\u003e71.00\u003c/td\u003e\n        \u003ctd\u003e10.33\u003c/td\u003e\n        \u003ctd\u003e54.00\u003c/td\u003e\n        \u003ctd\u003e20.00\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n        \u003ctd\u003eQwen1.5-14B-Chat\u003c/td\u003e\n        \u003ctd\u003e75.00\u003c/td\u003e\n        \u003ctd\u003e16.67\u003c/td\u003e\n        \u003ctd\u003e55.00\u003c/td\u003e\n        \u003ctd\u003e22.00\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n        \u003ctd\u003eQwen1.5-72B-Chat\u003c/td\u003e\n        \u003ctd\u003e76.00\u003c/td\u003e\n        \u003ctd\u003e51.00\u003c/td\u003e\n        \u003ctd\u003e66.00\u003c/td\u003e\n        \u003ctd\u003e44.00\u003c/td\u003e\n    \u003c/tr\u003e\n\u003c/tbody\u003e\u003c/table\u003e\n\u003cp\u003eWe then assess Qwen's capacity to function as a general-purpose agent by testing it on the \u003ca href=\"https://open-compass.github.io/T-Eval/\"\u003eT-Eval\u003c/a\u003e benchmark. None of the Qwen models have undergone any optimization tailored specifically for this benchmark:\u003c/p\u003e\n\u003ctable\u003e\n    \u003ctbody\u003e\u003ctr\u003e\n        \u003cth colspan=\"8\"\u003eAgent Performance on T-Eval English\u003c/th\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n        \u003cth\u003eModels\u003c/th\u003e\n        \u003cth\u003eOverall   \u003c/th\u003e\n        \u003cth\u003eInstruct  \u003c/th\u003e\n        \u003cth\u003ePlan      \u003c/th\u003e\n        \u003cth\u003eReason    \u003c/th\u003e\n        \u003cth\u003eRetrieve  \u003c/th\u003e\n        \u003cth\u003eUnderstand\u003c/th\u003e\n        \u003cth\u003eReview    \u003c/th\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n        \u003ctd\u003eGPT4-Turbo\u003c/td\u003e\n        \u003ctd\u003e86.4\u003c/td\u003e\n        \u003ctd\u003e96.3\u003c/td\u003e\n        \u003ctd\u003e87.8\u003c/td\u003e\n        \u003ctd\u003e65.3\u003c/td\u003e\n        \u003ctd\u003e88.9\u003c/td\u003e\n        \u003ctd\u003e85.8\u003c/td\u003e\n        \u003ctd\u003e94.5\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n        \u003ctd\u003eLlama-2-70B-Chat\u003c/td\u003e\n        \u003ctd\u003e58.59\u003c/td\u003e\n        \u003ctd\u003e77.80\u003c/td\u003e\n        \u003ctd\u003e63.75\u003c/td\u003e\n        \u003ctd\u003e39.07\u003c/td\u003e\n        \u003ctd\u003e51.35\u003c/td\u003e\n        \u003ctd\u003e50.34\u003c/td\u003e\n        \u003ctd\u003e69.20\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n        \u003ctd\u003eMistral-7B-Instruct-v0.2\u003c/td\u003e\n        \u003ctd\u003e46.68\u003c/td\u003e\n        \u003ctd\u003e63.57\u003c/td\u003e\n        \u003ctd\u003e60.88\u003c/td\u003e\n        \u003ctd\u003e32.59\u003c/td\u003e\n        \u003ctd\u003e17.58\u003c/td\u003e\n        \u003ctd\u003e38.08\u003c/td\u003e\n        \u003ctd\u003e67.35\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n        \u003ctd\u003eMixtral-8x7B-Instruct-v0.1\u003c/td\u003e\n        \u003ctd\u003e62.15\u003c/td\u003e\n        \u003ctd\u003e42.39\u003c/td\u003e\n        \u003ctd\u003e46.48\u003c/td\u003e\n        \u003ctd\u003e60.35\u003c/td\u003e\n        \u003ctd\u003e76.69\u003c/td\u003e\n        \u003ctd\u003e73.70\u003c/td\u003e\n        \u003ctd\u003e73.31\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n        \u003ctd\u003eQwen1.5-7B-Chat\u003c/td\u003e\n        \u003ctd\u003e59.67\u003c/td\u003e\n        \u003ctd\u003e71.12\u003c/td\u003e\n        \u003ctd\u003e62.95\u003c/td\u003e\n        \u003ctd\u003e37.60\u003c/td\u003e\n        \u003ctd\u003e61.17\u003c/td\u003e\n        \u003ctd\u003e53.75\u003c/td\u003e\n        \u003ctd\u003e71.46\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n        \u003ctd\u003eQwen1.5-14B-Chat\u003c/td\u003e\n        \u003ctd\u003e71.77\u003c/td\u003e\n        \u003ctd\u003e86.16\u003c/td\u003e\n        \u003ctd\u003e73.09\u003c/td\u003e\n        \u003ctd\u003e49.51\u003c/td\u003e\n        \u003ctd\u003e72.07\u003c/td\u003e\n        \u003ctd\u003e66.03\u003c/td\u003e\n        \u003ctd\u003e83.78\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n        \u003ctd\u003eQwen1.5-72B-Chat\u003c/td\u003e\n        \u003ctd\u003e76.69\u003c/td\u003e\n        \u003ctd\u003e80.96\u003c/td\u003e\n        \u003ctd\u003e83.12\u003c/td\u003e\n        \u003ctd\u003e56.89\u003c/td\u003e\n        \u003ctd\u003e80.17\u003c/td\u003e\n        \u003ctd\u003e76.68\u003c/td\u003e\n        \u003ctd\u003e82.34\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n        \u003cth colspan=\"8\"\u003eAgent Performance on T-Eval Chinese\u003c/th\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n        \u003cth\u003eModels\u003c/th\u003e\n        \u003cth\u003eOverall   \u003c/th\u003e\n        \u003cth\u003eInstruct  \u003c/th\u003e\n        \u003cth\u003ePlan      \u003c/th\u003e\n        \u003cth\u003eReason    \u003c/th\u003e\n        \u003cth\u003eRetrieve  \u003c/th\u003e\n        \u003cth\u003eUnderstand\u003c/th\u003e\n        \u003cth\u003eReview    \u003c/th\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n        \u003ctd\u003eGPT4-Turbo\u003c/td\u003e\n        \u003ctd\u003e85.9\u003c/td\u003e\n        \u003ctd\u003e97.6\u003c/td\u003e\n        \u003ctd\u003e87.0\u003c/td\u003e\n        \u003ctd\u003e68.4\u003c/td\u003e\n        \u003ctd\u003e89.2\u003c/td\u003e\n        \u003ctd\u003e86.8\u003c/td\u003e\n        \u003ctd\u003e86.0\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n        \u003ctd\u003eLlama-2-70B-Chat\u003c/td\u003e\n        \u003ctd\u003e51.15\u003c/td\u003e\n        \u003ctd\u003e53.78\u003c/td\u003e\n        \u003ctd\u003e56.65\u003c/td\u003e\n        \u003ctd\u003e34.27\u003c/td\u003e\n        \u003ctd\u003e48.24\u003c/td\u003e\n        \u003ctd\u003e50.49\u003c/td\u003e\n        \u003ctd\u003e63.45\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n        \u003ctd\u003eMistral-7B-Instruct-v0.2\u003c/td\u003e\n        \u003ctd\u003e46.26\u003c/td\u003e\n        \u003ctd\u003e49.64\u003c/td\u003e\n        \u003ctd\u003e61.82\u003c/td\u003e\n        \u003ctd\u003e36.17\u003c/td\u003e\n        \u003ctd\u003e20.26\u003c/td\u003e\n        \u003ctd\u003e47.25\u003c/td\u003e\n        \u003ctd\u003e62.42\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n        \u003ctd\u003eMixtral-8x7B-Instruct-v0.1\u003c/td\u003e\n        \u003ctd\u003e62.77\u003c/td\u003e\n        \u003ctd\u003e26.38\u003c/td\u003e\n        \u003ctd\u003e60.79\u003c/td\u003e\n        \u003ctd\u003e62.02\u003c/td\u003e\n        \u003ctd\u003e76.60\u003c/td\u003e\n        \u003ctd\u003e77.74\u003c/td\u003e\n        \u003ctd\u003e73.10\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n        \u003ctd\u003eQwen1.5-7B-Chat\u003c/td\u003e\n        \u003ctd\u003e53.15\u003c/td\u003e\n        \u003ctd\u003e60.56\u003c/td\u003e\n        \u003ctd\u003e62.31\u003c/td\u003e\n        \u003ctd\u003e42.07\u003c/td\u003e\n        \u003ctd\u003e55.28\u003c/td\u003e\n        \u003ctd\u003e55.76\u003c/td\u003e\n        \u003ctd\u003e42.92\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n        \u003ctd\u003eQwen1.5-14B-Chat\u003c/td\u003e\n        \u003ctd\u003e64.85\u003c/td\u003e\n        \u003ctd\u003e84.25\u003c/td\u003e\n        \u003ctd\u003e64.77\u003c/td\u003e\n        \u003ctd\u003e54.68\u003c/td\u003e\n        \u003ctd\u003e72.35\u003c/td\u003e\n        \u003ctd\u003e68.88\u003c/td\u003e\n        \u003ctd\u003e44.15\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n        \u003ctd\u003eQwen1.5-72B-Chat\u003c/td\u003e\n        \u003ctd\u003e72.88\u003c/td\u003e\n        \u003ctd\u003e97.50\u003c/td\u003e\n        \u003ctd\u003e80.83\u003c/td\u003e\n        \u003ctd\u003e58.11\u003c/td\u003e\n        \u003ctd\u003e76.14\u003c/td\u003e\n        \u003ctd\u003e71.94\u003c/td\u003e\n        \u003ctd\u003e52.77\u003c/td\u003e\n    \u003c/tr\u003e\n\u003c/tbody\u003e\u003c/table\u003e\n\u003cp\u003eTo test the capabilities of tool using, also known as function calling, we follow our previous practice and use our opensourced evaluation \u003ca href=\"https://github.com/QwenLM/Qwen/blob/main/eval/evaluate_plugin.py\"\u003ebenchmark\u003c/a\u003e for assessing the models' ability to appropriately select and use tools:\u003c/p\u003e\n\u003ctable\u003e\n    \u003ctbody\u003e\u003ctr\u003e\n        \u003cth colspan=\"4\"\u003eTool-Use Benchmark\u003c/th\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n        \u003cth\u003eModels\u003c/th\u003e\u003cth\u003eTool Selection (Acc.↑)\u003c/th\u003e\u003cth\u003eTool Input (Rouge-L↑)\u003c/th\u003e\u003cth\u003eFalse Positive (Acc.↑)\u003c/th\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n        \u003ctd\u003eGPT-4\u003c/td\u003e\n        \u003ctd\u003e98.0\u003c/td\u003e\n        \u003ctd\u003e95.3\u003c/td\u003e\n        \u003ctd\u003e76.1\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n        \u003ctd\u003eGPT-3.5\u003c/td\u003e\n        \u003ctd\u003e74.5\u003c/td\u003e\n        \u003ctd\u003e80.7\u003c/td\u003e\n        \u003ctd\u003e19.4\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n        \u003ctd\u003eLlama-2-70B-Chat\u003c/td\u003e\n        \u003ctd\u003e88.54\u003c/td\u003e\n        \u003ctd\u003e70.36\u003c/td\u003e\n        \u003ctd\u003e0.37 \u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n        \u003ctd\u003eMistral-7B-Instruct-v0.2\u003c/td\u003e\n        \u003ctd\u003e94.79\u003c/td\u003e\n        \u003ctd\u003e82.81\u003c/td\u003e\n        \u003ctd\u003e6.34 \u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n        \u003ctd\u003eMixtral-8x7B-Instruct-v0.1\u003c/td\u003e\n        \u003ctd\u003e99.31\u003c/td\u003e\n        \u003ctd\u003e94.46\u003c/td\u003e\n        \u003ctd\u003e31.34\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n        \u003ctd\u003eQwen1.5-7B-Chat\u003c/td\u003e\n        \u003ctd\u003e95.83\u003c/td\u003e\n        \u003ctd\u003e89.48\u003c/td\u003e\n        \u003ctd\u003e92.54\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n        \u003ctd\u003eQwen1.5-14B-Chat\u003c/td\u003e\n        \u003ctd\u003e93.06\u003c/td\u003e\n        \u003ctd\u003e88.74\u003c/td\u003e\n        \u003ctd\u003e92.91\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n        \u003ctd\u003eQwen1.5-72B-Chat\u003c/td\u003e\n        \u003ctd\u003e95.14\u003c/td\u003e\n        \u003ctd\u003e91.14\u003c/td\u003e\n        \u003ctd\u003e98.51\u003c/td\u003e\n    \u003c/tr\u003e\n\u003c/tbody\u003e\u003c/table\u003e\n\u003cp\u003eFinally, since the Python code interpreter has emerged as an increasingly powerful tool for advanced LLMs, we also evaluate our models' capability in utilizing this tool on our previously open-sourced \u003ca href=\"https://github.com/QwenLM/Qwen-Agent/tree/main/benchmark\"\u003ebenchmark\u003c/a\u003e:\u003c/p\u003e\n\u003ctable\u003e\n    \u003ctbody\u003e\u003ctr\u003e\n        \u003cth colspan=\"5\"\u003eCode Interpreter Benchmark\u003c/th\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n        \u003cth rowspan=\"2\"\u003eModels\u003c/th\u003e\n        \u003cth colspan=\"3\"\u003eAccuracy of Code Execution Results (%)\u003c/th\u003e\n        \u003cth colspan=\"1\"\u003eExecutable Rate of Code (%)\u003c/th\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n        \u003cth\u003eMath↑\u003c/th\u003e\u003cth\u003eVisualization-Hard↑\u003c/th\u003e\u003cth\u003eVisualization-Easy↑\u003c/th\u003e\u003cth\u003eGeneral↑\u003c/th\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n        \u003ctd\u003eGPT-4\u003c/td\u003e\n        \u003ctd\u003e82.8\u003c/td\u003e\n        \u003ctd\u003e66.7\u003c/td\u003e\n        \u003ctd\u003e60.8\u003c/td\u003e\n        \u003ctd\u003e82.8\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n        \u003ctd\u003eGPT-3.5\u003c/td\u003e\n        \u003ctd\u003e47.3\u003c/td\u003e\n        \u003ctd\u003e33.3\u003c/td\u003e\n        \u003ctd\u003e55.7\u003c/td\u003e\n        \u003ctd\u003e74.1\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n        \u003ctd\u003eMistral-7B-Instruct-v0.2\u003c/td\u003e\n        \u003ctd\u003e25.5\u003c/td\u003e\n        \u003ctd\u003e19.1 \u003c/td\u003e\n        \u003ctd\u003e44.3 \u003c/td\u003e\n        \u003ctd\u003e62.1\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n        \u003ctd\u003eMixtral-8x7B-Instruct-v0.1\u003c/td\u003e\n        \u003ctd\u003e47.8\u003c/td\u003e\n        \u003ctd\u003e33.3\u003c/td\u003e\n        \u003ctd\u003e54.4\u003c/td\u003e\n        \u003ctd\u003e60.3\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n        \u003ctd\u003eQwen1.5-7B-Chat\u003c/td\u003e\n        \u003ctd\u003e54.0\u003c/td\u003e\n        \u003ctd\u003e35.7\u003c/td\u003e\n        \u003ctd\u003e36.7\u003c/td\u003e\n        \u003ctd\u003e65.5\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n        \u003ctd\u003eQwen1.5-14B-Chat\u003c/td\u003e\n        \u003ctd\u003e62.1\u003c/td\u003e\n        \u003ctd\u003e46.4\u003c/td\u003e\n        \u003ctd\u003e48.1\u003c/td\u003e\n        \u003ctd\u003e70.6\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n        \u003ctd\u003eQwen1.5-72B-Chat\u003c/td\u003e\n        \u003ctd\u003e73.1\u003c/td\u003e\n        \u003ctd\u003e52.3\u003c/td\u003e\n        \u003ctd\u003e50.6\u003c/td\u003e\n        \u003ctd\u003e87.9\u003c/td\u003e\n    \u003c/tr\u003e\n\u003c/tbody\u003e\u003c/table\u003e\n\u003cp\u003eLarger Qwen1.5-Chat models generally outperform smaller ones, nearing GPT-4's tool-use performance. However, in code interpreter tasks like math problem-solving and visualization, even the largest Qwen1.5-72B-Chat model lags significantly behind GPT-4 due to coding capabilities. We aim in future versions to enhance the coding capabilities of all Qwen models during both pre-training and alignment.\u003c/p\u003e\n\u003ch1 id=\"develop-with-qwen15\"\u003eDevelop with Qwen1.5\u003c/h1\u003e\n\u003cp\u003eThe biggest difference in Qwen1.5 is the integration of Qwen1.5 to Hugging Face transformers. Since 4.37.0, you can use Qwen1.5 without our custom code, which means that you can load the model like the following:\u003c/p\u003e\n\u003cpre\u003e\u003ccode class=\"language-python\"\u003efrom transformers import AutoModelForCausalLM\n# This is what we previously used\nmodel = AutoModelForCausalLM.from_pretrained(\"Qwen/Qwen-7B-Chat\", device_map=\"auto\", trust_remote_code=True)\n# This is what you can use now\nmodel = AutoModelForCausalLM.from_pretrained(\"Qwen/Qwen1.5-7B-Chat\", device_map=\"auto\")\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eThe usage of Qwen1.5 for chat is different from the previous version. You can use the following code to chat with Qwen1.5:\u003c/p\u003e\n\u003cpre\u003e\u003ccode class=\"language-python\"\u003efrom transformers import AutoModelForCausalLM, AutoTokenizer\ndevice = \"cuda\" # the device to load the model onto\n\nmodel = AutoModelForCausalLM.from_pretrained(\n    \"Qwen/Qwen1.5-14B-Chat-AWQ\",\n    device_map=\"auto\"\n)\ntokenizer = AutoTokenizer.from_pretrained(\"Qwen/Qwen1.5-14B-Chat-AWQ\")\n\nprompt = \"Give me a short introduction to large language model.\"\nmessages = [\n    {\"role\": \"system\", \"content\": \"You are a helpful assistant.\"},\n    {\"role\": \"user\", \"content\": prompt}\n]\ntext = tokenizer.apply_chat_template(\n    messages,\n    tokenize=False,\n    add_generation_prompt=True\n)\nmodel_inputs = tokenizer([text], return_tensors=\"pt\").to(device)\n\ngenerated_ids = model.generate(\n    model_inputs.input_ids,\n    max_new_tokens=512\n)\ngenerated_ids = [\n    output_ids[len(input_ids):] for input_ids, output_ids in zip(model_inputs.input_ids, generated_ids)\n]\n\nresponse = tokenizer.batch_decode(generated_ids, skip_special_tokens=True)[0]\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eFor chat models, we no longer use a specific \u003ccode\u003emodel.chat()\u003c/code\u003e method, but instead we use \u003ccode\u003emodel.generate()\u003c/code\u003e with the chat template written in \u003ccode\u003etokenizer_config.json\u003c/code\u003e so that we can use \u003ccode\u003etokenizer.apply_chat_template()\u003c/code\u003e to generate the input, and we use \u003ccode\u003eeos_token\u003c/code\u003e to control when to stop the generation.\u003c/p\u003e\n\u003cp\u003eWe also provide AWQ models and GPTQ models (including Int4 and Int8 models) for you to use Qwen1.5 in low-resource or deployment scenarios. As Huggingface transformers supports \u003ca href=\"https://github.com/casper-hansen/AutoAWQ\"\u003eAWQ\u003c/a\u003e and \u003ca href=\"https://github.com/AutoGPTQ/AutoGPTQ\"\u003eGPTQ\u003c/a\u003e, you can use them in the same way above only with the corresponding model names.\u003c/p\u003e\n\u003cp\u003eFurthermore, we have integrated our code to popular inference frameworks so that you can deploy your model easily. Now \u003ccode\u003evLLM\u003e=0.3.0\u003c/code\u003e and \u003ccode\u003eSGLang\u003e=0.1.11\u003c/code\u003e officially support Qwen1.5. Check their official github repos and docs to learn about the detailed usage. Here we demonstrate an example to show how to use vLLM to build an OpenAI-API compatible interface for our model:\u003c/p\u003e\n\u003cpre\u003e\u003ccode class=\"language-shell\"\u003epython -m vllm.entrypoints.openai.api_server --model Qwen/Qwen1.5-7B-Chat\n\u003c/code\u003e\u003c/pre\u003e\n\u003cpre\u003e\u003ccode class=\"language-shell\"\u003ecurl http://localhost:8000/v1/chat/completions \\\n    -H \"Content-Type: application/json\" \\\n    -d '{\n    \"model\": \"Qwen/Qwen1.5-7B-Chat\",\n    \"messages\": [\n    {\"role\": \"system\", \"content\": \"You are a helpful assistant.\"},\n    {\"role\": \"user\", \"content\": \"Tell me something about large language models.\"}\n    ]\n    }'\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eFor users to run LLM locally, llama.cpp also provides support to Qwen1.5, and we officially provide quantized models in the GGUF format in our HF model hub. You can use the following code to run Qwen1.5 in llama.cpp:\u003c/p\u003e\n\u003cpre\u003e\u003ccode class=\"language-shell\"\u003e./main -m qwen1.5-7b-chat-q2_k.gguf -n 512 --color -i -cml -f prompts/chat-with-qwen.txt\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eBesides, you can use the GGUF file with Ollama. Thanks to the support of \u003ca href=\"https://ollama.ai/\"\u003eOllama\u003c/a\u003e, you can now directly use one line of command:\u003c/p\u003e\n\u003cpre\u003e\u003ccode class=\"language-shell\"\u003eollama run qwen\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eOr you can use the GGUF file to play with \u003ca href=\"https://github.com/Mozilla-Ocho/llamafile\"\u003ellamafile\u003c/a\u003e to run our models with a single file.\u003c/p\u003e\n\u003cp\u003eTo make a web demo locally, we advise you to use \u003ca href=\"https://github.com/oobabooga/text-generation-webui\"\u003eText generation web UI\u003c/a\u003e which is very easy to use.\u003c/p\u003e\n\u003cp\u003eFor advanced developers that hope to train better or more suitable models for themselves, such as post-training, Qwen1.5 is supported by Hugging face \u003ccode\u003etrainer\u003c/code\u003e and Peft. Also, there are easy-to-use frameworks that support both supervised finetuning (SFT) and alignment (PPO, DPO, etc.). Now, both \u003ca href=\"https://github.com/hiyouga/LLaMA-Factory\"\u003eLLaMA-Factory\u003c/a\u003e and \u003ca href=\"https://github.com/OpenAccess-AI-Collective/axolotl\"\u003eAxolotl\u003c/a\u003e have supported the training of Qwen1.5. We advise you to turn to their official github repos and docs for more advanced usages.\u003c/p\u003e\n\u003cp\u003eIf you would like to use Qwen1.5 for downstream applications, such as RAG, tool use, agent, you can now build OpenAI-API compatible API or run local models for famous frameworks, e.g., \u003ca href=\"https://www.llamaindex.ai/\"\u003eLlamaIndex\u003c/a\u003e, \u003ca href=\"https://www.langchain.com/\"\u003eLangChain\u003c/a\u003e, \u003ca href=\"https://www.crewai.io/\"\u003eCrewAI\u003c/a\u003e.\u003c/p\u003e\n\u003cp\u003eOverall, as we care about your developing experience, we not only have tried our best to provide good models to the community but also have made efforts to make things easier for all of you. We hope that you can enjoy using Qwen1.5 and that it can help you with your tasks of either research or applications.\u003c/p\u003e\n\u003ch1 id=\"conclusion\"\u003eConclusion\u003c/h1\u003e\n\u003cp\u003eWe are excited to introduce Qwen1.5, the next version of our Qwen series. In this release, we have opensourced both base and chat models of 6 sizes, including 0.5B, 1.8B, 4B, 7B, 14B, and 72B, and we have also provided quantized models. We have merged our code of Qwen1.5 to Hugging face transformers, and you can directly use it with \u003ccode\u003etransformers\u003e=4.37.0\u003c/code\u003e without \u003ccode\u003etrust_remote_code\u003c/code\u003e. Additionally, we have had frameworks, e.g., vLLM, SGLang, AutoGPTQ, etc., supported Qwen1.5. We believe from now on, using our models will be much easier. We believe that this release is though a small step towards model quality, but it is a big step towards developer experience. Hope you like it and enjoy using it. Join our \u003ca href=\"https://discord.gg/yPEP2vHTu4\"\u003eDiscord\u003c/a\u003e or \u003ca href=\"https://github.com/QwenLM/Qwen/blob/main/assets/wechat.png\"\u003eWeChat\u003c/a\u003e to share your experience, comments, or whatever you like with us. We are looking forward to hearing from you.\u003c/p\u003e\n\u003ch1 id=\"citation\"\u003eCitation\u003c/h1\u003e\n\u003cpre\u003e\u003ccode\u003e@misc{qwen1.5,\n    title = {Introducing Qwen1.5},\n    url = {https://qwenlm.github.io/blog/qwen1.5/},\n    author = {Qwen Team},\n    month = {February},\n    year = {2024}\n}\n\u003c/code\u003e\u003c/pre\u003e"])</script><script>self.__next_f.push([1,"d:[\"$\",\"main\",null,{\"children\":[\"$\",\"article\",null,{\"className\":\"blog-article\",\"children\":[[\"$\",\"$L5\",null,{\"className\":\"blog-back\",\"href\":\"/blog\",\"children\":\"← Blog\"}],[\"$\",\"div\",null,{\"className\":\"blog-post-meta\",\"children\":[\"February 3, 2024\",\" \",\"·\",\" \",18,\" min read\"]}],[\"$\",\"h1\",null,{\"className\":\"blog-post-title\",\"children\":\"Introducing Qwen1.5\"}],[\"$\",\"p\",null,{\"className\":\"blog-post-lede\",\"children\":\"In recent months, our focus has been on developing a \\\"good\\\" model while optimizing the developer experience. As we progress towards **Qwen1.5**, the next iteration in our Qwen series, this update arrives just before the Chinese New Year.\"}],[\"$\",\"div\",null,{\"className\":\"blog-prose\",\"dangerouslySetInnerHTML\":{\"__html\":\"$17\"}}]]}]}]\n"])</script><script>self.__next_f.push([1,"13:[[\"$\",\"meta\",\"0\",{\"charSet\":\"utf-8\"}],[\"$\",\"meta\",\"1\",{\"name\":\"viewport\",\"content\":\"width=device-width, initial-scale=1\"}]]\nf:null\n"])</script><script>self.__next_f.push([1,"11:{\"metadata\":[[\"$\",\"title\",\"0\",{\"children\":\"Introducing Qwen1.5 — Zen Blog\"}],[\"$\",\"meta\",\"1\",{\"name\":\"description\",\"content\":\"In recent months, our focus has been on developing a \\\"good\\\" model while optimizing the developer experience. As we progress towards **Qwen1.5**, the next iteration in our Qwen series, this update arrives just before the Chinese New Year.\"}],[\"$\",\"meta\",\"2\",{\"name\":\"keywords\",\"content\":\"AI, LLM, Agentic AI, Code Generation, Zen Coder, Multimodal, Open Source, Machine Learning\"}]],\"error\":null,\"digest\":\"$undefined\"}\n"])</script><script>self.__next_f.push([1,"16:\"$11:metadata\"\n"])</script></body></html>

@@ -1,0 +1,114 @@
+1:"$Sreact.fragment"
+2:I[6529,["619","static/chunks/619-ba102abea3e3d0e4.js","177","static/chunks/app/layout-b4c33ab67f60e2ed.js"],"default"]
+3:I[9766,[],""]
+4:I[8924,[],""]
+5:I[2619,["619","static/chunks/619-ba102abea3e3d0e4.js","953","static/chunks/app/blog/%5Bslug%5D/page-f25a122e9ccf798d.js"],""]
+c:I[7150,[],""]
+:HL["/_next/static/css/1d1f6bc532e5f43f.css","style"]
+:HL["/_next/static/css/eb87e4f7aea490c6.css","style"]
+0:{"P":null,"b":"aLEH4vcTO8-5k6ZseFClK","p":"","c":["","blog","federated-learning",""],"i":false,"f":[[["",{"children":["blog",{"children":[["slug","federated-learning","d"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/1d1f6bc532e5f43f.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","children":[["$","head",null,{"children":["$","link",null,{"rel":"icon","type":"image/png","href":"/favicon.png"}]}],["$","body",null,{"children":[["$","$L2",null,{}],["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}],["$","footer",null,{"children":["$","div",null,{"className":"container","children":[["$","div",null,{"className":"footer-content","children":[["$","div",null,{"className":"footer-section","children":[["$","h4",null,{"children":"Zen LM"}],["$","p",null,{"children":"95 open Zen models across Zen3, Zen4, and Zen5. Chat, code, vision, audio, image, embeddings, rerankers, and safety. OpenAI- and Anthropic-compatible API."}]]}],["$","div",null,{"className":"footer-section","children":[["$","h4",null,{"children":"Zen 5"}],["$","ul",null,{"children":[["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 Nano (0.8B - 9B)"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 Flash"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 Mini"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 (default)"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 Coder"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 Pro"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 Max"}]}]]}]]}],["$","div",null,{"className":"footer-section","children":[["$","h4",null,{"children":"Zen 4"}],["$","ul",null,{"children":[["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen4","children":"Zen4 / Zen4.1"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen4","children":"Zen4 Ultra / Max / Pro"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen4","children":"Zen4 Mini / Thinking"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen4","children":"Zen4 Coder / Pro / Flash"}]}]]}]]}],["$","div",null,{"className":"footer-section","children":[["$","h4",null,{"children":"Zen 3 Multimodal"}],["$","ul",null,{"children":[["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen3","children":"Zen3 Omni / VL / Web"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen3","children":"Zen3 Nano / Guard"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen3","children":"Zen3 Embedding / Reranker"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen3","children":"Zen3 Image / ASR / TTS"}]}]]}]]}],["$","div",null,{"className":"footer-section","children":[["$","h4",null,{"children":"Resources"}],["$","ul",null,{"children":[["$","li",null,{"children":["$","$L5",null,{"href":"/datasets","children":"Training Data"}]}],["$","li",null,{"children":["$","a",null,{"href":"https://huggingface.co/zenlm","target":"_blank","rel":"noopener noreferrer","children":"HuggingFace"}]}],["$","li",null,{"children":["$","a",null,{"href":"https://github.com/zenlm","target":"_blank","rel":"noopener noreferrer","children":"GitHub"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/research","children":"Research Papers"}]}],["$","li",null,{"children":["$","a",null,{"href":"https://api.hanzo.ai","target":"_blank","rel":"noopener noreferrer","children":"Zen API"}]}]]}]]}]]}],"$L6"]}]}],"$L7"]}]]}]]}],{"children":["blog","$L8",{"children":[["slug","federated-learning","d"],"$L9",{"children":["__PAGE__","$La",{},null,false]},null,false]},null,false]},null,false],"$Lb",false]],"m":"$undefined","G":["$c",[]],"s":false,"S":true}
+e:I[4431,[],"OutletBoundary"]
+10:I[5278,[],"AsyncMetadataOutlet"]
+12:I[4431,[],"ViewportBoundary"]
+14:I[4431,[],"MetadataBoundary"]
+15:"$Sreact.suspense"
+6:["$","div",null,{"className":"footer-bottom","children":["$","p",null,{"children":["© ",2026," Zen Authors. Open foundation models. Served on the Zen API."]}]}]
+7:["$","script",null,{"src":"/assets/js/main.js","async":true}]
+8:["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+9:["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+a:["$","$1","c",{"children":["$Ld",[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/eb87e4f7aea490c6.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","$Le",null,{"children":["$Lf",["$","$L10",null,{"promise":"$@11"}]]}]]}]
+b:["$","$1","h",{"children":[null,[["$","$L12",null,{"children":"$L13"}],null],["$","$L14",null,{"children":["$","div",null,{"hidden":true,"children":["$","$15",null,{"fallback":null,"children":"$L16"}]}]}]]}]
+17:T153b,<p>Training large language models requires vast amounts of data. That data often contains sensitive information. Federated learning offers a path to train on distributed, private data without centralizing it.</p>
+<h2 id="the-centralization-problem">The Centralization Problem</h2>
+<p>Traditional ML training follows a simple pattern: collect data, aggregate it centrally, train models. This creates problems:</p>
+<ul>
+<li><strong>Privacy risk</strong>: Sensitive data leaves user control</li>
+<li><strong>Legal barriers</strong>: Regulations prevent data movement across jurisdictions</li>
+<li><strong>Trust requirements</strong>: Data holders must trust the training party</li>
+<li><strong>Single points of failure</strong>: Central aggregation creates vulnerabilities</li>
+</ul>
+<h2 id="federated-learning-basics">Federated Learning Basics</h2>
+<p>Federated learning inverts the pattern. Instead of bringing data to the model, we bring the model to the data.</p>
+<pre><code>                   +-----------+
+                   |  Central  |
+                   |  Server   |
+                   +-----+-----+
+                         |
+          +--------------+--------------+
+          |              |              |
+    +-----v-----+  +-----v-----+  +-----v-----+
+    |  Client 1 |  |  Client 2 |  |  Client N |
+    |  (Data A) |  |  (Data B) |  |  (Data N) |
+    +-----------+  +-----------+  +-----------+
+</code></pre>
+<ol>
+<li>Central server distributes model weights</li>
+<li>Clients train locally on their data</li>
+<li>Clients send gradient updates (not data) back</li>
+<li>Server aggregates updates into improved model</li>
+<li>Repeat</li>
+</ol>
+<p>Data never leaves client devices. Only model updates travel.</p>
+<h2 id="challenges-at-scale">Challenges at Scale</h2>
+<p>Federated learning for LLMs faces unique challenges:</p>
+<h3 id="communication-costs">Communication Costs</h3>
+<p>Model gradients are large. With billions of parameters, naive federation is impractical. We address this through:</p>
+<ul>
+<li><strong>Gradient compression</strong>: Sparsification and quantization reduce bandwidth by 100-1000x</li>
+<li><strong>Asynchronous updates</strong>: Clients contribute when convenient, not in synchronized rounds</li>
+<li><strong>Hierarchical aggregation</strong>: Regional aggregators reduce central server load</li>
+</ul>
+<h3 id="heterogeneous-compute">Heterogeneous Compute</h3>
+<p>Participants have varied hardware. A phone differs from a workstation differs from a server. Our approach:</p>
+<ul>
+<li><strong>Adaptive batch sizes</strong>: Smaller devices process smaller batches</li>
+<li><strong>Model sharding</strong>: Large models split across capable participants</li>
+<li><strong>Contribution weighting</strong>: Update importance scales with compute contributed</li>
+</ul>
+<h3 id="data-heterogeneity">Data Heterogeneity</h3>
+<p>Different participants have different data distributions. This creates convergence challenges. Solutions:</p>
+<ul>
+<li><strong>Personalization layers</strong>: Some parameters remain local</li>
+<li><strong>Clustered federation</strong>: Similar participants form training groups</li>
+<li><strong>Importance sampling</strong>: Under-represented distributions get higher weight</li>
+</ul>
+<h2 id="privacy-enhancements">Privacy Enhancements</h2>
+<p>Basic federation protects raw data but gradients can leak information. We add:</p>
+<h3 id="differential-privacy">Differential Privacy</h3>
+<p>Noise added to gradients provides mathematical privacy guarantees. Each participant's contribution becomes statistically indistinguishable.</p>
+<h3 id="secure-aggregation">Secure Aggregation</h3>
+<p>Cryptographic protocols ensure the server only sees aggregated updates, not individual contributions. Even a compromised server learns nothing about specific participants.</p>
+<h3 id="trusted-execution">Trusted Execution</h3>
+<p>Hardware enclaves (SGX, TrustZone) provide additional isolation. Computation occurs in protected memory regions.</p>
+<h2 id="zen-federation-protocol">Zen Federation Protocol</h2>
+<p>We've developed a federation protocol specifically for language model training:</p>
+<ol>
+<li><strong>Enrollment</strong>: Participants register compute capacity and data characteristics</li>
+<li><strong>Matching</strong>: Coordinator assigns participants to training cohorts</li>
+<li><strong>Distribution</strong>: Model shards route to appropriate participants</li>
+<li><strong>Training</strong>: Local training with privacy-preserving gradient computation</li>
+<li><strong>Aggregation</strong>: Secure combination of participant updates</li>
+<li><strong>Verification</strong>: Cryptographic proofs of correct computation</li>
+</ol>
+<p>Early benchmarks show we achieve 85% of centralized training efficiency while maintaining strong privacy guarantees.</p>
+<h2 id="join-the-network">Join the Network</h2>
+<p>We're opening the Zen federation network to participants. Contribute compute, contribute data (privately), contribute to open AI.</p>
+<p>Requirements:</p>
+<ul>
+<li>Minimum 16GB RAM</li>
+<li>Stable internet connection</li>
+<li>Willingness to run our client software</li>
+</ul>
+<p>In return, participants receive:</p>
+<ul>
+<li>Governance tokens proportional to contribution</li>
+<li>Early access to trained models</li>
+<li>Recognition in model cards</li>
+</ul>
+<p>Details at zen.ai/federate.</p>
+<hr>
+<p><em>Zach Kelling is a co-founder of Zoo Labs Foundation.</em></p>d:["$","main",null,{"children":["$","article",null,{"className":"blog-article","children":[["$","$L5",null,{"className":"blog-back","href":"/blog","children":"← Blog"}],["$","div",null,{"className":"blog-post-meta","children":["May 8, 2022"," ","·"," ",3," min read"]}],["$","h1",null,{"className":"blog-post-title","children":"Federated Learning for Open AI"}],["$","p",null,{"className":"blog-post-lede","children":"How federated learning enables collaborative model training while preserving data privacy."}],["$","div",null,{"className":"blog-prose","dangerouslySetInnerHTML":{"__html":"$17"}}]]}]}]
+13:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+f:null
+11:{"metadata":[["$","title","0",{"children":"Federated Learning for Open AI — Zen Blog"}],["$","meta","1",{"name":"description","content":"How federated learning enables collaborative model training while preserving data privacy."}],["$","meta","2",{"name":"keywords","content":"AI, LLM, Agentic AI, Code Generation, Zen Coder, Multimodal, Open Source, Machine Learning"}]],"error":null,"digest":"$undefined"}
+16:"$11:metadata"

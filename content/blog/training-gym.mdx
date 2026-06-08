@@ -1,0 +1,298 @@
+---
+title: "Training Gym: A Platform for Open Model Development"
+date: "2023-09-11"
+description: "Announcing Training Gym, our open platform for collaborative large model training."
+author: "Zach Kelling"
+tags: ["Infrastructure", "Training", "Open Source"]
+---
+
+
+Training large language models requires more than algorithms. It requires infrastructure: distributed training frameworks, data pipelines, experiment tracking, and evaluation harnesses. Today we open source Training Gym, our complete platform for model development.
+
+## Why Training Gym?
+
+Open AI development faces an infrastructure gap. Publishing model weights is valuable, but it's not enough. Researchers need:
+
+- Reproducible training pipelines
+- Scalable distributed training
+- Standardized evaluation
+- Experiment management
+- Data processing tools
+
+Training Gym provides all of this in an integrated, open source package.
+
+## Architecture
+
+```
++------------------+     +------------------+     +------------------+
+|   Data Pipeline  | --> |  Training Loop   | --> |   Evaluation     |
++------------------+     +------------------+     +------------------+
+         |                       |                        |
+         v                       v                        v
++------------------+     +------------------+     +------------------+
+|   Data Registry  |     | Checkpoint Store |     |   Metrics DB     |
++------------------+     +------------------+     +------------------+
+                                |
+                                v
+                    +------------------+
+                    |   Experiment     |
+                    |   Tracker        |
+                    +------------------+
+```
+
+### Data Pipeline
+
+The data pipeline handles:
+
+- **Ingestion**: Load from local files, cloud storage, or streaming sources
+- **Processing**: Tokenization, filtering, deduplication
+- **Mixing**: Combine multiple data sources with configurable ratios
+- **Streaming**: Memory-efficient data loading for large corpora
+
+```python
+from training_gym.data import DataPipeline, MixedDataset
+
+pipeline = DataPipeline(
+    sources=[
+        ("s3://data/books", 0.3),
+        ("s3://data/web", 0.5),
+        ("s3://data/code", 0.2),
+    ],
+    tokenizer="zoo-labs/zen-tokenizer",
+    sequence_length=2048,
+)
+
+dataset = pipeline.build()
+```
+
+### Distributed Training
+
+Training Gym supports multiple distributed training strategies:
+
+- **Data Parallel**: Simple replication across devices
+- **Tensor Parallel**: Split layers across devices
+- **Pipeline Parallel**: Split model stages across devices
+- **ZeRO**: Memory-efficient data parallelism
+- **FSDP**: Fully sharded data parallel (PyTorch native)
+
+Configuration is declarative:
+
+```yaml
+distributed:
+  strategy: fsdp
+  world_size: 64
+  sharding_strategy: full_shard
+  mixed_precision: bf16
+  gradient_checkpointing: true
+```
+
+### Training Loop
+
+The training loop is modular and extensible:
+
+```python
+from training_gym import Trainer, TrainingConfig
+
+config = TrainingConfig(
+    model="zen-7b",
+    optimizer="adamw",
+    learning_rate=1e-4,
+    batch_size=2048,
+    max_steps=100000,
+    warmup_steps=2000,
+    weight_decay=0.1,
+)
+
+trainer = Trainer(config)
+trainer.fit(dataset)
+```
+
+Built-in features:
+- Learning rate scheduling
+- Gradient clipping
+- Mixed precision training
+- Automatic checkpointing
+- Loss spike detection and recovery
+
+### Evaluation
+
+Standardized evaluation across common benchmarks:
+
+```python
+from training_gym.eval import Evaluator
+
+evaluator = Evaluator(
+    benchmarks=["mmlu", "hellaswag", "winogrande", "arc"],
+    model=model,
+)
+
+results = evaluator.run()
+```
+
+Supported benchmarks:
+- MMLU (multitask language understanding)
+- HellaSwag (commonsense reasoning)
+- WinoGrande (coreference resolution)
+- ARC (science questions)
+- TruthfulQA (truthfulness)
+- HumanEval (code generation)
+- GSM8K (math reasoning)
+
+### Experiment Tracking
+
+Every training run is tracked:
+
+```python
+from training_gym import Experiment
+
+with Experiment("zen-7b-v2") as exp:
+    exp.log_config(config)
+    trainer.fit(dataset)
+    exp.log_metrics(results)
+    exp.log_artifacts(["model.pt", "tokenizer/"])
+```
+
+The experiment tracker records:
+- Hyperparameters
+- Training metrics (loss, gradient norms, learning rates)
+- Evaluation results
+- System metrics (GPU utilization, memory)
+- Artifacts (checkpoints, configs)
+
+## Reproducibility
+
+Training Gym emphasizes reproducibility:
+
+### Deterministic Training
+
+```yaml
+reproducibility:
+  seed: 42
+  deterministic_algorithms: true
+  cublas_workspace_config: ":4096:8"
+```
+
+Same seed, same results (within floating point precision).
+
+### Environment Capture
+
+Every experiment records:
+- Git commit hash
+- Package versions
+- Hardware configuration
+- CUDA/cuDNN versions
+
+### Configuration as Code
+
+All configs are versioned YAML:
+
+```yaml
+# experiments/zen-7b-v2.yaml
+model:
+  architecture: llama
+  hidden_size: 4096
+  num_layers: 32
+  num_heads: 32
+  vocab_size: 32000
+
+training:
+  batch_size: 2048
+  learning_rate: 3e-4
+  max_steps: 150000
+```
+
+## Community Features
+
+Training Gym includes tools for collaborative development:
+
+### Model Registry
+
+Share and discover models:
+
+```python
+from training_gym.registry import ModelRegistry
+
+registry = ModelRegistry()
+
+# Publish a model
+registry.push("my-org/my-model", model, config)
+
+# Load a model
+model = registry.pull("zoo-labs/zen-7b")
+```
+
+### Leaderboards
+
+Automatic benchmark submission:
+
+```python
+evaluator.submit_to_leaderboard(
+    model_name="zen-7b-v2",
+    organization="zoo-labs",
+)
+```
+
+### Dataset Sharing
+
+```python
+from training_gym.data import DatasetRegistry
+
+# Share processed datasets
+DatasetRegistry.push("my-corpus", dataset, license="cc-by-4.0")
+
+# Load shared datasets
+dataset = DatasetRegistry.pull("zoo-labs/zen-pretrain-v1")
+```
+
+## Getting Started
+
+### Installation
+
+```bash
+pip install training-gym
+
+# For distributed training
+pip install training-gym[distributed]
+
+# For evaluation suite
+pip install training-gym[eval]
+```
+
+### Quick Start
+
+```python
+from training_gym import quickstart
+
+# Train a small model to verify setup
+quickstart.train_tiny_model()
+
+# Run evaluation suite
+quickstart.evaluate_model("my-model")
+```
+
+### Documentation
+
+Full documentation at docs.training-gym.ai:
+
+- Getting started guide
+- Architecture overview
+- API reference
+- Example configurations
+- Troubleshooting
+
+## Roadmap
+
+**Q4 2023**: Multi-modal training support
+**Q1 2024**: Reinforcement learning from human feedback (RLHF) integration
+**Q2 2024**: Federated training support
+**Q3 2024**: Automated hyperparameter optimization
+
+## Conclusion
+
+Open AI development needs open infrastructure. Training Gym provides the tools to train, evaluate, and share models. Join us in building the future of open AI.
+
+Repository: github.com/zoo-labs/training-gym
+
+---
+
+*Zach Kelling is a co-founder of Zoo Labs Foundation.*

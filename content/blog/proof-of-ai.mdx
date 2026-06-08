@@ -1,0 +1,169 @@
+---
+title: "Proof of AI: Verifiable Machine Learning on Chain"
+date: "2023-06-26"
+description: "How we're bringing cryptographic verification to AI inference, enabling trustless machine learning."
+author: "Zach Kelling"
+tags: ["Research", "Blockchain", "Verification"]
+---
+
+
+When an AI system makes a prediction, how do you know it actually ran the model it claims? In centralized systems, you trust the operator. Decentralized AI needs cryptographic proof.
+
+Today we introduce Proof of AI (PoAI), a framework for verifiable machine learning inference.
+
+## The Trust Problem
+
+Consider a decentralized AI service:
+
+1. User submits input and payment
+2. Compute provider runs inference
+3. Provider returns output
+4. User receives result
+
+What prevents the provider from:
+- Running a cheaper, worse model?
+- Returning cached results for new inputs?
+- Fabricating outputs entirely?
+
+Traditional solutions require trusted hardware or reputation systems. PoAI provides cryptographic guarantees.
+
+## Proof of AI Overview
+
+PoAI generates succinct proofs that a specific model produced a specific output from a specific input. Verifiers can check proofs efficiently without re-running inference.
+
+### Properties
+
+- **Soundness**: Invalid computations cannot produce valid proofs
+- **Completeness**: Valid computations always produce verifiable proofs
+- **Succinctness**: Proof size is small relative to computation size
+- **Zero-knowledge** (optional): Proofs reveal nothing beyond correctness
+
+### Architecture
+
+```
+Input -> [Model Execution] -> Output
+              |
+              v
+         [Circuit]
+              |
+              v
+    [Proof Generation]
+              |
+              v
+          [Proof] -> [Verifier] -> Accept/Reject
+```
+
+## Technical Approach
+
+### Model Compilation
+
+Neural networks compile to arithmetic circuits. Each operation becomes constraint equations:
+
+**Matrix multiplication**: $y = Wx + b$ becomes constraints on each element
+
+**Activation functions**: ReLU, GELU approximated by polynomial constraints
+
+**Normalization**: LayerNorm expressed as arithmetic over inputs
+
+Our compiler handles:
+- Linear layers
+- Attention mechanisms
+- Feedforward blocks
+- Embedding lookups
+
+### Proof System
+
+We use a combination of techniques:
+
+**SNARKs** for succinct proofs of arithmetic circuits. Proof size is constant regardless of circuit size.
+
+**Folding schemes** to handle the repetitive structure of transformer layers efficiently.
+
+**Lookup arguments** for non-arithmetic operations like embedding tables.
+
+### Optimization
+
+Naive compilation produces impractical circuits. We optimize through:
+
+1. **Quantization**: INT8 models have 8x fewer constraints than FP32
+2. **Structured pruning**: Remove entire attention heads, reducing circuit size
+3. **Polynomial approximations**: Replace transcendental functions with low-degree polynomials
+4. **Batched verification**: Amortize proof costs across multiple inferences
+
+## Performance
+
+### Proof Generation
+
+| Model Size | Parameters | Proof Time | GPU Memory |
+|------------|------------|------------|------------|
+| Tiny | 25M | 12s | 8GB |
+| Small | 110M | 89s | 24GB |
+| Medium | 350M | 340s | 48GB |
+
+Proof generation is 100-1000x slower than inference. This is the primary limitation.
+
+### Verification
+
+| Model Size | Verification Time | Proof Size |
+|------------|-------------------|------------|
+| Tiny | 15ms | 1.2KB |
+| Small | 18ms | 1.4KB |
+| Medium | 22ms | 1.6KB |
+
+Verification is fast and proof size is nearly constant. On-chain verification is practical.
+
+### Accuracy Impact
+
+Quantization and polynomial approximations affect model accuracy:
+
+| Model | Original Accuracy | PoAI-Compatible | Degradation |
+|-------|-------------------|-----------------|-------------|
+| Classifier | 94.2% | 93.1% | -1.1% |
+| Embeddings | 0.847 (cosine) | 0.831 | -1.9% |
+| Generator | 28.3 (perplexity) | 29.1 | +2.8% |
+
+Acceptable for many applications.
+
+## Use Cases
+
+### Decentralized Inference Markets
+
+Users pay for inference, providers compete on price. PoAI ensures providers actually run the claimed model. No reputation bootstrapping needed.
+
+### AI Oracles
+
+Smart contracts need off-chain data. AI models can provide predictions, classifications, or analyses. PoAI makes these oracles trustless.
+
+### Model Verification
+
+When model weights are published, how do you verify they match claimed training? PoAI can prove that specific weights produce specific benchmark results.
+
+### Federated Learning Verification
+
+In federated learning, participants claim to train on local data. PoAI can verify that gradient updates came from actual training, not fabrication.
+
+## Limitations
+
+Current limitations we're working to address:
+
+1. **Proof generation cost**: Large models remain impractical
+2. **Model constraints**: Complex architectures (MoE, very deep) are challenging
+3. **Floating point**: Native FP support would reduce approximation errors
+4. **Recursion**: Autoregressive generation requires sequential proofs
+
+## Roadmap
+
+**Q3 2023**: Release PoAI SDK for small models
+**Q4 2023**: Folding scheme improvements for 10x speedup
+**Q1 2024**: Support for models up to 1B parameters
+**Q2 2024**: Production deployment on Lux Network
+
+## Conclusion
+
+Verifiable AI is essential for decentralized systems. PoAI makes cryptographic verification practical for real models. The overhead is significant but decreasing.
+
+Trust, but verify. Now you can.
+
+---
+
+*Zach Kelling is a co-founder of Zoo Labs Foundation.*

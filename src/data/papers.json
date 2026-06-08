@@ -1,0 +1,506 @@
+[
+ {
+  "slug": "zen-3d",
+  "title": "Zen 3D",
+  "theme": "Model Whitepapers",
+  "pdf": "https://github.com/zenlm/papers/raw/main/pdfs/zen-3d.pdf"
+ },
+ {
+  "slug": "zen-agent",
+  "title": "Zen Agent",
+  "theme": "Model Whitepapers",
+  "pdf": "https://github.com/zenlm/papers/raw/main/pdfs/zen-agent.pdf"
+ },
+ {
+  "slug": "zen-agent-framework",
+  "title": "Zen Agent Framework",
+  "theme": "Model Whitepapers",
+  "pdf": "https://github.com/zenlm/papers/raw/main/pdfs/zen-agent-framework.pdf"
+ },
+ {
+  "slug": "zen-alignment",
+  "title": "Zen Alignment",
+  "theme": "Research",
+  "pdf": "https://github.com/zenlm/papers/raw/main/pdfs/zen-alignment.pdf"
+ },
+ {
+  "slug": "zen-artist-edit_whitepaper",
+  "title": "Zen Artist Edit",
+  "theme": "Model Whitepapers",
+  "pdf": "https://github.com/zenlm/papers/raw/main/pdfs/zen-artist-edit_whitepaper.pdf"
+ },
+ {
+  "slug": "zen-artist_whitepaper",
+  "title": "Zen Artist",
+  "theme": "Model Whitepapers",
+  "pdf": "https://github.com/zenlm/papers/raw/main/pdfs/zen-artist_whitepaper.pdf"
+ },
+ {
+  "slug": "zen-aso-protocol",
+  "title": "Zen ASO Protocol",
+  "theme": "Protocols",
+  "pdf": "https://github.com/zenlm/papers/raw/main/pdfs/zen-aso-protocol.pdf"
+ },
+ {
+  "slug": "zen-audio-architecture",
+  "title": "Zen Audio Architecture",
+  "theme": "Research",
+  "pdf": "https://github.com/zenlm/papers/raw/main/pdfs/zen-audio-architecture.pdf"
+ },
+ {
+  "slug": "zen-base_whitepaper",
+  "title": "Zen Base",
+  "theme": "Model Whitepapers",
+  "pdf": "https://github.com/zenlm/papers/raw/main/pdfs/zen-base_whitepaper.pdf"
+ },
+ {
+  "slug": "zen-benchmark-suite",
+  "title": "Zen Benchmark Suite",
+  "theme": "Research",
+  "pdf": "https://github.com/zenlm/papers/raw/main/pdfs/zen-benchmark-suite.pdf"
+ },
+ {
+  "slug": "zen-chain-of-thought",
+  "title": "Zen Chain Of Thought",
+  "theme": "Research",
+  "pdf": "https://github.com/zenlm/papers/raw/main/pdfs/zen-chain-of-thought.pdf"
+ },
+ {
+  "slug": "zen-code-benchmarks",
+  "title": "Zen Code Benchmarks",
+  "theme": "Research",
+  "pdf": "https://github.com/zenlm/papers/raw/main/pdfs/zen-code-benchmarks.pdf"
+ },
+ {
+  "slug": "zen-code_whitepaper",
+  "title": "Zen Code",
+  "theme": "Model Whitepapers",
+  "pdf": "https://github.com/zenlm/papers/raw/main/pdfs/zen-code_whitepaper.pdf"
+ },
+ {
+  "slug": "zen-coder-flash_whitepaper",
+  "title": "Zen Coder Flash",
+  "theme": "Model Whitepapers",
+  "pdf": "https://github.com/zenlm/papers/raw/main/pdfs/zen-coder-flash_whitepaper.pdf"
+ },
+ {
+  "slug": "zen-coder_whitepaper",
+  "title": "Zen Coder",
+  "theme": "Model Whitepapers",
+  "pdf": "https://github.com/zenlm/papers/raw/main/pdfs/zen-coder_whitepaper.pdf"
+ },
+ {
+  "slug": "zen-context-extension",
+  "title": "Zen Context Extension",
+  "theme": "Research",
+  "pdf": "https://github.com/zenlm/papers/raw/main/pdfs/zen-context-extension.pdf"
+ },
+ {
+  "slug": "zen-designer-instruct_whitepaper",
+  "title": "Zen Designer Instruct",
+  "theme": "Model Whitepapers",
+  "pdf": "https://github.com/zenlm/papers/raw/main/pdfs/zen-designer-instruct_whitepaper.pdf"
+ },
+ {
+  "slug": "zen-designer-thinking_whitepaper",
+  "title": "Zen Designer Thinking",
+  "theme": "Model Whitepapers",
+  "pdf": "https://github.com/zenlm/papers/raw/main/pdfs/zen-designer-thinking_whitepaper.pdf"
+ },
+ {
+  "slug": "zen-director",
+  "title": "Zen Director",
+  "theme": "Model Whitepapers",
+  "pdf": "https://github.com/zenlm/papers/raw/main/pdfs/zen-director.pdf"
+ },
+ {
+  "slug": "zen-distributed-training",
+  "title": "Zen Distributed Training",
+  "theme": "Research",
+  "pdf": "https://github.com/zenlm/papers/raw/main/pdfs/zen-distributed-training.pdf"
+ },
+ {
+  "slug": "zen-dso-protocol",
+  "title": "Zen DSO Protocol",
+  "theme": "Protocols",
+  "pdf": "https://github.com/zenlm/papers/raw/main/pdfs/zen-dso-protocol.pdf"
+ },
+ {
+  "slug": "zen-dub-live_whitepaper",
+  "title": "Zen Dub Live",
+  "theme": "Model Whitepapers",
+  "pdf": "https://github.com/zenlm/papers/raw/main/pdfs/zen-dub-live_whitepaper.pdf"
+ },
+ {
+  "slug": "zen-dub_whitepaper",
+  "title": "Zen Dub",
+  "theme": "Model Whitepapers",
+  "pdf": "https://github.com/zenlm/papers/raw/main/pdfs/zen-dub_whitepaper.pdf"
+ },
+ {
+  "slug": "zen-eco_whitepaper",
+  "title": "Zen Eco",
+  "theme": "Model Whitepapers",
+  "pdf": "https://github.com/zenlm/papers/raw/main/pdfs/zen-eco_whitepaper.pdf"
+ },
+ {
+  "slug": "zen-embeddings-retrieval",
+  "title": "Zen Embeddings Retrieval",
+  "theme": "Research",
+  "pdf": "https://github.com/zenlm/papers/raw/main/pdfs/zen-embeddings-retrieval.pdf"
+ },
+ {
+  "slug": "zen-enterprise-deployment",
+  "title": "Zen Enterprise Deployment",
+  "theme": "Applications",
+  "pdf": "https://github.com/zenlm/papers/raw/main/pdfs/zen-enterprise-deployment.pdf"
+ },
+ {
+  "slug": "zen-financial-ai",
+  "title": "Zen Financial AI",
+  "theme": "Applications",
+  "pdf": "https://github.com/zenlm/papers/raw/main/pdfs/zen-financial-ai.pdf"
+ },
+ {
+  "slug": "zen-finetuning",
+  "title": "Zen Finetuning",
+  "theme": "Research",
+  "pdf": "https://github.com/zenlm/papers/raw/main/pdfs/zen-finetuning.pdf"
+ },
+ {
+  "slug": "zen-foley",
+  "title": "Zen Foley",
+  "theme": "Model Whitepapers",
+  "pdf": "https://github.com/zenlm/papers/raw/main/pdfs/zen-foley.pdf"
+ },
+ {
+  "slug": "zen-guard-gen_whitepaper",
+  "title": "Zen Guard Gen",
+  "theme": "Model Whitepapers",
+  "pdf": "https://github.com/zenlm/papers/raw/main/pdfs/zen-guard-gen_whitepaper.pdf"
+ },
+ {
+  "slug": "zen-guard-stream_whitepaper",
+  "title": "Zen Guard Stream",
+  "theme": "Model Whitepapers",
+  "pdf": "https://github.com/zenlm/papers/raw/main/pdfs/zen-guard-stream_whitepaper.pdf"
+ },
+ {
+  "slug": "zen-guard_whitepaper",
+  "title": "Zen Guard",
+  "theme": "Model Whitepapers",
+  "pdf": "https://github.com/zenlm/papers/raw/main/pdfs/zen-guard_whitepaper.pdf"
+ },
+ {
+  "slug": "zen-hallucination-reduction",
+  "title": "Zen Hallucination Reduction",
+  "theme": "Research",
+  "pdf": "https://github.com/zenlm/papers/raw/main/pdfs/zen-hallucination-reduction.pdf"
+ },
+ {
+  "slug": "zen-hardware-optimization",
+  "title": "Zen Hardware Optimization",
+  "theme": "Research",
+  "pdf": "https://github.com/zenlm/papers/raw/main/pdfs/zen-hardware-optimization.pdf"
+ },
+ {
+  "slug": "zen-inference-optimization",
+  "title": "Zen Inference Optimization",
+  "theme": "Research",
+  "pdf": "https://github.com/zenlm/papers/raw/main/pdfs/zen-inference-optimization.pdf"
+ },
+ {
+  "slug": "zen-knowledge-distillation",
+  "title": "Zen Knowledge Distillation",
+  "theme": "Research",
+  "pdf": "https://github.com/zenlm/papers/raw/main/pdfs/zen-knowledge-distillation.pdf"
+ },
+ {
+  "slug": "zen-legal-ai",
+  "title": "Zen Legal AI",
+  "theme": "Applications",
+  "pdf": "https://github.com/zenlm/papers/raw/main/pdfs/zen-legal-ai.pdf"
+ },
+ {
+  "slug": "zen-live_whitepaper",
+  "title": "Zen Live",
+  "theme": "Model Whitepapers",
+  "pdf": "https://github.com/zenlm/papers/raw/main/pdfs/zen-live_whitepaper.pdf"
+ },
+ {
+  "slug": "zen-mathematical-reasoning",
+  "title": "Zen Mathematical Reasoning",
+  "theme": "Research",
+  "pdf": "https://github.com/zenlm/papers/raw/main/pdfs/zen-mathematical-reasoning.pdf"
+ },
+ {
+  "slug": "zen-max_whitepaper",
+  "title": "Zen Max",
+  "theme": "Model Whitepapers",
+  "pdf": "https://github.com/zenlm/papers/raw/main/pdfs/zen-max_whitepaper.pdf"
+ },
+ {
+  "slug": "zen-medical",
+  "title": "Zen Medical",
+  "theme": "Applications",
+  "pdf": "https://github.com/zenlm/papers/raw/main/pdfs/zen-medical.pdf"
+ },
+ {
+  "slug": "zen-medical-ai",
+  "title": "Zen Medical AI",
+  "theme": "Model Whitepapers",
+  "pdf": "https://github.com/zenlm/papers/raw/main/pdfs/zen-medical-ai.pdf"
+ },
+ {
+  "slug": "zen-mixture-of-experts",
+  "title": "Zen Mixture Of Experts",
+  "theme": "Research",
+  "pdf": "https://github.com/zenlm/papers/raw/main/pdfs/zen-mixture-of-experts.pdf"
+ },
+ {
+  "slug": "zen-multilingual",
+  "title": "Zen Multilingual",
+  "theme": "Research",
+  "pdf": "https://github.com/zenlm/papers/raw/main/pdfs/zen-multilingual.pdf"
+ },
+ {
+  "slug": "zen-multimodal-architecture",
+  "title": "Zen Multimodal Architecture",
+  "theme": "Research",
+  "pdf": "https://github.com/zenlm/papers/raw/main/pdfs/zen-multimodal-architecture.pdf"
+ },
+ {
+  "slug": "zen-musician",
+  "title": "Zen Musician",
+  "theme": "Model Whitepapers",
+  "pdf": "https://github.com/zenlm/papers/raw/main/pdfs/zen-musician.pdf"
+ },
+ {
+  "slug": "zen-nano_whitepaper",
+  "title": "Zen Nano",
+  "theme": "Model Whitepapers",
+  "pdf": "https://github.com/zenlm/papers/raw/main/pdfs/zen-nano_whitepaper.pdf"
+ },
+ {
+  "slug": "zen-next_whitepaper",
+  "title": "Zen Next",
+  "theme": "Model Whitepapers",
+  "pdf": "https://github.com/zenlm/papers/raw/main/pdfs/zen-next_whitepaper.pdf"
+ },
+ {
+  "slug": "zen-omni_whitepaper",
+  "title": "Zen Omni",
+  "theme": "Model Whitepapers",
+  "pdf": "https://github.com/zenlm/papers/raw/main/pdfs/zen-omni_whitepaper.pdf"
+ },
+ {
+  "slug": "zen-privacy-federated",
+  "title": "Zen Privacy Federated",
+  "theme": "Research",
+  "pdf": "https://github.com/zenlm/papers/raw/main/pdfs/zen-privacy-federated.pdf"
+ },
+ {
+  "slug": "zen-pro_whitepaper",
+  "title": "Zen Pro",
+  "theme": "Model Whitepapers",
+  "pdf": "https://github.com/zenlm/papers/raw/main/pdfs/zen-pro_whitepaper.pdf"
+ },
+ {
+  "slug": "zen-quantization",
+  "title": "Zen Quantization",
+  "theme": "Research",
+  "pdf": "https://github.com/zenlm/papers/raw/main/pdfs/zen-quantization.pdf"
+ },
+ {
+  "slug": "zen-reasoning",
+  "title": "Zen Reasoning",
+  "theme": "Research",
+  "pdf": "https://github.com/zenlm/papers/raw/main/pdfs/zen-reasoning.pdf"
+ },
+ {
+  "slug": "zen-reranker",
+  "title": "Zen Reranker",
+  "theme": "Model Whitepapers",
+  "pdf": "https://github.com/zenlm/papers/raw/main/pdfs/zen-reranker.pdf"
+ },
+ {
+  "slug": "zen-reward-modeling",
+  "title": "Zen Reward Modeling",
+  "theme": "Research",
+  "pdf": "https://github.com/zenlm/papers/raw/main/pdfs/zen-reward-modeling.pdf"
+ },
+ {
+  "slug": "zen-safety-evaluation",
+  "title": "Zen Safety Evaluation",
+  "theme": "Research",
+  "pdf": "https://github.com/zenlm/papers/raw/main/pdfs/zen-safety-evaluation.pdf"
+ },
+ {
+  "slug": "zen-scribe_whitepaper",
+  "title": "Zen Scribe",
+  "theme": "Model Whitepapers",
+  "pdf": "https://github.com/zenlm/papers/raw/main/pdfs/zen-scribe_whitepaper.pdf"
+ },
+ {
+  "slug": "zen-synthetic-data",
+  "title": "Zen Synthetic Data",
+  "theme": "Research",
+  "pdf": "https://github.com/zenlm/papers/raw/main/pdfs/zen-synthetic-data.pdf"
+ },
+ {
+  "slug": "zen-technical-paper",
+  "title": "Zen Technical Paper",
+  "theme": "Model Whitepapers",
+  "pdf": "https://github.com/zenlm/papers/raw/main/pdfs/zen-technical-paper.pdf"
+ },
+ {
+  "slug": "zen-training-methodology",
+  "title": "Zen Training Methodology",
+  "theme": "Research",
+  "pdf": "https://github.com/zenlm/papers/raw/main/pdfs/zen-training-methodology.pdf"
+ },
+ {
+  "slug": "zen-translator",
+  "title": "Zen Translator",
+  "theme": "Model Whitepapers",
+  "pdf": "https://github.com/zenlm/papers/raw/main/pdfs/zen-translator.pdf"
+ },
+ {
+  "slug": "zen-translator_whitepaper",
+  "title": "Zen Translator",
+  "theme": "Model Whitepapers",
+  "pdf": "https://github.com/zenlm/papers/raw/main/pdfs/zen-translator_whitepaper.pdf"
+ },
+ {
+  "slug": "zen-video",
+  "title": "Zen Video",
+  "theme": "Model Whitepapers",
+  "pdf": "https://github.com/zenlm/papers/raw/main/pdfs/zen-video.pdf"
+ },
+ {
+  "slug": "zen-video-i2v_whitepaper",
+  "title": "Zen Video I2V",
+  "theme": "Model Whitepapers",
+  "pdf": "https://github.com/zenlm/papers/raw/main/pdfs/zen-video-i2v_whitepaper.pdf"
+ },
+ {
+  "slug": "zen-vision-architecture",
+  "title": "Zen Vision Architecture",
+  "theme": "Research",
+  "pdf": "https://github.com/zenlm/papers/raw/main/pdfs/zen-vision-architecture.pdf"
+ },
+ {
+  "slug": "zen-vl_whitepaper",
+  "title": "Zen VL",
+  "theme": "Model Whitepapers",
+  "pdf": "https://github.com/zenlm/papers/raw/main/pdfs/zen-vl_whitepaper.pdf"
+ },
+ {
+  "slug": "zen-voice-clone",
+  "title": "Zen Voice Clone",
+  "theme": "Model Whitepapers",
+  "pdf": "https://github.com/zenlm/papers/raw/main/pdfs/zen-voice-clone.pdf"
+ },
+ {
+  "slug": "zen-voyager",
+  "title": "Zen Voyager",
+  "theme": "Model Whitepapers",
+  "pdf": "https://github.com/zenlm/papers/raw/main/pdfs/zen-voyager.pdf"
+ },
+ {
+  "slug": "zen-world",
+  "title": "Zen World",
+  "theme": "Model Whitepapers",
+  "pdf": "https://github.com/zenlm/papers/raw/main/pdfs/zen-world.pdf"
+ },
+ {
+  "slug": "zen3-embedding_whitepaper",
+  "title": "Zen3 Embedding",
+  "theme": "Model Whitepapers",
+  "pdf": "https://github.com/zenlm/papers/raw/main/pdfs/zen3-embedding_whitepaper.pdf"
+ },
+ {
+  "slug": "zen3-guard_whitepaper",
+  "title": "Zen3 Guard",
+  "theme": "Model Whitepapers",
+  "pdf": "https://github.com/zenlm/papers/raw/main/pdfs/zen3-guard_whitepaper.pdf"
+ },
+ {
+  "slug": "zen3-nano_whitepaper",
+  "title": "Zen3 Nano",
+  "theme": "Model Whitepapers",
+  "pdf": "https://github.com/zenlm/papers/raw/main/pdfs/zen3-nano_whitepaper.pdf"
+ },
+ {
+  "slug": "zen3-omni_whitepaper",
+  "title": "Zen3 Omni",
+  "theme": "Model Whitepapers",
+  "pdf": "https://github.com/zenlm/papers/raw/main/pdfs/zen3-omni_whitepaper.pdf"
+ },
+ {
+  "slug": "zen3-vl_whitepaper",
+  "title": "Zen3 VL",
+  "theme": "Model Whitepapers",
+  "pdf": "https://github.com/zenlm/papers/raw/main/pdfs/zen3-vl_whitepaper.pdf"
+ },
+ {
+  "slug": "zen4-coder-flash_whitepaper",
+  "title": "Zen4 Coder Flash",
+  "theme": "Model Whitepapers",
+  "pdf": "https://github.com/zenlm/papers/raw/main/pdfs/zen4-coder-flash_whitepaper.pdf"
+ },
+ {
+  "slug": "zen4-coder-pro_whitepaper",
+  "title": "Zen4 Coder Pro",
+  "theme": "Model Whitepapers",
+  "pdf": "https://github.com/zenlm/papers/raw/main/pdfs/zen4-coder-pro_whitepaper.pdf"
+ },
+ {
+  "slug": "zen4-coder_whitepaper",
+  "title": "Zen4 Coder",
+  "theme": "Model Whitepapers",
+  "pdf": "https://github.com/zenlm/papers/raw/main/pdfs/zen4-coder_whitepaper.pdf"
+ },
+ {
+  "slug": "zen4-max_whitepaper",
+  "title": "Zen4 Max",
+  "theme": "Model Whitepapers",
+  "pdf": "https://github.com/zenlm/papers/raw/main/pdfs/zen4-max_whitepaper.pdf"
+ },
+ {
+  "slug": "zen4-mini_whitepaper",
+  "title": "Zen4 Mini",
+  "theme": "Model Whitepapers",
+  "pdf": "https://github.com/zenlm/papers/raw/main/pdfs/zen4-mini_whitepaper.pdf"
+ },
+ {
+  "slug": "zen4-pro_whitepaper",
+  "title": "Zen4 Pro",
+  "theme": "Model Whitepapers",
+  "pdf": "https://github.com/zenlm/papers/raw/main/pdfs/zen4-pro_whitepaper.pdf"
+ },
+ {
+  "slug": "zen4-thinking_whitepaper",
+  "title": "Zen4 Thinking",
+  "theme": "Model Whitepapers",
+  "pdf": "https://github.com/zenlm/papers/raw/main/pdfs/zen4-thinking_whitepaper.pdf"
+ },
+ {
+  "slug": "zen4-ultra_whitepaper",
+  "title": "Zen4 Ultra",
+  "theme": "Model Whitepapers",
+  "pdf": "https://github.com/zenlm/papers/raw/main/pdfs/zen4-ultra_whitepaper.pdf"
+ },
+ {
+  "slug": "zen4_whitepaper",
+  "title": "Zen4",
+  "theme": "Model Whitepapers",
+  "pdf": "https://github.com/zenlm/papers/raw/main/pdfs/zen4_whitepaper.pdf"
+ },
+ {
+  "slug": "zen_family_overview",
+  "title": "Zen Family Overview",
+  "theme": "Model Whitepapers",
+  "pdf": "https://github.com/zenlm/papers/raw/main/pdfs/zen_family_overview.pdf"
+ }
+]

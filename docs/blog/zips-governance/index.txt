@@ -1,0 +1,198 @@
+1:"$Sreact.fragment"
+2:I[6529,["619","static/chunks/619-ba102abea3e3d0e4.js","177","static/chunks/app/layout-b4c33ab67f60e2ed.js"],"default"]
+3:I[9766,[],""]
+4:I[8924,[],""]
+5:I[2619,["619","static/chunks/619-ba102abea3e3d0e4.js","953","static/chunks/app/blog/%5Bslug%5D/page-f25a122e9ccf798d.js"],""]
+c:I[7150,[],""]
+:HL["/_next/static/css/1d1f6bc532e5f43f.css","style"]
+:HL["/_next/static/css/eb87e4f7aea490c6.css","style"]
+0:{"P":null,"b":"aLEH4vcTO8-5k6ZseFClK","p":"","c":["","blog","zips-governance",""],"i":false,"f":[[["",{"children":["blog",{"children":[["slug","zips-governance","d"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/1d1f6bc532e5f43f.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","children":[["$","head",null,{"children":["$","link",null,{"rel":"icon","type":"image/png","href":"/favicon.png"}]}],["$","body",null,{"children":[["$","$L2",null,{}],["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}],["$","footer",null,{"children":["$","div",null,{"className":"container","children":[["$","div",null,{"className":"footer-content","children":[["$","div",null,{"className":"footer-section","children":[["$","h4",null,{"children":"Zen LM"}],["$","p",null,{"children":"95 open Zen models across Zen3, Zen4, and Zen5. Chat, code, vision, audio, image, embeddings, rerankers, and safety. OpenAI- and Anthropic-compatible API."}]]}],["$","div",null,{"className":"footer-section","children":[["$","h4",null,{"children":"Zen 5"}],["$","ul",null,{"children":[["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 Nano (0.8B - 9B)"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 Flash"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 Mini"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 (default)"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 Coder"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 Pro"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 Max"}]}]]}]]}],["$","div",null,{"className":"footer-section","children":[["$","h4",null,{"children":"Zen 4"}],["$","ul",null,{"children":[["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen4","children":"Zen4 / Zen4.1"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen4","children":"Zen4 Ultra / Max / Pro"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen4","children":"Zen4 Mini / Thinking"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen4","children":"Zen4 Coder / Pro / Flash"}]}]]}]]}],["$","div",null,{"className":"footer-section","children":[["$","h4",null,{"children":"Zen 3 Multimodal"}],["$","ul",null,{"children":[["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen3","children":"Zen3 Omni / VL / Web"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen3","children":"Zen3 Nano / Guard"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen3","children":"Zen3 Embedding / Reranker"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen3","children":"Zen3 Image / ASR / TTS"}]}]]}]]}],["$","div",null,{"className":"footer-section","children":[["$","h4",null,{"children":"Resources"}],["$","ul",null,{"children":[["$","li",null,{"children":["$","$L5",null,{"href":"/datasets","children":"Training Data"}]}],["$","li",null,{"children":["$","a",null,{"href":"https://huggingface.co/zenlm","target":"_blank","rel":"noopener noreferrer","children":"HuggingFace"}]}],["$","li",null,{"children":["$","a",null,{"href":"https://github.com/zenlm","target":"_blank","rel":"noopener noreferrer","children":"GitHub"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/research","children":"Research Papers"}]}],["$","li",null,{"children":["$","a",null,{"href":"https://api.hanzo.ai","target":"_blank","rel":"noopener noreferrer","children":"Zen API"}]}]]}]]}]]}],["$","div",null,{"className":"footer-bottom","children":"$L6"}]]}]}],"$L7"]}]]}]]}],{"children":["blog","$L8",{"children":[["slug","zips-governance","d"],"$L9",{"children":["__PAGE__","$La",{},null,false]},null,false]},null,false]},null,false],"$Lb",false]],"m":"$undefined","G":["$c",[]],"s":false,"S":true}
+e:I[4431,[],"OutletBoundary"]
+10:I[5278,[],"AsyncMetadataOutlet"]
+12:I[4431,[],"ViewportBoundary"]
+14:I[4431,[],"MetadataBoundary"]
+15:"$Sreact.suspense"
+6:["$","p",null,{"children":["© ",2026," Zen Authors. Open foundation models. Served on the Zen API."]}]
+7:["$","script",null,{"src":"/assets/js/main.js","async":true}]
+8:["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+9:["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+a:["$","$1","c",{"children":["$Ld",[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/eb87e4f7aea490c6.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","$Le",null,{"children":["$Lf",["$","$L10",null,{"promise":"$@11"}]]}]]}]
+b:["$","$1","h",{"children":[null,[["$","$L12",null,{"children":"$L13"}],null],["$","$L14",null,{"children":["$","div",null,{"hidden":true,"children":["$","$15",null,{"fallback":null,"children":"$L16"}]}]}]]}]
+17:T20e2,<p>Since launching Zoo Labs Foundation, we've processed 47 Zoo Improvement Proposals (ZIPs). Today we share lessons learned and improvements to the governance process.</p>
+<h2 id="the-case-for-governance">The Case for Governance</h2>
+<p>AI development involves decisions that affect many stakeholders:</p>
+<ul>
+<li>What data should models train on?</li>
+<li>How should capabilities be released?</li>
+<li>What safety measures are required?</li>
+<li>How should resources be allocated?</li>
+</ul>
+<p>These questions don't have purely technical answers. They require value judgments. Centralized organizations make these judgments internally. We believe affected communities should participate.</p>
+<p>ZIPs make governance explicit, transparent, and participatory.</p>
+<h2 id="how-zips-work">How ZIPs Work</h2>
+<h3 id="proposal-types">Proposal Types</h3>
+<p>ZIPs fall into several categories:</p>
+<p><strong>Standard ZIPs</strong>: Technical specifications</p>
+<ul>
+<li>Model architectures</li>
+<li>Training procedures</li>
+<li>Evaluation protocols</li>
+<li>API standards</li>
+</ul>
+<p><strong>Process ZIPs</strong>: Governance procedures</p>
+<ul>
+<li>Voting rules</li>
+<li>Working group charters</li>
+<li>Grant criteria</li>
+<li>Release policies</li>
+</ul>
+<p><strong>Informational ZIPs</strong>: Guidelines and recommendations</p>
+<ul>
+<li>Best practices</li>
+<li>Research directions</li>
+<li>Community standards</li>
+</ul>
+<h3 id="lifecycle">Lifecycle</h3>
+<pre><code>[Draft] -> [Review] -> [Vote] -> [Accepted/Rejected] -> [Implemented]
+                |
+                v
+           [Withdrawn]
+</code></pre>
+<p><strong>Draft</strong>: Author creates proposal using template. Must include:</p>
+<ul>
+<li>Abstract (200 words max)</li>
+<li>Motivation (why this change?)</li>
+<li>Specification (precise details)</li>
+<li>Rationale (why this approach?)</li>
+<li>Backwards compatibility</li>
+<li>Security considerations</li>
+</ul>
+<p><strong>Review</strong>: Community discusses on forums and in working groups. Minimum 14 days. Author revises based on feedback.</p>
+<p><strong>Vote</strong>: Token holders vote. Quorum: 10% of circulating supply. Threshold: 66% approval for Standard/Process ZIPs, 50% for Informational.</p>
+<p><strong>Implementation</strong>: Approved ZIPs are implemented by relevant teams. Timeline specified in proposal.</p>
+<h3 id="example-zip">Example ZIP</h3>
+<p><strong>ZIP-23: Mandatory Safety Evaluations</strong></p>
+<p><em>Abstract</em>: This ZIP requires all Zen models to pass standardized safety evaluations before release. It specifies evaluation benchmarks, minimum thresholds, and remediation procedures.</p>
+<p><em>Motivation</em>: As Zen models become more capable, systematic safety evaluation ensures we catch potential harms before deployment...</p>
+<p>[Full proposal at zips.zoo.ngo/zip-23]</p>
+<h2 id="lessons-learned">Lessons Learned</h2>
+<p>After 47 ZIPs, we've learned what works and what doesn't.</p>
+<h3 id="what-works">What Works</h3>
+<p><strong>Clear templates</strong>: Structured templates reduce ambiguity. Authors know what to include. Reviewers know what to expect.</p>
+<p><strong>Mandatory discussion periods</strong>: Two weeks minimum prevents rushed decisions. Complex proposals often need longer.</p>
+<p><strong>Working group pre-review</strong>: Technical working groups review proposals before community vote. Catches errors and improves quality.</p>
+<p><strong>On-chain voting</strong>: Tamper-proof voting records. Clear outcome determination. Historical audit trail.</p>
+<h3 id="what-doesnt-work">What Doesn't Work</h3>
+<p><strong>Low participation</strong>: Early votes had &#x3C;5% participation. We added delegation and reminders. Participation now averages 12%.</p>
+<p><strong>Proposal complexity</strong>: Some proposals tried to do too much. We now encourage smaller, focused ZIPs.</p>
+<p><strong>Implementation lag</strong>: Approved proposals sometimes stalled in implementation. We added accountability mechanisms.</p>
+<p><strong>Voter fatigue</strong>: Too many votes led to declining participation. We batch non-urgent votes monthly.</p>
+<h2 id="improvements-for-2024">Improvements for 2024</h2>
+<p>Based on experience, we're upgrading the process:</p>
+<h3 id="conviction-voting">Conviction Voting</h3>
+<p>For resource allocation decisions, we're piloting conviction voting:</p>
+<ul>
+<li>Tokens continuously signal preferences</li>
+<li>Conviction accumulates over time</li>
+<li>Proposals pass when conviction reaches threshold</li>
+</ul>
+<p>This rewards sustained support over flash mobs.</p>
+<h3 id="optimistic-approval">Optimistic Approval</h3>
+<p>Low-controversy changes use optimistic approval:</p>
+<ul>
+<li>Proposal published with 7-day objection period</li>
+<li>If no objection reaches threshold (5% of tokens), proposal passes</li>
+<li>If objection threshold reached, standard vote occurs</li>
+</ul>
+<p>Reduces voting overhead for routine decisions.</p>
+<h3 id="working-group-autonomy">Working Group Autonomy</h3>
+<p>Working groups can approve changes within their scope without full vote:</p>
+<ul>
+<li>Changes must align with approved charter</li>
+<li>Community can override within 14 days</li>
+<li>Increases agility while maintaining accountability</li>
+</ul>
+<h3 id="reputation-weighted-voting">Reputation-Weighted Voting</h3>
+<p>We're exploring reputation adjustments:</p>
+<ul>
+<li>Technical expertise weighted higher for technical ZIPs</li>
+<li>Contribution history affects weight</li>
+<li>Prevents pure plutocracy</li>
+</ul>
+<p>This is controversial. ZIP-52 is the formal proposal for community decision.</p>
+<h2 id="governance-statistics">Governance Statistics</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Metric</th><th>Q1 2024</th><th>Q2 2024</th></tr></thead><tbody><tr><td>Proposals submitted</td><td>18</td><td>29</td></tr><tr><td>Proposals passed</td><td>12</td><td>21</td></tr><tr><td>Average participation</td><td>8%</td><td>14%</td></tr><tr><td>Average discussion length</td><td>9 days</td><td>16 days</td></tr><tr><td>Implementation rate</td><td>75%</td><td>92%</td></tr></tbody></table>
+<p>Participation and quality are improving.</p>
+<h2 id="notable-zips">Notable ZIPs</h2>
+<p>Some highlights from our proposal history:</p>
+<p><strong>ZIP-7</strong>: Established the grants program criteria and evaluation process. Enabled $3M in grants.</p>
+<p><strong>ZIP-15</strong>: Required training data documentation for all Zen models. Now standard practice.</p>
+<p><strong>ZIP-23</strong>: Mandatory safety evaluations (discussed above). Caught two issues pre-release.</p>
+<p><strong>ZIP-31</strong>: Created the Infrastructure Working Group. Now maintains Training Gym.</p>
+<p><strong>ZIP-38</strong>: Approved Zen-2-70B training budget. Largest single resource allocation.</p>
+<h2 id="participating-in-governance">Participating in Governance</h2>
+<h3 id="for-token-holders">For Token Holders</h3>
+<ol>
+<li><strong>Stay informed</strong>: Read proposals at zips.zoo.ngo</li>
+<li><strong>Discuss</strong>: Join forum discussions</li>
+<li><strong>Delegate</strong>: If you can't follow closely, delegate to aligned representatives</li>
+<li><strong>Vote</strong>: Participate in votes that matter to you</li>
+</ol>
+<h3 id="for-proposers">For Proposers</h3>
+<ol>
+<li><strong>Start with discussion</strong>: Float ideas in forums before formal proposal</li>
+<li><strong>Find co-sponsors</strong>: Working group endorsement helps</li>
+<li><strong>Be specific</strong>: Vague proposals fail</li>
+<li><strong>Engage with feedback</strong>: Responsive authors succeed</li>
+</ol>
+<h3 id="for-working-groups">For Working Groups</h3>
+<ol>
+<li><strong>Pre-review proposals</strong>: Catch issues early</li>
+<li><strong>Provide expertise</strong>: Technical analysis helps voters</li>
+<li><strong>Implement promptly</strong>: Approved proposals deserve attention</li>
+</ol>
+<h2 id="governance-as-infrastructure">Governance as Infrastructure</h2>
+<p>Good governance is invisible when working. Bad governance is obvious when failing. ZIPs provide structure that enables coordinated action while preventing unilateral capture.</p>
+<p>As AI systems become more powerful, their governance becomes more important. We're building the institutions for a future where AI development is genuinely participatory.</p>
+<p>Join the conversation at zips.zoo.ngo.</p>
+<hr>
+<p><em>Zach Kelling is a co-founder of Zoo Labs Foundation.</em></p>d:["$","main",null,{"children":["$","article",null,{"className":"blog-article","children":[["$","$L5",null,{"className":"blog-back","href":"/blog","children":"← Blog"}],["$","div",null,{"className":"blog-post-meta","children":["May 19, 2024"," ","·"," ",4," min read"]}],["$","h1",null,{"className":"blog-post-title","children":"ZIPs: Decentralized Governance for Open AI"}],["$","p",null,{"className":"blog-post-lede","children":"How Zoo Improvement Proposals enable community-driven governance of open AI development."}],["$","div",null,{"className":"blog-prose","dangerouslySetInnerHTML":{"__html":"$17"}}]]}]}]
+13:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+f:null
+11:{"metadata":[["$","title","0",{"children":"ZIPs: Decentralized Governance for Open AI — Zen Blog"}],["$","meta","1",{"name":"description","content":"How Zoo Improvement Proposals enable community-driven governance of open AI development."}],["$","meta","2",{"name":"keywords","content":"AI, LLM, Agentic AI, Code Generation, Zen Coder, Multimodal, Open Source, Machine Learning"}]],"error":null,"digest":"$undefined"}
+16:"$11:metadata"

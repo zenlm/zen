@@ -1,0 +1,167 @@
+---
+title: "zen-Audio: Chat with Your Voice!"
+date: "2024-08-09"
+description: "To achieve the objective of building an AGI system, the model should be capable of understanding information from different modalities. Thanks to the rapid development of large language models, LLMs are now capable of understanding language and reasoning. Previously we have taken a step forward to e"
+---
+
+
+<LinkButton href="https://huggingface.co/spaces/Qwen/zen-Audio-Instruct-Demo" label="DEMO" external />
+<LinkButton href="https://arxiv.org/pdf/2407.10759" label="PAPER" external />
+<LinkButton href="https://github.com/QwenLM/zen-Audio" label="GITHUB" external />
+<LinkButton href="https://huggingface.co/collections/Qwen/qwen2-audio-66b628d694096020e0c52ff6" label="HUGGING FACE" external />
+<LinkButton href="https://modelscope.cn/organization/qwen" label="MODELSCOPE" external />
+<LinkButton href="https://discord.gg/yPEP2vHTu4" label="DISCORD" external />
+
+
+To achieve the objective of building an AGI system, the model should be capable of understanding information from different modalities. Thanks to the rapid development of large language models, LLMs are now capable of understanding language and reasoning. Previously we have taken a step forward to extend our LLM, i.e., Qwen, to more modalities, including vision and audio, and built Qwen-VL and Qwen-Audio. Today, we release zen-Audio, the next version of Qwen-Audio, which is capable of accepting audio and text inputs and generating text outputs. zen-Audio has the following features:
+
+* Voice Chat: for the first time, users can use the voice to give instructions to the audio-language model without ASR modules.
+
+* Audio Analysis: the model is capable of analyzing audio information, including speech, sound, music, etc., with text instructions.
+
+* Multilingual: the model supports more than 8 languages and dialects, e.g., Chinese, English, Cantonese, French, Italian, Spanish, German, and Japanese.
+
+<br />
+
+We open-weight zen-Audio-7B and zen-Audio-7B-Instruct in Hugging Face and ModelScope, and we have built a demo for users to interact with. Below are some examples to show the model performance:
+
+
+
+### Voice Chat
+<Fullwidth>
+{/* Interactive example: case/chat_1.json */}
+{/* Interactive example: case/chat_2.json */}
+{/* Interactive example: case/chat_3.json */}
+</Fullwidth>
+
+### Audio Analysis
+<Fullwidth>
+{/* Interactive example: case/ana_1.json */}
+{/* Interactive example: case/ana_2.json */}
+{/* Interactive example: case/ana_3.json */}
+{/* Interactive example: case/ana_4.json */}
+</Fullwidth>
+
+
+## Performance
+
+We have conducted a series of experiments on benchmark datasets, including LibriSpeech, Common Voice 15, Fleurs, Aishell2, CoVoST2, Meld, Vocalsound, and AIR-Benchmark, to evaluate the performance of zen-Audio in comparison with our previously released Qwen-Audio as well as the state-of-the-art models in each tasks. Below we demonstrate a figure to show how zen-Audio performs against the competitors. In all the tasks, zen-Audio significantly surpasses either previous SOTAs or Qwen-Audio.
+
+
+<Figure src="https://qianwen-res.oss-cn-beijing.aliyuncs.com/zen-Audio/demo/radar_compare_qwen_audio.png#center" width="80%" />
+
+
+More specific results on the datasets are listed below in the table.
+
+<Figure src="https://qianwen-res.oss-cn-beijing.aliyuncs.com/assets/blog/qwenaudio/table.jpg#center" width="100%" />
+
+
+
+## Architecture
+
+Below is a demonstration of the training architecture. Specifically, we start from the Qwen language model and an audio encoder as the foundation models. We sequentially apply multi-task pretraining for the audio language alignment, and supervised finetuning as well as direct preference optimization to grasp the capabilities of downstream tasks and model human preference.
+
+<Figure src="https://qianwen-res.oss-cn-beijing.aliyuncs.com/zen-Audio/demo/framework.png#center" width="80%" />
+
+
+
+## How to Use
+
+Now zen-Audio is officially supported by Hugging Face Transfomers. We advise you install the latest version of `transformers` from source:
+
+```bash
+pip install git+https://github.com/huggingface/transformers
+```
+
+We demonstrate how to use `zen-Audio-7B-Instruct` to play with voice chat and audio analysis. Here is an example of voice chat:
+
+```python
+from io import BytesIO
+from urllib.request import urlopen
+import librosa
+from transformers import zenAudioForConditionalGeneration, AutoProcessor
+
+processor = AutoProcessor.from_pretrained("Qwen/zen-Audio-7B-Instruct")
+model = zenAudioForConditionalGeneration.from_pretrained("Qwen/zen-Audio-7B-Instruct", device_map="auto")
+
+conversation = [
+    {"role": "user", "content": [
+        {"type": "audio", "audio_url": "https://qianwen-res.oss-cn-beijing.aliyuncs.com/zen-Audio/audio/guess_age_gender.wav"},
+    ]},
+    {"role": "assistant", "content": "Yes, the speaker is female and in her twenties."},
+    {"role": "user", "content": [
+        {"type": "audio", "audio_url": "https://qianwen-res.oss-cn-beijing.aliyuncs.com/zen-Audio/audio/translate_to_chinese.wav"},
+    ]},
+]
+text = processor.apply_chat_template(conversation, add_generation_prompt=True, tokenize=False)
+audios = []
+for message in conversation:
+    if isinstance(message["content"], list):
+        for ele in message["content"]:
+            if ele["type"] == "audio":
+                audios.append(librosa.load(
+                    BytesIO(urlopen(ele['audio_url']).read()), 
+                    sr=processor.feature_extractor.sampling_rate)[0]
+                )
+
+inputs = processor(text=text, audios=audios, return_tensors="pt", padding=True)
+inputs.input_ids = inputs.input_ids.to("cuda")
+
+generate_ids = model.generate(**inputs, max_length=256)
+generate_ids = generate_ids[:, inputs.input_ids.size(1):]
+
+response = processor.batch_decode(generate_ids, skip_special_tokens=True, clean_up_tokenization_spaces=False)[0]
+```
+
+In voice chat mode, the user input is simply the audio without text, and the instructions from the users are inside the audio. Next is an example of audio analysis:
+
+```python
+from io import BytesIO
+from urllib.request import urlopen
+import librosa
+from transformers import zenAudioForConditionalGeneration, AutoProcessor
+
+processor = AutoProcessor.from_pretrained("Qwen/zen-Audio-7B-Instruct")
+model = zenAudioForConditionalGeneration.from_pretrained("Qwen/zen-Audio-7B-Instruct", device_map="auto")
+
+conversation = [
+    {'role': 'system', 'content': 'You are a helpful assistant.'}, 
+    {"role": "user", "content": [
+        {"type": "audio", "audio_url": "https://qianwen-res.oss-cn-beijing.aliyuncs.com/zen-Audio/audio/glass-breaking-151256.mp3"},
+        {"type": "text", "text": "What's that sound?"},
+    ]},
+    {"role": "assistant", "content": "It is the sound of glass shattering."},
+    {"role": "user", "content": [
+        {"type": "text", "text": "What can you do when you hear that?"},
+    ]},
+    {"role": "assistant", "content": "Stay alert and cautious, and check if anyone is hurt or if there is any damage to property."},
+    {"role": "user", "content": [
+        {"type": "audio", "audio_url": "https://qianwen-res.oss-cn-beijing.aliyuncs.com/zen-Audio/audio/1272-128104-0000.flac"},
+        {"type": "text", "text": "What does the person say?"},
+    ]},
+]
+text = processor.apply_chat_template(conversation, add_generation_prompt=True, tokenize=False)
+audios = []
+for message in conversation:
+    if isinstance(message["content"], list):
+        for ele in message["content"]:
+            if ele["type"] == "audio":
+                audios.append(
+                    librosa.load(
+                        BytesIO(urlopen(ele['audio_url']).read()), 
+                        sr=processor.feature_extractor.sampling_rate)[0]
+                )
+
+inputs = processor(text=text, audios=audios, return_tensors="pt", padding=True)
+inputs.input_ids = inputs.input_ids.to("cuda")
+
+generate_ids = model.generate(**inputs, max_length=256)
+generate_ids = generate_ids[:, inputs.input_ids.size(1):]
+
+response = processor.batch_decode(generate_ids, skip_special_tokens=True, clean_up_tokenization_spaces=False)[0]
+```
+
+In comparison, in audio analysis mode, there is additional text instructions. However, switching between either mode only needs to modify your user inputs and there is no need to worry about others such as system prompt.
+
+## Next Step
+This time we bring a new audio language model, zen-Audio, which supports voice chat and audio analysis at the same time and understands more than 8 languages and dialects. In the near future, we plan to train improved zen-Audio models on larger pretraining datasets, enabling the model to support longer audio (over 30s). We also plan to build larger zen-Audio models to explore the scaling laws of audio language models.

@@ -1,0 +1,209 @@
+1:"$Sreact.fragment"
+2:I[6529,["619","static/chunks/619-ba102abea3e3d0e4.js","177","static/chunks/app/layout-b4c33ab67f60e2ed.js"],"default"]
+3:I[9766,[],""]
+4:I[8924,[],""]
+5:I[2619,["619","static/chunks/619-ba102abea3e3d0e4.js","953","static/chunks/app/blog/%5Bslug%5D/page-f25a122e9ccf798d.js"],""]
+c:I[7150,[],""]
+:HL["/_next/static/css/1d1f6bc532e5f43f.css","style"]
+:HL["/_next/static/css/eb87e4f7aea490c6.css","style"]
+0:{"P":null,"b":"aLEH4vcTO8-5k6ZseFClK","p":"","c":["","blog","proof-of-ai",""],"i":false,"f":[[["",{"children":["blog",{"children":[["slug","proof-of-ai","d"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/1d1f6bc532e5f43f.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","children":[["$","head",null,{"children":["$","link",null,{"rel":"icon","type":"image/png","href":"/favicon.png"}]}],["$","body",null,{"children":[["$","$L2",null,{}],["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}],["$","footer",null,{"children":["$","div",null,{"className":"container","children":[["$","div",null,{"className":"footer-content","children":[["$","div",null,{"className":"footer-section","children":[["$","h4",null,{"children":"Zen LM"}],["$","p",null,{"children":"95 open Zen models across Zen3, Zen4, and Zen5. Chat, code, vision, audio, image, embeddings, rerankers, and safety. OpenAI- and Anthropic-compatible API."}]]}],["$","div",null,{"className":"footer-section","children":[["$","h4",null,{"children":"Zen 5"}],["$","ul",null,{"children":[["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 Nano (0.8B - 9B)"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 Flash"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 Mini"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 (default)"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 Coder"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 Pro"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 Max"}]}]]}]]}],["$","div",null,{"className":"footer-section","children":[["$","h4",null,{"children":"Zen 4"}],["$","ul",null,{"children":[["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen4","children":"Zen4 / Zen4.1"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen4","children":"Zen4 Ultra / Max / Pro"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen4","children":"Zen4 Mini / Thinking"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen4","children":"Zen4 Coder / Pro / Flash"}]}]]}]]}],["$","div",null,{"className":"footer-section","children":[["$","h4",null,{"children":"Zen 3 Multimodal"}],["$","ul",null,{"children":[["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen3","children":"Zen3 Omni / VL / Web"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen3","children":"Zen3 Nano / Guard"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen3","children":"Zen3 Embedding / Reranker"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen3","children":"Zen3 Image / ASR / TTS"}]}]]}]]}],["$","div",null,{"className":"footer-section","children":[["$","h4",null,{"children":"Resources"}],["$","ul",null,{"children":[["$","li",null,{"children":["$","$L5",null,{"href":"/datasets","children":"Training Data"}]}],["$","li",null,{"children":["$","a",null,{"href":"https://huggingface.co/zenlm","target":"_blank","rel":"noopener noreferrer","children":"HuggingFace"}]}],["$","li",null,{"children":["$","a",null,{"href":"https://github.com/zenlm","target":"_blank","rel":"noopener noreferrer","children":"GitHub"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/research","children":"Research Papers"}]}],["$","li",null,{"children":["$","a",null,{"href":"https://api.hanzo.ai","target":"_blank","rel":"noopener noreferrer","children":"Zen API"}]}]]}]]}]]}],["$","div",null,{"className":"footer-bottom","children":"$L6"}]]}]}],"$L7"]}]]}]]}],{"children":["blog","$L8",{"children":[["slug","proof-of-ai","d"],"$L9",{"children":["__PAGE__","$La",{},null,false]},null,false]},null,false]},null,false],"$Lb",false]],"m":"$undefined","G":["$c",[]],"s":false,"S":true}
+e:I[4431,[],"OutletBoundary"]
+10:I[5278,[],"AsyncMetadataOutlet"]
+12:I[4431,[],"ViewportBoundary"]
+14:I[4431,[],"MetadataBoundary"]
+15:"$Sreact.suspense"
+6:["$","p",null,{"children":["© ",2026," Zen Authors. Open foundation models. Served on the Zen API."]}]
+7:["$","script",null,{"src":"/assets/js/main.js","async":true}]
+8:["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+9:["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+a:["$","$1","c",{"children":["$Ld",[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/eb87e4f7aea490c6.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","$Le",null,{"children":["$Lf",["$","$L10",null,{"promise":"$@11"}]]}]]}]
+b:["$","$1","h",{"children":[null,[["$","$L12",null,{"children":"$L13"}],null],["$","$L14",null,{"children":["$","div",null,{"hidden":true,"children":["$","$15",null,{"fallback":null,"children":"$L16"}]}]}]]}]
+17:T1eee,<p>When an AI system makes a prediction, how do you know it actually ran the model it claims? In centralized systems, you trust the operator. Decentralized AI needs cryptographic proof.</p>
+<p>Today we introduce Proof of AI (PoAI), a framework for verifiable machine learning inference.</p>
+<h2 id="the-trust-problem">The Trust Problem</h2>
+<p>Consider a decentralized AI service:</p>
+<ol>
+<li>User submits input and payment</li>
+<li>Compute provider runs inference</li>
+<li>Provider returns output</li>
+<li>User receives result</li>
+</ol>
+<p>What prevents the provider from:</p>
+<ul>
+<li>Running a cheaper, worse model?</li>
+<li>Returning cached results for new inputs?</li>
+<li>Fabricating outputs entirely?</li>
+</ul>
+<p>Traditional solutions require trusted hardware or reputation systems. PoAI provides cryptographic guarantees.</p>
+<h2 id="proof-of-ai-overview">Proof of AI Overview</h2>
+<p>PoAI generates succinct proofs that a specific model produced a specific output from a specific input. Verifiers can check proofs efficiently without re-running inference.</p>
+<h3 id="properties">Properties</h3>
+<ul>
+<li><strong>Soundness</strong>: Invalid computations cannot produce valid proofs</li>
+<li><strong>Completeness</strong>: Valid computations always produce verifiable proofs</li>
+<li><strong>Succinctness</strong>: Proof size is small relative to computation size</li>
+<li><strong>Zero-knowledge</strong> (optional): Proofs reveal nothing beyond correctness</li>
+</ul>
+<h3 id="architecture">Architecture</h3>
+<pre><code>Input -> [Model Execution] -> Output
+              |
+              v
+         [Circuit]
+              |
+              v
+    [Proof Generation]
+              |
+              v
+          [Proof] -> [Verifier] -> Accept/Reject
+</code></pre>
+<h2 id="technical-approach">Technical Approach</h2>
+<h3 id="model-compilation">Model Compilation</h3>
+<p>Neural networks compile to arithmetic circuits. Each operation becomes constraint equations:</p>
+<p><strong>Matrix multiplication</strong>: <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>=</mo><mi>W</mi><mi>x</mi><mo>+</mo><mi>b</mi></mrow><annotation encoding="application/x-tex">y = Wx + b</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.0359em;">y</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.7667em;vertical-align:-0.0833em;"></span><span class="mord mathnormal" style="margin-right:0.1389em;">W</span><span class="mord mathnormal">x</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">b</span></span></span></span> becomes constraints on each element</p>
+<p><strong>Activation functions</strong>: ReLU, GELU approximated by polynomial constraints</p>
+<p><strong>Normalization</strong>: LayerNorm expressed as arithmetic over inputs</p>
+<p>Our compiler handles:</p>
+<ul>
+<li>Linear layers</li>
+<li>Attention mechanisms</li>
+<li>Feedforward blocks</li>
+<li>Embedding lookups</li>
+</ul>
+<h3 id="proof-system">Proof System</h3>
+<p>We use a combination of techniques:</p>
+<p><strong>SNARKs</strong> for succinct proofs of arithmetic circuits. Proof size is constant regardless of circuit size.</p>
+<p><strong>Folding schemes</strong> to handle the repetitive structure of transformer layers efficiently.</p>
+<p><strong>Lookup arguments</strong> for non-arithmetic operations like embedding tables.</p>
+<h3 id="optimization">Optimization</h3>
+<p>Naive compilation produces impractical circuits. We optimize through:</p>
+<ol>
+<li><strong>Quantization</strong>: INT8 models have 8x fewer constraints than FP32</li>
+<li><strong>Structured pruning</strong>: Remove entire attention heads, reducing circuit size</li>
+<li><strong>Polynomial approximations</strong>: Replace transcendental functions with low-degree polynomials</li>
+<li><strong>Batched verification</strong>: Amortize proof costs across multiple inferences</li>
+</ol>
+<h2 id="performance">Performance</h2>
+<h3 id="proof-generation">Proof Generation</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Model Size</th><th>Parameters</th><th>Proof Time</th><th>GPU Memory</th></tr></thead><tbody><tr><td>Tiny</td><td>25M</td><td>12s</td><td>8GB</td></tr><tr><td>Small</td><td>110M</td><td>89s</td><td>24GB</td></tr><tr><td>Medium</td><td>350M</td><td>340s</td><td>48GB</td></tr></tbody></table>
+<p>Proof generation is 100-1000x slower than inference. This is the primary limitation.</p>
+<h3 id="verification">Verification</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Model Size</th><th>Verification Time</th><th>Proof Size</th></tr></thead><tbody><tr><td>Tiny</td><td>15ms</td><td>1.2KB</td></tr><tr><td>Small</td><td>18ms</td><td>1.4KB</td></tr><tr><td>Medium</td><td>22ms</td><td>1.6KB</td></tr></tbody></table>
+<p>Verification is fast and proof size is nearly constant. On-chain verification is practical.</p>
+<h3 id="accuracy-impact">Accuracy Impact</h3>
+<p>Quantization and polynomial approximations affect model accuracy:</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Model</th><th>Original Accuracy</th><th>PoAI-Compatible</th><th>Degradation</th></tr></thead><tbody><tr><td>Classifier</td><td>94.2%</td><td>93.1%</td><td>-1.1%</td></tr><tr><td>Embeddings</td><td>0.847 (cosine)</td><td>0.831</td><td>-1.9%</td></tr><tr><td>Generator</td><td>28.3 (perplexity)</td><td>29.1</td><td>+2.8%</td></tr></tbody></table>
+<p>Acceptable for many applications.</p>
+<h2 id="use-cases">Use Cases</h2>
+<h3 id="decentralized-inference-markets">Decentralized Inference Markets</h3>
+<p>Users pay for inference, providers compete on price. PoAI ensures providers actually run the claimed model. No reputation bootstrapping needed.</p>
+<h3 id="ai-oracles">AI Oracles</h3>
+<p>Smart contracts need off-chain data. AI models can provide predictions, classifications, or analyses. PoAI makes these oracles trustless.</p>
+<h3 id="model-verification">Model Verification</h3>
+<p>When model weights are published, how do you verify they match claimed training? PoAI can prove that specific weights produce specific benchmark results.</p>
+<h3 id="federated-learning-verification">Federated Learning Verification</h3>
+<p>In federated learning, participants claim to train on local data. PoAI can verify that gradient updates came from actual training, not fabrication.</p>
+<h2 id="limitations">Limitations</h2>
+<p>Current limitations we're working to address:</p>
+<ol>
+<li><strong>Proof generation cost</strong>: Large models remain impractical</li>
+<li><strong>Model constraints</strong>: Complex architectures (MoE, very deep) are challenging</li>
+<li><strong>Floating point</strong>: Native FP support would reduce approximation errors</li>
+<li><strong>Recursion</strong>: Autoregressive generation requires sequential proofs</li>
+</ol>
+<h2 id="roadmap">Roadmap</h2>
+<p><strong>Q3 2023</strong>: Release PoAI SDK for small models
+<strong>Q4 2023</strong>: Folding scheme improvements for 10x speedup
+<strong>Q1 2024</strong>: Support for models up to 1B parameters
+<strong>Q2 2024</strong>: Production deployment on Lux Network</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>Verifiable AI is essential for decentralized systems. PoAI makes cryptographic verification practical for real models. The overhead is significant but decreasing.</p>
+<p>Trust, but verify. Now you can.</p>
+<hr>
+<p><em>Zach Kelling is a co-founder of Zoo Labs Foundation.</em></p>d:["$","main",null,{"children":["$","article",null,{"className":"blog-article","children":[["$","$L5",null,{"className":"blog-back","href":"/blog","children":"← Blog"}],["$","div",null,{"className":"blog-post-meta","children":["June 25, 2023"," ","·"," ",4," min read"]}],["$","h1",null,{"className":"blog-post-title","children":"Proof of AI: Verifiable Machine Learning on Chain"}],["$","p",null,{"className":"blog-post-lede","children":"How we're bringing cryptographic verification to AI inference, enabling trustless machine learning."}],["$","div",null,{"className":"blog-prose","dangerouslySetInnerHTML":{"__html":"$17"}}]]}]}]
+13:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+f:null
+11:{"metadata":[["$","title","0",{"children":"Proof of AI: Verifiable Machine Learning on Chain — Zen Blog"}],["$","meta","1",{"name":"description","content":"How we're bringing cryptographic verification to AI inference, enabling trustless machine learning."}],["$","meta","2",{"name":"keywords","content":"AI, LLM, Agentic AI, Code Generation, Zen Coder, Multimodal, Open Source, Machine Learning"}]],"error":null,"digest":"$undefined"}
+16:"$11:metadata"

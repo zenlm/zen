@@ -1,0 +1,176 @@
+1:"$Sreact.fragment"
+2:I[6529,["619","static/chunks/619-ba102abea3e3d0e4.js","177","static/chunks/app/layout-b4c33ab67f60e2ed.js"],"default"]
+3:I[9766,[],""]
+4:I[8924,[],""]
+5:I[2619,["619","static/chunks/619-ba102abea3e3d0e4.js","953","static/chunks/app/blog/%5Bslug%5D/page-f25a122e9ccf798d.js"],""]
+c:I[7150,[],""]
+:HL["/_next/static/css/1d1f6bc532e5f43f.css","style"]
+:HL["/_next/static/css/eb87e4f7aea490c6.css","style"]
+0:{"P":null,"b":"aLEH4vcTO8-5k6ZseFClK","p":"","c":["","blog","qwen-vl",""],"i":false,"f":[[["",{"children":["blog",{"children":[["slug","qwen-vl","d"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/1d1f6bc532e5f43f.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","children":[["$","head",null,{"children":["$","link",null,{"rel":"icon","type":"image/png","href":"/favicon.png"}]}],["$","body",null,{"children":[["$","$L2",null,{}],["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}],["$","footer",null,{"children":["$","div",null,{"className":"container","children":[["$","div",null,{"className":"footer-content","children":[["$","div",null,{"className":"footer-section","children":[["$","h4",null,{"children":"Zen LM"}],["$","p",null,{"children":"95 open Zen models across Zen3, Zen4, and Zen5. Chat, code, vision, audio, image, embeddings, rerankers, and safety. OpenAI- and Anthropic-compatible API."}]]}],["$","div",null,{"className":"footer-section","children":[["$","h4",null,{"children":"Zen 5"}],["$","ul",null,{"children":[["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 Nano (0.8B - 9B)"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 Flash"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 Mini"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 (default)"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 Coder"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 Pro"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 Max"}]}]]}]]}],["$","div",null,{"className":"footer-section","children":[["$","h4",null,{"children":"Zen 4"}],["$","ul",null,{"children":[["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen4","children":"Zen4 / Zen4.1"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen4","children":"Zen4 Ultra / Max / Pro"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen4","children":"Zen4 Mini / Thinking"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen4","children":"Zen4 Coder / Pro / Flash"}]}]]}]]}],["$","div",null,{"className":"footer-section","children":[["$","h4",null,{"children":"Zen 3 Multimodal"}],["$","ul",null,{"children":[["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen3","children":"Zen3 Omni / VL / Web"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen3","children":"Zen3 Nano / Guard"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen3","children":"Zen3 Embedding / Reranker"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen3","children":"Zen3 Image / ASR / TTS"}]}]]}]]}],["$","div",null,{"className":"footer-section","children":[["$","h4",null,{"children":"Resources"}],["$","ul",null,{"children":[["$","li",null,{"children":["$","$L5",null,{"href":"/datasets","children":"Training Data"}]}],["$","li",null,{"children":["$","a",null,{"href":"https://huggingface.co/zenlm","target":"_blank","rel":"noopener noreferrer","children":"HuggingFace"}]}],["$","li",null,{"children":["$","a",null,{"href":"https://github.com/zenlm","target":"_blank","rel":"noopener noreferrer","children":"GitHub"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/research","children":"Research Papers"}]}],["$","li",null,{"children":["$","a",null,{"href":"https://api.hanzo.ai","target":"_blank","rel":"noopener noreferrer","children":"Zen API"}]}]]}]]}]]}],["$","div",null,{"className":"footer-bottom","children":"$L6"}]]}]}],"$L7"]}]]}]]}],{"children":["blog","$L8",{"children":[["slug","qwen-vl","d"],"$L9",{"children":["__PAGE__","$La",{},null,false]},null,false]},null,false]},null,false],"$Lb",false]],"m":"$undefined","G":["$c",[]],"s":false,"S":true}
+e:I[4431,[],"OutletBoundary"]
+10:I[5278,[],"AsyncMetadataOutlet"]
+12:I[4431,[],"ViewportBoundary"]
+14:I[4431,[],"MetadataBoundary"]
+15:"$Sreact.suspense"
+6:["$","p",null,{"children":["© ",2026," Zen Authors. Open foundation models. Served on the Zen API."]}]
+7:["$","script",null,{"src":"/assets/js/main.js","async":true}]
+8:["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+9:["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+a:["$","$1","c",{"children":["$Ld",[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/eb87e4f7aea490c6.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","$Le",null,{"children":["$Lf",["$","$L10",null,{"promise":"$@11"}]]}]]}]
+b:["$","$1","h",{"children":[null,[["$","$L12",null,{"children":"$L13"}],null],["$","$L14",null,{"children":["$","div",null,{"hidden":true,"children":["$","$15",null,{"fallback":null,"children":"$L16"}]}]}]]}]
+17:T2c1d,<p>Along with the rapid development of our large language model Qwen, we leveraged Qwen’s capabilities and unified multimodal pretraining to address the limitations of multimodal models in generalization, and we opensourced multimodal model Qwen-VL in Sep. 2023. Recently, the Qwen-VL series has undergone a significant upgrade with the launch of two enhanced versions, Qwen-VL-Plus and Qwen-VL-Max. The key technical advancements in these versions include:</p>
+<ul>
+<li>Substantially boost in image-related reasoning capabilities;</li>
+<li>Considerable enhancement in recognizing, extracting, and analyzing details within images and texts contained therein;</li>
+<li>Support for high-definition images with resolutions above one million pixels and images of various aspect ratios.</li>
+</ul>
+<table>
+  <tbody><tr>
+    <td style="width: 15%"><b>Model Name</b></td>
+    <td><b>Model Description</b></td>
+  </tr>
+  <tr>
+    <td>qwen-vl-plus</td>
+    <td><sup>Qwen's <b>Enhanced Large Visual Language Model</b>. Significantly upgraded for detailed recognition capabilities and text recognition abilities, supporting ultra-high pixel resolutions up to millions of pixels and arbitrary aspect ratios for image input. It delivers significant performance across a broad range of visual tasks.</sup></td>
+  </tr>
+  <tr>
+    <td>qwen-vl-max</td>
+    <td><sup>Qwen's <b>Most Capable Large Visual Language Model</b>. Compared to the enhanced version, further improvements have been made to visual reasoning and instruction-following capabilities, offering a higher level of visual perception and cognitive understanding. It delivers optimal performance on an even broader range of complex tasks.</sup></td>
+  </tr>
+</tbody></table>
+<p>{/* <img src="http://qianwen-res.oss-accelerate-overseas.aliyuncs.com/Qwen-VL/blog/model_name.jpeg" alt="model_name"> */}</p>
+<p>Compared to the open-source version of Qwen-VL, these two models perform on par with Gemini Ultra and GPT-4V in multiple text-image multimodal tasks, significantly surpassing the previous best results from open-source models.</p>
+<p>Notably, Qwen-VL-Max outperforms both GPT-4V from OpenAI and Gemini from Google in tasks on Chinese question answering and Chinese text comprehension. This breakthrough underscores the model's advanced capabilities and its potential to set new standards in the field of multimodal AI research and application.</p>
+<table>
+<thead>
+  <tr>
+    <th style="width: 20%">Model</th>
+    <th>DocVQA<br><sup>Document understanding</sup></th>
+    <th>ChartQA<br><sup>Chart understanding</sup></th>
+    <th>AI2D<br><sup>Science diagrams</sup></th>
+    <th>TextVQA<br><sup>Text reading</sup></th>
+    <th>MMMU<br><sup>College-level problems</sup></th>
+    <th>MathVista<br><sup>Mathematical reasoning</sup></th>
+    <th>MM-Bench-CN<br><sup>Natural image QA in Chinese</sup></th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>Other Best<br><sup>Open-source LVLM</sup></td>
+    <td>81.6%<br><sup>(CogAgent)</sup></td>
+    <td>68.4%<br><sup>(CogAgent)</sup></td>
+    <td>73.7%<br><sup>(Fuyu-Medium)</sup></td>
+    <td>76.1%<br><sup>(CogAgent)</sup></td>
+    <td>45.9%<br><sup>(Yi-VL-34B)</sup></td>
+    <td>36.7%<br><sup>(SPHINX-V2)</sup></td>
+    <td>72.4%<br><sup>(InternLM-XComposer-VL)</sup></td>
+  </tr>
+  <tr>
+    <td>Gemini Pro</td>
+    <td>88.1%</td>
+    <td>74.1%</td>
+    <td>73.9%</td>
+    <td>74.6%</td>
+    <td>47.9%</td>
+    <td>45.2%</td>
+    <td>74.3%</td>
+  </tr>
+  <tr>
+    <td>Gemini Ultra</td>
+    <td>90.9%</td>
+    <td>80.8% <sup>1</sup></td>
+    <td>79.5% <sup>1</sup></td>
+    <td>82.3% <sup>1</sup></td>
+    <td>59.4% <sup>1</sup></td>
+    <td>53.0% <sup>1</sup></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>GPT-4V</td>
+    <td>88.4%</td>
+    <td>78.5%</td>
+    <td>78.2%</td>
+    <td>78.0%</td>
+    <td>56.8%</td>
+    <td>49.9%</td>
+    <td>73.9%</td>
+  </tr>
+  <tr>
+    <td><b>Qwen-VL-Plus</b></td>
+    <td>91.4%</td>
+    <td>78.1%</td>
+    <td>75.9%</td>
+    <td>78.9%</td>
+    <td>45.2%</td>
+    <td>43.3%</td>
+    <td>68.0%</td>
+  </tr>
+  <tr>
+    <td><b>Qwen-VL-Max</b></td>
+    <td>93.1% <sup>1</sup></td>
+    <td>79.8% <sup>2</sup></td>
+    <td>79.3% <sup>2</sup></td>
+    <td>79.5% <sup>2</sup></td>
+    <td>51.4% <sup>3</sup></td>
+    <td>50.0% <sup>2</sup></td>
+    <td>75.1% <sup>1</sup></td>
+  </tr>
+</tbody>
+</table>
+<p>{/* <img src="http://ofasys-wlcb.oss-accelerate-overseas.aliyuncs.com/QwenVL/blog/eval_result.jpg" alt="eval_result"> <em>/}
+{/</em> <img src="http://qianwen-res.oss-accelerate-overseas.aliyuncs.com/Qwen-VL/blog/eval_result.jpg" alt="eval_result"> */}</p>
+<p>New versions of the Qwen-VL-Plus and Qwen-VL-Max models not only exhibit exceptional benchmark performance but also demonstrate a marked improvement in problem-solving capabilities within real-world scenarios. These advanced models effortlessly engage in dialogue, identify celebrities and landmarks, generate text, and notably, have significantly enhanced their abilities to describe and interpret visual content.</p>
+<p>Here we present some practical examples:</p>
+<h3 id="1-basic-recognition-capabilities">1. Basic Recognition Capabilities</h3>
+<p>The latest Qwen-VL models are now more adept at accurately describing and identifying complex information within images, as well as providing detailed background and answering related questions. For instance, Qwen-VL can recognize not only common objects, but also celebrities and landmarks. Qwen-VL can write poetry in various languages inspired by visuals, and analyze everyday screenshots.</p>
+<p>{/* Interactive example: 1_celeb.json <em>/}
+{/</em> Interactive example: 1_2.json <em>/}
+{/</em> Interactive example: 1_3.json <em>/}
+{/</em> Interactive example: 1_4.json */}</p>
+<h3 id="2-visual-agent-capability-the-essential-role-of-localization">2. Visual Agent Capability: The Essential Role of Localization</h3>
+<p>Beyond its fundamental capabilities in description and recognition, Qwen-VL also has impressive abilities to pinpoint and query specific elements. For instance, it can accurately highlight the black cars within an image. Moreover, Qwen-VL is also equipped to make judgments, deductions, and decisions based on the prevailing context of a scene.</p>
+<p>{/* Interactive example: 2_visual_grounding.json <em>/}
+{/</em> Interactive example: 2_grounded_caption.json <em>/}
+{/</em> Interactive example: 2_driving.json */}</p>
+<h3 id="3-visual-reasoning-capability-to-solve-real-problems">3. Visual Reasoning Capability: To Solve Real Problems</h3>
+<p>One of the most notable advancements in the latest Qwen-VL is its capacity for complex reasoning based on visual inputs. This enhanced visual reasoning capability goes well beyond mere content description, extending to the comprehension and interpretation of intricate representations such as flowcharts, diagrams, and other symbolic systems. In the realms of problem-solving and reasoning, Qwen-VL-Plus/Max excels not only in mathematical problem-solving and information organization but also in conducting more profound interpretations and analyses of charts and graphs.</p>
+<p>{/* Interactive example: 3_1.json <em>/}
+{/</em> Interactive example: 3_2.json <em>/}
+{/</em> Interactive example: 3_3.json <em>/}
+{/</em> Interactive example: 3_4.json <em>/}
+{/</em> Interactive example: 3_5.json */}</p>
+<h3 id="4-text-information-recognition--processing">4. Text Information Recognition &#x26; Processing</h3>
+<p>Text processing in images has also improved significantly, especially in terms of recognizing Chinese and English text. Qwen-VL-Plus/Max can now efficiently extract information from tables and documents and reformat this information to meet custom output requirements. In addition, it has an efficient mechanism for identifying and converting dense text, which is very effective in dealing with documents that contain a lot of information. It supports images with extreme aspect ratios, ensuring the flexibility to process diverse visual content.</p>
+<p>{/* Interactive example: 3_6.json <em>/}
+{/</em> Interactive example: 4_1.json <em>/}
+{/</em> Interactive example: 4_2.json */}</p>
+<h2 id="how-to-use">How to Use</h2>
+<p>Now you can access Qwen-VL-Plus and Qwen-VL-Max through the Huggingface Spaces, the Qwen website, and Dashscope APIs.</p>
+<ul>
+<li>Try Qwen-VL-Plus (<a href="https://huggingface.co/spaces/Qwen/Qwen-VL-Plus">https://huggingface.co/spaces/Qwen/Qwen-VL-Plus</a>) and Qwen-VL-Max (<a href="https://huggingface.co/spaces/Qwen/Qwen-VL-Max">https://huggingface.co/spaces/Qwen/Qwen-VL-Max</a>) in the Huggingface Spaces</li>
+</ul>
+<iframe src="https://qwen-qwen-vl-max.hf.space" frameborder="0" width="850" height="1100"></iframe>
+<ul>
+<li>Log in to the QianWen web portal at <a href="https://tongyi.aliyun.com/qianwen">https://tongyi.aliyun.com/qianwen</a>, and switch to "Image Understanding" mode to harness the latest Qwen-VL-Max capabilities.</li>
+</ul>
+<figure><img src="http://qianwen-res.oss-accelerate-overseas.aliyuncs.com/Qwen-VL/blog/qwen_web.png#center" alt="" loading="lazy"></figure>
+<ul>
+<li>Access the powerful APIs of Qwen-VL-Plus and Qwen-VL-Max through the Dashscope platform (<a href="https://help.aliyun.com/zh/dashscope/developer-reference/vl-plus-quick-start">https://help.aliyun.com/zh/dashscope/developer-reference/vl-plus-quick-start</a>).</li>
+</ul>
+<figure><img src="http://qianwen-res.oss-accelerate-overseas.aliyuncs.com/Qwen-VL/blog/dash_api.jpeg#center" alt="" loading="lazy"></figure>
+<h2 id="summary">Summary</h2>
+<p>Qwen-VL-Plus and Qwen-VL-Max make significant strides in enhancing high-resolution recognition, text analysis, and image reasoning capabilities. These models now match the performance of GPT4-v and Gemini, outperforming all other open-source and proprietary models in many tasks, such as MMMU, CMMMU, and MathVista. They achieve world-class results in document analysis (DocVQA) and Chinese language-related image understanding (MM-Bench-CN).</p>
+<p>Our objective is to continually tap into and elevate the potential of Qwen-VL, enabling it to make a difference across a broader range of applications. We can envision Qwen-VL as an assistant equipped with superhuman visual and linguistic comprehension skills that can provide robust support in everyday dialogues as well as complex scenarios like driving environments and programming contexts.</p>
+<p>While there is still a long way to go, we are confident that Qwen-VL will evolve to perceive and understand the world akin to human cognition through continuous optimization and expansion!</p>
+<ul>
+<li>Our Official Website: <a href="https://tongyi.aliyun.com/qianwen">https://tongyi.aliyun.com/qianwen</a></li>
+<li>Github: <a href="https://github.com/QwenLM/Qwen-VL">https://github.com/QwenLM/Qwen-VL</a></li>
+<li>Huggingface: <a href="http://huggingface.co/Qwen/Qwen-VL-Chat">http://huggingface.co/Qwen/Qwen-VL-Chat</a></li>
+<li>ModelScope: <a href="https://modelscope.cn/studios/qwen/Qwen-VL-Chat-Demo">https://modelscope.cn/studios/qwen/Qwen-VL-Chat-Demo</a></li>
+<li>API: <a href="https://help.aliyun.com/zh/dashscope/developer-reference/tongyi-qianwen-vl-plus-api">https://help.aliyun.com/zh/dashscope/developer-reference/tongyi-qianwen-vl-plus-api</a></li>
+<li>Discord: <a href="https://discord.gg/CV4E9rpNSD">https://discord.gg/CV4E9rpNSD</a></li>
+</ul>d:["$","main",null,{"children":["$","article",null,{"className":"blog-article","children":[["$","$L5",null,{"className":"blog-back","href":"/blog","children":"← Blog"}],["$","div",null,{"className":"blog-post-meta","children":["January 24, 2024"," ","·"," ",5," min read"]}],["$","h1",null,{"className":"blog-post-title","children":"Introducing Qwen-VL"}],["$","p",null,{"className":"blog-post-lede","children":"Along with the rapid development of our large language model Qwen, we leveraged Qwen’s capabilities and unified multimodal pretraining to address the limitations of multimodal models in generalization, and we opensourced multimodal model Qwen-VL in Sep. 2023. Recently, the Qwen-VL series has undergo"}],["$","div",null,{"className":"blog-prose","dangerouslySetInnerHTML":{"__html":"$17"}}]]}]}]
+13:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+f:null
+11:{"metadata":[["$","title","0",{"children":"Introducing Qwen-VL — Zen Blog"}],["$","meta","1",{"name":"description","content":"Along with the rapid development of our large language model Qwen, we leveraged Qwen’s capabilities and unified multimodal pretraining to address the limitations of multimodal models in generalization, and we opensourced multimodal model Qwen-VL in Sep. 2023. Recently, the Qwen-VL series has undergo"}],["$","meta","2",{"name":"keywords","content":"AI, LLM, Agentic AI, Code Generation, Zen Coder, Multimodal, Open Source, Machine Learning"}]],"error":null,"digest":"$undefined"}
+16:"$11:metadata"

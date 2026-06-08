@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import ScrollReveal from '@/components/ScrollReveal';
 import './globals.css';
 
 export const metadata: Metadata = {
@@ -17,12 +18,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" type="image/png" href="/favicon.png" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <link rel="alternate icon" href="/favicon.png" />
       </head>
       <body>
         <Header />
         {children}
         <Footer />
+        <ScrollReveal />
         <script src="/assets/js/main.js" async></script>
       </body>
     </html>

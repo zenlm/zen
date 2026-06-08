@@ -1564,3 +1564,55 @@ a:hover {
 .blog-figure figcaption { font-size: 0.82rem; color: var(--ink-400); margin-top: 0.5rem; }
 .blog-fullwidth { margin: 1.75rem 0; }
 .blog-video { width: 100%; border-radius: 0.75rem; border: 1px solid var(--glass-border); margin: 1.5rem 0; }
+
+/* ============================================================
+   LOOK & FEEL v2  ·  hero centerpiece, entrance, scroll reveal
+   ============================================================ */
+
+/* Large faint ensō slowly rotating behind the hero */
+.hero { position: relative; overflow: hidden; }
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 46%;
+    left: 50%;
+    width: min(620px, 78vw);
+    aspect-ratio: 1;
+    transform: translate(-50%, -50%);
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' fill='none'%3E%3Cpath d='M58 13 C38 9 17 22 13 44 C9 68 26 89 50 90 C74 91 91 74 89 50 C88 41 87 35 84 30' stroke='%23ffffff' stroke-width='4.5' stroke-linecap='round'/%3E%3C/svg%3E") center/contain no-repeat;
+    opacity: 0.05;
+    filter: blur(0.4px);
+    animation: hero-enso-spin 64s linear infinite;
+    pointer-events: none;
+    z-index: 0;
+}
+.hero .container { position: relative; z-index: 1; }
+@keyframes hero-enso-spin { to { transform: translate(-50%, -50%) rotate(360deg); } }
+
+/* Staggered hero entrance on load */
+@keyframes rise {
+    from { opacity: 0; transform: translateY(18px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+.hero-title    { animation: rise 0.9s cubic-bezier(0.22, 1, 0.36, 1) both; }
+.hero-subtitle { animation: rise 0.9s 0.08s cubic-bezier(0.22, 1, 0.36, 1) both; }
+.hero-description { animation: rise 0.9s 0.16s cubic-bezier(0.22, 1, 0.36, 1) both; }
+.hero-cta      { animation: rise 0.9s 0.24s cubic-bezier(0.22, 1, 0.36, 1) both; }
+
+/* Scroll reveal — only active when JS adds .js-reveal to <html> (no FOUC fallback) */
+.js-reveal .reveal-item {
+    opacity: 0;
+    transform: translateY(22px);
+    transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1), transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+    will-change: opacity, transform;
+}
+.js-reveal .reveal-item.in-view {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .hero::before { animation: none; }
+    .hero-title, .hero-subtitle, .hero-description, .hero-cta { animation: none; }
+    .js-reveal .reveal-item { opacity: 1; transform: none; transition: none; }
+}

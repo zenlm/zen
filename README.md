@@ -1,3 +1,5 @@
+<p align="center"><img src=".github/hero.svg" alt="zen" width="880"></p>
+
 # Zen LM
 
 **Real-Time Hyper-Modal AI for XR/VR/Robotics**

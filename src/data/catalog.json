@@ -1043,5 +1043,16 @@
   "pipeline": "text-to-video",
   "paper_slug": "zen-world",
   "blurb": "Generative world model rendering coherent video scenes."
+ },
+ {
+  "id": "zenlm/zen-router",
+  "name": "Zen Router",
+  "category": "agent",
+  "params": "0.6B",
+  "context": "32K",
+  "license": "apache-2.0",
+  "pipeline": "text-classification",
+  "paper_slug": "",
+  "blurb": "Tiny 0.6B routing model: reads a prompt and picks the best model to answer it, emitting task class, a route distribution over the model catalog, and a feature embedding in one forward pass."
  }
 ]

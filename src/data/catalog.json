@@ -11,7 +11,7 @@
   "blurb": "Turn images and text prompts into 3D assets."
  },
  {
-  "id": "zenlm/zen-5-mini-gguf",
+  "id": "zenlm/zen5-mini-gguf",
   "name": "Zen 5 Mini",
   "category": "agent",
   "params": "MoE (~10B active)",
@@ -88,7 +88,7 @@
   "blurb": "Generate up to 30s of music from text prompts."
  },
  {
-  "id": "zenlm/zen-3-asr",
+  "id": "zenlm/zen3-asr",
   "name": "Zen3 ASR",
   "category": "audio",
   "params": "2.35B",
@@ -99,7 +99,7 @@
   "blurb": "Flagship Zen3 speech recognition for high-accuracy, real-time streaming transcription."
  },
  {
-  "id": "zenlm/zen-3-asr-0.6B",
+  "id": "zenlm/zen3-asr-0.6B",
   "name": "Zen3 ASR 0.6B",
   "category": "audio",
   "params": "0.94B",
@@ -110,7 +110,7 @@
   "blurb": "Compact, low-latency speech recognition for voice agents and on-device transcription."
  },
  {
-  "id": "zenlm/zen-3-asr-aligner",
+  "id": "zenlm/zen3-asr-aligner",
   "name": "Zen3 ASR Forced Aligner",
   "category": "audio",
   "params": "0.92B",
@@ -121,7 +121,7 @@
   "blurb": "Word- and phoneme-level time alignment for subtitles, dubbing, and dataset curation."
  },
  {
-  "id": "zenlm/zen-3-tts",
+  "id": "zenlm/zen3-tts",
   "name": "Zen3 TTS",
   "category": "audio",
   "params": "1.93B",
@@ -132,7 +132,7 @@
   "blurb": "Natural English and Chinese speech synthesis with voice cloning for agents and media."
  },
  {
-  "id": "zenlm/zen-3-tts-0.6B",
+  "id": "zenlm/zen3-tts-0.6B",
   "name": "Zen3 TTS 0.6B",
   "category": "audio",
   "params": "0.91B",
@@ -143,7 +143,7 @@
   "blurb": "Lightweight text-to-speech for fast, natural on-device voice synthesis."
  },
  {
-  "id": "zenlm/zen-3-tts-custom-voice",
+  "id": "zenlm/zen3-tts-custom-voice",
   "name": "Zen3 TTS Custom Voice",
   "category": "audio",
   "params": "1.92B",
@@ -154,7 +154,7 @@
   "blurb": "Clone any voice from a few seconds of audio with full prosody and emotion."
  },
  {
-  "id": "zenlm/zen-3-tts-voice-design",
+  "id": "zenlm/zen3-tts-voice-design",
   "name": "Zen3 TTS Voice Design",
   "category": "audio",
   "params": "1.92B",
@@ -176,7 +176,7 @@
   "blurb": "Next-gen Zen MoDE flagship with 1M context and enhanced multi-step reasoning."
  },
  {
-  "id": "zenlm/zen-5-flash-gguf",
+  "id": "zenlm/zen5-flash-gguf",
   "name": "Zen 5 Flash",
   "category": "chat",
   "params": "4.02B (dense)",
@@ -187,7 +187,7 @@
   "blurb": "Dense 4B instruct with sub-100ms TTFT for high-throughput routing and simple agent loops."
  },
  {
-  "id": "zenlm/zen-5-max-gguf",
+  "id": "zenlm/zen5-max-gguf",
   "name": "Zen 5 Max",
   "category": "chat",
   "params": "MoE (full-Pro base, IQ2_XXS quant)",
@@ -220,7 +220,7 @@
   "blurb": "Next-generation professional reasoning model built on Zen MoDE with 512K context."
  },
  {
-  "id": "zenlm/zen-5-pro-gguf",
+  "id": "zenlm/zen5-pro-gguf",
   "name": "Zen 5 Pro",
   "category": "chat",
   "params": "284B total / 37B active (MoE)",
@@ -363,7 +363,7 @@
   "blurb": "Next-generation code specialist powered by Zen MoDE with 256K context."
  },
  {
-  "id": "zenlm/zen-5-coder-gguf",
+  "id": "zenlm/zen5-coder-gguf",
   "name": "Zen 5 Coder",
   "category": "coder",
   "params": "79.7B (MoE)",
@@ -847,7 +847,7 @@
   "blurb": "Animate a still image into fluid video."
  },
  {
-  "id": "zenlm/zen-5-gguf",
+  "id": "zenlm/zen5-gguf",
   "name": "Zen 5",
   "category": "vision",
   "params": "35B total / 3B active (MoE)",
@@ -858,7 +858,7 @@
   "blurb": "Canonical Zen5: multimodal 35B/3B-active MoE with frontier vision-language reasoning, 256K context."
  },
  {
-  "id": "zenlm/zen-5-nano-0.8B-gguf",
+  "id": "zenlm/zen5-nano-0.8B-gguf",
   "name": "Zen 5 Nano 0.8B",
   "category": "vision",
   "params": "0.87B (dense)",
@@ -869,7 +869,7 @@
   "blurb": "900M-scale multimodal model for phones, laptops, and Pi-class on-device inference."
  },
  {
-  "id": "zenlm/zen-5-nano-2B-gguf",
+  "id": "zenlm/zen5-nano-2B-gguf",
   "name": "Zen 5 Nano 2B",
   "category": "vision",
   "params": "2.27B (dense)",
@@ -1001,7 +1001,7 @@
   "blurb": "Vision-language model for OCR, visual reasoning, and image understanding with a 262K context."
  },
  {
-  "id": "zenlm/zen-5-nano-4B-gguf",
+  "id": "zenlm/zen5-nano-4B-gguf",
   "name": "Zen5 Nano 4B (GGUF)",
   "category": "vision",
   "params": "4.66B",
@@ -1012,7 +1012,7 @@
   "blurb": "On-device vision-language at 5B scale \u2014 see and chat on phones, laptops, and Raspberry Pi."
  },
  {
-  "id": "zenlm/zen-5-nano-9B-gguf",
+  "id": "zenlm/zen5-nano-9B-gguf",
   "name": "Zen5 Nano 9B (GGUF)",
   "category": "vision",
   "params": "9.65B",

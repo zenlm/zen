@@ -393,7 +393,7 @@ header {
 
 .model-specs {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 1rem;
     margin-bottom: 1.5rem;
 }
@@ -415,6 +415,7 @@ header {
     font-size: 1rem;
     color: var(--text);
     font-weight: 600;
+    overflow-wrap: anywhere;
 }
 
 .model-description {
@@ -1548,7 +1549,7 @@ a:hover {
 }
 .blog-prose code { font-family: 'Monaco','Menlo','Ubuntu Mono',monospace; font-size: 0.88em; }
 .blog-prose :not(pre) > code { background: rgba(255,255,255,0.06); border: 1px solid var(--glass-border); padding: 0.1em 0.35em; border-radius: 0.3em; color: var(--ink-100); }
-.blog-prose table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: 0.92rem; }
+.blog-prose table { display: block; max-width: 100%; overflow-x: auto; border-collapse: collapse; margin: 1.5rem 0; font-size: 0.92rem; }
 .blog-prose th, .blog-prose td { border: 1px solid var(--glass-border); padding: 0.6rem 0.9rem; text-align: left; }
 .blog-prose th { background: rgba(255,255,255,0.04); color: var(--ink-300); font-weight: 600; }
 .blog-prose hr { border: none; border-top: 1px solid var(--glass-border); margin: 2.5rem 0; }

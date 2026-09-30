@@ -55,7 +55,7 @@ export default function DatasetsPage() {
       <section className="data-composition architecture-section">
         <div className="container">
           <h2 className="section-title">Data Composition</h2>
-          <table className="models-table">
+          <div className="model-lineup"><table className="models-table">
             <thead>
               <tr>
                 <th>Component</th>
@@ -85,7 +85,7 @@ export default function DatasetsPage() {
                 <td>10%</td>
               </tr>
             </tbody>
-          </table>
+          </table></div>
         </div>
       </section>
 
@@ -140,7 +140,7 @@ export default function DatasetsPage() {
       <section className="languages-section architecture-section">
         <div className="container">
           <h2 className="section-title">Languages</h2>
-          <table className="models-table">
+          <div className="model-lineup"><table className="models-table">
             <thead>
               <tr>
                 <th>Tier 1 (Core)</th>
@@ -175,14 +175,14 @@ export default function DatasetsPage() {
                 <td>Move</td>
               </tr>
             </tbody>
-          </table>
+          </table></div>
         </div>
       </section>
 
       <section className="models-trained architecture-section">
         <div className="container">
           <h2 className="section-title">Models Trained on This Dataset</h2>
-          <table className="models-table">
+          <div className="model-lineup"><table className="models-table">
             <thead>
               <tr>
                 <th>Model</th>
@@ -202,7 +202,7 @@ export default function DatasetsPage() {
                 <td><span className="status-trained">Trained</span></td>
               </tr>
             </tbody>
-          </table>
+          </table></div>
         </div>
       </section>
 
@@ -275,7 +275,7 @@ export default function DatasetsPage() {
       <section className="orgs-section architecture-section">
         <div className="container">
           <h2 className="section-title">Supported Organizations</h2>
-          <table className="models-table">
+          <div className="model-lineup"><table className="models-table">
             <thead>
               <tr>
                 <th>Organization</th>
@@ -305,7 +305,7 @@ export default function DatasetsPage() {
                 <td>Infrastructure</td>
               </tr>
             </tbody>
-          </table>
+          </table></div>
         </div>
       </section>
     </main>

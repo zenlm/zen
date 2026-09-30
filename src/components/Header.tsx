@@ -23,10 +23,11 @@ const NAV_MENUS: NavMenu[] = [
     label: 'Models',
     href: '/models',
     items: [
-      { label: 'Zen5', tag: 'Latest', description: 'Frontier agentic — 256K–1M context, native tool use', href: '/models#zen5' },
-      { label: 'Zen4', tag: 'Stable', description: 'Production chat & code — MoE flagships and coders', href: '/models#zen4' },
-      { label: 'Zen3', description: 'Multimodal & specialty — vision, audio, image, safety', href: '/models#zen3' },
-      { label: 'All models', description: 'Browse the full catalog — 95 open models', href: '/models' },
+      { label: 'Zen 6', tag: 'Available', description: '27B dense — text, images and video, 1M context with YaRN', href: '/models#zen6' },
+      { label: 'Zen 6 Flash', tag: 'Available', description: 'The ternary Zen 6 — 5.95 GB, fits an Apple Silicon laptop', href: '/models#zen6' },
+      { label: 'Zen 7', tag: 'Research preview', description: 'No weights yet — request access', href: 'https://hanzo.ai/research-access', external: true },
+      { label: 'Earlier generations', description: 'Zen 5, Zen 4 and Zen 3', href: '/models#zen5' },
+      { label: 'All models', description: 'Browse the full catalog', href: '/models#catalog' },
     ],
   },
   {
@@ -50,8 +51,8 @@ const NAV_MENUS: NavMenu[] = [
 ];
 
 const TRY_MENU: MenuItem[] = [
-  { label: 'Zen5', tag: 'Latest', description: 'Chat with the frontier model — live now', href: 'https://hanzo.chat/?model=zen5', external: true },
-  { label: 'Zen4', tag: 'Stable', description: 'Chat with the production family', href: 'https://hanzo.chat/?model=zen4', external: true },
+  { label: 'Zen 6', tag: 'Available', description: 'Chat with Zen 6', href: 'https://hanzo.chat/?model=zen6', external: true },
+  { label: 'Zen 6 Flash', tag: 'Available', description: 'Chat with the ternary Zen 6', href: 'https://hanzo.chat/?model=zen6-flash', external: true },
   { label: 'Zen API', description: 'OpenAI- & Anthropic-compatible. One key.', href: 'https://api.hanzo.ai', external: true },
   { label: 'Zen Chat', description: 'Open the full chat experience', href: 'https://hanzo.chat', external: true },
 ];
@@ -145,7 +146,7 @@ export default function Header() {
             </div>
             <div className="nav-item try-item">
               <a
-                href="https://hanzo.chat/?model=zen5"
+                href="https://hanzo.chat/?model=zen6"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-try"

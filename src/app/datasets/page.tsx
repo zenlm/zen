@@ -187,7 +187,6 @@ export default function DatasetsPage() {
               <tr>
                 <th>Model</th>
                 <th>Size</th>
-                <th>Architecture</th>
                 <th>Status</th>
               </tr>
             </thead>
@@ -195,32 +194,12 @@ export default function DatasetsPage() {
               <tr>
                 <td><strong>Zen Coder 4B</strong></td>
                 <td>4B</td>
-                <td>Qwen3</td>
                 <td><span className="status-trained">Trained</span></td>
               </tr>
               <tr>
                 <td><strong>Zen Coder 24B</strong></td>
                 <td>24B</td>
-                <td>Devstral Small 2</td>
                 <td><span className="status-trained">Trained</span></td>
-              </tr>
-              <tr>
-                <td><strong>Zen Coder 123B</strong></td>
-                <td>123B</td>
-                <td>Devstral 2</td>
-                <td><span className="status-training">Training</span></td>
-              </tr>
-              <tr>
-                <td><strong>Zen Coder Max</strong></td>
-                <td>358B</td>
-                <td>GLM-4.7 (MoE)</td>
-                <td><span className="status-planned">Planned</span></td>
-              </tr>
-              <tr>
-                <td><strong>Zen Coder Ultra</strong></td>
-                <td>1T</td>
-                <td>Kimi K2 (MoE)</td>
-                <td><span className="status-planned">Planned</span></td>
               </tr>
             </tbody>
           </table>
@@ -285,18 +264,8 @@ export default function DatasetsPage() {
         <div className="container">
           <h2 className="section-title">Training Framework</h2>
           <p style={{textAlign: 'center', marginBottom: '2rem'}}>
-            Use <a href="https://github.com/zenlm/zen-trainer">zen-trainer</a> for fine-tuning:
+            Fine-tune on this dataset with <a href="https://github.com/zenlm/zen-trainer">zen-trainer</a>.
           </p>
-          <pre style={{background: '#1a1a1a', padding: '1.5rem', borderRadius: '8px', overflow: 'auto'}}>
-            <code>{`from zen_trainer import ZenTrainer
-
-trainer = ZenTrainer(
-    model_key="qwen3-4b",
-    dataset_path="hanzoai/zen-agentic-dataset-private",  # Requires access
-    output_dir="./output/my-model",
-)
-trainer.train()`}</code>
-          </pre>
           <div style={{textAlign: 'center', marginTop: '2rem'}}>
             <a href="https://github.com/zenlm/zen-trainer" className="btn btn-primary" target="_blank" rel="noopener noreferrer">View zen-trainer</a>
           </div>

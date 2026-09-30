@@ -6,7 +6,7 @@ import './globals.css';
 
 export const metadata: Metadata = {
   title: 'Zen LM - Open Foundation Models for Agentic AI',
-  description: '95 open models from 0.6B to 1T parameters. Flagship Zen Coder trained on 8.47B tokens of real programming sessions.',
+  description: 'Open models from Zoo Labs Foundation, a 501(c)(3) non-profit, for agentic coding on your own machine and marketing work. Zen 6 and Zen 6 Flash are available now.',
   keywords: 'AI, LLM, Agentic AI, Code Generation, Zen Coder, Multimodal, Open Source, Machine Learning',
 };
 

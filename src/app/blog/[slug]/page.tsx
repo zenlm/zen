@@ -11,7 +11,12 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug } = await params;
   const post = getPost(slug);
   if (!post) return { title: 'Zen Blog' };
-  return { title: `${post.title} — Zen Blog`, description: post.description };
+  return {
+    title: `${post.title} — Zen Blog`,
+    description: post.description,
+    // A post about another lab's release names it; the Zen copy check reads this.
+    ...(post.upstream ? { other: { 'data-upstream': 'true' } } : {}),
+  };
 }
 
 function fmtDate(d: string) {
@@ -40,7 +45,7 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
 
   return (
     <main>
-      <article className="blog-article">
+      <article className="blog-article" data-upstream={post.upstream ? '' : undefined}>
         <Link className="blog-back" href="/blog">← Blog</Link>
         <div className="blog-post-meta">
           {fmtDate(post.date)} {post.date && '·'} {post.readMins} min read

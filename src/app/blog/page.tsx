@@ -4,7 +4,7 @@ import { getAllPosts } from '../../lib/blog';
 
 export const metadata: Metadata = {
   title: 'Zen Blog — research notes & releases',
-  description: 'Architecture deep-dives, training research, and release notes from the Zen LM team.',
+  description: 'Architecture deep-dives, training research, and release notes from Zen LM, the open model family of Zoo Labs Foundation.',
 };
 
 function fmtDate(d: string) {
@@ -29,7 +29,7 @@ export default function BlogIndex() {
         <div className="container">
           <div className="blog-list">
             {posts.map((p) => (
-              <Link className="blog-card" href={`/blog/${p.slug}`} key={p.slug}>
+              <Link className="blog-card" href={`/blog/${p.slug}`} key={p.slug} data-upstream={p.upstream ? '' : undefined}>
                 <div className="blog-card-meta">
                   {fmtDate(p.date)} {p.date && '·'} {p.readMins} min read
                 </div>

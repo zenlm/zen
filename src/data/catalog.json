@@ -19,7 +19,7 @@
   "license": "apache-2.0",
   "pipeline": "text-generation",
   "paper_slug": "zen5_whitepaper",
-  "blurb": "Frontier-agentic ~10B-active MoE, RL-trained on real-world environments for tool use and code."
+  "blurb": "~10B-active MoE, RL-trained on real-world environments for tool use and code."
  },
  {
   "id": "zenlm/zen-agent-4b",
@@ -173,7 +173,7 @@
   "license": "apache-2.0",
   "pipeline": "text-generation",
   "paper_slug": "zen5_whitepaper",
-  "blurb": "Next-gen Zen MoDE flagship with 1M context and enhanced multi-step reasoning."
+  "blurb": "Zen MoDE model with 1M context and multi-step reasoning."
  },
  {
   "id": "zenlm/zen-5-flash-gguf",
@@ -217,7 +217,7 @@
   "license": "apache-2.0",
   "pipeline": "text-generation",
   "paper_slug": "zen5_whitepaper",
-  "blurb": "Next-generation professional reasoning model built on Zen MoDE with 512K context."
+  "blurb": "Professional reasoning model built on Zen MoDE with 512K context."
  },
  {
   "id": "zenlm/zen-5-pro-gguf",
@@ -228,7 +228,7 @@
   "license": "mit",
   "pipeline": "text-generation",
   "paper_slug": "zen5_whitepaper",
-  "blurb": "Frontier 284B/37B-active MoE reasoning that fits a single 128GB unified-memory machine, 1M context."
+  "blurb": "284B/37B-active MoE reasoning that fits a single 128GB unified-memory machine, 1M context."
  },
  {
   "id": "zenlm/zen-blog",
@@ -360,7 +360,7 @@
   "license": "apache-2.0",
   "pipeline": "text-generation",
   "paper_slug": "zen5_whitepaper",
-  "blurb": "Next-generation code specialist powered by Zen MoDE with 256K context."
+  "blurb": "Code specialist powered by Zen MoDE with 256K context."
  },
  {
   "id": "zenlm/zen-5-coder-gguf",
@@ -855,7 +855,7 @@
   "license": "apache-2.0",
   "pipeline": "image-text-to-text",
   "paper_slug": "zen5_whitepaper",
-  "blurb": "Canonical Zen5: multimodal 35B/3B-active MoE with frontier vision-language reasoning, 256K context."
+  "blurb": "Canonical Zen5: multimodal 35B/3B-active MoE with vision-language reasoning, 256K context."
  },
  {
   "id": "zenlm/zen-5-nano-0.8B-gguf",
@@ -1054,5 +1054,27 @@
   "pipeline": "text-classification",
   "paper_slug": "",
   "blurb": "Tiny 0.6B routing model: reads a prompt and picks the best model to answer it, emitting task class, a route distribution over the model catalog, and a feature embedding in one forward pass."
+ },
+ {
+  "id": "zenlm/zen6",
+  "name": "Zen 6",
+  "category": "chat",
+  "params": "27B dense",
+  "context": "262K native, 1M with YaRN",
+  "license": "apache-2.0",
+  "pipeline": "image-text-to-text",
+  "paper_slug": "",
+  "blurb": "The current Zen generation, for agentic coding on your own machine and marketing work. Reads text, images and video; NVFP4 weights with a bundled speculative drafter."
+ },
+ {
+  "id": "zenlm/zen6-flash",
+  "name": "Zen 6 Flash",
+  "category": "chat",
+  "params": "27B ternary, 1.77 bits per weight",
+  "context": "262K",
+  "pipeline": "image-text-to-text",
+  "license": "apache-2.0",
+  "paper_slug": "",
+  "blurb": "The ternary build of Zen 6: 5.95 GB densely packed, reads images, and runs on an Apple Silicon laptop."
  }
 ]

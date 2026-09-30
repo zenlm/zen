@@ -15,8 +15,8 @@ dist/
 downloads/
 eggs/
 .eggs/
-lib/
-lib64/
+/lib/
+/lib64/
 parts/
 sdist/
 var/
@@ -41,7 +41,6 @@ ENV/
 # Model files - should be in parent directory
 /models/
 /training/
-/scripts/
 /evaluations/
 /tools/
 /datasets/

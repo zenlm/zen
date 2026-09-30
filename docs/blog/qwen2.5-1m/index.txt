@@ -1,79 +1,74 @@
 1:"$Sreact.fragment"
-2:I[6529,["619","static/chunks/619-ba102abea3e3d0e4.js","177","static/chunks/app/layout-13fa3fd02f6eb5db.js"],"default"]
+2:I[6529,["619","static/chunks/619-ba102abea3e3d0e4.js","177","static/chunks/app/layout-425ca81883167c16.js"],"default"]
 3:I[9766,[],""]
 4:I[8924,[],""]
-5:I[2619,["619","static/chunks/619-ba102abea3e3d0e4.js","953","static/chunks/app/blog/%5Bslug%5D/page-f25a122e9ccf798d.js"],""]
-d:I[7150,[],""]
+5:I[2619,["619","static/chunks/619-ba102abea3e3d0e4.js","953","static/chunks/app/blog/%5Bslug%5D/page-38f8c2a205f98d97.js"],""]
+6:I[7405,["619","static/chunks/619-ba102abea3e3d0e4.js","177","static/chunks/app/layout-425ca81883167c16.js"],"default"]
+a:I[7150,[],""]
 :HL["/_next/static/css/1d1f6bc532e5f43f.css","style"]
 :HL["/_next/static/css/eb87e4f7aea490c6.css","style"]
-0:{"P":null,"b":"DQJo8iKQxHubJM4JvsRbH","p":"","c":["","blog","qwen2.5-1m",""],"i":false,"f":[[["",{"children":["blog",{"children":[["slug","qwen2.5-1m","d"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/1d1f6bc532e5f43f.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","children":[["$","head",null,{"children":[["$","link",null,{"rel":"icon","type":"image/svg+xml","href":"/favicon.svg"}],["$","link",null,{"rel":"alternate icon","href":"/favicon.png"}]]}],["$","body",null,{"children":[["$","$L2",null,{}],["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}],["$","footer",null,{"children":["$","div",null,{"className":"container","children":[["$","div",null,{"className":"footer-content","children":[["$","div",null,{"className":"footer-section","children":[["$","h4",null,{"children":"Zen LM"}],["$","p",null,{"children":"95 open Zen models across Zen3, Zen4, and Zen5. Chat, code, vision, audio, image, embeddings, rerankers, and safety. OpenAI- and Anthropic-compatible API."}]]}],["$","div",null,{"className":"footer-section","children":[["$","h4",null,{"children":"Zen 5"}],["$","ul",null,{"children":[["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 Nano (0.8B - 9B)"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 Flash"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 Mini"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 (default)"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 Coder"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 Pro"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen5 Max"}]}]]}]]}],["$","div",null,{"className":"footer-section","children":[["$","h4",null,{"children":"Zen 4"}],["$","ul",null,{"children":[["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen4","children":"Zen4 / Zen4.1"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen4","children":"Zen4 Ultra / Max / Pro"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen4","children":"Zen4 Mini / Thinking"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen4","children":"Zen4 Coder / Pro / Flash"}]}]]}]]}],["$","div",null,{"className":"footer-section","children":[["$","h4",null,{"children":"Zen 3 Multimodal"}],["$","ul",null,{"children":[["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen3","children":"Zen3 Omni / VL / Web"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen3","children":"Zen3 Nano / Guard"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen3","children":"Zen3 Embedding / Reranker"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen3","children":"Zen3 Image / ASR / TTS"}]}]]}]]}],["$","div",null,{"className":"footer-section","children":[["$","h4",null,{"children":"Resources"}],["$","ul",null,{"children":[["$","li",null,{"children":["$","$L5",null,{"href":"/datasets","children":"Training Data"}]}],["$","li",null,{"children":["$","a",null,{"href":"https://huggingface.co/zenlm","target":"_blank","rel":"noopener noreferrer","children":"HuggingFace"}]}],["$","li",null,{"children":["$","a",null,{"href":"https://github.com/zenlm","target":"_blank","rel":"noopener noreferrer","children":"GitHub"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/research","children":"Research Papers"}]}],["$","li",null,{"children":["$","a",null,{"href":"https://api.hanzo.ai","target":"_blank","rel":"noopener noreferrer","children":"Zen API"}]}]]}]]}]]}],"$L6"]}]}],"$L7","$L8"]}]]}]]}],{"children":["blog","$L9",{"children":[["slug","qwen2.5-1m","d"],"$La",{"children":["__PAGE__","$Lb",{},null,false]},null,false]},null,false]},null,false],"$Lc",false]],"m":"$undefined","G":["$d",[]],"s":false,"S":true}
-e:I[7405,["619","static/chunks/619-ba102abea3e3d0e4.js","177","static/chunks/app/layout-13fa3fd02f6eb5db.js"],"default"]
-10:I[4431,[],"OutletBoundary"]
-12:I[5278,[],"AsyncMetadataOutlet"]
-14:I[4431,[],"ViewportBoundary"]
-16:I[4431,[],"MetadataBoundary"]
-17:"$Sreact.suspense"
-6:["$","div",null,{"className":"footer-bottom","children":["$","p",null,{"children":["© ",2026," Zen Authors. Open foundation models. Served on the Zen API."]}]}]
-7:["$","$Le",null,{}]
-8:["$","script",null,{"src":"/assets/js/main.js","async":true}]
-9:["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
-a:["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
-b:["$","$1","c",{"children":["$Lf",[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/eb87e4f7aea490c6.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","$L10",null,{"children":["$L11",["$","$L12",null,{"promise":"$@13"}]]}]]}]
-c:["$","$1","h",{"children":[null,[["$","$L14",null,{"children":"$L15"}],null],["$","$L16",null,{"children":["$","div",null,{"hidden":true,"children":["$","$17",null,{"fallback":null,"children":"$L18"}]}]}]]}]
-19:T3cfe,<p><a href="https://qianwen-res.oss-cn-beijing.aliyuncs.com/zen-1M/zen_1M_Technical_Report.pdf">Tech Report</a>
+0:{"P":null,"b":"O_8Vay2N-OgsTzHhQBxgu","p":"","c":["","blog","qwen2.5-1m",""],"i":false,"f":[[["",{"children":["blog",{"children":[["slug","qwen2.5-1m","d"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/1d1f6bc532e5f43f.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","children":[["$","head",null,{"children":[["$","link",null,{"rel":"icon","type":"image/svg+xml","href":"/favicon.svg"}],["$","link",null,{"rel":"alternate icon","href":"/favicon.png"}]]}],["$","body",null,{"children":[["$","$L2",null,{}],["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}],["$","footer",null,{"children":["$","div",null,{"className":"container","children":[["$","div",null,{"className":"footer-content","children":[["$","div",null,{"className":"footer-section","children":[["$","h4",null,{"children":"Zen LM"}],["$","p",null,{"children":"Open models from Zoo Labs Foundation, a 501(c)(3) non-profit, for agentic coding on your own machine and marketing work. Served on api.hanzo.ai."}]]}],["$","div",null,{"className":"footer-section","children":[["$","h4",null,{"children":"Zen 6"}],["$","ul",null,{"children":[["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen6","children":"Zen 6"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen6","children":"Zen 6 Flash"}]}],["$","li",null,{"children":["$","a",null,{"href":"https://hanzo.ai/research-access","target":"_blank","rel":"noopener noreferrer","children":"Zen 7 research preview"}]}]]}]]}],["$","div",null,{"className":"footer-section","children":[["$","h4",null,{"children":"Earlier Generations"}],["$","ul",null,{"children":[["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen5","children":"Zen 5"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen4","children":"Zen 4"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/models#zen3","children":"Zen 3"}]}]]}]]}],["$","div",null,{"className":"footer-section","children":[["$","h4",null,{"children":"Resources"}],["$","ul",null,{"children":[["$","li",null,{"children":["$","$L5",null,{"href":"/datasets","children":"Training Data"}]}],["$","li",null,{"children":["$","a",null,{"href":"https://huggingface.co/zenlm","target":"_blank","rel":"noopener noreferrer","children":"HuggingFace"}]}],["$","li",null,{"children":["$","a",null,{"href":"https://github.com/zenlm","target":"_blank","rel":"noopener noreferrer","children":"GitHub"}]}],["$","li",null,{"children":["$","$L5",null,{"href":"/research","children":"Research Papers"}]}],["$","li",null,{"children":["$","a",null,{"href":"https://api.hanzo.ai","target":"_blank","rel":"noopener noreferrer","children":"Zen API"}]}]]}]]}]]}],["$","div",null,{"className":"footer-bottom","children":["$","p",null,{"children":["© ",2026," Zoo Labs Foundation, a 501(c)(3) non-profit. Zen LM open models."]}]}]]}]}],["$","$L6",null,{}],["$","script",null,{"src":"/assets/js/main.js","async":true}]]}]]}]]}],{"children":["blog",["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["slug","qwen2.5-1m","d"],["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":["$L7",[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/eb87e4f7aea490c6.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],"$L8"]}],{},null,false]},null,false]},null,false]},null,false],"$L9",false]],"m":"$undefined","G":["$a",[]],"s":false,"S":true}
+b:I[4431,[],"OutletBoundary"]
+d:I[5278,[],"AsyncMetadataOutlet"]
+f:I[4431,[],"ViewportBoundary"]
+11:I[4431,[],"MetadataBoundary"]
+12:"$Sreact.suspense"
+8:["$","$Lb",null,{"children":["$Lc",["$","$Ld",null,{"promise":"$@e"}]]}]
+9:["$","$1","h",{"children":[null,[["$","$Lf",null,{"children":"$L10"}],null],["$","$L11",null,{"children":["$","div",null,{"hidden":true,"children":["$","$12",null,{"fallback":null,"children":"$L13"}]}]}]]}]
+14:T3d9d,<p><a href="https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen2.5-1M/Qwen2_5_1M_Technical_Report.pdf">Tech Report</a>
 <a href="https://huggingface.co/Qwen">HuggingFace</a>
 <a href="https://modelscope.cn/organization/qwen">ModelScope</a>
 <a href="https://chat.qwenlm.ai/">Qwen Chat</a>
-<a href="https://huggingface.co/spaces/Qwen/zen-1M-Demo">HuggingFace Demo</a>
-<a href="https://www.modelscope.cn/studios/Qwen/zen-1M-Demo">ModelScope Demo</a>
+<a href="https://huggingface.co/spaces/Qwen/Qwen2.5-1M-Demo">HuggingFace Demo</a>
+<a href="https://www.modelscope.cn/studios/Qwen/Qwen2.5-1M-Demo">ModelScope Demo</a>
 <a href="https://discord.gg/yPEP2vHTu4">DISCORD</a></p>
 <h1 id="introduction">Introduction</h1>
-<p>Two months after upgrading <a href="../qwen3-turbo">zen-Turbo</a> to support context length up to one million tokens, we are back with the open-source zen-1M models and the corresponding inference framework support. Here's what you can expect from this release:</p>
+<p>Two months after upgrading <a href="../qwen2.5-turbo">Qwen2.5-Turbo</a> to support context length up to one million tokens, we are back with the open-source Qwen2.5-1M models and the corresponding inference framework support. Here's what you can expect from this release:</p>
 <ol>
 <li>
-<p><strong>Opensource Models:</strong> We're releasing two new checkpoints, <strong>zen-7B-Instruct-1M</strong> and <strong>zen-14B-Instruct-1M</strong>, marking the first time we've upgraded our opensource Qwen models to handle 1M-token contexts.</p>
+<p><strong>Opensource Models:</strong> We're releasing two new checkpoints, <strong>Qwen2.5-7B-Instruct-1M</strong> and <strong>Qwen2.5-14B-Instruct-1M</strong>, marking the first time we've upgraded our opensource Qwen models to handle 1M-token contexts.</p>
 </li>
 <li>
-<p><strong>Inference Framework:</strong> To help developers deploy the zen-1M series models more efficiently, we've fully open-sourced our inference framework based on <a href="https://github.com/vllm-project/vllm">vLLM</a>. With integration with sparse attention methods, our framework can process 1M-token inputs <strong>3x to 7x</strong> faster.</p>
+<p><strong>Inference Framework:</strong> To help developers deploy the Qwen2.5-1M series models more efficiently, we've fully open-sourced our inference framework based on <a href="https://github.com/vllm-project/vllm">vLLM</a>. With integration with sparse attention methods, our framework can process 1M-token inputs <strong>3x to 7x</strong> faster.</p>
 </li>
 <li>
-<p><strong><a href="https://qianwen-res.oss-cn-beijing.aliyuncs.com/zen-1M/zen_1M_Technical_Report.pdf">Technical Report</a>:</strong> We're also sharing the technical details behind the zen-1M series, including design insights for training and inference frameworks, as well as ablation experiments.</p>
+<p><strong><a href="https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen2.5-1M/Qwen2_5_1M_Technical_Report.pdf">Technical Report</a>:</strong> We're also sharing the technical details behind the Qwen2.5-1M series, including design insights for training and inference frameworks, as well as ablation experiments.</p>
 </li>
 </ol>
-<p>You can experience zen-1M models online by visiting our demo on <a href="https://huggingface.co/spaces/Qwen/zen-1M-Demo">Huggingface</a> and <a href="https://www.modelscope.cn/studios/Qwen/zen-1M-Demo">Modelscope</a>.</p>
-<p>Additionally, we recently introduced <strong><a href="https://chat.qwenlm.ai/">Qwen Chat</a></strong>, an advanced AI assistant from the Qwen series. With Qwen Chat, you can engage in conversations, write code, perform searches, generate images and videos, and utilize various tools. Notably, Qwen Chat also features the zen-Turbo model, which supports long-context processing with a context length of up to 1M tokens.</p>
+<p>You can experience Qwen2.5-1M models online by visiting our demo on <a href="https://huggingface.co/spaces/Qwen/Qwen2.5-1M-Demo">Huggingface</a> and <a href="https://www.modelscope.cn/studios/Qwen/Qwen2.5-1M-Demo">Modelscope</a>.</p>
+<p>Additionally, we recently introduced <strong><a href="https://chat.qwenlm.ai/">Qwen Chat</a></strong>, an advanced AI assistant from the Qwen series. With Qwen Chat, you can engage in conversations, write code, perform searches, generate images and videos, and utilize various tools. Notably, Qwen Chat also features the Qwen2.5-Turbo model, which supports long-context processing with a context length of up to 1M tokens.</p>
 <h1 id="model-performance">Model Performance</h1>
-<p>Let's start by diving into the performance of the zen-1M series models, covering both long-context and short text tasks.</p>
+<p>Let's start by diving into the performance of the Qwen2.5-1M series models, covering both long-context and short text tasks.</p>
 <h2 id="long-context-tasks">Long-Context Tasks</h2>
-<p>First off, we evaluate the zen-1M models on the Passkey Retrieval task with a context length of 1 million tokens. The results show that these models can accurately retrieve hidden information from documents containing up to 1M tokens, with only minor errors observed in the 7B model.</p>
-<figure><img src="https://qianwen-res.oss-cn-beijing.aliyuncs.com/zen-1M/passkey_retrieval.png#center" alt="" loading="lazy"></figure>
-<p>For more complex long-context understanding tasks, we select <a href="https://github.com/hsiehjackson/RULER">RULER</a>, <a href="https://github.com/infinigence/LVEval">LV-Eval</a>, <a href="https://github.com/THUDM/LongAlign">LongbenchChat</a> used in <a href="../qwen3-turbo/#more-complex-long-text-tasks">this blog</a>.</p>
-<figure><img src="https://qianwen-res.oss-cn-beijing.aliyuncs.com/zen-1M/ruler.png#center" alt="" loading="lazy"></figure>
-<figure><img src="https://qianwen-res.oss-cn-beijing.aliyuncs.com/zen-1M/lv-eval.png#center" alt="" loading="lazy"></figure>
+<p>First off, we evaluate the Qwen2.5-1M models on the Passkey Retrieval task with a context length of 1 million tokens. The results show that these models can accurately retrieve hidden information from documents containing up to 1M tokens, with only minor errors observed in the 7B model.</p>
+<figure><img src="https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen2.5-1M/passkey_retrieval.png" alt="" loading="lazy"></figure>
+<p>For more complex long-context understanding tasks, we select <a href="https://github.com/hsiehjackson/RULER">RULER</a>, <a href="https://github.com/infinigence/LVEval">LV-Eval</a>, <a href="https://github.com/THUDM/LongAlign">LongbenchChat</a> used in <a href="../qwen2.5-turbo/#more-complex-long-text-tasks">this blog</a>.</p>
+<figure><img src="https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen2.5-1M/ruler.png" alt="" loading="lazy"></figure>
+<figure><img src="https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen2.5-1M/lv-eval.png" alt="" loading="lazy"></figure>
 <p>From these results, we can draw a few key conclusions:</p>
 <ul>
-<li><strong>Significantly Superior to the 128k Version:</strong> The zen-1M series models significantly outperform their 128K counterparts in most long-context tasks, especially for sequences exceeding 64K in length.</li>
-<li><strong>Notable Performance Advantage:</strong> The zen-14B-Instruct-1M model not only beats zen-Turbo but also consistently outperforms GPT-4o-mini across multiple datasets, offering a robust open-source alternative for long-context tasks.</li>
+<li><strong>Significantly Superior to the 128k Version:</strong> The Qwen2.5-1M series models significantly outperform their 128K counterparts in most long-context tasks, especially for sequences exceeding 64K in length.</li>
+<li><strong>Notable Performance Advantage:</strong> The Qwen2.5-14B-Instruct-1M model not only beats Qwen2.5-Turbo but also consistently outperforms GPT-4o-mini across multiple datasets, offering a robust open-source alternative for long-context tasks.</li>
 </ul>
 <h2 id="short-context-tasks">Short-Context Tasks</h2>
-<p>Besides performance on long sequences, we’re equally interested in how these models handle short sequences. So, we compare the zen-1M models and their 128K versions on widely used academic benchmarks, throwing in GPT-4o-mini for comparison.</p>
-<figure><img src="https://qianwen-res.oss-cn-beijing.aliyuncs.com/zen-1M/short_result.png#center" alt="" loading="lazy"></figure>
+<p>Besides performance on long sequences, we’re equally interested in how these models handle short sequences. So, we compare the Qwen2.5-1M models and their 128K versions on widely used academic benchmarks, throwing in GPT-4o-mini for comparison.</p>
+<figure><img src="https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen2.5-1M/short_result.png" alt="" loading="lazy"></figure>
 <p>Here's what we find:</p>
 <ul>
-<li>Both zen-7B-Instruct-1M and zen-14B-Instruct-1M maintain performance on short text tasks that is similar to their 128K versions, ensuring the fundamental capabilities haven't been compromised by the addition of long-sequence processing abilities.</li>
-<li>Compared to GPT-4o-mini, both zen-14B-Instruct-1M and zen-Turbo achieve similar performance on short text tasks while supporting a context length that's eight times longer.</li>
+<li>Both Qwen2.5-7B-Instruct-1M and Qwen2.5-14B-Instruct-1M maintain performance on short text tasks that is similar to their 128K versions, ensuring the fundamental capabilities haven't been compromised by the addition of long-sequence processing abilities.</li>
+<li>Compared to GPT-4o-mini, both Qwen2.5-14B-Instruct-1M and Qwen2.5-Turbo achieve similar performance on short text tasks while supporting a context length that's eight times longer.</li>
 </ul>
 <h1 id="key-techniques">Key Techniques</h1>
-<p>Here, we'll briefly introduce the key techniques behind building zen-1M. For more details, please check out our <a href="https://qianwen-res.oss-cn-beijing.aliyuncs.com/zen-1M/zen_1M_Technical_Report.pdf">technical report</a>.</p>
+<p>Here, we'll briefly introduce the key techniques behind building Qwen2.5-1M. For more details, please check out our <a href="https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen2.5-1M/Qwen2_5_1M_Technical_Report.pdf">technical report</a>.</p>
 <h2 id="long-context-training">Long-Context Training</h2>
-<figure><img src="https://qianwen-res.oss-cn-beijing.aliyuncs.com/zen-1M/training_stages.png#center" alt="" loading="lazy"></figure>
-<p>Training with long sequences demands substantial computational resources, so we adopt a progressive approach to expand the context length for zen-1M through multiple stages:</p>
+<figure><img src="https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen2.5-1M/training_stages.png" alt="" loading="lazy"></figure>
+<p>Training with long sequences demands substantial computational resources, so we adopt a progressive approach to expand the context length for Qwen2.5-1M through multiple stages:</p>
 <ul>
-<li>We begin with an intermediate checkpoint of pre-trained zen, which had a 4K token context length.</li>
+<li>We begin with an intermediate checkpoint of pre-trained Qwen2.5, which had a 4K token context length.</li>
 <li><strong>In Pretraining</strong>, we gradually increase the context length from 4K to 256K tokens while using <a href="https://arxiv.org/abs/2309.16039">Adjusted Base Frequency</a>, raising the RoPE base from 10,000 to 10,000,000.</li>
 <li><strong>In Supervised Fine-tuning</strong>, we split this into two stages to preserve performance on shorter sequences:
 <ul>
-<li><strong>Stage 1:</strong> Fine-tuned only on short instructions (up to 32K tokens) using the same data and steps as the 128K versions of zen.</li>
+<li><strong>Stage 1:</strong> Fine-tuned only on short instructions (up to 32K tokens) using the same data and steps as the 128K versions of Qwen2.5.</li>
 <li><strong>Stage 2:</strong> Mixed short (up to 32K) and long (up to 256K) instructions to enhance long-context task performance while maintaining short-task quality.</li>
 </ul>
 </li>
@@ -84,15 +79,15 @@ c:["$","$1","h",{"children":[null,[["$","$L14",null,{"children":"$L15"}],null],[
 <h2 id="length-extrapolation">Length Extrapolation</h2>
 <p>During training, we develop an instruction-tuned model with a context length of 256K tokens. To extend this to 1M tokens, we employ length extrapolation techniques.</p>
 <p>The degradation of LLMs based on RoPE in long-context tasks is mainly due to unseen, large relative positional distances between queries and keys in computing attention weight. We employ <a href="https://arxiv.org/abs/2402.17463"><strong>Dual Chunk Attention</strong></a> (DCA), which addresses this issue by remapping relative positions to smaller values, avoiding the large distances not seen during training.</p>
-<figure><img src="https://qianwen-res.oss-cn-beijing.aliyuncs.com/zen-1M/dca.png#center" alt="" loading="lazy"></figure>
-<p>We evaluat the zen-1M models and their 128K counterparts with and without the length extrapolation method. We can find:</p>
-<p>Even models trained on just 32K tokens, such as the zen-7B-Instruct, achieve nearly perfect accuracy in passkey retrieval tasks with 1M-token contexts. This underscores the remarkable ability of DCA to extend supported context lengths, without any training required.</p>
-<figure><img src="https://qianwen-res.oss-cn-beijing.aliyuncs.com/zen-1M/dca_ablation.png#center" alt="" loading="lazy"></figure>
+<figure><img src="https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen2.5-1M/dca.png" alt="" loading="lazy"></figure>
+<p>We evaluat the Qwen2.5-1M models and their 128K counterparts with and without the length extrapolation method. We can find:</p>
+<p>Even models trained on just 32K tokens, such as the Qwen2.5-7B-Instruct, achieve nearly perfect accuracy in passkey retrieval tasks with 1M-token contexts. This underscores the remarkable ability of DCA to extend supported context lengths, without any training required.</p>
+<figure><img src="https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen2.5-1M/dca_ablation.png" alt="" loading="lazy"></figure>
 <h2 id="sparse-attention">Sparse Attention</h2>
 <p>For long-context language models, inference speed is crucial for user experience. We introduce a sparse attention mechanism based on <a href="https://arxiv.org/abs/2407.02490"><strong>MInference</strong></a> to accelerate the prefill phase. Furthermore, we propose several improvements:</p>
 <ul>
 <li>
-<p><strong>Integrating with Chunked Prefill:</strong> Directly processing sequences of 1M tokens results in substantial memory overhead to store the activations in MLP layers, consuming 71GB of VRAM in zen-7B. By integrating with chunk prefill with a chunk length of 32,768 tokens, activation VRAM usage is reduced by 96.7%, leading to a significant decrease in memory consumption.</p>
+<p><strong>Integrating with Chunked Prefill:</strong> Directly processing sequences of 1M tokens results in substantial memory overhead to store the activations in MLP layers, consuming 71GB of VRAM in Qwen2.5-7B. By integrating with chunk prefill with a chunk length of 32,768 tokens, activation VRAM usage is reduced by 96.7%, leading to a significant decrease in memory consumption.</p>
 </li>
 <li>
 <p><strong>Integrating with Length Extrapolation:</strong> We integrate DCA with MInference in long-context processing, thereby enhancing inference efficiency and achieving greater accuracy.</p>
@@ -106,9 +101,9 @@ c:["$","$1","h",{"children":[null,[["$","$L14",null,{"children":"$L15"}],null],[
 </ul>
 <p>
 </p><p>With these enhancements, our inference framework results in a 3.2x to 6.7x acceleration in the prefill speed across different model sizes and GPU devices for sequences of 1M token length.</p>
-<figure><img src="https://qianwen-res.oss-cn-beijing.aliyuncs.com/zen-1M/speed.png#center" alt="" loading="lazy"></figure>
-<h1 id="deploy-zen-1m-models-locally">Deploy zen-1M Models Locally</h1>
-<p>Here we provide step-by-step instructions for deploying the zen-1M models on your local devices.</p>
+<figure><img src="https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen2.5-1M/speed.png" alt="" loading="lazy"></figure>
+<h1 id="deploy-qwen25-1m-models-locally">Deploy Qwen2.5-1M Models Locally</h1>
+<p>Here we provide step-by-step instructions for deploying the Qwen2.5-1M models on your local devices.</p>
 <h3 id="1-system-preparation">1. System Preparation</h3>
 <p>To achieve the best performance, we recommend using GPUs with Ampere or Hopper architecture, which support optimized kernels.</p>
 <p>Ensure your system meets the following requirements:</p>
@@ -119,11 +114,11 @@ c:["$","$1","h",{"children":[null,[["$","$L14",null,{"children":"$L15"}],null],[
 <p>
 </p><p>VRAM Requirement for processing 1 million-token sequences:</p>
 <ul>
-<li><strong>zen-7B-Instruct-1M</strong>: At least 120GB VRAM (total across GPUs).</li>
-<li><strong>zen-14B-Instruct-1M</strong>: At least 320GB VRAM (total across GPUs).</li>
+<li><strong>Qwen2.5-7B-Instruct-1M</strong>: At least 120GB VRAM (total across GPUs).</li>
+<li><strong>Qwen2.5-14B-Instruct-1M</strong>: At least 320GB VRAM (total across GPUs).</li>
 </ul>
 <p>
-</p><p>If your GPUs do not have sufficient VRAM, you can still use zen-1M models for shorter tasks.</p>
+</p><p>If your GPUs do not have sufficient VRAM, you can still use Qwen2.5-1M models for shorter tasks.</p>
 <h3 id="2-install-dependencies">2. Install Dependencies</h3>
 <p>For now, you need to clone the vLLM repository from our custom branch and install it manually. We are working on getting our branch merged into the main vLLM project.</p>
 <pre><code class="language-bash">git clone -b dev/dual-chunk-attn git@github.com:QwenLM/vllm.git
@@ -132,7 +127,7 @@ pip install -e . -v
 </code></pre>
 <h3 id="3-launch-openai-compatible-api-service">3. Launch OpenAI-Compatible API Service</h3>
 <p>Use the following command to start the service, configuring it based on your hardware setup:</p>
-<pre><code class="language-bash">vllm serve Qwen/zen-7B-Instruct-1M \
+<pre><code class="language-bash">vllm serve Qwen/Qwen2.5-7B-Instruct-1M \
   --tensor-parallel-size 4 \
   --max-model-len 1010000 \
   --enable-chunked-prefill --max-num-batched-tokens 131072 \
@@ -142,7 +137,7 @@ pip install -e . -v
 # --quantization fp8 # Enabling FP8 quantization for model weights can reduce memory usage.
 </code></pre>
 <p>
-</p><p>If you encounter any issues, please refer to the <a href="https://huggingface.co/Qwen/zen-7B-Instruct-1M#troubleshooting">Troubleshooting</a> section for more information.</p>
+</p><p>If you encounter any issues, please refer to the <a href="https://huggingface.co/Qwen/Qwen2.5-7B-Instruct-1M#troubleshooting">Troubleshooting</a> section for more information.</p>
 <p><strong>Parameter Explanations:</strong></p>
 <ul>
 <li>
@@ -178,7 +173,7 @@ pip install -e . -v
 <pre><code class="language-bash">curl http://localhost:8000/v1/chat/completions \
   -H "Content-Type: application/json" \
   -d '{
-    "model": "Qwen/zen-7B-Instruct-1M",
+    "model": "Qwen/Qwen2.5-7B-Instruct-1M",
     "messages": [
       {"role": "user", "content": "Tell me something about large language models."}
     ],
@@ -209,7 +204,7 @@ prompt = (
 )
 
 chat_response = client.chat.completions.create(
-    model="Qwen/zen-7B-Instruct-1M",
+    model="Qwen/Qwen2.5-7B-Instruct-1M",
     messages=[{"role": "user", "content": prompt}],
     temperature=0,
 )
@@ -220,8 +215,8 @@ print("Chat response:", chat_response.choices[0].message.content)
 <p>For more advanced use cases, consider exploring frameworks like <a href="https://github.com/QwenLM/Qwen-Agent/tree/main">Qwen-Agent</a>, which enable the model to read PDF files and perform other specialized tasks.</p>
 <h1 id="whats-next">What's Next?</h1>
 <p>We recognize that long-context models still have a lot of room for improvement. Our goal is to build models that excel in both short and long-context tasks, making sure they bring real value to practical, long-context scenarios. We're diving deep into more efficient training methods, model architectures, and inference methods to make them deployable effectively and perform exceptionally well even in environments with limited resources.
-We're confident that all these efforts will open up a whole new world of possibilities for long-context models, expanding their use across a much broader range of applications. Stay tuned as we keep pushing the boundaries!</p>f:["$","main",null,{"children":["$","article",null,{"className":"blog-article","children":[["$","$L5",null,{"className":"blog-back","href":"/blog","children":"← Blog"}],["$","div",null,{"className":"blog-post-meta","children":["January 26, 2025"," ","·"," ",9," min read"]}],["$","h1",null,{"className":"blog-post-title","children":"zen-1M: Deploy Your Own Qwen with Context Length up to 1M Tokens"}],["$","p",null,{"className":"blog-post-lede","children":"Two months after upgrading [zen-Turbo](../qwen3-turbo) to support context length up to one million tokens, we are back with the open-source zen-1M models and the corresponding inference framework support. Here's what you can expect from this release:"}],["$","div",null,{"className":"blog-prose","dangerouslySetInnerHTML":{"__html":"$19"}}]]}]}]
-15:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
-11:null
-13:{"metadata":[["$","title","0",{"children":"zen-1M: Deploy Your Own Qwen with Context Length up to 1M Tokens — Zen Blog"}],["$","meta","1",{"name":"description","content":"Two months after upgrading [zen-Turbo](../qwen3-turbo) to support context length up to one million tokens, we are back with the open-source zen-1M models and the corresponding inference framework support. Here's what you can expect from this release:"}],["$","meta","2",{"name":"keywords","content":"AI, LLM, Agentic AI, Code Generation, Zen Coder, Multimodal, Open Source, Machine Learning"}]],"error":null,"digest":"$undefined"}
-18:"$13:metadata"
+We're confident that all these efforts will open up a whole new world of possibilities for long-context models, expanding their use across a much broader range of applications. Stay tuned as we keep pushing the boundaries!</p>7:["$","main",null,{"children":["$","article",null,{"className":"blog-article","data-upstream":"","children":[["$","$L5",null,{"className":"blog-back","href":"/blog","children":"← Blog"}],["$","div",null,{"className":"blog-post-meta","children":["January 26, 2025"," ","·"," ",9," min read"]}],["$","h1",null,{"className":"blog-post-title","children":"Qwen2.5-1M: Deploy Your Own Qwen with Context Length up to 1M Tokens"}],["$","p",null,{"className":"blog-post-lede","children":"Two months after upgrading [Qwen2.5-Turbo](../qwen2.5-turbo) to support context length up to one million tokens, we are back with the open-source Qwen2.5-1M models and the corresponding inference framework support. Here's what you can expect from this release:"}],["$","div",null,{"className":"blog-prose","dangerouslySetInnerHTML":{"__html":"$14"}}]]}]}]
+10:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+c:null
+e:{"metadata":[["$","title","0",{"children":"Qwen2.5-1M: Deploy Your Own Qwen with Context Length up to 1M Tokens — Zen Blog"}],["$","meta","1",{"name":"description","content":"Two months after upgrading [Qwen2.5-Turbo](../qwen2.5-turbo) to support context length up to one million tokens, we are back with the open-source Qwen2.5-1M models and the corresponding inference framework support. Here's what you can expect from this release:"}],["$","meta","2",{"name":"keywords","content":"AI, LLM, Agentic AI, Code Generation, Zen Coder, Multimodal, Open Source, Machine Learning"}],["$","meta","3",{"name":"data-upstream","content":"true"}]],"error":null,"digest":"$undefined"}
+13:"$e:metadata"

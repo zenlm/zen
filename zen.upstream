@@ -1,0 +1,32 @@
+# The upstream names Zen's story is not told with. Read by scripts/check-zen.mjs,
+# which runs at the end of the build and fails it on a hit.
+#
+# One name per line; `#` starts a comment. Case is ignored and a name matches as
+# a whole word — no letter directly before or after it — so `Qwen` also catches
+# Qwen3, Qwen3.8, qwen35, qwen4 and Qwen3_5ForConditionalGeneration.
+#
+# A Zen page says these names in two places only, and marks both `data-upstream`:
+# the Architecture value (the loader string from the weights' own config) and the
+# License & attribution section at the bottom. A post whose subject is another
+# lab's release is marked at its article. Everything else a reader meets — title,
+# description, headings, prose, tables, alt text — says Zen.
+#
+# The list starts from the base models the zenlm cards on Hugging Face declare.
+# A new one goes here, and nowhere else.
+Qwen
+QwenLM
+QwQ
+QVQ
+Flash-Next
+Bonsai
+prism-ml
+DeepSeek
+MiniMax
+Wan
+Granite
+Nemotron
+unsloth
+FLUX
+TRELLIS
+YuE
+SSD-1B

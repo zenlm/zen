@@ -3,14 +3,15 @@ import { Metadata } from 'next';
 import CatalogSection from '../../components/CatalogSection';
 
 export const metadata: Metadata = {
-  title: 'Zen Models - 95 open foundation models from 0.6B to 1T+',
-  description: 'The complete Zen catalog across Zen3, Zen4, and Zen5. Chat, code, vision, audio, embeddings, rerankers, image generation, and safety.',
+  title: 'Zen Models - the Zen LM catalog',
+  description: 'Zen 6 and Zen 6 Flash are available now; Zen 7 is in research preview. The catalog also holds the earlier Zen 5, Zen 4 and Zen 3 generations.',
 };
 
 interface ModelCardProps {
   name: string;
   status: string;
-  specs: Array<{ label: string; value: string }>;
+  // An upstream spec is the loader string a developer passes verbatim.
+  specs: Array<{ label: string; value: string; upstream?: boolean }>;
   description: string;
   formats?: string[];
   flagship?: boolean;
@@ -18,9 +19,10 @@ interface ModelCardProps {
   hfLink?: string;
   githubLink?: string;
   docsLink?: string;
+  accessLink?: string;
 }
 
-function ModelCard({ name, status, specs, description, formats, flagship, frontier, hfLink, githubLink, docsLink }: ModelCardProps) {
+function ModelCard({ name, status, specs, description, formats, flagship, frontier, hfLink, githubLink, docsLink, accessLink }: ModelCardProps) {
   const badgeClass =
     status === 'Coming Soon' ? 'badge badge-planned' :
     status === 'Cloud Only' ? 'badge badge-cloud' :
@@ -34,7 +36,7 @@ function ModelCard({ name, status, specs, description, formats, flagship, fronti
       </div>
       <div className="model-specs">
         {specs.map((spec, idx) => (
-          <div key={idx} className="spec">
+          <div key={idx} className="spec" data-upstream={spec.upstream ? '' : undefined}>
             <span className="spec-label">{spec.label}</span>
             <span className="spec-value">{spec.value}</span>
           </div>
@@ -64,6 +66,11 @@ function ModelCard({ name, status, specs, description, formats, flagship, fronti
             Docs
           </a>
         )}
+        {accessLink && (
+          <a href={accessLink} className="btn btn-sm btn-primary" target="_blank" rel="noopener noreferrer">
+            Request access
+          </a>
+        )}
       </div>
     </div>
   );
@@ -75,11 +82,11 @@ export default function ModelsPage() {
       <section className="hero">
         <div className="container">
           <h2 className="hero-title">Zen Model Catalog</h2>
-          <p className="hero-subtitle">95 open foundation models across Zen3, Zen4, and Zen5</p>
+          <p className="hero-subtitle">Zen 6 and Zen 6 Flash are available now</p>
           <p className="hero-description">
-            Chat, code, vision-language, web agentic, embeddings, rerankers, image generation, streaming ASR,
-            and TTS. From edge-class Zen5 Nano 0.8B to the Zen5 Max frontier MoE. 8K - 1M context. OpenAI- and
-            Anthropic-compatible API.
+            Zen LM is the open model family of Zoo Labs Foundation, a 501(c)(3) non-profit, chosen for agentic
+            coding that runs on your own machine and for marketing work. Zen 7 is in research preview. The earlier
+            Zen 5, Zen 4 and Zen 3 generations stay in the catalog below. OpenAI- and Anthropic-compatible API.
           </p>
           <div className="hero-cta">
             <a href="https://huggingface.co/zenlm" className="btn btn-primary" target="_blank" rel="noopener noreferrer">Browse on HuggingFace</a>
@@ -89,11 +96,66 @@ export default function ModelsPage() {
         </div>
       </section>
 
+      {/* Zen 6 */}
+      <section id="zen6" className="models-section featured-section">
+        <div className="container">
+          <h2 className="section-title">Zen 6 - Available Now</h2>
+          <p className="section-subtitle">Agentic coding on your own machine and marketing work. Open weights under Apache-2.0; hosted as <code>zen6</code> and <code>zen6-flash</code>.</p>
+
+          <div className="models-grid">
+            <ModelCard
+              name="Zen 6"
+              status="Available"
+              flagship={true}
+              specs={[
+                { label: 'Parameters', value: '27.3B dense, plus a vision encoder' },
+                { label: 'Reads', value: 'Text, images, video' },
+                { label: 'Context', value: '262,144 native; 1,048,576 with YaRN' },
+                { label: 'Weights', value: 'NVFP4 MLP and LM head, FP8 attention' },
+                { label: 'Decode', value: '141.2 tok/s code completion with the drafter (DGX Spark)' },
+                { label: 'API id', value: 'zen6' },
+                { label: 'Architecture', value: 'Qwen3_5ForConditionalGeneration (qwen3_5)', upstream: true },
+              ]}
+              description="The current Zen generation. A 1,048,576-token context, tool calling and a bundled speculative drafter for a coding loop over a whole repository; it reads images and video beside text, so a brief, its brand assets and the draft sit in one context."
+              formats={['NVFP4', 'SafeTensors']}
+              hfLink="https://huggingface.co/zenlm/zen6"
+              githubLink="https://github.com/zenlm/zen6"
+            />
+            <ModelCard
+              name="Zen 6 Flash"
+              status="Available"
+              specs={[
+                { label: 'Weights', value: 'Ternary 27B; 1.77 bits per weight packed (5.95 GB), 2.14 in 2-bit slots (7.21 GB)' },
+                { label: 'Reads', value: 'Text, images' },
+                { label: 'Context', value: '262,144 native' },
+                { label: 'Laptop', value: '7.84 GB with vision and a 32K cache; 92.4 tok/s with the drafter (M4/M5 Max)' },
+                { label: 'API id', value: 'zen6-flash' },
+                { label: 'Architecture', value: 'GGUF general.architecture: qwen35', upstream: true },
+              ]}
+              description="The ternary build of Zen 6, for the same two jobs where the machine is small. It keeps 98.2% of full precision on the average of 14 reasoning tests and runs on an Apple Silicon laptop or one GPU."
+              formats={['GGUF', 'Metal', 'llama.cpp']}
+              hfLink="https://huggingface.co/zenlm/zen6-flash"
+              githubLink="https://github.com/zenlm/zen6-flash"
+            />
+            <ModelCard
+              name="Zen 7"
+              status="Research preview"
+              specs={[
+                { label: 'Weights', value: 'None yet' },
+                { label: 'API', value: 'Not callable' },
+              ]}
+              description="The next open-weight generation after Zen 6, in research preview."
+              accessLink="https://hanzo.ai/research-access"
+            />
+          </div>
+        </div>
+      </section>
+
       {/* Zen5 Chat */}
       <section id="zen5" className="models-section featured-section">
         <div className="container">
-          <h2 className="section-title">Zen 5 - Next-Generation Agentic</h2>
-          <p className="section-subtitle">Native chain-of-thought, large-scale RL on 200K+ environments, OpenAI + Anthropic API.</p>
+          <h2 className="section-title">Zen 5 - Earlier Generation</h2>
+          <p className="section-subtitle">The generation before Zen 6: a chat ladder from edge to mixture-of-experts, plus embeddings.</p>
 
           <div className="models-grid">
             <ModelCard
@@ -170,7 +232,7 @@ export default function ModelsPage() {
                 { label: 'Context', value: '192K' },
                 { label: 'SWE-Bench', value: '80.2%' },
               ]}
-              description="Frontier agentic at the lowest $/token in the family. 230B MoE / 10B active, trained on 200K+ real environments via large-scale RL."
+              description="Agentic tier at the lowest $/token in the Zen 5 family. 230B MoE / 10B active."
               formats={['SafeTensors']}
               hfLink="https://huggingface.co/zenlm"
             />
@@ -279,7 +341,7 @@ export default function ModelsPage() {
       {/* Zen4 Chat */}
       <section id="zen4" className="models-section">
         <div className="container">
-          <h2 className="section-title">Zen 4 - Production Chat</h2>
+          <h2 className="section-title">Zen 4 - Earlier Generation</h2>
           <p className="section-subtitle">The everyday Zen production line: MoE flagships, thinking models, and long-context.</p>
           <div className="models-grid">
             <ModelCard
@@ -423,7 +485,7 @@ export default function ModelsPage() {
       <section id="zen3" className="models-section">
         <div className="container">
           <h2 className="section-title">Zen 3 - Multimodal &amp; Specialty</h2>
-          <p className="section-subtitle">Vision, audio, web agentic, safety, and edge.</p>
+          <p className="section-subtitle">An earlier generation: vision, audio, web agentic, safety, and edge.</p>
           <div className="models-grid">
             <ModelCard
               name="Zen3 Omni"
@@ -657,7 +719,7 @@ export default function ModelsPage() {
       <section id="comparison" className="featured-section">
         <div className="container">
           <h2 className="section-title">Full Zen Catalog Summary</h2>
-          <p className="section-subtitle">Live catalog from the Zen API. Pricing fetched at runtime.</p>
+          <p className="section-subtitle">Every Zen family, by generation.</p>
           <div className="model-lineup">
             <table className="models-table">
               <thead>
@@ -670,6 +732,12 @@ export default function ModelsPage() {
               </thead>
               <tbody>
                 <tr className="flagship-row">
+                  <td><strong>Zen 6</strong></td>
+                  <td>Chat, vision and video</td>
+                  <td>2 (zen6, zen6-flash)</td>
+                  <td><code>/v1/chat/completions</code></td>
+                </tr>
+                <tr>
                   <td><strong>Zen 5</strong></td>
                   <td>Chat ladder</td>
                   <td>10 (nano 0.8B / 2B / 4B / 9B, flash, mini, default, coder, pro, max)</td>
@@ -724,6 +792,16 @@ export default function ModelsPage() {
       </section>
 
       <CatalogSection />
+
+      <section id="license" className="architecture-section" data-upstream="">
+        <div className="container">
+          <h2 className="section-title">License &amp; attribution</h2>
+          <p className="section-subtitle">
+            Zen 6: Apache-2.0, built from Qwen3.8-27B by the Qwen team. Zen 6 Flash: Apache-2.0, Ternary Bonsai 2
+            27B by prism-ml. Every other model&apos;s card on Hugging Face names its license and base models.
+          </p>
+        </div>
+      </section>
     </main>
   );
 }

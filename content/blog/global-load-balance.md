@@ -2,12 +2,13 @@
 title: "Global-batch load balance almost free lunch to improve your MoE LLM training"
 date: "2025-01-21"
 description: "The Mixture-of-Experts (MoEs) architecture has become a popular model-parameter-scale-up technique. Typically, one MoE layer consists of a router (often parameterized as one single Linear layer) and a group of experts (for transformer-based models, each expert is one feedforward layer). Given an inp"
+upstream: true
 ---
 
 
 <Figure src="https://qianwen-res.oss-cn-beijing.aliyuncs.com/assets/balance/main_results.png#center" width="100%" />
 
-<LinkButton href="https://github.com/QwenLM/zen-Math" label="GITHUB" external />
+<LinkButton href="https://github.com/QwenLM/Qwen2-Math" label="GITHUB" external />
 <LinkButton href="https://huggingface.co/collections/Qwen/qwen25-math-66eaa240a1b7d5ee65f1da3e" label="HUGGING FACE" external />
 <LinkButton href="https://modelscope.cn/organization/qwen" label="MODELSCOPE" external />
 <LinkButton href="https://discord.gg/yPEP2vHTu4" label="DISCORD" external />

@@ -2,6 +2,7 @@
 title: "Qwen3-Coder: Agentic Coding in the World"
 date: "2025-07-22"
 description: "Today, we're announcing Qwen3-Coder, our most agentic code model to date. Qwen3-Coder is available in multiple sizes, but we're excited to introduce its most powerful variant first: Qwen3-Coder-480B-A35B-Instruct — a 480B-parameter Mixture-of-Experts model with 35B active parameters which supports t"
+upstream: true
 ---
 
 
@@ -28,7 +29,7 @@ There’s still room to scale in pretraining—and with Qwen3-Coder, we’re adv
 
 * Scaling Tokens: 7.5T tokens (70% code ratio), excelling in coding while preserving general and math abilities.
 * Scaling Context: Natively supports 256K context and can be extended up to 1M with YaRN, optimized for repo-scale and dynamic data (e.g., Pull Requests) to empower Agentic Coding.
-* Scaling Synthetic Data: Leveraged zen-Coder to clean and rewrite noisy data, significantly improving overall data quality.
+* Scaling Synthetic Data: Leveraged Qwen2.5-Coder to clean and rewrite noisy data, significantly improving overall data quality.
 
 ### Post-Training
 

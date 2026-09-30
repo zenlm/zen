@@ -1,59 +1,60 @@
 ---
-title: "zen-LLM: Extending the boundary of LLMs"
+title: "Qwen2.5-LLM: Extending the boundary of LLMs"
 date: "2024-09-19"
-description: "In this blog, we delve into the details of our latest zen series language models. We have developed a range of decoder-only dense models, with seven of them open-sourced, spanning from 0.5B to 72B parameters. Our research indicates a significant interest among users in models within the 10-30B range"
+description: "In this blog, we delve into the details of our latest Qwen2.5 series language models. We have developed a range of decoder-only dense models, with seven of them open-sourced, spanning from 0.5B to 72B parameters. Our research indicates a significant interest among users in models within the 10-30B range"
+upstream: true
 ---
 
 
 
-<LinkButton href="https://github.com/QwenLM/zen" label="GITHUB" external />
+<LinkButton href="https://github.com/QwenLM/Qwen2.5" label="GITHUB" external />
 <LinkButton href="https://huggingface.co/Qwen" label="HUGGING FACE" external />
 <LinkButton href="https://modelscope.cn/organization/qwen" label="MODELSCOPE" external />
-<LinkButton href="https://huggingface.co/spaces/Qwen/zen-72B-Instruct" label="DEMO" external />
+<LinkButton href="https://huggingface.co/spaces/Qwen/Qwen2.5-72B-Instruct" label="DEMO" external />
 <LinkButton href="https://discord.gg/yPEP2vHTu4" label="DISCORD" external />
 
 # Introduction
 
-In this blog, we delve into the details of our latest zen series language models. We have developed a range of decoder-only dense models, with seven of them open-sourced, spanning from 0.5B to 72B parameters. Our research indicates a significant interest among users in models within the 10-30B range for production use, as well as 3B models for mobile applications. To meet these demands, we are open-sourcing zen-3B, zen-14B, and zen-32B. Furthermore, we are excited to offer additional models, including Qwen-Plus and Qwen-Turbo, available through API services via [Alibaba Cloud Model Studio](https://help.aliyun.com/zh/model-studio/developer-reference/what-is-qwen-llm).
+In this blog, we delve into the details of our latest Qwen2.5 series language models. We have developed a range of decoder-only dense models, with seven of them open-sourced, spanning from 0.5B to 72B parameters. Our research indicates a significant interest among users in models within the 10-30B range for production use, as well as 3B models for mobile applications. To meet these demands, we are open-sourcing Qwen2.5-3B, Qwen2.5-14B, and Qwen2.5-32B. Furthermore, we are excited to offer additional models, including Qwen-Plus and Qwen-Turbo, available through API services via [Alibaba Cloud Model Studio](https://help.aliyun.com/zh/model-studio/developer-reference/what-is-qwen-llm).
 
-Compared with the zen series, the zen series has the following upgrades:
+Compared with the Qwen2 series, the Qwen2.5 series has the following upgrades:
 
-1) **Full-scale Open-source**: Considering that users have a strong interest in models in the 10-30B range for production and 3B models for mobile applications, zen, in addition to continuing to open source the four models of 0.5/1.5/7/72B of the same size as zen, also added two medium-sized cost-effective models of **zen-14B** and **zen-32B** and a mobile-side model called **zen-3B**. 
-All models are highly competitive compared to open-source models of the same level. For example, zen-32B beats zen-72B and zen-14B outperforms zen7B-A14B in our comprehensive evaluations.
+1) **Full-scale Open-source**: Considering that users have a strong interest in models in the 10-30B range for production and 3B models for mobile applications, Qwen2.5, in addition to continuing to open source the four models of 0.5/1.5/7/72B of the same size as Qwen2, also added two medium-sized cost-effective models of **Qwen2.5-14B** and **Qwen2.5-32B** and a mobile-side model called **Qwen2.5-3B**. 
+All models are highly competitive compared to open-source models of the same level. For example, Qwen2.5-32B beats Qwen2-72B and Qwen2.5-14B outperforms Qwen2-57B-A14B in our comprehensive evaluations.
 
 2) **Larger and Higher Quality Pre-training Dataset**: The size of the pre-training dataset is expanded from 7 trillion tokens to a maximum of **18 trillion** tokens. 
 
-3) **Knowledge Enhancement**: zen has acquired significantly more knowledge. On MMLU benchmarks, zen-7/72B are improved from 70.3 to **74.2** and 84.2 to **86.1** compared to zen-7/72B. We observe that zen also has significant improvements on the GPQA/MMLU-Pro/MMLU-redux/ARC-c benchmarks.
+3) **Knowledge Enhancement**: Qwen2.5 has acquired significantly more knowledge. On MMLU benchmarks, Qwen2.5-7/72B are improved from 70.3 to **74.2** and 84.2 to **86.1** compared to Qwen2-7/72B. We observe that Qwen2.5 also has significant improvements on the GPQA/MMLU-Pro/MMLU-redux/ARC-c benchmarks.
 
-4) **Coding Enhancement**: Thanks to the technical breakthrough of zen-Coder, zen has greatly improved capabilities in coding. zen-72B-Instruct achieves **55.5**, **75.1**, and **88.2** scores on LiveCodeBench (2305-2409), MultiPL-E and MBPP, respectively, outperforming zen-72B-Instruct with 32.2, 69.2, and 80.2.
+4) **Coding Enhancement**: Thanks to the technical breakthrough of Qwen2.5-Coder, Qwen2.5 has greatly improved capabilities in coding. Qwen2.5-72B-Instruct achieves **55.5**, **75.1**, and **88.2** scores on LiveCodeBench (2305-2409), MultiPL-E and MBPP, respectively, outperforming Qwen2-72B-Instruct with 32.2, 69.2, and 80.2.
 
-5) **Math Enhancement**: After integrating zen-math's technology, the mathematical ability of zen has also been rapidly improved. On the MATH benchmark, the scores of zen-7B/72B-Instruct have been increased from 52.9/69.0 of zen-7B/72B-Instruct to **75.5/83.1**.
+5) **Math Enhancement**: After integrating Qwen2-math's technology, the mathematical ability of Qwen2.5 has also been rapidly improved. On the MATH benchmark, the scores of Qwen2.5-7B/72B-Instruct have been increased from 52.9/69.0 of Qwen2-7B/72B-Instruct to **75.5/83.1**.
 
-6) **Better Human Preference**: zen is capable of generating responses that align more closely with human preferences. Specifically, the Arena-Hard score for zen-72B-Instruct has increased significantly from **48.1** to **81.2**, and the MT-Bench score has improved from **9.12** to **9.35**, compared to zen-72B-Instruct.
+6) **Better Human Preference**: Qwen2.5 is capable of generating responses that align more closely with human preferences. Specifically, the Arena-Hard score for Qwen2.5-72B-Instruct has increased significantly from **48.1** to **81.2**, and the MT-Bench score has improved from **9.12** to **9.35**, compared to Qwen2-72B-Instruct.
 
-7) **Other Core Capabilities Enhancement**: zen achieves significant improvements in **instruction following**, **generating long texts** (increased from 1k to over **8K tokens**), **understanding structured data** (e.g., tables), and **generating structured outputs**, especially JSON. Furthermore, zen models are generally more resilient to the diversity of **system prompts**, enhancing **role-play** implementation and **condition-setting** for chatbots.
+7) **Other Core Capabilities Enhancement**: Qwen2.5 achieves significant improvements in **instruction following**, **generating long texts** (increased from 1k to over **8K tokens**), **understanding structured data** (e.g., tables), and **generating structured outputs**, especially JSON. Furthermore, Qwen2.5 models are generally more resilient to the diversity of **system prompts**, enhancing **role-play** implementation and **condition-setting** for chatbots.
 
 
 # Model Card
 
-Here is a model card detailing the key parameters of the zen LLM models. This release includes seven open-sourced models with sizes ranging from 0.5B to 72B. Most models support a context length of 128K (131,072) tokens and can generate up to 8K tokens, enabling the production of extensive text outputs. The majority of these models are licensed under Apache 2.0, while zen-3B and zen-72B are governed by the Qwen Research License and Qwen License, respectively.
+Here is a model card detailing the key parameters of the Qwen2.5 LLM models. This release includes seven open-sourced models with sizes ranging from 0.5B to 72B. Most models support a context length of 128K (131,072) tokens and can generate up to 8K tokens, enabling the production of extensive text outputs. The majority of these models are licensed under Apache 2.0, while Qwen2.5-3B and Qwen2.5-72B are governed by the Qwen Research License and Qwen License, respectively.
 
 |  Models  | Params | Non-Emb Params | Layers | Heads (KV) | Tie Embedding | Context Length | Generation Length | License |
 | :--------| :--------: | :--------: | :------: | :------------: | :-------: | :------------: | :-------: | :-------: |
-| zen-0.5B |  0.49B |  0.36B | 24 | 14 / 2 | Yes |  32K | 8K | Apache 2.0 |
-| zen-1.5B | 1.54B |  1.31B | 28 | 12 / 2 | Yes |  32K | 8K | Apache 2.0 |
-| zen-3B  |  3.09B |  2.77B | 36 | 16 / 2 | Yes |  32K | 8K | Qwen Research |
-| zen-7B | 7.61B |  6.53B | 28 | 28 / 4 | No |  128K | 8K | Apache 2.0 |
-| zen-14B | 14.7B |  13.1B | 48 | 40 / 8 | No |  128K  | 8K | Apache 2.0 |
-| zen-32B  |  32.5B |  31.0B | 64 | 40 / 8 | No |  128K | 8K | Apache 2.0 |
-| zen-72B  | 72.7B |  70.0B | 80 | 64 / 8 | No |  128K | 8K | Qwen |
+| Qwen2.5-0.5B |  0.49B |  0.36B | 24 | 14 / 2 | Yes |  32K | 8K | Apache 2.0 |
+| Qwen2.5-1.5B | 1.54B |  1.31B | 28 | 12 / 2 | Yes |  32K | 8K | Apache 2.0 |
+| Qwen2.5-3B  |  3.09B |  2.77B | 36 | 16 / 2 | Yes |  32K | 8K | Qwen Research |
+| Qwen2.5-7B | 7.61B |  6.53B | 28 | 28 / 4 | No |  128K | 8K | Apache 2.0 |
+| Qwen2.5-14B | 14.7B |  13.1B | 48 | 40 / 8 | No |  128K  | 8K | Apache 2.0 |
+| Qwen2.5-32B  |  32.5B |  31.0B | 64 | 40 / 8 | No |  128K | 8K | Apache 2.0 |
+| Qwen2.5-72B  | 72.7B |  70.0B | 80 | 64 / 8 | No |  128K | 8K | Qwen |
 
 
 # Performance
 
 This section presents the performance metrics for both base language models and instruction-tuned models across various benchmark evaluations, encompassing a diverse array of domains and tasks.
 
-## zen Base Language Model Evaluation
+## Qwen2.5 Base Language Model Evaluation
 
 The evaluation of base models primarily emphasizes their performance in natural language understanding, general question answering, coding, mathematics, scientific knowledge, reasoning, and multilingual capabilities.
 
@@ -67,9 +68,9 @@ The evaluation datasets include:
   
 **Multilingual Tasks**: Multi-Exam (M3Exam 5-shot, IndoMMLU 3-shot, ruMMLU 5-shot, mMMLU 5-shot), Multi-Understanding (BELEBELE 5-shot, XCOPA 5-shot, XWinograd 5-shot, XStoryCloze 0-shot, PAWS-X 5-shot), Multi-Mathematics (MGSM 8-shot), Multi-Translation (Flores-101 5-shot)
 
-### zen-72B Performance
+### Qwen2.5-72B Performance
 
-|  Datasets  |  Llama-3-70B   |  Mixtral-8x22B  |   Llama-3-405B  | zen-72B |  **zen-72B** |
+|  Datasets  |  Llama-3-70B   |  Mixtral-8x22B  |   Llama-3-405B  | Qwen2-72B |  **Qwen2.5-72B** |
 | :--------| :------------: | :------------: | :------------: |:---------:|:------------: |
 | ***General Tasks***  |   |   |    |     	     |		|  
 |MMLU | 79.5 | 77.8 | 85.2 |   84.2    | **86.1** | 
@@ -98,11 +99,11 @@ The evaluation datasets include:
 | Multi-Mathematics    | 67.1  | 62.9  |  - |   76.0    | **76.7**  |
 | Multi-Translation    | 38.0  | 23.3  |  - |   37.8    | **39.0**  | 
 
-The zen-72B base model significantly outperforms its peers in the same category across a wide range of tasks. It achieves results comparable to Llama-3-405B while utilizing only one-fifth of the parameters. Furthermore, when compared to its predecessor, zen-72B, the zen-72B shows marked improvements in nearly all benchmark evaluations, particularly excelling in general tasks, mathematics, and coding challenges.
+The Qwen2.5-72B base model significantly outperforms its peers in the same category across a wide range of tasks. It achieves results comparable to Llama-3-405B while utilizing only one-fifth of the parameters. Furthermore, when compared to its predecessor, Qwen2-72B, the Qwen2.5-72B shows marked improvements in nearly all benchmark evaluations, particularly excelling in general tasks, mathematics, and coding challenges.
 
-### zen-14B/32B Performance
+### Qwen2.5-14B/32B Performance
 
-|  Datasets  |  Qwen1.5-32B  | Gemma2-27B  | Yi-1.5-34B  | zen7B-A14B  | **zen-14B**  | **zen-32B** |
+|  Datasets  |  Qwen1.5-32B  | Gemma2-27B  | Yi-1.5-34B  | Qwen2-57B-A14B  | **Qwen2.5-14B**  | **Qwen2.5-32B** |
 | :--------| :------------: | :------------: | :------------: | :------------: |:------------: |:------------: |
 | ***General Tasks***  |   |   |    |     |     |   |
 | MMLU       | 74.3  | 75.2  | 77.2  | 76.5  | 79.7 | **83.3** |
@@ -131,11 +132,11 @@ The zen-72B base model significantly outperforms its peers in the same category 
 | Multi-Mathematics    | 56.1  | 61.6  | 49.3  | 62.3  | 68.5  | **73.7** |
 | Multi-Translation    | 33.5  | 38.7  | 30.0  | 34.5  | 36.2  |**37.3** |
 
-The zen-14B model demonstrates a solid performance across various tasks, particularly excelling in general tasks like MMLU and BBH, where it achieves scores of 79.7 and 78.2, outcompeting competitors of larger sizes. Meanwhile, zen-32B, in particular, showcases exceptional capabilities, often surpassing larger models of similar model sizes. Notably, it outperforms its predecessor Qwen1.5-32B significantly, especially in challenging areas such as mathematics and coding, with notable scores of 57.7 in MATH and 84.5 in MBPP. 
+The Qwen2.5-14B model demonstrates a solid performance across various tasks, particularly excelling in general tasks like MMLU and BBH, where it achieves scores of 79.7 and 78.2, outcompeting competitors of larger sizes. Meanwhile, Qwen2.5-32B, in particular, showcases exceptional capabilities, often surpassing larger models of similar model sizes. Notably, it outperforms its predecessor Qwen1.5-32B significantly, especially in challenging areas such as mathematics and coding, with notable scores of 57.7 in MATH and 84.5 in MBPP. 
 
-{/*  ### zen-14B performance
+{/*  ### Qwen2.5-14B performance
 
-|  Datasets  | zen-7B  | Qwen1.5-14B  |   Qwen1.5-32B  |  **zen-14B**  |
+|  Datasets  | Qwen2.5-7B  | Qwen1.5-14B  |   Qwen1.5-32B  |  **Qwen2.5-14B**  |
 | :--------| :------------: | :------------: | :------------: | :------------: |
 | ***General Tasks***  |   |   |    |  |
 | MMLU       | 74.2 | 67.8 | 74.3 | **79.7** |
@@ -164,9 +165,9 @@ The zen-14B model demonstrates a solid performance across various tasks, particu
 
 
 
-### zen-7B Performance
+### Qwen2.5-7B Performance
 
-|  Datasets  | Mistral-7B  | Llama3-8B  | Gemma2-9B  | zen-7B   | **zen-7B** |
+|  Datasets  | Mistral-7B  | Llama3-8B  | Gemma2-9B  | Qwen2-7B   | **Qwen2.5-7B** |
 | :--------| :------------: | :------------: | :------------: | :------------: | :------------: |
 |#Non-emb Params | 7.0B | 7.0B |  8.2B   | 6.5B| 6.5B|
 | ***General Tasks***  |   |   |    |     |  |
@@ -196,11 +197,11 @@ The zen-14B model demonstrates a solid performance across various tasks, particu
 | Multi-Mathematics    | 26.3  | 36.3  | 53.0  | 57.5  | **57.8** |
 | Multi-Translation    | 23.3  | 31.9  | **36.5**  | 31.5  | 32.4 |
 
-The zen-7B model surpasses its predecessors and counterparts in numerous benchmarks, despite having fewer non-embedding parameters. It demonstrates significant improvements across various tasks, achieving 74.2 on general benchmarks like MMLU, 49.8 on math challenges such as MATH, and 57.9 on coding tasks like HumanEval.
+The Qwen2.5-7B model surpasses its predecessors and counterparts in numerous benchmarks, despite having fewer non-embedding parameters. It demonstrates significant improvements across various tasks, achieving 74.2 on general benchmarks like MMLU, 49.8 on math challenges such as MATH, and 57.9 on coding tasks like HumanEval.
 
-### zen-0.5B/1.5B/3B Performance
+### Qwen2.5-0.5B/1.5B/3B Performance
 
-|  Datasets  | zen-0.5B  | **zen-0.5B** | zen-1.5B  | **zen-1.5B**  | Gemma2-2.6B  | **zen-3B** |
+|  Datasets  | Qwen2-0.5B  | **Qwen2.5-0.5B** | Qwen2-1.5B  | **Qwen2.5-1.5B**  | Gemma2-2.6B  | **Qwen2.5-3B** |
 | :--------| :------------: | :------------: | :------------: | :------------: | :------------: | :------------: |
 | ***General Tasks***  |   |   |    |     |  | |
 | MMLU       | 44.3  | 47.5  | 55.9  | 60.9  | 52.2  | **65.6** |
@@ -229,7 +230,7 @@ The zen-7B model surpasses its predecessors and counterparts in numerous benchma
 | Multi-Mathematics    | 7.8   | 13.5   | 21.3  | 37.5  | 18.2  | **48.9** |
 | Multi-Translation    | 14.1  | 15.3   | 23.8  |  25.0  | 26.9  | **29.3** |
 
-For edge-side models, zen-0.5B, 1.5B, and 3B continue to maintain strong performance across nearly all benchmarks. Notably, the zen-0.5B model outperforms the Gemma2-2.6B on various math and coding tasks.
+For edge-side models, Qwen2.5-0.5B, 1.5B, and 3B continue to maintain strong performance across nearly all benchmarks. Notably, the Qwen2.5-0.5B model outperforms the Gemma2-2.6B on various math and coding tasks.
 
 ## Instruction-tuned Model Evaluation
 
@@ -245,9 +246,9 @@ The datasets for evaluation include:
 
 **Instruction & Alignment Tasks**: IFeval strict-prompt, Arena-Hard, AlignBench v1.1, MTbench
 
-### zen-72B-Instruct Performance
+### Qwen2.5-72B-Instruct Performance
 
-| Datasets | Mistral-Large2 Instruct | Llama-3.1-70B-Instruct | Llama-3.1-405B-Instruct | zen-72B-Instruct | **zen-72B-Instruct** |
+| Datasets | Mistral-Large2 Instruct | Llama-3.1-70B-Instruct | Llama-3.1-405B-Instruct | Qwen2-72B-Instruct | **Qwen2.5-72B-Instruct** |
 | --- | --- | --- | --- | --- | --- |
 | MMLU-Pro | 69.4 | 66.4 | **73.3** | 64.4 | 71.1 |
 | MMLU-redux | 83.0 | 83.0 | 86.2 | 81.6 | **86.8** |
@@ -264,11 +265,11 @@ The datasets for evaluation include:
 | AlignBench v1.1 | 7.69 | 5.94 | 5.95 | 8.15 | **8.16** |
 | MTbench | 8.61 | 8.79 | 9.08 | 9.12 | **9.35** |
 
-The zen-72B-Instruct model delivers exceptional performance, even surpassing the larger Llama-3.1-405B in several critical tasks. zen-72B-Instruct excels in mathematics (MATH: 83.1), coding (LiveCodeBench: 55.5), and chatting (Arena-Hard: 81.2). Compared to its base model zen-72B and its predecessor zen-72B-Instruct, the zen-72B-Instruct showcases comprehensive improvements across all tasks.
+The Qwen2.5-72B-Instruct model delivers exceptional performance, even surpassing the larger Llama-3.1-405B in several critical tasks. Qwen2.5-72B-Instruct excels in mathematics (MATH: 83.1), coding (LiveCodeBench: 55.5), and chatting (Arena-Hard: 81.2). Compared to its base model Qwen2.5-72B and its predecessor Qwen2-72B-Instruct, the Qwen2.5-72B-Instruct showcases comprehensive improvements across all tasks.
 
-### Qwen-Turbo & zen-14B-Instruct & zen-32B-Instruct Performance
+### Qwen-Turbo & Qwen2.5-14B-Instruct & Qwen2.5-32B-Instruct Performance
 
-| Datasets | zen7B-A14B-Instruct | Gemma2-27B-IT | GPT4o-mini | **Qwen-Turbo** | **zen-14B-Instruct** | **zen-32B-Instruct** |
+| Datasets | Qwen2-57B-A14B-Instruct | Gemma2-27B-IT | GPT4o-mini | **Qwen-Turbo** | **Qwen2.5-14B-Instruct** | **Qwen2.5-32B-Instruct** |
 | --- | --- | --- | --- | --- | --- | --- |
 | MMLU-Pro | 52.8 | 55.5 | 63.1 | 64.8 | 63.7 | **69.0** |
 | MMLU-redux | 72.6 | 75.7 | 81.5 | 80.4 | 80.0 | **83.9** |
@@ -285,12 +286,12 @@ The zen-72B-Instruct model delivers exceptional performance, even surpassing the
 | AlignBench v1.1 | 7.02 | 7.22 | 7.81 | **7.99** | 7.94 | 7.93 |
 | MTbench | 8.55 | 9.10 | - | 8.86 | 8.88 | **9.20** |
 
-The zen-32B-Instruct model demonstrates superior performance across most tasks when compared to other models of similar size. In comparison to GPT-4o-mini, our open-source model, zen-14B-Instruct, along with our API model, Qwen-Turbo, also deliver competitive results across all benchmarks.
+The Qwen2.5-32B-Instruct model demonstrates superior performance across most tasks when compared to other models of similar size. In comparison to GPT-4o-mini, our open-source model, Qwen2.5-14B-Instruct, along with our API model, Qwen-Turbo, also deliver competitive results across all benchmarks.
 
 
-### zen-7B-Instruct Performance
+### Qwen2.5-7B-Instruct Performance
 
-| Datasets | Gemma2-9b-IT | Llama3.1-8B-Instruct | zen-7B-Instruct | **zen-7B-Instruct** |
+| Datasets | Gemma2-9b-IT | Llama3.1-8B-Instruct | Qwen2-7B-Instruct | **Qwen2.5-7B-Instruct** |
 | --- | --- | --- | --- | --- |
 | MMLU-Pro | 52.1 | 48.3 | 44.1 | **56.3** |
 | MMLU-redux | 72.8 | 67.2 | 67.3 | **75.4** |
@@ -307,12 +308,12 @@ The zen-32B-Instruct model demonstrates superior performance across most tasks w
 | AlignBench v1.1 | 7.05 | 4.75 | 7.13 | **7.33** |
 | MTbench | 8.49 | 8.23 | 8.26 | **8.75** |
 
-The zen-7B-Instruct model significantly outperforms its competitors, Gemma2-9b-IT and Llama3.1-8B-Instruct, across all tasks except IFeval. Notably, zen-7B-Instruct demonstrates clear advantages in mathematics (MATH: 75.5) and coding (HumanEval: 84.8).
+The Qwen2.5-7B-Instruct model significantly outperforms its competitors, Gemma2-9b-IT and Llama3.1-8B-Instruct, across all tasks except IFeval. Notably, Qwen2.5-7B-Instruct demonstrates clear advantages in mathematics (MATH: 75.5) and coding (HumanEval: 84.8).
 
 
-### zen-3B-Instruct Performance
+### Qwen2.5-3B-Instruct Performance
 
-| Datasets | Gemma2-2B-IT | Phi3.5-mini-Instruct | MiniCPM3-4B | **zen-3B-Instruct** |
+| Datasets | Gemma2-2B-IT | Phi3.5-mini-Instruct | MiniCPM3-4B | **Qwen2.5-3B-Instruct** |
 | --- |-------------| --- | --- | --- |
 | Non-Emb Params | 2.0B        | 3.6B | 4.0B | 2.8B |
 | MMLU-Pro | 26.7        | **47.5** | 43.0 | 43.7 |
@@ -327,11 +328,11 @@ The zen-7B-Instruct model significantly outperforms its competitors, Gemma2-9b-I
 | LiveBench 0831 | 20.1        | 27.4 | **27.6** | 26.8 |
 | IFeval strict-prompt | 51.0        | 52.1 | **68.4** | 58.2 |
 
-As for the edge-side instruction model, the zen-3B-Instruct model has fewer parameters than both the Phi3.5-mini-Instruct and MiniCPM3-4B models. Despite this, it outperforms them in mathematics and coding tasks while delivering competitive results in language understanding.
+As for the edge-side instruction model, the Qwen2.5-3B-Instruct model has fewer parameters than both the Phi3.5-mini-Instruct and MiniCPM3-4B models. Despite this, it outperforms them in mathematics and coding tasks while delivering competitive results in language understanding.
 
-### zen-0.5B/1.5B-Instruct Performance
+### Qwen2.5-0.5B/1.5B-Instruct Performance
 
-| Datasets | zen-0.5B-Instruct | **zen-0.5B-Instruct** | zen-1.5B-Instruct | **zen-1.5B-Instruct** |
+| Datasets | Qwen2-0.5B-Instruct | **Qwen2.5-0.5B-Instruct** | Qwen2-1.5B-Instruct | **Qwen2.5-1.5B-Instruct** |
 | --- | --- | --- |--------------------|--------------------------|
 | MMLU-Pro | 14.4 | **15.0** | 22.9               | **32.4**                 |
 | MMLU-redux | 12.9 | **24.1** | 41.2               | **50.7**                 |
@@ -345,17 +346,17 @@ As for the edge-side instruction model, the zen-3B-Instruct model has fewer para
 | LiveBench 0831 | 7.4 | **12.6** | 12.4               | **18.8**                 |
 | IFeval strict-prompt | 14.6 | **27.9** | 29.0               | **42.5**                 |
 
-zen-1.5B-Instruct and zen-0.5B-Instruct have seen large performance improvements over their previous versions, making them well-suited for edge-side applications in highly resource-constrained environments.
+Qwen2.5-1.5B-Instruct and Qwen2.5-0.5B-Instruct have seen large performance improvements over their previous versions, making them well-suited for edge-side applications in highly resource-constrained environments.
 
 ### Performances on Multilingualism
 
 To evaluate the multilingual performance of instruction-tuned models, we collect and extend benchmarks as follows:
 - **IFEval (multilingual)**: We translate the examples from IFEval (English version) to construct multilingual IFEval examples after removing examples with language-specific contents (e.g., "start with letter A"). We collect 100 examples for each language among Arabic (ar), Spanish (es), French (fr), Indonesian (in), Japanese (ja), Korean (ko), Portuguese (pt), and Vietnamese (vi) languages. All examples are checked and post-edited (if neccessary) by paid volunteers.
-- **Knowledge**: We use 5 MMLU-like benchmarks (multi-choice) to testify the knowledge utilization ability of zen series models on multilingualism, including AMMLU (Arabic), JMMLU (Japanese), KMMLU (Korean), IndoMMLU (Indonesian), and TurkishMMLU (Turkish). Also, we present the performances on translated MMLU (i.e., okapi_MMLU, from English to multiple languages).
+- **Knowledge**: We use 5 MMLU-like benchmarks (multi-choice) to testify the knowledge utilization ability of Qwen2.5 series models on multilingualism, including AMMLU (Arabic), JMMLU (Japanese), KMMLU (Korean), IndoMMLU (Indonesian), and TurkishMMLU (Turkish). Also, we present the performances on translated MMLU (i.e., okapi_MMLU, from English to multiple languages).
 - **MGSM8K (extended)**: Aside from the examples in the original MGSM8K benchmark, we extend the language support with Arabic (ar), Korean (ko), Portuguese (pt), and Vietnamese (vi). We translate 250 examples (same as the other languages engaged in MGSM8K) into those 4 languages. All examples are also checked and post-edited (if necessary) by paid volunteers.
-- **Cultural Nuances**: We also use BLEnD, a benchmark aiming at testifying cultural nuances of LLMs, to testify LLMs from the zen series.
+- **Cultural Nuances**: We also use BLEnD, a benchmark aiming at testifying cultural nuances of LLMs, to testify LLMs from the Qwen2.5 series.
 
-| Datasets | zen-72B-Instruct | Llama3.1-70B-Instruct | zen-32B-Instruct | Mistral-Large-Instruct-2407 (123B) | GPT4o-mini | zen-72B-Instruct |
+| Datasets | Qwen2-72B-Instruct | Llama3.1-70B-Instruct | Qwen2.5-32B-Instruct | Mistral-Large-Instruct-2407 (123B) | GPT4o-mini | Qwen2.5-72B-Instruct |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 | ***Instruction Following*** |    |    |    |    |    |    |
 | IFEval (multilingual) | 79.69 | 80.47 | 82.68 | 82.69 | 85.03 | **86.98** |
@@ -373,7 +374,7 @@ To evaluate the multilingual performance of instruction-tuned models, we collect
 
 
 
-| Datasets | zen-7B-Instruct | Llama3.1-8B-Instruct | zen-7B-Instruct | Gemma-2-9B-Instruct | Mistral-Nemo-Instruct-2407 (12B) | zen-14B-Instruct |
+| Datasets | Qwen2-7B-Instruct | Llama3.1-8B-Instruct | Qwen2.5-7B-Instruct | Gemma-2-9B-Instruct | Mistral-Nemo-Instruct-2407 (12B) | Qwen2.5-14B-Instruct |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 | ***Instruction Following*** |    |    |    |    |    |    |
 | IFEval (multilingual) | 51.43 | 60.68 | 74.87 | **77.47** | 64.59 | 77.08 |
@@ -392,7 +393,7 @@ To evaluate the multilingual performance of instruction-tuned models, we collect
 
 # Demo Cases
 
-Here we provide several cases to demonstrate the new or enhanced capabilities of zen, including generating JSON output, generating long texts, and understanding structured data.
+Here we provide several cases to demonstrate the new or enhanced capabilities of Qwen2.5, including generating JSON output, generating long texts, and understanding structured data.
 
 <Fullwidth>
 {/* Interactive example: cases/1_1.json */}

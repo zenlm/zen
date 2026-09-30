@@ -1,7 +1,8 @@
 ---
-title: "Introducing zen-Math"
+title: "Introducing Qwen2-Math"
 date: "2024-08-08"
 description: "> <div align=\"center\"> > <b> > 🚨 This model mainly supports English. We will release bilingual (English and Chinese) math models soon. > </b> > </div>"
+upstream: true
 ---
 
 
@@ -9,7 +10,7 @@ description: "> <div align=\"center\"> > <b> > 🚨 This model mainly supports E
 
 <Figure src="https://qianwen-res.oss-cn-beijing.aliyuncs.com/assets/blog/qwen2-math/fig1.jpg#center" width="100%" />
 
-<LinkButton href="https://github.com/QwenLM/zen-Math" label="GITHUB" external />
+<LinkButton href="https://github.com/QwenLM/Qwen2-Math" label="GITHUB" external />
 <LinkButton href="https://huggingface.co/Qwen" label="HUGGING FACE" external />
 <LinkButton href="https://modelscope.cn/organization/qwen" label="MODELSCOPE" external />
 <LinkButton href="https://discord.gg/yPEP2vHTu4" label="DISCORD" external />
@@ -22,38 +23,38 @@ description: "> <div align=\"center\"> > <b> > 🚨 This model mainly supports E
 
 # Introduction
 
-Over the past year, we have dedicated significant effort to researching and enhancing the reasoning capabilities of large language models, with a particular focus on their ability to solve arithmetic and mathematical problems. Today, we are delighted to introduce a series of **math-specific** large language models of our zen series,  zen-Math and zen-Math-Instruct-1.5B/7B/72B. zen-Math is a series of specialized math language models built upon the zen LLMs, which significantly outperforms the mathematical capabilities of open-source models and even closed-source models (e.g., GPT-4o). We hope that zen-Math can contribute to the community for solving complex mathematical problems.
+Over the past year, we have dedicated significant effort to researching and enhancing the reasoning capabilities of large language models, with a particular focus on their ability to solve arithmetic and mathematical problems. Today, we are delighted to introduce a series of **math-specific** large language models of our Qwen2 series,  Qwen2-Math and Qwen2-Math-Instruct-1.5B/7B/72B. Qwen2-Math is a series of specialized math language models built upon the Qwen2 LLMs, which significantly outperforms the mathematical capabilities of open-source models and even closed-source models (e.g., GPT-4o). We hope that Qwen2-Math can contribute to the community for solving complex mathematical problems.
 
-We evaluate our math-specific models on a series of math benchmarks. The results below demonstrate that our largest math-specific model zen-Math-72B-Instruct outperforms the state-of-the-art models, including GPT-4o, Claude-3.5-Sonnet, Gemini-1.5-Pro, and Llama-3.1-405B.
+We evaluate our math-specific models on a series of math benchmarks. The results below demonstrate that our largest math-specific model Qwen2-Math-72B-Instruct outperforms the state-of-the-art models, including GPT-4o, Claude-3.5-Sonnet, Gemini-1.5-Pro, and Llama-3.1-405B.
 
 <Figure src="https://qianwen-res.oss-cn-beijing.aliyuncs.com/assets/blog/qwen2-math/fig2.jpg#center" width="100%" />
 
 
-## zen-Math: Base Models
-The base models of zen-Math are initialized with zen-1.5B/7B/72B, and then pretrained on a meticulously designed Mathematics-specific Corpus. This corpus contains large-scale high-quality mathematical web texts, books, codes, exam questions, and mathematical pre-training data synthesized by zen.
+## Qwen2-Math: Base Models
+The base models of Qwen2-Math are initialized with Qwen2-1.5B/7B/72B, and then pretrained on a meticulously designed Mathematics-specific Corpus. This corpus contains large-scale high-quality mathematical web texts, books, codes, exam questions, and mathematical pre-training data synthesized by Qwen2.
 
-We evaluate our zen-Math base models on three widely used English math benchmarks GSM8K, Math, and MMLU-STEM. In addition, we also evaluate three Chinese math benchmarks CMATH, GaoKao Math Cloze, and GaoKao Math QA. All evaluations are tested with few-shot chain-of-thought prompting. 
+We evaluate our Qwen2-Math base models on three widely used English math benchmarks GSM8K, Math, and MMLU-STEM. In addition, we also evaluate three Chinese math benchmarks CMATH, GaoKao Math Cloze, and GaoKao Math QA. All evaluations are tested with few-shot chain-of-thought prompting. 
 
 <Figure src="https://qianwen-res.oss-cn-beijing.aliyuncs.com/assets/blog/qwen2-math/Base-Table1.png#center" width="90%" />
 
 
-## zen-Math-Instruct: Instruction-Tuned Models
+## Qwen2-Math-Instruct: Instruction-Tuned Models
 
-We first trained a math-specific reward model based on zen-Math-72B. We then combined this dense reward signal with a binary signal indicating whether the model answered correctly. This combined signal is used as supervision for constructing the SFT data through Rejection Sampling and also in the reinforcement learning with Group Relative Policy Optimization (GRPO) after SFT.
+We first trained a math-specific reward model based on Qwen2-Math-72B. We then combined this dense reward signal with a binary signal indicating whether the model answered correctly. This combined signal is used as supervision for constructing the SFT data through Rejection Sampling and also in the reinforcement learning with Group Relative Policy Optimization (GRPO) after SFT.
 
-We evaluate zen-Math-Instruct on mathematical benchmarks in both English and Chinese. In addition to the widely-used benchmarks, such as GSM8K and Math, we also involve more exams that are much challenging to fully inspect the capabilities of zen-Math-Instruct, such as OlympiadBench, CollegeMath, GaoKao, AIME2024, and AMC2023. For Chinese mathematical benchmarks, we use CMATH, Gaokao (Chinese college entrance examination 2024), and CN Middle School 24 (China High School Entrance Examination 2024).
+We evaluate Qwen2-Math-Instruct on mathematical benchmarks in both English and Chinese. In addition to the widely-used benchmarks, such as GSM8K and Math, we also involve more exams that are much challenging to fully inspect the capabilities of Qwen2-Math-Instruct, such as OlympiadBench, CollegeMath, GaoKao, AIME2024, and AMC2023. For Chinese mathematical benchmarks, we use CMATH, Gaokao (Chinese college entrance examination 2024), and CN Middle School 24 (China High School Entrance Examination 2024).
 
-We report greedy , Maj@8 and RM@8 performance on all benchmarks in the zero-shot setting, except for the multi-choice benchmarks (including MMLU STEM and multiple-choice problems in GaoKao and CN Middle School 24) with a 5-shot setting. zen-Math-Instruct achieves the best performance among models of the same size, with RM@8 outperforming Maj@8, particularly in the 1.5B and 7B models. This demonstrates the effectiveness of our math reward model. 
+We report greedy , Maj@8 and RM@8 performance on all benchmarks in the zero-shot setting, except for the multi-choice benchmarks (including MMLU STEM and multiple-choice problems in GaoKao and CN Middle School 24) with a 5-shot setting. Qwen2-Math-Instruct achieves the best performance among models of the same size, with RM@8 outperforming Maj@8, particularly in the 1.5B and 7B models. This demonstrates the effectiveness of our math reward model. 
 
 <Figure src="https://qianwen-res.oss-cn-beijing.aliyuncs.com/assets/blog/qwen2-math/Instruct-Table1.png#center" width="100%" />
 
-In more complex mathematical competition evaluations such as AIME 2024 and AMC 2023, zen-Math-Instruct also performs well across various settings, including Greedy, Maj@64, RM@64, and RM@256.
+In more complex mathematical competition evaluations such as AIME 2024 and AMC 2023, Qwen2-Math-Instruct also performs well across various settings, including Greedy, Maj@64, RM@64, and RM@256.
 
 <Figure src="https://qianwen-res.oss-cn-beijing.aliyuncs.com/assets/blog/qwen2-math/Instruct-Table2.png#center" width="70%" />
 
 ## Case Study
 
-Here we list some test cases, which include some IMO math problems. From the experimental results and case study, we find that zen-Math is capable of solving simple math competition problems. Feel free to click the expandable blocks to check the cases!
+Here we list some test cases, which include some IMO math problems. From the experimental results and case study, we find that Qwen2-Math is capable of solving simple math competition problems. Feel free to click the expandable blocks to check the cases!
 
 > All the solutions are generated by our model without modification. Please note that we do not guarantee the correctness of the claims in the process.
 
@@ -71,7 +72,7 @@ x^3_1+x^3_2+\,\ldots\,+x^3_t=2002^\{2002\},
 $$
 
 
-**zen-Math-72B-Instruct Solution**
+**Qwen2-Math-72B-Instruct Solution**
 
 To determine the smallest positive integer $ t $ such that there exist integers $ x_1, x_2, \ldots, x_t $ satisfying the equation
 
@@ -196,7 +197,7 @@ Problem From IMO Shortlist 2022</summary>
 
 For a positive integer $n$ we denote by $s(n)$ the sum of the digits of $n$. Let $P(x)=x^n+a_{n-1}x^{n-1}+\cdots+a_1x+a_0$ be a polynomial, where $n \geqslant 2$ and $a_i$ is a positive integer for all $ 0 \leqslant i \leqslant n-1$. Could it be the case that, for all positive integers $k$, $s(k)$ and $s(P(k))$ have the same parity?
 
-**zen-Math-72B-Instruct Solution**
+**Qwen2-Math-72B-Instruct Solution**
 
 To determine whether it is possible for $ s(k) $ and $ s(P(k)) $ to have the same parity for all positive integers $ k $, we need to analyze the behavior of the sum of the digits function $ s $ and the polynomial $ P(x) $.
 
@@ -268,7 +269,7 @@ $$
 
 
 
-**zen-Math-72B-Instruct Solution**
+**Qwen2-Math-72B-Instruct Solution**
 
 To find all functions $ f: \mathbb{R}^+ \to \mathbb{R}^+ $ such that for each $ x \in \mathbb{R}^+ $, there is exactly one $ y \in \mathbb{R}^+ $ satisfying
 
@@ -362,7 +363,7 @@ $$
 
 For all integers $x,y$
 
-**zen-Math-72B-Instruct Solution**
+**Qwen2-Math-72B-Instruct Solution**
 
 To find all functions $ f: \mathbb{Z} \to \mathbb{Z} $ that satisfy the functional equation
 
@@ -505,7 +506,7 @@ $$
 
     for reals $x, y$.
 
-**zen-Math-72B-Instruct Solution:**
+**Qwen2-Math-72B-Instruct Solution:**
 
 To find all functions $ f: \mathbb{R} \rightarrow \mathbb{R} $ that satisfy the functional equation
 
@@ -656,7 +657,7 @@ a) Is it possible that, after using that machine finitely many times, we have $ 
 
 b) Is it possible that, after using that machine finitely many times, we have $ 2021$ red Martians, $ 2022$ green Martians and $ 2023$ blue Martians?
 
-**zen-Math-72B-Instruct Solution**
+**Qwen2-Math-72B-Instruct Solution**
 
 Let's analyze the problem step by step.
 
@@ -718,7 +719,7 @@ Problem From Balkan MO 2023</summary>
 
 Joe and Penny play a game. Initially there are $ 5000$ stones in a pile, and the two players remove stones from the pile by making a sequence of moves. On the $ k$-th move, any number of stones between $ 1$ and $ k$ inclusive may be removed. Joe makes the odd-numbered moves and Penny makes the even-numbered moves. The player who removes the very last stone is the winner. Who wins if both players play perfectly?
 
-**zen-Math-72B-Instruct Solution**
+**Qwen2-Math-72B-Instruct Solution**
 
 To determine the winner of the game, we need to analyze the strategy and the sequence of moves. Let's break down the problem step by step.
 
@@ -761,7 +762,7 @@ Problem From Math Odyssey</summary>
 
 The school offers 10 elective courses, and each student can enroll in any number of courses. The director selects $k$ students, where although each student's combination of courses is different, any two students have at least one course in common. At this point, it is found that any student outside these $k$ students cannot be classmates with these $k$ students regardless of how they enroll (having one course in common is enough to be classmates). Find the maximum number of $k$.
 
-**zen-Math-72B-Instruct Solution**
+**Qwen2-Math-72B-Instruct Solution**
 
 To solve this problem, we need to determine the maximum number of students $ k $ such that each student has a unique combination of elective courses, any two students share at least one course, and no student outside these $ k $ students can be classmates with all of them. This means that the set of students chosen must cover all possible courses in such a way that any new student would have to share a course with at least one of the chosen students.
 
@@ -784,7 +785,7 @@ Problem from USAMO 2010</summary>
 
 Let $ABC$ be a triangle with $\angle A = 90^{\circ}$. Points $D$ and $E$ lie on sides $AC$ and $AB$, respectively, such that $\angle ABD = \angle DBC$ and $\angle ACE = \angle ECB$. Segments $BD$ and $CE$ meet at $I$. Determine whether or not it is possible for segments $AB$, $AC$, $BI$, $ID$, $CI$, $IE$ to all have integer lengths.
 
-**zen-Math-72B-Instruct Solution**
+**Qwen2-Math-72B-Instruct Solution**
 
 To determine whether it is possible for segments $AB$, $AC$, $BI$, $ID$, $CI$, and $IE$ to all have integer lengths in triangle $ABC$ with $\angle A = 90^\circ$, we start by analyzing the given conditions and properties of the triangle.
 
@@ -867,7 +868,7 @@ Problem from JBMO Shortlist 2011</summary>
 
 Let $AD,BF$ and ${CE}$ be the altitudes of $\vartriangle ABC$. A line passing through ${D}$ and parallel to ${AB}$intersects the line ${EF}$at the point ${G}$. If ${H}$ is the orthocenter of $\vartriangle ABC$, find the angle ${\angle{CGH}}$.
 
-**zen-Math-72B-Instruct Solution**
+**Qwen2-Math-72B-Instruct Solution**
 
 To solve for the angle $\angle CGH$ in the given triangle $\triangle ABC$ with altitudes $AD$, $BF$, and $CE$ intersecting at the orthocenter $H$, and a line through $D$ parallel to $AB$ intersecting $EF$ at $G$, we will follow these steps:
 
@@ -916,4 +917,4 @@ We conduct decontamination methods on both our pretraining and post-training dat
 
 ## Summary
 
-This time, we're releasing a new model series focused on mathematical capabilities, zen-Math, built upon the zen foundation. Our flagship model, zen-Math-72B-Instruct, outperforms proprietary models such as GPT-4o and Claude 3.5 in math-related tasks. Given the current limitation of English-only support, we plan to release bilingual models that support both English and Chinese shortly, with the development of multilingual models also in the pipeline. Moreover, we will continue to enhance our models' ability to solve complex and challenging mathematical problems.
+This time, we're releasing a new model series focused on mathematical capabilities, Qwen2-Math, built upon the Qwen2 foundation. Our flagship model, Qwen2-Math-72B-Instruct, outperforms proprietary models such as GPT-4o and Claude 3.5 in math-related tasks. Given the current limitation of English-only support, we plan to release bilingual models that support both English and Chinese shortly, with the development of multilingual models also in the pipeline. Moreover, we will continue to enhance our models' ability to solve complex and challenging mathematical problems.

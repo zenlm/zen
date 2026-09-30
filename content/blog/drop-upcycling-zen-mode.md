@@ -125,11 +125,11 @@ The 1/4 FLOP claim requires context: the dense checkpoint training cost is amort
 
 Zen MoDE (Mixture of Distilled Experts) applies Drop-Upcycling at three scales:
 
-**zen4-mini (4B total, 4B active)** — Dense. No upcycling needed at this scale; the routing overhead would dominate the compute savings. Zen4-mini uses a dense Qwen3 base.
+**zen4-mini (4B total, 4B active)** — Dense. No upcycling needed at this scale; the routing overhead would dominate the compute savings.
 
 **zen4-max (30B total, 3B active)** — 16 experts, 2 active per token. Drop-Upcycled from an 8B dense checkpoint. Drop rate: 8%. Router: learned top-2 routing with load balancing. The transition from 8B dense to 30B MoE takes 200M training tokens, roughly 3 days on 32×H100.
 
-**zen4-ultra (1T total, 32B active)** — 384 experts, 8 active per token. This is our frontier model based on the Kimi K2.5 architecture. The upcycling here was done by the upstream team; we train behavioral adapters on top using GT-QLoRA (see the companion post on that technique).
+**zen4-ultra (1T total, 32B active)** — 384 experts, 8 active per token. This is the largest Zen4 model. The upcycling here was done by the upstream team; we train behavioral adapters on top using GT-QLoRA (see the companion post on that technique).
 
 ## What Do the Experts Actually Learn?
 

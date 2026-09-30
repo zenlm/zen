@@ -2,12 +2,13 @@
 title: "Towards Effective Process Supervision in Mathematical Reasoning"
 date: "2025-01-14"
 description: "In recent years, Large Language Models (LLMs) have made remarkable advances in mathematical reasoning, yet they can make mistakes, such as miscalculations or logical errors, leading to wrong conclusions. Moreover, even when achieving correct final answers, these powerful models can still regularly m"
+upstream: true
 ---
 
 
-<Figure src="http://qianwen-res.oss-accelerate-overseas.aliyuncs.com/zen/zen-Math-PRM/zen-Math-PRM.png#center" width="100%" />
+<Figure src="http://qianwen-res.oss-accelerate-overseas.aliyuncs.com/Qwen2.5/Qwen2.5-Math-PRM/Qwen2.5-Math-PRM.png#center" width="100%" />
 
-<LinkButton href="https://github.com/QwenLM/zen-Math" label="GITHUB" external />
+<LinkButton href="https://github.com/QwenLM/Qwen2-Math" label="GITHUB" external />
 <LinkButton href="https://huggingface.co/collections/Qwen/qwen25-math-66eaa240a1b7d5ee65f1da3e" label="HUGGING FACE" external />
 <LinkButton href="https://modelscope.cn/organization/qwen" label="MODELSCOPE" external />
 <LinkButton href="https://discord.gg/yPEP2vHTu4" label="DISCORD" external />
@@ -31,27 +32,27 @@ ProcessBench can be used to evaluate two types of models: PRMs and critic models
 
 
 # Releasing Process Reward Models
-We release two PRMs fine-tuned on zen-Math-7B-Instruct and zen-Math-72B-Instruct, namely zen-Math-PRM-7B and zen-Math-PRM-72B respectively. Our trained PRMs exhibit both impressive performance in the BoN evaluation and stronger error identification performance in ProcessBench.
+We release two PRMs fine-tuned on Qwen2.5-Math-7B-Instruct and Qwen2.5-Math-72B-Instruct, namely Qwen2.5-Math-PRM-7B and Qwen2.5-Math-PRM-72B respectively. Our trained PRMs exhibit both impressive performance in the BoN evaluation and stronger error identification performance in ProcessBench.
 
 ## Best-of-N Evaluation
-Following zen-Math, we sampled eight responses (i.e., $N=8$) from zen-Math-7B-Instruct across multiple mathematical benchmarks, including GSM8K, MATH, Minerva Math, GaoKao 2023 En, OlympiadBench, College Math, and MMLU STEM.
+Following Qwen2.5-Math, we sampled eight responses (i.e., $N=8$) from Qwen2.5-Math-7B-Instruct across multiple mathematical benchmarks, including GSM8K, MATH, Minerva Math, GaoKao 2023 En, OlympiadBench, College Math, and MMLU STEM.
 Each candidate response is scored using the product of all the individual scores of each step within the response.
 We report the result of majority voting among eight samplings (maj@8) as the baseline, and pass@8 (i.e., the proportion of test samples where any of the eight samplings lead to the correct final answers) as the upper bound.
 
-As shown in the following table, zen-Math-PRM-7B demonstrates superior performance compared to other PRMs of equivalent model scale. Notably, it outperforms maj@8 across all 7 tasks, achieving an average improvement of 1.4\%.
-Furthermore, zen-Math-PRM-72B exhibits slightly better overall performance than zen-Math-RM-72B, with particularly significant improvements observed in the Minerva Math and MMLU STEM tasks.
+As shown in the following table, Qwen2.5-Math-PRM-7B demonstrates superior performance compared to other PRMs of equivalent model scale. Notably, it outperforms maj@8 across all 7 tasks, achieving an average improvement of 1.4\%.
+Furthermore, Qwen2.5-Math-PRM-72B exhibits slightly better overall performance than Qwen2.5-Math-RM-72B, with particularly significant improvements observed in the Minerva Math and MMLU STEM tasks.
 
 
-<Figure src="http://qianwen-res.oss-accelerate-overseas.aliyuncs.com/zen/zen-Math-PRM/prm_bon.png#center" width="100%" />
+<Figure src="http://qianwen-res.oss-accelerate-overseas.aliyuncs.com/Qwen2.5/Qwen2.5-Math-PRM/prm_bon.png#center" width="100%" />
 
 
 ## ProcessBench
 We also evaluate our PRMs on ProcessBench to measure the ability of identify erroneous steps. 
-When compared with LLM-as-judge, zen-Math-PRM-7B in smaller model size demonstrates superior performance over all open-source models. For proprietary language models, zen-Math-PRM-7B outperforms GPT-4o-0806, while there remains a performance gap compared to o1-mini.
-Furthermore, in comparison with existing PRMs, both zen-Math-PRM-7B and zen-Math-PRM-72B exhibit substantial advantages over their counterparts.
-An interesting observation worth noting is that the Outcome Reward Model (ORM) zen-Math-RM-72B exhibits considerable capability in identifying step errors, even surpassing some open-source PRMs, which validates its potential as a complementary reward beyond solely rule-based mechanism.
+When compared with LLM-as-judge, Qwen2.5-Math-PRM-7B in smaller model size demonstrates superior performance over all open-source models. For proprietary language models, Qwen2.5-Math-PRM-7B outperforms GPT-4o-0806, while there remains a performance gap compared to o1-mini.
+Furthermore, in comparison with existing PRMs, both Qwen2.5-Math-PRM-7B and Qwen2.5-Math-PRM-72B exhibit substantial advantages over their counterparts.
+An interesting observation worth noting is that the Outcome Reward Model (ORM) Qwen2.5-Math-RM-72B exhibits considerable capability in identifying step errors, even surpassing some open-source PRMs, which validates its potential as a complementary reward beyond solely rule-based mechanism.
 
-<Figure src="http://qianwen-res.oss-accelerate-overseas.aliyuncs.com/zen/zen-Math-PRM/prm_processbench.png#center" width="100%" />
+<Figure src="http://qianwen-res.oss-accelerate-overseas.aliyuncs.com/Qwen2.5/Qwen2.5-Math-PRM/prm_processbench.png#center" width="100%" />
 
 
 # Conclusion

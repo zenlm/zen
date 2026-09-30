@@ -2,6 +2,7 @@
 title: "Time to Speak Some Dialects, Qwen-TTS!"
 date: "2025-06-27"
 description: "Here we introduce the latest update of **Qwen-TTS** (`qwen-tts-latest` or `qwen-tts-2025-05-22`) through [Qwen API](https://help.aliyun.com/zh/model-studio/qwen-tts) . Trained on a large-scale dataset encompassing over millions of hours of speech, Qwen-TTS achieves human-level naturalness and expres"
+upstream: true
 ---
 
 
